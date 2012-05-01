@@ -3,14 +3,16 @@ executePostActions
 
 The executePostActions hook is triggered on Ajax requests that require a DCA object. It passes the name of the action and the data container object as arguments and does not expect a return value. It is available from version 2.6.1.
 
-	// config.php
-	$GLOBALS['TL_HOOKS']['executePostActions'][] = array('MyClass', 'myExecutePostActions');
-	 
-	// MyClass.php
-	public function myExecutePostActions($strAction, DataContainer $dc)
-	{
-	    if ($strAction == 'update')
-	    {
-	        // Do something
-	    }
-	}
+```php
+// config.php
+$GLOBALS['TL_HOOKS']['executePostActions'][] = array('MyClass', 'myExecutePostActions');
+ 
+// MyClass.php
+public function myExecutePostActions($strAction, DataContainer $dc)
+{
+    if ($strAction == 'update')
+    {
+        // Do something
+    }
+}
+``` 
