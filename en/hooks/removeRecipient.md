@@ -6,11 +6,11 @@ The ```removeRecipient``` hook is triggered when a newsletter recipient is remov
 
 ### Parameters ###
 
-- *string* ```$strEmail```
+1. *string* ```$strEmail```
 
 	the recipient's email address which has been removed
 
-- *array* ```$arrChannels```
+2. *array* ```$arrChannels```
 
 	the channels from which the recipient has unsubscribed
 

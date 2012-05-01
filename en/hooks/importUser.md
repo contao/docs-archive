@@ -6,15 +6,15 @@ The ```importUser``` hook is triggered when a username cannot be found in the da
 
 ### Parameters ###
 
-- *string* ```$strUsername```
+1. *string* ```$strUsername```
 
 	The unknown username
 
-- *string* ```$strPassword```
+2. *string* ```$strPassword```
 
 	The password submitted in the login form
 
-- *string* ```$strTable```
+3. *string* ```$strTable```
 
 	The user model table, either ```tl_member``` (for frontend) or ```tl_user``` (for backend)
 

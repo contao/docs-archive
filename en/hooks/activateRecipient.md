@@ -6,15 +6,15 @@ The ```activateRecipient``` hook is triggered when a new newsletter recipient is
 
 ### Parameters ###
 
-- *string* ```$strEmail```
+1. *string* ```$strEmail```
 
 	the newsletter recipient's email address
 
-- *array* ```$arrRecipients```
+2. *array* ```$arrRecipients```
 
 	<span class="undocumented">please add a description for this parameter</span>
 
-- *array* ```$arrChannels```
+3. *array* ```$arrChannels```
 
 	<span class="undocumented">please add a description for this parameter</span>
 

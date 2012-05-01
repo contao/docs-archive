@@ -6,7 +6,7 @@ The ```activateAccount``` hook is triggered when a new front end account is acti
 
 ### Parameters ###
 
-- *Database_Result* ```$objUser```  
+1. *Database_Result* ```$objUser```  
 
 	A database result set of the activated user account
 

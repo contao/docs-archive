@@ -6,15 +6,15 @@ The ```checkCredentials``` hook is triggered when a login attempt fails due to a
 
 ### Parameters ###
 
-- *string* ```$strUsername```
+1. *string* ```$strUsername```
 
 	The username submitted from the login form.
 
-- *string* ```$strPassword```
+2. *string* ```$strPassword```
 
 	The password submitted from the login form.
 
-- *User* ```$objUser```
+3. *User* ```$objUser```
 
 	User object model from database record with the given username.
 

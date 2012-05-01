@@ -6,15 +6,15 @@ The ```closeAccount``` hook is triggered when a user closes his account. It pass
 
 ### Parameters ###
 
-- *int* ```$intId```
+1. *int* ```$intId```
 
 	ID of the user which closed his account.
 
-- *string* ```$strMode```
+2. *string* ```$strMode```
 
 	The "close account" mode. Either ```close_deactivate``` or ```close_delete```.
 
-- *object* ```$objModule```
+3. *object* ```$objModule```
 
 	The frontend module object. This allows you to retrieve all data from the current ```tl_module``` result set.
 

@@ -6,15 +6,15 @@ The ```addCustomRegexp``` hook is triggered when an unknown regular expression i
 
 ### Parameters ###
 
-- *string* ```$strRegexp```
+1. *string* ```$strRegexp```
 
 	The unknown regular expression string
 
-- *mixed* ```$varValue```
+2. *mixed* ```$varValue```
 
 	The input value to be validated
 
-- *Widget* ```$objWidget```
+3. *Widget* ```$objWidget```
 
 	Form widget which is handling this input value.  
 	Use the widget's properties to retrieve information about the field configuration.

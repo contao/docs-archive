@@ -6,7 +6,7 @@ The ```replaceInsertTags``` hook is triggered when an unknown insert tag is foun
 
 ### Parameters ###
 
-- *string* ```$strTag```
+1. *string* ```$strTag```
 
 	the unknown inserttag
 

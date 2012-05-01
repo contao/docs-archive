@@ -6,7 +6,7 @@ The ```postLogout``` hook is triggered after a user has logged out from the fron
 
 ### Parameters ###
 
-- *FrontendUser* ```$objUser```
+1. *FrontendUser* ```$objUser```
 
 	The frontend user (object) which has been logged out
 

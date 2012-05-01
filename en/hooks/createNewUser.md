@@ -6,11 +6,11 @@ The ```createNewUser``` hook is triggered when a new front end user registers on
 
 ### Parameters ###
 
-- *int* ```$intId```
+1. *int* ```$intId```
 
 	Unique ID of the user
 
-- *array* ```$arrData```
+2. *array* ```$arrData```
 
 	All values which have been submitted on the registration form. Be aware that the user ID is not contained in this array (```$arrData['id']``` is empty).
 
