@@ -1,7 +1,25 @@
 closeAccount
 ------------
 
-The closeAccount hook is triggered when a user closes his account. It passes the user ID, the operation mode and the module as arguments and does not expect a return value. It is available from version 2.8.0.
+The ```closeAccount``` hook is triggered when a user closes his account. It passes the user ID, the operation mode and the module as arguments and does not expect a return value. It is available from version 2.8.0.
+
+
+### Parameters ###
+
+- *int* ```$intId```
+
+	ID of the user which closed his account.
+
+- *string* ```$strMode```
+
+	The "close account" mode. Either ```close_deactivate``` or ```close_delete```.
+
+- *object* ```$objModule```
+
+	The frontend module object. This allows you to retrieve all data from the current ```tl_module``` result set.
+
+
+### Example ###
 
 ```php
 // config.php
@@ -16,3 +34,8 @@ public function myCloseAccount($intId, $strMode, $objModule)
     }
 }
 ``` 
+
+### See Also ###
+
+- [createNewUser](createNewUser.md) - triggered when a new front end user registers on the website
+- <span class="undocumented">updatePersonalData</span>
