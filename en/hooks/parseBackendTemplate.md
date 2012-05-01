@@ -1,7 +1,10 @@
 parseBackendTemplate
 --------------------
 
-The parseBackendTemplate hook is triggered when a back end template is parsed. It passes the template content and the template name as arguments and expects the template content as return value. It is available from version 2.6.0.
+The ```parseBackendTemplate``` hook is triggered when a back end template is parsed. It passes the template content and the template name as arguments and expects the template content as return value. It is available from version 2.6.0.
+
+
+### Example ###
 
 ```php
 // config.php

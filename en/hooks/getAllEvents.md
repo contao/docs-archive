@@ -1,7 +1,10 @@
 getAllEvents
 ------------
 
-The getAllEvents hook allows you to modify the result sets of calendar and event modules. It passes the current result set, the IDs of the parent items and the start and end time as arguments and expects a result set (array) as return value. It is available from version 2.6.4.
+The ```getAllEvents``` hook allows you to modify the result sets of calendar and event modules. It passes the current result set, the IDs of the parent items and the start and end time as arguments and expects a result set (array) as return value. It is available from version 2.6.4.
+
+
+### Example ###
 
 ```php
 // config.php

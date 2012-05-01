@@ -1,7 +1,10 @@
 executePostActions
 ------------------
 
-The executePostActions hook is triggered on Ajax requests that require a DCA object. It passes the name of the action and the data container object as arguments and does not expect a return value. It is available from version 2.6.1.
+The ```executePostActions``` hook is triggered on Ajax requests that require a DCA object. It passes the name of the action and the data container object as arguments and does not expect a return value. It is available from version 2.6.1.
+
+
+### Example ###
 
 ```php
 // config.php

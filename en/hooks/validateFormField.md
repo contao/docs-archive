@@ -1,7 +1,10 @@
 validateFormField
 -----------------
 
-The validateFormField hook is triggered when a form field is submitted. It passes the widget object and the form ID as arguments and expects a widget object as return value. It is available from version 2.5.0.
+The ```validateFormField``` hook is triggered when a form field is submitted. It passes the widget object and the form ID as arguments and expects a widget object as return value. It is available from version 2.5.0.
+
+
+### Example ###
 
 ```php
 // config.php

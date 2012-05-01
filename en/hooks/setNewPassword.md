@@ -1,7 +1,10 @@
 setNewPassword
 --------------
 
-The setNewPassword hook is triggered after a new password has been set. It passes the user object and the encrypted password as arguments and does not expect a return value. It is available from version 2.2.3.
+The ```setNewPassword``` hook is triggered after a new password has been set. It passes the user object and the encrypted password as arguments and does not expect a return value. It is available from version 2.2.3.
+
+
+### Example ###
 
 ```php
 // config.php

@@ -1,7 +1,10 @@
 addLogEntry
 -----------
 
-The addLogEntry hook is triggered when a new log entry is added. It passes the message, the function and the action as arguments and does not expect a return value. It is available from version 2.8.RC1.
+The ```addLogEntry``` hook is triggered when a new log entry is added. It passes the message, the function and the action as arguments and does not expect a return value. It is available from version 2.8.RC1.
+
+
+### Example ###
 
 ```php
 // config.php
