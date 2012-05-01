@@ -1,7 +1,24 @@
 replaceInsertTags
 -----------------
 
-The replaceInsertTags hook is triggered when an unknown insert tag is found. It passes the insert tag as argument and expects the replacement value or false as return value. It is available from version 2.6.0.
+The ```replaceInsertTags``` hook is triggered when an unknown insert tag is found. It passes the insert tag as argument and expects the replacement value or false as return value. It is available from version 2.6.0.
+
+
+### Parameters ###
+
+- *string* ```$strTag```
+
+	the unknown inserttag
+
+
+### Return Values ###
+
+Return a string if your function is taking care of this insert tag. The hook loop will be stopped and your output is used as a replacement value.
+
+If your function is not responsible for this insert tag, you **must** return ```false``` to continue to the next hook callback.
+
+
+### Example ###
 
 ```php
 // config.php
@@ -18,3 +35,8 @@ public function myReplaceInsertTags($strTag)
     return false;
 }
 ``` 
+
+
+### See Also ###
+
+- [addCustomRegexp](hooks/addCustomRegexp.html) - triggered when an unknown regular expression is found
