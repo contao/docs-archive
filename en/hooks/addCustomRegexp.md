@@ -46,4 +46,4 @@ public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
 
 ### See Also ###
 
-- [replaceInsertTags](hooks/replaceInsertTags.md) - triggered when an unknown insert tag is found
+- [replaceInsertTags](replaceInsertTags.md) - triggered when an unknown insert tag is found

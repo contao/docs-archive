@@ -31,4 +31,4 @@ public function myRemoveRecipient($strEmail, $arrChannels)
 
 ### See Also ###
 
-- [activateRecipient](hooks/activateRecipient.md) - triggered when a new newsletter recipient is added
+- [activateRecipient](activateRecipient.md) - triggered when a new newsletter recipient is added

@@ -39,4 +39,4 @@ public function myReplaceInsertTags($strTag)
 
 ### See Also ###
 
-- [addCustomRegexp](hooks/addCustomRegexp.html) - triggered when an unknown regular expression is found
+- [addCustomRegexp](addCustomRegexp.md) - triggered when an unknown regular expression is found

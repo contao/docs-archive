@@ -27,7 +27,7 @@ public function myActivateAccount(Database_Result $objUser)
 
 ### See Also ###
 
-- [createNewUser](hooks/createNewUser.md) - triggered when a new front end user registers
-- [closeAccount](hooks/closeAccount.md) - triggered when a user closes his account
-- [postLogin](hooks/postLogin.md) - triggered after a user logged in
-- [postLogout](hooks/postLogout.md) - triggered after a user logged out
+- [createNewUser](createNewUser.md) - triggered when a new front end user registers
+- [closeAccount](closeAccount.md) - triggered when a user closes his account
+- [postLogin](postLogin.md) - triggered after a user logged in
+- [postLogout](postLogout.md) - triggered after a user logged out
