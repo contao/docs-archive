@@ -18,3 +18,8 @@ public function myListComments($arrRow)
     return '<a href="contao/main.php?do= … ">' . $arrRow['title'] . '</a>';
 }
 ```
+
+
+### See Also ###
+
+- [addComment](addComment.md) - triggered when a comment is added

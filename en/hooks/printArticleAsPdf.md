@@ -19,3 +19,4 @@ public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
     exit;
 }
 ```
+

@@ -23,3 +23,8 @@ public function myCreateDefinition($strKey, $strValue, $strDefinition, $arrSet)
     return false;
 }
 ```
+
+
+### See Also ###
+
+- [compileDefinition](compileDefinition.md) - triggered when a format definition of a style sheet is written

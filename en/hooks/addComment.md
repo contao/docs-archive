@@ -18,3 +18,8 @@ public function myAddComment($intId, $arrSet)
     // Do something
 }
 ```
+
+
+### See Also ###
+
+- [listComment](listComments.md) - triggered when comments are listed in the back end
