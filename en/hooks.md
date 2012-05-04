@@ -33,7 +33,7 @@ Hooks work similar to the [callback functions](callbacks.md) of the Data Contain
 - getSystemMessages
 - getUserNavigation
 - [importUser](hooks/importUser.md)
-- isAllowedToEditComment
+- [isAllowedToEditComment](hooks/isAllowedToEditComment.md)
 - [listComments](hooks/listComments.md)
 - [loadFormField](hooks/loadFormField.md)
 - [loadDataContainer](hooks/loadDataContainer.md)
