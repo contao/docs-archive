@@ -70,8 +70,8 @@ Resize an image.
 	```
 	> system/html/screenshot-b5775910.jpg
 
-	![test]
-	(../../assets/api/Controller/getImage-1.jpg)
+	![Example of the 100x100 crop]
+	(https://github.com/contao/docs/raw/2.11/en/assets/api/Controller/getImage-1.jpg)
 
 ### See Also ###
 
