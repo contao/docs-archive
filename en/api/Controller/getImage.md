@@ -60,7 +60,7 @@ Resize an image.
 
 ### Examples ###
 
-1. Resize an image and get it's dimensions
+1. Resize an image with default options. Passing no `$mode`, the crop is **proportional** and therefore the image will be 100px width (larger side) but not 100px height.
 
 	```php
 	<?php
@@ -70,8 +70,21 @@ Resize an image.
 	```
 	> system/html/screenshot-b5775910.jpg
 
-	![Example of the 100x100 crop]
+	![100x100 crop from the center]
 	(https://github.com/contao/docs/raw/2.11/en/assets/api/Controller/getImage-1.jpg)
+
+2. Resize an image from right top corner. The smaller side will be adjusted, the larger will be cropped.
+
+	```php
+	<?php
+
+	$strImage = $this->getImage('tl_files/music_academy/screenshot.jpg', 100, 100, 'right_top');
+	echo $strImage;
+	```
+	> system/html/screenshot-66a7cd8c.jpg
+
+	![100x100 crop from top right corner]
+	(https://github.com/contao/docs/raw/2.11/en/assets/api/Controller/getImage-2.jpg)
 
 ### See Also ###
 
