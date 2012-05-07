@@ -18,3 +18,8 @@ public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFi
     return MyImage::generateThumbnail($image, $widht, $height, $mode);
 }
 ```
+
+
+### See Also ###
+
+- [`Controller::getImage`](../../api/Controller/getImage.md) – Resize an image
