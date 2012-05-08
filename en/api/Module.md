@@ -7,7 +7,7 @@ Parent class for front end modules.
 
 ### Description ###
 
-**Definition:** `abstract class Module extends System`
+**Definition:** `abstract class Module extends Frontend`
 
 **Located in:** *system/modules/frontend/Module.php*
 
