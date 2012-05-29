@@ -122,9 +122,9 @@ array_insert($GLOBALS['FE_MOD']['miscellaneous'], 0, array
 
 
 
-Ok, let’s see what we have done here. First, we have added a new back end module called cd_collection to the content group. It uses two tables called tl\_cds and tl\_cds\_category. We also have defined the path to an icon that will be uploaded later. Then, we have added a new front end module called cd_collection to the miscellaneous group.
+Ok, let’s see what we have done here. First, we have added a new back end module called cd\_collection to the content group. It uses two tables called tl\_cds and tl\_cds\_category. We also have defined the path to an icon that will be uploaded later. Then, we have added a new front end module called cd_collection to the miscellaneous group.
 
-If you use the array_insert function to add a new back end or front end module, you can define its exact position. In our example, we are using the function to make our module the first one within the group.
+If you use the array\_insert function to add a new back end or front end module, you can define its exact position. In our example, we are using the function to make our module the first one within the group.
 
 Let’s take a look how it affected the backend:
 
