@@ -85,7 +85,7 @@ I think the code is clear and doesn’t need any explanation. Note that fields i
 
 Note: I have noticed that there must be two spaces after PRIMARY KEY. If there’s only one, Contao will try to drop index `id` and add primary key `id`, which can’t be executed because the `id` key already exists!
 
-Our relationship between tables is very simple and called parent-child. The child table tl_cds identifies its parent by pid field, which means “parent id”.
+Our relationship between tables is very simple and called parent-child. The child table tl\_cds identifies its parent by pid field, which means “parent id”.
 
 
 
@@ -122,7 +122,7 @@ array_insert($GLOBALS['FE_MOD']['miscellaneous'], 0, array
 
 
 
-Ok, let’s see what we have done here. First, we have added a new back end module called cd_collection to the content group. It uses two tables called tl_cds and tl_cds_category. We also have defined the path to an icon that will be uploaded later. Then, we have added a new front end module called cd_collection to the miscellaneous group.
+Ok, let’s see what we have done here. First, we have added a new back end module called cd_collection to the content group. It uses two tables called tl\_cds and tl\_cds\_category. We also have defined the path to an icon that will be uploaded later. Then, we have added a new front end module called cd_collection to the miscellaneous group.
 
 If you use the array_insert function to add a new back end or front end module, you can define its exact position. In our example, we are using the function to make our module the first one within the group.
 
