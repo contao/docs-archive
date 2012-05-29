@@ -112,7 +112,7 @@ However, this button is available only when the sorting mode is 4.
 The list array is used to maintain the homepage of our module. Its purpose is to set up the user interface and provide a listing of records. It consists of four arrays that I will describe in a moment. Meanwhile I advise you to open a [developer’s guide](http://www.typolight.org/reference.html) to make you see better what I am talking about.
 
 
-##Sorting
+###Sorting
 
 Okay, so the first array is called sorting. As its name points out, it is used to define the settings for displaying our records. Put the following code into the file:
 
@@ -134,12 +134,13 @@ Mode set to 1 defines that records are sorted by a fixed field, which is defined
 
 
 ![Panel layout](http://blog.qzminski.com/wp-content/uploads/2010/04/panelLayout.jpg)
+
 *Panel layout of the Modules*
 
 
 
 
-##Label
+###Label
 
 The label array is also a child of the list array. It is used to define the record’s label format. You might notice that this is similar to php sprintf() function. To better visualize the analogy, below code works like 
 ```php
@@ -161,7 +162,7 @@ I hope this code is clear to you. It simply gets the title field from the databa
 
 
 
-##Global operations
+###Global operations
 
 …are the functions that can be applied to multiple records same time. A perfect example is the edit multiple function, which we’ll implement into our module:
 
@@ -186,7 +187,7 @@ I hope this code is clear to you. It simply gets the title field from the databa
 
 
 
-#Operations
+###Operations
 
 This array defines which operations will be available for each record. Put the following code:
 
@@ -302,7 +303,7 @@ Okay, now it’s time to create the data container array for tl\_cds table. It w
 
 ##DCA Config
 
-Open the cd_collection/dca/tl_cds.php file and put the following content:
+Open the cd_collection/dca/tl\_cds.php file and put the following content:
 
 ```php
 <?php
@@ -346,7 +347,7 @@ Now, insert the code:
 //...
 ```
 
-The sorting mode is set to 4 – displays the child records of a parent record. However, as I have mentioned before, Contao is not able to list them. Thus, we need to create a new function and assign it to child_record_callback. First parameter in array is name of the class, while the second is name of the function. Usually functions are placed at the end of the file, so I will leave it for later.
+The sorting mode is set to 4 – displays the child records of a parent record. However, as I have mentioned before, Contao is not able to list them. Thus, we need to create a new function and assign it to child\_record\_callback. First parameter in array is name of the class, while the second is name of the function. Usually functions are placed at the end of the file, so I will leave it for later.
 
 From version 2.9.0, Contao provides records sorting in mode 4, so we also need to define a flag and the fields. Flag set to 1 means that the records will be sorted by initial letter ascending (from A to Z).
 
@@ -358,12 +359,12 @@ headerFields array defines which fields of parent table are going to be listed i
 *This data is taken from tl\_cds\_category table*
 
 
-You can see that “My collection of rock cds.” is not on the same height as “description:”. This happens when we display field that is created by rich text editor. By default, rte embeds the text in <p> tags. Contao backend’s css applies a 12px bottom margin to all paragraph elements.
+You can see that “My collection of rock cds.” is not on the same height as “description:”. This happens when we display field that is created by rich text editor. By default, rte embeds the text in \<p\> tags. Contao backend’s css applies a 12px bottom margin to all paragraph elements.
 
 
-##Global operations & operations
+###Global operations & operations
 
-Global operations are the same as tl_cds_category’s. Operations have just one lil difference – in the edit array, href key takes as value ‘act=edit’, and not ‘table=tl_cds’.
+Global operations are the same as tl\_cds\_category’s. Operations have just one lil difference – in the edit array, href key takes as value ‘act=edit’, and not ‘table=tl\_cds’.
 
 
 ```php
@@ -500,7 +501,7 @@ Comment – this is the same field as description field in tl_cds_category.
 
 At this point, we are able to add new records to the database. Would be nice if we could list them, so they are possible to edit/view/delete and search.
 
-At the end of the tl_cds.php file, create a new class that extends Backend and contains the listCds function:
+At the end of the tl\_cds.php file, create a new class that extends Backend and contains the listCds function:
 
 ```php
 class tl_cds extends Backend {

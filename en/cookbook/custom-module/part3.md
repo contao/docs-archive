@@ -175,6 +175,7 @@ We create a table that will holds our cds. Then comes a foreach() loop that goes
 <pre><?php print_r($this->cds); ?></pre>
 ```
 
+Place the new module on the site. 
 Try it out now. It should display something similar to this:
 
 
@@ -187,11 +188,11 @@ Try it out now. It should display something similar to this:
 
 Although our module is working, we should make it more user friendly in the backend. What I mean is changing the e.g. {title_legend} to “CD title”.
 
-Create a new directory “en” in the /languages folder. Then create three files called tl_cds.php, tl_cds_category.php and modules.php.
+Create a new directory “en” in the /languages folder. Then create three files called tl\_cds.php, tl\_cds\_category.php and modules.php.
 
 Notice that the naming convention is the same as in /dca folder.
 
-Okay, open up the languages/en/tl_cds_category.php and put the following code:
+Okay, open up the languages/en/tl\_cds\_category.php and put the following code:
 
 
 

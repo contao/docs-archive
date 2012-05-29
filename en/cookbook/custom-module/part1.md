@@ -135,7 +135,7 @@ Let’s take a look how it affected the backend:
 
 ##Module icon
 
-Now, the most pleasant part of our module development. Let’s put an icon into a html folder (as we defined in the config), so it will be visible in the backend and please the eye 
+Now, the most pleasant part of our module development. Let’s put an icon into the html/ folder (as we defined in the config), so it will be visible in the backend and please the eye 
 
 [Click to download icon.](http://blog.qzminski.com/wp-content/uploads/2010/04/icon.gif)
 
