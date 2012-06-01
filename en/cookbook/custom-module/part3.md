@@ -5,7 +5,7 @@
 
 In the previous part of the tutorial we have created the Data Container Array for our module. Now when we got our backend section ready, we can create a frontend module that will display our collection on the website. We already have got C, U and D  out of CRUD – now it’s time to develop the Read section.
 
-Before we start, I want to remind you that the frontend section of module usually consists of php files in the module’s root directory and .tpl files in the /templates directory.
+Before we start, I want to remind you that the frontend section of module usually consists of php files in the module’s root directory and template-files in the /templates directory.
 
 The TYPOlight isn’t bulid upon a typical MVC framework, as the controller and model are mixed together. So we can say the php files in the /cd_collection are sort of hybrid. They are used to retreive data from the database, parse it and pass to the templates, which are stored in the /templates directory.
 
@@ -20,10 +20,11 @@ Okay, let’s get to work.
 ##File structure
 
 
-First of all, create the two files:
+First of all, create the three files:
 
 /ModuleCdCollection.php (in the module’s root directory)
-/templates/mod_cdcollection.tpl
+/templates/mod_cdcollection.HTML5
+/templates/mod_cdcollection.XHTML
 There is nothing to describe here, so let’s write some code.
 
 
@@ -67,7 +68,7 @@ class ModuleCdCollection extends Module
 ?>
 ```
 
-As you can see we have created the ModuleCdCollection class that extends Module. The Module class provides two unique functions and one unique variable. The protected variable $strTemplate defines a template file that will be used by module. Notice that we do not include file path, as Contao takes module_root/templates as a default one. I hope you suppose that Contao will look for our template file in path templates/mod_cdcollection.tpl.
+As you can see we have created the ModuleCdCollection class that extends Module. The Module class provides two unique functions and one unique variable. The protected variable $strTemplate defines a template file that will be used by module. Notice that we do not include file path, as Contao takes module_root/templates as a default one. I hope you suppose that Contao will look for our template files in path templates/mod_cdcollection.HTML5 & mod_cdcollection.XHTML.
 
 The two unique functions for Module are compile() and generate(). Those could be divided into frontend – compile() and backend – generate(). We actually don’t need the generate function as we want to display collection only in the frontend (Contao can display a module in the backend using DCA).
 
@@ -130,9 +131,9 @@ Finally, we assign all the data to the template.
 
 
 
-##templates/mod_cdcollection.tpl
+##templates/mod_cdcollection.HTML5 / XHTML
 
-Now as we got a controller of our module, it is time to create a view. Open the templates/mod_cdcollection.tpl file and put the following code:
+Now as we got a controller of our module, it is time to create a view. Open the two files in templates (mod_cdcollection.HTML5 & mod_cdcollection.XHTML) and put the following code in both:
 
 
 ```php
