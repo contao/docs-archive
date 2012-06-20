@@ -1,3 +1,15 @@
+
+#Video tutorial (How to be(come) a Contao developer)
+
+##Part 1
+  https://www.youtube.com/watch?v=wJ-H9C8qB0Q
+
+##Part 2
+  https://www.youtube.com/watch?v=41ARSujrVSA
+
+________________________________________________________
+
+
 #Create a custom Contao module – part one  
   
   
