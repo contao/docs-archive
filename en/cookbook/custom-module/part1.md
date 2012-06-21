@@ -7,6 +7,9 @@
 ##Part 2
   https://www.youtube.com/watch?v=41ARSujrVSA
 
+##Part 3  
+  http://www.youtube.com/watch?v=qmLDvyNYnqs
+
 ________________________________________________________
 
 
