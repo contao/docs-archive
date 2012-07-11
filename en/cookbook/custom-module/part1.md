@@ -20,7 +20,7 @@ ________________________________________________________
 #Create a custom Contao module – part one  
   
   
-![Create a custom TYPOlight module CD Collection](/assets/introimg.jpg)
+![Create a custom TYPOlight module CD Collection](assets/introimg.jpg)
 
 In this tutorial we’re going to build an own Contao custom module from scratch. This tutorial is perfect for getting used to basic development in Contao. Our module will be called CD Collection and will be presenting our CD collection divided into categories on the website. 
 
@@ -28,7 +28,7 @@ First of all, you need to know that Contao is divided into backend (administrati
 
 
 
-![Schema](/assets/schema.jpg)
+![Schema](assets/schema.jpg)
 
 
 
@@ -58,7 +58,7 @@ Each frontend module is based upon templates. They are used to separate the code
 Okay, let’s create the above file structure in /system/modules/
 
 
-![File structure](/assets/file_structure1.jpg)
+![File structure](assets/file_structure1.jpg)
 
 
 
@@ -108,7 +108,7 @@ Our relationship between tables is very simple and called parent-child. The chil
 
 
 
-![Table schema](/assets/db_schema.jpg)
+![Table schema](assets/db_schema.jpg)
 
 We don’t need to manually import this file via phpMyAdmin or shell. As you might noticed during Contao installation, it provides a kind of synchronization between database and files. Now, simply go to Contao install tool (www.website.com/typolight/install.php) and update database tables.
 
@@ -148,7 +148,7 @@ If you use the array\_insert function to add a new back end or front end module,
 Let’s take a look how it affected the backend:
 
 
-![Backend view](/assets/backend1.jpg)
+![Backend view](assets/backend1.jpg)
 
 
 
@@ -156,7 +156,7 @@ Let’s take a look how it affected the backend:
 
 Now, the most pleasant part of our module development. Let’s put an icon into the html/ folder (as we defined in the config), so it will be visible in the backend and please the eye 
 
-[Click to download icon.](/assets/icon.gif)
+[Click to download icon.](assets/icon.gif)
 
 
 
