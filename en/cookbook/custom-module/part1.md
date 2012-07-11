@@ -10,13 +10,17 @@
 ##Part 3  
   http://www.youtube.com/watch?v=qmLDvyNYnqs
 
+##Part 4
+ 
+##Part 5
+  http://www.youtube.com/watch?v=93duSGnf1AI
 ________________________________________________________
 
 
 #Create a custom Contao module – part one  
   
   
-![Create a custom TYPOlight module CD Collection](http://blog.qzminski.com/wp-content/uploads/2010/04/introimg.jpg)
+![Create a custom TYPOlight module CD Collection](/assets/introimg.jpg)
 
 In this tutorial we’re going to build an own Contao custom module from scratch. This tutorial is perfect for getting used to basic development in Contao. Our module will be called CD Collection and will be presenting our CD collection divided into categories on the website. 
 
