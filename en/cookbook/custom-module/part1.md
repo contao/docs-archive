@@ -28,7 +28,7 @@ First of all, you need to know that Contao is divided into backend (administrati
 
 
 
-![Schema](http://blog.qzminski.com/wp-content/uploads/2010/04/schema.jpg)
+![Schema](/assets/schema.jpg)
 
 
 
@@ -58,7 +58,7 @@ Each frontend module is based upon templates. They are used to separate the code
 Okay, let’s create the above file structure in /system/modules/
 
 
-![File structure](http://blog.qzminski.com/wp-content/uploads/2010/04/file_structure1.jpg)
+![File structure](/assets/file_structure1.jpg)
 
 
 
@@ -108,7 +108,7 @@ Our relationship between tables is very simple and called parent-child. The chil
 
 
 
-![Table schema](http://blog.qzminski.com/wp-content/uploads/2010/04/db_schema.jpg)
+![Table schema](/assets/db_schema.jpg)
 
 We don’t need to manually import this file via phpMyAdmin or shell. As you might noticed during Contao installation, it provides a kind of synchronization between database and files. Now, simply go to Contao install tool (www.website.com/typolight/install.php) and update database tables.
 
@@ -148,7 +148,7 @@ If you use the array\_insert function to add a new back end or front end module,
 Let’s take a look how it affected the backend:
 
 
-![Backend view](http://blog.qzminski.com/wp-content/uploads/2010/04/backend1.jpg)
+![Backend view](/assets/backend1.jpg)
 
 
 
@@ -156,7 +156,7 @@ Let’s take a look how it affected the backend:
 
 Now, the most pleasant part of our module development. Let’s put an icon into the html/ folder (as we defined in the config), so it will be visible in the backend and please the eye 
 
-[Click to download icon.](http://blog.qzminski.com/wp-content/uploads/2010/04/icon.gif)
+[Click to download icon.](/assets/icon.gif)
 
 
 
@@ -166,7 +166,7 @@ That’s all for now. We have set up the config and database tables, also we’v
 
 **Important: link below needs to be updated!**
 
-[Check out the part two of this tutorial!](http://blog.qzminski.com/2010/09/create-a-custom-contao-module-part-two/)
+[Check out the part two of this tutorial!](/part2.html)
 
 
 
