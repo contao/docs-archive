@@ -1,22 +1,4 @@
 
-#Video tutorial (How to be(come) a Contao developer)
-
-##Part 1
-  https://www.youtube.com/watch?v=wJ-H9C8qB0Q
-
-##Part 2
-  https://www.youtube.com/watch?v=41ARSujrVSA
-
-##Part 3  
-  http://www.youtube.com/watch?v=qmLDvyNYnqs
-
-##Part 4
- 
-##Part 5
-  http://www.youtube.com/watch?v=93duSGnf1AI
-________________________________________________________
-
-
 #Create a custom Contao module – part one  
   
   
@@ -160,11 +142,9 @@ Now, the most pleasant part of our module development. Let’s put an icon into 
 
 
 
-##Coming soon
+##So far, so good
 That’s all for now. We have set up the config and database tables, also we’ve made our module visible in the backend. In the next part of the tutorial I will show you how to create the ‘heart’ of our module – the DCA.
 
-
-**Important: link below needs to be updated!**
 
 [Check out the part two of this tutorial!](part2.md)
 

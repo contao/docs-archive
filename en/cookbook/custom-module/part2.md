@@ -1,7 +1,7 @@
 #Create a custom Contao module – part two
   
   
-![Create a custom TYPOlight module CD Collection](/assets/introimg.jpg)
+![Create a custom TYPOlight module CD Collection](assets/introimg.jpg)
 
 In this part of CD Collection module tutorial, I will show you how to create the most important part of our module – the Data Container Array. At a glance, it is a table configuration array, which tells Contao how to render module’s back end form.
 
@@ -100,7 +100,7 @@ The ‘ctable’ is a shortcut from ‘children table’. In the [previous part]
 SwitchToEdit key, if true, activates the “save and edit” buton when a new record is added:
 
 
-![Save and edit button](/assets/save_and_edit.jpg)
+![Save and edit button](assets/save_and_edit.jpg)
 
 However, this button is available only when the sorting mode is 4.
 
@@ -133,7 +133,7 @@ Mode set to 1 defines that records are sorted by a fixed field, which is defined
 
 
 
-![Panel layout](/assets/panelLayout.jpg)
+![Panel layout](assets/panelLayout.jpg)
 
 *Panel layout of the Modules*
 
@@ -181,7 +181,7 @@ I hope this code is clear to you. It simply gets the title field from the databa
 ```
 
 
-![Global operations](/assets/global_operations.jpg)
+![Global operations](assets/global_operations.jpg)
 
 *The above code will add the "Edit multiple" link*
 
@@ -229,7 +229,7 @@ I think the code is self-explanatory. We have added four basic functions that co
 Note that the edit array takes as href key other value than a typical (one-table) module – and that’s because we use two tables in our cd collection. Thus, when you click the edit button, it will take you to the listing of tl\_cds records!
 
 
-![Operations](/assets/operations.jpg)
+![Operations](assets/operations.jpg)
 
 *Each record can be either edited, copied, removed or simply showed*
 
@@ -256,7 +256,7 @@ A palette is a string of field names which are concatenated with either a semico
 
 The legends (those expandable and collapsable groups/fieldsets) should be always surrounded with braces – just like {title_legend}. See the image for better explanation:
 
-![Palettes](/assets/palettes.jpg)
+![Palettes](assets/palettes.jpg)
 
 
 ##DCA Fields
@@ -354,7 +354,7 @@ From version 2.9.0, Contao provides records sorting in mode 4, so we also need t
 headerFields array defines which fields of parent table are going to be listed in the child module:
 
 
-![Header fields](/assets/header_fields.jpg)
+![Header fields](assets/header_fields.jpg)
 
 *This data is taken from tl\_cds\_category table*
 
@@ -479,12 +479,12 @@ Step by step:
 Title – a normal text input, available for search, with max length of 64 characters. The new thing for you is tl_class. There are 5 input’s classes in Contao that are used for better appearance. All classes can be found [here](http://www.typolight.org/palettes.html).
 
 
-![Inputs without classes](/assets/without_classes.jpg)
+![Inputs without classes](assets/without_classes.jpg)
 
 *Fields without applied classes*
 
 
-![Fields with classes](/assets/with_classes.jpg
+![Fields with classes](assets/with_classes.jpg
 )
 
 *Fields with applied 'w50' class*
@@ -559,5 +559,8 @@ week sales of more than 78,000 and has so far gone to sell over
 
 Each key corresponds to the field in a database table. I hope both the code and array are clear for you.
 
+
+##Next step
+[Check out the part three of this tutorial!](part3.md)
 
 

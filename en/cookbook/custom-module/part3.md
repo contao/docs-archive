@@ -1,7 +1,7 @@
 #Create a custom Contao module – part three
   
   
-![Create a custom TYPOlight module CD Collection](http://blog.qzminski.com/wp-content/uploads/2010/04/introimg.jpg)
+![Create a custom TYPOlight module CD Collection](assets/introimg.jpg)
 
 In the previous part of the tutorial we have created the Data Container Array for our module. Now when we got our backend section ready, we can create a frontend module that will display our collection on the website. We already have got C, U and D  out of CRUD – now it’s time to develop the Read section.
 
@@ -10,7 +10,7 @@ Before we start, I want to remind you that the frontend section of module usuall
 The TYPOlight isn’t bulid upon a typical MVC framework, as the controller and model are mixed together. So we can say the php files in the /cd_collection are sort of hybrid. They are used to retreive data from the database, parse it and pass to the templates, which are stored in the /templates directory.
 
 
-![Controller-template schema](http://blog.qzminski.com/wp-content/uploads/2010/10/controller-template-schema.jpg)
+![Controller-template schema](assets/controller-template-schema.jpg)
 
 In this tutorial we will develop only a simple cds listing. It isn’t going to be divided into Reader and Listing modules (like News). However, after you finish reading this, you should be able to extend our module into those two parts.
 
@@ -180,7 +180,7 @@ Place the new module on the site.
 Try it out now. It should display something similar to this:
 
 
-![Final image](http://blog.qzminski.com/wp-content/uploads/2010/10/final.jpg)
+![Final image](assets/final.jpg)
 
 
 
@@ -226,7 +226,7 @@ $GLOBALS['TL_LANG']['tl_cds_category']['delete'] = array('Delete category', 'Del
 
 I have prepared a screenshot to explain better what line describes what:
 
-![Category labels](http://blog.qzminski.com/wp-content/uploads/2010/10/labels_backend.jpg)
+![Category labels](assets/labels_backend.jpg)
 
 
 Now a little explanation where to get the labels’ variables from.
@@ -334,7 +334,7 @@ Instead of explaining what they affect, I will simply show you on the image:
 
 
 
-![Labels from modules.php](http://blog.qzminski.com/wp-content/uploads/2010/10/labels_modules.jpg)
+![Labels from modules.php](assets/labels_modules.jpg)
 
 
 ##Securing files
@@ -358,7 +358,7 @@ Congratulations! You have just developed your own Contao module! I hope none par
 
 ##Download files
 
-Download all files included in this tutorial – [cd_collection.zip](http://blog.qzminski.com/wp-content/uploads/2010/10/cd_collection.zip) (~ 12kB).
+Download all files included in this tutorial – [cd_collection.zip](assets/cd_collection.zip) (~ 12kB).
 
 
 
