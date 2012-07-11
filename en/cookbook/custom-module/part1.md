@@ -166,7 +166,7 @@ That’s all for now. We have set up the config and database tables, also we’v
 
 **Important: link below needs to be updated!**
 
-[Check out the part two of this tutorial!](/part2.html)
+[Check out the part two of this tutorial!](part2.md)
 
 
 
