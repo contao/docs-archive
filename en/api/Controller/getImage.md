@@ -71,7 +71,7 @@ Resize an image.
 	> system/html/screenshot-b5775910.jpg
 
 	![100x100 crop from the center]
-	(../../../assets/api/Controller/getImage-1.jpg)
+	(https://github.com/contao/docs/raw/2.11/en/assets/api/Controller/getImage-1.jpg)
 
 2. Resize an image from right top corner. The smaller side will be adjusted, the larger will be cropped.
 
