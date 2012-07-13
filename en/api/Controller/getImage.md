@@ -10,7 +10,7 @@ Resize an image.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Parameters ###
@@ -71,7 +71,7 @@ Resize an image.
 	> system/html/screenshot-b5775910.jpg
 
 	![100x100 crop from the center]
-	(https://github.com/contao/docs/raw/2.11/en/assets/api/Controller/getImage-1.jpg)
+	(../../assets/api/Controller/getImage-1.jpg)
 
 2. Resize an image from right top corner. The smaller side will be adjusted, the larger will be cropped.
 
@@ -84,7 +84,7 @@ Resize an image.
 	> system/html/screenshot-66a7cd8c.jpg
 
 	![100x100 crop from top right corner]
-	(https://github.com/contao/docs/raw/2.11/en/assets/api/Controller/getImage-2.jpg)
+	(../../assets/api/Controller/getImage-2.jpg)
 
 ### See Also ###
 
