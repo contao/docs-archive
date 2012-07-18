@@ -1,0 +1,41 @@
+
+Controller :: generateImage
+-------------------------------------------
+
+Generate an image tag and return it as HTML string.
+
+
+### Description ###
+
+**Definition:** `protected function generateImage($src, $alt='', $attributes='')`
+
+**Located in:** *system/libraries/Controller.php*
+
+**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+
+
+### Parameters ###
+
+1. *string* `$src`
+
+	The relative path to image.
+
+2. *string* `$alt`
+
+	The alternative text of the image.
+
+3. *string* `$attributes`
+
+	Additional image attributes.
+
+
+### Examples ###
+
+1. Display an image
+
+	```php
+	<?php
+
+	echo $this->generateImage('tl_files/music_academy/screenshot.jpg', 'Screenshot of Music Academy');
+	```
+
