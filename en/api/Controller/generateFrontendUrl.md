@@ -59,3 +59,11 @@ The URL of the provided page.
 	echo $strUrl;
 	```
 	> news/items/example.html
+
+
+### See Also ###
+
+- [`Controller::convertRelativeUrls`](convertRelativeUrls.md) – Convert relative URLs to absolute
+- [`Controller::redirectToFrontendPage`](redirectToFrontendPage.md) – Redirect to a front end page
+- [`Controller::addStaticUrlTo`](addStaticUrlTo.md) – Add a static URL to script
+- [`Controller::setStaticUrl`](setStaticUrl.md) – Set a static URL

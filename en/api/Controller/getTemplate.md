@@ -53,3 +53,8 @@ A full template path.
 	echo $this->getTemplate('mod_newslist', 'xhtml');
 	```
 	> /Applications/MAMP/htdocs/contao/system/modules/news/templates/mod_newslist.xhtml
+
+
+### See Also ###
+
+- [`Controller::getTemplateGroup`](getTemplateGroup.md) – Get a group of templates

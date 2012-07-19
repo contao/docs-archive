@@ -28,5 +28,10 @@ An array containing IDs of child records of the specified parent record.
 2. *integer* `$intId`
 
 	The numberic ID of parent record.
+	
+
+### See Also ###
+
+- [`Controller::getChildRecords`](getChildRecords.md) – Get the child records
 
 

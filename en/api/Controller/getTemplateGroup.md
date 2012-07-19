@@ -61,3 +61,8 @@ An array of available templates with specified prefix.
 		return $this->getTemplateGroup('news_', $intPid);
 	}
 	```
+
+
+### See Also ###
+
+- [`Controller::getTemplate`](getTemplate.md) – Get a path to the template

@@ -33,3 +33,7 @@ An array of the not-nested pages.
 
 	If set to true, the pages will be sorted by *sorting* field.
 
+### See Also ###
+
+- [`Controller::eliminateNestedPath`](eliminateNestedPaths.md) – Eliminate nested paths in array
+

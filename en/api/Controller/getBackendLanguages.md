@@ -30,3 +30,10 @@ An associative array with available back end languages.
 	print_r($arrLanguages);
 	```
 	> Array ( [en] => English [de] => German - Deutsch )
+
+
+### See Also ###
+
+- [`Controller::getLanguages`](getLanguages.md) – Get all languages
+- [`Controller::getCountries`](getCountries.md) – Get all countries
+- [`Controller::getTimeZones`](getTimeZones.md) – Get all time zones

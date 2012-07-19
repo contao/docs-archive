@@ -25,5 +25,12 @@ The script URL with provided part.
 	The URL part to be appended.
 
 
+### See Also ###
+
+- [`Controller::setStaticUrl`](setStaticUrl.md) – Set a static URL
+- [`Controller::generateFrontendUrl`](generateFrontendUrl.md) – Generate a front end URL
+- [`Controller::convertRelativeUrls`](convertRelativeUrls.md) – Convert relative URLs to absolute
+- [`Controller::redirectToFrontendPage`](redirectToFrontendPage.md) – Redirect to a front end page
+
 
 

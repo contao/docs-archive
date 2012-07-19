@@ -44,3 +44,9 @@ The ```<img>``` HTML tag.
 	echo $this->generateImage('tl_files/music_academy/screenshot.jpg', 'Screenshot of Music Academy');
 	```
 
+### See Also ###
+
+- [`Controller::getImage`](getImage.md) – Get an image
+- [`Controller::resizeImage`](resizeImage.md) – Resize or crop an image
+- [`Controller::addImageToTemplate`](addImageToTemplate.md) – Add an image to the template
+- [`getImage` hook](../../hooks/getImage.md) – triggered when a thumbnail is generated

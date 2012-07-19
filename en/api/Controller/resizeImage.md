@@ -89,5 +89,7 @@ A relative path of the resized image.
 
 ### See Also ###
 
-- [`Controller::getImage`](getImage) – Resize an image
+- [`Controller::getImage`](getImage.md) – Get an image
+- [`Controller::generateImage`](generateImage.md) – Generate an image tag
+- [`Controller::addImageToTemplate`](addImageToTemplate.md) – Add an image to the template
 - [`getImage` hook](../../hooks/getImage.md) – triggered when a thumbnail is generated

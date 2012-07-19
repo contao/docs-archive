@@ -36,3 +36,9 @@ The content element as HTML string.
 	echo $this->getContentElement(123);
 	```
 
+
+### See Also ###
+
+- [`Controller::getArticle`](getArticle.md) – Get an article front end module
+- [`Controller::getForm`](getForm.md) – Get a form
+- [`Controller::getFrontendModule`](getFrontendModule.md) – Get a front end module

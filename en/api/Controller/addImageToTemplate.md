@@ -50,3 +50,9 @@ Add an image to a template.
 	<?php endif; ?>
 	```
 
+### See Also ###
+
+- [`Controller::getImage`](getImage.md) – Get an image
+- [`Controller::resizeImage`](resizeImage.md) – Resize or crop an image
+- [`Controller::generateImage`](generateImage.md) – Generate an image tag
+- [`getImage` hook](../../hooks/getImage.md) – triggered when a thumbnail is generated

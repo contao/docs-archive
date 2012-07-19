@@ -35,4 +35,11 @@ The form as HTML string.
 
 	echo $this->getForm(123);
 	```
+	
+
+### See Also ###
+
+- [`Controller::getArticle`](getArticle.md) – Get an article front end module
+- [`Controller::getContentElement`](getContentElement.md) – Get a content element
+- [`Controller::getFrontendModule`](getFrontendModule.md) – Get a front end module
 

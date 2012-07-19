@@ -38,3 +38,10 @@ An associative array of the available languages. If ```$blnBeOnly``` is set to t
 	print_r($arrLanguages);
 	```
 	> Array ( [om] => (Afan) Oromo [ab] => Abkhazian [aa] => Afar [af] => Afrikaans ... )
+
+
+### See Also ###
+
+- [`Controller::getBackendLanguages`](getBackendLanguages.md) – Get backend languages
+- [`Controller::getCountries`](getCountries.md) – Get all countries
+- [`Controller::getTimeZones`](getTimeZones.md) – Get all time zones

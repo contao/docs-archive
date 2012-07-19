@@ -44,3 +44,10 @@ If the ```$blnReturn``` is set to true, it will return an URL of the given page.
 	$this->redirectToFrontendPage(123);
 	```
 
+
+### See Also ###
+
+- [`Controller::generateFrontendUrl`](generateFrontendUrl.md) – Generate a front end URL
+- [`Controller::convertRelativeUrls`](convertRelativeUrls.md) – Convert relative URLs to absolute
+- [`Controller::addStaticUrlTo`](addStaticUrlTo.md) – Add a static URL to script
+- [`Controller::setStaticUrl`](setStaticUrl.md) – Set a static URL

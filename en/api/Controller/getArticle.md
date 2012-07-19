@@ -54,4 +54,13 @@ The full article as HTML string, or a teaser if ```$blnMultiMode``` is set to tr
 	<?php
 
 	echo $this->getArticle('welcome-to-music-academy', true);
+
+
 	```
+
+
+### See Also ###
+
+- [`Controller::getContentElement`](getContentElement.md) – Get a content element
+- [`Controller::getForm`](getForm.md) – Get a form
+- [`Controller::getFrontendModule`](getFrontendModule.md) – Get a front end module

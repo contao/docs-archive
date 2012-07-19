@@ -40,3 +40,10 @@ The front end module as HTML string.
 	echo $this->getFrontendModule(123, $this->strColumn);
 	```
 	> ```<div class="mod_custom">just a test</div>```
+
+
+### See Also ###
+
+- [`Controller::getArticle`](getArticle.md) – Get an article front end module
+- [`Controller::getContentElement`](getContentElement.md) – Get a content element
+- [`Controller::getForm`](getForm.md) – Get a form

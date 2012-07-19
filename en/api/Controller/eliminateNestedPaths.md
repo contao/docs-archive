@@ -25,3 +25,7 @@ An array of the not-nested paths.
 
 	Array containing the paths.
 
+
+### See Also ###
+
+- [`Controller::eliminateNestedPages`](eliminateNestedPages.md) – Eliminate nested pages in array

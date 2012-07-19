@@ -23,6 +23,8 @@ Create an initial version of a record.
 2. *integer* `$intId`
 
 	The numberic ID of the current record.
+	
 
+### See Also ###
 
-
+- [`Controller::createNewVersion`](createNewVersion.md) – Create a new version of the record

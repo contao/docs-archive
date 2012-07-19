@@ -30,3 +30,10 @@ An associative array of all available countries.
 	print_r($arrCountries);
 	```
 	> Array ( [af] => Afghanistan [ax] => Aland Islands [al] => Albania [dz] => Algeria ... )
+
+
+### See Also ###
+
+- [`Controller::getBackendLanguages`](getBackendLanguages.md) – Get backend languages
+- [`Controller::getLanguages`](getLanguages.md) – Get all languages
+- [`Controller::getTimeZones`](getTimeZones.md) – Get all time zones
