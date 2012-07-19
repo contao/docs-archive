@@ -7,7 +7,7 @@ Get all back end themes and return them as array.
 
 ### Description ###
 
-**Definition:** `protected function getBackendThemes()`
+**Definition:** `public function getBackendThemes()`
 
 **Located in:** *system/libraries/Controller.php*
 
