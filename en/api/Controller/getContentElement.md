@@ -21,6 +21,11 @@ Generate a content element with specified ID and return it as HTML string.
 	The numberic ID of the content element.
 
 
+### Return Values ###
+
+The content element as HTML string.
+
+
 ### Examples ###
 
 1. Display the content element with the ID of 123

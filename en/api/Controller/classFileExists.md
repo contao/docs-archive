@@ -25,6 +25,11 @@ Return true if a class file exists.
 	If set to true, the cache will not be used.
 
 
+### Return Values ###
+
+True if the class file exists, false otherwise.
+
+
 ### Examples ###
 
 1. Check if Comments module is installed

@@ -29,6 +29,11 @@ Generate an URL from a tl_page record depending on the current rewriteURL settin
 	Rewrite the URL to this language (if "add language to URL" is enabled in system config).
 
 
+### Return Values ###
+
+The URL of the provided page.
+
+
 ### Examples ###
 
 1. Generate a regular frontend URL

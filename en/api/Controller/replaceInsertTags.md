@@ -25,6 +25,11 @@ Replace insert tags with their values.
 	If set to true, the values of insert tags will not be cached.
 
 
+### Return Values ###
+
+A string with replaced insert tags with their actual values.
+
+
 ### Examples ###
 
 1. Display a welcome message

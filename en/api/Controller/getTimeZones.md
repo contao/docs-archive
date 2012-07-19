@@ -14,6 +14,11 @@ Get all timezones and return them as array.
 **Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
 
 
+### Return Values ###
+
+An associative multidimensional array containing timezones grouped by sections.
+
+
 ### Examples ###
 
 1. Display a list of all timezones

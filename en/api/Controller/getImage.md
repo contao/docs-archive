@@ -25,7 +25,7 @@ Resize an image.
 
 3. *int* `$height`
 
-	The target height. Enter 0 if you only want to specify the with.
+	The target height. Enter 0 if you only want to specify the width.
 
 4. *string* `$mode`
 
@@ -56,6 +56,11 @@ Resize an image.
 5. *string* `$target`
 
 	Target path to store the resized image. By default it will be stored in system/html/ with a unique file name. You should not change this in most cases.
+
+
+### Return Values ###
+
+A relative path to the resized image.
 
 
 ### Examples ###

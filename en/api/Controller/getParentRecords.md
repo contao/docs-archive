@@ -14,6 +14,11 @@ Return the IDs of all child records of a particular record.
 **Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
 
 
+### Return Values ###
+
+An array containing IDs of child records of the specified parent record.
+
+
 ### Parameters ###
 
 1. *string* `$strTable`

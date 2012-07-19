@@ -33,6 +33,11 @@ Generate an article with specified ID or alias and return it as string.
 	The column which article is generated in.
 
 
+### Return Values ###
+
+The full article as HTML string, or a teaser if ```$blnMultiMode``` is set to true.
+
+
 ### Examples ###
 
 1. Display the article with the ID of 123

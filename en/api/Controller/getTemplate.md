@@ -27,6 +27,11 @@ Find a particular template file and return its path.
 	The template format.
 
 
+### Return Values ###
+
+A full template path.
+
+
 ### Examples ###
 
 1. Get the template file path

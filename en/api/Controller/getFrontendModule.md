@@ -25,6 +25,11 @@ Generate a front end module and return it as HTML string.
 	The column which module is generated in.
 
 
+### Return Values ###
+
+The front end module as HTML string.
+
+
 ### Examples ###
 
 1. Display the front end module with ID of 123

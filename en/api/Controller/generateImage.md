@@ -29,9 +29,14 @@ Generate an image tag and return it as HTML string.
 	Additional image attributes.
 
 
+### Return Values ###
+
+The ```<img>``` HTML tag.
+
+
 ### Examples ###
 
-1. Display an image
+1. Display an image with an alternative text
 
 	```php
 	<?php

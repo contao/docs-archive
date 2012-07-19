@@ -14,6 +14,11 @@ Get the current back end theme.
 **Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
 
 
+### Return Values ###
+
+Name of the current back end theme.
+
+
 ### Examples ###
 
 1. Get the current back end theme

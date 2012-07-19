@@ -22,7 +22,7 @@ Add enclosures to a template.
 
 2. *array* `$arrItem`
 
-	An array containing file paths.
+	An array containing file paths.	
 
 
 ### Examples ###

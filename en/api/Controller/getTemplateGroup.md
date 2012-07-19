@@ -27,6 +27,11 @@ Return all template files of a particular group as array.
 	The theme ID to search in.
 
 
+### Return Values ###
+
+An array of available templates with specified prefix.
+
+
 ### Examples ###
 
 1. Get all templates with *news_* prefix as array

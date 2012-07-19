@@ -19,6 +19,11 @@ Remove old XML files from the root directory.
 1. *boolean* `$blnReturn`
 
 	If set to true, the old files will not be deleted.
+
+
+### Return Values ###
+
+An array containing names of old the feeds.
 	
 
 

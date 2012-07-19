@@ -33,3 +33,6 @@ Return the IDs of all child records of a particular record.
 	An array to be merged with the result.
 
 
+### Return Values ###
+
+An array containing IDs of all child records.

@@ -14,6 +14,11 @@ Get all countries and return them as array.
 **Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
 
 
+### Return Values ###
+
+An associative array of all available countries.
+
+
 ### Examples ###
 
 1. Display a list of all countries

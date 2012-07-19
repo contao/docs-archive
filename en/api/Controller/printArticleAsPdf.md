@@ -13,8 +13,6 @@ Print an article as PDF and stream it to the browser.
 
 **Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
 
-**Throws:** *Exception*
-
 
 ### Parameters ###
 

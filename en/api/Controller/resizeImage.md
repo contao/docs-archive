@@ -54,6 +54,11 @@ Resize or crop an image. **Note:** this will not create a new image, but resize 
 		Crop image from horizontal right and vertical bottom border.
 
 
+### Return Values ###
+
+A relative path of the resized image.
+
+
 ### Examples ###
 
 1. Resize an image with default options. Passing no `$mode`, the crop is **proportional** and therefore the image will be 100px width (larger side) but not 100px height.

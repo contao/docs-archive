@@ -14,6 +14,11 @@ Return an array of supported back end languages.
 **Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
 
 
+### Return Values ###
+
+An associative array with available back end languages.
+
+
 ### Examples ###
 
 1. Display a list of available back end languages

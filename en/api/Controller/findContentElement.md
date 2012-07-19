@@ -19,6 +19,11 @@ Find a content element in the TL_CTE array and return its value.
 1. *string* `$strName`
 
 	Name of the searched content element.
+
+
+### Return Values ###
+
+The class name of the content element, or an empty string if not found.
 	
 
 ### Examples ###

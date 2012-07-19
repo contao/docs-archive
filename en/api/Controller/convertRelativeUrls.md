@@ -29,6 +29,11 @@ Convert relative URLs to absolute URLs in the provided string.
 	If set to true, it will parse *href* attributes and omit the *src* attributes.
 
 
+### Return Values ###
+
+A string with converted relative to absolute URLs.
+
+
 ### Examples ###
 
 1. Convert relative URLs to absolute

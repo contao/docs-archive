@@ -24,3 +24,8 @@ Return a "checked" attribute if the current option is checked.
 
 	The value to compare.
 
+
+### Return Values ###
+
+The "checked" HTML attribute if the params are matched, or empty string otherwise.
+

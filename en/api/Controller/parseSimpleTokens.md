@@ -13,6 +13,8 @@ Parse simple tokens that can be used to e.g. personalize newsletters.
 
 **Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
 
+**Throws:** *Exception*
+
 
 ### Parameters ###
 
@@ -23,6 +25,11 @@ Parse simple tokens that can be used to e.g. personalize newsletters.
 2. *array* `$arrData`
 
 	The associative array with replacement values.
+
+
+### Return Values ###
+
+A string with replaced tokens with their actual values.
 
 
 ### Examples ###

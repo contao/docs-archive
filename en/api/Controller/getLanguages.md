@@ -22,6 +22,11 @@ Return all languages as array.
 	Return only the languages of back end.
 
 
+### Return Values ###
+
+An associative array of the available languages. If ```$blnBeOnly``` is set to true, it will return an associative array of the available back end languages.
+
+
 ### Examples ###
 
 1. Display a list of all available languages

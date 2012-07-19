@@ -21,6 +21,11 @@ Restore basic entities that were escaped by tinyMCE editor.
 	A string to be parsed.
 
 
+### Return Values ###
+
+A string with restored basic entities.
+
+
 ### Examples ###
 
 1. Display a text with restored entities

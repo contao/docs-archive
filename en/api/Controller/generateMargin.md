@@ -25,6 +25,11 @@ Take an array of four margin values and the current unit and compile the margin 
 	The CSS property name.
 
 
+### Return Values ###
+
+The CSS definition.
+
+
 ### Examples ###
 
 1. Generate a 20px margin CSS definition

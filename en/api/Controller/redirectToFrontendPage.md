@@ -29,6 +29,11 @@ Redirect to a front end page.
 	If set to true, the URL will be returned and redirect will be made.
 
 
+### Return Values ###
+
+If the ```$blnReturn``` is set to true, it will return an URL of the given page. Otherwise it will perform a redirect.
+
+
 ### Examples ###
 
 1. Redirect to the page with ID of 123

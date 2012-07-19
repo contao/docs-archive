@@ -14,6 +14,11 @@ Get all back end themes and return them as array.
 **Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
 
 
+### Return Values ###
+
+An associative array with available back end themes.
+
+
 ### Examples ###
 
 1. Display a list of back end themes

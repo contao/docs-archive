@@ -13,3 +13,8 @@ Return the current languages to be used with the TinyMCE spellchecker.
 
 **Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
 
+
+### Return Values ###
+
+A string for tinyMCE configuration containing available languages.
+

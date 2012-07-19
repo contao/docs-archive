@@ -1,13 +1,13 @@
 
-Controller :: optionChecked
+Controller :: optionSelected
 -------------------------------------------
 
-Return a "checked" attribute if the current option is checked.
+Return a "selected" attribute if the current option is selected.
 
 
 ### Description ###
 
-**Definition:** `protected function optionChecked($strName, $varValue)`
+**Definition:** `protected function optionSelected($strName, $varValue)`
 
 **Located in:** *system/libraries/Controller.php*
 
@@ -23,4 +23,9 @@ Return a "checked" attribute if the current option is checked.
 1. *mixed* `$varValue`
 
 	The value to compare.
+
+
+### Return Values ###
+
+The "selected" HTML attribute if the params are matched, or empty string otherwise.
 

@@ -14,6 +14,11 @@ Return all page sections as array.
 **Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
 
 
+### Return Values ###
+
+An array of all available page sections.
+
+
 ### Examples ###
 
 1. Display all sections of the page

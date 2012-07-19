@@ -37,6 +37,11 @@ Convert a back end DCA so it can be used with the widget class.
 	The name of the table (used in back end only).
 
 
+### Return Values ###
+
+An associative array that is used to generate a widget object.
+
+
 ### Examples ###
 
 1. Generate the e-mail input field
