@@ -20,7 +20,7 @@ Return true if a class file exists.
 
 	The class name.
 
-1. *boolean* `$blnNoCache`
+2. *boolean* `$blnNoCache`
 
 	If set to true, the cache will not be used.
 
