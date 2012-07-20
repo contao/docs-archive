@@ -29,6 +29,11 @@ Generate an URL from a tl_page record depending on the current rewriteURL settin
 	Rewrite the URL to this language (if "add language to URL" is enabled in system config).
 
 
+### Return Values ###
+
+The URL of the provided page.
+
+
 ### Examples ###
 
 1. Generate a regular frontend URL
@@ -54,3 +59,11 @@ Generate an URL from a tl_page record depending on the current rewriteURL settin
 	echo $strUrl;
 	```
 	> news/items/example.html
+
+
+### See Also ###
+
+- [`Controller::convertRelativeUrls`](convertRelativeUrls.md) – Convert relative URLs to absolute
+- [`Controller::redirectToFrontendPage`](redirectToFrontendPage.md) – Redirect to a front end page
+- [`Controller::addStaticUrlTo`](addStaticUrlTo.md) – Add a static URL to script
+- [`Controller::setStaticUrl`](setStaticUrl.md) – Set a static URL
