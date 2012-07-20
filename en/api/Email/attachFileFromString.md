@@ -46,4 +46,4 @@ Attach a file from a string.
 
 ### See Also ###
 
-- [`Controller::attachFile`](attachFile.md) – Attach the file
+- [`Email::attachFile`](attachFile.md) – Attach the file

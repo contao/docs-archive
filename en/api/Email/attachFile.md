@@ -35,8 +35,9 @@ Attach a file.
 
 	$objEmail = new Email();
 	$objEmail->attachFile(TL_ROOT . '/tl_files/files/example.txt');
+	```
 	
 
 ### See Also ###
 
-- [`Controller::attachFileFromString`](attachFileFromString.md) – Attach the file from a string
+- [`Email::attachFileFromString`](attachFileFromString.md) – Attach the file from a string

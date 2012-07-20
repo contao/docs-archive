@@ -1,5 +1,5 @@
 
-Date :: getRegexp
+Date :: getRegexpCallback
 -------------------------------------------
 
 Return a regular expression to check a date.
@@ -7,7 +7,7 @@ Return a regular expression to check a date.
 
 ### Description ###
 
-**Definition:** `public function getRegexp($strFormat=false)`
+**Definition:** `protected function getRegexpCallback($matches)`
 
 **Located in:** *system/libraries/Date*
 
@@ -16,12 +16,12 @@ Return a regular expression to check a date.
 
 ### Parameters ###
 
-1. *string* `$strFormat`
+1. *array* `$matches`
 
-	The optional date format. If none provided, the global format will be used - ```$GLOBALS['TL_CONFIG']['dateFormat']```.
+	The array with the key to find.
 
 
 ### Return Values ###
 
-A date converted to regular expression.
+A requested regular expression, or the first provided match if Regexp is not found.
 

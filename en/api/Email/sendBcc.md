@@ -31,4 +31,4 @@ Get BCC e-mail addresses from an array, string or unlimited number of arguments.
 
 ### See Also ###
 
-- [`Controller::sendCc`](sendCc.md) – Send the recipients of carbon copy
+- [`Email::sendCc`](sendCc.md) – Send the recipients of carbon copy

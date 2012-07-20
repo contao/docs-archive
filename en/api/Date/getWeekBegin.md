@@ -25,3 +25,7 @@ Return the begin of the week as timestamp.
 
 The begin of the week as timestamp.
 
+
+### See Also ###
+
+- [`Date::getWeekEnd`](getWeekEnd.md) – Return the end of the week as timestamp
