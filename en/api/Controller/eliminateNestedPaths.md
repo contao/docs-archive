@@ -14,16 +14,16 @@ Take an array of paths and eliminate nested paths.
 **Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
-### Return Values ###
-
-An array of the not-nested paths.
-
-
 ### Parameters ###
 
 1. *array* `$arrPaths`
 
 	Array containing the paths.
+
+
+### Return Values ###
+
+An array of the not-nested paths.
 
 
 ### See Also ###

@@ -14,11 +14,6 @@ Take an array of paths and eliminate nested paths.
 **Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
-### Return Values ###
-
-An array of the not-nested pages.
-
-
 ### Parameters ###
 
 1. *array* `$arrPages`
@@ -32,6 +27,12 @@ An array of the not-nested pages.
 3. *boolean* `$blnSorting`
 
 	If set to true, the pages will be sorted by *sorting* field.
+
+
+### Return Values ###
+
+An array of the not-nested pages.
+
 
 ### See Also ###
 

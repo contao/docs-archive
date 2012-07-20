@@ -14,15 +14,16 @@ Add a static URL to a script and return it.
 **Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
-### Return Values ###
-
-The script URL with provided part.
-
 ### Parameters ###
 
 1. *string* `$script`
 
 	The URL part to be appended.
+
+
+### Return Values ###
+
+The script URL with provided part.
 
 
 ### See Also ###

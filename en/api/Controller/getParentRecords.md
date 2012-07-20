@@ -14,11 +14,6 @@ Return the IDs of all child records of a particular record.
 **Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
-### Return Values ###
-
-An array containing IDs of child records of the specified parent record.
-
-
 ### Parameters ###
 
 1. *string* `$strTable`
@@ -28,6 +23,11 @@ An array containing IDs of child records of the specified parent record.
 2. *integer* `$intId`
 
 	The numberic ID of parent record.
+
+
+### Return Values ###
+
+An array containing IDs of child records of the specified parent record.
 
 
 ### See Also ###
