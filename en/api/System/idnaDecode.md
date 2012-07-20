@@ -26,3 +26,9 @@ Decode an internationalized domain name.
 The domain name decoded by idna.
 
 
+### See Also ###
+
+- [`System::idnaEncode`](idnaEncode.md) – Encode an internationalized domain name
+- [`System::idnaEncodeEmail`](idnaEncodeEmail.md) – Encode an e-mail address
+- [`System::idnaEncodeUrl`](idnaEncodeUrl.md) – Encode an URL
+

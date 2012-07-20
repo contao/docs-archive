@@ -24,3 +24,10 @@ Encode an e-mail address.
 ### Return Values ###
 
 The e-mail address encoded by idna.
+
+
+### See Also ###
+
+- [`System::idnaDecode`](idnaDecode.md) – Decode an internationalized domain name
+- [`System::idnaEncode`](idnaEncode.md) – Encode an internationalized domain name
+- [`System::idnaEncodeUrl`](idnaEncodeUrl.md) – Encode an URL
