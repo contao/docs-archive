@@ -1,12 +1,12 @@
 
-Controller :: getImage
+Controller :: resizeImage
 ----------------------
 
-Resize an image.
+Resize or crop an image. **Note:** this will not create a new image, but resize an existing one!
 
 ### Description ###
 
-**Definition:** `protected function getImage($image, $width, $height, $mode='', $target=null)`
+**Definition:** `protected function resizeImage($image, $width, $height, $mode='')`
 
 **Located in:** *system/libraries/Controller.php*
 
@@ -25,7 +25,7 @@ Resize an image.
 
 3. *int* `$height`
 
-	The target height. Enter 0 if you only want to specify the width.
+	The target height. Enter 0 if you only want to specify the with.
 
 4. *string* `$mode`
 
@@ -53,14 +53,10 @@ Resize an image.
 	- **right_bottom** – 
 		Crop image from horizontal right and vertical bottom border.
 
-5. *string* `$target`
-
-	Target path to store the resized image. By default it will be stored in system/html/ with a unique file name. You should not change this in most cases.
-
 
 ### Return Values ###
 
-A relative path to the resized image.
+A relative path of the resized image.
 
 
 ### Examples ###
@@ -73,7 +69,7 @@ A relative path to the resized image.
 	$strImage = $this->getImage('tl_files/music_academy/screenshot.jpg', 100, 100);
 	echo $strImage;
 	```
-	> system/html/screenshot-b5775910.jpg
+	> tl_files/music_academy/screenshot.jpg
 
 	![100x100 crop from the center]
 	(../../assets/api/Controller/getImage-1.jpg)
@@ -86,14 +82,14 @@ A relative path to the resized image.
 	$strImage = $this->getImage('tl_files/music_academy/screenshot.jpg', 100, 100, 'right_top');
 	echo $strImage;
 	```
-	> system/html/screenshot-66a7cd8c.jpg
+	> tl_files/music_academy/screenshot.jpg
 
 	![100x100 crop from top right corner]
 	(../../assets/api/Controller/getImage-2.jpg)
 
 ### See Also ###
 
-- [`Controller::resizeImage`](resizeImage.md) – Resize or crop an image
+- [`Controller::getImage`](getImage.md) – Get an image
 - [`Controller::generateImage`](generateImage.md) – Generate an image tag
 - [`Controller::addImageToTemplate`](addImageToTemplate.md) – Add an image to the template
 - [`getImage` hook](../../hooks/getImage.md) – triggered when a thumbnail is generated
