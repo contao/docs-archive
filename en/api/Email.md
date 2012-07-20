@@ -11,7 +11,7 @@ Provide methods to send e-mails.
 
 **Located in:** *system/libraries/Email.php*
 
-**Class hierarchy:** *[System](System.php) > Email*
+**Class hierarchy:** *[System](System.md) > Email*
 
 
 ### Methods ###

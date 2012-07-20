@@ -9,39 +9,39 @@ Return an object property.
 
 **Definition:** `public function __get($strKey)`
 
-**Located in:** *system/libraries/Date*
+**Located in:** *system/libraries/Date.php*
 
-**Class hierarchy:** *[System](../System.php) > [Date](../Date)*
+**Class hierarchy:** *[System](../System.md) > [Date](../Date.md)*
 
 
 ### Parameters ###
 
 1. *string* `$strKey`
 
-	Name of the property to be returned. Return null, if property is not found.	
+	Name of the property to be returned. Return null, if property is not found.
 	- **tstamp**, **timestamp** -
 		The generated timestamp.
-	- **date** – 
+	- **date** –
 		The generated date.
-	- **time** – 
+	- **time** –
 		The generated time.
-	- **datim** – 
+	- **datim** –
 		The generated date and time.
-	- **dayBegin** – 
+	- **dayBegin** –
 		The day when the range begins.
-	- **dayEnd** – 
+	- **dayEnd** –
 		The day when the range ends.
-	- **monthBegin** – 
+	- **monthBegin** –
 		The month when the range begins.
-	- **monthEnd** – 
+	- **monthEnd** –
 		The month when the range ends.
-	- **yearBegin** – 
+	- **yearBegin** –
 		The year when the range begins.
-	- **yearEnd** – 
+	- **yearEnd** –
 		The year when the range ends.
-	- **format** – 
+	- **format** –
 		The current date format.
-		
+
 
 ### Return Values ###
 

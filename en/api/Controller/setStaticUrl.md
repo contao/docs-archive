@@ -11,7 +11,7 @@ Set a static URL constant and replace the protocol when requested via SSL.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Parameters ###

@@ -11,7 +11,7 @@ Return true if a class file exists.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Parameters ###

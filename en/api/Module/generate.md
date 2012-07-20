@@ -11,7 +11,7 @@ Parse the template
 
 **Located in:** *system/modules/frontend/Module.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php) > [Frontend](../Frontend.php) > [Module](../Module.md)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md) > [Frontend](../Frontend.md) > [Module](../Module.md)*
 
 
 ### Examples ###

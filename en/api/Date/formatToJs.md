@@ -9,9 +9,9 @@ Convert a PHP format string into a JavaScript format string.
 
 **Definition:** `public static function formatToJs($strFormat)`
 
-**Located in:** *system/libraries/Date*
+**Located in:** *system/libraries/Date.php*
 
-**Class hierarchy:** *[System](../System.php) > [Date](../Date)*
+**Class hierarchy:** *[System](../System.md) > [Date](../Date.md)*
 
 **Throws:** *Exception*
 

@@ -11,7 +11,7 @@ Convert relative URLs to absolute URLs in the provided string.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Parameters ###

@@ -9,9 +9,9 @@ Return a regular expression to check a date.
 
 **Definition:** `public function getRegexp($strFormat=false)`
 
-**Located in:** *system/libraries/Date*
+**Located in:** *system/libraries/Date.php*
 
-**Class hierarchy:** *[System](../System.php) > [Date](../Date)*
+**Class hierarchy:** *[System](../System.md) > [Date](../Date.md)*
 
 
 ### Parameters ###

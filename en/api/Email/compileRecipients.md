@@ -9,9 +9,9 @@ Compile e-mail addresses from an array of (different) arguments.
 
 **Definition:** `protected function compileRecipients($arrRecipients)`
 
-**Located in:** *system/libraries/Email*
+**Located in:** *system/libraries/Email.php*
 
-**Class hierarchy:** *[System](../System.php) > [Email](../Email)*
+**Class hierarchy:** *[System](../System.md) > [Email](../Email.md)*
 
 
 ### Parameters ###

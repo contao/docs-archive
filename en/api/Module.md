@@ -11,7 +11,7 @@ Parent class for front end modules.
 
 **Located in:** *system/modules/frontend/Module.php*
 
-**Class hierarchy:** *[System](System.php) > [Controller](Controller.php) > [Frontend](Frontend.php) > Module*
+**Class hierarchy:** *[System](System.md) > [Controller](Controller.md) > [Frontend](Frontend.md) > Module*
 
 
 ### Methods ###

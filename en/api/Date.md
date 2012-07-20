@@ -7,13 +7,13 @@ Provide methods to handle different date formats.
 
 **Located in:** *system/libraries/Date.php*
 
-**Class hierarchy:** *[System](System.php) > Date*
+**Class hierarchy:** *[System](System.md) > Date*
 
 
 
 ### Methods ###
 
-- *public* [`__construct`](Date/__construct.md) – Create object properties and date ranges  
+- *public* [`__construct`](Date/__construct.md) – Create object properties and date ranges
 - *public* [`__get`](Date/__get.md) – Return an object property
 - *public* [`getWeekBegin`](Date/getWeekBegin.md) – Return the begin of the week as timestamp
 - *public* [`getWeekEnd`](Date/getWeekEnd.md) – Return the end of the week as timestamp

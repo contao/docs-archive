@@ -11,7 +11,7 @@ Return the IDs of all child records of a particular record.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Return Values ###
@@ -28,7 +28,7 @@ An array containing IDs of child records of the specified parent record.
 2. *integer* `$intId`
 
 	The numberic ID of parent record.
-	
+
 
 ### See Also ###
 

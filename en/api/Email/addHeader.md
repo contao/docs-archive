@@ -9,9 +9,9 @@ Add a custom text header.
 
 **Definition:** `public function addHeader($strKey, $strValue)`
 
-**Located in:** *system/libraries/Email*
+**Located in:** *system/libraries/Email.php*
 
-**Class hierarchy:** *[System](../System.php) > [Email](../Email)*
+**Class hierarchy:** *[System](../System.md) > [Email](../Email.md)*
 
 
 ### Parameters ###
@@ -19,7 +19,7 @@ Add a custom text header.
 1. *string* `$strKey`
 
 	Name of the header.
-		
+
 
 2. *string* `$strValue`
 

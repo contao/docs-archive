@@ -11,7 +11,7 @@ Find a content element in the TL_CTE array and return its value.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Parameters ###
@@ -24,7 +24,7 @@ Find a content element in the TL_CTE array and return its value.
 ### Return Values ###
 
 The class name of the content element, or an empty string if not found.
-	
+
 
 ### Examples ###
 

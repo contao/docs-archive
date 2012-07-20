@@ -11,7 +11,7 @@ Generate a form with specified ID or alias and return it as HTML string.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Parameters ###
@@ -35,7 +35,7 @@ The form as HTML string.
 
 	echo $this->getForm(123);
 	```
-	
+
 
 ### See Also ###
 

@@ -9,9 +9,9 @@ Set an object property.
 
 **Definition:** `public function __set($strKey, $varValue)`
 
-**Located in:** *system/libraries/Email*
+**Located in:** *system/libraries/Email.php*
 
-**Class hierarchy:** *[System](../System.php) > [Email](../Email)*
+**Class hierarchy:** *[System](../System.md) > [Email](../Email.md)*
 
 
 ### Parameters ###
@@ -21,25 +21,25 @@ Set an object property.
 	Name of the property to be returned.
 	- **subject** -
 		The e-mail subject.
-	- **text** – 
+	- **text** –
 		The e-mail plain text content.
-	- **html** – 
+	- **html** –
 		The e-mail HTML content.
-	- **from** – 
+	- **from** –
 		The recipient's e-mail address.
-	- **fromName** – 
+	- **fromName** –
 		The recipient's name.
-	- **priority** – 
+	- **priority** –
 		The e-mail priority (1 - highest, 5 - lowest).
-	- **charset** – 
+	- **charset** –
 		The e-mail character set.
-	- **imageDir** – 
+	- **imageDir** –
 		The e-mail image directory.
-	- **embedImages** – 
+	- **embedImages** –
 		Whether to embed images or not.
-	- **logFile** – 
+	- **logFile** –
 		The file name where e-mail logs are stored.
-		
+
 
 2. *mixed* `$varValue`
 

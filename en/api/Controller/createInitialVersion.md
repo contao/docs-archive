@@ -11,7 +11,7 @@ Create an initial version of a record.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Parameters ###
@@ -23,7 +23,7 @@ Create an initial version of a record.
 2. *integer* `$intId`
 
 	The numberic ID of the current record.
-	
+
 
 ### See Also ###
 

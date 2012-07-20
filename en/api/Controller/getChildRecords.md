@@ -11,7 +11,7 @@ Return the IDs of all child records of a particular record.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Parameters ###
@@ -36,7 +36,7 @@ Return the IDs of all child records of a particular record.
 ### Return Values ###
 
 An array containing IDs of all child records.
-	
+
 
 ### See Also ###
 

@@ -9,9 +9,9 @@ Get e-mail addresses from an array, string or unlimited number of arguments and 
 
 **Definition:** `public function sendTo()`
 
-**Located in:** *system/libraries/Email*
+**Located in:** *system/libraries/Email.php*
 
-**Class hierarchy:** *[System](../System.php) > [Email](../Email)*
+**Class hierarchy:** *[System](../System.md) > [Email](../Email.md)*
 
 
 ### Parameters ###
@@ -21,11 +21,11 @@ Get e-mail addresses from an array, string or unlimited number of arguments and 
 	Recipients that will receive an e-mail.
 	- **an e-mail address** -
 		admin@example.com
-	- **a friendly e-mail address** – 
+	- **a friendly e-mail address** –
 		Admin <admin@example.com>
-	- **a set of e-mail addresses** – 
+	- **a set of e-mail addresses** –
 		admin@example.com, User <user@example.com>
-	- **an array e-mail addresses** – 
+	- **an array e-mail addresses** –
 		Array ( [0] => admin@example.com, [1] => User <user@example.com> )
 
 

@@ -9,10 +9,10 @@ Return true if there are failures.
 
 **Definition:** `public function hasFailures()`
 
-**Located in:** *system/libraries/Email*
+**Located in:** *system/libraries/Email.php*
 
-**Class hierarchy:** *[System](../System.php) > [Email](../Email)*
-		
+**Class hierarchy:** *[System](../System.md) > [Email](../Email.md)*
+
 
 ### Return Values ###
 

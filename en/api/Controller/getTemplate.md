@@ -11,7 +11,7 @@ Find a particular template file and return its path.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 **Throws:** *Exception*
 
@@ -43,7 +43,7 @@ A full template path.
 	echo $this->getTemplate('mod_newslist');
 	```
 	> /Applications/MAMP/htdocs/contao/system/modules/news/templates/mod_newslist.html5
-	
+
 2. Get the XHTML template file path
 
 	```php

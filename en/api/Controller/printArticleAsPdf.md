@@ -11,7 +11,7 @@ Print an article as PDF and stream it to the browser.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Parameters ###
@@ -31,4 +31,4 @@ Print an article as PDF and stream it to the browser.
 	$objArticle = $this->Database->prepare("SELECT * FROM tl_article WHERE id=?")->limit(1)->execute(123);
 	$this->printArticleAsPdf($objArticle);
 	```
-	
+

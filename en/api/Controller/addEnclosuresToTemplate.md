@@ -11,7 +11,7 @@ Add enclosures to a template.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](../System.php) > [Controller](../Controller.php)*
+**Class hierarchy:** *[System](../System.md) > [Controller](../Controller.md)*
 
 
 ### Parameters ###
@@ -22,7 +22,7 @@ Add enclosures to a template.
 
 2. *array* `$arrItem`
 
-	An array containing file paths.	
+	An array containing file paths.
 
 
 ### Examples ###

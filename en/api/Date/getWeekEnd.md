@@ -9,9 +9,9 @@ Return the end of the week as timestamp.
 
 **Definition:** `public function getWeekEnd($intStartDay=0)`
 
-**Located in:** *system/libraries/Date*
+**Located in:** *system/libraries/Date.php*
 
-**Class hierarchy:** *[System](../System.php) > [Date](../Date)*
+**Class hierarchy:** *[System](../System.md) > [Date](../Date.md)*
 
 
 ### Parameters ###
@@ -19,7 +19,7 @@ Return the end of the week as timestamp.
 1. *integer* `$intStartDay`
 
 	The numberic representation of the start day.
-		
+
 
 ### Return Values ###
 

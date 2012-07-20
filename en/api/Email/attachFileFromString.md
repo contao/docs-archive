@@ -9,9 +9,9 @@ Attach a file from a string.
 
 **Definition:** `public function attachFileFromString($strContent, $strFilename, $strMime='application/octet-stream')`
 
-**Located in:** *system/libraries/Email*
+**Located in:** *system/libraries/Email.php*
 
-**Class hierarchy:** *[System](../System.php) > [Email](../Email)*
+**Class hierarchy:** *[System](../System.md) > [Email](../Email.md)*
 
 
 ### Parameters ###
@@ -19,12 +19,12 @@ Attach a file from a string.
 1. *string* `$strContent`
 
 	The file content.
-		
+
 
 2. *string* `$strFilename`
 
 	The name of the file.
-		
+
 
 3. *string* `$strMime`
 
@@ -42,7 +42,7 @@ Attach a file from a string.
 	$objEmail = new Email();
 	$objEmail->attachFileFromString($strFile, 'example.txt');
 	```
-	
+
 
 ### See Also ###
 

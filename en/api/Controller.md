@@ -11,7 +11,7 @@ Provide methods to manage controllers.
 
 **Located in:** *system/libraries/Controller.php*
 
-**Class hierarchy:** *[System](System.php) > Controller*
+**Class hierarchy:** *[System](System.md) > Controller*
 
 
 ### Methods ###

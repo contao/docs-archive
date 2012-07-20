@@ -9,9 +9,9 @@ Return an input format string for a particular date (e.g. YYYY-MM-DD).
 
 **Definition:** `public function getInputFormat($strFormat=false)`
 
-**Located in:** *system/libraries/Date*
+**Located in:** *system/libraries/Date.php*
 
-**Class hierarchy:** *[System](../System.php) > [Date](../Date)*
+**Class hierarchy:** *[System](../System.md) > [Date](../Date.md)*
 
 
 ### Parameters ###

@@ -9,9 +9,9 @@ Attach a file.
 
 **Definition:** `public function attachFile($strFile, $strMime='application/octet-stream')`
 
-**Located in:** *system/libraries/Email*
+**Located in:** *system/libraries/Email.php*
 
-**Class hierarchy:** *[System](../System.php) > [Email](../Email)*
+**Class hierarchy:** *[System](../System.md) > [Email](../Email.md)*
 
 
 ### Parameters ###
@@ -19,7 +19,7 @@ Attach a file.
 1. *string* `$strFile`
 
 	A full path to the file.
-		
+
 
 2. *string* `$strMime`
 
@@ -36,7 +36,7 @@ Attach a file.
 	$objEmail = new Email();
 	$objEmail->attachFile(TL_ROOT . '/tl_files/files/example.txt');
 	```
-	
+
 
 ### See Also ###
 

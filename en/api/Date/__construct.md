@@ -9,9 +9,9 @@ Create object properties and date ranges.
 
 **Definition:** `public function __construct($intTstamp=false, $strFormat=false)`
 
-**Located in:** *system/libraries/Date*
+**Located in:** *system/libraries/Date.php*
 
-**Class hierarchy:** *[System](../System.php) > [Date](../Date)*
+**Class hierarchy:** *[System](../System.md) > [Date](../Date.md)*
 
 
 ### Parameters ###
@@ -22,7 +22,7 @@ Create object properties and date ranges.
 
 2. *string* `$strFormat`
 
-	The format according to PHP's [date()](http://php.net/manual/en/function.date.php) function.	
+	The format according to PHP's [date()](http://php.net/manual/en/function.date.php) function.
 
 
 ### Examples ###
