@@ -44,7 +44,7 @@ http://www.contao-docs.org/docs/Contao/html/class_database.html
 [Video bei YouTube](http://www.youtube.com/watch?v=93duSGnf1AI)
 
 
-## Teil VI - Framework - Class Database
+## Teil VI - Framework - Class Environment
 
 In dieser Folge geht es um das Framework, konkret um die Klasse Environment.  
 http://www.contao-docs.org/docs/Contao/html/class_environment.html
@@ -52,7 +52,7 @@ http://www.contao-docs.org/docs/Contao/html/class_environment.html
 [Video bei YouTube](http://www.youtube.com/watch?v=A4twxFrjD4A)
 
 
-## Teil VII - Framework - Class Database
+## Teil VII - Framework - Class Config
 
 In dieser Folge geht es um das Framework, konkret um die Klasse Config.  
 http://www.contao-docs.org/docs/Contao/html/class_config.html
@@ -60,10 +60,9 @@ http://www.contao-docs.org/docs/Contao/html/class_config.html
 [Video bei YouTube](http://www.youtube.com/watch?v=GxxZHx_426k)
 
 
-## Teil VIII - Framework - Class Database
+## Teil VIII - Framework - Sprachvariable / Inserttags
 
 In dieser Folge geht es um die Sprachvariablen bzw. Inserttags von Contao.  
-http://www.contao.org/de/insert-tags.html
 
 [Video bei YouTube](http://www.youtube.com/watch?v=Xb0kIfb3z4Q)
 
