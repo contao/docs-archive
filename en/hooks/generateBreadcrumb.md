@@ -1,22 +1,23 @@
 generateBreadcrumb
-----------------
+------------------
 
-The `generateBreadcrumb` hook is used to manipulate the breadcrumb.
+The `generateBreadcrumb` hook is used to manipulate the breadcrumb navigation (from breadcrumb frontend module).
 
 
 ### Parameters ###
 
-1. *array* `$items`
+1. *array* `$arrItems`
 
-	An array of items.
+	The breadcrumb navigation items.
 
-2. *Object* `$objModule`
+2. *object* `$objModule`
 
-	Object of the type ModuleBreadcrumb.
+	The frontend module (ModuleBreadcrumb) instance.
 
 
 ### Return Values ###
-*array* $items
+
+Modify the list of breadcrumb items and return the items array.
 
 
 ### Example ###
@@ -24,21 +25,21 @@ The `generateBreadcrumb` hook is used to manipulate the breadcrumb.
 ```php
 <?php
 
-// code example here
-// HOOK: add custom logic
-if (isset($GLOBALS['TL_HOOKS']['generateBreadcrumb']) && is_array($GLOBALS['TL_HOOKS']['generateBreadcrumb']))
+// config.php
+$GLOBALS['TL_HOOKS']['generateBreadcrumb'][] = array('MyClass', 'myGenerateBreadcrumb');
+
+// MyClass.php
+public function myGenerateBreadcrumb($arrItems, $objModule)
 {
-	foreach ($GLOBALS['TL_HOOKS']['generateBreadcrumb'] as $callback)
-	{
-		$this->import($callback[0]);
-		$items = $this->$callback[0]->$callback[1]($items, $this);
-	}
+	// Remove the first breadcrumb item, e.g. the "home" page.
+	unset($arrItems[0]);
+
+	return $arrItems;
 }
-
-
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [getUserNavigation](getUserNavigation.md) – modify the backend navigation
+

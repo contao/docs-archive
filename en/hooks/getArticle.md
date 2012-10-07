@@ -1,17 +1,14 @@
 getArticle
-----------------
+----------
 
-The `getArticle` hook is used to generate additional articles.
+The `getArticle` allows you to override the configuration of an article prior to rendering. It does not expect a return value.
 
 
 ### Parameters ###
 
-1. *Object* `$objRow`
+1. *Database_Result* `$objRow`
 	
-	Database result object.
-
-### Return Values ###
-
+	The database result from table `tl_article`.
 
 
 ### Example ###
@@ -19,21 +16,26 @@ The `getArticle` hook is used to generate additional articles.
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['validateFormField'][] = array('MyClass', 'myGetArticle');
 
-// HOOK: add custom logic
-if (isset($GLOBALS['TL_HOOKS']['getArticle']) && is_array($GLOBALS['TL_HOOKS']['getArticle']))
+// MyClass.php
+public function myGetArticle(Database_Result $objRow)
 {
-	foreach ($GLOBALS['TL_HOOKS']['getArticle'] as $callback)
+	// Add CSS class based on a custom field
+	if ($objRow->grid == '4')
 	{
-		$this->import($callback[0]);
-		$this->$callback[0]->$callback[1]($objRow);
+		$arrCSS = deserialize($objRow->cssID, true);
+		$arrCSS[1] = trim($arrCSS[1] . ' grid4');
+		$objRow->cssID = serialize($arrCSS);
 	}
 }
-
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [getFrontendModule](getFrontendModule.md) – triggered when a frontend module is generated
+- [getContentElement](getContentElement.md) – triggered when a content element is generated
+- [getForm](getForm.md) – triggered when a form is generated
+

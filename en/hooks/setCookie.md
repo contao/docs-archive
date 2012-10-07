@@ -1,19 +1,25 @@
 setCookie
-----------------
+---------
 
-The `setCookie` hook allows to manipulate the previously set cookies.
+The `setCookie` hook is triggered when sending a cookie to the browser. It passes a standard object with all cookie properties and expects the same as return value. Added in Contao 2.11.3.
 
 
 ### Parameters ###
 
-1. *stdClass* `$objCookie`
+1. *object* `$objCookie`
 
-	Contains cookie-parameters
+	A stdClass instance that contains the properties of the cookie. See PHP's [setcookie](http://php.net/setcookie) documentation for detailed information.
+	- $objCookie->strName		*– the cookie name*
+	- $objCookie->varValue		*– the cookie value*
+	- $objCookie->intExpires	*– the expiration time (in seconds, from now)*
+	- $objCookie->strPath		*– the relative path (if Contao is installed in a subfolder)*
+	- $objCookie->strDomain		*– the current domain for the cookie*
+	- $objCookie->blnSecure		*– if the cookie should only be stored for https access*
 
 
 ### Return Values ###
 
-*stdClass* $objCookie
+Return `$objCookie` or a custom object with all properties.
 
 
 ### Example ###
@@ -21,21 +27,15 @@ The `setCookie` hook allows to manipulate the previously set cookies.
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['setCookie'][] = array('MyClass', 'mySetCookie');
 
-// HOOK: allow to add custom logic
-if (isset($GLOBALS['TL_HOOKS']['setCookie']) && is_array($GLOBALS['TL_HOOKS']['setCookie']))
+// MyClass.php
+public function mySetCookie($objCookie)
 {
-	foreach ($GLOBALS['TL_HOOKS']['setCookie'] as $callback)
-	{
-		$this->import($callback[0], 'objCookie', true);
-		$objCookie = $this->objCookie->$callback[1]($objCookie);
-	}
+	// Make sure the cookie is also valid for the whole domain
+	$objCookie->strPath = '/';
+	
+	return $objCookie;
 }
-
 ```
-
-
-### See Also ###
-
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...

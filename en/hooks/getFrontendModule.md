@@ -1,24 +1,24 @@
 getFrontendModule
-----------------
+-----------------
 
-The `getFrontendModule` hook allows to manipulate the generation of the frontend modules.
+The `getFrontendModule` hook allows to manipulate the generation of the frontend modules. Added in Contao 2.11.RC1.
 
 
 ### Parameters ###
 
-1. *Object* `$objRow`
+1. *Database_Result* `$objRow`
 
-	Database-row object
+	Database result of the frontend module.
 	
 2. *string* `$strBuffer`
 
-	Generated string.
+	The generated frontend module buffer.
 
 
 
 ### Return Values ###
 
-*string* $strBuffer
+Return `$strBuffer` or your custom modification.
 
 
 ### Example ###
@@ -26,21 +26,21 @@ The `getFrontendModule` hook allows to manipulate the generation of the frontend
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['getFrontendModule'][] = array('MyClass', 'myGetFrontendModule');
 
-// HOOK: add custom logic
-if (isset($GLOBALS['TL_HOOKS']['getFrontendModule']) && is_array($GLOBALS['TL_HOOKS']['getFrontendModule']))
+// MyClass.php
+public function myGetFrontendModule($objRow, $strBuffer)
 {
-	foreach ($GLOBALS['TL_HOOKS']['getFrontendModule'] as $callback)
-	{
-		$this->import($callback[0]);
-		$strBuffer = $this->$callback[0]->$callback[1]($objRow, $strBuffer);
-	}
+	// Wrap all modules in an additional wrapper div
+	return '<div class="module">' . $strBuffer . '</div>';
 }
-
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [getContentElement](getContentElement.md) – triggered when a content element is generated
+- [getArticle](getArticle.md) – tiggered when an article is generated
+- [getForm](getForm.md) – triggered when a form is generated
+

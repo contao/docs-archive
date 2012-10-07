@@ -1,27 +1,22 @@
 parseArticles
-----------------
+-------------
 
-The `parseArticles` hook allows to manipulate the parsed articles.
+The `parseArticles` hook is triggered when parsing news articles. It passes the frontend template, the current article and the news module instance. It does not expect a return value.
 
 
 ### Parameters ###
 
 1. *FrontendTemplate* `$objTemplate`
 
-	...
+	The frontend template instance for the news article (e.g. `news_full`).
 
-2. *Database_Result* `$objArticleRow`
+2. *array* `$arrRow`
 
-	...
+	The current news item database result.
 
 3. *ModuleNews* `$objModule`
 
-	...
-
-
-### Return Values ###
-
-…
+	The news module instance (e.g. `ModuleNewsList`).
 
 
 ### Example ###
@@ -29,21 +24,19 @@ The `parseArticles` hook allows to manipulate the parsed articles.
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['parseArticles'][] = array('MyClass', 'myParseArticles');
 
-// HOOK: add custom logic
-if (isset($GLOBALS['TL_HOOKS']['parseArticles']) && is_array($GLOBALS['TL_HOOKS']['parseArticles']))
+// MyClass.php
+public function myParseArticles($objTemplate, $arrRow, $objModule)
 {
-	foreach ($GLOBALS['TL_HOOKS']['parseArticles'] as $callback)
-	{
-		$this->import($callback[0]);
-		$this->$callback[0]->$callback[1]($objTemplate, $objArticles->row(), $this);
-	}
+	// Remove the default "by XXX" from Contao
+    $objTemplate->author = $arrRow['author'];
 }
-
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [getAllEvents](getAllEvents.md) – allows you to modify the result sets of calendar and event modules
+

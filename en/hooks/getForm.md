@@ -1,24 +1,24 @@
 getForm
-----------------
+-------
 
 The `getForm` allows to manipulate the generation of the forms.
 
 
 ### Parameters ###
 
-1. *Object* `$objRow`
+1. *Database_Result* `$objRow`
 
-	Database-row object
+	Database result set from table `tl_form`.
 	
 2. *string* `$strBuffer`
 
-	Generated string.
+	The generated form buffer.
 
 
 
 ### Return Values ###
 
-*string* $strBuffer
+Return `$strBuffer` or your custom modification.
 
 
 ### Example ###
@@ -26,21 +26,24 @@ The `getForm` allows to manipulate the generation of the forms.
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['getForm'][] = array('MyClass', 'myGetForm');
 
-// HOOK: add custom logic
-if (isset($GLOBALS['TL_HOOKS']['getForm']) && is_array($GLOBALS['TL_HOOKS']['getForm']))
+// MyClass.php
+public function myGetForm(Database_Result $objRow, $strBuffer)
 {
-	foreach ($GLOBALS['TL_HOOKS']['getForm'] as $callback)
-	{
-		$this->import($callback[0]);
-		$strBuffer = $this->$callback[0]->$callback[1]($objRow, $strBuffer);
-	}
-}
+    if ($objRow->id == 2)
+    {
+        // Do something
+    }
 
+    return $strBuffer;
+}
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [getArticle](getArticle.md) – tiggered when an article is generated
+- [getFrontendModule](getFrontendModule.md) – triggered when a frontend module is generated
+- [getContentElement](getContentElement.md) – triggered when a content element is generated

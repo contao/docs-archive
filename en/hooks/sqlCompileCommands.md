@@ -1,19 +1,19 @@
 sqlCompileCommands
-----------------
+------------------
 
-The `sqlCompileCommands` hook allows to manipulate the compile queries.
+The `sqlCompileCommands` hook is triggered when compiling the database update commands. It passes the array of changes and expects the same as return value. Added in Contao 2.11.RC2.
 
 
 ### Parameters ###
 
-1. *array* `$return`
+1. *array* `$arrReturn`
 
-	Array that contains queries.
+	Array of changes that should be applied to the database.
 
 
 ### Return Values ###
 
-*array* $return
+Return the array of changes that should be applied to the database.
 
 
 ### Example ###
@@ -21,21 +21,20 @@ The `sqlCompileCommands` hook allows to manipulate the compile queries.
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['sqlCompileCommands'][] = array('MyClass', 'mySqlCompileCommands');
 
-// HOOK: allow third-party developers to modify the array (see #3281)
-if (isset($GLOBALS['TL_HOOKS']['sqlCompileCommands']) && is_array($GLOBALS['TL_HOOKS']['sqlCompileCommands']))
+// MyClass.php
+public function mySqlCompileCommands($arrReturn)
 {
-	foreach ($GLOBALS['TL_HOOKS']['sqlCompileCommands'] as $callback)
-	{
-		$this->import($callback[0]);
-		$return = $this->$callback[0]->$callback[1]($return);
-	}
+	// Modify the result
+	
+	return $arrReturn;
 }
-
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [sqlGetFromDB](sqlGetFromDB.md) … triggered when parsing the current database definition
+- [sqlGetFromFile](sqlGetFromFile.md) – triggered when parsing database.sql files

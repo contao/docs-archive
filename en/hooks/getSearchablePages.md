@@ -13,6 +13,11 @@ The `getSearchablePages` hook is triggered when the the search index is rebuilt.
 2. *int* `$intRoot`
 
 	ID of the current root page. Prior to Contao 2.11, this can be 0 when no root page is added in the page tree.
+	
+
+### Return Values ###
+
+Return the list of pages that should be indexed. Be aware that this simply means these URLs will be requested, and each page is responsible for it's indexing.
 
 
 ### Example ###
@@ -26,6 +31,8 @@ $GLOBALS['TL_HOOKS']['getSearchablePages'][] = array('MyClass', 'myGetSearchable
 // MyClass.php
 public function myGetSearchablePages($arrPages, $intRoot)
 {
-    return array_merge($arrPages, array('Additional pages'));
+	$arrPages[] = $this->Environment->base . 'custom.html';
+
+    return $arrPages;
 }
 ```

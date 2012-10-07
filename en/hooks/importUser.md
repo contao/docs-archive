@@ -8,15 +8,20 @@ The `importUser` hook is triggered when a username cannot be found in the databa
 
 1. *string* `$strUsername`
 
-	The unknown username
+	The unknown username.
 
 2. *string* `$strPassword`
 
-	The password submitted in the login form
+	The password submitted in the login form,
 
 3. *string* `$strTable`
 
-	The user model table, either `tl_member` (for frontend) or `tl_user` (for backend)
+	The user model table, either `tl_member` (for frontend) or `tl_user` (for backend).
+	
+
+### Return Values ###
+
+A record must exist in the database for Contao to load a user. Return `true` if you added the user to the respective table, or `false` if not.
 
 
 ### Example ###

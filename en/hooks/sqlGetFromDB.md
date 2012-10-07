@@ -1,19 +1,19 @@
 sqlGetFromDB
-----------------
+------------
 
-The `sqlGetFromDB` hook allows to modify the DB-array
+The `sqlGetFromDB` hook is triggered when parsing the current database definition. It passes the generated SQL definitions and expects the same as return value. Added in Contao 2.11.RC2.
 
 
 ### Parameters ###
 
-1. *array* `$dbArray`
+1. *array* `$arrReturn`
 
-	Contains the fields for every table
+	The compiled SQL definitions.
 
 
 ### Return Values ###
 
-*array* $dbArray
+Return `$arrReturn` after adding your custom definitions.
 
 
 ### Example ###
@@ -21,21 +21,20 @@ The `sqlGetFromDB` hook allows to modify the DB-array
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['sqlGetFromDB'][] = array('MyClass', 'mySqlGetFromDB');
 
-// HOOK: allow third-party developers to modify the array (see #3281)
-if (isset($GLOBALS['TL_HOOKS']['sqlGetFromDB']) && is_array($GLOBALS['TL_HOOKS']['sqlGetFromDB']))
+// MyClass.php
+public function mySqlGetFromDB($arrReturn)
 {
-	foreach ($GLOBALS['TL_HOOKS']['sqlGetFromDB'] as $callback)
-	{
-		$this->import($callback[0]);
-		$return = $this->$callback[0]->$callback[1]($return);
-	}
+	// Modify the result
+	
+	return $arrReturn;
 }
-
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [sqlCompileCommands](sqlCompileCommands.md) – triggered when compiling the database update commands.
+- [sqlGetFromFile](sqlGetFromFile.md) – triggered when parsing database.sql files

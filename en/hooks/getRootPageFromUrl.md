@@ -1,15 +1,12 @@
 getRootPageFromUrl
-----------------
+------------------
 
-The `getRootPageFromUrl` hook allows to overwrite the root page.
-
-### Parameters ###
-
+The `getRootPageFromUrl` hook is triggered when searching the current root page. It does not pass any parameters, and expects a database result on success.
 
 
 ### Return Values ###
 
-*Database_Result* `$objRootPage`
+Return a database result from `tl_page` if you want to override the default method for searching the root page.
 
 
 ### Example ###
@@ -17,26 +14,18 @@ The `getRootPageFromUrl` hook allows to overwrite the root page.
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['getRootPageFromUrl'][] = array('MyClass', 'myGetRootPageFromUrl');
 
-// HOOK: add custom logic
-if (isset($GLOBALS['TL_HOOKS']['getRootPageFromUrl']) && is_array($GLOBALS['TL_HOOKS']['getRootPageFromUrl']))
+// MyClass.php
+public function myGetRootPageFromUrl()
 {
-	foreach ($GLOBALS['TL_HOOKS']['getRootPageFromUrl'] as $callback)
-	{
-		$this->import($callback[0]);
-		$objRootPage = $this->$callback[0]->$callback[1]();
-
-		if ($objRootPage instanceof Database_Result)
-		{
-			return $objRootPage;
-		}
-	}
+	// Do something
 }
-
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [getPageIdFromUrl](getPageIdFromUrl.md) – triggered when the URL fragments are evaluated
+

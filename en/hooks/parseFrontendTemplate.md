@@ -6,13 +6,18 @@ The `parseFrontendTemplate` hook is triggered when a front end template is parse
 
 ### Parameters ###
 
-1. *string* `$strContent`
+1. *string* `$strBuffer`
 
 	Content of the parsed frontend template.
 
 2. *string* `$strTemplate`
 
 	The template name (e.g. `nav_default`) without file extension.
+
+
+### Return Values ###
+
+Return the original `$strBuffer` or override the template with your custom modification.
 
 
 ### Example ###
@@ -24,14 +29,14 @@ The `parseFrontendTemplate` hook is triggered when a front end template is parse
 $GLOBALS['TL_HOOKS']['parseFrontendTemplate'][] = array('MyClass', 'myParseFrontendTemplate');
 
 // MyClass.php
-public function myParseFrontendTemplate($strContent, $strTemplate)
+public function myParseFrontendTemplate($strBuffer, $strTemplate)
 {
     if ($strTemplate == 'ce_text')
     {
         // Modify output
     }
 
-    return $strContent;
+    return $strBuffer;
 }
 ```
 

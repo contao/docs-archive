@@ -1,18 +1,14 @@
 parseTemplate
-----------------
+-------------
 
-The `parseTemplate` hook allows to manipulate the parsed template.
+The `parseTemplate` hook is triggered before parsing a template. It passes the template object and does not expect a return value.
 
 
 ### Parameters ###
 
 1. *Template* `$objTemplate`
 
-	
-
-### Return Values ###
-
-…
+	The frontend or backend template instance.
 
 
 ### Example ###
@@ -20,21 +16,21 @@ The `parseTemplate` hook allows to manipulate the parsed template.
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['parseTemplate'][] = array('MyClass', 'myParseTemplate');
 
-// HOOK: add custom parse filters
-if (isset($GLOBALS['TL_HOOKS']['parseTemplate']) && is_array($GLOBALS['TL_HOOKS']['parseTemplate']))
+// MyClass.php
+public function myParseTemplate($objTemplate)
 {
-	foreach ($GLOBALS['TL_HOOKS']['parseTemplate'] as $callback)
+	if ($objTemplate->getName() == 'fe_page')
 	{
-		$this->import($callback[0]);
-		$this->$callback[0]->$callback[1]($this);
+		// Do something
 	}
 }
-
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [parseBackendTemplate](parseBackendTemplate.md) – triggered when a back end template is parsed
+- [parseFrontendTemplate](parseFrontendTemplate.md) – triggered when a front end template is parsed

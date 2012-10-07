@@ -1,15 +1,12 @@
 getSystemMessages
-----------------
+-----------------
 
-The `getSystemMessages` hook allows to add additional messages to the backend startpage.
-
-
-### Parameters ###
+The `getSystemMessages` hook allows to add additional messages to the backend home screen. It does not pass any parameters and expects a string as return value.
 
 
 ### Return Values ###
 
-*string* $strBuffer
+Return a string with the message(s) you want to add to the home screen (including HTML markup) or an empty string.
 
 
 ### Example ###
@@ -17,27 +14,26 @@ The `getSystemMessages` hook allows to add additional messages to the backend st
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['getSystemMessages'][] = array('MyClass', 'myGetSystemMessages');
 
-// HOOK: add custom messages
-if (isset($GLOBALS['TL_HOOKS']['getSystemMessages']) && is_array($GLOBALS['TL_HOOKS']['getSystemMessages']))
+// MyClass.php
+public function myGetSystemMessages()
 {
-	foreach ($GLOBALS['TL_HOOKS']['getSystemMessages'] as $callback)
+	$this->import('BackendUser', 'User');
+	
+	// Display a warning if the system admin's email is not set
+	if ($GLOBALS['TL_ADMIN_EMAIL'] == '')
 	{
-		$this->import($callback[0]);
-		$strBuffer = $this->$callback[0]->$callback[1]();
-
-		if ($strBuffer != '')
-		{
-			$arrMessages[] = $strBuffer;
-		}
+		return '<p class="tl_error">Please add your email address to system settings.';
 	}
+	
+	return '';
 }
-
-
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [getUserNavigation](getUserNavigation.md) – allows to manipulate the backend user navigation
+

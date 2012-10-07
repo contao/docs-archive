@@ -60,6 +60,6 @@ Hooks work similar to the [callback functions](callbacks.md) of the Data Contain
 - [sqlGetFromDB](hooks/sqlGetFromDB.md)
 - [sqlGetFromFile](hooks/sqlGetFromFile.md)
 - [storeFormData](hooks/storeFormData.md)
-- [validateFormField](hooks/validateFormField.md)
 - [updatePersonalData](hooks/updatePersonalData.md)
+- [validateFormField](hooks/validateFormField.md)
 

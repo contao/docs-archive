@@ -14,6 +14,14 @@ The `validateFormField` hook is triggered when a form field is submitted. It pas
 
 	ID of the tl\_form\_field record.
 
+3. *array* $arrForm
+
+	Form configuration data from table `tl_form`.
+
+### Return Value ###
+
+Return the `$objWidget` instance after modification or your custom widget.
+
 
 ### Example ###
 
@@ -24,7 +32,7 @@ The `validateFormField` hook is triggered when a form field is submitted. It pas
 $GLOBALS['TL_HOOKS']['validateFormField'][] = array('MyClass', 'myValidateFormField');
 
 // MyClass.php
-public function myValidateFormField(Widget $objWidget, $intId)
+public function myValidateFormField(Widget $objWidget, $intId, $arrForm)
 {
     if ($objWidget instanceof FormPassword)
     {

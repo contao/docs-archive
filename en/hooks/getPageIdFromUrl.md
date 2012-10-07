@@ -11,6 +11,11 @@ The `getPageIdFromUrl` hook is triggered when the URL fragments are evaluated. I
 	The URL fragments (current url exploded by slash). Be aware that previous hook callbacks could have modified this data.
 
 
+### Return Values ###
+
+Return the (modified) array of URL fragments.
+
+
 ### Example ###
 
 ```php
@@ -25,3 +30,10 @@ public function myGetPageIdFromUrl($arrFragments)
     return array_unique($arrFragments);
 }
 ```
+
+
+### See Also ###
+
+- [getRootPageFromUrl](getRootPageFromUrl.md) – triggered when searching for the current root page
+- [getCacheKey](getCacheKey.md) – triggered when creating a page cache
+

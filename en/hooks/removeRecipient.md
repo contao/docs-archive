@@ -1,18 +1,18 @@
 removeRecipient
 ---------------
 
-The `removeRecipient` hook is triggered when a newsletter recipient is removed. It passes the e-mail address and the channel IDs as argument and does not expect a return value. It is available from version 2.8.RC1.
+The `removeRecipient` hook is triggered when a newsletter recipient is removed. It passes the email address and the channel IDs as argument and does not expect a return value. It is available from version 2.8.RC1.
 
 
 ### Parameters ###
 
 1. *string* `$strEmail`
 
-	the recipient's email address which has been removed
+	The recipient's email address which has been removed
 
 2. *array* `$arrChannels`
 
-	the channels from which the recipient has unsubscribed
+	The channels from which the recipient has unsubscribed
 
 
 ### Example ###

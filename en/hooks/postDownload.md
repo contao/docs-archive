@@ -1,7 +1,7 @@
 postDownload
 ------------
 
-The `postDownload` hook is triggered after a file has been downloaded with the download(s) element. It passes the file name as argument and does not expect a return value. It is available from version 2.4.6.
+The `postDownload` hook is triggered after a file has been downloaded with the download/downloads content element. It passes the file name as argument and does not expect a return value. It is available from version 2.4.6.
 
 
 ### Parameters ###

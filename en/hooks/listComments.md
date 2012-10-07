@@ -1,7 +1,7 @@
 listComments
 ------------
 
-The `listComments` hook is triggered when comments are listed in the back end. It passes the current record as argument and expects a string as return value. It is available from version 2.8.RC2.
+The `listComments` hook is triggered when listing comment from unknown source in the back end. It passes the current record as argument and expects a string as return value. It is available from version 2.8.RC2.
 
 
 ### Parameters
@@ -9,6 +9,11 @@ The `listComments` hook is triggered when comments are listed in the back end. I
 1. *array* `$arrRow`
 
 	The current comment record data.
+
+
+### Return Values ###
+
+Return a string representing your comment, or an empty string if your method is not responsible for the source table.
 
 
 ### Example ###
@@ -22,7 +27,12 @@ $GLOBALS['TL_HOOKS']['listComments'][] = array('MyClass', 'myListComments');
 // MyClass.php
 public function myListComments($arrRow)
 {
-    return '<a href="contao/main.php?do= … ">' . $arrRow['title'] . '</a>';
+	if ($arrRow['source'] == 'tl_mytable')
+	{
+    	return '<a href="contao/main.php?do=...">' . $arrRow['title'] . '</a>';
+    }
+    
+	return '';
 }
 ```
 

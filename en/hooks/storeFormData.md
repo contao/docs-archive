@@ -1,23 +1,23 @@
 storeFormData
-----------------
+-------------
 
-The `storeFormData` hook allows to manipulate the processed form data.
+The `storeFormData` hook is triggered before a submitted form is stored to the database. It passes the result set and the form object and expects the result set as return value. Added in Contao 2.11.RC1
 
 
 ### Parameters ###
 
 1. *array* `$arrSet`
 
-	...
+	The result set that will be written to the database table.
 
 2. *Form* `$objForm`
 
-	...
+	The form module instance.
 
 
 ### Return Values ###
 
-*array* $arrSet
+Return `$arrSet` or an array of key => values that should be written to the database.
 
 
 ### Example ###
@@ -25,21 +25,30 @@ The `storeFormData` hook allows to manipulate the processed form data.
 ```php
 <?php
 
-// code example here
+// config.php
+$GLOBALS['TL_HOOKS']['storeFormData'][] = array('MyClass', 'myStoreFormData');
 
-// HOOK: store form data callback
-if (isset($GLOBALS['TL_HOOKS']['storeFormData']) && is_array($GLOBALS['TL_HOOKS']['storeFormData']))
+// MyClass.php
+public function myStoreFormData($arrSet, $objForm)
 {
-	foreach ($GLOBALS['TL_HOOKS']['storeFormData'] as $callback)
+	$arrSet['member'] = 0;
+	
+	if (FE_USER_LOGGED_IN && $this->Database->fieldExists('member', $objForm->targetTable))
 	{
-		$this->import($callback[0]);
-		$arrSet = $this->$callback[0]->$callback[1]($arrSet, $this);
+		$this->import('FrontendUser', 'User');
+		
+		// Also store the member ID who submitted the form
+		$arrSet['member'] = $this->User->id;
 	}
+	
+	return $arrSet;
 }
-
 ```
 
 
 ### See Also ###
 
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
+- [processFormData](processFormData.md) – triggered after a form has been submitted
+- [getForm](getForm.md) – manipulate the generation of the forms
+- [loadFormField](loadFormField.md) – triggered when a form field is loaded
+- [validateFormField](validateFormField.md) – triggered when a form field is submitted

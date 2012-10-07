@@ -6,13 +6,18 @@ The `outputFrontendTemplate` hook is triggered when a front end template is prin
 
 ### Parameters ###
 
-1. *string* `$strContent`
+1. *string* `$strBuffer`
 
 	Content of the rendered frontend template.
 
 2. *string* `$strTemplate`
 
 	The template name (e.g. `fe_page`) without file extension.
+
+
+### Return Values ###
+
+Return the original `$strBuffer` or override with your custom modification.
 
 
 ### Example ###
@@ -24,14 +29,14 @@ The `outputFrontendTemplate` hook is triggered when a front end template is prin
 $GLOBALS['TL_HOOKS']['outputFrontendTemplate'][] = array('MyClass', 'myOutputFrontendTemplate');
 
 // MyClass.php
-public function myOutputFrontendTemplate($strContent, $strTemplate)
+public function myOutputFrontendTemplate($strBuffer, $strTemplate)
 {
     if ($strTemplate == 'fe_page')
     {
         // Modify output
     }
 
-    return $strContent;
+    return $strBuffer;
 }
 ```
 

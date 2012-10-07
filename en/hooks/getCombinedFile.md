@@ -1,47 +1,42 @@
 getCombinedFile
-----------------
+---------------
 
-The `getCombinedFile` hook is used to manipulate the file combination.
+The `getCombinedFile` hook is triggered when combining CSS or Javascript files. It passes the file content, a unique key for the temporary file and the mode and expects the content as return value.
 
 
 ### Parameters ###
 
-1. *string* `$content`
+1. *string* `$strContent`
 
-	Filepath of the current file.
+	Content of the file which will be added to the combiner.
 
 2. *string* `$strKey`
 
-	Unique 12-character file-key.
+	A unique key that represents the current combiner. A file with this name will be stored in `system/scripts/`.
 	
 3. *string* `$strMode`
 
-	String value of operation mode.
+	The combiner mode (constant), either `Combiner::CSS` or `Combiner::JS`
 
 
 ### Return Values ###
 
-File content
+Return the file content after your modification.
+
 
 ### Example ###
 
 ```php
 <?php
 
-// code example here
-// HOOK: modify the file content
-if (isset($GLOBALS['TL_HOOKS']['getCombinedFile']) && is_array($GLOBALS['TL_HOOKS']['getCombinedFile']))
+// config.php
+$GLOBALS['TL_HOOKS']['getCombinedFile'][] = array('MyClass', 'myGetCombinedFile');
+
+// MyClass.php
+public function myGetCombinedFile($strContent, $strKey, $strMode)
 {
-	foreach ($GLOBALS['TL_HOOKS']['getCombinedFile'] as $callback)
-	{
-		$this->import($callback[0]);
-		$content = $this->$callback[0]->$callback[1]($content, $strKey, $this->strMode);
-	}
-}
-			
+	// Do something
+	
+	return $strContent
+}			
 ```
-
-
-### See Also ###
-
-- [relatedHookOrMethod](relatedHookOrMethod) - triggered when ...
