@@ -42,6 +42,6 @@ Version | Release Date | Duration
 --------|--------------|---------
 rc1     | 2009-11-21   | 
 rc2     | 2009-12-23   | 23 days
-stable  | 20010-02-16  | 55 days
+stable  | 2010-02-16   | 55 days
 
 **Release duration:** 78 days = ~ 2.5 months
