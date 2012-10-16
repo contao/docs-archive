@@ -21,7 +21,7 @@ The `checkCredentials` hook is triggered when a login attempt fails due to a wro
 
 ### Return Values ###
 
-<span class="undocumented">Please add documentation about return values.</span>
+Return `true` if you accept the username/password combination for login, or `false` otherwise.
 
 
 ### Example ###

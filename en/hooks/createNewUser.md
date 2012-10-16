@@ -26,12 +26,13 @@ $GLOBALS['TL_HOOKS']['createNewUser'][] = array('MyClass', 'myCreateNewUser');
 // MyClass.php
 public function myCreateNewUser($intId, $arrData)
 {
-    // Modify the record
+    // Do something
 }
 ```
 
 
 ### See Also ###
 
-- [activateAccount](activateAccount.md) - triggered when a new front end account is activated
-- [postLogin](postLogin.md) - triggered after a user has logged in
+- [activateAccount](activateAccount.md) – triggered when a new front end account is activated
+- [updatePersonalData](updatePersonalData.md) – triggered after a member has updated his personal data
+- [postLogin](postLogin.md) – triggered after a user has logged in

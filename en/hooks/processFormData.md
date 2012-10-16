@@ -16,7 +16,7 @@ The `processFormData` hook is triggered after a form has been submitted. It pass
 
 3. *array* `$arrFiles`
 
-	Contains information about uploaded files (from "upload" widget).
+	Contains information about uploaded files (from "upload" widgets).
 
 
 ### Example ###
@@ -36,5 +36,6 @@ public function myProcessFormData($arrPost, $arrForm, $arrFiles)
 
 ### See Also ###
 
+- [storeFormData](storeFormData.md) - triggered before a submitted form is stored to the database
 - [loadFormField](loadFormField.md) - triggered when a form field is loaded
 - [validateFormField](validateFormField.md) - triggered when a form field is submitted

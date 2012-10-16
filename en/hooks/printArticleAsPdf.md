@@ -1,7 +1,18 @@
 printArticleAsPdf
 -----------------
 
-The `printArticleAsPdf` hook is triggered when an article is exported as PDF. It passes the article text and the article object as arguments and does not expect a return value. It is available from version 2.8.RC1.
+The `printArticleAsPdf` hook is triggered when an article should be exported as PDF. It passes the article text and the article object as arguments and does not expect a return value. Use it to override the internal PDF functionality. It is available from version 2.8.RC1.
+
+
+### Parameters ###
+
+1. *string* `$strArticle`
+
+	The compiled article content.
+
+2. *Database_Result* `$objArticle`
+
+	Article database result from table `tl_article`.
 
 
 ### Example ###
@@ -15,7 +26,7 @@ $GLOBALS['TL_HOOKS']['printArticleAsPdf'][] = array('MyClass', 'myPrintArticleAs
 // MyClass.php
 public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 {
-    // Do something
+    // Trigger your own PDF engine and exit
     exit;
 }
 ```

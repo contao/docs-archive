@@ -8,7 +8,7 @@ The `postUpload` hook is triggered after a user has uploaded one or more file in
 
 1. *array* `$arrFiles`
 
-	List of files that have been uploaded.
+	List of files that have been uploaded. The file paths are relative to the Contao root directory.
 
 
 ### Example ###
@@ -29,4 +29,4 @@ public function myPostUpload($arrFiles)
 
 ### See Also ###
 
-- [postDownload](postDownload.md) - triggered after a file has been downloaded with the download(s) element
+- [postDownload](postDownload.md) - triggered after a file has been downloaded with the download/downloads content element

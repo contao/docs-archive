@@ -6,13 +6,18 @@ The `outputBackendTemplate` hook is triggered when a back end template is printe
 
 ### Parameters ###
 
-1. *string* `$strContent`
+1. *string* `$strBuffer`
 
 	Content of the rendered backend template.
 
 2. *string* `$strTemplate`
 
 	The template name (e.g. `be_main`) without file extension.
+
+
+### Return Values ###
+
+Return the original `$strBuffer` or return your custom modification.
 
 
 ### Example ###
@@ -24,14 +29,14 @@ The `outputBackendTemplate` hook is triggered when a back end template is printe
 $GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('MyClass', 'myOutputBackendTemplate');
 
 // MyClass.php
-public function myOutputBackendTemplate($strContent, $strTemplate)
+public function myOutputBackendTemplate($strBuffer, $strTemplate)
 {
     if ($strTemplate == 'be_main')
     {
         // Modify output
     }
 
-    return $strContent;
+    return $strBuffer;
 }
 ```
 

@@ -6,7 +6,7 @@ The `parseBackendTemplate` hook is triggered when a back end template is parsed.
 
 ### Parameters ###
 
-1. *string* `$strContent`
+1. *string* `$strBuffer`
 
 	Content of the parsed backend template.
 
@@ -14,6 +14,10 @@ The `parseBackendTemplate` hook is triggered when a back end template is parsed.
 
 	The template name (e.g. `be_widget`) without file extension.
 
+
+### Return Values ###
+
+Return the original `$strBuffer` or override with your custom modification.
 
 ### Example ###
 
@@ -24,14 +28,14 @@ The `parseBackendTemplate` hook is triggered when a back end template is parsed.
 $GLOBALS['TL_HOOKS']['parseBackendTemplate'][] = array('MyClass', 'myParseBackendTemplate');
 
 // MyClass.php
-public function myParseBackendTemplate($strContent, $strTemplate)
+public function myParseBackendTemplate($strBuffer, $strTemplate)
 {
     if ($strTemplate == 'be_main')
     {
         // Modify output
     }
 
-    return $strContent;
+    return $strBuffer;
 }
 ```
 

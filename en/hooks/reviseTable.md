@@ -18,3 +18,8 @@ public function myReviseTable($table, $new_records, $parent_table, $child_tables
     // Do something
 }
 ```
+
+
+### See Also ###
+
+- [removeOldFeeds](removeOldFeeds.md) – triggered when old XML files are being removed from the Contao root directory

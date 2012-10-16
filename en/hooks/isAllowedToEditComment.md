@@ -1,7 +1,7 @@
 isAllowedToEditComment
 ----------------------
 
-The `isAllowedToEditComment` hook is triggered to determine permission on a comment in the back end. It passes the comment parent ID and source table and expects a boolean return value.
+The `isAllowedToEditComment` hook is triggered to determine permission on a comment from unknown source in the back end. It passes the comment parent ID and source table and expects a boolean return value.
 
 
 ### Parameters ###

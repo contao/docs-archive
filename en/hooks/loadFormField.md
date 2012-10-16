@@ -8,7 +8,7 @@ The `loadFormField` hook is triggered when a form field is loaded. It passes the
 
 1. *Widget* `$objWidget`
 
-	Object of the current frontend widget. Use this to modify the widget properties prior to rendering.
+	Instance of the current frontend widget.
 
 2. *string* `$strForm`
 
@@ -17,6 +17,11 @@ The `loadFormField` hook is triggered when a form field is loaded. It passes the
 3. *array* `$arrForm`
 
 	The form configuration, a tl_form record.
+	
+
+### Return Values ###
+
+Return the `$objWidget` instance. You can override it's settings or even create your own widget instead.
 
 
 ### Example ###
