@@ -9,7 +9,7 @@ Encrypt a value.
 
 **Definition:** `public function encrypt($varValue, $strKey=null)`
 
-**Located in:** *system/libraries/Encryption*
+**Located in:** *system/libraries/Encryption.php*
 
 **Class hierarchy:** *[Encryption](../Encryption.md)*
 

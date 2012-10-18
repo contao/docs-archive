@@ -9,7 +9,7 @@ Return the current object instance (Singleton).
 
 **Definition:** `public static function getInstance()`
 
-**Located in:** *system/libraries/Encryption*
+**Located in:** *system/libraries/Encryption.php*
 
 **Class hierarchy:** *[Encryption](../Encryption.md)*
 

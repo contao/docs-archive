@@ -9,7 +9,7 @@ Return the current object instance (Singleton).
 
 **Definition:** `public static function getInstance()`
 
-**Located in:** *system/libraries/Environment*
+**Located in:** *system/libraries/Environment.php*
 
 **Class hierarchy:** *[Environment](../Environment.md)*
 

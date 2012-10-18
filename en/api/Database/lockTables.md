@@ -18,4 +18,10 @@ Lock one or more tables.
 
 1. *array* `$arrTables`
 
-	Array of tables to be locked.
+	Associative array of tables to be locked
+
+	```php
+	<?php
+
+	$arrTables = array('tl_news'=>'READ', 'tl_news_archive'=>'WRITE');
+	$this->Database->lockTables($arrTables);

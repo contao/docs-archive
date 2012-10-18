@@ -7,7 +7,7 @@ Provide methods to get OS independent environment parameters.
 
 **Definition:** `class Environment`
 
-**Located in:** *system/libraries/Environment*
+**Located in:** *system/libraries/Environment.php*
 
 **Class hierarchy:** *Environment*
 

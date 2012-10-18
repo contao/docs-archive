@@ -9,7 +9,7 @@ Return an environment parameter.
 
 **Definition:** `public function __get($strKey)`
 
-**Located in:** *system/libraries/Environment*
+**Located in:** *system/libraries/Environment.php*
 
 **Class hierarchy:** *[Environment](../Environment.md)*
 
