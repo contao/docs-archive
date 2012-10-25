@@ -6,7 +6,7 @@ The `removeOldFeeds` hook is triggered when old XML files are being removed from
 
 ### Return Values ###
 
-Return an array of XML file names (including file extension!) that **must not** be removed from the root directory. Return an empty array if you have nothing to keep.
+Return an array of XML file names (**do not include** file extension!) that **must not** be removed from the root directory. Return an empty array if you have nothing to keep.
 
 
 ### Example ###
