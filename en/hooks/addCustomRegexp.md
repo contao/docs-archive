@@ -29,19 +29,21 @@ The `addCustomRegexp` hook is triggered when an unknown regular expression is fo
 $GLOBALS['TL_HOOKS']['addCustomRegexp'][] = array('MyClass', 'myAddCustomRegexp');
 
 // MyClass.php
-public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
-{
-    if ($strRegexp == 'postal')
-    {
-        if (!preg_match('/^0-9{4,6}$/', $varValue))
-        {
-            $objWidget->addError('Field ' . $objWidget->label . ' should be a postal code.');
-        }
+class MyClass extends Backend {
+  public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
+  {
+      if ($strRegexp == 'myAddCustomRegexp')
+      {
+          if (!preg_match('/^0-9{4,6}$/', $varValue))
+          {
+              $objWidget->addError('Field ' . $objWidget->label . ' should be a valid type.');
+          }
 
-        return true;
-    }
+          return true;
+      }
 
-    return false;
+      return false;
+  }
 }
 ```
 
