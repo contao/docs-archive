@@ -34,6 +34,11 @@ public function myProcessFormData($arrPost, $arrForm, $arrFiles)
 }
 ```
 
+### References ###
+
+- [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L461)
+
+
 ### See Also ###
 
 - [storeFormData](storeFormData.md) - triggered before a submitted form is stored to the database

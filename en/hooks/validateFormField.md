@@ -44,6 +44,11 @@ public function myValidateFormField(Widget $objWidget, $intId, $arrForm)
 ```
 
 
+### References ###
+
+- [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L172)
+
+
 ### See Also ###
 
 - [loadFormField](loadFormField.md) - triggered when a form field is loaded

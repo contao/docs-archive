@@ -23,6 +23,11 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 ```
 
 
+### References ###
+
+- [system/modules/backend/Ajax.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/Ajax.php#L345)
+
+
 ### See Also ###
 
 - [executePreActions](executePreActions.md) - triggered on Ajax request that do not require a DCA object

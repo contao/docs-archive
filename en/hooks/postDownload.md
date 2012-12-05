@@ -27,6 +27,11 @@ public function myPostDownload($strFile)
 ```
 
 
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L2783)
+
+
 ### See Also ###
 
 - [postUpload](postUpload.md) - triggered after a user has uploaded one or more file in the back end

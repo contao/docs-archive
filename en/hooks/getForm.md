@@ -9,7 +9,7 @@ The `getForm` allows to manipulate the generation of the forms.
 1. *Database_Result* `$objRow`
 
 	Database result set from table `tl_form`.
-	
+
 2. *string* `$strBuffer`
 
 	The generated form buffer.
@@ -40,6 +40,11 @@ public function myGetForm(Database_Result $objRow, $strBuffer)
     return $strBuffer;
 }
 ```
+
+
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L561)
 
 
 ### See Also ###

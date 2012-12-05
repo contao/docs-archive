@@ -41,6 +41,11 @@ public function myOutputBackendTemplate($strBuffer, $strTemplate)
 ```
 
 
+### References ###
+
+- [system/modules/backend/BackendTemplate.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/BackendTemplate.php#L146)
+
+
 ### See Also ###
 
 - [outputFrontendTemplate](outputFrontendTemplate.md) - triggered when a front end template is printed to the screen

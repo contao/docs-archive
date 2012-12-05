@@ -13,7 +13,7 @@ The `getCombinedFile` hook is triggered when combining CSS or Javascript files. 
 2. *string* `$strKey`
 
 	A unique key that represents the current combiner. A file with this name will be stored in `system/scripts/`.
-	
+
 3. *string* `$strMode`
 
 	The combiner mode (constant), either `Combiner::CSS` or `Combiner::JS`
@@ -36,7 +36,12 @@ $GLOBALS['TL_HOOKS']['getCombinedFile'][] = array('MyClass', 'myGetCombinedFile'
 public function myGetCombinedFile($strContent, $strKey, $strMode)
 {
 	// Do something
-	
+
 	return $strContent
-}			
+}
 ```
+
+
+### References ###
+
+- [system/libraries/Combiner.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Combiner.php#L166)

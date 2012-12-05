@@ -49,6 +49,11 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, $o
 ```
 
 
+### References ###
+
+- [system/modules/calendar/Events.php](https://github.com/contao/core/blob/2.11.7/system/modules/calendar/Events.php#L195)
+
+
 ### See Also ###
 
 - [parseArticles](parseArticles.md) – triggered when parsing news articles

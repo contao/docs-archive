@@ -32,6 +32,11 @@ public function myCompileDefinition($arrRow)
 ```
 
 
+### References ###
+
+- [system/modules/backend/StyleSheets.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/StyleSheets.php#L1014)
+
+
 ### See Also ###
 
 - [createDefinition](createDefinition.md) - triggered when a format definition of a style sheet is imported

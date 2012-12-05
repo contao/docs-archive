@@ -30,10 +30,15 @@ $GLOBALS['TL_HOOKS']['sqlGetFromFile'][] = array('MyClass', 'mySqlGetFromFile');
 public function mySqlGetFromFile($arrReturn)
 {
 	// Modify the result
-	
+
 	return $arrReturn;
 }
 ```
+
+
+### References ###
+
+- [system/modules/backend/DbInstaller.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/DbInstaller.php#L417)
 
 
 ### See Also ###

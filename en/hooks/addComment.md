@@ -31,6 +31,11 @@ public function myAddComment($intId, $arrSet)
 ```
 
 
+### References ###
+
+- [system/modules/comments/Comments.php](https://github.com/contao/core/blob/2.11.7/system/modules/comments/Comments.php#L327)
+
+
 ### See Also ###
 
 - [listComment](listComments.md) - triggered when comments are listed in the back end

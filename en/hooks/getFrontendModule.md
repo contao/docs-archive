@@ -9,7 +9,7 @@ The `getFrontendModule` hook allows to manipulate the generation of the frontend
 1. *Database_Result* `$objRow`
 
 	Database result of the frontend module.
-	
+
 2. *string* `$strBuffer`
 
 	The generated frontend module buffer.
@@ -36,6 +36,11 @@ public function myGetFrontendModule($objRow, $strBuffer)
 	return '<div class="module">' . $strBuffer . '</div>';
 }
 ```
+
+
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L361)
 
 
 ### See Also ###

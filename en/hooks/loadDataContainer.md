@@ -27,6 +27,11 @@ public function myLoadDataContainer($strName)
 ```
 
 
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L2825)
+
+
 ### See Also ###
 
 - [loadLanguageFile](loadLanguageFile.md) - triggered when a language file is loaded

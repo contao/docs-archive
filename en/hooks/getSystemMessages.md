@@ -21,16 +21,21 @@ $GLOBALS['TL_HOOKS']['getSystemMessages'][] = array('MyClass', 'myGetSystemMessa
 public function myGetSystemMessages()
 {
 	$this->import('BackendUser', 'User');
-	
+
 	// Display a warning if the system admin's email is not set
 	if ($GLOBALS['TL_ADMIN_EMAIL'] == '')
 	{
 		return '<p class="tl_error">Please add your email address to system settings.';
 	}
-	
+
 	return '';
 }
 ```
+
+
+### References ###
+
+- [contao/main.php](https://github.com/contao/core/blob/2.11.7/contao/main.php#L137)
 
 
 ### See Also ###

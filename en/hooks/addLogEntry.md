@@ -42,3 +42,8 @@ public function myAddLogEntry($strText, $strFunction, $strAction)
     // Do something
 }
 ```
+
+
+### References ###
+
+- [system/libraries/System.php](https://github.com/contao/core/blob/2.11.7/system/libraries/System.php#L207)

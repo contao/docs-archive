@@ -25,6 +25,11 @@ public function myCreateDefinition($strKey, $strValue, $strDefinition, $arrSet)
 ```
 
 
+### References ###
+
+- [system/modules/backend/StyleSheets.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/StyleSheets.php#L2074)
+
+
 ### See Also ###
 
 - [compileDefinition](compileDefinition.md) - triggered when a format definition of a style sheet is written

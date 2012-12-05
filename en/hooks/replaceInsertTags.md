@@ -39,6 +39,11 @@ public function myReplaceInsertTags($strTag)
 ```
 
 
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L2432)
+
+
 ### See Also ###
 
 - [addCustomRegexp](addCustomRegexp.md) - triggered when an unknown regular expression is found

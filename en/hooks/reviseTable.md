@@ -20,6 +20,11 @@ public function myReviseTable($table, $new_records, $parent_table, $child_tables
 ```
 
 
+### References ###
+
+- [system/drivers/DC_Table.php](https://github.com/contao/core/blob/2.11.7/system/drivers/DC_Table.php#L2815)
+
+
 ### See Also ###
 
 - [removeOldFeeds](removeOldFeeds.md) – triggered when old XML files are being removed from the Contao root directory

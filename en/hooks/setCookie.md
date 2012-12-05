@@ -35,7 +35,12 @@ public function mySetCookie($objCookie)
 {
 	// Make sure the cookie is also valid for the whole domain
 	$objCookie->strPath = '/';
-	
+
 	return $objCookie;
 }
 ```
+
+
+### References ###
+
+- [system/libraries/System.php](https://github.com/contao/core/blob/2.11.7/system/libraries/System.php#L720)

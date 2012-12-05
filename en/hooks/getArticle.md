@@ -7,7 +7,7 @@ The `getArticle` allows you to override the configuration of an article prior to
 ### Parameters ###
 
 1. *Database_Result* `$objRow`
-	
+
 	The database result from table `tl_article`.
 
 
@@ -31,6 +31,11 @@ public function myGetArticle(Database_Result $objRow)
 	}
 }
 ```
+
+
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L432)
 
 
 ### See Also ###

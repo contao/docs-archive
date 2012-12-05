@@ -25,6 +25,11 @@ public function myRemoveOldFeeds()
 ```
 
 
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L3431)
+
+
 ### See Also ###
 
 - [reviseTable](reviseTable.md) – riggered when Contao removes orphan records from a table

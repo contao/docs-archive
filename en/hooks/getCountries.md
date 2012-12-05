@@ -34,7 +34,7 @@ Return an array with additional countries you want to add.
 	public function myGetCountries($arrReturn, $arrCountries)
 	{
 		$arrReturn['oo'] = 'Moon';
-		
+
 		return $arrReturn;
 	}
 	```
@@ -52,13 +52,18 @@ Return an array with additional countries you want to add.
 	{
 		// European Countries
 		$arrEU = array('de', 'at', 'nl', ...);
-		
+
 		// Remove all non-EU countries
 		$arrCountries = array_intersect_key($arrCountries, array_flip($arrEU));
-		
+
 		return $arrReturn;
 	}
 	```
+
+
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L835)
 
 
 ### See Also ###
