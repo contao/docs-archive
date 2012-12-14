@@ -18,7 +18,7 @@ Set an object property.
 
 1. *string* `$strKey`
 
-	Name of the property to be returned.
+	Name of the property to be set.
 	- **subject** -
 		The e-mail subject.
 	- **text** –
