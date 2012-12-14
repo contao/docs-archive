@@ -40,6 +40,11 @@ public function myGenerateFrontendUrl($arrRow, $strParams, $strUrl)
 ```
 
 
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L2669)
+
+
 ### See Also ###
 
 - [getPageIdFromUrl](getPageIdFromUrl.md) - triggered when the URL fragments are evaluated

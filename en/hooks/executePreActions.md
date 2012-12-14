@@ -23,6 +23,11 @@ public function myExecutePreActions($strAction)
 ```
 
 
+### References ###
+
+- [system/modules/backend/Ajax.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/Ajax.php#L196)
+
+
 ### See Also ###
 
 - [executePostActions](executePostActions.md) - triggered on Ajax request that require a DCA object

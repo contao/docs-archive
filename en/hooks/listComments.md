@@ -31,10 +31,15 @@ public function myListComments($arrRow)
 	{
     	return '<a href="contao/main.php?do=...">' . $arrRow['title'] . '</a>';
     }
-    
+
 	return '';
 }
 ```
+
+
+### References ###
+
+- [system/modules/comments/dca/tl_comments.php](https://github.com/contao/core/blob/2.11.7/system/modules/comments/dca/tl_comments.php#L488)
 
 
 ### See Also ###

@@ -32,6 +32,11 @@ public function myGetPageIdFromUrl($arrFragments)
 ```
 
 
+### References ###
+
+- [system/modules/frontend/Frontend.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Frontend.php#L130)
+
+
 ### See Also ###
 
 - [getRootPageFromUrl](getRootPageFromUrl.md) – triggered when searching for the current root page

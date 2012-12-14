@@ -32,18 +32,23 @@ $GLOBALS['TL_HOOKS']['storeFormData'][] = array('MyClass', 'myStoreFormData');
 public function myStoreFormData($arrSet, $objForm)
 {
 	$arrSet['member'] = 0;
-	
+
 	if (FE_USER_LOGGED_IN && $this->Database->fieldExists('member', $objForm->targetTable))
 	{
 		$this->import('FrontendUser', 'User');
-		
+
 		// Also store the member ID who submitted the form
 		$arrSet['member'] = $this->User->id;
 	}
-	
+
 	return $arrSet;
 }
 ```
+
+
+### References ###
+
+- [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L438)
 
 
 ### See Also ###

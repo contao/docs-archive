@@ -28,10 +28,15 @@ $GLOBALS['TL_HOOKS']['sqlCompileCommands'][] = array('MyClass', 'mySqlCompileCom
 public function mySqlCompileCommands($arrReturn)
 {
 	// Modify the result
-	
+
 	return $arrReturn;
 }
 ```
+
+
+### References ###
+
+- [system/modules/backend/DbInstaller.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/DbInstaller.php#L226)
 
 
 ### See Also ###

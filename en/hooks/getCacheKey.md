@@ -35,6 +35,12 @@ public function myGetCacheKey($strCacheKey)
 ```
 
 
+### References ###
+
+- [index.php](https://github.com/contao/core/blob/2.11.7/index.php#L306)
+- [system/modules/frontend/FrontendTemplate.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/FrontendTemplate.php#L147)
+
+
 ### See Also ###
 
 - [getPageIdFromUrl](getPageIdFromUrl.md) – triggered when the URL fragments are evaluated

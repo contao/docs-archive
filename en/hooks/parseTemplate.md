@@ -30,6 +30,11 @@ public function myParseTemplate($objTemplate)
 ```
 
 
+### References ###
+
+- [system/libraries/Template.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Template.php#L235)
+
+
 ### See Also ###
 
 - [parseBackendTemplate](parseBackendTemplate.md) – triggered when a back end template is parsed

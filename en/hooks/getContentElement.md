@@ -36,6 +36,11 @@ public function myGetContentElement(Database_Result $objElement, $strBuffer)
 ```
 
 
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L514)
+
+
 ### See Also ###
 
 - [getArticle](getArticle.md) – tiggered when an article is generated

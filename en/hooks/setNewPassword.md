@@ -31,6 +31,13 @@ public function mySetNewPassword($objUser, $strPassword)
 ```
 
 
+### References ###
+
+- [system/modules/frontend/ModulePersonalData.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/ModulePersonalData.php#L224)
+- [system/modules/registration/ModulePassword.php](https://github.com/contao/core/blob/2.11.7/system/modules/registration/ModulePassword.php#L240)
+- [system/modules/backend/dca/tl_member.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/dca/tl_member.php#L424)
+
+
 ### See Also ###
 
 - [createNewUser](createNewUser.md) - triggered when a new front end user registers on the website

@@ -13,7 +13,7 @@ The `getUserNavigation` hook allows to manipulate the backend user navigation. I
 2. *boolean* `$blnShowAll`
 
 	Wether to show all modules even if the group is collapsed.
-	
+
 
 ### Return Values ###
 
@@ -42,6 +42,11 @@ public function myGetUserNavigation($arrModules, $blnShowAll)
 	return $arrModules;
 }
 ```
+
+
+### References ###
+
+- [system/modules/backend/BackendUser.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/BackendUser.php#L468)
 
 
 ### See Also ###

@@ -9,7 +9,7 @@ Instantiate a database driver object and return it (Factory).
 
 **Definition:** `public static function getInstance()`
 
-**Located in:** *system/libraries/Database*
+**Located in:** *system/libraries/Database.php*
 
 **Class hierarchy:** *[Database](../Database.md)*
 

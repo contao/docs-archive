@@ -46,6 +46,11 @@ public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
 ```
 
 
+### References ###
+
+- [system/libraries/Widget.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Widget.php#L807)
+
+
 ### See Also ###
 
 - [replaceInsertTags](replaceInsertTags.md) - triggered when an unknown insert tag is found

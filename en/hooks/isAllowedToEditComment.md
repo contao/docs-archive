@@ -41,6 +41,11 @@ public function myIsAllowedToEditComment($intParent, $strSource)
 }
 ```
 
+### References ###
+
+- [system/modules/comments/dca/tl_comments.php](https://github.com/contao/core/blob/2.11.7/system/modules/comments/dca/tl_comments.php#L406)
+
+
 ### See Also ###
 
 - [addComment](addComment.md) - triggered when a comment is added

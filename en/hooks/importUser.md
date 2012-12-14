@@ -17,7 +17,7 @@ The `importUser` hook is triggered when a username cannot be found in the databa
 3. *string* `$strTable`
 
 	The user model table, either `tl_member` (for frontend) or `tl_user` (for backend).
-	
+
 
 ### Return Values ###
 
@@ -47,6 +47,11 @@ public function myImportUser($strUsername, $strPassword, $strTable)
     return false;
 }
 ```
+
+
+### References ###
+
+- [system/libraries/User.php](https://github.com/contao/core/blob/2.11.7/system/libraries/User.php#L181)
 
 
 ### See Also ###

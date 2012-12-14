@@ -31,3 +31,7 @@ public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 }
 ```
 
+
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L1317)

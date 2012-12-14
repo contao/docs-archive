@@ -17,7 +17,7 @@ The `loadFormField` hook is triggered when a form field is loaded. It passes the
 3. *array* `$arrForm`
 
 	The form configuration, a tl_form record.
-	
+
 
 ### Return Values ###
 
@@ -39,6 +39,11 @@ public function myLoadFormField(Widget $objWidget, $strForm, $arrForm)
     return $objWidget;
 }
 ```
+
+
+### References ###
+
+- [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L157)
 
 
 ### See Also ###

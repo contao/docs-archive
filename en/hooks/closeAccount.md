@@ -37,6 +37,11 @@ public function myCloseAccount($intId, $strMode, $objModule)
 }
 ```
 
+### References ###
+
+- [system/modules/registration/ModuleCloseAccount.php](https://github.com/contao/core/blob/2.11.7/system/modules/registration/ModuleCloseAccount.php#L118)
+
+
 ### See Also ###
 
 - [createNewUser](createNewUser.md) - triggered when a new front end user registers on the website

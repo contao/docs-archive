@@ -1,6 +1,5 @@
-
-getImage Hook
--------------
+getImage
+--------
 
 The `getImage` hook is triggered when a thumbnail is generated and allows you to add a custom routine. It passes the path, the width and height, the mode, the cache name and the file object as arguments and expects a path as return value. It is available from version 2.8.RC1.
 
@@ -35,7 +34,7 @@ The `getImage` hook is triggered when a thumbnail is generated and allows you to
 ### Return Values ###
 
 If you want to override Contao's [Controller::getImage](../api/Controller/getImage.md) method, return a string to the new image. Otherwise return boolean `false`.
-	
+
 
 ### Example ###
 
@@ -51,6 +50,11 @@ public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFi
     return MyImage::generateThumbnail($image, $widht, $height, $mode);
 }
 ```
+
+
+### References ###
+
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L993)
 
 
 ### See Also ###

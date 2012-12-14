@@ -31,6 +31,11 @@ public function myRemoveRecipient($strEmail, $arrChannels)
 ```
 
 
+### References ###
+
+- [system/modules/newsletter/ModuleUnsubscribe.php](https://github.com/contao/core/blob/2.11.7/system/modules/newsletter/ModuleUnsubscribe.php#L197)
+
+
 ### See Also ###
 
 - [activateRecipient](activateRecipient.md) - triggered when a new newsletter recipient is added

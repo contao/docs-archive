@@ -31,6 +31,11 @@ public function myCreateNewUser($intId, $arrData)
 ```
 
 
+### References ###
+
+- [system/modules/registration/ModuleRegistration.php](https://github.com/contao/core/blob/2.11.7/system/modules/registration/ModuleRegistration.php#L451)
+
+
 ### See Also ###
 
 - [activateAccount](activateAccount.md) – triggered when a new front end account is activated

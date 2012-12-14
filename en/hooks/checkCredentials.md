@@ -46,6 +46,11 @@ public function myCheckCredentials($strUsername, $strPassword, User $objUser)
 ```
 
 
+### References ###
+
+- [system/library/User.php](https://github.com/contao/core/blob/2.11.7/system/libraries/User.php#L261)
+
+
 ### See Also ###
 
 - [importUser](importUser.md) - triggered when username cannot be found in the database

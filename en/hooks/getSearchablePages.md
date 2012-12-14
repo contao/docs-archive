@@ -13,7 +13,7 @@ The `getSearchablePages` hook is triggered when the the search index is rebuilt.
 2. *int* `$intRoot`
 
 	ID of the current root page. Prior to Contao 2.11, this can be 0 when no root page is added in the page tree.
-	
+
 
 ### Return Values ###
 
@@ -36,3 +36,9 @@ public function myGetSearchablePages($arrPages, $intRoot)
     return $arrPages;
 }
 ```
+
+
+### References ###
+
+- [system/modules/backend/Automator.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/Automator.php#L119)
+- [system/modules/backend/RebuildIndex.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/RebuildIndex.php#L82)

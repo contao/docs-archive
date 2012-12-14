@@ -27,6 +27,11 @@ public function myActivateAccount(Database_Result $objUser)
 ```
 
 
+### References ###
+
+- [system/modules/registration/ModuleRegistration.php](https://github.com/contao/core/blob/2.11.7/system/modules/registration/ModuleRegistration.php#L496)
+
+
 ### See Also ###
 
 - [createNewUser](createNewUser.md) - triggered when a new front end user registers

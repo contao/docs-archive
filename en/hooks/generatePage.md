@@ -33,3 +33,8 @@ public function myGeneratePage(Database_Result $objPage, Database_Result $objLay
     // Do something
 }
 ```
+
+
+### References ###
+
+- [system/modules/frontend/PageRegular.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/PageRegular.php#L110)
