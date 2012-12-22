@@ -53,7 +53,7 @@ the feature (encryption is currently not used by the Contao core modules).
 
 Log into your server administration panel (e.g. Plesk or Cpanel) and create a
 new database for Contao. Then enter the login credentials in the Contao install
-tool. Note that the Contao default character set UTF-8 is written as UTF8 in
+tool. Note that the Contao default character set UTF-8 is written as `UTF8` in
 MySQL!
 
 
@@ -146,9 +146,9 @@ writable (CHMOD 777). Despite what you might have read in a tutorial or the
 forums, only these three folders need to be modified when using the Safe Mode
 Hack!
 
-* system/html
-* system/logs
-* system/tmp
+* `system/html`
+* `system/logs`
+* `system/tmp`
 
 From version 2.7.3 these folder permissions should be set automatically.
 
