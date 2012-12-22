@@ -469,4 +469,4 @@ forum][14].
 [11]: https://github.com/contao/check/zipball/master
 [12]: https://github.com/contao/check
 [13]: https://contao.org/en/partners.html?search=services&amp;for=partner_hosting
-[14]: https://community.contao.org/de/
+[14]: https://community.contao.org/en/
