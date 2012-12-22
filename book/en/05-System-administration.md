@@ -157,6 +157,7 @@ search index manually.
 
 ![](images/rebuild-the-search-index.jpg)
 
+
 [1]: https://contao.org/en/page-types.html#access-rights
 [2]: https://contao.org/en/extension-list.html
 [3]: https://contao.org/en/installing-contao.html#install-tool
