@@ -23,7 +23,7 @@ curl -L http://install.contao.org | tar -xzp
 
 Ihr Contao-Verzeichnis sollte nun wie folgt aussehen:
 
-![](images/typolight-root.jpg)
+![](../images/typolight-root.jpg)
 
 
 ### Das Contao-Installtool
