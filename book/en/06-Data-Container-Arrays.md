@@ -373,7 +373,7 @@ filter criteria.
 </tr>
 <tr>
   <td>default</td>
-  <td>Default value<br />"mixed"</td>
+  <td>Default value (`mixed`)</td>
   <td>Default value that is set when a new record is created.</td>
 </tr>
 <tr>
@@ -768,7 +768,7 @@ The above example is defined by the following code:
 {title_legend},headline,alias,author;{date_legend},date,time;{teaser_legend:hide},subheadline,teaser
 ```
 
-The "title_legend" and "date_legend" placeholders will be replaced with the
+The `title_legend` and `date_legend` placeholders will be replaced with the
 corresponding labels from the "TL_LANG" array.
 
 ``` {.php}

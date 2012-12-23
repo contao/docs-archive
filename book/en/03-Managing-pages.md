@@ -106,7 +106,7 @@ Front end modules allow you to add almost any kind of functionaliy to your
 website. The Contao core includes modules to generate various navigation menus,
 handle user registration and authentication, search the website, import RSS
 feeds and many more. To create a module, log into the back end and choose
-"Themes -> Front end modules" in the navigation menu.
+"Themes" -> "Front end modules" in the navigation menu.
 
 <table>
 <tr>
