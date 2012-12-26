@@ -424,14 +424,14 @@ list of [Contao hosting partners][13].
   <th>Comments</th>
 </tr>
 <tr>
-  <td>1&amp;1</td>
-  <td>Via .htaccess: `AddType x-mapp-php5 .php`</td>
-  <td>Required (`ftpPath = /`)</td>
+  <td>1and1</td>
+  <td>Via .htaccess: <code>AddType x-mapp-php5 .php</code></td>
+  <td>Required (<code>ftpPath = /</code>)</td>
   <td>&nbsp;</td>
 </tr>
 <tr>
   <td>allinkl.com</td>
-  <td>Via .htaccess: `AddHandler php-fastcgi .php`</td>
+  <td>Via .htaccess: <code>AddHandler php-fastcgi .php</code></td>
   <td>Not required</td>
   <td>PHP FastCGI is always faster than using mod_php and the Contao Safe Mode
       Hack.</td>
@@ -439,13 +439,13 @@ list of [Contao hosting partners][13].
 <tr>
   <td>HostEurope</td>
   <td>Default</td>
-  <td>Required (`ftpPath = www/`)</td>
+  <td>Required (<code>ftpPath = www/</code>)</td>
   <td>File owner must not be "wwwrun" (can be changed in the administration
       panel "KIS").</td>
 </tr>
 <tr>
   <td>Strato</td>
-  <td>Via .htaccess: `AddType application/x-httpd-php5 .php`</td>
+  <td>Via .htaccess: <code>AddType application/x-httpd-php5 .php</code></td>
   <td>Not required</td>
   <td>The PHP SOAP extension is not available, so the Contao Extension
       Repository will not work.</td>

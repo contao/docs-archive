@@ -603,117 +603,117 @@ ihres Alias verlinkt werden.
   <th>Beschreibung</th>
 </tr>
 <tr>
-  <td>`{{link::*}}`</td>
+  <td><code>{{link::*}}</code></td>
   <td>Dieses Tag wird mit einem Link zu einer interne Seite ersetzt (ersetzen
       Sie * mit der ID oder dem Alias).</td>
 </tr>
 <tr>
-  <td>`{{link::back}}`</td>
+  <td><code>{{link::back}}</code></td>
   <td>Dieses Tag wird mit der zuletzt besuchte Seite ersetzt. Kann auch mit
       "link_open", "link_url" und "link_title" verwendet werden.</td>
 </tr>
 <tr>
-  <td>`{{link::login}}`</td>
+  <td><code>{{link::login}}</code></td>
   <td>Dieses Tag wird mit einem Link zur Anmeldeseite des aktuellen
       Frontend-Benutzers (falls vorhanden) ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{link_open::*}}`</td>
+  <td><code>{{link_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer internen Seite ersetzt:
       `{{link_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{link_url::*}}`</td>
+  <td><code>{{link_url::*}}</code></td>
   <td>Dieses Tag wird mit der URL einer internen Seite ersetzt: `<a
       href="{{link_url::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{link_title::*}}`</td>
+  <td><code>{{link_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel einer internen Seite ersetzt: `<a
       title="{{link_title::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{link_close}}`</td>
+  <td><code>{{link_close}}</code></td>
   <td>Wird mit dem schließenden Tag eines Links zu einer internen Seite
       ersetzt: `{{link_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{article::*}}`</td>
+  <td><code>{{article::*}}</code></td>
   <td>Dieses Tag wird mit einem Link zu einem Artikel ersetzt (ersetzen Sie *
       mit der ID oder dem Alias).</td>
 </tr>
 <tr>
-  <td>`{{article_open::*}}`</td>
+  <td><code>{{article_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einem Artikel ersetzt:
       `{{article_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{article_url::*}}`</td>
+  <td><code>{{article_url::*}}</code></td>
   <td>Dieses Tag wird mit der URL eines Artikels ersetzt: `<a
       href="{{article_url::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{article_title::*}}`</td>
+  <td><code>{{article_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel eines Artikels ersetzt: `<a
       title="{{article_title::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{news::*}}`</td>
+  <td><code>{{news::*}}</code></td>
   <td>Dieses Tag wird mit einem Link zu einer Nachricht ersetzt (ersetzen Sie *
       mit der ID oder dem Alias).</td>
 </tr>
 <tr>
-  <td>`{{news_open::*}}`</td>
+  <td><code>{{news_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer Nachricht ersetzt:
       `{{news_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{news_url::*}}`</td>
+  <td><code>{{news_url::*}}</code></td>
   <td>Dieses Tag wird mit der URL einer Nachricht ersetzt: `<a
       href="{{news_url::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{news_title::*}}`</td>
+  <td><code>{{news_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel einer Nachricht ersetzt: `<a
       title="{{news_title::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{event::*}}`</td>
+  <td><code>{{event::*}}</code></td>
   <td>Dieses Tag wird mit einem Link zu einem Event ersetzt (ersetzen Sie * mit
       der ID oder dem Alias).</td>
 </tr>
 <tr>
-  <td>`{{event_open::*}}`</td>
+  <td><code>{{event_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einem Event ersetzt:
       `{{event_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{event_url::*}}`</td>
+  <td><code>{{event_url::*}}</code></td>
   <td>Dieses Tag wird mit der URL eines Events ersetzt: `<a
       href="{{event_url::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{event_title::*}}`</td>
+  <td><code>{{event_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel eines Events ersetzt: `<a
       title="{{event_title::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{faq::*}}`</td>
+  <td><code>{{faq::*}}</code></td>
   <td>Dieses Tag wird mit einem Link zu einer häufig gestellten Frage ersetzt
       (ersetzen Sie * mit der ID oder dem Alias).</td>
 </tr>
 <tr>
-  <td>`{{faq_open::*}}`</td>
+  <td><code>{{faq_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer Frage ersetzt:
       `{{faq_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{faq_url::*}}`</td>
+  <td><code>{{faq_url::*}}</code></td>
   <td>Dieses Tag wird mit der URL einer Frage ersetzt: `<a
       href="{{faq_url::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{faq_title::*}}`</td>
+  <td><code>{{faq_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel einer Frage ersetzt: `<a
       title="{{faq_title::12}}">Click here</a>`.</td>
 </tr>
@@ -731,62 +731,62 @@ ausgebeben werden.
   <th>Beschreibung</th>
 </tr>
 <tr>
-  <td>`{{user::firstname}}`</td>
+  <td><code>{{user::firstname}}</code></td>
   <td>Dieses Tag wird mit dem Vornamen des angemeldeten Benutzers ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::lastname}}`</td>
+  <td><code>{{user::lastname}}</code></td>
   <td>Dieses Tag wird mit dem Nachnamen des angemeldeten Benutzers ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::company}}`</td>
+  <td><code>{{user::company}}</code></td>
   <td>Dieses Tag wird mit dem Firmennamen des angemeldeten Benutzers
       ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::phone}}`</td>
+  <td><code>{{user::phone}}</code></td>
   <td>Dieses Tag wird mit der Telefonnummer des angemeldeten Benutzers
       ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::mobile}}`</td>
+  <td><code>{{user::mobile}}</code></td>
   <td>Dieses Tag wird mit der Handynummer des angemeldeten Benutzers
       ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::fax}}`</td>
+  <td><code>{{user::fax}}</code></td>
   <td>Dieses Tag wird mit der Faxnummer des angemeldeten Benutzers ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::email}}`</td>
+  <td><code>{{user::email}}</code></td>
   <td>Dieses Tag wird mit der E-Mail-Adresse des angemeldeten Benutzers
       ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::website}}`</td>
+  <td><code>{{user::website}}</code></td>
   <td>Dieses Tag wird mit der Internetadresse des angemeldeten Benutzers
       ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::street}}`</td>
+  <td><code>{{user::street}}</code></td>
   <td>Dieses Tag wird mit dem Staßennamen des angemeldeten Benutzers
       ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::postal}}`</td>
+  <td><code>{{user::postal}}</code></td>
   <td>Dieses Tag wird mit der Postleitzahl des angemeldeten Benutzers
       ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::city}}`</td>
+  <td><code>{{user::city}}</code></td>
   <td>Dieses Tag wird mit der Stadt des angemeldeten Benutzers ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::country}}`</td>
+  <td><code>{{user::country}}</code></td>
   <td>Dieses Tag wird mit dem Land des angemeldeten Benutzers ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{user::username}}`</td>
+  <td><code>{{user::username}}</code></td>
   <td>Dieses Tag wird mit dem Benutzernamen des angemeldeten Benutzers
       ersetzt.</td>
 </tr>
@@ -804,51 +804,51 @@ ausgegeben werden.
   <th>Beschreibung</th>
 </tr>
 <tr>
-  <td>`{{page::id}}`</td>
+  <td><code>{{page::id}}</code></td>
   <td>Dieses Tag wird mit der ID der aktuellen Seite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::alias}}`</td>
+  <td><code>{{page::alias}}</code></td>
   <td>Dieses Tag wird mit dem Alias der aktuellen Seite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::title}}`</td>
+  <td><code>{{page::title}}</code></td>
   <td>Dieses Tag wird mit dem Namen der aktuellen Seite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::pageTitle}}`</td>
+  <td><code>{{page::pageTitle}}</code></td>
   <td>Dieses Tag wird mit dem Titel der aktuellen Seite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::language}}`</td>
+  <td><code>{{page::language}}</code></td>
   <td>Dieses Tag wird mit der Sprache der aktuellen Seite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::parentAlias}}`</td>
+  <td><code>{{page::parentAlias}}</code></td>
   <td>Dieses Tag wird mit dem Alias der übergeordneten Seite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::parentTitle}}`</td>
+  <td><code>{{page::parentTitle}}</code></td>
   <td>Dieses Tag wird mit dem Namen der übergeordneten Seite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::parentPageTitle}}`</td>
+  <td><code>{{page::parentPageTitle}}</code></td>
   <td>Dieses Tag wird mit dem Titel der übergeordneten Seite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::mainAlias}}`</td>
+  <td><code>{{page::mainAlias}}</code></td>
   <td>Dieses Tag wird mit dem Alias der übergeordneten Hauptseite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::mainTitle}}`</td>
+  <td><code>{{page::mainTitle}}</code></td>
   <td>Dieses Tag wird mit dem Namen der übergeordneten Hauptseite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::mainPageTitle}}`</td>
+  <td><code>{{page::mainPageTitle}}</code></td>
   <td>Dieses Tag wird mit dem Titel der übergeordneten Hauptseite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{page::rootTitle}}`</td>
+  <td><code>{{page::rootTitle}}</code></td>
   <td>Dieses Tag wird mit dem Titel der Webseite ersetzt.</td>
 </tr>
 </table>
@@ -865,40 +865,40 @@ oder der Request-String ausgegeben werden.
   <th>Beschreibung</th>
 </tr>
 <tr>
-  <td>`{{env::host}}`</td>
+  <td><code>{{env::host}}</code></td>
   <td>Dieses Tag wird mit dem aktuellen Hostnamen ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{env::url}}`</td>
+  <td><code>{{env::url}}</code></td>
   <td>Dieses Tag wird mit dem Hostnamen und dem Protokoll ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{env::path}}`</td>
+  <td><code>{{env::path}}</code></td>
   <td>Dieses Tag wird mit der aktuellen Basis-URL samt Pfad zum
       Contao-Verzeichnis ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{env::request}}`</td>
+  <td><code>{{env::request}}</code></td>
   <td>Dieses Tag wird mit dem aktuellen Request-String ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{env::ip}}`</td>
+  <td><code>{{env::ip}}</code></td>
   <td>Dieses Tag wird mit der IP-Adresse des aktuellen Besuchers ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{env::referer}}`</td>
+  <td><code>{{env::referer}}</code></td>
   <td>Dieses Tag wird mit der URL der zuletzt besuchten Seite ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{env::files_url}}`</td>
+  <td><code>{{env::files_url}}</code></td>
   <td>Dieses Tag wird mit der statischen URL des Uploadverzeichnis ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{env::script_url}}`</td>
+  <td><code>{{env::script_url}}</code></td>
   <td>Dieses Tag wird mit der statischen URL des Skriptverzeichnis ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{env::plugins_url}}`</td>
+  <td><code>{{env::plugins_url}}</code></td>
   <td>Dieses Tag wird mit der statischen URL des Pluginsverzeichnis
       ersetzt.</td>
 </tr>
@@ -916,40 +916,40 @@ Dateien aus dem "templates"-Verzeichnis eingebunden werden.
   <th>Beschreibung</th>
 </tr>
 <tr>
-  <td>`{{insert_article::*}}`</td>
+  <td><code>{{insert_article::*}}</code></td>
   <td>Dieses Tag wird mit dem referenzierten Artikel ersetzt (ersetzen Sie * mit
       der ID oder dem Alias).</td>
 </tr>
 <tr>
-  <td>`{{insert_content::*}}`</td>
+  <td><code>{{insert_content::*}}</code></td>
   <td>Dieses Tag wird mit dem referenzierten Inhaltselement ersetzt (ersetzen
       Sie * mit der ID des Elements).</td>
 </tr>
 <tr>
-  <td>`{{insert_module::*}}`</td>
+  <td><code>{{insert_module::*}}</code></td>
   <td>Dieses Tag wird mit dem referenzierten Modul ersetzt (ersetzen Sie * mit
       der ID des Moduls).</td>
 </tr>
 <tr>
-  <td>`{{article_teaser::*}}`</td>
+  <td><code>{{article_teaser::*}}</code></td>
   <td>Dieses Tag wird mit dem Teaser eines Artikels ersetzt (ersetzen Sie * mit
       der ID des Artikels).</td>
 </tr>
 <tr>
-  <td>`{{news_teaser::*}}`</td>
+  <td><code>{{news_teaser::*}}</code></td>
   <td>Dieses Tag wird mit dem Teaser einer Nachricht ersetzt (ersetzen Sie * mit
       der ID der Nachricht).</td>
 </tr>
 <tr>
-  <td>`{{event_teaser::*}}`</td>
+  <td><code>{{event_teaser::*}}</code></td>
   <td>Dieses Tag wird mit dem Teaser eines Events ersetzt (ersetzen Sie * mit
       der ID des Events).</td>
 </tr>
 <tr>
-  <td>`{{file::*}}`</td>
+  <td><code>{{file::*}}</code></td>
   <td>Dieses Tag wird mit dem Inhalt einer .php- oder .tpl-Datei aus dem
       `templates`-Verzeichnis ersetzt (ersetzen Sie * mit dem Namen). Bei Bedarf
-      können Sie Argumente übergeben: `{{file::file.php?arg1=val}}`</td>
+      können Sie Argumente übergeben: `{{file::file.php?arg1=val}}</code></td>
 </tr>
 </table>
 
@@ -965,67 +965,67 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <th>Beschreibung</th>
 </tr>
 <tr>
-  <td>`{{date}}`</td>
+  <td><code>{{date}}</code></td>
   <td>Dieses Tag wird mit dem aktuellen Datum gemäß des globalen Datumsformats
       ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{date::*}}`</td>
+  <td><code>{{date::*}}</code></td>
   <td>Dieses Tag wird mit dem aktuellen Datum gemäß eines individuellen
       Datumsformats ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{last_update}}`</td>
+  <td><code>{{last_update}}</code></td>
   <td>Dieses Tag wird mit dem Datum der letzten Aktualisierung gemäß des
       globalen Datumsformats ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{last_update::*}}`</td>
+  <td><code>{{last_update::*}}</code></td>
   <td>Dieses Tag wird mit Datum der letzten Aktualisierung gemäß eines
       individuellen Datumsformats ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{email::*}}`</td>
+  <td><code>{{email::*}}</code></td>
   <td>Dieses Tag wird mit einem verschlüsselten Link zu einer E-Mail-Adresse
       ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{lang::*}}`</td>
+  <td><code>{{lang::*}}</code></td>
   <td>Mit diesem Tag können fremdsprachige Wörter in einem Text markiert
       werden: `{{lang::fr}}Au revoir{{lang}}`. Dies wird ersetzt mit `<span
       lang="fr" xml:lang="fr">Au revoir</span>`.</td>
 </tr>
 <tr>
-  <td>`{{abbr::*}}`</td>
+  <td><code>{{abbr::*}}</code></td>
   <td>Abkürzungen in einem Text markieren: `{{abbr::World Wide
       Web}}WWW{{abbr}}`. Dies wird ersetzt mit `<abbr title="World Wide
       Web">WWW</abbr>`.</td>
 </tr>
 <tr>
-  <td>`{{acronym::*}}`</td>
+  <td><code>{{acronym::*}}</code></td>
   <td>Acronyme in einem Text markieren: `{{acronym:: Multipurpose Internet Mail
       Extensions}}MIME{{acronym}}`. Dies wird ersetzt mit `<acronym
       title="Multipurpose Internet Mail Extensions">MIME</acronym>`.</td>
 </tr>
 <tr>
-  <td>`{{ua::*}}`</td>
+  <td><code>{{ua::*}}</code></td>
   <td>Eigenschaften des Browsers (User Agent) ausgeben: `{{ua::browser}}`. Dies
       wird beispielsweise ersetzt mit "chrome".</td>
 </tr>
 <tr>
-  <td>`{{iflng::*}}`</td>
+  <td><code>{{iflng::*}}</code></td>
   <td>Dieses Tag wird komplett entfernt, wenn die Sprache der Seite nicht mit
       der Tag-Sprache übereinstimmt. Sie können so sprachspezifische Bezeichnungen
-      erstellen: `{{iflng::en}}Your name{{iflng}}`</td>
+      erstellen: `{{iflng::en}}Your name{{iflng}}</code></td>
 </tr>
 <tr>
-  <td>`{{ifnlng::*}}`</td>
+  <td><code>{{ifnlng::*}}</code></td>
   <td>Dieses Tag wird komplett entfernt, wenn die Sprache der Seite mit der
       Tag-Sprache übereinstimmt. Sie können so sprachspezifische Bezeichnungen
-      erstellen: `{{ifnlng::de}}Your name{{iflng}}`</td>
+      erstellen: `{{ifnlng::de}}Your name{{iflng}}</code></td>
 </tr>
 <tr>
-  <td>`{{image::*}}`</td>
+  <td><code>{{image::*}}</code></td>
   <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt:
       `{{image::files/image.jpg?width=200&amp;height=150}}`. **width** Breite
       des Vorschaubildes, **height** Höhe des Vorschaubildes, **alt**
@@ -1033,18 +1033,18 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
       "lightbox"), **mode** Modus ("proportional", "crop" oder "box")</td>
 </tr>
 <tr>
-  <td>`{{label::*}}`</td>
+  <td><code>{{label::*}}</code></td>
   <td>Dieses Tag wird mit einer Übersetzung ersetzt: `{{label::CNT:au}}` oder
       `{{label::tl_article:title:0}}`. Beachten Sie, dass innerhalb des Pfads
       zur Bezeichnung nur einfache Doppelpunkte verwendet werden.</td>
 </tr>
 <tr>
-  <td>`{{version::*}}`</td>
+  <td><code>{{version::*}}</code></td>
   <td>Dieses Tag wird mit der verwendeten Contao-Version (z.B. 2.11.2)
       ersetzt.</td>
 </tr>
 <tr>
-  <td>`{{request_token::*}}`</td>
+  <td><code>{{request_token::*}}</code></td>
   <td>Dieses Tag wird mit dem zur aktuellen Session gehörenden Request-Token
       ersetzt.</td>
 </tr>

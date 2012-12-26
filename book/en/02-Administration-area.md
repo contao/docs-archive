@@ -133,38 +133,38 @@ the keyboard shortcut `[Alt]+[s]`.
   <th>Explanation</th>
 </tr>
 <tr>
-  <td>`[Alt]+[h]`</td>
-  <td>**H**ome</td>
+  <td><code>[Alt]+[h]</code></td>
+  <td><b>H</b>ome</td>
   <td>Go to the home page of the back end.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[q]`</td>
-  <td>**Q**uit</td>
+  <td><code>[Alt]+[q]</code></td>
+  <td><b>Q</b>uit</td>
   <td>Quit the current back end session (log out).</td>
 </tr>
 <tr>
-  <td>`[Alt]+[t]`</td>
-  <td>**T**op</td>
+  <td><code>[Alt]+[t]</code></td>
+  <td><b>T</b>op</td>
   <td>Go to the top of the page.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[b]`</td>
-  <td>**B**ack</td>
+  <td><code>[Alt]+[b]</code></td>
+  <td><b>B</b>ack</td>
   <td>Go back to the previous page.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[n]`</td>
-  <td>**N**ew record</td>
+  <td><code>[Alt]+[n]</code></td>
+  <td><b>N</b>ew record</td>
   <td>Create a new record.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[e]`</td>
-  <td>**E**dit multiple</td>
+  <td><code>[Alt]+[e]</code></td>
+  <td><b>E</b>dit multiple</td>
   <td>Switch to the "edit multiple" mode.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[f]`</td>
-  <td>**F**ront end preview</td>
+  <td><code>[Alt]+[f]</code></td>
+  <td><b>F</b>ront end preview</td>
   <td>Open the front end preview in a new browser window.</td>
 </tr>
 </table>
@@ -179,30 +179,30 @@ the keyboard shortcut `[Alt]+[s]`.
   <th>Explanation</th>
 </tr>
 <tr>
-  <td>`[Alt]+[s]`</td>
-  <td>**S**ave</td>
+  <td><code>[Alt]+[s]</code></td>
+  <td><b>S</b>ave</td>
   <td>Saves the current form.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[c]`</td>
-  <td>Save and **c**lose</td>
+  <td><code>[Alt]+[c]</code></td>
+  <td>Save and <b>c</b>lose</td>
   <td>Saves the current form and redirects to the previous page.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[g]`</td>
-  <td>Save and **g**o back</td>
+  <td><code>[Alt]+[g]</code></td>
+  <td>Save and <b>g</b>o back</td>
   <td>Saves the current form and redirects to the parent page, e.g. from a
 content element to the article tree.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[e]`</td>
-  <td>Save and **e**dit</td>
+  <td><code>[Alt]+[e]</code></td>
+  <td>Save and <b>e</b>dit</td>
   <td>Saves the current form and redirects to the child records view, e.g. when
 creating style sheets.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[n]`</td>
-  <td>Save and **n**ew</td>
+  <td><code>[Alt]+[n]</code></td>
+  <td>Save and <b>n</b>ew</td>
   <td>Saves the current form and creates a new record.</td>
 </tr>
 </table>
@@ -217,22 +217,22 @@ creating style sheets.</td>
   <th>Explanation</th>
 </tr>
 <tr>
-  <td>`[Alt]+[d]`</td>
-  <td>**D**elete multiple</td>
+  <td><code>[Alt]+[d]</code></td>
+  <td><b>D</b>elete multiple</td>
   <td>Deletes all selected records in "edit multiple" mode.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[x]`</td>
+  <td><code>[Alt]+[x]</code></td>
   <td>Cut multiple</td>
   <td>Moves all selected records in "edit multiple" mode.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[c]`</td>
-  <td>**C**opy multiple</td>
+  <td><code>[Alt]+[c]</code></td>
+  <td><b>C</b>opy multiple</td>
   <td>Duplicates all selected records in "edit multiple" mode.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[v]`</td>
+  <td><code>[Alt]+[v]</code></td>
   <td>Override multiple</td>
   <td>Overrides all selected records in "edit multiple" mode.</td>
 </tr>

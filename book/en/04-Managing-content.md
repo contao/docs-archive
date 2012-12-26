@@ -592,117 +592,117 @@ ID or alias.
   <th>Description</th>
 </tr>
 <tr>
-  <td>`{{link::*}}`</td>
+  <td><code>{{link::*}}</code></td>
   <td>This tag will be replaced with a link to an internal page (replace * with
       the page ID or alias).</td>
 </tr>
 <tr>
-  <td>`{{link::back}}`</td>
+  <td><code>{{link::back}}</code></td>
   <td>This tag will be replaced with a link to the last page visited. Can also
       be used with "link_open", "link_url" and "link_title".</td>
 </tr>
 <tr>
-  <td>`{{link::login}}`</td>
+  <td><code>{{link::login}}</code></td>
   <td>This tag will be replaced with a link to the login page of the currently
       logged in front end user (if any).</td>
 </tr>
 <tr>
-  <td>`{{link_open::*}}`</td>
+  <td><code>{{link_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to an internal page:
       `{{link_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{link_url::*}}`</td>
+  <td><code>{{link_url::*}}</code></td>
   <td>This tag will be replaced with the URL of an internal page: `<a
       href="{{link_url::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{link_title::*}}`</td>
+  <td><code>{{link_title::*}}</code></td>
   <td>This tag will be replaced with the title of an internal page: `<a
       title="{{link_title::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{link_close}}`</td>
+  <td><code>{{link_close}}</code></td>
   <td>Will be replaced with the closing tag of a link to an internal page:
       `{{link_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{article::*}}`</td>
+  <td><code>{{article::*}}</code></td>
   <td>This tag will be replaced with a link to an article (replace * with the
       article ID or alias).</td>
 </tr>
 <tr>
-  <td>`{{article_open::*}}`</td>
+  <td><code>{{article_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to an article:
       `{{article_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{article_url::*}}`</td>
+  <td><code>{{article_url::*}}</code></td>
   <td>This tag will be replaced with the URL of an article: `<a
       href="{{article_url::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{article_title::*}}`</td>
+  <td><code>{{article_title::*}}</code></td>
   <td>This tag will be replaced with the title of an article: `<a
       title="{{article_title::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{news::*}}`</td>
+  <td><code>{{news::*}}</code></td>
   <td>This tag will be replaced with a link to a news item (replace * with the
       news ID or alias).</td>
 </tr>
 <tr>
-  <td>`{{news_open::*}}`</td>
+  <td><code>{{news_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to a news article:
       `{{news_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{news_url::*}}`</td>
+  <td><code>{{news_url::*}}</code></td>
   <td>This tag will be replaced with the URL of a news article: `<a
       href="{{news_url::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{news_title::*}}`</td>
+  <td><code>{{news_title::*}}</code></td>
   <td>This tag will be replaced with the title of a news article: `<a
       title="{{news_title::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{event::*}}`</td>
+  <td><code>{{event::*}}</code></td>
   <td>This tag will be replaced with a link to an event (replace * with the
       event ID or alias).</td>
 </tr>
 <tr>
-  <td>`{{event_open::*}}`</td>
+  <td><code>{{event_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to an event:
       `{{event_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{event_url::*}}`</td>
+  <td><code>{{event_url::*}}</code></td>
   <td>This tag will be replaced with the URL of an event: `<a
       href="{{event_url::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{event_title::*}}`</td>
+  <td><code>{{event_title::*}}</code></td>
   <td>This tag will be replaced with the title of an event: `<a
       title="{{event_title::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{faq::*}}`</td>
+  <td><code>{{faq::*}}</code></td>
   <td>This tag will be replaced with a link to a frequently asked question
       (replace * with the FAQ ID or alias).</td>
 </tr>
 <tr>
-  <td>`{{faq_open::*}}`</td>
+  <td><code>{{faq_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to a question:
       `{{faq_open::12}}Click here{{link_close}}`.</td>
 </tr>
 <tr>
-  <td>`{{faq_url::*}}`</td>
+  <td><code>{{faq_url::*}}</code></td>
   <td>This tag will be replaced with the URL of a question: `<a
       href="{{faq_url::12}}">Click here</a>`.</td>
 </tr>
 <tr>
-  <td>`{{faq_title::*}}`</td>
+  <td><code>{{faq_title::*}}</code></td>
   <td>This tag will be replaced with the title of a question: `<a
       title="{{faq_title::12}}">Click here</a>`.</td>
 </tr>
@@ -720,67 +720,67 @@ logged in user.
   <th>Description</th>
 </tr>
 <tr>
-  <td>`{{user::firstname}}`</td>
+  <td><code>{{user::firstname}}</code></td>
   <td>This tag will be replaced with the first name of the currently logged in
       user.</td>
 </tr>
 <tr>
-  <td>`{{user::lastname}}`</td>
+  <td><code>{{user::lastname}}</code></td>
   <td>This tag will be replaced with the last name of the currently logged in
       user.</td>
 </tr>
 <tr>
-  <td>`{{user::company}}`</td>
+  <td><code>{{user::company}}</code></td>
   <td>This tag will be replaced with the company name of the currently logged in
       user.</td>
 </tr>
 <tr>
-  <td>`{{user::phone}}`</td>
+  <td><code>{{user::phone}}</code></td>
   <td>This tag will be replaced with the phone number of the currently logged in
       user.</td>
 </tr>
 <tr>
-  <td>`{{user::mobile}}`</td>
+  <td><code>{{user::mobile}}</code></td>
   <td>This tag will be replaced with the mobile number of the currently logged
       in user.</td>
 </tr>
 <tr>
-  <td>`{{user::fax}}`</td>
+  <td><code>{{user::fax}}</code></td>
   <td>This tag will be replaced with the fax number of the currently logged in
       user.</td>
 </tr>
 <tr>
-  <td>`{{user::email}}`</td>
+  <td><code>{{user::email}}</code></td>
   <td>This tag will be replaced with the e-mail address of the currently logged
       in user.</td>
 </tr>
 <tr>
-  <td>`{{user::website}}`</td>
+  <td><code>{{user::website}}</code></td>
   <td>This tag will be replaced with the web address of the currently logged in
       user.</td>
 </tr>
 <tr>
-  <td>`{{user::street}}`</td>
+  <td><code>{{user::street}}</code></td>
   <td>This tag will be replaced with the street name of the currently logged in
       user.</td>
 </tr>
 <tr>
-  <td>`{{user::postal}}`</td>
+  <td><code>{{user::postal}}</code></td>
   <td>This tag will be replaced with the postal code of the currently logged in
       user.</td>
 </tr>
 <tr>
-  <td>`{{user::city}}`</td>
+  <td><code>{{user::city}}</code></td>
   <td>This tag will be replaced with the city of the currently logged in
       user.</td>
 </tr>
 <tr>
-  <td>`{{user::country}}`</td>
+  <td><code>{{user::country}}</code></td>
   <td>This tag will be replaced with the country of the currently logged in
       user.</td>
 </tr>
 <tr>
-  <td>`{{user::username}}`</td>
+  <td><code>{{user::username}}</code></td>
   <td>This tag will be replaced with the username of the currently logged in
       user.</td>
 </tr>
@@ -797,51 +797,51 @@ The following Insert Tags allow you to display any property of the current page.
   <th>Description</th>
 </tr>
 <tr>
-  <td>`{{page::id}}`</td>
+  <td><code>{{page::id}}</code></td>
   <td>This tag will be replaced with the ID of the current page.</td>
 </tr>
 <tr>
-  <td>`{{page::alias}}`</td>
+  <td><code>{{page::alias}}</code></td>
   <td>This tag will be replaced with the alias of the current page.</td>
 </tr>
 <tr>
-  <td>`{{page::title}}`</td>
+  <td><code>{{page::title}}</code></td>
   <td>This tag will be replaced with the name of the current page.</td>
 </tr>
 <tr>
-  <td>`{{page::pageTitle}}`</td>
+  <td><code>{{page::pageTitle}}</code></td>
   <td>This tag will be replaced with the title of the current page.</td>
 </tr>
 <tr>
-  <td>`{{page::language}}`</td>
+  <td><code>{{page::language}}</code></td>
   <td>This tag will be replaced with the language of the current page.</td>
 </tr>
 <tr>
-  <td>`{{page::parentAlias}}`</td>
+  <td><code>{{page::parentAlias}}</code></td>
   <td>This tag will be replaced with the alias of the parent page.</td>
 </tr>
 <tr>
-  <td>`{{page::parentTitle}}`</td>
+  <td><code>{{page::parentTitle}}</code></td>
   <td>This tag will be replaced with the name of the parent page.</td>
 </tr>
 <tr>
-  <td>`{{page::parentPageTitle}}`</td>
+  <td><code>{{page::parentPageTitle}}</code></td>
   <td>This tag will be replaced with the title of the parent page.</td>
 </tr>
 <tr>
-  <td>`{{page::mainAlias}}`</td>
+  <td><code>{{page::mainAlias}}</code></td>
   <td>This tag will be replaced with the alias of the parent main page.</td>
 </tr>
 <tr>
-  <td>`{{page::mainTitle}}`</td>
+  <td><code>{{page::mainTitle}}</code></td>
   <td>This tag will be replaced with the name of the parent main page.</td>
 </tr>
 <tr>
-  <td>`{{page::mainPageTitle}}`</td>
+  <td><code>{{page::mainPageTitle}}</code></td>
   <td>This tag will be replaced with the title of the parent main page.</td>
 </tr>
 <tr>
-  <td>`{{page::rootTitle}}`</td>
+  <td><code>{{page::rootTitle}}</code></td>
   <td>This tag will be replaced with the title of the website.</td>
 </tr>
 </table>
@@ -858,41 +858,41 @@ page name or the request string.
   <th>Description</th>
 </tr>
 <tr>
-  <td>`{{env::host}}`</td>
+  <td><code>{{env::host}}</code></td>
   <td>This tag will be replaced with the current host name.</td>
 </tr>
 <tr>
-  <td>`{{env::url}}`</td>
+  <td><code>{{env::url}}</code></td>
   <td>This tag will be replaced with the host name and the protocol.</td>
 </tr>
 <tr>
-  <td>`{{env::path}}`</td>
+  <td><code>{{env::path}}</code></td>
   <td>This tag will be replaced with the current base URL including the path to
       the Contao directory.</td>
 </tr>
 <tr>
-  <td>`{{env::request}}`</td>
+  <td><code>{{env::request}}</code></td>
   <td>This tag will be replaced with the current request string.</td>
 </tr>
 <tr>
-  <td>`{{env::ip}}`</td>
+  <td><code>{{env::ip}}</code></td>
   <td>This tag will be replaced with the IP address of the current visitor.</td>
 </tr>
 <tr>
-  <td>`{{env::referer}}`</td>
+  <td><code>{{env::referer}}</code></td>
   <td>This tag will be replaced with the URL of the last page visited.</td>
 </tr>
 <tr>
-  <td>`{{env::files_url}}`</td>
+  <td><code>{{env::files_url}}</code></td>
   <td>This tag will be replaced with the static URL of the files directory.</td>
 </tr>
 <tr>
-  <td>`{{env::script_url}}`</td>
+  <td><code>{{env::script_url}}</code></td>
   <td>This tag will be replaced with the static URL of the scripts
       directory.</td>
 </tr>
 <tr>
-  <td>`{{env::plugins_url}}`</td>
+  <td><code>{{env::plugins_url}}</code></td>
   <td>This tag will be replaced with the static URL of the plugins
       directory.</td>
 </tr>
@@ -910,37 +910,37 @@ modules or files from the "templates" directoy.
   <th>Description</th>
 </tr>
 <tr>
-  <td>`{{insert_article::*}}`</td>
+  <td><code>{{insert_article::*}}</code></td>
   <td>This tag will be replaced with the referenced article (replace * with the
       article ID or alias).</td>
 </tr>
 <tr>
-  <td>`{{insert_content::*}}`</td>
+  <td><code>{{insert_content::*}}</code></td>
   <td>This tag will be replaced with the referenced content element (replace *
       with the element ID).</td>
 </tr>
 <tr>
-  <td>`{{insert_module::*}}`</td>
+  <td><code>{{insert_module::*}}</code></td>
   <td>This tag will be replaced with the referenced module (replace * with the
       module ID).</td>
 </tr>
 <tr>
-  <td>`{{article_teaser::*}}`</td>
+  <td><code>{{article_teaser::*}}</code></td>
   <td>This tag will be replaced with the teaser of an article (replace * with
       the article ID).</td>
 </tr>
 <tr>
-  <td>`{{news_teaser::*}}`</td>
+  <td><code>{{news_teaser::*}}</code></td>
   <td>This tag will be replaced with the teaser of a news item (replace * with
       the news ID).</td>
 </tr>
 <tr>
-  <td>`{{event_teaser::*}}`</td>
+  <td><code>{{event_teaser::*}}</code></td>
   <td>This tag will be replaced with the teaser of an event (replace * with the
       event ID).</td>
 </tr>
 <tr>
-  <td>`{{file::*}}`</td>
+  <td><code>{{file::*}}</code></td>
   <td>This tag will be replaced with the content of a file from the "templates"
       directory (replace * with the file name). You can also provide arguments:
       `{{file::file.php?arg1=val&amp;arg2=val}}`.</td>
@@ -959,66 +959,66 @@ the current date or including lightbox images.
   <th>Description</th>
 </tr>
 <tr>
-  <td>`{{date}}`</td>
+  <td><code>{{date}}</code></td>
   <td>This tag will be replaced with the current date according to the global
       date format.</td>
 </tr>
 <tr>
-  <td>`{{date::*}}`</td>
+  <td><code>{{date::*}}</code></td>
   <td>This tag will be replaced with the current date according to a custom date
       format.</td>
 </tr>
 <tr>
-  <td>`{{last_update}}`</td>
+  <td><code>{{last_update}}</code></td>
   <td>This tag will be replaced with the date of the last update according to
       the global date format.</td>
 </tr>
 <tr>
-  <td>`{{last_update::*}}`</td>
+  <td><code>{{last_update::*}}</code></td>
   <td>This tag will be replaced with the date of the last update according to a
       custom date format.</td>
 </tr>
 <tr>
-  <td>`{{email::*}}`</td>
+  <td><code>{{email::*}}</code></td>
   <td>This tag will be replaced with a clickable and encrypted link to an e-mail
       address.</td>
 </tr>
 <tr>
-  <td>`{{lang::*}}`</td>
+  <td><code>{{lang::*}}</code></td>
   <td>This tag can be used to mark foreign words within a text: `{{lang::fr}}Au
       revoir{{lang}}`. It will be replaced with `<span lang="fr"
       xml:lang="fr">Au revoir</span>`.</td>
 </tr>
 <tr>
-  <td>`{{abbr::*}}`</td>
+  <td><code>{{abbr::*}}</code></td>
   <td>Mark abbreviations in a text: `{{abbr::World Wide Web}}WWW{{abbr}}`.
       It will be replaced with `<abbr title="World Wide Web">WWW</abbr>`.</td>
 </tr>
 <tr>
-  <td>`{{acronym::*}}`</td>
+  <td><code>{{acronym::*}}</code></td>
   <td>Mark acronyms in a text: `{{acronym:: Multipurpose Internet Mail
       Extensions}}MIME{{acronym}}`. It will be replaced with `<acronym
       title="Multipurpose Internet Mail Extensions">MIME</acronym>`.</td>
 </tr>
 <tr>
-  <td>`{{ua::*}}`</td>
+  <td><code>{{ua::*}}</code></td>
   <td>Output properties of the user agent: `{{ua::browser}}`. It will e.g. be
       replaced with "chrome".</td>
 </tr>
 <tr>
-  <td>`{{iflng::*}}`</td>
+  <td><code>{{iflng::*}}</code></td>
   <td>This tag will be completely removed if the page language does not match
       the tag language. You can use it to define language-specific labels:
       `{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}`.</td>
 </tr>
 <tr>
-  <td>`{{ifnlng::*}}`</td>
+  <td><code>{{ifnlng::*}}</code></td>
   <td>This tag will be completely removed if the page language matches the tag
       language. You can use it to define language-specific labels:
       `{{ifnlng::de}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}`.</td>
 </tr>
 <tr>
-  <td>`{{image::*}}`</td>
+  <td><code>{{image::*}}</code></td>
   <td>This tag will be replaced with the thumbnail of an image:
       `{{image::files/image.jpg?width=200&amp;height=150}}`. **width**
       Thumbnail width, **height** Thumbnail height, **alt** Alternative
@@ -1026,18 +1026,18 @@ the current date or including lightbox images.
       **mode** mode ("proportional", "crop" or "box").</td>
 </tr>
 <tr>
-  <td>`{{label::*}}`</td>
+  <td><code>{{label::*}}</code></td>
   <td>This tag will be replaced with a translated label: `{{label::CNT:au}}` or
       `{{label::tl_article:title:0}}`. Note that only the first colon is a
       double colon.</td>
 </tr>
 <tr>
-  <td>`{{version::*}}`</td>
+  <td><code>{{version::*}}</code></td>
   <td>This tag will be replaced with the current Contao version (e.g.
       2.11.2).</td>
 </tr>
 <tr>
-  <td>`{{request_token::*}}`</td>
+  <td><code>{{request_token::*}}</code></td>
   <td>This tag will be replaced with the request token of the current
       session.</td>
 </tr>

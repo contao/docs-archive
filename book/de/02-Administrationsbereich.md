@@ -133,39 +133,39 @@ Tastaturkürzel `[Alt]+[s]` ansteuern.
   <th>Erklärung</th>
 </tr>
 <tr>
-  <td>`[Alt]+[h]`</td>
+  <td><code>[Alt]+[h]</code></td>
   <td>Startseite</td>
-  <td>Zur Startseite des Backend (**H**ome).</td>
+  <td>Zur Startseite des Backend (<b>H</b>ome).</td>
 </tr>
 <tr>
-  <td>`[Alt]+[q]`</td>
+  <td><code>[Alt]+[q]</code></td>
   <td>Abmelden</td>
-  <td>Beendet die aktuelle Backend-Sitzung (**Q**uit).</td>
+  <td>Beendet die aktuelle Backend-Sitzung (<b>Q</b>uit).</td>
 </tr>
 <tr>
-  <td>`[Alt]+[t]`</td>
+  <td><code>[Alt]+[t]</code></td>
   <td>Nach oben</td>
-  <td>Springt zum Anfang der Seite (**T**op).</td>
+  <td>Springt zum Anfang der Seite (<b>T</b>op).</td>
 </tr>
 <tr>
-  <td>`[Alt]+[b]`</td>
+  <td><code>[Alt]+[b]</code></td>
   <td>Zurück</td>
-  <td>Zurück zur vorherigen Seite (**B**ack).</td>
+  <td>Zurück zur vorherigen Seite (<b>B</b>ack).</td>
 </tr>
 <tr>
-  <td>`[Alt]+[n]`</td>
+  <td><code>[Alt]+[n]</code></td>
   <td>Neuer Datensatz</td>
-  <td>Legt einen neuen Datensatz an (**N**ew).</td>
+  <td>Legt einen neuen Datensatz an (<b>N</b>ew).</td>
 </tr>
 <tr>
-  <td>`[Alt]+[e]`</td>
+  <td><code>[Alt]+[e]</code></td>
   <td>Mehrere bearbeiten</td>
-  <td>Wechselt in den "mehrere bearbeiten"-Modus (**E**dit multiple).</td>
+  <td>Wechselt in den "mehrere bearbeiten"-Modus (<b>E</b>dit multiple).</td>
 </tr>
 <tr>
-  <td>`[Alt]+[f]`</td>
+  <td><code>[Alt]+[f]</code></td>
   <td>Frontend-Vorschau</td>
-  <td>Öffnet die Frontend-Vorschau in einem neuen Fenster (**F**ront end
+  <td>Öffnet die Frontend-Vorschau in einem neuen Fenster (<b>F</b>ront end
       preview).</td>
 </tr>
 </table>
@@ -180,34 +180,34 @@ Tastaturkürzel `[Alt]+[s]` ansteuern.
   <th>Erklärung</th>
 </tr>
 <tr>
-  <td>`[Alt]+[s]`</td>
+  <td><code>[Alt]+[s]</code></td>
   <td>Speichern</td>
-  <td>Speichert das aktuelle Eingabeformular (**S**ave).</td>
+  <td>Speichert das aktuelle Eingabeformular (<b>S</b>ave).</td>
 </tr>
 <tr>
-  <td>`[Alt]+[c]`</td>
+  <td><code>[Alt]+[c]</code></td>
   <td>Speichern und schließen</td>
-  <td>Speichert und schließt das aktuelle Eingabeformular (Save and **c**lose).
+  <td>Speichert und schließt das aktuelle Eingabeformular (Save and <b>c</b>lose).
       Sie gelangen zurück zur vorherigen Seite.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[g]`</td>
+  <td><code>[Alt]+[g]</code></td>
   <td>Speichern und zurück</td>
-  <td>Speichert und schließt das aktuelle Eingabeformular (Save and **g**o
+  <td>Speichert und schließt das aktuelle Eingabeformular (Save and <b>g</b>o
       back). Sie gelangen zurück zur übergeordneten Seite, z.B. von einem
       Inhaltselement direkt zur Artikelübersicht.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[e]`</td>
+  <td><code>[Alt]+[e]</code></td>
   <td>Speichern und bearbeiten</td>
-  <td>Speichert das aktuelle Eingabeformular (Save and **e**dit) und wechselt
+  <td>Speichert das aktuelle Eingabeformular (Save and <b>e</b>dit) und wechselt
       zur Ansicht der Kind-Datensätze, z.B. beim Anlegen von Stylesheets.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[n]`</td>
+  <td><code>[Alt]+[n]</code></td>
   <td>Speichern und neu</td>
   <td>Speichert das aktuelle Eingabeformular und legt einen neuen Datensatz an
-      (Save and **n**ew).</td>
+      (Save and <b>n</b>ew).</td>
 </tr>
 </table>
 
@@ -221,25 +221,25 @@ Tastaturkürzel `[Alt]+[s]` ansteuern.
   <th>Erklärung</th>
 </tr>
 <tr>
-  <td>`[Alt]+[d]`</td>
+  <td><code>[Alt]+[d]</code></td>
   <td>Mehrere löschen</td>
   <td>Löscht alle ausgewählten Datensätze im Modus »mehrere bearbeiten«
-      (**D**elete).</td>
+      (<b>D</b>elete).</td>
 </tr>
 <tr>
-  <td>`[Alt]+[x]`</td>
+  <td><code>[Alt]+[x]</code></td>
   <td>Mehrere verschieben</td>
   <td>Verschiebt alle ausgewählten Datensätze im Modus »mehrere
       bearbeiten«.</td>
 </tr>
 <tr>
-  <td>`[Alt]+[c]`</td>
+  <td><code>[Alt]+[c]</code></td>
   <td>Mehrere kopieren</td>
   <td>Kopiert alle ausgewählten Datensätze im Modus »mehrere bearbeiten«
-      (**C**opy).</td>
+      (<b>C</b>opy).</td>
 </tr>
 <tr>
-  <td>`[Alt]+[v]`</td>
+  <td><code>[Alt]+[v]</code></td>
   <td>Mehrere überschreiben</td>
   <td>Überschreibt alle ausgewählten Datensätze im Modus »mehrere
       bearbeiten«.</td>
