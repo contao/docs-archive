@@ -153,32 +153,41 @@ und eigene Bezeichnungen einfügen.
 <tr>
   <td>mode</td>
   <td>Sortierungsmodus (<code>integer</code>)</td>
-  <td>**0** Keine Sortierung, **1** Sortierung nach einem festen Feld, **2**
-      Sortierung nach einem variablen Feld, **3** Sortierung anhand der
-      Elterntabelle, **4** Darstellung der Kinddatensätze eines
-      Elterndatensatzes (vgl. Stylesheets-Modul), **5** Darstellung als Baum
-      (vgl. Seitenstruktur), **6** Sortierung der Kinddatensätze anhand eines
-      Baumes (vgl. Artikelverwaltung)</td>
+  <td><b>0</b> Keine Sortierung<br>
+      <b>1</b> Sortierung nach einem festen Feld<br>
+      <b>2</b> Sortierung nach einem variablen Feld<br>
+      <b>3</b> Sortierung anhand der Elterntabelle<br>
+      <b>4</b> Darstellung der Kinddatensätze eines Elterndatensatzes (vgl.
+      Stylesheets-Modul)<br>
+      <b>5</b> Darstellung als Baum (vgl. Seitenstruktur)<br>
+      <b>6</b> Sortierung der Kinddatensätze anhand eines Baumes (vgl.
+      Artikelverwaltung)</td>
 </tr>
 <tr>
   <td>flag</td>
   <td>Sortierflag (<code>integer</code>)</td>
-  <td>**1** Aufsteigende Sortierung nach Anfangsbuchstabe, **2** Absteigende
-      Sortierung nach Anfangsbuchstabe, **3** Aufsteigende Sortierung nach den
-      ersten beiden Buchstaben, **4** Absteigende Sortierung nach den ersten
-      beiden Buchstaben, **5** Aufsteigende Sortierung nach Tag, **6**
-      Absteigende Sortierung nach Tag, **7** Aufsteigende Sortierung nach Monat,
-      **8** Absteigende Sortierung nach Monat, **9** Aufsteigende Sortierung
-      nach Jahr, **10** Absteigende Sortierung nach Jahr, **11** Aufsteigende
-      Sortierung, **12** Absteigende Sortierung</td>
+  <td><b>1</b> Aufsteigende Sortierung nach Anfangsbuchstabe<br>
+      <b>2</b> Absteigende Sortierung nach Anfangsbuchstabe<br>
+      <b>3</b> Aufsteigende Sortierung nach den ersten beiden Buchstaben<br>
+      <b>4</b> Absteigende Sortierung nach den ersten beiden Buchstaben<br>
+      <b>5</b> Aufsteigende Sortierung nach Tag<br>
+      <b>6</b> Absteigende Sortierung nach Tag<br>
+      <b>7</b> Aufsteigende Sortierung nach Monat<br>
+      <b>8</b> Absteigende Sortierung nach Monat<br>
+      <b>9</b> Aufsteigende Sortierung nach Jahr<br>
+      <b>10</b> Absteigende Sortierung nach Jahr<br>
+      <b>11</b> Aufsteigende Sortierung<br>
+      <b>12</b> Absteigende Sortierung</td>
 </tr>
 <tr>
   <td>panelLayout</td>
   <td>Paneellayout (<code>string</code>)</td>
-  <td>**search** zeigt das Suchfeld an, **sort** zeigt das Sortiermenü
-      an, **filter** zeigt die Filtermenüs an, **limit** zeigt das Limitmenü
-      an. Trennen Sie die Menüs mit Komma (= Abstand) oder Strichpunkt (=
-      neue Zeile), also z.B. `sort,filter;search,limit`.</td>
+  <td><b>search</b> zeigt das Suchfeld an<br>
+      <b>sort</b> zeigt das Sortiermenü an<br>
+      <b>filter</b> zeigt die Filtermenüs an<br>
+      <b>limit</b> zeigt das Limitmenü an. Trennen Sie die Menüs mit Komma
+      (= Abstand) oder Strichpunkt (= neue Zeile), also z.B. 
+      <code>sort,filter;search,limit</code>.</td>
 </tr>
 <tr>
   <td>fields</td>
@@ -207,7 +216,7 @@ und eigene Bezeichnungen einfügen.
   <td>filter</td>
   <td>Abfragefilter (<code>array</code>)</td>
   <td>Ermöglicht das Hinzufügen eigener Filter als Arrays, z.B.
-      `array('status=?', 'active')`.</td>
+      <code>array('status=?', 'active')</code>.</td>
 </tr>
 <tr>
   <td>disableGrouping</td>
@@ -253,7 +262,7 @@ und eigene Bezeichnungen einfügen.
   <td>format</td>
   <td>Format-String (<code>string</code>)</td>
   <td>HTML-Zeichenkette zur Formatierung der angezeigten Felder (z.B.
-      `%s`).</td>
+      <code>%s</code>).</td>
 </tr>
 <tr>
   <td>maxCharacters</td>
@@ -293,7 +302,7 @@ Bearbeiten oder Löschen).
 </tr>
 <tr>
   <td>label</td>
-  <code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)
+  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Bezeichnung der Schaltfläche. Enthält normalerweise eine Referenz auf
       das Spracharray.</td>
 </tr>
@@ -301,7 +310,7 @@ Bearbeiten oder Löschen).
   <td>href</td>
   <td>URL-Fragment (<code>string</code>)</td>
   <td>URL-Fragment, das beim Anklicken der Schaltfläche an die URL angehängt
-      wird (z.B. `act=editAll`).</td>
+      wird (z.B. <code>act=editAll</code>).</td>
 </tr>
 <tr>
   <td>class</td>
@@ -332,7 +341,7 @@ Bearbeiten oder Löschen).
 </tr>
 <tr>
   <td>label</td>
-  <code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)
+  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Bezeichnung der Schaltfläche. Enthält normalerweise eine Referenz auf
       das Spracharray.</td>
 </tr>
@@ -340,7 +349,7 @@ Bearbeiten oder Löschen).
   <td>href</td>
   <td>URL-Fragment (<code>string</code>)</td>
   <td>URL-Fragment, das beim Anklicken der Schaltfläche an die URL angehängt
-      wird (z.B. `act=edit`).</td>
+      wird (z.B. <code>act=edit</code>).</td>
 </tr>
 <tr>
   <td>icon</td>
@@ -376,7 +385,7 @@ kann.
 </tr>
 <tr>
   <td>label</td>
-  <code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)
+  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Bezeichnung des Feldes. Enthält normalerweise eine Referenz auf das
       Spracharray.</td>
 </tr>
@@ -413,14 +422,20 @@ kann.
 <tr>
   <td>flag</td>
   <td>Sortierflag (<code>integer</code>)</td>
-  <td>**1** Aufsteigende Sortierung nach Anfangsbuchstabe, **2** Absteigende
-      Sortierung nach Anfangsbuchstabe, **3** Aufsteigende Sortierung nach den
-      ersten X Buchstaben (vgl. length), **4** Absteigende Sortierung nach den
-      ersten X Buchstaben (vgl. length), **5** Aufsteigende Sortierung nach Tag,
-      **6** Absteigende Sortierung nach Tag, **7** Aufsteigende Sortierung nach
-      Monat, **8** Absteigende Sortierung nach Monat, **9** Aufsteigende
-      Sortierung nach Jahr, **10** Absteigende Sortierung nach Jahr, **11**
-      Aufsteigende Sortierung, **12** Absteigende Sortierung</td>
+  <td><b>1</b> Aufsteigende Sortierung nach Anfangsbuchstabe<br>
+      <b>2</b> Absteigende Sortierung nach Anfangsbuchstabe<br>
+      <b>3</b> Aufsteigende Sortierung nach den ersten X Buchstaben (vgl.
+      length)<br>
+      <b>4</b> Absteigende Sortierung nach den ersten X Buchstaben (vgl.
+      length)<br>
+      <b>5</b> Aufsteigende Sortierung nach Tag<br>
+      <b>6</b> Absteigende Sortierung nach Tag<br>
+      <b>7</b> Aufsteigende Sortierung nach Monat<br>
+      <b>8</b> Absteigende Sortierung nach Monat<br>
+      <b>9</b> Aufsteigende Sortierung nach Jahr<br>
+      <b>10</b> Absteigende Sortierung nach Jahr<br>
+      <b>11</b> Aufsteigende Sortierung<br>
+      <b>12</b> Absteigende Sortierung</td>
 </tr>
 <tr>
   <td>length</td>
@@ -431,15 +446,23 @@ kann.
 <tr>
   <td>inputType</td>
   <td>Feldtyp (<code>string</code>)</td>
-  <td>**text** Textfeld, **password** Passwortfeld, **textarea**
-      Textarea, **select** Drop-Down-Menü, **checkbox** Checkbox, **radio**
-      Radio-Button, **radioTable** Tabelle mit Bildern und Radio-Buttons,
-      **inputUnit** Textfeld mit Drop-Down-Menü zur Auswahl der Einheit,
-      **trbl** Vier Textfelder mit Drop-Down-Menü zur Auswahl der Einheit,
-      **chmod** CHMOD-Tabelle, **pageTree** Seitenbaum, **fileTree** Dateibaum,
-      **tableWizard** Tabellenassistent, **listWizard** Listenassistent,
-      **optionWizard** Optionsassistent, **moduleWizard** Modulassistent,
-      **checkboxWizard** Checkbox-Assistent</td>
+  <td><b>text</b> Textfeld<br>
+      <b>password</b> Passwortfeld<br>
+      <b>textarea</b> Textarea<br>
+      <b>select</b> Drop-Down-Menü<br>
+      <b>checkbox</b> Checkbox<br>
+      <b>radio</b> Radio-Button<br>
+      <b>radioTable</b> Tabelle mit Bildern und Radio-Buttons<br>
+      <b>inputUnit</b> Textfeld mit Drop-Down-Menü zur Auswahl der Einheit<br>
+      <b>trbl</b> Vier Textfelder mit Drop-Down-Menü zur Auswahl der Einheit<br>
+      <b>chmod</b> CHMOD-Tabelle<br>
+      <b>pageTree</b> Seitenbaum<br>
+      <b>fileTree</b> Dateibaum<br>
+      <b>tableWizard</b> Tabellenassistent<br>
+      <b>listWizard</b> Listenassistent<br>
+      <b>optionWizard</b> Optionsassistent<br>
+      <b>moduleWizard</b> Modulassistent<br>
+      <b>checkboxWizard</b> Checkbox-Assistent</td>
 </tr>
 <tr>
   <td>options</td>
@@ -461,13 +484,13 @@ kann.
 </tr>
 <tr>
   <td>reference</td>
-  <code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)
+  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Bezeichnungen der Optionen. Enthält normalerweise eine Referenz auf das
       Spracharray.</td>
 </tr>
 <tr>
   <td>explanation</td>
-  <code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)
+  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Erklärung des Feldes. Enthält normalerweise eine Referenz auf das
       Spracharray.</td>
 </tr>
@@ -552,15 +575,19 @@ Ausdrucks geprüft werden.
 <tr>
   <td>rgxp</td>
   <td>Regulärer Ausdruck (<code>string</code>)</td>
-  <td>**digit** erlaubt nur numerische Zeichen, **alpha** erlaubt nur
-      alphabetische Zeichen, **alnum** erlaubt nur alphanumerische Zeichen,
-      **extnd** erlaubt alles außer #&amp;()/<=>, **prcnt** erlaubt Zahlen
-      zwischen 0 und 100, **date** prüft auf ein gültiges Datum, **time**
-      prüft auf eine gültige Uhrzeit, **datim** prüft auf ein gültiges Datum
-      mit Uhrzeit, **email** prüft auf eine gültige E-Mail-Adresse, **friendly**
-      prüft auf eine gültige E-Mail-Adresse im "friendly name format",
-      **url** prüft auf eine gültige URL, **phone** prüft auf eine gültige
-      Telefonnummer</td>
+  <td><b>digit</b> erlaubt nur numerische Zeichen<br>
+      <b>alpha</b> erlaubt nur alphabetische Zeichen<br>
+      <b>alnum</b> erlaubt nur alphanumerische Zeichen<br>
+      <b>extnd</b> erlaubt alles außer <code>#&amp;()/<=></code><br>
+      <b>prcnt</b> erlaubt Zahlen zwischen 0 und 100<br>
+      <b>date</b> prüft auf ein gültiges Datum<br>
+      <b>time</b> prüft auf eine gültige Uhrzeit<br>
+      <b>datim</b> prüft auf ein gültiges Datum mit Uhrzeit<br>
+      <b>email</b> prüft auf eine gültige E-Mail-Adresse<br>
+      <b>friendly</b> prüft auf eine gültige E-Mail-Adresse im "friendly name
+      format"<br>
+      <b>url</b> prüft auf eine gültige URL<br>
+      <b>phone</b> prüft auf eine gültige Telefonnummer</td>
 </tr>
 <tr>
   <td>cols</td>
@@ -575,8 +602,9 @@ Ausdrucks geprüft werden.
 <tr>
   <td>wrap</td>
   <td>Zeilenumbruch (<code>string</code>)</td>
-  <td>**off** Zeilenumbruch ausschalten, **soft** Weicher Zeilenumbruch,
-      **hard** Harter Zeilenumbruch</td>
+  <td><b>off</b> Zeilenumbruch ausschalten<br>
+      <b>soft</b> Weicher Zeilenumbruch<br>
+      <b>hard</b> Harter Zeilenumbruch</td>
 </tr>
 <tr>
   <td>multiple</td>
@@ -598,8 +626,10 @@ Ausdrucks geprüft werden.
 <tr>
   <td>rte</td>
   <td>Rich Text Editor-Datei (<code>string</code>)</td>
-  <td>**tinyMCE** Konfigurationsdatei config/tinyMCE.php verwenden,
-      **tinyFlash** Konfigurationsdatei config/tinyFlash.php verwenden.
+  <td><b>tinyMCE</b> Konfigurationsdatei <code>config/tinyMCE.php</code>
+      verwenden<br>
+      <b>tinyFlash</b> Konfigurationsdatei <code>config/tinyFlash.php</code>
+      verwenden<br>
       Die Verwendung eigener Konfigurationsdateien ist möglich.</td>
 </tr>
 <tr>
@@ -687,8 +717,9 @@ Ausdrucks geprüft werden.
 <tr>
   <td>fieldType</td>
   <td>Feldtyp (<code>string</code>)</td>
-  <td>**checkbox** erlaubt die Auswahl mehrerer Dateien, **radio** erlaubt
-      die Auswahl genau einer Datei. Gilt nur für Dateibäume.</td>
+  <td><b>checkbox</b> erlaubt die Auswahl mehrerer Dateien<br>
+      <b>radio</b> erlaubt die Auswahl genau einer Datei. Gilt nur für
+      Dateibäume.</td>
 </tr>
 <tr>
   <td>includeBlankOption</td>
@@ -698,13 +729,13 @@ Ausdrucks geprüft werden.
 <tr>
   <td>blankOptionLabel</td>
   <td>Label (<code>string</code>)</td>
-  <td>Bezeichnung der leeren Option (Standard: -).</td>
+  <td>Bezeichnung der leeren Option (Standard: <code>-</code>).</td>
 </tr>
 <tr>
   <td>findInSet</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Sortiert ein Optionsarray anhand der Schlüssel anstatt anhand der Werte.
-      Hinzugefügt in Version 2.7.RC1.</td>
+  <td>Sortiert ein Optionsarray anhand der Schlüssel anstatt anhand der
+      Werte.</td>
 </tr>
 <tr>
   <td>datepicker</td>
@@ -720,8 +751,10 @@ Ausdrucks geprüft werden.
 <tr>
   <td>feGroup</td>
   <td>Gruppe (<code>string</code>)</td>
-  <td>**personal** Persönliche Daten, **address** Adressdaten, **contact**
-      Kontaktdaten, **login** Login-Daten. Gilt nur für die Tabelle `tl_member`.
+  <td><b>personal</b> Persönliche Daten<br>
+      <b>address</b> Adressdaten<br>
+      <b>contact</b> Kontaktdaten<br>
+      <b>login</b> Login-Daten (nur Tabelle <code>tl_member</code>)<br>
       Das Hinzufügen eigener Gruppen ist möglich.</td>
 </tr>
 <tr>
@@ -815,7 +848,8 @@ innerhalb ihrer Gruppen auszurichten. Folgende CSS-Klassen können in der
 </tr>
 <tr>
   <td>w50</td>
-  <td>Setzt die Feldbreite auf 50% und floatet das Element (float:left).</td>
+  <td>Setzt die Feldbreite auf 50% und floatet das Element
+      (<code>float:left</code>).</td>
 </tr>
 <tr>
   <td>clr</td>

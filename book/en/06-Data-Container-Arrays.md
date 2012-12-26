@@ -153,30 +153,41 @@ order and you can add custom labels.
 <tr>
   <td>mode</td>
   <td>Sorting mode (<code>integer</code>)</td>
-  <td>**0** Records are not sorted, **1** Records are sorted by a fixed field,
-      **2** Records are sorted by a switchable field, **3** Records are sorted
-      by the parent table, **4** Displays the child records of a parent record
-      (see style sheets module), **5** Records are displayed as tree (see site
-      structure), **6** Displays the child records within a tree structure (see
-      articles module)</td>
+  <td><b>0</b> Records are not sorted<br>
+      <b>1</b> Records are sorted by a fixed field<br>
+      <b>2</b> Records are sorted by a switchable field<br>
+      <b>3</b> Records are sorted by the parent table<br>
+      <b>4</b> Displays the child records of a parent record (see style sheets
+      module)<br>
+      <b>5</b> Records are displayed as tree (see site structure)<br>
+      <b>6</b> Displays the child records within a tree structure (see articles
+      module)</td>
 </tr>
 <tr>
   <td>flag</td>
   <td>Sorting flag (<code>integer</code>)</td>
-  <td>**1** Sort by initial letter ascending, **2** Sort by initial letter
-      descending, **3** Sort by initial two letters ascending, **4** Sort by
-      initial two letters descending, **5** Sort by day ascending, **6** Sort by
-      day descending, **7** Sort by month ascending, **8** Sort by month
-      descending, **9** Sort by year ascending, **10** Sort by year descending,
-      **11** Sort ascending, **12** Sort descending</td>
+  <td><b>1</b> Sort by initial letter ascending<br>
+      <b>2</b> Sort by initial letter descending<br>
+      <b>3</b> Sort by initial two letters ascending<br>
+      <b>4</b> Sort by initial two letters descending<br>
+      <b>5</b> Sort by day ascending<br>
+      <b>6</b> Sort by day descending<br>
+      <b>7</b> Sort by month ascending<br>
+      <b>8</b> Sort by month descending<br>
+      <b>9</b> Sort by year ascending<br>
+      <b>10</b> Sort by year descending<br>
+      <b>11</b> Sort ascending<br>
+      <b>12</b> Sort descending</td>
 </tr>
 <tr>
   <td>panelLayout</td>
   <td>Panel layout (<code>string</code>)</td>
-  <td>**search** show the search records menu, **sort** show the sort records
-      menu, **filter** show the filter records menu, **limit** show the limit
-      records menu. Separate options with comma (= space) and semicolon (= new
-      line) like `sort,filter;search,limit`.</td>
+  <td><b>search</b> show the search records menu<br>
+      <b>sort</b> show the sort records menu<br>
+      <b>filter</b> show the filter records menu<br>
+      <b>limit</b> show the limit records menu. Separate options with comma
+      (= space) and semicolon (= new line) like
+      <code>sort,filter;search,limit</code>.</td>
 </tr>
 <tr>
   <td>fields</td>
@@ -204,8 +215,8 @@ order and you can add custom labels.
 <tr>
   <td>filter</td>
   <td>Query filter (<code>array</code>)</td>
-  <td>Allows you to add custom filters as arrays, e.g. `array('status=?',
-      'active')`.</td>
+  <td>Allows you to add custom filters as arrays, e.g. <code>array('status=?',
+      'active')</code>.</td>
 </tr>
 <tr>
   <td>disableGrouping</td>
@@ -216,13 +227,13 @@ order and you can add custom labels.
   <td>paste_button_callback</td>
   <td>Callback function (<code>array</code>)</td>
   <td>This function will be called instead of displaying the default paste
-      buttons. Please specify as `array('Class', 'Method')`.</td>
+      buttons. Please specify as <code>array('Class', 'Method')</code>.</td>
 </tr>
 <tr>
   <td>child_record_callback</td>
   <td>Callback function (<code>array</code>)</td>
   <td>This function will be called to render the child elements (sorting mode 4
-      only). Please specify as `array('Class', 'Method')`.</td>
+      only). Please specify as <code>array('Class', 'Method')</code>.</td>
 </tr>
 <tr>
   <td>child_record_class</td>
@@ -249,7 +260,7 @@ order and you can add custom labels.
   <td>format</td>
   <td>Format string (<code>string</code>)</td>
   <td>HTML string used to format the fields that will be shown (e.g.
-      `<strong>%s</strong>`).</td>
+      <code><strong>%s</strong></code>).</td>
 </tr>
 <tr>
   <td>maxCharacters</td>
@@ -287,14 +298,14 @@ that relate to a particular record only (e.g. editing or deleting a record).
 </tr>
 <tr>
   <td>label</td>
-  <code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)
+  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Button label. Typically a reference to the global language array.</td>
 </tr>
 <tr>
   <td>href</td>
   <td>URL fragment (<code>string</code>)</td>
   <td>URL fragment that is added to the URI string when the button is clicked
-      (e.g. `act=editAll`).</td>
+      (e.g. <code>act=editAll</code>).</td>
 </tr>
 <tr>
   <td>class</td>
@@ -310,7 +321,7 @@ that relate to a particular record only (e.g. editing or deleting a record).
   <td>button_callback</td>
   <td>Callback function (<code>array</code>)</td>
   <td>Call a custom function instead of using the default button function.
-      Please specify as `array('Class', 'Method')`.</td>
+      Please specify as <code>array('Class', 'Method')</code>.</td>
 </tr>
 </table>
 
@@ -325,14 +336,14 @@ that relate to a particular record only (e.g. editing or deleting a record).
 </tr>
 <tr>
   <td>label</td>
-  <code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)
+  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Button label. Typically a reference to the global language array.</td>
 </tr>
 <tr>
   <td>href</td>
   <td>URL fragment (<code>string</code>)</td>
   <td>URL fragment that is added to the URI string when the button is clicked
-      (e.g. `act=edit`).</td>
+      (e.g. <code>act=edit</code>).</td>
 </tr>
 <tr>
   <td>icon</td>
@@ -348,7 +359,7 @@ that relate to a particular record only (e.g. editing or deleting a record).
   <td>button_callback</td>
   <td>Callback function (<code>array</code>)</td>
   <td>Call a custom function instead of using the default button function.
-      Please specify as `array('Class', 'Method')`.</td>
+      Please specify as <code>array('Class', 'Method')</code>.</td>
 </tr>
 </table>
 
@@ -368,7 +379,7 @@ filter criteria.
 </tr>
 <tr>
   <td>label</td>
-  <code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)
+  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Field label. Typically a reference to the global language array.</td>
 </tr>
 <tr>
@@ -403,12 +414,18 @@ filter criteria.
 <tr>
   <td>flag</td>
   <td>Sorting mode (<code>integer</code>)</td>
-  <td>**1** Sort by initial letter ascending, **2** Sort by initial letter
-      descending, **3** Sort by initial X letters ascending (see length), **4**
-      Sort by initial X letters descending (see length), **5** Sort by day
-      ascending, **6** Sort by day descending, **7** Sort by month ascending,
-      **8** Sort by month descending, **9** Sort by year ascending, **10** Sort
-      by year descending, **11** Sort ascending, **12** Sort descending</td>
+  <td><b>1</b> Sort by initial letter ascending<br>
+      <b>2</b> Sort by initial letter descending<br>
+      <b>3</b> Sort by initial X letters ascending (see length)<br>
+      <b>4</b> Sort by initial X letters descending (see length)<br>
+      <b>5</b> Sort by day ascending<br>
+      <b>6</b> Sort by day descending<br>
+      <b>7</b> Sort by month ascending<br>
+      <b>8</b> Sort by month descending<br>
+      <b>9</b> Sort by year ascending<br>
+      <b>10</b> Sort by year descending<br>
+      <b>11</b> Sort ascending<br>
+      <b>12</b> Sort descending</td>
 </tr>
 <tr>
   <td>length</td>
@@ -419,14 +436,23 @@ filter criteria.
 <tr>
   <td>inputType</td>
   <td>Field type (<code>string</code>)</td>
-  <td>**text** Text field, **password** Password field, **textarea** Textarea,
-      **select** Drop-down menu, **checkbox** Checkbox, **radio** Radio button,
-      **radioTable** Table with images and radio buttons, **inputUnit** Text
-      field with small unit drop-down menu, **trbl** Four text fields with a
-      small unit drop-down menu, **chmod** CHMOD table, **pageTree** Page tree,
-      **fileTree** File tree, **tableWizard** Table wizard, **listWizard** List
-      wizard, **optionWizard** Option wizard, **moduleWizard** Module wizard,
-      **checkboxWizard** Checkbox Wizard</td>
+  <td><b>text</b> Text field<br>
+      <b>password</b> Password field<br>
+      <b>textarea</b> Textarea<br>
+      <b>select</b> Drop-down menu<br>
+      <b>checkbox</b> Checkbox<br>
+      <b>radio</b> Radio button<br>
+      <b>radioTable</b> Table with images and radio buttons<br>
+      <b>inputUnit</b> Text field with small unit drop-down menu<br>
+      <b>trbl</b> Four text fields with a small unit drop-down menu<br>
+      <b>chmod</b> CHMOD table<br>
+      <b>pageTree</b> Page tree<br>
+      <b>fileTree</b> File tree<br>
+      <b>tableWizard</b> Table wizard<br>
+      <b>listWizard</b> List wizard<br>
+      <b>optionWizard</b> Option wizard<br>
+      <b>moduleWizard</b> Module wizard<br>
+      <b>checkboxWizard</b> Checkbox Wizard</td>
 </tr>
 <tr>
   <td>options</td>
@@ -437,7 +463,7 @@ filter criteria.
   <td>options_callback</td>
   <td>Callback function (<code>array</code>)</td>
   <td>Callback function that returns an array of options. Please specify as
-      `array('Class', 'Method')`.</td>
+      <code>array('Class', 'Method')</code>.</td>
 </tr>
 <tr>
   <td>foreignKey</td>
@@ -447,13 +473,13 @@ filter criteria.
 </tr>
 <tr>
   <td>reference</td>
-  <code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)
+  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Array that holds the options labels. Typically a reference to the global
       language array.</td>
 </tr>
 <tr>
   <td>explanation</td>
-  <code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)
+  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Array that holds the explanation. Typically a reference to the global
       language array.</td>
 </tr>
@@ -473,23 +499,24 @@ filter criteria.
   <td>wizard</td>
   <td>Callback function (<code>array</code>)</td>
   <td>Call a custom function and add its return value to the input field. Please
-      specify as `array('Class', 'Method')`.</td>
+      specify as <code>array('Class', 'Method')</code>.</td>
 </tr>
 <tr>
   <td>load_callback</td>
   <td>Callback functions (<code>array</code>)</td>
   <td>These functions will be called when the field is loaded. Please specify
-      each callback function as `array('Class', 'Method')`. Passes the field's
-      value and the data container as arguments. Expects the field value as
-      return value.</td>
+      each callback function as <code>array('Class', 'Method')</code>. Passes
+      the field's value and the data container as arguments. Expects the field
+      value as return value.</td>
 </tr>
 <tr>
   <td>save_callback</td>
   <td>Callback functions (<code>array</code>)</td>
   <td>These functions will be called when the field is saved. Please specify
-      each callback function as array('Class', 'Method'). Passes the field's
-      value and the data container as arguments. Expects the field value as
-      return value. Throw an exception to display an error message.</td>
+      each callback function as <code>array('Class', 'Method')</code>. Passes
+      the field's value and the data container as arguments. Expects the field
+      value as return value. Throw an exception to display an error
+      message.</td>
 </tr>
 </table>
 
@@ -535,13 +562,18 @@ Each field can be validated against a regular expression.
 <tr>
   <td>rgxp</td>
   <td>Regular expression (<code>string</code>)</td>
-  <td>**digit** allows numeric characters only, **alpha** allows alphabetic
-      characters only, **alnum** allows alphanumeric characters only, **prcnt**
-      allows numbers between 0 and 100, **extnd** disallows `#&amp;()/<=>`,
-      **date** expects a valid date, **time** expects avalid time, **datim**
-      expects a valid date and time, **email** expects a valid e-mail address,
-      **friendly** expects a valid "friendly name format" e-mail address,
-      **url** expects a valid URL, **phone** expects a valid phone number</td>
+  <td><b>digit</b> allows numeric characters only<br>
+      <b>alpha</b> allows alphabetic characters only<br>
+      <b>alnum</b> allows alphanumeric characters only<br>
+      <b>prcnt</b> allows numbers between 0 and 100<br>
+      <b>extnd</b> disallows <code>#&amp;()/<=></code><br>
+      <b>date</b> expects a valid date<br>
+      <b>time</b> expects avalid time<br>
+      <b>datim</b> expects a valid date and time<br>
+      <b>email</b> expects a valid e-mail address<br>
+      <b>friendly</b> expects a valid "friendly name format" e-mail address<br>
+      <b>url</b> expects a valid URL<br>
+      <b>phone</b> expects a valid phone number</td>
 </tr>
 <tr>
   <td>cols</td>
@@ -556,8 +588,9 @@ Each field can be validated against a regular expression.
 <tr>
   <td>wrap</td>
   <td>Word wrapping (<code>string</code>)</td>
-  <td>**off** disable word wrapping, **soft** soft word wrapping, **hard** hard
-      word wrapping</td>
+  <td><b>off</b> disable word wrapping<br>
+      <b>soft</b> soft word wrapping<br>
+      <b>hard</b> hard word wrapping</td>
 </tr>
 <tr>
   <td>multiple</td>
@@ -573,13 +606,14 @@ Each field can be validated against a regular expression.
 <tr>
   <td>style</td>
   <td>Style attributes (<code>string</code>)</td>
-  <td>Style attributes (e.g. border:2px)</td>
+  <td>Style attributes (e.g. <code>border:2px</code>)</td>
 </tr>
 <tr>
   <td>rte</td>
   <td>Rich text editor file (<code>string</code>)</td>
-  <td>**tinyMCE** use file config/tinyMCE.php, **tinyFlash** use file
-      `config/tinyFlash.php`. You can add your own configuration files too.</td>
+  <td><b>tinyMCE</b> use file <code>config/tinyMCE.php</code><br>
+      <b>tinyFlash</b> use file <code>config/tinyFlash.php</code><br>
+      You can add your own configuration files too.</td>
 </tr>
 <tr>
   <td>submitOnChange</td>
@@ -654,7 +688,7 @@ Each field can be validated against a regular expression.
 <tr>
   <td>extensions</td>
   <td>File extensions (<code>string</code>)</td>
-  <td>Limits the file tree to certain filetypes (comma separated list). Applies
+  <td>Limits the file tree to certain file types (comma separated list). Applies
       to file trees only.</td>
 </tr>
 <tr>
@@ -665,8 +699,9 @@ Each field can be validated against a regular expression.
 <tr>
   <td>fieldType</td>
   <td>Input field type (<code>string</code>)</td>
-  <td>**checkbox** allow multiple selections, **radio** allow a single selection
-      only. Applies to file- and pagetrees only.</td>
+  <td><b>checkbox</b> allow multiple selections<br>
+      <b>radio</b> allow a single selection only<br>
+      Applies to file and page trees only.</td>
 </tr>
 <tr>
   <td>includeBlankOption</td>
@@ -677,13 +712,12 @@ Each field can be validated against a regular expression.
 <tr>
   <td>blankOptionLabel</td>
   <td>Label (<code>string</code>)</td>
-  <td>Label for the blank option (defaults to -).</td>
+  <td>Label for the blank option (defaults to <code>-</code>).</td>
 </tr>
 <tr>
   <td>findInSet</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Sort by the actual option values instead of their labels (available from
-      version 2.7.RC1).</td>
+  <td>Sort by the actual option values instead of their labels.</td>
 </tr>
 <tr>
   <td>datepicker</td>
@@ -699,9 +733,11 @@ Each field can be validated against a regular expression.
 <tr>
   <td>feGroup</td>
   <td>Group name (<code>string</code>)</td>
-  <td>**personal** personal data, **address** address details, **contact**
-      contact details, **login** login details. Applies to table `tl_member`
-      only. You can also define your own groups.</td>
+  <td><b>personal</b> personal data<br>
+      <b>address</b> address details<br>
+      <b>contact</b> contact details<br>
+      <b>login</b> login details (table <code>tl_member</code> only)<br>
+      You can also define your own groups.</td>
 </tr>
 <tr>
   <td>feViewable</td>
