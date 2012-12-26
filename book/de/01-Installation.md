@@ -54,8 +54,8 @@ werden! Notieren Sie ihn sich daher wenn Sie das Feature nutzen
 #### Datenbankverbindung herstellen
 
 Melden Sie sich an der Administrationsoberfläche Ihres Servers (z.B. "Plesk"
-oder "Cpanel") an und erstellen Sie eine neue Datenbank für TYPOlight. Geben
-Sie die Zugangsdaten im Contao-Installtool ein und beachten Sie die abweichende
+oder "Cpanel") an und erstellen Sie eine neue Datenbank für Contao. Geben Sie
+die Zugangsdaten im Contao-Installtool ein und beachten Sie die abweichende
 Schreibweise `UTF8` in MySQL!
 
 
