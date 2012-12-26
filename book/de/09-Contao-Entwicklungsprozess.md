@@ -14,7 +14,7 @@ Beachten Sie zunächst, dass Sie angemeldet sein müssen, um neue Tickets zu
 erstellen. Die [Registrierung auf GitHub][2] ist kostenlos. Melden Sie sich
 danach an und klicken Sie in der Hauptnavigation auf "New Issue".
 
-![](images/new-issue.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/new-issue.jpg)
 
 Beschreiben Sie etwaige Probleme stets ausführlich und geben Sie Hinweise, wie
 das Problem in der Onlinedemo oder in unserer Entwicklungsumgebung reproduziert

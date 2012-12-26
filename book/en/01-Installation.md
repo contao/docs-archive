@@ -23,7 +23,7 @@ curl -L http://install.contao.org | tar -xzp
 
 Now your Contao root directory should look like this:
 
-![](images/contao-root.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/contao-root.jpg)
 
 
 ### The Contao install tool
@@ -103,7 +103,7 @@ changes. Now Contao generates static URLs like `home.html` instead of
 While trying to install Contao with the install tool, you might have seen a
 warning that the local configuration file is not writable.
 
-![](images/localconfig-not-writable.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/localconfig-not-writable.jpg)
 
 
 ### File permission issues
@@ -158,7 +158,7 @@ From version 2.7.3 these folder permissions should be set automatically.
 To check whether you have set the correct "ftpPath", click the "Check FTP
 connection" button.
 
-![](images/ftp-check.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/ftp-check.jpg)
 
 
 ## Manual update
@@ -202,14 +202,14 @@ via FTP, open WinSCP and connect to the server. Backup the files mentioned above
 and then navigate to the Contao directory and click the "Synchronize files"
 button.
 
-![](images/synchronization-options.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/synchronization-options.jpg)
 
 Review the options carefully and make sure to choose "Preview changes", so you
 can check which files will be updated. Then confirm each file in the preview
 window and doublecheck the files that are marked for deletion! Klick "OK" to
 start the synchronization process.
 
-![](images/synchronization-confirmation.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/synchronization-confirmation.jpg)
 
 
 ### Updating the database
@@ -236,7 +236,7 @@ or synchronize files.
 Open the Contao back end and go to the system maintenance module. Enter your
 Live Update ID and click the "Run the update" button.
 
-![](images/live-update-start.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/live-update-start.jpg)
 
 
 #### Choose a target version
@@ -245,7 +245,7 @@ On the next page, you can choose which Contao version you want to upgrade to. To
 additionally remove deprecated resources, select "Remove deprecated core modules
 and files".
 
-![](images/live-update-version-en.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/live-update-version-en.jpg)
 
 
 #### Table of contents
@@ -253,7 +253,7 @@ and files".
 The table of contents will show you the files of the update archive. Check
 against this list if you have modified any core files.
 
-![](images/live-update-toc.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/live-update-toc.jpg)
 
 
 #### Creating a backup
@@ -263,7 +263,7 @@ Update. The backup archives are stored in the Contao root directory, e.g.
 `LU200901281100.zip` (year month day hour minute). To restore a backup, simply
 unzip the archive right in place.
 
-![](images/live-update-backup.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/live-update-backup.jpg)
 
 
 #### Installing the update
@@ -273,14 +273,14 @@ that this requires write permissions. If your server requires using the [Safe
 Mode Hack][7], make sure it is configured correctly **as described in this user
 guide**!
 
-![](images/live-update-files.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/live-update-files.jpg)
 
 
 #### Your installation is up to date
 
 After running the live update, your installation should be up to date.
 
-![](images/live-update-complete.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/live-update-complete.jpg)
 
 
 ### Troubleshooting
@@ -334,7 +334,7 @@ want to export and click the "Export" tab in the top menu. It is important to
 adjust the export settings according to the screenshot below to minimize MySQL
 version compatibility problems.
 
-![](images/sql-export.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/sql-export.jpg)
 
 
 ### Importing the database
@@ -345,7 +345,7 @@ administration panel (e.g. "Plesk" or "Cpanel") to create new databases. Select
 the empty database and click the "Import" tab in the top menu. Then upload the
 SQL dump of your local database an start the import.
 
-![](images/sql-import.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/en/images/sql-import.jpg)
 
 
 ### Adjusting the database configuration

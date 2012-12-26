@@ -14,7 +14,7 @@ gelangen nun zu einem Formular, in das Sie die Daten der Erweiterung eingeben
 können. Der Kasten oberhalb des Formulars enthält wichtige Hinweise zur
 Namensgebung, die Sie unbedingt berücksichtigen sollten.
 
-![](images/erweiterung-hinzufuegen.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/erweiterung-hinzufuegen.jpg)
 
 Folgende Kategorien sind momentan verfügbar:
 
@@ -59,7 +59,7 @@ Wechseln Sie mit Hilfe des entsprechenden Navigationssymbols in die
 Freigabenverwaltung und klicken Sie auf die Schaltfläche "Freigabe
 hinzufügen".
 
-![](images/freigabe-hinzufuegen.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/freigabe-hinzufuegen.jpg)
 
 Versionsnummern im Extension Repository bestehen immer aus drei Zahlenblöcken,
 die die Major-, Minor- und Maintenance-Version kennzeichnen (z.B. "1.0.0"),
@@ -97,9 +97,9 @@ hinzufügen/aktualisieren". Sie können nun einzelne Dateien oder ganze
 Zip-Archive auf den Server übertragen. Achten Sie dabei darauf, das richtige
 Zielverzeichnis auszuwählen, damit die Pfade nach dem Upload stimmen.
 
-![](images/dateien-hinzufuegen.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/dateien-hinzufuegen.jpg)
 
-![](images/dateien-bearbeiten.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/dateien-bearbeiten.jpg)
 
 
 ## Eine Übersetzung hinzufügen
@@ -111,9 +111,9 @@ immer auch eine englische Übersetzung anzulegen, da die Benutzer im Backend
 grundsätzlich nur die Erweiterungen sehen, die in ihrer jeweiligen Sprache oder
 in Englisch verfügbar sind.
 
-![](images/uebersetzung-hinzufuegen.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/uebersetzung-hinzufuegen.jpg)
 
-![](images/uebersetzung-bearbeiten.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/uebersetzung-bearbeiten.jpg)
 
 Fertige Übersetzungen können Sie mit einem Klick auf das entsprechende
 Navigationssymbol veröffentlichen.
@@ -129,7 +129,7 @@ Abhängigkeiten können im Extension Repository gespeichert werden, so dass bei
 der Installation einer Erweiterung automatisch alle für deren Betrieb
 benötigten Module ebenfalls installiert werden.
 
-![](images/abhaengigkeit-hinzufuegen.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/abhaengigkeit-hinzufuegen.jpg)
 
 Wählen Sie als Erstes die Erweiterung aus, die Sie als Abhängigkeit
 hinzufügen möchten, und bestätigen Sie Ihre Auswahl mit "Weiter". Im

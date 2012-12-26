@@ -23,7 +23,7 @@ curl -L http://install.contao.org | tar -xzp
 
 Ihr Contao-Verzeichnis sollte nun wie folgt aussehen:
 
-![](images/typolight-root.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/typolight-root.jpg)
 
 
 ### Das Contao-Installtool
@@ -108,7 +108,7 @@ speichern Sie Ihre Änderungen. Contao generiert jetzt statische URLs wie z.B.
 Eventuell haben Sie beim Aufruf des Contao-Installtools die Mitteilung erhalten,
 dass die lokale Konfigurationsdatei nicht beschreibbar ist.
 
-![](images/localconfig-not-writable.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/localconfig-not-writable.jpg)
 
 
 ### Dateizugriffsrechte
@@ -167,7 +167,7 @@ Ab Version 2.7.3 werden die benötigten Schreibrechte automatisch gesetzt.
 Um zu prüfen, ob der richtige "ftpPath" gesetzt ist, klicken Sie auf die "Check
 FTP connection"-Schaltfläche.
 
-![](images/ftp-check.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/ftp-check.jpg)
 
 
 ## Manuelles Update
@@ -215,7 +215,7 @@ verbinden Sie sich mit dem Server. Erstellen Sie ein Backup der oben genannten
 Dateien und navigieren Sie dann zum Contao-Verzeichnis und klicken Sie auf die
 "Dateien synchronisieren"-Schaltfläche.
 
-![](images/synchronization-options.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/synchronization-options.jpg)
 
 Treffen Sie Ihre Auswahl wie in der Abbildung und wählen Sie unbedingt die
 Option "Änderungsvorschau" aus, damit Sie die zu aktualisierenden Dateien noch
@@ -223,7 +223,7 @@ einmal prüfen können. Bestätigen Sie danach die Einstellungen im
 Vorschaufenster und achten Sie besonders auf die zu löschenden Ressourcen!
 Klicken Sie "OK", um den Synchronisationsvorgang zu starten.
 
-![](images/synchronization-confirmation.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/synchronization-confirmation.jpg)
 
 
 ### Die Datenbank aktualisieren
@@ -250,7 +250,7 @@ zu synchronisieren.
 Öffnen Sie das Systemwartungsmodul im Contao-Backend, geben Sie Ihre Live
 Update ID ein und starten Sie die Aktualisierung.
 
-![](images/live-update-start.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/live-update-start.jpg)
 
 
 #### Version auswählen
@@ -260,7 +260,7 @@ Contao-Installation aktualisieren möchten. Um zusätzlich auch veraltete
 Dateien zu entfernen, wählen Sie die Option "Veraltete Core-Module und Dateien
 entfernen".
 
-![](images/live-update-version-de.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/live-update-version-de.jpg)
 
 
 #### Inhaltsverzeichnis
@@ -268,7 +268,7 @@ entfernen".
 Das Inhaltsverzeichnis zeigt die Dateien des Update-Archivs an. Vergleichen Sie
 diese Liste mit Ihren angepassten Dateien.
 
-![](images/live-update-toc.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/live-update-toc.jpg)
 
 
 #### Ein Backup erstellen
@@ -278,7 +278,7 @@ wieder rückgängig machen können. Die Backup-Archive liegen im
 Contao-Verzeichnis (z.B. `LU200901281100.zip`) und können direkt dort entpackt
 werden, um einen früheren Stand wiederherzustellen.
 
-![](images/live-update-backup.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/live-update-backup.jpg)
 
 
 #### Das Update installieren
@@ -288,7 +288,7 @@ Beachten Sie, dass dafür Schreibrechte notwendig sind. Falls Sie auf Ihrem
 Server den [Safe Mode Hack][7] benötigen, konfigurieren Sie ihn **exakt so wie
 in diesem Handbuch beschrieben**!
 
-![](images/live-update-files.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/live-update-files.jpg)
 
 
 #### Ihre Installation ist aktuell
@@ -296,7 +296,7 @@ in diesem Handbuch beschrieben**!
 Nachdem das Live Update abgeschlossen ist, ist Ihre Installation auf dem
 neuesten Stand.
 
-![](images/live-update-complete.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/live-update-complete.jpg)
 
 
 ### Fehlersuche
@@ -353,7 +353,7 @@ oberen Menü. Um Kompatibilitätsprobleme zwischen verschiedenen MySQL-Versionen
 zu minimieren ist es wichtig, die Einstellungen für den Export gemäß des
 folgenden Screenshots anzupassen:
 
-![](images/sql-export.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/sql-export.jpg)
 
 
 ### Datenbank importieren
@@ -365,7 +365,7 @@ Sie die neue leere Datenbank aus und klicken Sie auf die "Import"-Schaltfläche
 im oberen Menü. Laden Sie dann den SQL-Dump der lokalen Datenbank hoch und
 starten Sie den Import.
 
-![](images/sql-import.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/sql-import.jpg)
 
 
 ### Datenbank-Konfiguration anpassen

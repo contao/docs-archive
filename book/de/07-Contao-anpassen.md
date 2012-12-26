@@ -177,7 +177,7 @@ TinyMCE-Plugins enthält und fehlende Ressourcen gegebenenfalls von der
 [TinyMCE-Projektwebseite][5] heruntergeladen und in den Ordner
 `plugins/tinyMCE/plugins` Ihrer Contao-Installation kopiert werden müssen.
 
-![](images/rich-text-editor.jpg)
+![](https://raw.github.com/contao/docs/2.11/book/de/images/rich-text-editor.jpg)
 
 Das obige Bild zeigt die Standardkonfiguration des Editors, die in der Datei
 `system/config/tinyMCE.php` hinterlegt ist. Um eine eigene Konfiguration zu
