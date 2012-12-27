@@ -83,7 +83,7 @@ Contao ein "Stylesheets"-Modul, mit dem Sie Formatdefinitionen bequem im Backend
 verwalten können. Um die verschiedenen Contao-Elemente und -Module in einem
 Stylesheet zu referenzieren, müssen Sie deren Klassennamen kennen.
 [Inhaltselement-Klassen][6] beginnen mit "ce_" (z.B. "ce_text") und
-[Modul-Klassen][7] mit "mod_" (z.B. "mod_search"). Falls Sie sich nicht sicher
+[Modul-Klassen][4] mit "mod_" (z.B. "mod_search"). Falls Sie sich nicht sicher
 sind, sehen Sie einfach im Quelltext der Webseite nach.
 
 ![](https://raw.github.com/contao/docs/2.11/book/de/images/stylesheet.jpg)
@@ -404,7 +404,6 @@ darf hingegen nur die Artikel bearbeiten und ein unpriviligierter Benutzer hat
 [1]: http://www.youtube.com/watch?v=6z744hsR8I0
 [2]: https://contao.org/de/contao-themes-and-templates.html
 [3]: 03-Seiten-verwalten.md#stylesheets
-[4]: https://contao.org/de/modules.html
-[5]: https://contao.org/de/page-layouts.html
-[6]: https://contao.org/de/articles.html
-[7]: https://contao.org/de/modules.html
+[4]: 03-Seiten-verwalten.md#module
+[5]: 03-Seiten-verwalten.md#seitenlayouts
+[6]: 04-Inhalte-verwalten.md#artikel
