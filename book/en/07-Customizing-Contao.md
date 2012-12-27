@@ -147,7 +147,7 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 ```
 
 If you do not understand the code above, you might want to read the chapter on
-[Data Container Arrays][4].
+[Data Container Arrays][1].
 
 
 ### Adding a translation
@@ -174,14 +174,14 @@ This page explains how to customize the Rich Text Editor and save the changes so
 they will not be overriden on the next Contao update. Note that Contao does not
 include all TinyMCE plugins by default, so if you want to use a certain plugin
 that is not part of the Contao distribution, download it from the [TinyMCE
-project website][5] and move it into the `plugins/tinyMCE/plugins` folder.
+project website][4] and move it into the `plugins/tinyMCE/plugins` folder.
 
 ![](https://raw.github.com/contao/docs/2.11/book/en/images/rich-text-editor.jpg)
 
 To image above shows the default Rich Text Editor configuration file
 `system/config/tinyMCE.php`. To create a custom configuration file, simply copy
 it and rename it e.g. to `tinyCustom.php`. Then apply your changes and save the
-new file. The last step is to adjust the [data container configuration][6] in
+new file. The last step is to adjust the [data container configuration][5] in
 the `system/config/dcaconfig.php` file and tell Contao to which fields the
 custom file shall be applied.
 
@@ -253,7 +253,7 @@ update-safe and does not require maintenance.
 
 ## Contao hooks
 
-Hooks work similar to the [callback functions][7] of the Data Container Array.
+Hooks work similar to the [callback functions][6] of the Data Container Array.
 You can register one or more functions for a certain event and when the event is
 triggered, the callback functions are executed. Hooks allow you to add custom
 functionality to the core.
@@ -941,7 +941,7 @@ public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 ### processFormData
 
 The "processFormData" hook is triggered after a form has been submitted. It
-passes the form data array, the [Data Container Array][8] and the files array as
+passes the form data array, the [Data Container Array][1] and the files array as
 arguments and does not expect a return value. It is available from version
 2.4.4.
 
@@ -1077,11 +1077,9 @@ public function myValidateFormField(Widget $objWidget, $intId)
 ```
 
 
-[1]: https://contao.org/en/dca.html
+[1]: 06-Data-Container-Arrays.md
 [2]: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-[3]: https://contao.org/en/installing-contao.html#install-tool
-[4]: https://contao.org/en/dca.html
-[5]: http://tinymce.moxiecode.com
-[6]: https://contao.org/en/custom-configurations.html#dca-configuration
-[7]: https://contao.org/en/callbacks.html
-[8]: https://contao.org/en/dca.html
+[3]: 01-Installation.md#the-contao-install-tool
+[4]: http://tinymce.moxiecode.com
+[5]: 07-Customizing-Contao.md#customizing-the-data-container-configuration
+[6]: 06-Data-Container-Arrays.md#callbacks
