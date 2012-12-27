@@ -969,4 +969,4 @@ program flow of the Contao core engine.
 </table>
 
 
-[1]: https://contao.org/en/listing-records.html
+[1]: 02-Administration-area.md#listing-records

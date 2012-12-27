@@ -1049,4 +1049,4 @@ the current date or including lightbox images.
 [3]: http://mootools.net
 [4]: http://www.digitalia.be/software/slimbox
 [5]: http://en.wikipedia.org/wiki/Opt_in_e-mail
-[6]: https://contao.org/en/insert-tags.html
+[6]: 04-Managing-content.md#insert-tags

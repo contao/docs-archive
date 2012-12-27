@@ -158,6 +158,6 @@ search index manually.
 ![](https://raw.github.com/contao/docs/2.11/book/en/images/rebuild-the-search-index.jpg)
 
 
-[1]: https://contao.org/en/page-types.html#access-rights
+[1]: 03-Managing-pages.md#access-control
 [2]: https://contao.org/en/extension-list.html
-[3]: https://contao.org/en/installing-contao.html#install-tool
+[3]: 01-Installation.md#the-contao-install-tool

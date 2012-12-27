@@ -166,6 +166,6 @@ alle geänderten Seiten einzeln im Browser aufzurufen.
 ![](https://raw.github.com/contao/docs/2.11/book/de/images/suchindex-neu-aufbauen.jpg)
 
 
-[1]: https://contao.org/de/page-types.html#access-rights
+[1]: 03-Seiten-verwalten.md#zugriffsschutz
 [2]: https://contao.org/de/extension-list.html
-[3]: https://contao.org/de/installing-contao.html#install-tool
+[3]: 01-Installation.md#das-contao-installtool

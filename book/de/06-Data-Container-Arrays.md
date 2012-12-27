@@ -995,4 +995,4 @@ der Contao Core-Engine angepasst werden.
 </table>
 
 
-[1]: https://contao.org/de/listing-records.html
+[1]: 02-Administrationsbereich.md#datens%C3%A4tze-auflisten
