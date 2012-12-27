@@ -403,7 +403,7 @@ darf hingegen nur die Artikel bearbeiten und ein unpriviligierter Benutzer hat
 
 [1]: http://www.youtube.com/watch?v=6z744hsR8I0
 [2]: https://contao.org/de/contao-themes-and-templates.html
-[3]: https://contao.org/de/style-sheets.html
+[3]: 03-Seiten-verwalten.md#stylesheets
 [4]: https://contao.org/de/modules.html
 [5]: https://contao.org/de/page-layouts.html
 [6]: https://contao.org/de/articles.html

@@ -21,10 +21,6 @@ following commands:
 curl -L http://install.contao.org | tar -xzp
 ```
 
-Now your Contao root directory should look like this:
-
-![](https://raw.github.com/contao/docs/2.11/book/en/images/contao-root.jpg)
-
 
 ### The Contao install tool
 
@@ -38,8 +34,10 @@ a text editor, find the following line and set it to `0`.
 $GLOBALS['TL_CONFIG']['installCount'] = 0; // This will remove the automatic lock
 ```
 
-Note: In versions prior to 2.9, the path to the install tool is
-`/typolight/install.php` and the default password is "typolight".
+<div class="note">
+In versions prior to 2.9, the path to the install tool is
+<code>/typolight/install.php</code> and the default password is "typolight".
+</div>
 
 
 #### Creating an encryption key
@@ -72,9 +70,9 @@ A template is a preconfigured website that includes an example site structure
 and several style sheets to format the Contao core modules and content elements.
 The default template is called "Music Academy". To import it, choose
 `example_website.sql` from the drop-down menu an click the Import template
-button. If you have bought a commercial front end template, choose the
-respective file name here. Note that any existing data will be overriden during
-the template import!
+button.
+
+**Existing data will be overriden during the template import!**
 
 
 #### Creating an admin user
@@ -215,20 +213,20 @@ start the synchronization process.
 ### Updating the database
 
 After you have updated the Contao files, you need to update the database, too.
-Fortunately, the [Contao install tool][4] will do most of the work for you. Just
-open it and enter your password, then scroll down to the database section and
-confirm the changes.
+Fortunately, the Contao install tool will do most of the work for you. Just open
+it and enter your password, then scroll down to the database section and confirm
+the changes.
 
 
 ## Live Update Service
 
 The Contao Live Update Service is a commercial Contao add-on provided by [iNet
-Robots][5], the company of the Contao founder and core developer, Leo Feyer. It
+Robots][4], the company of the Contao founder and core developer, Leo Feyer. It
 allows you to update your installation with a only few clicks in the back end,
 without having to download a Contao archive or using an FTP program to replace
 or synchronize files.
 
-[Sign up for a Live Update ID][6]
+[Sign up for a Live Update ID][5]
 
 
 ### The update process explained
@@ -269,8 +267,8 @@ unzip the archive right in place.
 #### Installing the update
 
 Contao automatically creates or updates the new files and folders. Please note
-that this requires write permissions. If your server requires using the [Safe
-Mode Hack][7], make sure it is configured correctly **as described in this user
+that this requires write permissions. If your server requires using the Safe
+Mode Hack, make sure it is configured correctly **as described in this user
 guide**!
 
 ![](https://raw.github.com/contao/docs/2.11/book/en/images/live-update-files.jpg)
@@ -288,8 +286,8 @@ After running the live update, your installation should be up to date.
 99% of all Live Update issues are caused by wrong file permissions. Contao
 requires write permissions to manage files and folders, therefore if the Live
 Update does not work properly, check your server configuration and make sure to
-set up the [Safe Mode Hack][7] **as described in this user guide**!
-Unfortunately, there is a lot of outdated and wrong information out there.
+set up the Safe Mode Hack **as described in this user guide**! Unfortunately,
+there is a lot of outdated and wrong information out there.
 
 
 #### Empty update archive
@@ -306,17 +304,17 @@ times if the update is not successfull.
 #### How to get support
 
 If you are having problems activating your Live Update ID or receiving the
-update archive, please contact the [iNet Robots support][8]. If you are having
-problems configuring the [Safe Mode Hack][7] or using Contao, please choose a
-support option on the [support page][9].
+update archive, please contact the [iNet Robots support][6]. If you are having
+problems configuring the Safe Mode Hack or using Contao, please choose a support
+option on the [support page][7].
 
 
 ## Moving an installation
 
 Moving a Contao installation from a local server to a live server is not much
-different from [installing a fresh Contao version][10], except that you are
-using the files from your local installation instead of the Contao download
-archive and an SQL dump of your local database.
+different from installing a fresh Contao version, except that you are using the
+files from your local installation instead of the Contao download archive and an
+SQL dump of your local database.
 
 
 ### Uploading the files
@@ -400,13 +398,14 @@ Action php /cgi-php5/php
 
 Download the Contao Check to find out whether your server meets the Contao
 system requirements. The script will check whether you can use the Extension
-Repository and the Live Update and whether you have to use the [Safe Mode
-Hack][7] or not. Depending on your system configuration, you can set up a new
-Contao installation with the web installer or validate an existing installation.
+Repository and the Live Update and whether you have to use the Safe Mode Hack or
+not. Depending on your system configuration, you can set up a new Contao
+installation with the web installer or validate an existing installation.
 Extract the Zip file, upload the `check` folder to your Contao installation
 directory and open it in a web browser.
 
-[Download the Contao Check][11] or [Open the GitHub project][12]
+[Download the Contao Check][8]
+[Open the GitHub project][9]
 
 
 ### ISP-specific settings
@@ -414,7 +413,7 @@ directory and open it in a web browser.
 There are a few major Internet Service Providers that require a little extra
 configuration to get Contao to work. Fortunately, they are just the exception
 from the rule. If you are looking for hassle-free Contao hosting, check out the
-list of [Contao hosting partners][13].
+list of [Contao hosting partners][10].
 
 <table>
 <tr>
@@ -453,20 +452,17 @@ list of [Contao hosting partners][13].
 </table>
 
 Additional information about ISP-specific settings is available in the [Contao
-forum][14].
+forum][11].
 
 
 [1]: https://contao.org/en/download.html
 [2]: http://www.winscp.com/
 [3]: http://en.wikipedia.org/wiki/Diff
-[4]: https://contao.org/en/installing-contao.html#install-tool
-[5]: http://www.inetrobots.com
-[6]: http://www.inetrobots.com/shop/product_info.php?info=p12_Live-Update-ID.html
-[7]: https://contao.org/en/using-the-safe-mode-hack.html
-[8]: http://www.inetrobots.com/contact-us.html
-[9]: https://contao.org/en/support.html
-[10]: https://contao.org/en/installing-contao.html
-[11]: https://github.com/contao/check/zipball/master
-[12]: https://github.com/contao/check
-[13]: https://contao.org/en/partners.html?search=services&amp;for=partner_hosting
-[14]: https://community.contao.org/en/
+[4]: http://www.inetrobots.com
+[5]: http://www.inetrobots.com/shop/product_info.php?info=p12_Live-Update-ID.html
+[6]: http://www.inetrobots.com/contact-us.html
+[7]: https://contao.org/en/support.html
+[8]: https://github.com/contao/check/zipball/master
+[9]: https://github.com/contao/check
+[10]: https://contao.org/en/partners.html?search=services&for=partner_hosting
+[11]: https://community.contao.org/en/

@@ -21,10 +21,6 @@ Befehle verwenden:
 curl -L http://install.contao.org | tar -xzp
 ```
 
-Ihr Contao-Verzeichnis sollte nun wie folgt aussehen:
-
-![](https://raw.github.com/contao/docs/2.11/book/de/images/typolight-root.jpg)
-
 
 ### Das Contao-Installtool
 
@@ -39,8 +35,10 @@ Texteditor, finden Sie die folgende Zeile und setzen Sie sie auf `0`.
 $GLOBALS['TL_CONFIG']['installCount'] = 0; // Hebt die automatische Sperre auf
 ```
 
-Hinweis: Bis einschließlich Version 2.8 lautet der Pfad zum Installtool
-`/typolight/install.php` und das Startpasswort "typolight".
+<div class="note">
+Bis einschließlich Version 2.8 lautet der Pfad zum Installtool
+<code>/typolight/install.php</code> und das Startpasswort "typolight".
+</div>
 
 
 #### Encryption-Key erstellen
@@ -56,7 +54,7 @@ werden! Notieren Sie ihn sich daher wenn Sie das Feature nutzen
 Melden Sie sich an der Administrationsoberfläche Ihres Servers (z.B. "Plesk"
 oder "Cpanel") an und erstellen Sie eine neue Datenbank für Contao. Geben Sie
 die Zugangsdaten im Contao-Installtool ein und beachten Sie die abweichende
-Schreibweise `UTF8` in MySQL!
+Schreibweise `UTF8` anstatt `UTF-8` in MySQL!
 
 
 #### Tabellen aktualisieren
@@ -65,8 +63,8 @@ Contao prüft bei der Installation die Tabellen der Datenbank und gibt eine
 Liste empfohlener Änderungen aus wenn diese nicht aktuell sind. Lesen Sie diese
 Empfehlungen aufmerksam, denn Contao kennt nur seine eigenen Tabellen und wird
 versuchen, vermeintlich nicht benötigte Tabellen anderer Programme
-"aufzuräumen". Bestätigen Sie die Änderungen durch Anklicken der "Update
-database"-Schaltfläche.
+"aufzuräumen". Bestätigen Sie die Änderungen durch Anklicken der "Tabellen
+aktualisieren"-Schaltfläche.
 
 
 #### Template importieren
@@ -75,10 +73,9 @@ Ein Template ist eine vorkonfigurierte Webseite, die eine beispielhafte
 Seitenstruktur und verschiedene Stylesheets zur Formatierung der Contao
 Core-Module und -Inhaltselemente enthält. Das Standardtemplate heißt "Music
 Academy". Um es zu importieren, wählen Sie `example_website.sql` aus dem
-Drop-Down-Menü und klicken Sie auf die "Import template"-Schaltfläche. Wenn
-Sie ein anderes Frontend-Template erworben haben, wählen Sie stattdessen die
-entsprechende SQL-Datei. **Beim Import eines Templates werden bestehende Daten
-überschrieben!**
+Drop-Down-Menü und klicken Sie auf die "Template importieren"-Schaltfläche.
+
+**Beim Import eines Templates werden bestehende Daten überschrieben!**
 
 
 #### Administrator-Konto erstellen
@@ -129,7 +126,7 @@ macht auch für das PHP-Skript Contao keine Ausnahme.
 Um das Rechteproblem zu umgehen, baut Contao eine FTP-Verbindung auf und legt
 die Ressourcen unter dem FTP-Benutzer an. Sie müssen dafür nur Ihre
 FTP-Zugangsdaten in der lokalen Konfigurationsdatei
-(system/config/localconfig.php) eintragen.
+(`system/config/localconfig.php`) eintragen.
 
 ``` {.php}
 $GLOBALS['TL_CONFIG']['useFTP']  = true;
@@ -178,13 +175,11 @@ nur die geänderten Dateien hochladen (Dateien synchronisieren). In jedem Fall
 sollten Sie vorher folgende Dateien und Ordner sichern - nur für den Fall, dass
 ein Fehler auftritt oder Sie sie versehentlich überschreiben:
 
-``` {.php}
-system/config/dcaconfig.php
-system/config/localconfig.php
-system/config/langconfig.php
-templates/*
-files/*
-```
+* `system/config/dcaconfig.php`
+* `system/config/localconfig.php`
+* `system/config/langconfig.php`
+* `templates/*`
+* `files/*`
 
 Dieses Backup umfasst Ihre lokale Konfiguration, eventuell angepasste Templates
 sowie die hochgeladenen Dateien.
@@ -198,11 +193,10 @@ auf Ihrem lokalen Rechner und kopieren Sie die Dateien mit einem FTP-Programm
 (wir empfehlen [WinSCP][2]). Danach stellen Sie die Dateien aus dem Backup
 wieder her.
 
-** Achtung:** wenn Sie Third-Party-Erweiterungen installiert haben,
-müssen Sie diese ebenfalls sichern und nach dem Update wiederherstellen oder
-darauf achten, sie gar nicht erst zu überschreiben. Andernfalls müssen diese
-Module neu installiert werden, was bei einigen Erweiterungen zu Datenverlust
-führen kann!
+**Achtung:** wenn Sie Third-Party-Erweiterungen installiert haben, müssen Sie
+diese ebenfalls sichern und nach dem Update wiederherstellen oder darauf achten,
+sie gar nicht erst zu überschreiben. Andernfalls müssen diese Module neu
+installiert werden, was bei einigen Erweiterungen zu Datenverlust führen kann!
 
 
 ### Dateien synchronisieren
@@ -230,19 +224,19 @@ Klicken Sie "OK", um den Synchronisationsvorgang zu starten.
 
 Nachdem Sie die Contao-Dateien aktualisiert haben, müssen Sie noch die
 Datenbank auf den neuesten Stand bringen. Diese Arbeit übernimmt das
-[Contao-Installtool][4] für Sie. Geben Sie Ihr Passwort ein, scrollen Sie bis
-zum Datenbank-Abschnitt und bestätigen Sie die Änderungen.
+Contao-Installtool für Sie. Geben Sie Ihr Passwort ein, scrollen Sie bis zum
+Datenbank-Abschnitt und bestätigen Sie die Änderungen.
 
 
 ## Live Update Service
 
 Der Contao Live Update-Service ist ein kommerzielles Contao Add-on von [iNet
-Robots][5], der Firma des Contao-Gründers und Kernentwicklers, Leo Feyer. Es
+Robots][4], der Firma des Contao-Gründers und Kernentwicklers, Leo Feyer. Es
 ermöglicht die Aktualisierung Ihrer Installation mit wenigen Klicks im Backend,
 ohne ein Contao-Archiv herunterzuladen oder die Dateien mit einem FTP-Programm
 zu synchronisieren.
 
-[Eine Contao Live Update ID bestellen][6]
+[Eine Contao Live Update ID bestellen][5]
 
 
 ### Der Updatevorgang im Detail
@@ -285,8 +279,8 @@ werden, um einen früheren Stand wiederherzustellen.
 
 Contao erstellt bzw. aktualisiert die neuen Dateien und Ordner automatisch.
 Beachten Sie, dass dafür Schreibrechte notwendig sind. Falls Sie auf Ihrem
-Server den [Safe Mode Hack][7] benötigen, konfigurieren Sie ihn **exakt so wie
-in diesem Handbuch beschrieben**!
+Server den Safe Mode Hack benötigen, konfigurieren Sie ihn **exakt so wie in
+diesem Handbuch beschrieben**!
 
 ![](https://raw.github.com/contao/docs/2.11/book/de/images/live-update-files.jpg)
 
@@ -304,9 +298,9 @@ neuesten Stand.
 99% aller Live Update-Probleme sind auf unzureichende Datei-Zugriffsrechte
 zurück zu führen. Contao benötigt Schreibrechte, um Dateien und Ordner zu
 verwalten, daher sollten Sie als erstes Ihre Serverkonfiguration prüfen und
-sicherstellen, dass der [Safe Mode Hack][7] **so wie in diesem Handbuch
-beschrieben** konfiguriert ist! Leider sind etliche veraltete und auch falsche
-Informationen in Umlauf.
+sicherstellen, dass der Safe Mode Hack **so wie in diesem Handbuch beschrieben**
+konfiguriert ist! Leider sind etliche veraltete und auch falsche Informationen
+in Umlauf.
 
 
 #### Leeres Update-Archiv
@@ -324,17 +318,17 @@ die Aktualisierung nicht erfolgreich war.
 #### Support erhalten
 
 Wenn Sie Probleme bei der Aktivierung Ihrer Live Update ID haben, wenden Sie
-sich bitte an den [iNet Robots Support][8]. Bei Problemen mit dem [Safe Mode
-Hack][7] oder der Benutzung von Contao, wählen Sie bitte eine passende
-Support-Option auf der [Support-Seite][9].
+sich bitte an den [iNet Robots-Support][6]. Bei Problemen mit dem Safe Mode Hack
+oder der Benutzung von Contao, wählen Sie bitte eine passende Support-Option auf
+der [Support-Seite][7].
 
 
 ## Eine Installation umziehen
 
 Der Umzug einer Contao-Installation von einem lokalen Server auf einen
-Live-Server ist nicht viel anders als eine [neue Installation][10], außer dass
-Sie die Dateien Ihrer lokalen Installation statt denen des Contao-Archivs sowie
-einen SQL-Dump Ihrer lokalen Datenbank verwenden.
+Live-Server ist nicht viel anders als eine neue Installation, außer dass Sie die
+Dateien Ihrer lokalen Installation statt denen des Contao-Archivs sowie einen
+SQL-Dump Ihrer lokalen Datenbank verwenden.
 
 
 ### Dateien kopieren
@@ -422,14 +416,14 @@ Action php /cgi-php5/php
 
 Laden Sie den Contao-Check herunter und finden Sie heraus, ob Ihr Server die
 Contao-Systemvoraussetzungen erfüllt. Der Contao-Check prüft, ob Sie das
-Extension Repository und das Live Update nutzen können und ob Sie den [Safe
-Mode Hack][7] benötigen oder nicht. Je nach Systemkonfiguration können Sie mit
-Hilfe des Web-Installers eine neue Contao-Installation aufsetzen oder eine
-bestehende Installation prüfen. Entpacken Sie die Zip-Datei, übertragen Sie den
-Ordner `check` in Ihr Contao-Verzeichnis und öffnen Sie ihn in einem Browser.
+Extension Repository und das Live Update nutzen können und ob Sie den Safe Mode
+Hack benötigen oder nicht. Je nach Systemkonfiguration können Sie mit Hilfe des
+Web-Installers eine neue Contao-Installation aufsetzen oder eine bestehende
+Installation prüfen. Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
+`check` in Ihr Contao-Verzeichnis und öffnen Sie ihn in einem Browser.
 
-[Den Contao-Check herunterladen][11]
-[Zum Projekt auf GitHub][12]
+[Den Contao-Check herunterladen][8]
+[Zum Projekt auf GitHub][9]
 
 
 ### Provider-spezifische Einstellungen
@@ -437,7 +431,7 @@ Ordner `check` in Ihr Contao-Verzeichnis und öffnen Sie ihn in einem Browser.
 Es gibt ein paar wenige große Internet Service Provider, die spezielle
 Einstellungen für den Betrieb von Contao erfordern. Zum Glück sind sie nur die
 Ausnahme von der Regel. Sorgenfreies Contao-Hosting erhalten Sie bei den [Contao
-Hosting-Partnern][13].
+Hosting-Partnern][10].
 
 <table>
 <tr>
@@ -475,21 +469,18 @@ Hosting-Partnern][13].
 </tr>
 </table>
 
-Weitere Provider-spezifische Einstellungen sind im [Contao-Forum][14]
+Weitere Provider-spezifische Einstellungen sind im [Contao-Forum][11]
 beschrieben.
 
 
 [1]: https://contao.org/de/download.html
 [2]: http://www.winscp.com
 [3]: http://de.wikipedia.org/wiki/Diff
-[4]: https://contao.org/de/installing-contao.html#install-tool
-[5]: http://www.inetrobots.com
-[6]: http://www.inetrobots.com/shop/product_info.php?info=p12_Live-Update-ID.html
-[7]: https://contao.org/de/using-the-safe-mode-hack.html
-[8]: http://www.inetrobots.com/kontakt.html
-[9]: https://contao.org/de/support.html
-[10]: https://contao.org/de/installing-contao.html
-[11]: https://github.com/contao/check/zipball/master
-[12]: https://github.com/contao/check
-[13]: https://contao.org/de/partners.html?search=services&amp;for=partner_hosting
-[14]: https://community.contao.org/de/
+[4]: http://www.inetrobots.com
+[5]: http://www.inetrobots.com/shop/product_info.php?info=p12_Live-Update-ID.html
+[6]: http://www.inetrobots.com/kontakt.html
+[7]: https://contao.org/de/support.html
+[8]: https://github.com/contao/check/zipball/master
+[9]: https://github.com/contao/check
+[10]: https://contao.org/de/partners.html?search=services&for=partner_hosting
+[11]: https://community.contao.org/de/
