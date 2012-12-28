@@ -817,7 +817,7 @@ Eine Palette ist eine Reihung mehrerer Feldnamen, die durch einen Strichpunkt
 Feldnamen verwendet wird, markiert der Strichpunkt den Beginn einer neuen
 Gruppe, die aus- und eingeklappt werden kann.
 
-![](https://raw.github.com/contao/docs/2.11/book/de/images/paletten.jpg)
+![](https://raw.github.com/contao/docs/2.11/manual/de/images/paletten.jpg)
 
 Das obige Beispiel wird durch folgenden Code definiert:
 
