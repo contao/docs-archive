@@ -1077,5 +1077,5 @@ public function myValidateFormField(Widget $objWidget, $intId)
 [2]: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 [3]: 01-Installation.md#das-contao-installtool
 [4]: http://tinymce.moxiecode.com
-[5]: 07-Contao-anpassen.md#die-dca-konfiguration-anpassen
+[5]: 07-Customizing-Contao.md#die-dca-konfiguration-anpassen
 [6]: 06-Data-Container-Arrays.md#callbacks

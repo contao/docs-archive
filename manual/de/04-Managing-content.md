@@ -1056,4 +1056,4 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 [3]: http://mootools.net
 [4]: http://www.digitalia.be/software/slimbox
 [5]: http://de.wikipedia.org/wiki/Opt-in
-[6]: 04-Inhalte-verwalten.md#inserttags
+[6]: 04-Managing-content.md#inserttags

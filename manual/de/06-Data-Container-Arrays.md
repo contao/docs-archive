@@ -995,4 +995,4 @@ der Contao Core-Engine angepasst werden.
 </table>
 
 
-[1]: 02-Administrationsbereich.md#datens%C3%A4tze-auflisten
+[1]: 02-Administration-area.md#datens%C3%A4tze-auflisten
