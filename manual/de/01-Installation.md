@@ -35,10 +35,8 @@ Texteditor, finden Sie die folgende Zeile und setzen Sie sie auf `0`.
 $GLOBALS['TL_CONFIG']['installCount'] = 0; // Hebt die automatische Sperre auf
 ```
 
-<div class="note">
 Bis einschließlich Version 2.8 lautet der Pfad zum Installtool
 <code>/typolight/install.php</code> und das Startpasswort "typolight".
-</div>
 
 
 #### Encryption-Key erstellen

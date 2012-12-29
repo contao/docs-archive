@@ -34,10 +34,8 @@ a text editor, find the following line and set it to `0`.
 $GLOBALS['TL_CONFIG']['installCount'] = 0; // This will remove the automatic lock
 ```
 
-<div class="note">
 In versions prior to 2.9, the path to the install tool is
 <code>/typolight/install.php</code> and the default password is "typolight".
-</div>
 
 
 #### Creating an encryption key
