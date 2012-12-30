@@ -177,7 +177,7 @@ TinyMCE-Plugins enthält und fehlende Ressourcen gegebenenfalls von der
 [TinyMCE-Projektwebseite][4] heruntergeladen und in den Ordner
 `plugins/tinyMCE/plugins` Ihrer Contao-Installation kopiert werden müssen.
 
-![](https://raw.github.com/contao/docs/2.11/book/de/images/rich-text-editor.jpg)
+![](https://raw.github.com/contao/docs/2.11/manual/de/images/rich-text-editor.jpg)
 
 Das obige Bild zeigt die Standardkonfiguration des Editors, die in der Datei
 `system/config/tinyMCE.php` hinterlegt ist. Um eine eigene Konfiguration zu
@@ -1077,5 +1077,5 @@ public function myValidateFormField(Widget $objWidget, $intId)
 [2]: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 [3]: 01-Installation.md#das-contao-installtool
 [4]: http://tinymce.moxiecode.com
-[5]: 07-Contao-anpassen.md#die-dca-konfiguration-anpassen
+[5]: 07-Customizing-Contao.md#die-dca-konfiguration-anpassen
 [6]: 06-Data-Container-Arrays.md#callbacks

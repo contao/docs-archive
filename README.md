@@ -10,11 +10,6 @@ project, please read the `README.md` file in its root folder.
 API documentation
 
 
-## Book
-
-Official manual for users and developers.
-
-
 ## Cookbook
 
 Practical information and tipps.
@@ -23,6 +18,11 @@ Practical information and tipps.
 ## Hooks
 
 Overview of the Contao core hooks.
+
+
+## Manual
+
+Official manual for users and developers.
 
 
 ## Playground
