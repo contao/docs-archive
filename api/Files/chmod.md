@@ -22,7 +22,7 @@ Chane file mode.
 
 2. *mixed* `$varMode`
 
-	The file mode to be used.
+	The CHMOD value to be set. Make sure you include the *0* before value, e.g. 0644
 
 
 ### Return Values ###
@@ -37,7 +37,7 @@ True on success, false otherwise.
 	```php
 	<?php
 
-	$this->Files->chmod('tl_files/example_file.txt', 644);
+	$this->Files->chmod('tl_files/example_file.txt', 0644);
 	```
 
 

@@ -16,7 +16,7 @@ Provide methods to handle files.
 
 ### Methods ###
 
-- *public* [`__construct()`](File/__construct.md) – Check whether a file exists
+- *public* [`__construct`](File/__construct.md) – Check whether a file exists
 - *public* [`__get`](File/__get.md) – Return an object property
 - *public* [`truncate`](File/truncate.md) – Truncate the file
 - *public* [`write`](File/write.md) – Write data to the file

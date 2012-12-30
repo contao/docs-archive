@@ -13,6 +13,8 @@ Check whether a file exists.
 
 **Class hierarchy:** *[System](../System.md) > [File](../File.md)*
 
+**Throws:** *Exception*
+
 
 ### Parameters ###
 

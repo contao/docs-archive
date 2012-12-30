@@ -18,7 +18,7 @@ Set the file permissions.
 
 1. *string* `$strChmod`
 
-	The CHMOD value to be set.
+	The CHMOD value to be set. Make sure you include the *0* before value, e.g. 0644
 
 
 ### Return Values ###
@@ -34,7 +34,7 @@ True on success, false otherwise.
 	<?php
 
 	$objFile = new File('tl_files/my_data.txt');
-	$objFile->chmod(644);
+	$objFile->chmod(0644);
 	```
 
 
