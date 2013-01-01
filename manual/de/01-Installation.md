@@ -312,7 +312,11 @@ Contao-Systemvoraussetzungen erfüllt. Der Contao-Check prüft, ob Sie das
 Extension Repository und das Live Update nutzen können und ob Sie den Safe Mode
 Hack benötigen oder nicht. Je nach Systemkonfiguration können Sie mit Hilfe des
 Web-Installers eine neue Contao-Installation aufsetzen oder eine bestehende
-Installation prüfen. Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
+Installation prüfen.
+
+![](https://raw.github.com/contao/docs/2.11/manual/de/images/contao-check.jpg)
+
+Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
 `check` in Ihr Contao-Verzeichnis und öffnen Sie ihn in einem Browser.
 
 [Den Contao-Check herunterladen][8] | [Zum Projekt auf GitHub][9]
