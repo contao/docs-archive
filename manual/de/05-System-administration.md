@@ -34,7 +34,7 @@ davon sehen, denn nur die "Courses"-Seite wurde in in der "Editors"-Gruppe
 gemountet. Beachten Sie außerdem, dass Helen Lewis nur eine der drei Seiten
 bearbeiten kann!
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/seitenstruktur-hlewis.jpg)
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/seitenstruktur-hlewis.jpg)
 
 Eine Seite sehen zu können beinhaltet noch nicht das Recht, sie zu bearbeiten.
 Erinnern Sie sich, dass [Zugriffsrechte][1] in der Seitenstruktur vergeben
@@ -49,7 +49,7 @@ sehen kann. Der nachfolgende Screenshot zeigt den Dateimanager aus Sicht von
 Helen Lewis, die im Gegensatz zum Administrator nur auf den `campus`-Ordner
 zugreifen darf.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/dateiverwaltung-hlewis.jpg)
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/dateiverwaltung-hlewis.jpg)
 
 
 #### Erlaubte Felder
@@ -61,7 +61,7 @@ wäre das Formular zum Anlegen eines Beitrags solange leer, bis der
 Administrator in den Gruppenrechten eines oder mehrere Felder der Tabelle
 `tl_news` freigeschaltet hat.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/erlaubte-felder.jpg)
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/erlaubte-felder.jpg)
 
 
 ### Mitglieder
@@ -94,19 +94,19 @@ durchsuchen und Erweiterungen auf Knopfdruck installieren. Nutzen Sie die
 Filter- und Sortieroptionen zum Auffinden eines Moduls und klicken Sie auf
 dessen Namen, um die Beschreibung zu lesen oder es zu installieren.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/erweiterungsliste.jpg)
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/erweiterungsliste.jpg)
 
 Die Detailseite enthält die Beschreibung der Erweiterung sowie wichtige
 Informationen zu Systemvoraussetzungen, Versionen und Abhängigkeiten von
 anderen Modulen. Klicken Sie auf die "Installieren"-Schaltfläche, um die
 Erweiterung herunterzuladen und zu installieren.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/erweiterungsdetails.jpg)
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/erweiterungsdetails.jpg)
 
 Contao lädt die Erweiterung automatisch herunter, kopiert die Dateien und
 aktualisiert wenn nötig die Datenbank.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/erweiterung-installieren.jpg)
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/erweiterung-installieren.jpg)
 
 
 ### Erweiterungsverwaltung
@@ -116,14 +116,14 @@ deinstalliert werden. Es wird automatisch auf Updates geprüft und auf neue
 Versionen hingewiesen. Viele Erweiterungen enthalten außerdem einen
 Support-Link zur Dokumentation und/oder zum Forum.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/erweiterungsverwaltung.jpg)
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/erweiterungsverwaltung.jpg)
 
 Um eine Erweiterung zu deinstallieren, klicken Sie auf das entsprechende Icon
 und folgen Sie den Anweisungen. Es werden alle Dateien entfernt und falls nötig
 die Datenbank aktualisiert. Beachten Sie, dass diese Aktion nicht rückgängig
 gemacht werden kann!
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/erweiterung-deinstallieren.jpg)
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/erweiterung-deinstallieren.jpg)
 
 
 ### Manuelle Installation
@@ -152,7 +152,7 @@ Datensätze oder früherer Versionen verwendet werden. Sie können diese Daten
 manuell bereinigen, um z.B. alte Vorschaubilder zu entfernen oder die
 XML-Sitemaps nach einer Änderung an der Seitenstruktur zu aktualisieren.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/daten-bereinigen.jpg)
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/daten-bereinigen.jpg)
 
 
 ### Suchindex neu aufbauen
@@ -163,7 +163,7 @@ normalerweise keine Gedanken machen. Wenn Sie allerdings viele Seiten auf einmal
 aktualisiert haben, ist es bequemer, den Suchindex manuell neu aufzubauen, als
 alle geänderten Seiten einzeln im Browser aufzurufen.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/suchindex-neu-aufbauen.jpg)
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/suchindex-neu-aufbauen.jpg)
 
 
 [1]: 03-Managing-pages.md#zugriffsschutz
