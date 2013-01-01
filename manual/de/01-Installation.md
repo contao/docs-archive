@@ -327,8 +327,8 @@ Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
 Es gibt ein paar wenige große Internet Service Provider, die spezielle
 Einstellungen für den Betrieb von Contao erfordern. Zum Glück sind sie nur die
 Ausnahme von der Regel. Die Provider-spezifische Einstellungen finden Sie im
-[Contao-Forum][11]. Sorgenfreies Contao-Hosting erhalten Sie bei den [Contao
-Hosting-Partnern][10].
+[Contao-Forum][10]. Sorgenfreies Contao-Hosting erhalten Sie bei den [Contao
+Hosting-Partnern][11].
 
 
 [1]: https://contao.org/de/download.html
@@ -340,5 +340,5 @@ Hosting-Partnern][10].
 [7]: https://contao.org/de/support.html
 [8]: https://github.com/contao/check/zipball/master
 [9]: https://github.com/contao/check
-[10]: https://contao.org/de/partners.html?search=services&for=partner_hosting
-[11]: https://community.contao.org/de/
+[10]: https://community.contao.org/de/forumdisplay.php?67-Erfahrungen-mit-Webhostern
+[11]: https://contao.org/de/partners.html?search=services&for=partner_hosting
