@@ -35,17 +35,6 @@ Texteditor, finden Sie die folgende Zeile und setzen Sie sie auf `0`.
 $GLOBALS['TL_CONFIG']['installCount'] = 0; // Hebt die automatische Sperre auf
 ```
 
-Bis einschließlich Version 2.8 lautet der Pfad zum Installtool
-<code>/typolight/install.php</code> und das Startpasswort "typolight".
-
-
-#### Encryption-Key erstellen
-
-Der Encryption-Key wird benötigt, um Daten verschlüsselt zu speichern. Einmal
-verschlüsselt können die Daten nur noch mit diesem Key wieder entschlüsselt
-werden! Notieren Sie ihn sich daher wenn Sie das Feature nutzen
-(Verschlüsselung wird momentan im Core nicht verwendet).
-
 
 #### Datenbankverbindung herstellen
 
@@ -58,20 +47,20 @@ Schreibweise `UTF8` anstatt `UTF-8` in MySQL!
 #### Tabellen aktualisieren
 
 Contao prüft bei der Installation die Tabellen der Datenbank und gibt eine
-Liste empfohlener Änderungen aus wenn diese nicht aktuell sind. Lesen Sie diese
+Liste empfohlener Änderungen aus, wenn diese nicht aktuell sind. Lesen Sie diese
 Empfehlungen aufmerksam, denn Contao kennt nur seine eigenen Tabellen und wird
 versuchen, vermeintlich nicht benötigte Tabellen anderer Programme
-"aufzuräumen". Bestätigen Sie die Änderungen durch Anklicken der "Tabellen
+"aufzuräumen". Bestätigen Sie die Änderungen durch Anklicken der "Datenbank
 aktualisieren"-Schaltfläche.
 
 
-#### Template importieren
+#### Ein Template importieren
 
 Ein Template ist eine vorkonfigurierte Webseite, die eine beispielhafte
 Seitenstruktur und verschiedene Stylesheets zur Formatierung der Contao
 Core-Module und -Inhaltselemente enthält. Das Standardtemplate heißt "Music
-Academy". Um es zu importieren, wählen Sie `example_website.sql` aus dem
-Drop-Down-Menü und klicken Sie auf die "Template importieren"-Schaltfläche.
+Academy". Um es zu importieren, wählen Sie den Eintrag `example_website.sql` aus
+dem Drop-Down-Menü und klicken Sie auf die "Template importieren"-Schaltfläche.
 
 **Beim Import eines Templates werden bestehende Daten überschrieben!**
 
@@ -81,8 +70,8 @@ Drop-Down-Menü und klicken Sie auf die "Template importieren"-Schaltfläche.
 Wenn Sie kein Template importiert haben, müssen Sie ein Administrator-Konto
 erstellen, damit Sie sich am Contao-Backend anmelden können. Danach ist der
 Installationsprozess abgeschlossen. Der Link unten rechts leitet Sie zur
-Backend-Anmeldung weiter. Wenn Sie die Beispielwebseite importiert haben,
-können Sie sich als Benutzer "k.jones" mit dem Passwort "kevinjones" anmelden.
+Backend-Anmeldung weiter. Wenn Sie die Beispielwebseite importiert haben, können
+Sie sich dort als Benutzer "k.jones" mit dem Passwort "kevinjones" anmelden.
 
 
 ### Suchmaschinenfreundliche URLs verwenden
@@ -112,57 +101,35 @@ Die Bezeichnung "Safe Mode Hack" ist eigentlich nicht korrekt, da sie
 impliziert, dass das Problem durch den PHP safe_mode verursacht würde.
 Tatsächlich wird es jedoch von unzureichenden Dateizugriffsrechten verursacht
 und tritt auch bei deaktiviertem safe_mode auf, daher sollte es richtiger "File
-Permission Hack" heißen. PHP als Apache-Modul läuft normalerweise als Benutzer
-`wwwrun`, `www-data` oder `nobody`, wohingegen die Dateien, die Sie per FTP
-hochgeladen haben, Ihrem Benutzer (z.B. `web4` oder `ab5678`) gehören. Der
-Server verweigert Benutzern grundsätzlich den Zugriff auf fremde Dateien und
-macht auch für das PHP-Skript Contao keine Ausnahme.
+Permission Hack" heißen.
+
+PHP als Apache-Modul läuft normalerweise als Benutzer `wwwrun`, `www-data` oder
+`nobody`, wohingegen die Dateien, die Sie per FTP hochgeladen haben, Ihrem
+Benutzer (z.B. `web4` oder `ab5678`) gehören. Der Server verweigert Benutzern
+grundsätzlich den Zugriff auf fremde Dateien und macht auch für das PHP-Skript
+Contao keine Ausnahme.
 
 
 #### FTP für Dateioperationen verwenden
 
 Um das Rechteproblem zu umgehen, baut Contao eine FTP-Verbindung auf und legt
 die Ressourcen unter dem FTP-Benutzer an. Sie müssen dafür nur Ihre
-FTP-Zugangsdaten in der lokalen Konfigurationsdatei
-(`system/config/localconfig.php`) eintragen.
+FTP-Zugangsdaten im Installtool eintragen. Achten Sie dabei besonders auf den
+korrekten relativen Pfad vom FTP-Basisordner zum Contao-Verzeichnis (z.B.
+`html/`, `public_html/` oder `httpdocs/`).
 
-``` {.php}
-$GLOBALS['TL_CONFIG']['useFTP']  = true;
-$GLOBALS['TL_CONFIG']['ftpHost'] = 'domain.com';
-$GLOBALS['TL_CONFIG']['ftpPath'] = 'httpdocs/';
-$GLOBALS['TL_CONFIG']['ftpUser'] = 'ab5678';
-$GLOBALS['TL_CONFIG']['ftpPass'] = '********';
-```
-
-Ersetzen Sie die obigen Login-Daten mit Ihren eigenen und achten Sie besonders
-darauf, den korrekten "ftpPath" einzugeben. Es handelt sich dabei um den
-relativen Pfad vom FTP-Basisordner zum Contao-Verzeichnis (z.B. `html/`,
-`public_html/` oder `httpdocs/`).
-
-
-#### Schreibrechte zuweisen
-
-Die Third-Party-Plugins, die in Contao verwendet werden, kennen den Safe Mode
-Hack natürlich nicht und benötigen daher Schreibrechte für bestimmte
-Verzeichnisse. Verwenden Sie Ihr FTP-Programm oder SSH-Terminal, um die
-nachfolgend genannten Ordner beschreibbar zu machen (CHMOD 777). Unabhängig
-davon, was Sie eventuell in einem Tutorial oder im Contao-Forum gelesen haben,
-müssen und sollten nur diese drei Verzeichnisse angepasst werden, um den Safe
-Mode Hack zu nutzen!
+Ein paar wenige Verzeichnisse benötigen trotz Safe Mode Hack Schreibrechte, weil
+PHP direkt auf sie zugreift:
 
 * `system/html`
 * `system/logs`
 * `system/tmp`
 
-Ab Version 2.7.3 werden die benötigten Schreibrechte automatisch gesetzt.
-
-
-#### Die FTP-Verbindung prüfen
-
-Um zu prüfen, ob der richtige "ftpPath" gesetzt ist, klicken Sie auf die "Check
-FTP connection"-Schaltfläche.
-
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/ftp-check.jpg)
+Die Schreibrechte (CHMOD 777) werden vom Installtool automatisch gesetzt und
+müssen in der Regel nicht manuell nachgearbeitet werden. Falls dies doch einmal
+notwendig sein sollte, passen Sie bitte **nur diese drei Verzeichnisse** an –
+auch wenn Sie in einem Tutorial oder dem Contao-Forum etwas anderes gelesen
+haben sollten!
 
 
 ## Manuelles Update
@@ -173,11 +140,12 @@ nur die geänderten Dateien hochladen (Dateien synchronisieren). In jedem Fall
 sollten Sie vorher folgende Dateien und Ordner sichern - nur für den Fall, dass
 ein Fehler auftritt oder Sie sie versehentlich überschreiben:
 
-* `system/config/dcaconfig.php`
-* `system/config/localconfig.php`
-* `system/config/langconfig.php`
-* `templates/*`
 * `files/*`
+* `system/config/dcaconfig.php`
+* `system/config/initconfig.php`
+* `system/config/langconfig.php`
+* `system/config/localconfig.php`
+* `templates/*`
 
 Dieses Backup umfasst Ihre lokale Konfiguration, eventuell angepasste Templates
 sowie die hochgeladenen Dateien.
@@ -185,13 +153,13 @@ sowie die hochgeladenen Dateien.
 
 ### Dateien ersetzen
 
-Die Dateien einer Contao-Installation zu ersetzen ist relativ simpel.
-Übertragen Sie einfach das Contao-Archiv auf Ihren Server oder entpacken Sie es
-auf Ihrem lokalen Rechner und kopieren Sie die Dateien mit einem FTP-Programm
+Die Dateien einer Contao-Installation zu ersetzen ist relativ simpel. Übertragen
+Sie einfach das Contao-Archiv auf Ihren Server oder entpacken Sie es auf Ihrem
+lokalen Rechner und kopieren Sie die Dateien anschließend mit einem FTP-Programm
 (wir empfehlen [WinSCP][2]). Danach stellen Sie die Dateien aus dem Backup
-wieder her.
+wieder her und entfernen eventuelle Überbleibsel vorheriger Contao-Versionen.
 
-**Achtung:** wenn Sie Third-Party-Erweiterungen installiert haben, müssen Sie
+**Achtung:** Wenn Sie Third-Party-Erweiterungen installiert haben, müssen Sie
 diese ebenfalls sichern und nach dem Update wiederherstellen oder darauf achten,
 sie gar nicht erst zu überschreiben. Andernfalls müssen diese Module neu
 installiert werden, was bei einigen Erweiterungen zu Datenverlust führen kann!
@@ -211,19 +179,19 @@ Dateien und navigieren Sie dann zum Contao-Verzeichnis und klicken Sie auf die
 
 Treffen Sie Ihre Auswahl wie in der Abbildung und wählen Sie unbedingt die
 Option "Änderungsvorschau" aus, damit Sie die zu aktualisierenden Dateien noch
-einmal prüfen können. Bestätigen Sie danach die Einstellungen im
-Vorschaufenster und achten Sie besonders auf die zu löschenden Ressourcen!
-Klicken Sie "OK", um den Synchronisationsvorgang zu starten.
+einmal prüfen können. Bestätigen Sie danach die Einstellungen im Vorschaufenster
+und achten Sie besonders auf die zu löschenden Ressourcen! Klicken Sie "OK", um
+den Synchronisationsvorgang zu starten.
 
 ![](https://raw.github.com/contao/docs/2.11/manual/de/images/synchronization-confirmation.jpg)
 
 
 ### Die Datenbank aktualisieren
 
-Nachdem Sie die Contao-Dateien aktualisiert haben, müssen Sie noch die
-Datenbank auf den neuesten Stand bringen. Diese Arbeit übernimmt das
-Contao-Installtool für Sie. Geben Sie Ihr Passwort ein, scrollen Sie bis zum
-Datenbank-Abschnitt und bestätigen Sie die Änderungen.
+Nachdem Sie die Contao-Dateien aktualisiert haben, müssen Sie noch die Datenbank
+auf den neuesten Stand bringen. Diese Arbeit übernimmt das Contao-Installtool
+für Sie. Geben Sie Ihr Passwort ein, scrollen Sie bis zum Datenbank-Abschnitt
+und bestätigen Sie die Änderungen.
 
 
 ## Live Update Service
@@ -236,59 +204,22 @@ zu synchronisieren.
 
 [Eine Contao Live Update ID bestellen][5]
 
+Das Live Update umfasst folgende Funktionen:
 
-### Der Updatevorgang im Detail
-
-Öffnen Sie das Systemwartungsmodul im Contao-Backend, geben Sie Ihre Live
-Update ID ein und starten Sie die Aktualisierung.
-
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/live-update-start.jpg)
-
-
-#### Version auswählen
-
-Auf der nächsten Seite können Sie die Version festlegen, auf die Sie Ihre
-Contao-Installation aktualisieren möchten. Um zusätzlich auch veraltete
-Dateien zu entfernen, wählen Sie die Option "Veraltete Core-Module und Dateien
-entfernen".
-
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/live-update-version-de.jpg)
+* Beliebige Up- und Downgrades auf alle Contao-Versionen
+* Automatisches Backup der Datenbank vor dem Update
+* Individuelle Prüfung und Vervollständigung der Contao-Installation
+* Vergleich der angepassten Templates mit den Originaldateien
 
 
-#### Inhaltsverzeichnis
+### Versionsauswahl
 
-Das Inhaltsverzeichnis zeigt die Dateien des Update-Archivs an. Vergleichen Sie
-diese Liste mit Ihren angepassten Dateien.
-
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/live-update-toc.jpg)
+![](https://raw.github.com/contao/docs/2.11/manual/de/images/live-update-1.jpg)
 
 
-#### Ein Backup erstellen
+### Template-Unterschiede
 
-Contao erstellt optional ein Backup der alten Dateien, so dass Sie das Update
-wieder rückgängig machen können. Die Backup-Archive liegen im
-Contao-Verzeichnis (z.B. `LU200901281100.zip`) und können direkt dort entpackt
-werden, um einen früheren Stand wiederherzustellen.
-
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/live-update-backup.jpg)
-
-
-#### Das Update installieren
-
-Contao erstellt bzw. aktualisiert die neuen Dateien und Ordner automatisch.
-Beachten Sie, dass dafür Schreibrechte notwendig sind. Falls Sie auf Ihrem
-Server den Safe Mode Hack benötigen, konfigurieren Sie ihn **exakt so wie in
-diesem Handbuch beschrieben**!
-
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/live-update-files.jpg)
-
-
-#### Ihre Installation ist aktuell
-
-Nachdem das Live Update abgeschlossen ist, ist Ihre Installation auf dem
-neuesten Stand.
-
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/live-update-complete.jpg)
+![](https://raw.github.com/contao/docs/2.11/manual/de/images/live-update-2.jpg)
 
 
 ### Fehlersuche
@@ -297,20 +228,7 @@ neuesten Stand.
 zurück zu führen. Contao benötigt Schreibrechte, um Dateien und Ordner zu
 verwalten, daher sollten Sie als erstes Ihre Serverkonfiguration prüfen und
 sicherstellen, dass der Safe Mode Hack **so wie in diesem Handbuch beschrieben**
-konfiguriert ist! Leider sind etliche veraltete und auch falsche Informationen
-in Umlauf.
-
-
-#### Leeres Update-Archiv
-
-Beachten Sie zunächst, dass die ZIP-Dateien im Contao-Verzeichnis
-(`LU2009*.zip`) Backup-Archive und nicht die Update-Archive mit den neuen
-Dateien sind. Ein leeres Update-Archiv kann man nur an einem leeren
-Inhaltsverzeichnis während der Aktualisierung erkennen. Öffnen Sie in diesem
-Fall das Systemwartungsmodul und leeren Sie den temporären Ordner
-(`system/tmp`). Wiederholen Sie danach das Live Update. Falls Sie die Version
-2.7.0 oder 2.7.1 verwenden, wiederholen Sie diesen Schritt bis zu vier Mal, wenn
-die Aktualisierung nicht erfolgreich war.
+konfiguriert ist!
 
 
 #### Support erhalten
@@ -339,10 +257,10 @@ SQL-Dump Ihrer lokalen Datenbank verwenden.
 
 Ein MySQL-Dump lässt sich am einfachsten mit der Datenbankverwaltung
 "phpMyAdmin" erstellen. Als Serveradministrator können Sie natürlich auch das
-mysqldump-Programm verwenden. Melden Sie sich an "phpMyAdmin" an, wählen Sie
+Programm `mysqldump verwenden. Melden Sie sich an "phpMyAdmin" an, wählen Sie
 die zu exportierende Datenbank und klicken Sie auf die "Export"-Schaltfläche im
 oberen Menü. Um Kompatibilitätsprobleme zwischen verschiedenen MySQL-Versionen
-zu minimieren ist es wichtig, die Einstellungen für den Export gemäß des
+zu minimieren `,ist es wichtig, die Einstellungen für den Export gemäß des
 folgenden Screenshots anzupassen:
 
 ![](https://raw.github.com/contao/docs/2.11/manual/de/images/sql-export.jpg)
@@ -350,12 +268,12 @@ folgenden Screenshots anzupassen:
 
 ### Datenbank importieren
 
-Melden Sie sich an "phpMyAdmin" auf dem Zielserver an und erstellen Sie eine
-neue Datenbank für Contao. Je nach Serverkonfiguration ist das eventuell nur
-über die Verwaltungsoberfläche (z.B. "Plesk" oder "Cpanel") möglich. Wählen
-Sie die neue leere Datenbank aus und klicken Sie auf die "Import"-Schaltfläche
-im oberen Menü. Laden Sie dann den SQL-Dump der lokalen Datenbank hoch und
-starten Sie den Import.
+Öffnen Sie "phpMyAdmin" auf dem Zielserver an und erstellen Sie eine neue
+Datenbank für Contao. Je nach Serverkonfiguration ist das eventuell nur über die
+Verwaltungsoberfläche (z.B. "Plesk" oder "Cpanel") möglich. Wählen Sie die neue
+leere Datenbank aus und klicken Sie auf die "Import"-Schaltfläche im oberen
+Menü. Laden Sie dann den SQL-Dump der lokalen Datenbank hoch und starten Sie den
+Import.
 
 ![](https://raw.github.com/contao/docs/2.11/manual/de/images/sql-import.jpg)
 
@@ -379,35 +297,12 @@ und PHP 5 aktiviert.
 ### Contao-Systemvoraussetzungen
 
 Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support.
-PHP muss mindestens in der Version 5.3.2 vorliegen und MySQL in der Version 4.1,
+PHP muss mindestens in der Version 5.2.7 vorliegen und MySQL in der Version 4.1,
 wobei wir für eine bessere Performance MySQL 5 empfehlen. Außerdem benötigen
 Sie die PHP-Erweiterungen "GDlib" (Bildbearbeitung) und "SOAP" (Extension
 Repository) sowie optional "mbstring" (internationale Zeichen) und "mcrypt"
 (Verschlüsselung). Contao wurde erfolgreich in allen modernen Browsern wie
 Firefox (ab Version 2) oder Internet Explorer (ab Version 7) getestet.
-
-
-### PHP 5 aktivieren
-
-Die meisten Provider bieten inzwischen PHP 5 an, so dass Sie nur noch
-herausfinden müssen, wie man es aktiviert - falls es nicht sowieso die
-Standardversion ist. Eventuell können Sie die PHP-Version in der
-Verwaltungsoberfläche des Servers umschalten; in dem Fall können Sie diesen
-Absatz überspringen. Alternativ lässt es sich höchstwahrscheinlich in einer
-`.htaccess`-Datei aktivieren. Öffnen Sie das Contao-Verzeichnis und benennen
-Sie die `.htaccess.default`-Datei in `.htaccess` um. Danach bearbeiten Sie die
-Datei in einem Texteditor und probieren jeweils eine der folgenden Anweisungen
-aus bzw. fragen Ihren Provider, welche Zeile funktioniert.
-
-``` {.apache}
-AddHandler x-httpd-php5 .php
-AddHandler php5-cgi .php
-AddHandler php-cgi2 .php
-AddHandler php-fastcgi5 .php
-AddType x-mapp-php5 .php
-AddType application/x-httpd-php5 .php
-Action php /cgi-php5/php
-```
 
 
 ### Der Contao-Check
@@ -420,55 +315,16 @@ Web-Installers eine neue Contao-Installation aufsetzen oder eine bestehende
 Installation prüfen. Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
 `check` in Ihr Contao-Verzeichnis und öffnen Sie ihn in einem Browser.
 
-[Den Contao-Check herunterladen][8]
-[Zum Projekt auf GitHub][9]
+[Den Contao-Check herunterladen][8] | [Zum Projekt auf GitHub][9]
 
 
 ### Provider-spezifische Einstellungen
 
 Es gibt ein paar wenige große Internet Service Provider, die spezielle
 Einstellungen für den Betrieb von Contao erfordern. Zum Glück sind sie nur die
-Ausnahme von der Regel. Sorgenfreies Contao-Hosting erhalten Sie bei den [Contao
+Ausnahme von der Regel. Die Provider-spezifische Einstellungen finden Sie im
+[Contao-Forum][11]. Sorgenfreies Contao-Hosting erhalten Sie bei den [Contao
 Hosting-Partnern][10].
-
-<table>
-<tr>
-  <th>Provider</th>
-  <th>PHP 5</th>
-  <th>Safe Mode Hack</th>
-  <th>Kommentar</th>
-</tr>
-<tr>
-  <td>1und1</td>
-  <td>Mittels .htaccess: <code>AddType x-mapp-php5 .php</code></td>
-  <td>Benötigt (<code>ftpPath = /</code>)</td>
-  <td>&nbsp;</td>
-</tr>
-<tr>
-  <td>allinkl.com</td>
-  <td>Mittels .htaccess: <code>AddHandler php-fastcgi .php</code></td>
-  <td>Nicht benötigt</td>
-  <td>PHP FastCGI ist in jedem Fall schneller als mod_php in Verbindung mit dem
-      Safe Mode Hack.</td>
-</tr>
-<tr>
-  <td>HostEurope</td>
-  <td>Standard</td>
-  <td>Benötigt (<code>ftpPath = www/</code>)</td>
-  <td>Datei-Eigentümer darf nicht "wwwrun" sein (kann in der
-      Verwaltungsoberfläche "KIS" geändert werden).</td>
-</tr>
-<tr>
-  <td>Strato</td>
-  <td>Mittels .htaccess: <code>AddType application/x-httpd-php5 .php</code></td>
-  <td>Nicht benötigt</td>
-  <td>Die PHP SOAP-Erweiterung ist nicht verfügbar, daher funktioniert das
-      Contao Extension Repository nicht.</td>
-</tr>
-</table>
-
-Weitere Provider-spezifische Einstellungen sind im [Contao-Forum][11]
-beschrieben.
 
 
 [1]: https://contao.org/de/download.html
