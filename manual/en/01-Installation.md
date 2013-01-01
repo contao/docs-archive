@@ -131,12 +131,12 @@ upload only the files that have been modified since the last update
 (synchronizing files). Either way, you should always back up the following files
 and folders - just in case there is an error or you accidentally override them:
 
-* `files/*`
 * `system/config/dcaconfig.php`
 * `system/config/initconfig.php`
 * `system/config/langconfig.php`
 * `system/config/localconfig.php`
 * `templates/*`
+* `tl_files/*`
 
 This will back up your local configuration, your custom templates and your
 files.

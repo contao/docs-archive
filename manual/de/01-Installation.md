@@ -140,12 +140,12 @@ nur die geänderten Dateien hochladen (Dateien synchronisieren). In jedem Fall
 sollten Sie vorher folgende Dateien und Ordner sichern - nur für den Fall, dass
 ein Fehler auftritt oder Sie sie versehentlich überschreiben:
 
-* `files/*`
 * `system/config/dcaconfig.php`
 * `system/config/initconfig.php`
 * `system/config/langconfig.php`
 * `system/config/localconfig.php`
 * `templates/*`
+* `tl_files/*`
 
 Dieses Backup umfasst Ihre lokale Konfiguration, eventuell angepasste Templates
 sowie die hochgeladenen Dateien.
