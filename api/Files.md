@@ -28,3 +28,8 @@ Provide methods to modify files and folders.
 - *public* [`delete`](Files/delete.md) – Delete a file
 - *public* [`is_writeable`](Files/is_writeable.md) – Check whether a file is writeable
 - *public* [`move_uploaded_file`](Files/move_uploaded_file.md) – Move an uploaded file to another folder
+
+
+### Properties ###
+
+- *protected static* `$objInstance` - Current object instance (Singleton)

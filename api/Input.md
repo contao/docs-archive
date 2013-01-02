@@ -26,3 +26,10 @@ Provide methods to clean up user input and to prevent XSS.
 - *public* [`setPost`](Input/setPost.md) – Set a $_POST parameter
 - *public* [`setCookie`](Input/setCookie.md) – Set a $_COOKIE parameter
 - *public* [`resetCache`](Input/resetCache.md) – Reset the internal cache
+
+
+### Properties ###
+
+- *protected static* `$objInstance` - Current object instance (Singleton)
+- *protected* `$arrCache` - Cache array
+- *protected* `$blnMagicQuotes` - Magic quotes

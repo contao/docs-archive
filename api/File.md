@@ -28,3 +28,12 @@ Provide methods to handle files.
 - *public* [`getContentAsArray`](File/getContentAsArray.md) – Return file content as array
 - *public* [`renameTo`](File/renameTo.md) – Rename the file
 - *public* [`copyTo`](File/copyTo.md) – Copy the file
+
+
+### Properties ###
+
+- *protected* `$resFile` - File handle
+- *protected* `$strFile` - File name
+- *protected* `$arrPathinfo` - Pathinfo
+- *protected* `$arrImageSize` - Image size
+

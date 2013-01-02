@@ -26,3 +26,13 @@ Provide active record functionality.
 - *public* [`findBy`](Model/findBy.md) – Find a record by its reference field and return true if it has been found
 - *public* [`save`](Model/save.md) – Save the current record and return the number of affected rows or the last insert ID
 - *public* [`delete`](Model/delete.md) – Delete the current record and return the number of affected rows
+
+
+### Properties ###
+
+- *protected* `$strTable` - Name of the current table
+- *protected* `$strRefField` - Name of the field that references the active record
+- *protected* `$varRefId` - Value of the field that references the active record
+- *protected* `$resResult` - Database result
+- *protected* `$arrData` - Data array
+- *protected* `$blnRecordExists` - Indicate whether the current record exists

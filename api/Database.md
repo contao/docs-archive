@@ -35,3 +35,11 @@ Provide methods to handle database communication.
 - *public* [`unlockTables`](Database/unlockTables.md) – Unlock all tables
 - *public* [`getSizeOf`](Database/getSizeOf.md) – Return the table size in bytes
 - *public* [`getNextId`](Database/getNextId.md) – Return the next autoincrement ID of a table
+
+
+### Properties ###
+
+- *protected static* `$objInstance` - Current object instance (Singleton)
+- *protected* `$resConnection` - Connection ID
+- *protected* `$blnDisableAutocommit` - Disable autocommit
+- *protected* `$arrCache` - Cache array

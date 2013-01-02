@@ -22,3 +22,15 @@ Provide methods to manage configuration files.
 - *public* [`add`](Config/add.md) – Add a configuration variable to the local configuration file
 - *public* [`update`](Config/update.md) – Alias for Config::add()
 - *public* [`delete`](Config/delete.md) – Delete a configuration variable from the local configuration file
+
+
+### Properties ###
+
+- *protected static* `$objInstance` - Current object instance (Singleton)
+- *protected* `$Files` - Files object
+- *protected* `$strTop` - Top content
+- *protected* `$strBottom` - Bottom content
+- *protected* `$blnIsModified` - Modified
+- *protected* `$blnHasLcf` - Local configuration file
+- *protected* `$arrData` - Data array
+- *protected* `$arrCache` - Cache array

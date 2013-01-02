@@ -46,3 +46,25 @@ Provide methods to manage system.
 - *protected* [`getFormattedNumber`](System/getFormattedNumber.md) – Format a number
 - *protected* [`anonymizeIp`](System/anonymizeIp.md) – Anonymize an IP address by overriding the last chunk
 
+
+### Properties ###
+
+- *protected* `$Cache` - Cache object
+- *protected* `$Config` - Configuration object
+- *protected* `$Database` - Database object
+- *protected* `$Encryption` - Encryption object
+- *protected* `$Environment` - Environment object
+- *protected* `$Files` - Files object
+- *protected* `$Input` - Input object
+- *protected* `$Search` - Search object
+- *protected* `$Session` - Session object
+- *protected* `$String` - String object
+- *protected* `$Template` - Template object
+- *protected* `$User` - User object
+- *protected* `$Automator` - Automator object
+- *protected* `$DataContainer` - Data container object
+- *protected* `$Messages` - Messages object
+- *protected* `$objCookie` - Cookie hook object
+- *protected* `$objLog` - Log hook object
+- *protected* `$arrCache` - Cache array
+

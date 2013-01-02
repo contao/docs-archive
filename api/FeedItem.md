@@ -21,3 +21,8 @@ Provide methods to generate RSS/Atom feed items.
 - *public* [`__get`](FeedItem/__get.md) – Return an object property
 - *public* [`__isset`](FeedItem/__isset.md) – Check whether a property is set
 - *public* [`addEnclosure`](FeedItem/addEnclosure.md) – Add an enclosure
+
+
+### Properties ###
+
+- *protected* `$arrData` - Data array

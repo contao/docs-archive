@@ -28,3 +28,20 @@ Provide methods to send e-mails.
 - *public* [`attachFileFromString`](Email/attachFileFromString.md) – Attach a file from a string
 - *public* [`sendTo`](Email/sendTo.md) – Get e-mail addresses from an array, string or unlimited number of arguments and send the e-mail
 - *protected* [`compileRecipients`](Email/compileRecipients.md) – Compile e-mail addresses from an array of (different) arguments
+
+
+### Properties ###
+
+- *protected static* `$objMailer` - Mailer object
+- *protected* `$objMessage` - Message object
+- *protected* `$strSender` - Sender e-mail address
+- *protected* `$strSenderName` - Sender name
+- *protected* `$intPriority` - E-mail priority
+- *protected* `$strSubject` - E-mail subject
+- *protected* `$strText` - Text part of the e-mail
+- *protected* `$strHtml` - HTML part of the e-mail
+- *protected* `$strCharset` - Character set
+- *protected* `$strImageDir` - Image directory
+- *protected* `$blnEmbedImages` - Embed images
+- *protected* `$arrFailures` - Invalid addresses
+- *protected* `$strLogFile` - Log file

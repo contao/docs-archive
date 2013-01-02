@@ -26,7 +26,7 @@ Parent class for front end modules.
 
 ### Properties ###
 
-- *protected* `$strTemplate`
-- *protected* `$strColumn`
-- *protected* `$arrData`
-- *protected* `$arrStyle`
+- *protected* `$strTemplate` - Template
+- *protected* `$strColumn` - Column
+- *protected* `$arrData` - Current record
+- *protected* `$arrStyle` - Style array

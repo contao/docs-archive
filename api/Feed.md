@@ -23,3 +23,10 @@ Provide methods to generate RSS/Atom feeds.
 - *public* [`addItem`](Feed/.md) – Add an item
 - *public* [`generateRss`](Feed/generateRss.md) – Generate an RSS 2.0 feed and return it as XML string
 - *public* [`generateAtom`](Feed/generateAtom.md) – Generate an Atom feed and return it as XML string
+
+
+### Properties ###
+
+- *protected* `$strName` - Feed name
+- *protected* `$arrData` - Data array
+- *protected* `$arrItems` - Items

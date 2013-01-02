@@ -17,3 +17,12 @@ This class provides methods to combine CSS and JavaScript files.
 - *public* [`add`](Combiner/add.md) – Add a file
 - *public* [`hasEntries`](Combiner/hasEntries.md) – Return true if there are files
 - *public* [`getCombinedFile`](Combiner/getCombinedFile.md) – Generate the combined file and return the path
+
+
+### Properties ###
+
+- *const* `CSS = '.css'`
+- *const* `JS = '.js'`
+- *protected* `strKey` - Unique key
+- *protected* `$strMode` - Operation mode
+- *protected* `$arrFiles` - Files

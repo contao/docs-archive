@@ -27,3 +27,8 @@ Provide methods to handle folders.
 - *public* [`protect`](Folder/protect.md) – Protect the folder by adding an .htaccess file
 - *public* [`unprotect`](Folder/unprotect.md) – Unprotect the folder by removing the .htaccess file
 
+
+### Properties ###
+
+- *protected* `$strFolder` - Folder name
+

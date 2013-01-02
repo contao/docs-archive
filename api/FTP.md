@@ -29,3 +29,10 @@ Provide methods to modify files and folders via FTP.
 - *public* [`chmod`](FTP/chmod.md) – Change the file mode
 - *public* [`is_writeable`](FTP/is_writeable.md) – Check whether a file is writeable
 - *public* [`move_uploaded_file`](FTP/move_uploaded_file.md) – Move an uploaded file to another folder
+
+
+### Properties ###
+
+- *protected* `$resConnection` - FTP connection
+- *protected* `$blnIsConnected` - Is connected
+- *protected* `$arrFiles` - Files array

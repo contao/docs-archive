@@ -17,3 +17,9 @@ Provide methods to get OS independent environment parameters.
 
 - *public* [`getInstance`](Environment/getInstance.md) – Return the current object instance (Singleton)
 - *public* [`__get`](Environment/__get.md) – Return an environment parameter
+
+
+### Properties ###
+
+- *protected static* `$objInstance` - Current object instance (Singleton)
+- *protected* `$arrCache` - Cache array
