@@ -258,7 +258,7 @@ SQL-Dump Ihrer lokalen Datenbank verwenden.
 
 Ein MySQL-Dump lässt sich am einfachsten mit der Datenbankverwaltung
 "phpMyAdmin" erstellen. Als Serveradministrator können Sie natürlich auch das
-Programm `mysqldump verwenden. Melden Sie sich an "phpMyAdmin" an, wählen Sie
+Programm `mysqldump` verwenden. Melden Sie sich an "phpMyAdmin" an, wählen Sie
 die zu exportierende Datenbank und klicken Sie auf die "Export"-Schaltfläche im
 oberen Menü. Um Kompatibilitätsprobleme zwischen verschiedenen MySQL-Versionen
 zu minimieren `,ist es wichtig, die Einstellungen für den Export gemäß des
