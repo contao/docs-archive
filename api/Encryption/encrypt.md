@@ -37,4 +37,6 @@ Encrypted value.
 	```php
 	<?php
 
-	echo $this->Encryption->encrypt($this->User->email);
+	echo $this->Encryption->encrypt(FrontendUser::getInstance()->email);
+
+	```

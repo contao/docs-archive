@@ -32,7 +32,7 @@ $GLOBALS['TL_HOOKS']['isAllowedToEditComment'][] = array('MyClass', 'myIsAllowed
 public function myIsAllowedToEditComment($intParent, $strSource)
 {
 	// Check the access to your custom module
-	if ($this->User->hasAccess('custom', 'modules'))
+	if (BackendUser::getInstance()->hasAccess('custom', 'modules'))
 	{
 		return true;
 	}
