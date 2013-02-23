@@ -36,7 +36,8 @@ Import a library and make it accessible by its name or an optional key.
 	```php
 	<?php
 
-	echo FrontendUser::getInstance()->firstname;
+	$this->import('Config');
+	echo $this->Config->adminEmail;
 	```
-	> John
+	> john.doe@example.com
 
