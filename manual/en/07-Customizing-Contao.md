@@ -57,7 +57,7 @@ true;
 $GLOBALS['TL_DCA']['tl_member']['fields']['company']['eval']['rgxp'] = 'alnum';
 
 // Allow only admins to use include content elements
-if (!$this->User->isAdmin)
+if (!BackendUser::getInstance()->isAdmin)
 {
     unset($GLOBALS['TL_CTE']['includes']);
 }

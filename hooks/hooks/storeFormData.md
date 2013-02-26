@@ -35,10 +35,8 @@ public function myStoreFormData($arrSet, $objForm)
 
 	if (FE_USER_LOGGED_IN && $this->Database->fieldExists('member', $objForm->targetTable))
 	{
-		$this->import('FrontendUser', 'User');
-
 		// Also store the member ID who submitted the form
-		$arrSet['member'] = $this->User->id;
+		$arrSet['member'] = FrontendUser::getInstance()->id;
 	}
 
 	return $arrSet;

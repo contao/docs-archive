@@ -58,7 +58,7 @@ true;
 $GLOBALS['TL_DCA']['tl_member']['fields']['company']['eval']['rgxp'] = 'alnum';
 
 // Nur Administratoren dürfen Include-Elemente verwenden
-if (!$this->User->isAdmin)
+if (!BackendUser::getInstance()->isAdmin)
 {
     unset($GLOBALS['TL_CTE']['includes']);
 }
