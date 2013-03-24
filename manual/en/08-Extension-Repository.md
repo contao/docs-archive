@@ -106,7 +106,7 @@ correct after the upload.
 
 ## Adding files from a GitHub repository
 
-The files can also be imported from a GitHub repository. It is required that the release is tagged and that the tag has been pushed to the central GitHub repository. In the extension settings, you have to enter the HTTP URL of the GitHub repository.
+The files can also be imported from a GitHub repository. It is required that the release is tagged and that the tag has been pushed to the central GitHub repository. In the extension settings, you have to enter the HTTPS URL of the GitHub repository.
 
 ![](https://raw.github.com/contao/docs/3.0/manual/en/images/github-import.jpg)
 
