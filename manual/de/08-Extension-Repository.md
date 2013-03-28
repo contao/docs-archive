@@ -28,20 +28,28 @@ Folgende Kategorien sind momentan verfügbar:
   <td>Die Erweiterung ist eine eigenständige Anwendung.</td>
 </tr>
 <tr>
-  <td>Hilfsprogramm</td>
-  <td>Die Erweiterung ist ein Hilfsprogramm für das Backend.</td>
+  <td>Plugin</td>
+  <td>Die Erweiterung ist eine PHP- oder JavaScript-Library.</td>
 </tr>
 <tr>
-  <td>Vorlage</td>
-  <td>Die Erweiterung ist ein Template.</td>
+  <td>Theme</td>
+  <td>Die Erweiterung ist ein Theme für das Backend.</td>
+</tr>
+<tr>
+  <td>Hilfsprogramm</td>
+  <td>Die Erweiterung ist ein Hilfsprogramm für das Backend.</td>
 </tr>
 <tr>
   <td>Widget</td>
   <td>Die Erweiterung ist ein Eingabefeld (Widget) für Formulare.</td>
 </tr>
 <tr>
-  <td>Plugin</td>
-  <td>Die Erweiterung ist eine PHP- oder JavaScript-Library.</td>
+  <td>Übersetzung</td>
+  <td>Die Erweiterung ist eine Übersetzung für eine Version von Contao.</td>
+</tr>
+<tr>
+  <td>Bundle</td>
+  <td>Eine Gruppe von Erweiterungen, die gleichzeitig installiert werden kann.</td>
 </tr>
 <tr>
   <td>Andere</td>
@@ -100,6 +108,18 @@ Zielverzeichnis auszuwählen, damit die Pfade nach dem Upload stimmen.
 ![](https://raw.github.com/contao/docs/3.0/manual/de/images/dateien-hinzufuegen.jpg)
 
 ![](https://raw.github.com/contao/docs/3.0/manual/de/images/dateien-bearbeiten.jpg)
+
+## Adding files from a GitHub repository
+
+Die Dateien können auch aus einem GitHub-Repository importiert werden. Voaussetzung dafür ist, dass das Release mit einem Tag markiert wurde und dieser in das zentrale GitHub-Repository gepusht wurde.
+
+In den Extension-Einstellungen muss die HTTPS-URL des GitHub-Repository hinterlegt werden.
+
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/github-importieren.jpg)
+
+Ihr könnt einen Tag auswählen und das Skript wird nun die .zip-Datei des Tags geladen und die darin enthaltenen Dateien werden entpackt und stehen danach wie bei einem manuellen Upload zur Verfügung.
+
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/github-importieren-tag.jpg)
 
 
 ## Eine Übersetzung hinzufügen
