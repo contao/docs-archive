@@ -27,20 +27,28 @@ The following categories are currently available:
   <td>The extension is an autonomous application.</td>
 </tr>
 <tr>
-  <td>Utility</td>
-  <td>The extension is a utility program for the back end.</td>
+  <td>Plugin</td>
+  <td>The extension is a PHP or JavaScript library.</td>
 </tr>
 <tr>
-  <td>Template</td>
-  <td>The extension is a template.</td>
+  <td>Theme</td>
+  <td>The extension is a theme for the back end.</td>
+</tr>
+<tr>
+  <td>Utility</td>
+  <td>The extension is a utility program for the back end.</td>
 </tr>
 <tr>
   <td>Widget</td>
   <td>The extension is a form widget.</td>
 </tr>
 <tr>
-  <td>Plugin</td>
-  <td>The extension is a PHP or JavaScript library.</td>
+  <td>Translation</td>
+  <td>The extension is a translation for a version of Contao.</td>
+</tr>
+<tr>
+  <td>Bundle</td>
+  <td>A set of extensions that can be installed simultaneously.</td>
 </tr>
 <tr>
   <td>Other</td>
@@ -96,6 +104,19 @@ correct after the upload.
 
 ![](https://raw.github.com/contao/docs/3.0/manual/en/images/edit-files.jpg)
 
+## Adding files from a GitHub repository
+
+The files can also be imported from a GitHub repository, if you have tagged the
+release and pushed the tag to the central GitHub repository.
+
+Enter the HTTPS URL of the GitHub repository in the settings.
+
+![](https://raw.github.com/contao/docs/3.0/manual/en/images/github-import.jpg)
+
+If you select a tag, its files will be downloaded automatically and are then
+available just like after a manual upload.
+
+![](https://raw.github.com/contao/docs/3.0/manual/en/images/github-import-tag.jpg)
 
 ## Adding translations
 
