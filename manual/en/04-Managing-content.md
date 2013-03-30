@@ -646,22 +646,22 @@ ID or alias.
 <tr>
   <td><code>{{link_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to an internal page:
-      {{link_open::12}}Click here{{link_close}}.</td>
+      <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of an internal page: &lt;a
-      href="{{link_url::12}}">Click here&lt;/a&gt;.</td>
+  <td>This tag will be replaced with the URL of an internal page: <code>&lt;a
+      href="{{link_url::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_title::*}}</code></td>
-  <td>This tag will be replaced with the title of an internal page: &lt;a
-      title="{{link_title::12}}">Click here&lt;/a&gt;.</td>
+  <td>This tag will be replaced with the title of an internal page: <code>&lt;a
+      title="{{link_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_close}}</code></td>
   <td>Will be replaced with the closing tag of a link to an internal page:
-      {{link_open::12}}Click here{{link_close}}.</td>
+      <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article::*}}</code></td>
@@ -671,17 +671,17 @@ ID or alias.
 <tr>
   <td><code>{{article_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to an article:
-      {{article_open::12}}Click here{{link_close}}.</td>
+      <code>{{article_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of an article: &lt;a
-      href="{{article_url::12}}">Click here&lt;/a&gt;.</td>
+  <td>This tag will be replaced with the URL of an article: <code>&lt;a
+      href="{{article_url::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_title::*}}</code></td>
-  <td>This tag will be replaced with the title of an article: &lt;a
-      title="{{article_title::12}}">Click here&lt;/a&gt;.</td>
+  <td>This tag will be replaced with the title of an article: <code>&lt;a
+      title="{{article_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news::*}}</code></td>
@@ -691,17 +691,17 @@ ID or alias.
 <tr>
   <td><code>{{news_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to a news article:
-      {{news_open::12}}Click here{{link_close}}.</td>
+      <code>{{news_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of a news article: &lt;a
-      href="{{news_url::12}}">Click here&lt;/a&gt;.</td>
+  <td>This tag will be replaced with the URL of a news article: <code>&lt;a
+      href="{{news_url::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_title::*}}</code></td>
-  <td>This tag will be replaced with the title of a news article: &lt;a
-      title="{{news_title::12}}">Click here&lt;/a&gt;.</td>
+  <td>This tag will be replaced with the title of a news article: <code>&lt;a
+      title="{{news_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event::*}}</code></td>
@@ -711,17 +711,17 @@ ID or alias.
 <tr>
   <td><code>{{event_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to an event:
-      {{event_open::12}}Click here{{link_close}}.</td>
+      <code>{{event_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of an event: &lt;a
-      href="{{event_url::12}}">Click here&lt;/a&gt;.</td>
+  <td>This tag will be replaced with the URL of an event: <code>&lt;a
+      href="{{event_url::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_title::*}}</code></td>
-  <td>This tag will be replaced with the title of an event: &lt;a
-      title="{{event_title::12}}">Click here&lt;/a&gt;.</td>
+  <td>This tag will be replaced with the title of an event: <code>&lt;a
+      title="{{event_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
@@ -731,17 +731,17 @@ ID or alias.
 <tr>
   <td><code>{{faq_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to a question:
-      {{faq_open::12}}Click here{{link_close}}.</td>
+      <code>{{faq_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_url::*}}</code></td>
   <td>This tag will be replaced with the URL of a question:
-  &lt;a href="{{faq_url::12}}">Click here&lt;/a&gt;.</td>
+  <code>&lt;a href="{{faq_url::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_title::*}}</code></td>
-  <td>This tag will be replaced with the title of a question: &lt;a
-      title="{{faq_title::12}}">Click here&lt;/a&gt;.</td>
+  <td>This tag will be replaced with the title of a question: <code>&lt;a
+      title="{{faq_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 </table>
 
@@ -980,7 +980,7 @@ modules or files from the "templates" directoy.
   <td><code>{{file::*}}</code></td>
   <td>This tag will be replaced with the content of a file from the "templates"
       directory (replace * with the file name). You can also provide arguments:
-      {{file::file.php?arg1=val&amp;arg2=val}}.</td>
+      <code>{{file::file.php?arg1=val&amp;arg2=val}}</code>.</td>
 </tr>
 </table>
 
@@ -1022,50 +1022,50 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{lang::*}}</code></td>
-  <td>This tag can be used to mark foreign words within a text: {{lang::fr}}Au
-      revoir{{lang}}. It will be replaced with &lt;span lang="fr"
-      xml:lang="fr"&gt;Au revoir&lt;/span&gt;.</td>
+  <td>This tag can be used to mark foreign words within a text: <code>{{lang::fr}}Au
+      revoir{{lang}}</code>. It will be replaced with <code>&lt;span lang="fr"
+      xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
-  <td>Mark abbreviations in a text: {{abbr::World Wide Web}}WWW{{abbr}}.
-      It will be replaced with &lt;abbr title="World Wide Web"&gt;WWW&lt;/abbr&gt;.</td>
+  <td>Mark abbreviations in a text: <code>{{abbr::World Wide Web}}WWW{{abbr}}</code>.
+      It will be replaced with <code>&lt;abbr title="World Wide Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Mark acronyms in a text: {{acronym:: Multipurpose Internet Mail
-      Extensions}}MIME{{acronym}}. It will be replaced with &lt;acronym
-      title="Multipurpose Internet Mail Extensions"&gt;MIME&lt;/acronym&gt;.</td>
+  <td>Mark acronyms in a text: <code>{{acronym:: Multipurpose Internet Mail
+      Extensions}}MIME{{acronym}}</code>. It will be replaced with <code>&lt;acronym
+      title="Multipurpose Internet Mail Extensions"&gt;MIME&lt;/acronym&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
-  <td>Output properties of the user agent: {{ua::browser}}. It will e.g. be
+  <td>Output properties of the user agent: <code>{{ua::browser}}</code>. It will e.g. be
       replaced with "chrome".</td>
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
   <td>This tag will be completely removed if the page language does not match
       the tag language. You can use it to define language-specific labels:
-      {{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}.</td>
+      <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
   <td>This tag will be completely removed if the page language matches the tag
       language. You can use it to define language-specific labels:
-      `{{ifnlng::de}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}`.</td>
+      <code>{{ifnlng::de}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>This tag will be replaced with the thumbnail of an image:
-      {{image::files/image.jpg?width=200&amp;height=150}}. **width**
+      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>. **width**
       Thumbnail width, **height** Thumbnail height, **alt** Alternative
       text, **class** CSS class, **rel** rel-attribute (e.g. "lightbox"),
       **mode** mode ("proportional", "crop" or "box").</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>This tag will be replaced with a translated label: {{label::CNT:au}} or
-      {{label::tl_article:title:0}}. Note that only the first colon is a
+  <td>This tag will be replaced with a translated label: <code>{{label::CNT:au}}</code> or
+      <code>{{label::tl_article:title:0}}</code>. Note that only the first colon is a
       double colon.</td>
 </tr>
 <tr>
