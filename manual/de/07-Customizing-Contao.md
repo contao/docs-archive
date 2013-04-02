@@ -543,7 +543,7 @@ Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.8.RC1.
 $GLOBALS['TL_HOOKS']['generatePage'][] = array('MyClass', 'myGeneratePage');
 
 // MyClass.php
-public function myGeneratePage(Database_Result $objPage, Database_Result $objLayout, PageRegular $objPageRegular)
+public function myGeneratePage(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
 {
     // Beliebiger Code
 }

@@ -551,7 +551,7 @@ arguments and does not expect a return value. It is available from version
 $GLOBALS['TL_HOOKS']['generatePage'][] = array('MyClass', 'myGeneratePage');
 
 // MyClass.php
-public function myGeneratePage(Database_Result $objPage, Database_Result $objLayout, PageRegular $objPageRegular)
+public function myGeneratePage(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
 {
     // Do something
 }
