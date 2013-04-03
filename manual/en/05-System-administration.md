@@ -43,9 +43,9 @@ access to it in the site structure.
 #### Filemounts
 
 Similar to pagemounts, filemounts define which folders a user is allowed to see.
-Below is a sceenshot of the file manager in the view of Helen Lewis. She is only
+Below is a screenshot of the file manager in the view of Helen Lewis. She is only
 allowed to see the "campus" folder, whereas administrators can see the whole
-files directory (`tl_files`).
+files directory (`files`).
 
 ![](https://raw.github.com/contao/docs/3.0/manual/en/images/file-manager-hlewis.jpg)
 
