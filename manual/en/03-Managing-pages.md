@@ -35,7 +35,7 @@ export and import those resources.
 
 ### Themes versus front end templates
 
-The main difference between themes and [front end templates][1] is that a front
+The main difference between [themes][1] and front end templates is that a front
 end template contains a fully preconfigured example website, including an
 example site structure, articles, content elements and even users and groups. A
 theme, in contrast, contains only the actual website design and can therefore be

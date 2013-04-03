@@ -38,7 +38,7 @@ wieder zu importieren ([Video-Einführung ansehen][1]).
 
 ### Themes versus Frontend-Templates
 
-Der Hauptunterschied zwischen Themes und [Frontend-Templates][2] ist, dass ein
+Der Hauptunterschied zwischen [Themes][2] und Frontend-Templates ist, dass ein
 Frontend-Template eine vollständig vorkonfigurierte Beispielwebseite mit einer
 beispielhaften Seitenstruktur, Artikeln, Inhaltselementen und sogar Benutzern
 und Gruppen enthält. Ein Theme enthält dagegen nur das eigentliche Design der
