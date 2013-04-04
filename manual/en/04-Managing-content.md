@@ -224,7 +224,7 @@ TextField.prototype._addCSS = function(style_sheet) {
 myTextBox._addCSS("basic.css");
 ```
 
-Note that Flash only supports a small subset of <abbr title="HyperText Markup Language">HTML</abbr> tags, so some of your
+Note that Flash only supports a small subset of HTML tags, so some of your
 styles might not display correctly.
 
 
@@ -232,15 +232,15 @@ styles might not display correctly.
 
 The news/blog extension allows you to manage news items or blog posts and
 display them in the front end. Unlike articles that are associated with a
-particular page, news items are organized in news archives, which allows you to
-easily group, categorize or export them.
+particular page, news items are organized in news archives, which allows
+you to easily group, categorize or export them.
 
 
 ### News archives
 
 News archives are used to group and/or categorize news items. Each archive can
 relate to a certain language or a particular topic and its posts can be exported
-as an <abbr title="Rich Site Summary">RSS</abbr> or Atom feed. The <abbr title="Extensible Markup Language">XML</abbr> files are generated automatically in the Contao
+as an RSS or Atom feed. The XML files are generated automatically in the Contao
 root folder.
 
 ![](https://raw.github.com/contao/docs/3.0/manual/en/images/news-feed.jpg)
@@ -284,14 +284,14 @@ extension includes 4 front end modules:
 
 ### Permalinks
 
-Each news item has a unique <abbr title="Uniform resource locator">URL</abbr> (permalink) that can be used to reference it:
+Each news item has a unique URL (permalink) that can be used to reference it:
 
 ```
 http://www.domain.com/news/items/james-wilson-returns.html
 ```
 
-The above <abbr title="Uniform resource locator">URL</abbr> requests the news item "james-wilson-returns" via the page "news".
-Remember that Contao is a page-based <abbr title="Content management system">CMS</abbr>, so if the page "news" did not exist or
+The above URL requests the news item "james-wilson-returns" via the page "news".
+Remember that Contao is a page-based CMS, so if the page "news" did not exist or
 if it did not include the news reader module, the news item would not be
 displayed.
 
@@ -308,7 +308,7 @@ group, categorize or export them.
 
 Calendars are used to group and/or categorize events. Each calendar can relate
 to a certain language or a particular topic and its events can be exported as an
-<abbr title="Rich Site Summary">RSS</abbr> or Atom feed. The <abbr title="Extensible Markup Language">XML</abbr> files are generated automatically in the Contao root
+RSS or Atom feed. The XML files are generated automatically in the Contao root
 folder.
 
 ![](https://raw.github.com/contao/docs/3.0/manual/en/images/calendar-feed.jpg)
@@ -353,14 +353,14 @@ extension includes 4 front end modules:
 
 ### Permalinks
 
-Each event has a unique <abbr title="Uniform resource locator">URL</abbr> (permalink) that can be used to reference it:
+Each event has a unique URL (permalink) that can be used to reference it:
 
 ```
 http://www.domain.com/event-reader/events/final-exams.html
 ```
 
-The above <abbr title="Uniform resource locator">URL</abbr> requests the event "final-exams" via the page "events". Remember
-that Contao is a page-based <abbr title="Content management system">CMS</abbr>, so if the page "events" did not exist or if it
+The above URL requests the event "final-exams" via the page "events". Remember
+that Contao is a page-based CMS, so if the page "events" did not exist or if it
 did not include the event reader module, the event would not be displayed.
 
 
@@ -382,14 +382,14 @@ e-mail address of the subscriber.
 ![](https://raw.github.com/contao/docs/3.0/manual/en/images/newsletter-recipients.jpg)
 
 In case you already have a list of recipients, you can import them into Contao
-from a <abbr title="Comma-separated values">CSV</abbr> file.
+from a CSV file.
 
 
 ### Personalized newsletters
 
-Insofar as you are sending newsletters to registered members, you can
-personalize them with so called "Simple Tokens". Simple tokens are similar to
-[insert tags][3] and can be used in both the <abbr title="HyperText Markup Language">HTML</abbr> and the text content of a newsletter.
+Insofar as you are sending newsletters to registered members, you can personalize
+them with so called "Simple Tokens". Simple tokens are similar to [insert tags][3]
+and can be used in both the HTML and the text content of a newsletter.
 
 ```
 Dear ##firstname## ##lastname##,
@@ -477,18 +477,16 @@ up on the website.
 
 ### Permalinks
 
-Each newsletter has a unique <abbr title="Uniform resource locator">URL</abbr>
-(permalink) that can be used to reference it:
+Each newsletter has a unique URL (permalink) that can be used to reference it:
 
 ```
 http://www.domain.com/newsletters/items/james-wilson-returns.html
 ```
 
-The above <abbr title="Uniform resource locator">URL</abbr> requests the
-newsletter "james-wilson-returns" via the page "newsletters". Remember that
-Contao is a page-based <abbr title="Content management system">CMS</abbr>, so if the page "newsletters" did not exist or if
-it did not include the newsletter reader module, the newsletter would not be
-displayed.
+The above URL requests the newsletter "james-wilson-returns" via the page
+"newsletters". Remember that Contao is a page-based CMS, so if the page
+"newsletters" did not exist or if it did not include the newsletter reader
+module, the newsletter would not be displayed.
 
 
 ## Forms

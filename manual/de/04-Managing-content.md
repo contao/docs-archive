@@ -225,7 +225,7 @@ TextField.prototype._addCSS = function(style_sheet) {
 myTextBox._addCSS("basic.css");
 ```
 
-Beachten Sie, dass Flash nur einen kleinen Teil der <abbr title="HyperText Markup Language">HTML</abbr>-Tags unterstützt und
+Beachten Sie, dass Flash nur einen kleinen Teil der HTML-Tags unterstützt und
 manche Formatierungen daher nicht angezeigt werden können.
 
 
@@ -234,7 +234,7 @@ manche Formatierungen daher nicht angezeigt werden können.
 Die News/Blog-Erweiterung ermöglicht die Verwaltung von Nachrichten bzw.
 Blog-Einträgen und deren Darstellung im Frontend. Im Gegensatz zu Artikeln, die
 mit einer bestimmten Seite assoziiert sind, werden Nachrichten in Archiven
-organisiert und können so einfach gruppiert, kategorisiert oder als <abbr title="Rich Site Summary">RSS</abbr>- bzw.
+organisiert und können so einfach gruppiert, kategorisiert oder als RSS- bzw.
 Atom-Feed exportiert werden.
 
 
@@ -242,7 +242,7 @@ Atom-Feed exportiert werden.
 
 Archive werden zur Gruppierung und/oder Kategorisierung von Nachrichten
 verwendet. Jedes Archiv kann sich auf eine bestimmte Sprache oder ein bestimmtes
-Thema beziehen und die Beiträge können als <abbr title="Rich Site Summary">RSS</abbr>- oder Atom-Feed exportiert
+Thema beziehen und die Beiträge können als RSS- oder Atom-Feed exportiert
 werden.
 
 ![](https://raw.github.com/contao/docs/3.0/manual/de/images/newsfeed.jpg)
@@ -286,15 +286,15 @@ eingebunden werden.
 
 ### Permalinks
 
-Jede Nachricht hat eine eindeutige <abbr title="Uniform resource locator">URL</abbr> (Permalink), die zur Referenzierung des
+Jede Nachricht hat eine eindeutige URL (Permalink), die zur Referenzierung des
 Beitrags verwendet werden kann:
 
 ```
 http://www.domain.com/news/items/james-wilson-returns.html
 ```
 
-Die oben genannte <abbr title="Uniform resource locator">URL</abbr> fordert den Beitrag "james-wilson-returns" auf der Seite
-"news" an. Denken sie daran, dass Contao ein Seiten-basiertes <abbr title="Content management system">CMS</abbr> ist; gäbe es
+Die oben genannte URL fordert den Beitrag "james-wilson-returns" auf der Seite
+"news" an. Denken sie daran, dass Contao ein Seiten-basiertes CMS ist; gäbe es
 die Seite "news" nicht oder enthielte sie nicht das Modul Nachrichtenleser,
 würde der Beitrag auch nicht angezeigt.
 
@@ -304,7 +304,7 @@ würde der Beitrag auch nicht angezeigt.
 Die Kalender-Erweiterung ermöglicht die Verwaltung von Terminen und deren
 Darstellung als Kalender oder Eventliste im Frontend. Im Gegensatz zu Artikeln,
 die mit einer bestimmten Seite assoziiert sind, werden Termine in Kalendern
-organisiert und können so einfach gruppiert, kategorisiert oder als <abbr title="Rich Site Summary">RSS</abbr>- bzw.
+organisiert und können so einfach gruppiert, kategorisiert oder als RSS- bzw.
 Atom-Feed exportiert werden.
 
 
@@ -312,7 +312,7 @@ Atom-Feed exportiert werden.
 
 Kalender werden zur Gruppierung und/oder Kategorisierung von Terminenverwendet.
 Jeder Kalender kann sich auf eine bestimmte Sprache oder einbestimmtes Thema
-beziehen und die Termine können als <abbr title="Rich Site Summary">RSS</abbr>- oderAtom-Feed exportiert werden.
+beziehen und die Termine können als RSS- oderAtom-Feed exportiert werden.
 
 ![](https://raw.github.com/contao/docs/3.0/manual/de/images/kalender-feed.jpg)
 
@@ -355,15 +355,15 @@ Seitenlayout eingebunden werden.
 
 ### Permalinks
 
-Jeder Termin hat eine eindeutige <abbr title="Uniform resource locator">URL</abbr> (Permalink), die zur Referenzierung des
+Jeder Termin hat eine eindeutige URL (Permalink), die zur Referenzierung des
 Events verwendet werden kann:
 
 ```
 http://www.domain.com/event-reader/events/final-exams.html
 ```
 
-Die oben genannte <abbr title="Uniform resource locator">URL</abbr> fordert den Event "final-exams" auf der Seite "events" an.
-Denken sie daran, dass Contao ein Seiten-basiertes <abbr title="Content management system">CMS</abbr> ist; gäbe es die Seite
+Die oben genannte URL fordert den Event "final-exams" auf der Seite "events" an.
+Denken sie daran, dass Contao ein Seiten-basiertes CMS ist; gäbe es die Seite
 "events" nicht oder enthielte sie nicht das Modul Eventleser, würde der Beitrag
 auch nicht angezeigt.
 
@@ -388,14 +388,14 @@ gespeichert.
 ![](https://raw.github.com/contao/docs/3.0/manual/de/images/newsletter-abonnenten.jpg)
 
 Falls Sie bereits einen Verteiler haben, können Sie die Abonnenten aus einer
-<abbr title="Comma-separated values">CSV</abbr>-Datei in Contao importieren.
+CSV-Datei in Contao importieren.
 
 
 ### Newsletter personalisieren
 
 Insofern Sie Newsletter an registrierte Mitglieder verschicken, können Sie
 diese mit Hilfe der sogenannten "Simple Tokens" personalisieren. Simple Tokens
-funktionieren ähnlich wie [Inserttags][3] und können sowohl im <abbr title="HyperText Markup Language">HTML</abbr>- als auch
+funktionieren ähnlich wie [Inserttags][3] und können sowohl im HTML- als auch
 im Text-Inhalt eines Newsletters verwendet werden.
 
 ```
@@ -484,15 +484,15 @@ Artikel oder Seitenlayout eingebunden werden.
 
 ### Permalinks
 
-Jeder Newsletter hat eine eindeutige <abbr title="Uniform resource locator">URL</abbr> (Permalink), die zur Referenzierung der
+Jeder Newsletter hat eine eindeutige URL (Permalink), die zur Referenzierung der
 Nachricht verwendet werden kann:
 
 ```
 http://www.domain.com/newsletters/items/james-wilson-returns.html
 ```
 
-Die obige <abbr title="Uniform resource locator">URL</abbr> fordert den Newsletter "james-wilson-returns" auf der Seite
-"newsletters" an. Denken sie daran, dass Contao ein Seiten-basiertes <abbr title="Content management system">CMS</abbr> ist;
+Die obige URL fordert den Newsletter "james-wilson-returns" auf der Seite
+"newsletters" an. Denken sie daran, dass Contao ein Seiten-basiertes CMS ist;
 gäbe es die Seite "newsletters" nicht oder enthielte sie nicht das Modul
 Newsletterleser, würde der Beitrag auch nicht angezeigt.
 
