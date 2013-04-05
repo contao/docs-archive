@@ -655,22 +655,22 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{link_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer internen Seite ersetzt:
-      <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
+      <code>{{link_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_url::*}}</code></td>
   <td>Dieses Tag wird mit der URL einer internen Seite ersetzt: <code>&lt;a
-      href="{{link_url::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
+      href="{{link_url::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel einer internen Seite ersetzt: <code>&lt;a
-      title="{{link_title::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
+      title="{{link_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_close}}</code></td>
   <td>Wird mit dem schließenden Tag eines Links zu einer internen Seite
-      ersetzt: <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
+      ersetzt: <code>{{link_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article::*}}</code></td>
@@ -680,17 +680,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{article_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einem Artikel ersetzt:
-      <code>{{article_open::12}}Click here{{link_close}}</code>.</td>
+      <code>{{article_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_url::*}}</code></td>
   <td>Dieses Tag wird mit der URL eines Artikels ersetzt: <code>&lt;a
-      href="{{article_url::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
+      href="{{article_url::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel eines Artikels ersetzt: <code>&lt;a
-      title="{{article_title::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
+      title="{{article_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news::*}}</code></td>
@@ -700,17 +700,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{news_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer Nachricht ersetzt:
-      <code>{{news_open::12}}Click here{{link_close}}</code>.</td>
+      <code>{{news_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_url::*}}</code></td>
   <td>Dieses Tag wird mit der URL einer Nachricht ersetzt: <code>&lt;a
-      href="{{news_url::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
+      href="{{news_url::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel einer Nachricht ersetzt: <code>&lt;a
-      title="{{news_title::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
+      title="{{news_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event::*}}</code></td>
@@ -720,17 +720,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{event_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einem Event ersetzt:
-      <code>{{event_open::12}}Click here{{link_close}}</code>.</td>
+      <code>{{event_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_url::*}}</code></td>
   <td>Dieses Tag wird mit der URL eines Events ersetzt: <code>&lt;a
-      href="{{event_url::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
+      href="{{event_url::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel eines Events ersetzt: <code>&lt;a
-      title="{{event_title::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
+      title="{{event_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
@@ -740,17 +740,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{faq_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer Frage ersetzt:
-      <code>{{faq_open::12}}Click here{{link_close}}</code>.</td>
+      <code>{{faq_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_url::*}}</code></td>
   <td>Dieses Tag wird mit der URL einer Frage ersetzt: <code>&lt;a
-      href="{{faq_url::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
+      href="{{faq_url::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel einer Frage ersetzt: <code>&lt;a
-      title="{{faq_title::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
+      title="{{faq_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 </table>
 
