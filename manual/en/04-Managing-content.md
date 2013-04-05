@@ -39,7 +39,7 @@ an overview of the Contao core content elements:
 <tr>
   <td>Text</td>
   <td>ce_text</td>
-  <td>Generates a rich text that can be formatted using [TinyMCE][2].</td>
+  <td>Generates a rich text that can be formatted using <a href="http://tinymce.moxiecode.com">TinyMCE</a>.</td>
 </tr>
 <tr>
   <td>HTML</td>
@@ -57,14 +57,34 @@ an overview of the Contao core content elements:
   <td>Generates an optionally sortable table.</td>
 </tr>
 <tr>
-  <td>Accordion</td>
-  <td>ce_accordion</td>
-  <td>Generates a [MooTools][3] accordion pane.</td>
-</tr>
-<tr>
   <td>Code</td>
   <td>ce_code</td>
   <td>Highlights code snippets and prints them to the screen.</td>
+</tr>
+<tr>
+  <td>Accordion (single element)</td>
+  <td>ce_accordion</td>
+  <td>Generates a single accordion element (with <a href="http://mootools.net">MooTools</a>).</td>
+</tr>
+<tr>
+  <td>Accordion (wrapper start)</td>
+  <td>ce_accordionStart</td>
+  <td>Generates the opening part of the accordion wrapper.</td>
+</tr>
+<tr>
+  <td>Accordion (wrapper stop)</td>
+  <td>-</td>
+  <td>Generates the closing part of the accordion wrapper.</td>
+</tr>
+<tr>
+  <td>Content slider (wrapper start)</td>
+  <td>ce_sliderStart</td>
+  <td>Generates the opening part of the slider wrapper.</td>
+</tr>
+<tr>
+  <td>Content slider (wrapper stop)</td>
+  <td>-</td>
+  <td>Generates the closing part of the slider wrapper.</td>
 </tr>
 <tr>
   <td>Hyperlink</td>
@@ -84,7 +104,17 @@ an overview of the Contao core content elements:
 <tr>
   <td>Gallery</td>
   <td>ce_gallery</td>
-  <td>Generates a [lightbox][4] image gallery.</td>
+  <td>Generates a <a href="http://www.digitalia.be/software/slimbox">lightbox</a> image gallery.</td>
+</tr>
+<tr>
+  <td>Video/audio</td>
+  <td>ce_player</td>
+  <td>Generates a video or audio player.</td>
+</tr>
+<tr>
+  <td>Youtube</td>
+  <td>ce_youtube</td>
+  <td>Adds a YouTube video.</td>
 </tr>
 <tr>
   <td>Download</td>
@@ -124,7 +154,7 @@ an overview of the Contao core content elements:
 <tr>
   <td>Comments</td>
   <td>ce_comments</td>
-  <td>Adds a comment form to an article.</td>
+  <td>Adds a comment form to the page.</td>
 </tr>
 </table>
 
@@ -202,8 +232,8 @@ styles might not display correctly.
 
 The news/blog extension allows you to manage news items or blog posts and
 display them in the front end. Unlike articles that are associated with a
-particular page, news items are organized in news archives, which allows you to
-easily group, categorize or export them.
+particular page, news items are organized in news archives, which allows
+you to easily group, categorize or export them.
 
 
 ### News archives
@@ -300,23 +330,24 @@ extension includes 4 front end modules:
 <tr>
   <td>Calendar</td>
   <td>mod_calendar</td>
-  <td>Adds a calendar to a page.</td>
+  <td>Adds a calendar to the page.</td>
 </tr>
 <tr>
   <td>Event reader</td>
-  <td>mod_event</td>
+  <td>mod_eventreader</td>
   <td>Shows the details of an event.</td>
 </tr>
 <tr>
   <td>Event list</td>
   <td>mod_eventlist</td>
-  <td>Adds a list of events to a page.</td>
+  <td>Adds a list of events to the page.</td>
 </tr>
 <tr>
-  <td>Upcoming events</td>
-  <td>mod_eventlist</td>
-  <td>Adds a list of upcoming events to a page.</td>
+  <td>Event list menu</td>
+  <td>mod_eventmenu</td>
+  <td>Generates a navigation menu to browse the event list.</td>
 </tr>
+
 </table>
 
 
@@ -345,7 +376,7 @@ easily group or categorize them.
 
 Newsletter subscriptions are normally handled by the respective front end
 modules, so you do not have to manage recipients manually. For data privacy
-reasons, Contao requires [Double Opt-In][5] subscriptions and stores only the
+reasons, Contao requires [Double Opt-In][2] subscriptions and stores only the
 e-mail address of the subscriber.
 
 ![](https://raw.github.com/contao/docs/3.0/manual/en/images/newsletter-recipients.jpg)
@@ -356,10 +387,9 @@ from a CSV file.
 
 ### Personalized newsletters
 
-Insofar as you are sending newsletters to registered members, you can
-personalize them with so called "Simple Tokens". Simple tokens are similar to
-[insert tags][6] and can be used in both the HTML and the text content of a
-newsletter.
+Insofar as you are sending newsletters to registered members, you can personalize
+them with so called "Simple Tokens". Simple tokens are similar to [insert tags][3]
+and can be used in both the HTML and the text content of a newsletter.
 
 ```
 Dear ##firstname## ##lastname##,
@@ -424,22 +454,22 @@ up on the website.
 </tr>
 <tr>
   <td>Subscribe</td>
-  <td>nl_default</td>
+  <td>mod_subscribe</td>
   <td>Generates a form to subscribe to one or more channels.</td>
 </tr>
 <tr>
   <td>Unsubscribe</td>
-  <td>nl_default</td>
+  <td>mod_unsubscribe</td>
   <td>Generates a form to unsubscribe from one or more channels.</td>
 </tr>
 <tr>
   <td>Newsletter list</td>
-  <td>mod_newsletter_list</td>
-  <td>Adds a list of newsletters to a page.</td>
+  <td>mod_nl_list</td>
+  <td>Adds a list of newsletters to the page.</td>
 </tr>
 <tr>
   <td>Newsletter reader</td>
-  <td>mod_newsletter_reader</td>
+  <td>mod_nl_reader</td>
   <td>Shows the details of a newsletter.</td>
 </tr>
 </table>
@@ -521,6 +551,11 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
   <td>A custom field to insert HTML code.</td>
 </tr>
 <tr>
+  <td>Fieldset</td>
+  <td>-</td>
+  <td>A container for form fields with an optional legend (only available for tableless forms).</td>
+</tr>
+<tr>
   <td>Text field</td>
   <td>text</td>
   <td>A single-line input field for a short or medium text.</td>
@@ -528,7 +563,7 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 <tr>
   <td>Password field</td>
   <td>password</td>
-  <td>A single-line input field for a password.</td>
+  <td>A single-line input field for a password. Contao automatically adds a confirmation field.</td>
 </tr>
 <tr>
   <td>Textarea</td>
@@ -563,7 +598,7 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 <tr>
   <td>Security question</td>
   <td>captcha</td>
-  <td>A simple math question to protect against spam bots (CAPTCHA).</td>
+  <td>A simple math question to verify that the form is being submitted by a human (CAPTCHA).</td>
 </tr>
 <tr>
   <td>Submit field</td>
@@ -609,22 +644,22 @@ ID or alias.
 <tr>
   <td><code>{{link_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to an internal page:
-      `{{link_open::12}}Click here{{link_close}}`.</td>
+      <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of an internal page: `<a
-      href="{{link_url::12}}">Click here</a>`.</td>
+  <td>This tag will be replaced with the URL of an internal page: <code>&lt;a
+      href="{{link_url::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_title::*}}</code></td>
-  <td>This tag will be replaced with the title of an internal page: `<a
-      title="{{link_title::12}}">Click here</a>`.</td>
+  <td>This tag will be replaced with the title of an internal page: <code>&lt;a
+      title="{{link_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_close}}</code></td>
   <td>Will be replaced with the closing tag of a link to an internal page:
-      `{{link_open::12}}Click here{{link_close}}`.</td>
+      <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article::*}}</code></td>
@@ -634,17 +669,17 @@ ID or alias.
 <tr>
   <td><code>{{article_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to an article:
-      `{{article_open::12}}Click here{{link_close}}`.</td>
+      <code>{{article_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of an article: `<a
-      href="{{article_url::12}}">Click here</a>`.</td>
+  <td>This tag will be replaced with the URL of an article: <code>&lt;a
+      href="{{article_url::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_title::*}}</code></td>
-  <td>This tag will be replaced with the title of an article: `<a
-      title="{{article_title::12}}">Click here</a>`.</td>
+  <td>This tag will be replaced with the title of an article: <code>&lt;a
+      title="{{article_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news::*}}</code></td>
@@ -654,17 +689,17 @@ ID or alias.
 <tr>
   <td><code>{{news_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to a news article:
-      `{{news_open::12}}Click here{{link_close}}`.</td>
+      <code>{{news_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of a news article: `<a
-      href="{{news_url::12}}">Click here</a>`.</td>
+  <td>This tag will be replaced with the URL of a news article: <code>&lt;a
+      href="{{news_url::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_title::*}}</code></td>
-  <td>This tag will be replaced with the title of a news article: `<a
-      title="{{news_title::12}}">Click here</a>`.</td>
+  <td>This tag will be replaced with the title of a news article: <code>&lt;a
+      title="{{news_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event::*}}</code></td>
@@ -674,17 +709,17 @@ ID or alias.
 <tr>
   <td><code>{{event_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to an event:
-      `{{event_open::12}}Click here{{link_close}}`.</td>
+      <code>{{event_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of an event: `<a
-      href="{{event_url::12}}">Click here</a>`.</td>
+  <td>This tag will be replaced with the URL of an event: <code>&lt;a
+      href="{{event_url::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_title::*}}</code></td>
-  <td>This tag will be replaced with the title of an event: `<a
-      title="{{event_title::12}}">Click here</a>`.</td>
+  <td>This tag will be replaced with the title of an event: <code>&lt;a
+      title="{{event_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
@@ -694,17 +729,17 @@ ID or alias.
 <tr>
   <td><code>{{faq_open::*}}</code></td>
   <td>Will be replaced with the opening tag of a link to a question:
-      `{{faq_open::12}}Click here{{link_close}}`.</td>
+      <code>{{faq_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of a question: `<a
-      href="{{faq_url::12}}">Click here</a>`.</td>
+  <td>This tag will be replaced with the URL of a question:
+  <code>&lt;a href="{{faq_url::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_title::*}}</code></td>
-  <td>This tag will be replaced with the title of a question: `<a
-      title="{{faq_title::12}}">Click here</a>`.</td>
+  <td>This tag will be replaced with the title of a question: <code>&lt;a
+      title="{{faq_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 </table>
 
@@ -943,7 +978,7 @@ modules or files from the "templates" directoy.
   <td><code>{{file::*}}</code></td>
   <td>This tag will be replaced with the content of a file from the "templates"
       directory (replace * with the file name). You can also provide arguments:
-      `{{file::file.php?arg1=val&amp;arg2=val}}`.</td>
+      <code>{{file::file.php?arg1=val&amp;arg2=val}}</code>.</td>
 </tr>
 </table>
 
@@ -985,50 +1020,50 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{lang::*}}</code></td>
-  <td>This tag can be used to mark foreign words within a text: `{{lang::fr}}Au
-      revoir{{lang}}`. It will be replaced with `<span lang="fr"
-      xml:lang="fr">Au revoir</span>`.</td>
+  <td>This tag can be used to mark foreign words within a text: <code>{{lang::fr}}Au
+      revoir{{lang}}</code>. It will be replaced with <code>&lt;span lang="fr"
+      xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
-  <td>Mark abbreviations in a text: `{{abbr::World Wide Web}}WWW{{abbr}}`.
-      It will be replaced with `<abbr title="World Wide Web">WWW</abbr>`.</td>
+  <td>Mark abbreviations in a text: <code>{{abbr::World Wide Web}}WWW{{abbr}}</code>.
+      It will be replaced with <code>&lt;abbr title="World Wide Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Mark acronyms in a text: `{{acronym:: Multipurpose Internet Mail
-      Extensions}}MIME{{acronym}}`. It will be replaced with `<acronym
-      title="Multipurpose Internet Mail Extensions">MIME</acronym>`.</td>
+  <td>Mark acronyms in a text: <code>{{acronym:: Multipurpose Internet Mail
+      Extensions}}MIME{{acronym}}</code>. It will be replaced with <code>&lt;acronym
+      title="Multipurpose Internet Mail Extensions"&gt;MIME&lt;/acronym&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
-  <td>Output properties of the user agent: `{{ua::browser}}`. It will e.g. be
+  <td>Output properties of the user agent: <code>{{ua::browser}}</code>. It will e.g. be
       replaced with "chrome".</td>
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
   <td>This tag will be completely removed if the page language does not match
       the tag language. You can use it to define language-specific labels:
-      `{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}`.</td>
+      <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
   <td>This tag will be completely removed if the page language matches the tag
       language. You can use it to define language-specific labels:
-      `{{ifnlng::de}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}`.</td>
+      <code>{{ifnlng::de}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>This tag will be replaced with the thumbnail of an image:
-      `{{image::files/image.jpg?width=200&amp;height=150}}`. **width**
+      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>. **width**
       Thumbnail width, **height** Thumbnail height, **alt** Alternative
       text, **class** CSS class, **rel** rel-attribute (e.g. "lightbox"),
       **mode** mode ("proportional", "crop" or "box").</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>This tag will be replaced with a translated label: `{{label::CNT:au}}` or
-      `{{label::tl_article:title:0}}`. Note that only the first colon is a
+  <td>This tag will be replaced with a translated label: <code>{{label::CNT:au}}</code> or
+      <code>{{label::tl_article:title:0}}</code>. Note that only the first colon is a
       double colon.</td>
 </tr>
 <tr>
@@ -1045,8 +1080,5 @@ the current date or including lightbox images.
 
 
 [1]: https://contao.org/en/extension-list.html
-[2]: http://tinymce.moxiecode.com
-[3]: http://mootools.net
-[4]: http://www.digitalia.be/software/slimbox
-[5]: http://en.wikipedia.org/wiki/Opt_in_e-mail
-[6]: 04-Managing-content.md#insert-tags
+[2]: http://en.wikipedia.org/wiki/Opt_in_e-mail
+[3]: 04-Managing-content.md#insert-tags
