@@ -40,7 +40,7 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Text</td>
   <td>ce_text</td>
-  <td>Erzeugt einen Rich Text, der mit [TinyMCE][2] formatiert werden kann.</td>
+  <td>Erzeugt einen Rich Text, der mit <a href="http://tinymce.moxiecode.com">TinyMCE</a> formatiert werden kann.</td>
 </tr>
 <tr>
   <td>HTML</td>
@@ -58,14 +58,34 @@ Contao-Core enthaltenen Inhaltselemente.
   <td>Erzeugt eine optional sortierbare Tabelle.</td>
 </tr>
 <tr>
-  <td>Akkordeon</td>
-  <td>ce_accordion</td>
-  <td>Erzeugt ein [MooTools][3] Akkordeon-Element.</td>
-</tr>
-<tr>
   <td>Code</td>
   <td>ce_code</td>
   <td>Gibt formatierten Programmcode auf dem Bildschirm aus.</td>
+</tr>
+<tr>
+  <td>Akkordeon (Einzelelement)</td>
+  <td>ce_accordion</td>
+  <td>Erzeugt ein einzelnes Akkordeon-Element (Mit <a href="http://mootools.net">MooTools</a>).</td>
+</tr>
+<tr>
+  <td>Akkordeon (Umschlag Anfang)</td>
+  <td>ce_accordionStart</td>
+  <td>Erzeugt den öffnenden Teil des Akkordeon-Umschlags.</td>
+</tr>
+<tr>
+  <td>Akkordeon (Umschlag Ende)</td>
+  <td>-</td>
+  <td>Erzeugt den schließenden Teil des Akkordeon-Umschlags.</td>
+</tr>
+<tr>
+  <td>Content-Slider (Umschlag Anfang)</td>
+  <td>ce_sliderStart</td>
+  <td>Erzeugt den öffnenden Teil des Slider-Umschlags.</td>
+</tr>
+<tr>
+  <td>Content-Slider (Umschlag Ende)</td>
+  <td>-</td>
+  <td>Erzeugt den schließenden Teil des Slider-Umschlags.</td>
 </tr>
 <tr>
   <td>Hyperlink</td>
@@ -85,7 +105,17 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Galerie</td>
   <td>ce_gallery</td>
-  <td>Erzeugt eine [lightbox][4] Bildergalerie.</td>
+  <td>Erzeugt eine <a href="http://www.digitalia.be/software/slimbox">lightbox</a> Bildergalerie.</td>
+</tr>
+<tr>
+  <td>Video/Audio</td>
+  <td>ce_player</td>
+  <td>Erzeugt einen Video- bzw. Audio-Player.</td>
+</tr>
+<tr>
+  <td>YouTube</td>
+  <td>ce_youtube</td>
+  <td>Fügt ein YouTube-Video ein.</td>
 </tr>
 <tr>
   <td>Download</td>
@@ -248,7 +278,7 @@ eingebunden werden.
 </tr>
 <tr>
   <td>Nachrichtenarchiv-Menü</td>
-  <td>mod_newsarchiveMenu</td>
+  <td>mod_newsmenu</td>
   <td>Erzeugt ein Menü zur Navigation des Nachrichtenarchivs.</td>
 </tr>
 </table>
@@ -307,7 +337,7 @@ Seitenlayout eingebunden werden.
 </tr>
 <tr>
   <td>Eventleser</td>
-  <td>mod_event</td>
+  <td>mod_eventreader</td>
   <td>Stellt einen einzelnen Event dar.</td>
 </tr>
 <tr>
@@ -316,9 +346,9 @@ Seitenlayout eingebunden werden.
   <td>Listet alle Events eines bestimmten Zeitraums auf.</td>
 </tr>
 <tr>
-  <td>Nächste Events</td>
-  <td>mod_eventlist</td>
-  <td>Listet alle demnächst stattfindenden Events auf.</td>
+  <td>Eventliste-Menü</td>
+  <td>mod_eventmenu</td>
+  <td>Erzeugt ein Menü zur Navigation der Eventliste.</td>
 </tr>
 </table>
 
@@ -352,7 +382,7 @@ gruppiert oder kategorisiert werden.
 Newsletter-Abonnements werden normalerweise automatisch über die entsprechenden
 Frontend-Module verwaltet, ohne dass Sie in den Prozess eingreifen müssten. Aus
 Datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
-[Double Opt-In][5] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
+[Double Opt-In][2] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
 gespeichert.
 
 ![](https://raw.github.com/contao/docs/3.0/manual/de/images/newsletter-abonnenten.jpg)
@@ -365,7 +395,7 @@ CSV-Datei in Contao importieren.
 
 Insofern Sie Newsletter an registrierte Mitglieder verschicken, können Sie
 diese mit Hilfe der sogenannten "Simple Tokens" personalisieren. Simple Tokens
-funktionieren ähnlich wie [Inserttags][6] und können sowohl im HTML- als auch
+funktionieren ähnlich wie [Inserttags][3] und können sowohl im HTML- als auch
 im Text-Inhalt eines Newsletters verwendet werden.
 
 ```
@@ -431,22 +461,22 @@ Artikel oder Seitenlayout eingebunden werden.
 </tr>
 <tr>
   <td>Abonnieren</td>
-  <td>nl_default</td>
+  <td>mod_subscribe</td>
   <td>Erzeugt ein Formular zum Abonnieren von Verteilern.</td>
 </tr>
 <tr>
   <td>Kündigen</td>
-  <td>nl_default</td>
+  <td>mod_unsubscribe</td>
   <td>Erzeugt ein Formular zum Kündigen von Abonnements.</td>
 </tr>
 <tr>
   <td>Newsletterliste</td>
-  <td>mod_newsletter_list</td>
+  <td>mod_nl_list</td>
   <td>Fügt der Seite eine Newsletterliste hinzu.</td>
 </tr>
 <tr>
   <td>Newsletterleser</td>
-  <td>mod_newsletter_reader</td>
+  <td>mod_nl_reader</td>
   <td>Stellt einen einzelnen Newsletter dar.</td>
 </tr>
 </table>
@@ -528,6 +558,11 @@ enthalten:
   <td>HTML</td>
   <td>-</td>
   <td>Ein individuelles Feld zum Einfügen von HTML-Code.</td>
+</tr>
+<tr>
+  <td>Fieldset</td>
+  <td>-</td>
+  <td>Ein Container für Formularfelder mit einer optionalen Legende.</td>
 </tr>
 <tr>
   <td>Textfeld</td>
@@ -620,22 +655,22 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{link_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer internen Seite ersetzt:
-      `{{link_open::12}}Click here{{link_close}}`.</td>
+      <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_url::*}}</code></td>
-  <td>Dieses Tag wird mit der URL einer internen Seite ersetzt: `<a
-      href="{{link_url::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit der URL einer internen Seite ersetzt: <code>&lt;a
+      href="{{link_url::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_title::*}}</code></td>
-  <td>Dieses Tag wird mit dem Titel einer internen Seite ersetzt: `<a
-      title="{{link_title::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit dem Titel einer internen Seite ersetzt: <code>&lt;a
+      title="{{link_title::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_close}}</code></td>
   <td>Wird mit dem schließenden Tag eines Links zu einer internen Seite
-      ersetzt: `{{link_open::12}}Click here{{link_close}}`.</td>
+      ersetzt: <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article::*}}</code></td>
@@ -645,17 +680,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{article_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einem Artikel ersetzt:
-      `{{article_open::12}}Click here{{link_close}}`.</td>
+      <code>{{article_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_url::*}}</code></td>
-  <td>Dieses Tag wird mit der URL eines Artikels ersetzt: `<a
-      href="{{article_url::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit der URL eines Artikels ersetzt: <code>&lt;a
+      href="{{article_url::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_title::*}}</code></td>
-  <td>Dieses Tag wird mit dem Titel eines Artikels ersetzt: `<a
-      title="{{article_title::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit dem Titel eines Artikels ersetzt: <code>&lt;a
+      title="{{article_title::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news::*}}</code></td>
@@ -665,17 +700,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{news_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer Nachricht ersetzt:
-      `{{news_open::12}}Click here{{link_close}}`.</td>
+      <code>{{news_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_url::*}}</code></td>
-  <td>Dieses Tag wird mit der URL einer Nachricht ersetzt: `<a
-      href="{{news_url::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit der URL einer Nachricht ersetzt: <code>&lt;a
+      href="{{news_url::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_title::*}}</code></td>
-  <td>Dieses Tag wird mit dem Titel einer Nachricht ersetzt: `<a
-      title="{{news_title::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit dem Titel einer Nachricht ersetzt: <code>&lt;a
+      title="{{news_title::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event::*}}</code></td>
@@ -685,17 +720,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{event_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einem Event ersetzt:
-      `{{event_open::12}}Click here{{link_close}}`.</td>
+      <code>{{event_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_url::*}}</code></td>
-  <td>Dieses Tag wird mit der URL eines Events ersetzt: `<a
-      href="{{event_url::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit der URL eines Events ersetzt: <code>&lt;a
+      href="{{event_url::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_title::*}}</code></td>
-  <td>Dieses Tag wird mit dem Titel eines Events ersetzt: `<a
-      title="{{event_title::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit dem Titel eines Events ersetzt: <code>&lt;a
+      title="{{event_title::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
@@ -705,17 +740,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{faq_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer Frage ersetzt:
-      `{{faq_open::12}}Click here{{link_close}}`.</td>
+      <code>{{faq_open::12}}Click here{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_url::*}}</code></td>
-  <td>Dieses Tag wird mit der URL einer Frage ersetzt: `<a
-      href="{{faq_url::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit der URL einer Frage ersetzt: <code>&lt;a
+      href="{{faq_url::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_title::*}}</code></td>
-  <td>Dieses Tag wird mit dem Titel einer Frage ersetzt: `<a
-      title="{{faq_title::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit dem Titel einer Frage ersetzt: <code>&lt;a
+      title="{{faq_title::12}}"&gt;Click here&lt;/a&gt;</code>.</td>
 </tr>
 </table>
 
@@ -948,8 +983,8 @@ Dateien aus dem "templates"-Verzeichnis eingebunden werden.
 <tr>
   <td><code>{{file::*}}</code></td>
   <td>Dieses Tag wird mit dem Inhalt einer .php- oder .tpl-Datei aus dem
-      `templates`-Verzeichnis ersetzt (ersetzen Sie * mit dem Namen). Bei Bedarf
-      können Sie Argumente übergeben: `{{file::file.php?arg1=val}}</code></td>
+      "templates"-Verzeichnis ersetzt (ersetzen Sie * mit dem Namen). Bei Bedarf
+      können Sie Argumente übergeben: <code>{{file::file.php?arg1=val}}</code></td>
 </tr>
 </table>
 
@@ -992,50 +1027,50 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{lang::*}}</code></td>
   <td>Mit diesem Tag können fremdsprachige Wörter in einem Text markiert
-      werden: `{{lang::fr}}Au revoir{{lang}}`. Dies wird ersetzt mit `<span
-      lang="fr" xml:lang="fr">Au revoir</span>`.</td>
+      werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit <code>&lt;span
+      lang="fr" xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
-  <td>Abkürzungen in einem Text markieren: `{{abbr::World Wide
-      Web}}WWW{{abbr}}`. Dies wird ersetzt mit `<abbr title="World Wide
-      Web">WWW</abbr>`.</td>
+  <td>Abkürzungen in einem Text markieren: <code>{{abbr::World Wide
+      Web}}WWW{{abbr}}</code>. Dies wird ersetzt mit <code>&lt;abbr title="World Wide
+      Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Acronyme in einem Text markieren: `{{acronym:: Multipurpose Internet Mail
-      Extensions}}MIME{{acronym}}`. Dies wird ersetzt mit `<acronym
-      title="Multipurpose Internet Mail Extensions">MIME</acronym>`.</td>
+  <td>Acronyme in einem Text markieren: <code>{{acronym:: Multipurpose Internet Mail
+      Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
+      title="Multipurpose Internet Mail Extensions">MIME</acronym></code>.</td>
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
-  <td>Eigenschaften des Browsers (User Agent) ausgeben: `{{ua::browser}}`. Dies
+  <td>Eigenschaften des Browsers (User Agent) ausgeben: <code>{{ua::browser}}</code>. Dies
       wird beispielsweise ersetzt mit "chrome".</td>
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
   <td>Dieses Tag wird komplett entfernt, wenn die Sprache der Seite nicht mit
       der Tag-Sprache übereinstimmt. Sie können so sprachspezifische Bezeichnungen
-      erstellen: `{{iflng::en}}Your name{{iflng}}</code></td>
+      erstellen: <code>{{iflng::en}}Your name{{iflng}}</code></td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
   <td>Dieses Tag wird komplett entfernt, wenn die Sprache der Seite mit der
       Tag-Sprache übereinstimmt. Sie können so sprachspezifische Bezeichnungen
-      erstellen: `{{ifnlng::de}}Your name{{iflng}}</code></td>
+      erstellen: <code>{{ifnlng::de}}Your name{{iflng}}</code></td>
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt:
-      `{{image::files/image.jpg?width=200&amp;height=150}}`. **width** Breite
+      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>. **width** Breite
       des Vorschaubildes, **height** Höhe des Vorschaubildes, **alt**
       Alternativer Text, **class** CSS-Klasse, **rel** rel-Attribut (z.B.
       "lightbox"), **mode** Modus ("proportional", "crop" oder "box")</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>Dieses Tag wird mit einer Übersetzung ersetzt: `{{label::CNT:au}}` oder
-      `{{label::tl_article:title:0}}`. Beachten Sie, dass innerhalb des Pfads
+  <td>Dieses Tag wird mit einer Übersetzung ersetzt: <code>{{label::CNT:au}}</code> oder
+      <code>{{label::tl_article:title:0}}</code>. Beachten Sie, dass innerhalb des Pfads
       zur Bezeichnung nur einfache Doppelpunkte verwendet werden.</td>
 </tr>
 <tr>
@@ -1052,8 +1087,5 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 
 
 [1]: https://contao.org/de/extension-list.html
-[2]: http://tinymce.moxiecode.com
-[3]: http://mootools.net
-[4]: http://www.digitalia.be/software/slimbox
-[5]: http://de.wikipedia.org/wiki/Opt-in
-[6]: 04-Managing-content.md#inserttags
+[2]: http://de.wikipedia.org/wiki/Opt-in
+[3]: 04-Managing-content.md#inserttags
