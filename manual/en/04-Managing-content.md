@@ -39,7 +39,7 @@ an overview of the Contao core content elements:
 <tr>
   <td>Text</td>
   <td>ce_text</td>
-  <td>Generates a rich text that can be formatted using <a href="http://tinymce.moxiecode.com">TinyMCE</a>.</td>
+  <td>Generates a rich text that can be formatted using <a href="http://www.tinymce.com">TinyMCE</a>.</td>
 </tr>
 <tr>
   <td>HTML</td>
@@ -553,7 +553,8 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 <tr>
   <td>Fieldset</td>
   <td>-</td>
-  <td>A container for form fields with an optional legend (only available for tableless forms).</td>
+  <td>A container for form fields with an optional legend 
+  (only available for tableless forms).</td>
 </tr>
 <tr>
   <td>Text field</td>
@@ -563,7 +564,8 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 <tr>
   <td>Password field</td>
   <td>password</td>
-  <td>A single-line input field for a password. Contao automatically adds a confirmation field.</td>
+  <td>A single-line input field for a password. Contao automatically
+      adds a confirmation field.</td>
 </tr>
 <tr>
   <td>Textarea</td>
@@ -598,7 +600,8 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 <tr>
   <td>Security question</td>
   <td>captcha</td>
-  <td>A simple math question to verify that the form is being submitted by a human (CAPTCHA).</td>
+  <td>A simple math question to verify that the form is being 
+      submitted by a human (CAPTCHA).</td>
 </tr>
 <tr>
   <td>Submit field</td>
@@ -1031,7 +1034,7 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Mark acronyms in a text: <code>{{acronym:: Multipurpose Internet Mail
+  <td>Mark acronyms in a text: <code>{{acronym::Multipurpose Internet Mail
       Extensions}}MIME{{acronym}}</code>. It will be replaced with <code>&lt;acronym
       title="Multipurpose Internet Mail Extensions"&gt;MIME&lt;/acronym&gt;</code>.</td>
 </tr>

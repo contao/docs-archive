@@ -40,7 +40,7 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Text</td>
   <td>ce_text</td>
-  <td>Erzeugt einen Rich Text, der mit <a href="http://tinymce.moxiecode.com">TinyMCE</a> formatiert werden kann.</td>
+  <td>Erzeugt einen Rich Text, der mit <a href="http://www.tinymce.com">TinyMCE</a> formatiert werden kann.</td>
 </tr>
 <tr>
   <td>HTML</td>
@@ -572,7 +572,8 @@ enthalten:
 <tr>
   <td>Passwortfeld</td>
   <td>password</td>
-  <td>Ein einzeiliges Eingabefeld für ein Passwort.</td>
+  <td>Ein einzeiliges Eingabefeld für ein Passwort. Contao fügt automatisch
+      ein Bestätigungsfeld hinzu.</td>
 </tr>
 <tr>
   <td>Textarea</td>
@@ -609,7 +610,8 @@ enthalten:
 <tr>
   <td>Sicherheitsfrage</td>
   <td>captcha</td>
-  <td>Eine einfache Rechenaufgabe zum Schutz gegen Spam-Bots (CAPTCHA).</td>
+  <td>Eine einfache Rechenaufgabe zur Prüfung ob das Formular von einem
+      Menschen abgesendet wurde (CAPTCHA).</td>
 </tr>
 <tr>
   <td>Absendefeld</td>
@@ -1038,7 +1040,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Acronyme in einem Text markieren: <code>{{acronym:: Multipurpose Internet Mail
+  <td>Acronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet Mail
       Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
       title="Multipurpose Internet Mail Extensions">MIME</acronym></code>.</td>
 </tr>
