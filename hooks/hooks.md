@@ -59,6 +59,7 @@ Hooks work similar to the [callback functions](callbacks.md) of the Data Contain
 - [sqlCompileCommands](hooks/sqlCompileCommands.md)
 - [sqlGetFromDB](hooks/sqlGetFromDB.md)
 - [sqlGetFromFile](hooks/sqlGetFromFile.md)
+- [sysinit](hooks/sysinit.md)
 - [storeFormData](hooks/storeFormData.md)
 - [updatePersonalData](hooks/updatePersonalData.md)
 - [validateFormField](hooks/validateFormField.md)
