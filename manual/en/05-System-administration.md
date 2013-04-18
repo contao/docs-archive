@@ -32,7 +32,7 @@ only the "Courses" page has been mounted in the settings of the "Editors" group.
 Note that although Helen Lewis is allowed to see three pages, she can only edit
 one of them!
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/site-structure-hlewis.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/site-structure-hlewis.jpg)
 
 Being able to see a page does not include the right to edit it (or its
 articles). Remember that [page permissions][1] are set in the site structure, so
@@ -47,7 +47,7 @@ Below is a screenshot of the file manager in the view of Helen Lewis. She is
 only allowed to see the "campus" folder, whereas administrators can see the
 whole files directory (`files`).
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/file-manager-hlewis.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/file-manager-hlewis.jpg)
 
 
 #### Allowed fields
@@ -58,7 +58,7 @@ Even if they are e.g. allowed to access the news module, the form to create a
 new entry will be empty until the administrator enables one or more fields of
 the `tl_news` table in the group settings.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/allowed-fields.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/allowed-fields.jpg)
 
 
 ### Members
@@ -87,18 +87,18 @@ install extensions at the push of a button. Use the filter and sorting options
 to find a particular extension and click the info icon or extension title to
 open the details page and install the module.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/extension-list.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/extension-list.jpg)
 
 The details page contains a description of the extension and important
 information regarding system requirements, versions and dependencies from other
 modules. Click the "Install" button to download and install the extension.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/extension-details.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/extension-details.jpg)
 
 Contao will automatically download and install the extension and update the
 database if necessary.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/extension-install.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/extension-install.jpg)
 
 
 ### Extension manager
@@ -108,14 +108,14 @@ automatically checks for updates and notifies you if a new version is available.
 Many extensions also include links to an online manual and/or forum thread where
 you can get support.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/extension-manager.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/extension-manager.jpg)
 
 To uninstall an extension, simply click the uninstall icon and follow the
 instructions. The extension manager will remove all files and folders and update
 the database if necessary. Note that this action cannot be undone and the tables
 cannot be restored!
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/extension-uninstall.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/extension-uninstall.jpg)
 
 
 ### Manual installation
@@ -143,7 +143,7 @@ website or decrease the page loading time. You can purge this data manually e.g.
 to remove old thumbnails from the image cache or to recreate the XML sitemap
 files after you have modified the site structure.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/purge-data.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/purge-data.jpg)
 
 
 ### Rebuilding the search index
@@ -155,7 +155,7 @@ large number of pages, it is more convenient to update them all at once instead
 of opening them one by one in the browser. In this case you can rebuild the
 search index manually.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/rebuild-the-search-index.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/rebuild-the-search-index.jpg)
 
 
 [1]: 03-Managing-pages.md#access-control

@@ -37,7 +37,7 @@ GitHub syntax.
 We are using the GitHub CDN for images, therefore please specify the absolute
 URL to any image you upload to the repository:
 
-    ![](https://raw.github.com/contao/docs/3.0/manual/en/images/synchronization-options.jpg)
+    ![](https://raw.github.com/contao/docs/3.1/manual/en/images/synchronization-options.jpg)
 
 
 ### Internal links

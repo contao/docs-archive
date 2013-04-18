@@ -165,7 +165,7 @@ Contao-Core enthaltenen Inhaltselemente.
 Jedes Inhaltselement kann geschützt werden, so dass es nur Gäste oder Benutzer
 einer bestimmten Mitgliedergruppe sehen können.
 
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/geschuetztes-element.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/de/images/geschuetztes-element.jpg)
 
 
 ### Flash-Inhalte
@@ -245,7 +245,7 @@ verwendet. Jedes Archiv kann sich auf eine bestimmte Sprache oder ein bestimmtes
 Thema beziehen und die Beiträge können als RSS- oder Atom-Feed exportiert
 werden.
 
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/newsfeed.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/de/images/newsfeed.jpg)
 
 
 ### Frontend-Module
@@ -314,7 +314,7 @@ Kalender werden zur Gruppierung und/oder Kategorisierung von Terminenverwendet.
 Jeder Kalender kann sich auf eine bestimmte Sprache oder einbestimmtes Thema
 beziehen und die Termine können als RSS- oderAtom-Feed exportiert werden.
 
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/kalender-feed.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/de/images/kalender-feed.jpg)
 
 
 ### Frontend-Module
@@ -385,7 +385,7 @@ Datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
 [Double Opt-In][2] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
 gespeichert.
 
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/newsletter-abonnenten.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/de/images/newsletter-abonnenten.jpg)
 
 Falls Sie bereits einen Verteiler haben, können Sie die Abonnenten aus einer
 CSV-Datei in Contao importieren.
@@ -443,7 +443,7 @@ indem der Versendungsprozess in mehreren Teilschritten mit einer bestimmten
 Wartezeit dazwischen erfolgt und so die Anzahl der E-Mails pro Minute
 kontrolliert werden kann.
 
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/newsletter-versenden.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/de/images/newsletter-versenden.jpg)
 
 
 ### Frontend-Module
