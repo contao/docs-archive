@@ -652,6 +652,23 @@ public function myGetSearchablePages($arrPages, $intRoot)
 ```
 
 
+### initializeSystem
+
+The "initializeSystem" hook is triggered when the system is initialized. It is
+available from version 3.1.RC1.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['initializeSystem'][] = array('MyClass', 'myInitializeSystem');
+
+// MyClass.php
+public function myInitializeSystem()
+{
+    // Do something
+}
+```
+
+
 ### importUser
 
 The "importUser" hook is triggered when a username cannot be found in the

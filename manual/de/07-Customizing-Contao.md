@@ -643,6 +643,23 @@ public function myGetSearchablePages($arrPages, $intRoot)
 ```
 
 
+### initializeSystem
+
+Der "initializeSystem"-Hook wird bei der Initialisierung des Systems ausgeführt.
+Hinzugefügt in Version 3.1.RC1.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['initializeSystem'][] = array('MyClass', 'myInitializeSystem');
+
+// MyClass.php
+public function myInitializeSystem()
+{
+    // Beliebiger Code
+}
+```
+
+
 ### importUser
 
 Der "importUser"-Hook wird beim Antreffen eines unbekannten Benutzernamens
