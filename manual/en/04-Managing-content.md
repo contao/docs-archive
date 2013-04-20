@@ -239,11 +239,7 @@ you to easily group, categorize or export them.
 ### News archives
 
 News archives are used to group and/or categorize news items. Each archive can
-relate to a certain language or a particular topic and its posts can be exported
-as an RSS or Atom feed. The XML files are generated automatically in the Contao
-root folder.
-
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/news-feed.jpg)
+relate to a certain language or a particular topic.
 
 
 ### Front end modules
@@ -307,11 +303,7 @@ group, categorize or export them.
 ### Calendars
 
 Calendars are used to group and/or categorize events. Each calendar can relate
-to a certain language or a particular topic and its events can be exported as an
-RSS or Atom feed. The XML files are generated automatically in the Contao root
-folder.
-
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/calendar-feed.jpg)
+to a certain language or a particular topic.
 
 
 ### Front end modules
@@ -362,6 +354,28 @@ http://www.domain.com/event-reader/events/final-exams.html
 The above URL requests the event "final-exams" via the page "events". Remember
 that Contao is a page-based CMS, so if the page "events" did not exist or if it
 did not include the event reader module, the event would not be displayed.
+
+
+## RSS feed
+
+This feature can be used for news archives and calendars. Here is an example
+with the calendars list.
+
+![](https://raw.github.com/contao/docs/3.0/manual/en/images/rss-calendar.jpg)
+
+
+### Settings
+
+One or several calendars can be grouped and exported as an RSS or Atom feed.
+It goes the same for news archives. At the same time, you can choose to export
+only the teasers or full articles of each event or news.
+
+![](https://raw.github.com/contao/docs/3.0/manual/en/images/rss-settings.jpg)
+
+
+### XML files
+The XML files are generated automatically in the ```share``` directory of your
+Contao installation. In this example : ```share/events.xml```.
 
 
 ## Newsletters
