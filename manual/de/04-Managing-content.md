@@ -242,10 +242,7 @@ Atom-Feed exportiert werden.
 
 Archive werden zur Gruppierung und/oder Kategorisierung von Nachrichten
 verwendet. Jedes Archiv kann sich auf eine bestimmte Sprache oder ein bestimmtes
-Thema beziehen und die Beiträge können als RSS- oder Atom-Feed exportiert
-werden.
-
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/newsfeed.jpg)
+Thema beziehen.
 
 
 ### Frontend-Module
@@ -312,9 +309,7 @@ Atom-Feed exportiert werden.
 
 Kalender werden zur Gruppierung und/oder Kategorisierung von Terminenverwendet.
 Jeder Kalender kann sich auf eine bestimmte Sprache oder einbestimmtes Thema
-beziehen und die Termine können als RSS- oderAtom-Feed exportiert werden.
-
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/kalender-feed.jpg)
+beziehen.
 
 
 ### Frontend-Module
@@ -366,6 +361,29 @@ Die oben genannte URL fordert den Event "final-exams" auf der Seite "events" an.
 Denken sie daran, dass Contao ein Seiten-basiertes CMS ist; gäbe es die Seite
 "events" nicht oder enthielte sie nicht das Modul Eventleser, würde der Beitrag
 auch nicht angezeigt.
+
+
+## RSS-/Atom-Feed
+
+Diese Funktion ist für News Archive und Kalender verfügbar.
+Hier ein Beispiel der Kalender-Liste.
+
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/rss-kalender.jpg)
+
+
+### Einstellungen
+
+Ein oder mehrere Kalender können gruppiert und als RSS- bzw. Atom-Feed ausgegeben werden.
+Genau gleich funktioniert es bei News Archiven. Hier kann auch gewählt werden,
+ob nur der Teaser oder der komplette Artikel des Events bzw. der News ausgegeben werden soll.
+
+![](https://raw.github.com/contao/docs/3.0/manual/de/images/rss-bearbeiten.jpg)
+
+
+### XML Dateien
+
+Die XML Dateien werden automatisch generiert und im ```share``` Verzeichnis Ihrer Contao
+Installation abgelegt. In diesem Beispiel: ```share/events.xml```.
 
 
 ## Newsletter

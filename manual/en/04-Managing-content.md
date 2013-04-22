@@ -356,7 +356,7 @@ that Contao is a page-based CMS, so if the page "events" did not exist or if it
 did not include the event reader module, the event would not be displayed.
 
 
-## RSS feed
+## RSS/Atom feed
 
 This feature can be used for news archives and calendars. Here is an example
 with the calendars list.
