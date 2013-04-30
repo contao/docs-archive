@@ -1092,10 +1092,13 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt:
-      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>. **width** Breite
-      des Vorschaubildes, **height** Höhe des Vorschaubildes, **alt**
-      Alternativer Text, **class** CSS-Klasse, **rel** rel-Attribut (z.B.
-      "lightbox"), **mode** Modus ("proportional", "crop" oder "box")</td>
+      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br />
+      <strong>width</strong>: Breite des Vorschaubildes,<br />
+      <strong>height</strong>: Höhe des Vorschaubildes,<br />
+      <strong>alt</strong>: Alternativer Text,<br />
+      <strong>class</strong>: CSS-Klasse,<br />
+      <strong>rel</strong>: rel-Attribut (z.B. "lightbox"),<br />
+      <strong>mode</strong>: Modus ("proportional", "crop" oder "box").</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
