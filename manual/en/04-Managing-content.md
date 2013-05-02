@@ -1097,6 +1097,158 @@ the current date or including lightbox images.
 </table>
 
 
+### Flags
+
+Using flags, insert tags can be further processed. For example, the value can be passed to specific PHP methods. Multiple flags can be applied to the same insert tag.
+
+Usage:
+
+<code>
+{{ua::browser|uncached}}  
+{{page::title|decodeEntities|strtoupper}}
+</code>
+
+Available flags:
+
+<table>
+<tr>
+    <th>Flag</th>
+    <th>Description</th>
+    <th>More Info</th>
+</tr>
+<tr>
+    <td><code>uncached</code></td>
+    <td>Do not cache insert tag when caching the page</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>refresh</code></td>
+    <td>Do not cache insert tag if it appears multiple times in the same page</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>addslashes</code></td>
+    <td>Quote string with slashes</td>
+    <td><a href="http://php.net/addslashes">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>stripslashes</code></td>
+    <td>Un-quotes a quoted string</td>
+    <td><a href="http://php.net/stripslashes">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>standardize</code></td>
+    <td>Standardize the output (e.g. for a page alias or CSS class)</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>ampersand</code></td>
+    <td>Convert &-character to HTML entity</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>specialchars</code></td>
+    <td>Convert special chars to HTML entities</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>nl2br</code></td>
+    <td>Inserts HTML line breaks before all newlines in a string</td>
+    <td><a href="http://php.net/nl2br">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>nl2br_pre</code></td>
+    <td>Same as nl2br, but keeps line breaks in &lt;pre&gt; tags</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>strtolower</code></td>
+    <td>Make a string lowercase</td>
+    <td><a href="http://php.net/strtolower">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>utf8_strtolower</code></td>
+    <td>Unicode-aware conversion to lowercase</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>strtoupper</code></td>
+    <td>Make a string uppercase</td>
+    <td><a href="http://php.net/strtoupper">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>utf8_strtoupper</code></td>
+    <td>Unicode-aware conversion to uppercase</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>ucfirst</code></td>
+    <td>Make a string's first character uppercase</td>
+    <td><a href="http://php.net/ucfirst">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>lcfirst</code></td>
+    <td>Make a string's first character lowercase</td>
+    <td><a href="http://php.net/lcfirst">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>ucwords</code></td>
+    <td>Uppercase the first character of each word in a string</td>
+    <td><a href="http://php.net/ucwords">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>trim</code></td>
+    <td>Strip whitespace from the beginning and end of a string</td>
+    <td><a href="http://php.net/trim">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>rtrim</code></td>
+    <td>Strip whitespace from the end of a string</td>
+    <td><a href="http://php.net/rtrim">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>ltrim</code></td>
+    <td>Strip whitespace from the beginning of a string</td>
+    <td><a href="http://php.net/ltrim">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>utf8_romanize</code></td>
+    <td>Romanize the output</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>strrev</code></td>
+    <td>Reverse a string</td>
+    <td><a href="http://php.net/strrev">PHP Funktion</a></td>
+</tr>
+<tr>
+    <td><code>encodeEmail</code></td>
+    <td>Encode email addresses in the output</td>
+    <td>see <code>String::encodeEmail</code></td>
+</tr>
+<tr>
+    <td><code>decodeEntities</code></td>
+    <td>Decodes HTML entities in the output</td>
+    <td>see <code>String::decodeEntities()</code></td>
+</tr>
+<tr>
+    <td><code>number_format</code></td>
+    <td>Formats a number (without decimal places)</td>
+    <td>see <code>System::getFormattedNumber()</code></td>
+</tr>
+<tr>
+    <td><code>currency_format</code></td>
+    <td>Formats a currency (two decimal places)</td>
+    <td>see <code>System::getFormattedNumber()</code></td>
+</tr>
+<tr>
+    <td><code>readable_size</code></td>
+    <td>Convert file sizes to human readable format</td>
+    <td>see <code>System::getReadableSize()</code></td>
+</tr>
+</table>
+
+
 [1]: https://contao.org/en/extension-list.html
 [2]: http://en.wikipedia.org/wiki/Opt_in_e-mail
 [3]: 04-Managing-content.md#insert-tags
