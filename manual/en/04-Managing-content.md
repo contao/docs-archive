@@ -1097,16 +1097,15 @@ the current date or including lightbox images.
 </table>
 
 
-### Flags
+### Insert tag flags
 
-Using flags, insert tags can be further processed. For example, the value can be passed to specific PHP methods. Multiple flags can be applied to the same insert tag.
+Using flags, insert tags can be further processed. For example, the value can be
+passed to specific PHP methods. Multiple flags can be applied:
 
-Usage:
-
-<code>
+```
 {{ua::browser|uncached}}  
 {{page::title|decodeEntities|strtoupper}}
-</code>
+```
 
 Available flags:
 
@@ -1114,27 +1113,28 @@ Available flags:
 <tr>
     <th>Flag</th>
     <th>Description</th>
-    <th>More Info</th>
+    <th>More information</th>
 </tr>
 <tr>
     <td><code>uncached</code></td>
-    <td>Do not cache insert tag when caching the page</td>
+    <td>Do not replace insert tag when the page is cached</td>
     <td></td>
 </tr>
 <tr>
     <td><code>refresh</code></td>
-    <td>Do not cache insert tag if it appears multiple times in the same page</td>
+    <td>Do not cache the insert tag, even if it is used multiple times on the
+      same page</td>
     <td></td>
 </tr>
 <tr>
     <td><code>addslashes</code></td>
-    <td>Quote string with slashes</td>
-    <td><a href="http://php.net/addslashes">PHP Funktion</a></td>
+    <td>Quote a string with slashes</td>
+    <td><a href="http://php.net/addslashes">PHP function</a></td>
 </tr>
 <tr>
     <td><code>stripslashes</code></td>
-    <td>Un-quotes a quoted string</td>
-    <td><a href="http://php.net/stripslashes">PHP Funktion</a></td>
+    <td>Remove the slashes from a quoted string</td>
+    <td><a href="http://php.net/stripslashes">PHP function</a></td>
 </tr>
 <tr>
     <td><code>standardize</code></td>
@@ -1143,73 +1143,73 @@ Available flags:
 </tr>
 <tr>
     <td><code>ampersand</code></td>
-    <td>Convert &-character to HTML entity</td>
+    <td>Convert ampersands to HTML entities</td>
     <td></td>
 </tr>
 <tr>
     <td><code>specialchars</code></td>
-    <td>Convert special chars to HTML entities</td>
+    <td>Convert special characters to HTML entities</td>
     <td></td>
 </tr>
 <tr>
     <td><code>nl2br</code></td>
     <td>Inserts HTML line breaks before all newlines in a string</td>
-    <td><a href="http://php.net/nl2br">PHP Funktion</a></td>
+    <td><a href="http://php.net/nl2br">PHP function</a></td>
 </tr>
 <tr>
     <td><code>nl2br_pre</code></td>
-    <td>Same as nl2br, but keeps line breaks in &lt;pre&gt; tags</td>
+    <td>Same as nl2br, but keeps line breaks in <code>&lt;pre&gt;</code> tags</td>
     <td></td>
 </tr>
 <tr>
     <td><code>strtolower</code></td>
     <td>Make a string lowercase</td>
-    <td><a href="http://php.net/strtolower">PHP Funktion</a></td>
+    <td><a href="http://php.net/strtolower">PHP function</a></td>
 </tr>
 <tr>
     <td><code>utf8_strtolower</code></td>
-    <td>Unicode-aware conversion to lowercase</td>
+    <td>Unicode-aware lowercase conversion</td>
     <td></td>
 </tr>
 <tr>
     <td><code>strtoupper</code></td>
     <td>Make a string uppercase</td>
-    <td><a href="http://php.net/strtoupper">PHP Funktion</a></td>
+    <td><a href="http://php.net/strtoupper">PHP function</a></td>
 </tr>
 <tr>
     <td><code>utf8_strtoupper</code></td>
-    <td>Unicode-aware conversion to uppercase</td>
+    <td>Unicode-aware uppercase conversion</td>
     <td></td>
 </tr>
 <tr>
     <td><code>ucfirst</code></td>
     <td>Make a string's first character uppercase</td>
-    <td><a href="http://php.net/ucfirst">PHP Funktion</a></td>
+    <td><a href="http://php.net/ucfirst">PHP function</a></td>
 </tr>
 <tr>
     <td><code>lcfirst</code></td>
     <td>Make a string's first character lowercase</td>
-    <td><a href="http://php.net/lcfirst">PHP Funktion</a></td>
+    <td><a href="http://php.net/lcfirst">PHP function</a></td>
 </tr>
 <tr>
     <td><code>ucwords</code></td>
     <td>Uppercase the first character of each word in a string</td>
-    <td><a href="http://php.net/ucwords">PHP Funktion</a></td>
+    <td><a href="http://php.net/ucwords">PHP function</a></td>
 </tr>
 <tr>
     <td><code>trim</code></td>
     <td>Strip whitespace from the beginning and end of a string</td>
-    <td><a href="http://php.net/trim">PHP Funktion</a></td>
+    <td><a href="http://php.net/trim">PHP function</a></td>
 </tr>
 <tr>
     <td><code>rtrim</code></td>
     <td>Strip whitespace from the end of a string</td>
-    <td><a href="http://php.net/rtrim">PHP Funktion</a></td>
+    <td><a href="http://php.net/rtrim">PHP function</a></td>
 </tr>
 <tr>
     <td><code>ltrim</code></td>
     <td>Strip whitespace from the beginning of a string</td>
-    <td><a href="http://php.net/ltrim">PHP Funktion</a></td>
+    <td><a href="http://php.net/ltrim">PHP function</a></td>
 </tr>
 <tr>
     <td><code>utf8_romanize</code></td>
@@ -1219,7 +1219,7 @@ Available flags:
 <tr>
     <td><code>strrev</code></td>
     <td>Reverse a string</td>
-    <td><a href="http://php.net/strrev">PHP Funktion</a></td>
+    <td><a href="http://php.net/strrev">PHP function</a></td>
 </tr>
 <tr>
     <td><code>encodeEmail</code></td>
