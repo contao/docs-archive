@@ -1129,12 +1129,12 @@ Available flags:
 <tr>
     <td><code>addslashes</code></td>
     <td>Quote a string with slashes</td>
-    <td><a href="http://php.net/addslashes">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/addslashes">PHP function</a></td>
 </tr>
 <tr>
     <td><code>stripslashes</code></td>
     <td>Remove the slashes from a quoted string</td>
-    <td><a href="http://php.net/stripslashes">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/stripslashes">PHP function</a></td>
 </tr>
 <tr>
     <td><code>standardize</code></td>
@@ -1154,7 +1154,7 @@ Available flags:
 <tr>
     <td><code>nl2br</code></td>
     <td>Inserts HTML line breaks before all newlines in a string</td>
-    <td><a href="http://php.net/nl2br">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/nl2br">PHP function</a></td>
 </tr>
 <tr>
     <td><code>nl2br_pre</code></td>
@@ -1164,7 +1164,7 @@ Available flags:
 <tr>
     <td><code>strtolower</code></td>
     <td>Make a string lowercase</td>
-    <td><a href="http://php.net/strtolower">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/strtolower">PHP function</a></td>
 </tr>
 <tr>
     <td><code>utf8_strtolower</code></td>
@@ -1174,7 +1174,7 @@ Available flags:
 <tr>
     <td><code>strtoupper</code></td>
     <td>Make a string uppercase</td>
-    <td><a href="http://php.net/strtoupper">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/strtoupper">PHP function</a></td>
 </tr>
 <tr>
     <td><code>utf8_strtoupper</code></td>
@@ -1184,32 +1184,32 @@ Available flags:
 <tr>
     <td><code>ucfirst</code></td>
     <td>Make a string's first character uppercase</td>
-    <td><a href="http://php.net/ucfirst">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/ucfirst">PHP function</a></td>
 </tr>
 <tr>
     <td><code>lcfirst</code></td>
     <td>Make a string's first character lowercase</td>
-    <td><a href="http://php.net/lcfirst">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/lcfirst">PHP function</a></td>
 </tr>
 <tr>
     <td><code>ucwords</code></td>
     <td>Uppercase the first character of each word in a string</td>
-    <td><a href="http://php.net/ucwords">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/ucwords">PHP function</a></td>
 </tr>
 <tr>
     <td><code>trim</code></td>
     <td>Strip whitespace from the beginning and end of a string</td>
-    <td><a href="http://php.net/trim">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/trim">PHP function</a></td>
 </tr>
 <tr>
     <td><code>rtrim</code></td>
     <td>Strip whitespace from the end of a string</td>
-    <td><a href="http://php.net/rtrim">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/rtrim">PHP function</a></td>
 </tr>
 <tr>
     <td><code>ltrim</code></td>
     <td>Strip whitespace from the beginning of a string</td>
-    <td><a href="http://php.net/ltrim">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/ltrim">PHP function</a></td>
 </tr>
 <tr>
     <td><code>utf8_romanize</code></td>
@@ -1219,7 +1219,7 @@ Available flags:
 <tr>
     <td><code>strrev</code></td>
     <td>Reverse a string</td>
-    <td><a href="http://php.net/strrev">PHP function</a></td>
+    <td><a target="_blank" href="http://php.net/strrev">PHP function</a></td>
 </tr>
 <tr>
     <td><code>encodeEmail</code></td>

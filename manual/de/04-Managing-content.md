@@ -1137,12 +1137,12 @@ Verfügbare Flags:
 <tr>
     <td><code>addslashes</code></td>
     <td>Stellt bestimmten Zeichen eines Strings ein "\" voran</td>
-    <td><a href="http://php.net/addslashes">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/addslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>stripslashes</code></td>
     <td>Entfernt das "\" vor bestimmten Zeichen eines Strings</td>
-    <td><a href="http://php.net/stripslashes">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/stripslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>standardize</code></td>
@@ -1162,7 +1162,7 @@ Verfügbare Flags:
 <tr>
     <td><code>nl2br</code></td>
     <td>Fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein</td>
-    <td><a href="http://php.net/nl2br">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/nl2br">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>nl2br_pre</code></td>
@@ -1172,7 +1172,7 @@ Verfügbare Flags:
 <tr>
     <td><code>strtolower</code></td>
     <td>wandelt die Ausgabe in Kleinbuchstaben um</td>
-    <td><a href="http://php.net/strtolower">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/strtolower">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>utf8_strtolower</code></td>
@@ -1182,7 +1182,7 @@ Verfügbare Flags:
 <tr>
     <td><code>strtoupper</code></td>
     <td>wandelt die Ausgabe in Großbuchstaben um</td>
-    <td><a href="http://php.net/strtoupper">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/strtoupper">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>utf8_strtoupper</code></td>
@@ -1192,32 +1192,32 @@ Verfügbare Flags:
 <tr>
     <td><code>ucfirst</code></td>
     <td>wandelt das erste Zeichen in einen Großbuchstaben um</td>
-    <td><a href="http://php.net/ucfirst">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/ucfirst">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>lcfirst</code></td>
     <td>wandelt das erste Zeichen in einen Kleinbuchstaben um</td>
-    <td><a href="http://php.net/lcfirst">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/lcfirst">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>ucwords</code></td>
     <td>wandelt das erste Zeichen jedes Wortes in einen Großbuchstaben um</td>
-    <td><a href="http://php.net/ucwords">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/ucwords">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>trim</code></td>
     <td>entfernt Leerzeichen vom Anfang und Ende der Ausgabe</td>
-    <td><a href="http://php.net/trim">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/trim">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>rtrim</code></td>
     <td>entfernt Leerzeichen vom Anfang der Ausgabe</td>
-    <td><a href="http://php.net/rtrim">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/rtrim">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>ltrim</code></td>
     <td>entfernt Leerzeichen vom Ende der Ausgabe</td>
-    <td><a href="http://php.net/ltrim">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/ltrim">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>utf8_romanize</code></td>
@@ -1227,7 +1227,7 @@ Verfügbare Flags:
 <tr>
     <td><code>strrev</code></td>
     <td>dreht die Ausgabe um</td>
-    <td><a href="http://php.net/strrev">PHP-Funktion</a></td>
+    <td><a target="_blank" href="http://php.net/strrev">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>encodeEmail</code></td>
