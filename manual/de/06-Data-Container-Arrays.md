@@ -513,6 +513,11 @@ kann.
       hinzu.</td>
 </tr>
 <tr>
+  <td>sql</td>
+  <td>Feldkonfiguration (<code>string</code>)</td>
+  <td>Bestimmt den Datentyp und seine Konfiguration in der Datenbank, z.B.
+      'sql' =>  "varchar(255) NOT NULL default ''"</td>
+<tr>
   <td>load_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Wird beim Laden des Eingabefeldes ausgeführt und übergibt den Feldwert
