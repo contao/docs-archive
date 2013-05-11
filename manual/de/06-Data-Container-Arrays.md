@@ -514,9 +514,26 @@ kann.
 </tr>
 <tr>
   <td>sql</td>
-  <td>Feldkonfiguration (<code>string</code>)</td>
+  <td>Tabellenkonfiguration (<code>string</code>)</td>
   <td>Bestimmt den Datentyp und seine Konfiguration in der Datenbank, z.B.
       'sql' =>  "varchar(255) NOT NULL default ''"</td>
+</tr>
+<tr>
+  <td>relation</td>
+  <td>Tabellenkonfiguration (<code>array</code>)</td>
+  <td>Bestimmt die Beziehung zur Elterntabelle.<br>
+      <b>type</b> (<code>string</code>)
+      <ul><li>belongsTo</li>
+      <li>hasOne</li>
+      <li>belongsToMany</li>
+      <li>hasMany</li>
+      </ul>
+      <b>load</b> (<code>string</code>)
+      <ul><li>eagerly</li>
+      <li>lazy</li>
+      </ul>
+  </td>
+</tr>
 <tr>
   <td>load_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
