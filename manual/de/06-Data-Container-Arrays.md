@@ -131,6 +131,16 @@ beim Löschen von Elterndatensätzen passiert.
   <td>Ruft eine Callback-Funktion beim Duplizieren eines Datensatzes auf und
       übergibt die Insert ID sowie das DataContainer-Objekt als Argument.</td>
 </tr>
+<tr>
+  <td>sql</td>
+  <td>Tabellen-Konfiguration (<code>array</code>)</td>
+  <td>Bestimmt die Konfigurartion der Datenbank-Tabelle, z.B. 
+  <code>'keys' => array
+  		(
+				'id' => 'primary',
+				'pid' => 'index'
+			)</code></td>
+</tr>
 </table>
 
 
