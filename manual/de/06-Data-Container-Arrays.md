@@ -186,7 +186,7 @@ und eigene Bezeichnungen einfügen.
       <b>sort</b> zeigt das Sortiermenü an<br>
       <b>filter</b> zeigt die Filtermenüs an<br>
       <b>limit</b> zeigt das Limitmenü an. Trennen Sie die Menüs mit Komma
-      (= Abstand) oder Strichpunkt (= neue Zeile), also z.B. 
+      (= Abstand) oder Strichpunkt (= neue Zeile), also z.B.
       <code>sort,filter;search,limit</code>.</td>
 </tr>
 <tr>
@@ -887,11 +887,29 @@ der Contao Core-Engine angepasst werden.
 
 Wird bei der Initialisierung des DataContainer-Objekts ausgeführt.
 Ermöglicht z.B. das Prüfen von Zugriffsrechten oder die dynamische
-Änderung des Data Container Array zur Laufzeit.
+Änderung des Data Container Array zur Laufzeit. Übergibt ein DCA-Objekt
+und erwartet keinen Rückgabewert.
 
 ``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    'config' => array(
+        // ...
+        'onload_callback' => array(array('myClass', 'myOnloadCallback')),
+    )
+    // ...
+); 
 
+// myClass.php
+/**
+ * onload_callback: Fuehrt eine Aktion bei der Initialisierung des DataContainer-Objekts aus.
+ * @param DataContainer DataContainer
+ */
+public function myOnloadCallback($dc){
+    // do something ...
+} 
 ```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
 
 
 #### onsubmit_callback
@@ -899,38 +917,110 @@ Ermöglicht z.B. das Prüfen von Zugriffsrechten oder die dynamische
 Wird beim Abschicken eines Backend-Formulars ausgeführt. Ermöglicht z.B.
 die Modifizierung der Formulardaten, bevor diese in die Datenbank
 geschrieben werden (wird in der Kalender-Erweiterung zur
-Intervalberechnung eingesetzt).
+Intervalberechnung eingesetzt). Übergibt ein DCA-Objekt und erwartet 
+keinen Rückgabewert.
 
 ``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    'config' => array(
+        // ...
+        'onsubmit_callback' => array(array('MyClass', 'myOnsubmitCallback')),
+    )
+    // ...
+); 
 
+// myClass.php
+/**
+ * onsubmit_callback: Wird beim Abschicken eines Backend-Formulars ausgefuehrt.
+ * @param DataContainer $dc
+ */
+public function myOnsubmitCallback($dc){
+    // do something ...
+}
 ```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
 
 
 #### ondelete_callback
 
-Wird ausgeführt bevor ein Datensatz aus der Datenbank entfernt wird.
+Wird ausgeführt bevor ein Datensatz aus der Datenbank entfernt wird. Übergibt 
+ein DCA-Objekt und erwartet keinen Rückgabewert.
 
 ``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    'config' => array(
+        // ...
+        'ondelete_callback' => array(array('MyClass', 'myOndeleteCallback')),
+    )
+    // ...
+); 
 
+// myClass.php
+/**
+ * ondelete_callback: Wird ausgefuehrt bevor ein Datensatz aus der Datenbank entfernt wird.
+ * @param DataContainer $dc
+ */
+public function myOndeleteCallback(DataContainer $dc){
+    // do something ...
+} 
 ```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
 
 
 #### oncut_callback
 
-Wird ausgeführt nachdem ein Datensatz verschoben wurde.
+Wird ausgeführt nachdem ein Datensatz verschoben wurde. Übergibt nichts und 
+erwartet keinen Rückgebewert.
 
 ``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'config' => array
+        // ...
+        'oncut_callback' => array(array('myClass', 'myOncutCallback'))
+    )
+);
 
+// myClass.php
+/**
+ * oncut_callback: Wird ausgefuehrt nachdem ein Datensatz verschoben wurde.
+ */
+public function myOncutCallback(){
+    // do something ...
+
+}
 ```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
 
 
 #### oncopy_callback
 
-Wird ausgeführt nachdem ein Datensatz dupliziert wurde.
+Wird ausgeführt nachdem ein Datensatz dupliziert wurde. Übergibt nichts und 
+erwartet keinen Rückgebewert.
 
 ``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'config' => array
+        // ...
+        'oncopy_callback' => array(array('myClass', 'myOncopyCallback'))
+    )
+);
 
+// myClass.php
+/**
+ * oncopy_callback: Wird ausgefuehrt nachdem ein Datensatz dupliziert wurde.
+ */
+public function myOncopyCallback(){
+    // do something ...
+
+}
 ```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
 
 
 ### Auflistungscallbacks
@@ -941,7 +1031,7 @@ Wird ausgeführt nachdem ein Datensatz dupliziert wurde.
 Ermöglicht individuelle Einfüge-Schaltflächen und wird z.B. in der
 Seitenstruktur verwenden, um die Icons abhängig von den Benutzerrechten zu
 deaktivieren (erfordert eine zusätzliche Prüfung mittels
-load_callback). Eine Liste der übergebenen Parameter befindet sich im 
+load_callback). Eine Liste der übergebenen Parameter befindet sich im
 Quelltextbeispiel, erwartet den Button (als String) als Rückgabewert.
 
 ``` {.php}
@@ -951,33 +1041,33 @@ $GLOBALS['TL_DCA']['TABLENAME'] = array(
     'list' => array(
         'sorting' => array(
             // ...
-            'paste_button_callback'   => array('myClass', 'myPastebuttonCallback')
+            'paste_button_callback' => array('myClass', 'myPastebuttonCallback')
         )
         // ...
     )
 );
 
-// myCalss.php
+// myClass.php
 /**
  * paste_button_callback: Ermoeglicht individuelle Einfuege-Schaltflaechen.
- * @param DataContainer
- * @param array
- * @param string
- * @param boolean
- * @param array
+ * @param DataContainer $dc
+ * @param array $row
+ * @param string $table
+ * @param boolean $cr
+ * @param array $arrClipboard
  * @return string
  */
 public function myPastebuttonCallback(DataContainer $dc, $row, $table, $cr, $arrClipboard=false){
     // do something ...
     return $button;
-} 
+}
 ```
 *(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
 
 
 #### child_record_callback
 
-Legt fest, wie die Kindelemente im "Parent View" dargestellt werden. Übergibt die Tabellenzeile 
+Legt fest, wie die Kindelemente im "Parent View" dargestellt werden. Übergibt die Tabellenzeile
 und erwartet das Label für das Kindelement zurück.
 
 ``` {.php}
@@ -987,22 +1077,22 @@ $GLOBALS['TL_DCA']['TABLENAME'] = array(
     'list' => array(
         'sorting' => array(
             // ...
-            'child_record_callback'   => array('myClass', 'myChildrecordCallback')
+            'child_record_callback' => array('myClass', 'myChildrecordCallback')
         )
         // ...
     )
 );
 
-// myCalss.php
+// myClass.php
 /**
  * child_record_callback: Legt fest, wie die Kindelemente im "Parent View" dargestellt werden.
- * @param       <array>     $row
- * @return      <string>
+ * @param array $row
+ * @return string
  */
 public function myChildrecordCallback($row){
     // do something ...
     return $label;
-} 
+}
 ```
 *(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
 
@@ -1019,7 +1109,7 @@ Ermöglicht individuelle Gruppennamen in der Listenansicht.
 #### label_callback
 
 Ermöglicht individuelle Bezeichnungen in der Listenansicht und wird z.B.
-im Benutzer-Modul verwendet, um die Status-Icons hinzuzufügen. Übergibt 
+im Benutzer-Modul verwendet, um die Status-Icons hinzuzufügen. Übergibt
 die Datenbankzeile, das erzeugte Label und erwartet das geänderte Label
 als Rückgabewert.
 
@@ -1034,19 +1124,19 @@ $GLOBALS['TL_DCA']['TABLENAME'] = array(
             'label_callback' = array('myClass', 'myLabelCallback')
         )
     )
-); 
+);
 
-// myCalss.php
+// myClass.php
 /**
  * label_callback: Ermoeglicht individuelle Bezeichnungen.
- * @param      <array>     $row
- * @param      <string>    $label
- * @return     <string>
+ * @param array $row
+ * @param string $label
+ * @return string
  */
 public function myLabelCallback($row, $label){
     // do something ...
     return $newLabel
-} 
+}
 ```
 *(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
 
@@ -1059,7 +1149,7 @@ public function myLabelCallback($row, $label){
 Ermöglicht individuelle Navigationssymbole und wird z.B. in der
 Seitenstruktur verwenden, um Icons abhängig von den Benutzerrechten zu
 deaktivieren (erfordert eine zusätzliche Prüfung mittels
-load_callback). Eine Liste der übergebenen Parameter befindet sich im Quelltextbeispiel, 
+load_callback). Eine Liste der übergebenen Parameter befindet sich im Quelltextbeispiel,
 erwartet einen String mit dem erzeugten Link als Rückgebewert.
 
 ``` {.php}
@@ -1072,28 +1162,28 @@ $GLOBALS['TL_DCA']['TABLENAME'] = array(
             // ...
             'NAMEDEROPERATION' => array(
                 // ...
-                'button_callback'     => array('myClass', 'myButtonCallback')
+                'button_callback' => array('myClass', 'myButtonCallback')
             )
         )
     )
 );
 
-// myCalss.php
-/** 
+// myClass.php
+/**
  * button_callback: Ermoeglicht individuelle Navigationssymbole
- * @param array $arrRow the current row 
- * @param string $href the url of the embedded link of the button 
- * @param string $label label text for the button 
- * @param string $title title value for the button 
- * @param string $icon url of the image for the button 
- * @param array $attributes additional attributes for the button (fetched from the array key "attributes" in the DCA) 
- * @param string $strTable the name of the current table 
- * @param $arrRootIds array of the ids of the selected "page mounts" (only in tree view) 
- * @param $arrChildRecordIds ids of the childs of the current record (only in tree view) 
- * @param boolean $blnCircularReference determines if this record has a circular reference (used to prevent pasting of an cutted item from an tree into any of it's childs). 
- * @param string $strPrevious id of the previous entry on the same parent/child level. Used for move up/down buttons. Not for root entries in tree view. 
- * @param string $strNext id of the next entry on the same parent/child level. Used for move up/down buttons. Not for root entries in tree view. 
- */ 
+ * @param array $arrRow the current row
+ * @param string $href the url of the embedded link of the button
+ * @param string $label label text for the button
+ * @param string $title title value for the button
+ * @param string $icon url of the image for the button
+ * @param array $attributes additional attributes for the button (fetched from the array key "attributes" in the DCA)
+ * @param string $strTable the name of the current table
+ * @param $arrRootIds array of the ids of the selected "page mounts" (only in tree view)
+ * @param $arrChildRecordIds ids of the childs of the current record (only in tree view)
+ * @param boolean $blnCircularReference determines if this record has a circular reference (used to prevent pasting of an cutted item from an tree into any of it's childs).
+ * @param string $strPrevious id of the previous entry on the same parent/child level. Used for move up/down buttons. Not for root entries in tree view.
+ * @param string $strNext id of the next entry on the same parent/child level. Used for move up/down buttons. Not for root entries in tree view.
+ */
 public function myButtonCallback($arrRow, $href, $label, $title, $icon, $attributes, $strTable, $arrRootIds, $arrChildRecordIds, $blnCircularReference, $strPrevious, $strNext){
     // do something ...
     return '<a href="'.$this->addToUrl($href).'" title="'.specialchars($title).'"'.$attributes.'>'.$this->generateImage($icon, $label).'</a> ';
@@ -1117,28 +1207,28 @@ $GLOBALS['TL_DCA']['TABLENAME'] = array(
     // ...
     'fields' => array
     (
-		// ...
+        // ...
         'FELDNAME' => array
         (
             // ...
             'options_callback' => array('myClass', 'myOptionsCallback'),
             // ...
-		)
-	),
-	// ...
+        )
+    ),
+    // ...
 );
 
-// myCalss.php
- /** 
+// myClass.php
+ /**
   * options_callback: Gibt ein Array mit den Optionen fuer das Auswahlfeld zurueck.
   * @param DataContainer $dc
   * @return array
   */
 public function myOptionsCallback(DataContainer $dc){
-	// do something and return array with options.
-	// Example:
-	$arrOpt = array('test01', 'test02');
-	return $arrOpt;
+    // do something and return array with options.
+    // Example:
+    $arrOpt = array('test01', 'test02');
+    return $arrOpt;
 }
 
 ```
@@ -1148,9 +1238,9 @@ public function myOptionsCallback(DataContainer $dc){
 #### input_field_callback
 
 Ermöglicht das Erstellen individueller Formularfelder und wird z.B. im
-Backend-Modul "Persönliche Daten" verwendet, um das "Daten bereinigen"-Feld 
-zu erstellen. Achtung: Eingaben werden nicht automatisch gespeichert! Die Daten 
-müssen mit einem save_callback gespeichert werden. Übergibt ein DCA-Objekt, 
+Backend-Modul "Persönliche Daten" verwendet, um das "Daten bereinigen"-Feld
+zu erstellen. Achtung: Eingaben werden nicht automatisch gespeichert! Die Daten
+müssen mit einem save_callback gespeichert werden. Übergibt ein DCA-Objekt,
 das definierte Label und erwartet das Formularfeld (als String) als Rückgabewert.
 
 ``` {.php}
@@ -1159,27 +1249,27 @@ $GLOBALS['TL_DCA']['TABLENAME'] = array(
     // ...
     'fields' => array
     (
-		// ...
+        // ...
         'FELDNAME' => array
         (
             // ...
             'input_field_callback' => array('myClass', 'myIputFieldCallback'),
             // ...
-		)
-	),
-	// ...
+        )
+    ),
+    // ...
 );
 
-// myCalss.php
-/** 
+// myClass.php
+/**
  * input_field_callback: Erstellt ein individuelles Eingabefeld und gibt es als String zurueck.
  * @param DataContainer $dc
  * @param string $strLabel
  * @return string
  */
 public function myIputFieldCallback(DataContainer $dc, $strLabel){
-	// do something and return a string.
-	return $myField;
+    // do something and return a string.
+    return $myField;
 }
 
 ```
@@ -1198,22 +1288,22 @@ $GLOBALS['TL_DCA']['TABLENAME'] = array(
     // ...
     'fields' => array
     (
-		// ...
+        // ...
         'FELDNAME' => array
         (
             // ...
             'load_callback' => array('myClass', 'myLoadCallback'),
             // ...
-		)
-	),
-	// ...
+        )
+    ),
+    // ...
 );
 
-// myCalss.php
+// myClass.php
 /**
  * load_callback: Wird bei der Initialisierung eines Formularfeldes ausgefuehrt.
- * @param $varValue
- * @param $dc
+ * @param var $varValue
+ * @param DataContainer $dc
  * @return var
  */
 public function myLoadCallback($varValue, DataContainer $dc) {
@@ -1231,7 +1321,7 @@ public function myLoadCallback($varValue, DataContainer $dc) {
 
 #### save_callback
 
-Wird beim Abschicken eines Feldes ausgefuehr und ermöglicht das Ändern des Werts vor dem Speichern. 
+Wird beim Abschicken eines Feldes ausgefuehr und ermöglicht das Ändern des Werts vor dem Speichern.
 Übergibt den Feldwert, ein DCA-Object und erwartet den geänderten Wert als Rückgabewert.
 
 ``` {.php}
@@ -1240,28 +1330,28 @@ $GLOBALS['TL_DCA']['TABLENAME'] = array(
     // ...
     'fields' => array
     (
-		// ...
+        // ...
         'FELDNAME' => array
         (
             // ...
             'save_callback' => array(array('myClass', 'mySaveCallback')),
             // ...
-		)
-	),
-	// ...
+        )
+    ),
+    // ...
 );
 
-// myCalss.php
+// myClass.php
 /**
  * save_callback: Wird beim Abschicken eines Feldes ausgefuehrt.
- * @param $varValue
- * @param $dc
+ * @param var $varValue
+ * @param DataContainer $dc
  * @return var
  */
 public function mySaveCallback($varValue, DataContainer $dc) {
         // do somethig ...
         return $varValue
-} 
+}
 ```
 
 
