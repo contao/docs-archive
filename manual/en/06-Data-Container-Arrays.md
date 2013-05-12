@@ -511,13 +511,13 @@ filter criteria.
 <tr>
   <td>sql</td>
   <td>Database field definition (<code>string</code>)</td>
-  <td>Describes data type and its configuration in the database, f.e.
+  <td>Describes data type and its database configuration, f.e.
       <code>varchar(255) NOT NULL default ''</code></td>
 </tr>
 <tr>
   <td>relation</td>
-  <td>Relations configuration (<code>array</code>)</td>
-  <td>Describes relation to parent table (see next section "Relations").
+  <td>Configuration of relations (<code>array</code>)</td>
+  <td>Describes relation to parent table (see next section "relations").
   </td>
 </tr>
 <tr>
