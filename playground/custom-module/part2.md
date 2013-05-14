@@ -10,7 +10,7 @@ Just like the configuration files, DCA files are loaded when the Contao is initi
 
 ##File structure
 
-The DCA file must be located in /cd_collection/dca/ folder and have the same name as the table definied in the module config:
+The DCA file must be located in `/cd_collection/dca/` folder and have the same name as the table definied in the module config:
 
 ```php
 // Back end module
@@ -25,7 +25,7 @@ array_insert($GLOBALS['BE_MOD']['content'], 3, array
 
 ```
 
-Please create two files called tl\_cds\_category.php and tl\_cds.php in dca folder.
+Please create two files called `tl\_cds\_category.php` and `tl\_cds.php` in dca folder.
 
 
 ##Inside DCA
@@ -63,16 +63,16 @@ $GLOBALS['TL_DCA']['tl_table'] = array
 ?>
 ```
 
-As you can see it is one big nested array. First part, the config, contains basic settings like data container type or table relationship (child/parent). The list array is usually divided into four sections: sotring, label, global_operations, operations. Each of them is also an array. Next, the palettes – a palette defines the order of displaying form fields; it is also possible to group them into sections (available from 2.7.0). Finally, the fields is an array that holds information about our form fields.
+As you can see it is one big nested array. First part, the config, contains basic settings like data container type or table relationship (child/parent). The list array is usually divided into four sections: sorting, label, global_operations, operations. Each of them is also an array. Next, the palettes – a palette defines the order of displaying form fields; it is also possible to group them into sections (available from 2.7.0). Finally, the fields is an array that holds information about our form fields.
 
-All of the config options are available on the [official website](http://www.typolight.org/dca.html).
+All of the config options are available on the [official manual](https://contao.org/en/manual/2.11/data-container-arrays.html).
 
 That is all of the basic theory, let’s get to work!
 
 
 ##DCA config
 
-Open tl\_cds\_category.php and put the following content:
+Open `tl\_cds\_category.php` and put the following content:
 
 
 ```php
@@ -95,9 +95,9 @@ $GLOBALS['TL_DCA']['tl_cds_category'] = array
 
 As a data container we have defined table, because our module will use the MySQL database tables.  
  
-The ‘ctable’ is a shortcut from ‘children table’. In the [previous part](http://blog.qzminski.com/2010/04/create-a-custom-typolight-module-part-one/), we assumed that tl_cds is our child table.
+The `ctable` is a shortcut from ‘children table’. In the [previous part](part1.md), we assumed that `tl_cds` is our child table.
 
-SwitchToEdit key, if true, activates the “save and edit” buton when a new record is added:
+SwitchToEdit key, if true, activates the “save and edit” button when a new record is added:
 
 
 ![Save and edit button](assets/save_and_edit.jpg)
@@ -109,7 +109,7 @@ However, this button is available only when the sorting mode is 4.
 ##DCA list
 
 
-The list array is used to maintain the homepage of our module. Its purpose is to set up the user interface and provide a listing of records. It consists of four arrays that I will describe in a moment. Meanwhile I advise you to open a [developer’s guide](http://www.typolight.org/reference.html) to make you see better what I am talking about.
+The list array is used to maintain the homepage of our module. Its purpose is to set up the user interface and provide a listing of records. It consists of four arrays that I will describe in a moment. Meanwhile I advise you to open the [manual](https://contao.org/en/manual/2.11/data-container-arrays.html) to make you see better what I am talking about.
 
 
 ###Sorting
@@ -142,7 +142,8 @@ Mode set to 1 defines that records are sorted by a fixed field, which is defined
 
 ###Label
 
-The label array is also a child of the list array. It is used to define the record’s label format. You might notice that this is similar to php sprintf() function. To better visualize the analogy, below code works like 
+The label array is also a child of the list array. It is used to define the record’s label format. You might notice that this is similar to php `sprintf()` function. To better visualize the analogy, below code works like 
+
 ```php
 sprintf(format, fields)
 ```
@@ -226,7 +227,7 @@ This array defines which operations will be available for each record. Put the f
 
 I think the code is self-explanatory. We have added four basic functions that come in almost every module of Contao.
 
-Note that the edit array takes as href key other value than a typical (one-table) module – and that’s because we use two tables in our cd collection. Thus, when you click the edit button, it will take you to the listing of tl\_cds records!
+Note that the edit array takes as href key other value than a typical (one-table) module – and that’s because we use two tables in our cd collection. Thus, when you click the edit button, it will take you to the listing of `tl\_cds` records!
 
 
 ![Operations](assets/operations.jpg)
@@ -295,15 +296,14 @@ Eval(uation) array configures a particular field in detail. You can e.g. create 
 We set the title to true and its max length to 64, same as the field in a database. Description is a textarea with a lightweight config of a rte.
 
 
-
 ##tl_cds DCA
 
-Okay, now it’s time to create the data container array for tl\_cds table. It will have a little different config, as it is a child of tl\_cds\_category. Note that Contao is not able to display child records by default, so we are going to use a child_record_callback.
+Okay, now it’s time to create the data container array for `tl\_cds` table. It will have a little different config, as it is a child of `tl\_cds\_category`. Note that Contao is not able to display child records by default, so we are going to use a `child_record_callback`.
 
 
 ##DCA Config
 
-Open the cd_collection/dca/tl\_cds.php file and put the following content:
+Open the `cd_collection/dca/tl\_cds.php` file and put the following content:
 
 ```php
 <?php
@@ -320,9 +320,7 @@ $GLOBALS['TL_DCA']['tl_cds'] = array
 //...
 ```
 
-Above code is very simple. We define the database table as our data container, and tl\_cds\_category as a parent table.
-
-
+Above code is very simple. We define the database table as our data container, and `tl\_cds\_category` as a parent table.
 
 
 ##DCA List
@@ -347,7 +345,7 @@ Now, insert the code:
 //...
 ```
 
-The sorting mode is set to 4 – displays the child records of a parent record. However, as I have mentioned before, Contao is not able to list them. Thus, we need to create a new function and assign it to child\_record\_callback. First parameter in array is name of the class, while the second is name of the function. Usually functions are placed at the end of the file, so I will leave it for later.
+The sorting mode is set to 4 – displays the child records of a parent record. However, as I have mentioned before, Contao is not able to list them. Thus, we need to create a new function and assign it to `child\_record\_callback`. First parameter in array is name of the class, while the second is name of the function. Usually functions are placed at the end of the file, so I will leave it for later.
 
 From version 2.9.0, Contao provides records sorting in mode 4, so we also need to define a flag and the fields. Flag set to 1 means that the records will be sorted by initial letter ascending (from A to Z).
 
@@ -359,12 +357,12 @@ headerFields array defines which fields of parent table are going to be listed i
 *This data is taken from tl\_cds\_category table*
 
 
-You can see that “My collection of rock cds.” is not on the same height as “description:”. This happens when we display field that is created by rich text editor. By default, rte embeds the text in \<p\> tags. Contao backend’s css applies a 12px bottom margin to all paragraph elements.
+You can see that “My collection of rock cds.” is not on the same height as “description:”. This happens when we display field that is created by rich text editor. By default, rte embeds the text in `\<p\>` tags. Contao back end’s css applies a 12px bottom margin to all paragraph elements.
 
 
 ###Global operations & operations
 
-Global operations are the same as tl\_cds\_category’s. Operations have just one lil difference – in the edit array, href key takes as value ‘act=edit’, and not ‘table=tl\_cds’.
+Global operations are the same as tl\_cds\_category’s. Operations have just one lil difference – in the edit array, href key takes as value `act=edit`, and not `table=tl\_cds`.
 
 
 ```php
@@ -412,7 +410,6 @@ Global operations are the same as tl\_cds\_category’s. Operations have just on
 ```
 
 
-
 ##DCA Palettes
 
 It is time to organize our fields and group them into sections. Put the following code after the list array:
@@ -427,8 +424,7 @@ It is time to organize our fields and group them into sections. Put the followin
 //...
 ```
 
-Notice that the semicolons are used to seperate the fieldsets. Also, you might notice a new legend element **:hide.** It forces a group to be collapsed by default. Simple yet usfeul.
-
+Notice that the semicolons are used to seperate the fieldsets. Also, you might notice a new legend element **:hide.** It forces a group to be collapsed by default. Simple yet useful.
 
 
 ##DCA Fields
@@ -476,7 +472,7 @@ We need to create four fields: title, artist, image and comment. Just like in th
 
 Step by step:
 
-Title – a normal text input, available for search, with max length of 64 characters. The new thing for you is tl_class. There are 5 input’s classes in Contao that are used for better appearance. All classes can be found [here](http://www.typolight.org/palettes.html).
+Title – a normal text input, available for search, with max length of 64 characters. The new thing for you is tl_class. There are 5 input’s classes in Contao that are used for better appearance. All classes can be found [here](https://contao.org/en/manual/2.11/data-container-arrays.html#palettes).
 
 
 ![Inputs without classes](assets/without_classes.jpg)
@@ -492,16 +488,16 @@ Title – a normal text input, available for search, with max length of 64 chara
 
 Artist – this field is exact to title’s one.
 
-Image – as input type we define file tree, which will render a file structure of tl_files folder. Additionally, we set the files to true, which causes that both files and folders will be shown. However, we need to disable selecting a folder – that’s why we have added 'filesOnly'=>true. The last eval’s parameter is field type. It could be either a checkbox or radio, but since we want to add only one cd cover per album, radio is the thing.
+Image – as input type we define file tree, which will render a file structure of `tl_files` folder. Additionally, we set the files to true, which causes that both files and folders will be shown. However, we need to disable selecting a folder – that’s why we have added `'filesOnly'=>true`. The last eval’s parameter is field type. It could be either a checkbox or radio, but since we want to add only one cd cover per album, radio is the thing.
 
-Comment – this is the same field as description field in tl_cds_category.
+Comment – this is the same field as description field in `tl_cds_category`.
 
 
 ##Listing child records
 
 At this point, we are able to add new records to the database. Would be nice if we could list them, so they are possible to edit/view/delete and search.
 
-At the end of the tl\_cds.php file, create a new class that extends Backend and contains the listCds function:
+At the end of the `tl\_cds.php` file, create a new class that extends Back end and contains the `listCds` function:
 
 ```php
 class tl_cds extends Backend {
