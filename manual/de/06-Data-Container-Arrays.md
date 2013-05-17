@@ -905,7 +905,7 @@ $GLOBALS['TL_DCA']['TABLENAME'] = array(
  * onload_callback: Fuehrt eine Aktion bei der Initialisierung des DataContainer-Objekts aus.
  * @param DataContainer DataContainer
  */
-public function myOnloadCallback($dc){
+public function myOnloadCallback(DataContainer $dc){
     // do something ...
 } 
 ```
@@ -925,7 +925,7 @@ keinen Rückgabewert.
 $GLOBALS['TL_DCA']['TABLENAME'] = array(
     'config' => array(
         // ...
-        'onsubmit_callback' => array(array('MyClass', 'myOnsubmitCallback')),
+        'onsubmit_callback' => array(array('myClass', 'myOnsubmitCallback')),
     )
     // ...
 ); 
@@ -935,7 +935,7 @@ $GLOBALS['TL_DCA']['TABLENAME'] = array(
  * onsubmit_callback: Wird beim Abschicken eines Backend-Formulars ausgefuehrt.
  * @param DataContainer $dc
  */
-public function myOnsubmitCallback($dc){
+public function myOnsubmitCallback(DataContainer $dc){
     // do something ...
 }
 ```
@@ -952,7 +952,7 @@ ein DCA-Objekt und erwartet keinen Rückgabewert.
 $GLOBALS['TL_DCA']['TABLENAME'] = array(
     'config' => array(
         // ...
-        'ondelete_callback' => array(array('MyClass', 'myOndeleteCallback')),
+        'ondelete_callback' => array(array('myClass', 'myOndeleteCallback')),
     )
     // ...
 ); 
@@ -1101,16 +1101,12 @@ public function myChildrecordCallback($row){
 
 Ermöglicht individuelle Gruppennamen in der Listenansicht.
 
-``` {.php}
-
-```
-
 
 #### label_callback
 
 Ermöglicht individuelle Bezeichnungen in der Listenansicht und wird z.B.
 im Benutzer-Modul verwendet, um die Status-Icons hinzuzufügen. Übergibt
-die Datenbankzeile, das erzeugte Label und erwartet das geänderte Label
+die Datenbankzeile, das Label und erwartet das geänderte Label
 als Rückgabewert.
 
 ``` {.php}
@@ -1353,6 +1349,7 @@ public function mySaveCallback($varValue, DataContainer $dc) {
         return $varValue
 }
 ```
+*(TABLENAME und FELDNAME müssen durch den Tabellennamen bzw. den Feldnamen ersetzt werden!)*
 
 
 [1]: 02-Administration-area.md#datens%C3%A4tze-auflisten
