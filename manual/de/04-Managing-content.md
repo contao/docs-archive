@@ -40,7 +40,7 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Text</td>
   <td>ce_text</td>
-  <td>Erzeugt einen Rich Text, der mit [TinyMCE][2] formatiert werden kann.</td>
+  <td>Erzeugt einen Rich Text, der mit <a href="http://www.tinymce.com">TinyMCE</a> formatiert werden kann.</td>
 </tr>
 <tr>
   <td>HTML</td>
@@ -60,7 +60,7 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Akkordeon</td>
   <td>ce_accordion</td>
-  <td>Erzeugt ein [MooTools][3] Akkordeon-Element.</td>
+  <td>Erzeugt ein <a href="http://mootools.net">MooTools</a> Akkordeon-Element.</td>
 </tr>
 <tr>
   <td>Code</td>
@@ -85,7 +85,7 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Galerie</td>
   <td>ce_gallery</td>
-  <td>Erzeugt eine [lightbox][4] Bildergalerie.</td>
+  <td>Erzeugt eine <a href="http://www.digitalia.be/software/slimbox">lightbox</a> Bildergalerie.</td>
 </tr>
 <tr>
   <td>Download</td>
