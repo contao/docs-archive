@@ -40,7 +40,7 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Text</td>
   <td>ce_text</td>
-  <td>Erzeugt einen Rich Text, der mit [TinyMCE][2] formatiert werden kann.</td>
+  <td>Erzeugt einen Rich Text, der mit <a href="http://www.tinymce.com">TinyMCE</a> formatiert werden kann.</td>
 </tr>
 <tr>
   <td>HTML</td>
@@ -60,7 +60,7 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Akkordeon</td>
   <td>ce_accordion</td>
-  <td>Erzeugt ein [MooTools][3] Akkordeon-Element.</td>
+  <td>Erzeugt ein <a href="http://mootools.net">MooTools</a> Akkordeon-Element.</td>
 </tr>
 <tr>
   <td>Code</td>
@@ -85,7 +85,7 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Galerie</td>
   <td>ce_gallery</td>
-  <td>Erzeugt eine [lightbox][4] Bildergalerie.</td>
+  <td>Erzeugt eine <a href="http://www.digitalia.be/software/slimbox">lightbox</a> Bildergalerie.</td>
 </tr>
 <tr>
   <td>Download</td>
@@ -620,22 +620,22 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{link_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer internen Seite ersetzt:
-      `{{link_open::12}}Click here{{link_close}}`.</td>
+      <code>{{link_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_url::*}}</code></td>
-  <td>Dieses Tag wird mit der URL einer internen Seite ersetzt: `<a
-      href="{{link_url::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit der URL einer internen Seite ersetzt: <code>&lt;a
+      href="{{link_url::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_title::*}}</code></td>
-  <td>Dieses Tag wird mit dem Titel einer internen Seite ersetzt: `<a
-      title="{{link_title::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit dem Titel einer internen Seite ersetzt: <code>&lt;a
+      title="{{link_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_close}}</code></td>
   <td>Wird mit dem schließenden Tag eines Links zu einer internen Seite
-      ersetzt: `{{link_open::12}}Click here{{link_close}}`.</td>
+      ersetzt: <code>{{link_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article::*}}</code></td>
@@ -645,17 +645,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{article_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einem Artikel ersetzt:
-      `{{article_open::12}}Click here{{link_close}}`.</td>
+      <code>{{article_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_url::*}}</code></td>
-  <td>Dieses Tag wird mit der URL eines Artikels ersetzt: `<a
-      href="{{article_url::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit der URL eines Artikels ersetzt: <code>&lt;a
+      href="{{article_url::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_title::*}}</code></td>
-  <td>Dieses Tag wird mit dem Titel eines Artikels ersetzt: `<a
-      title="{{article_title::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit dem Titel eines Artikels ersetzt: <code>&lt;a
+      title="{{article_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news::*}}</code></td>
@@ -665,17 +665,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{news_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer Nachricht ersetzt:
-      `{{news_open::12}}Click here{{link_close}}`.</td>
+      <code>{{news_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_url::*}}</code></td>
-  <td>Dieses Tag wird mit der URL einer Nachricht ersetzt: `<a
-      href="{{news_url::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit der URL einer Nachricht ersetzt: <code>&lt;a
+      href="{{news_url::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_title::*}}</code></td>
-  <td>Dieses Tag wird mit dem Titel einer Nachricht ersetzt: `<a
-      title="{{news_title::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit dem Titel einer Nachricht ersetzt: <code>&lt;a
+      title="{{news_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event::*}}</code></td>
@@ -685,17 +685,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{event_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einem Event ersetzt:
-      `{{event_open::12}}Click here{{link_close}}`.</td>
+      <code>{{event_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_url::*}}</code></td>
-  <td>Dieses Tag wird mit der URL eines Events ersetzt: `<a
-      href="{{event_url::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit der URL eines Events ersetzt: <code>&lt;a
+      href="{{event_url::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_title::*}}</code></td>
-  <td>Dieses Tag wird mit dem Titel eines Events ersetzt: `<a
-      title="{{event_title::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit dem Titel eines Events ersetzt: <code>&lt;a
+      title="{{event_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
@@ -705,17 +705,17 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{faq_open::*}}</code></td>
   <td>Wird mit dem öffnenden Tag eines Links zu einer Frage ersetzt:
-      `{{faq_open::12}}Click here{{link_close}}`.</td>
+      <code>{{faq_open::12}}Hier klicken{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_url::*}}</code></td>
-  <td>Dieses Tag wird mit der URL einer Frage ersetzt: `<a
-      href="{{faq_url::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit der URL einer Frage ersetzt: <code>&lt;a
+      href="{{faq_url::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_title::*}}</code></td>
-  <td>Dieses Tag wird mit dem Titel einer Frage ersetzt: `<a
-      title="{{faq_title::12}}">Click here</a>`.</td>
+  <td>Dieses Tag wird mit dem Titel einer Frage ersetzt: <code>&lt;a
+      title="{{faq_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 </table>
 
@@ -949,7 +949,7 @@ Dateien aus dem "templates"-Verzeichnis eingebunden werden.
   <td><code>{{file::*}}</code></td>
   <td>Dieses Tag wird mit dem Inhalt einer .php- oder .tpl-Datei aus dem
       `templates`-Verzeichnis ersetzt (ersetzen Sie * mit dem Namen). Bei Bedarf
-      können Sie Argumente übergeben: `{{file::file.php?arg1=val}}</code></td>
+      können Sie Argumente übergeben: <code>{{file::file.php?arg1=val}}</code></td>
 </tr>
 </table>
 
@@ -992,50 +992,50 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{lang::*}}</code></td>
   <td>Mit diesem Tag können fremdsprachige Wörter in einem Text markiert
-      werden: `{{lang::fr}}Au revoir{{lang}}`. Dies wird ersetzt mit `<span
-      lang="fr" xml:lang="fr">Au revoir</span>`.</td>
+      werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit <code>&lt;span
+      lang="fr" xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
-  <td>Abkürzungen in einem Text markieren: `{{abbr::World Wide
-      Web}}WWW{{abbr}}`. Dies wird ersetzt mit `<abbr title="World Wide
-      Web">WWW</abbr>`.</td>
+  <td>Abkürzungen in einem Text markieren: <code>{{abbr::World Wide
+      Web}}WWW{{abbr}}</code>. Dies wird ersetzt mit <code>&lt;abbr title="World Wide
+      Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Acronyme in einem Text markieren: `{{acronym:: Multipurpose Internet Mail
-      Extensions}}MIME{{acronym}}`. Dies wird ersetzt mit `<acronym
-      title="Multipurpose Internet Mail Extensions">MIME</acronym>`.</td>
+  <td>Acronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet Mail
+      Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
+      title="Multipurpose Internet Mail Extensions">MIME</acronym></code>.</td>
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
-  <td>Eigenschaften des Browsers (User Agent) ausgeben: `{{ua::browser}}`. Dies
+  <td>Eigenschaften des Browsers (User Agent) ausgeben: <code>{{ua::browser}}</code>. Dies
       wird beispielsweise ersetzt mit "chrome".</td>
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
   <td>Dieses Tag wird komplett entfernt, wenn die Sprache der Seite nicht mit
       der Tag-Sprache übereinstimmt. Sie können so sprachspezifische Bezeichnungen
-      erstellen: `{{iflng::en}}Your name{{iflng}}</code></td>
+      erstellen: <code>{{iflng::en}}Your name{{iflng}}</code></td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
   <td>Dieses Tag wird komplett entfernt, wenn die Sprache der Seite mit der
       Tag-Sprache übereinstimmt. Sie können so sprachspezifische Bezeichnungen
-      erstellen: `{{ifnlng::de}}Your name{{iflng}}</code></td>
+      erstellen: <code>{{ifnlng::de}}Your name{{iflng}}</code></td>
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt:
-      `{{image::files/image.jpg?width=200&amp;height=150}}`. **width** Breite
+      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>. **width** Breite
       des Vorschaubildes, **height** Höhe des Vorschaubildes, **alt**
       Alternativer Text, **class** CSS-Klasse, **rel** rel-Attribut (z.B.
       "lightbox"), **mode** Modus ("proportional", "crop" oder "box")</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>Dieses Tag wird mit einer Übersetzung ersetzt: `{{label::CNT:au}}` oder
-      `{{label::tl_article:title:0}}`. Beachten Sie, dass innerhalb des Pfads
+  <td>Dieses Tag wird mit einer Übersetzung ersetzt: <code>{{label::CNT:au}}</code> oder
+      <code>{{label::tl_article:title:0}}</code>. Beachten Sie, dass innerhalb des Pfads
       zur Bezeichnung nur einfache Doppelpunkte verwendet werden.</td>
 </tr>
 <tr>
