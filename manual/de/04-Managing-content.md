@@ -1045,6 +1045,16 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
       ersetzt.</td>
 </tr>
 <tr>
+  <td><code>{{email_open::*}}</code></td>
+  <td>Dieses Tag wird mit einem verschlüsselten Link zu einer E-Mail-Adresse
+      ersetzt. Allerdings wird das schliessende <code></a></code> nicht
+      angefügt.</td>
+</tr>
+<tr>
+  <td><code>{{email_url::*}}</code></td>
+  <td>Dieses Tag wird nur durch die verschlüsselte E-Mail-Adresse ersetzt.</td>
+</tr>
+<tr>
   <td><code>{{lang::*}}</code></td>
   <td>Mit diesem Tag können fremdsprachige Wörter in einem Text markiert
       werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit <code>&lt;span
