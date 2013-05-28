@@ -131,6 +131,16 @@ beim Löschen von Elterndatensätzen passiert.
   <td>Ruft eine Callback-Funktion beim Duplizieren eines Datensatzes auf und
       übergibt die Insert ID sowie das DataContainer-Objekt als Argument.</td>
 </tr>
+<tr>
+  <td>sql</td>
+  <td>Tabellen-Konfiguration (<code>array</code>)</td>
+  <td>Bestimmt die Konfigurartion der Datenbank-Tabelle, z.B. 
+  <code>'keys' => array
+  		(
+				'id' => 'primary',
+				'pid' => 'index'
+			)</code></td>
+</tr>
 </table>
 
 
@@ -511,6 +521,28 @@ kann.
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Fügt dem Eingabefeld den Rückgabewert einer individuellen Funktion
       hinzu.</td>
+</tr>
+<tr>
+  <td>sql</td>
+  <td>Tabellenkonfiguration (<code>string</code>)</td>
+  <td>Bestimmt den Datentyp und seine Konfiguration in der Datenbank, z.B.
+      'sql' =>  "varchar(255) NOT NULL default ''"</td>
+</tr>
+<tr>
+  <td>relation</td>
+  <td>Tabellenkonfiguration (<code>array</code>)</td>
+  <td>Bestimmt die Beziehung zur Elterntabelle.<br>
+      <b>type</b> (<code>string</code>)
+      <ul><li>belongsTo</li>
+      <li>hasOne</li>
+      <li>belongsToMany</li>
+      <li>hasMany</li>
+      </ul>
+      <b>load</b> (<code>string</code>)
+      <ul><li>eagerly</li>
+      <li>lazy</li>
+      </ul>
+  </td>
 </tr>
 <tr>
   <td>load_callback</td>
