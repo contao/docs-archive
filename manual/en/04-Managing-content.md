@@ -1037,6 +1037,15 @@ the current date or including lightbox images.
       address.</td>
 </tr>
 <tr>
+  <td><code>{{email_open::*}}</code></td>
+  <td>This tag will be replaced with a clickable and encrypted link to an e-mail
+      address. However, the closing <code></a></code> will not be added.</td>
+</tr>
+<tr>
+  <td><code>{{email_url::*}}</code></td>
+  <td>This tag will be replaced by the encrypted e-mail address only.</td>
+</tr>
+<tr>
   <td><code>{{lang::*}}</code></td>
   <td>This tag can be used to mark foreign words within a text: <code>{{lang::fr}}Au
       revoir{{lang}}</code>. It will be replaced with <code>&lt;span lang="fr"
