@@ -1047,7 +1047,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{email_open::*}}</code></td>
   <td>Dieses Tag wird mit einem verschlüsselten Link zu einer E-Mail-Adresse
-      ersetzt. Allerdings wird das schliessende <code></a></code> nicht
+      ersetzt. Allerdings wird das schliessende <code>&lt;/a&gt;</code> nicht
       angefügt.</td>
 </tr>
 <tr>

@@ -1039,7 +1039,7 @@ the current date or including lightbox images.
 <tr>
   <td><code>{{email_open::*}}</code></td>
   <td>This tag will be replaced with a clickable and encrypted link to an e-mail
-      address. However, the closing <code></a></code> will not be added.</td>
+      address. However, the closing <code>&lt;/a&gt;</code> will not be added.</td>
 </tr>
 <tr>
   <td><code>{{email_url::*}}</code></td>
