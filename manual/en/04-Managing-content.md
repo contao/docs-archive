@@ -1073,10 +1073,13 @@ the current date or including lightbox images.
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>This tag will be replaced with the thumbnail of an image:
-      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>. **width**
-      Thumbnail width, **height** Thumbnail height, **alt** Alternative
-      text, **class** CSS class, **rel** rel-attribute (e.g. "lightbox"),
-      **mode** mode ("proportional", "crop" or "box").</td>
+      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br />
+      <strong>width</strong>: Thumbnail width,<br />
+      <strong>height</strong>: Thumbnail height,<br />
+      <strong>alt</strong>: Alternative text,<br />
+      <strong>class</strong>: CSS class,<br />
+      <strong>rel</strong>: rel-attribute (e.g. "lightbox"),<br />
+      <strong>mode</strong>: Mode ("proportional", "crop" or "box").</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
