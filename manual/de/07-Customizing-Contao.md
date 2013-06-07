@@ -878,16 +878,16 @@ public function myPostDownload($strFile)
 
 ### postLogin
 
-Der "postLogin"-Hook wird nach der Anmeldung eines Benutzers im Frontend
-ausgeführt. Er übergibt das Benutzerobjekt als Argument und erwartet keinen
-Rückgabewert. Hinzugefügt in Version 2.4.3.
+Der "postLogin"-Hook wird nach der Anmeldung eines Frontend-Mitglieds oder
+Backend-Benutzers ausgeführt. Er übergibt das Benutzerobjekt als Argument
+und erwartet keinen Rückgabewert.
 
 ``` {.php}
 // config.php
 $GLOBALS['TL_HOOKS']['postLogin'][] = array('MyClass', 'myPostLogin');
 
 // MyClass.php
-public function myPostLogin(FrontendUser $objUser)
+public function myPostLogin(User $objUser)
 {
     // Beliebiger Code
 }
@@ -896,16 +896,16 @@ public function myPostLogin(FrontendUser $objUser)
 
 ### postLogout
 
-Der "postLogout"-Hook wird nach der Abmeldung eines Benutzers im Frontend
-ausgeführt. Er übergibt das Benutzerobjekt als Argument und erwartet keinen
-Rückgabewert. Hinzugefügt in Version 2.4.3.
+Der "postLogout"-Hook wird nach der Abmeldung eines Frontend-Mitglieds oder
+Backend-Benutzers ausgeführt. Er übergibt das Benutzerobjekt als Argument
+und erwartet keinen Rückgabewert.
 
 ``` {.php}
 // config.php
 $GLOBALS['TL_HOOKS']['postLogout'][] = array('MyClass', 'myPostLogout');
 
 // MyClass.php
-public function myPostLogout(FrontendUser $objUser)
+public function myPostLogout(User $objUser)
 {
     // Beliebiger Code
 }

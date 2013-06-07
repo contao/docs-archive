@@ -884,16 +884,16 @@ public function myPostDownload($strFile)
 
 ### postLogin
 
-The "postLogin" hook is triggered after a user has logged into the front end. It
-passes the user object as argument and does not expect a return value. It is
-available from version 2.4.3.
+The "postLogin" hook is triggered after a front end member or back end user
+has logged in. It passes the user object as argument and does not expect
+a return value.
 
 ``` {.php}
 // config.php
 $GLOBALS['TL_HOOKS']['postLogin'][] = array('MyClass', 'myPostLogin');
 
 // MyClass.php
-public function myPostLogin(FrontendUser $objUser)
+public function myPostLogin(User $objUser)
 {
     // Do something
 }
@@ -902,16 +902,16 @@ public function myPostLogin(FrontendUser $objUser)
 
 ### postLogout
 
-The "postLogout" hook is triggered after a user has logged out from the front
-end. It passes the user object as argument and does not expect a return value.
-It is available from version 2.4.3.
+The "postLogout" hook is triggered after a front end member or back end user
+has logged out. It passes the user object as argument and does not expect
+a return value.
 
 ``` {.php}
 // config.php
 $GLOBALS['TL_HOOKS']['postLogout'][] = array('MyClass', 'myPostLogout');
 
 // MyClass.php
-public function myPostLogout(FrontendUser $objUser)
+public function myPostLogout(User $objUser)
 {
     // Do something
 }
