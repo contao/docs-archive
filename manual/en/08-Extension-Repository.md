@@ -111,6 +111,10 @@ release and pushed the tag to the central GitHub repository.
 
 Enter the HTTPS URL of the GitHub repository in the settings.
 
+You can also specify the root folder name of your repository. In this case, the
+files and folders at the same level of this root folder will be ignored during
+the import.
+
 ![](https://raw.github.com/contao/docs/3.0/manual/en/images/github-import.jpg)
 
 If you select a tag, its files will be downloaded automatically and are then
