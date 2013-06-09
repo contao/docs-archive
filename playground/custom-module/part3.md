@@ -3,11 +3,11 @@
   
 ![Create a custom TYPOlight module CD Collection](assets/introimg.jpg)
 
-In the previous part of the tutorial we have created the Data Container Array for our module. Now when we got our backend section ready, we can create a frontend module that will display our collection on the website. We already have got C, U and D  out of CRUD – now it’s time to develop the Read section.
+In the previous part of the tutorial we have created the Data Container Array for our module. Now when we got our back end section ready, we can create a front end module that will display our collection on the website. We already have got C, U and D  out of CRUD – now it’s time to develop the Read section.
 
-Before we start, I want to remind you that the frontend section of module usually consists of php files in the module’s root directory and template-files in the /templates directory.
+Before we start, I want to remind you that the front end section of module usually consists of php files in the module’s root directory and template-files in the `/templates` directory.
 
-The TYPOlight isn’t bulid upon a typical MVC framework, as the controller and model are mixed together. So we can say the php files in the /cd_collection are sort of hybrid. They are used to retreive data from the database, parse it and pass to the templates, which are stored in the /templates directory.
+Contao isn’t build upon a typical MVC framework, as the controller and model are mixed together. So we can say the php files in the `/cd_collection` are sort of hybrid. They are used to retreive data from the database, parse it and pass to the templates, which are stored in the `/templates` directory.
 
 
 ![Controller-template schema](assets/controller-template-schema.jpg)
@@ -34,7 +34,7 @@ There is nothing to describe here, so let’s write some code.
 
 **Note: no working link for "first part" below**
 
-In the first part, we defined in config.php, that our frontend module will use ModuleCdCollection class:
+In the first part, we defined in config.php, that our front end module will use `ModuleCdCollection` class:
 
 ```php
 // Front end module
@@ -47,7 +47,7 @@ array_insert($GLOBALS['FE_MOD']['miscellaneous'], 0, array
 
 It is a good convention to name a file the way file_name==class_name. You might know this from various php frameworks.
 
-Now open up the ModuleCdCollection.php file and put the following code:
+Now open up the `ModuleCdCollection.php` file and put the following code:
 
 
 ```php
@@ -68,9 +68,9 @@ class ModuleCdCollection extends Module
 ?>
 ```
 
-As you can see we have created the ModuleCdCollection class that extends Module. The Module class provides two unique functions and one unique variable. The protected variable $strTemplate defines a template file that will be used by module. Notice that we do not include file path, as Contao takes module_root/templates as a default one. I hope you suppose that Contao will look for our template files in path templates/mod_cdcollection.HTML5 & mod_cdcollection.XHTML.
+As you can see we have created the `ModuleCdCollection` class that extends Module. The Module class provides two unique functions and one unique variable. The protected variable $strTemplate defines a template file that will be used by module. Notice that we do not include file path, as Contao takes module_root/templates as a default one. I hope you suppose that Contao will look for our template files in path templates/mod_cdcollection.HTML5 & mod_cdcollection.XHTML.
 
-The two unique functions for Module are compile() and generate(). Those could be divided into frontend – compile() and backend – generate(). We actually don’t need the generate function as we want to display collection only in the frontend (Contao can display a module in the backend using DCA).
+The two unique functions for Module are `compile()` and `generate()`. Those could be divided into front end – `compile()` and back end – `generate()`. We actually don’t need the generate function as we want to display collection only in the front end (Contao can display a module in the back end using DCA).
 
 Now, it is time for the most interesting part of module development – the actual coding:
 
@@ -116,19 +116,15 @@ protected function compile()
 
 ```
 
-
-
-Let’s see what we have done here. Firstly, we retrieve the $_GET['cat'] variable, which will tell our module what category should be displayed. If this variable is not set, automatically display the first added category (id = 1).
+Let’s see what we have done here. Firstly, we retrieve the `$_GET['cat']` variable, which will tell our module what category should be displayed. If this variable is not set, automatically display the first added category (id = 1).
 
 Next, we execute three queries to the database: cds list of current category, current category data, full list of categories. The full list of categories will be used to create a dropdown menu, which allows visitor to switch between categories.
 
-In the first while() loop, we get all the cds and put them into array. $objCds->next() makes sure none of the records is omitted.
+In the first `while()` loop, we get all the cds and put them into array. `$objCds->next()` makes sure none of the records is omitted.
 
 In the second loop, we do the same thing as before, but with categories. We also flag which of the dropdown menu options is currently active. Usability +1.
 
 Finally, we assign all the data to the template.
-
-
 
 
 ##templates/mod_cdcollection.HTML5 / XHTML
@@ -170,7 +166,7 @@ Firstly, we have made a form that provides a dropdown menu with the categories. 
 
 Next, we display the category’s title and description.
 
-We create a table that will holds our cds. Then comes a foreach() loop that goes through our array of cds. I hope this code is clear for you. You could also put this code to check how the array looks like:
+We create a table that will holds our cds. Then comes a `foreach()` loop that goes through our array of cds. I hope this code is clear for you. You could also put this code to check how the array looks like:
 
 ```php
 <pre><?php print_r($this->cds); ?></pre>
@@ -183,17 +179,15 @@ Try it out now. It should display something similar to this:
 ![Final image](assets/final.jpg)
 
 
-
-
 ##Labels
 
-Although our module is working, we should make it more user friendly in the backend. What I mean is changing the e.g. {title_legend} to “CD title”.
+Although our module is working, we should make it more user friendly in the back end. What I mean is changing the e.g. `{title_legend}` to “CD title”.
 
-Create a new directory “en” in the /languages folder. Then create three files called tl\_cds.php, tl\_cds\_category.php and modules.php.
+Create a new directory “en” in the `/languages` folder. Then create three files called `tl\_cds.php`, `tl\_cds\_category.php` and `modules.php`.
 
 Notice that the naming convention is the same as in /dca folder.
 
-Okay, open up the languages/en/tl\_cds\_category.php and put the following code:
+Okay, open up the `languages/en/tl\_cds\_category.php` and put the following code:
 
 
 
@@ -268,12 +262,12 @@ Field’s label is an array, which first element contains the field’s title, w
 
 
 ```php
-$GLOBALS['TL_LANG']['tl_cds_category']['new']    = array('New category', 'Create a new category');
+$GLOBALS['TL_LANG']['tl_cds_category']['new'] = array('New category', 'Create a new category');
 ```
 
-This button is not defined in the dca array, and is visible unless the table config’s array has got the “closed” property set to true 'closed' => true.
+This button is not defined in the dca array, and is visible unless the table config’s array has got the “closed” property set to true `'closed' => true`.
 
-That’s all of the labels theory for now. Let’s fill the tl_cds.php file:
+That’s all of the labels theory for now. Let’s fill the `tl_cds.php` file:
 
 
 
@@ -311,7 +305,7 @@ The above code is very similar to the previous one. I think it doesn’t need an
 
 Okay, we already got the “internal” labels ready. Now we should create few other labels that are displayed in miscellaneous sections of Contao.
 
-Open the languages/en/modules.php file and put the following content:
+Open the `languages/en/modules.php` file and put the following content:
 
 
 ```php
@@ -341,7 +335,7 @@ Instead of explaining what they affect, I will simply show you on the image:
 
 As the last point, I want to show you how to simply secure our files that they can’t be accessed directly. This method is used in (almost) all php files in Contao.
 
-Now open up all the php files of our module and replace the <?php  tag with:
+Now open up all the php files of our module and replace the `<?php` tag with:
 
 
 ```php
