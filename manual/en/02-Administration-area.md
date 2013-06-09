@@ -105,7 +105,7 @@ version and click the "Restore" button.
 ### Editing multiple records
 
 The ability to edit more than one record at a time clearly makes Contao stand
-out from the variety of Content management systems. Click the "Edit multiple"
+out from the variety of content management systems. Click the "Edit multiple"
 button to switch the editing mode, then select one or more records and choose
 the fields that you want to modify.
 

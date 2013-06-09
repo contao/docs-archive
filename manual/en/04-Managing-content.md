@@ -247,7 +247,7 @@ relate to a certain language or a particular topic.
 Front end modules are used to display news items on the website. They can be
 configured with the "Modules" module in the back end and have to be added to an
 article or page layout to actually show up on the website. The news/blog
-extension includes 4 front end modules:
+extension includes four front end modules:
 
 <table>
 <tr>
@@ -311,7 +311,7 @@ to a certain language or a particular topic.
 Front end modules are used to display events on the website. They can be
 configured with the "Modules" module in the back end and have to be added to an
 article or page layout to actually show up on the website. The calendar
-extension includes 4 front end modules:
+extension includes four front end modules:
 
 <table>
 <tr>
@@ -403,7 +403,7 @@ from a CSV file.
 ### Personalized newsletters
 
 Insofar as you are sending newsletters to registered members, you can personalize
-them with so called "Simple Tokens". Simple tokens are similar to [insert tags][3]
+them with so called "Simple Tokens". Simple tokens are similar to [insert tags][3] 
 and can be used in both the HTML and the text content of a newsletter.
 
 ```
@@ -422,7 +422,7 @@ The Administrator
 
 In contrast to insert tags, however, simple tokens do not only allow you to
 insert data of the member table `tl_member`, but also to realize simple
-if-else-statements to e.g. specify the salutation.
+if-else statements to e.g. specify the salutation.
 
 ```
 {if gender=="male"}

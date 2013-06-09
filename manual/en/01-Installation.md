@@ -9,8 +9,8 @@ Contao.
 ## Installing Contao
 
 First of all, download the [latest Contao archive][1] and extract it on your
-local computer. Move the files into the `htdocs` folder of your local XAMPP
-installation or upload them to your server with an FTP program (we recommend
+local computer. Move the files into the `htdocs` folder of your local installation 
+(e.g. XAMPP) or upload them to your server with an FTP program (we recommend
 using [WinSCP][2]). Depending on your server configuration, the public folder is
 most likely called `htdocs`, `httpdocs`, `html` or `public_html`
 
@@ -57,7 +57,7 @@ database. Confirm the changes and click the "Update database" button.
 A template is a preconfigured website that includes an example site structure
 and several style sheets to format the Contao core modules and content elements.
 The default template is called "Music Academy". To import it, choose the
-`example_website.sql` option from the drop-down menu an click the "Import
+`music_academy.sql` option from the drop-down menu an click the "Import
 template" button.
 
 **Existing data will be overriden during the template import!**
@@ -76,7 +76,7 @@ user "k.jones" with the password "kevinjones".
 
 If you are running an Apache server and are allowed to use mod_rewrite, you can
 make Contao generate search engine friendly URLs that look like static HTML
-documents. A set of default rewrite rules is stored in the `.htaccess.default`
+documents. A set of default rewrite rules is stored in the `.htaccess.default` 
 file in the Contao directory. Rename this file to `.htaccess` so the Apache
 server can handle it and then log into the back end and navigate to the system
 settings. Select "Rewrite URLs" in the "Front end configuration" section and
