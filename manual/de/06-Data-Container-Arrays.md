@@ -764,6 +764,13 @@ Ausdrucks geprüft werden.
   <td>Bezeichnung der leeren Option (Standard: <code>-</code>).</td>
 </tr>
 <tr>
+  <td>chosen</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Auswahlmenüs mittels 
+      <a href="http://harvesthq.github.io/chosen/" target="_blank">Chosen</a>
+      erweitern.</td>
+</tr>
+<tr>
   <td>findInSet</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Sortiert ein Optionsarray anhand der Schlüssel anstatt anhand der
