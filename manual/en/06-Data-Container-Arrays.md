@@ -715,6 +715,12 @@ Each field can be validated against a regular expression.
   <td>Label for the blank option (defaults to <code>-</code>).</td>
 </tr>
 <tr>
+  <td>chosen</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Native selects enhanced with
+      <a href="http://harvesthq.github.io/chosen/" target="_blank">Chosen</a>.</td>
+</tr>
+<tr>
   <td>findInSet</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Sort by the actual option values instead of their labels.</td>
