@@ -35,8 +35,8 @@ $GLOBALS['TL_CONFIG']['debugMode'] = false;
 $GLOBALS['TL_CONFIG']['displayErrors'] = false;
 ```
 
-Make sure to store your changes above the `INSTALL TOOL START` line, otherwise
-they will be removed by the settings module. And **never use the `config.php`
+Make sure to store your changes above the `INSTALL SCRIPT START` line, otherwise
+they will be removed by the settings module. And **never use the `config.php` 
 file to store configuration parameters**, because the file might be overridden on
 updates!
 
@@ -174,7 +174,7 @@ This page explains how to customize the Rich Text Editor and save the changes so
 they will not be overriden on the next Contao update. Note that Contao does not
 include all TinyMCE plugins by default, so if you want to use a certain plugin
 that is not part of the Contao distribution, download it from the [TinyMCE
-project website][4] and move it into the `plugins/tinyMCE/plugins` folder.
+project website][4] and move it into the `assets/tinymce/plugins` folder.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/rich-text-editor.jpg)
 
@@ -237,7 +237,7 @@ class ModuleMyNavigation extends ModuleNavigation
 
 Module and content element classes can be assigned dynamically in the Contao
 system configuration, which allows you to easily replace them with your own
-versions. The names of the module classes are stored in the global `FE_MOD`
+versions. The names of the module classes are stored in the global `FE_MOD` 
 array.
 
 ``` {.php}
