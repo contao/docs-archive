@@ -74,7 +74,7 @@ guests.
 ## Extensions
 
 Extensions are an essential part of Contao, because they allow you to add extra
-functionality. Currently there are 1,292 extensions available in the Contao
+functionality. There are more than 1,400 extensions available in the Contao
 Extension Repository, which you can browse directly in the back end.
 Communication with the repository server is done via SOAP, so you need to enable
 the PHP SOAP extension to use the service (if not enabled by default).
