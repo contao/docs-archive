@@ -731,6 +731,11 @@ Each field can be validated against a regular expression.
   <td>If true the current field has a date picker.</td>
 </tr>
 <tr>
+  <td>colorpicker</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true the current field has a color picker.</td>
+</tr>
+<tr>
   <td>feEditable</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>If true the current field can be edited in the front end. Applies to table
