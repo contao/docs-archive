@@ -36,7 +36,7 @@ $GLOBALS['TL_CONFIG']['debugMode'] = false;
 $GLOBALS['TL_CONFIG']['displayErrors'] = false;
 ```
 
-Platzieren Sie Ihre Änderungen unbedingt oberhalb der Zeile `INSTALL TOOL
+Platzieren Sie Ihre Änderungen unbedingt oberhalb der Zeile `INSTALL SCRIPT
 START`, da sie andernfalls automatisch entfernt werden. Und **speichern Sie Ihre
 Einstellungen niemals in der Datei config.php**, da diese Datei bei
 Aktualisierungen überschrieben werden kann!
@@ -175,7 +175,7 @@ Diese Seite erklärt, wie man die Rich Text Editor-Konfiguration anpasst und
 updatesicher speichert. Beachten Sie, dass Contao standardmäßig nicht alle
 TinyMCE-Plugins enthält und fehlende Ressourcen gegebenenfalls von der
 [TinyMCE-Projektwebseite][4] heruntergeladen und in den Ordner
-`plugins/tinyMCE/plugins` Ihrer Contao-Installation kopiert werden müssen.
+`assets/tinyMCE/plugins` Ihrer Contao-Installation kopiert werden müssen.
 
 ![](https://raw.github.com/contao/docs/3.0/manual/de/images/rich-text-editor.jpg)
 

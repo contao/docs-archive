@@ -77,12 +77,12 @@ aufrufen, die für Gäste nicht erreichbar sind.
 ## Erweiterungen
 
 Erweiterungen sind ein wichtiger Bestandteil von Contao, weil sie das
-Hinzufügen weiterer Funktionalität ermöglichen. Momentan befinden sich 1.293
+Hinzufügen weiterer Funktionalität ermöglichen. Momentan befinden sich 1.400
 Erweiterungen im Extension Repository, die Sie direkt im Backend aufrufen
 können. Beachten Sie dabei, dass das Extension Repository 2.0 nur noch solche
 Erweiterungen anzeigt, die zu Ihrer Contao-Version kompatibel sind. Die Anzahl
 der Erweiterungen in Ihrem Erweiterungskatalog wird daher je nach Version
-wahrscheinlich deutlich unter 1.293 liegen. Die Kommunikation mit dem
+wahrscheinlich deutlich unter 1.400 liegen. Die Kommunikation mit dem
 Repository-Server erfolgt mittels SOAP, daher benötigen Sie die PHP
 SOAP-Erweiterungen, um den Service zu nutzen.
 
