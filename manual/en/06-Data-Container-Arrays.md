@@ -134,9 +134,12 @@ edited or deleted.
 <tr>
   <td>sql</td>
   <td>Table configuration (<code>array</code>)</td>
-  <td>Describes table configuration, f.e. 
-      <code>'keys' => array('id'=>'primary', 'pid'=>'index')</code>
-  </td>
+  <td>Describes table configuration, e.g.
+  <code>'keys' => array
+  		(
+				'id' => 'primary',
+				'pid' => 'index'
+			)</code></td>
 </tr>
 </table>
 
@@ -511,13 +514,13 @@ filter criteria.
 <tr>
   <td>sql</td>
   <td>Database field definition (<code>string</code>)</td>
-  <td>Describes data type and its database configuration, f.e.
+  <td>Describes data type and its database configuration, e.g.
       <code>varchar(255) NOT NULL default ''</code></td>
 </tr>
 <tr>
   <td>relation</td>
   <td>Configuration of relations (<code>array</code>)</td>
-  <td>Describes relation to parent table (see next section "relations").
+  <td>Describes relation to parent table (see paragraph "relations").
   </td>
 </tr>
 <tr>
@@ -801,7 +804,7 @@ Each field can be validated against a regular expression.
 
 ### Relations
 
-Relations describe, how database fields are related to further tables. 
+Relations describes, how database fields are related to other tables. 
 Define the referenced table in the `foreignKey` key. Relations provide 
 model classes to load referenced data sets efficiently and developer friendly.
 (see `Model::getRelated()`).
@@ -830,7 +833,7 @@ model classes to load referenced data sets efficiently and developer friendly.
   <td>Load behaviour<br> (<code>string</code>)</td>
   <td>
       <b>lazy</b> Loading referenced records only when necessary
-         (standard, saves RAM)<br>
+         (default, saves RAM)<br>
       <b>eager</b> Loading referenced records automatically (saves database calls)
   </td>
 </tr>
