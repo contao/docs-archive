@@ -727,14 +727,14 @@ Each field can be validated against a regular expression.
 </tr>
 <tr>
   <td>datepicker</td>
-  <td>Date picker (<code>string</code>)</td>
-  <td>Date picker configuration string.</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true the current field has a date picker.</td>
 </tr>
 <tr>
   <td>feEditable</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>If true the current field can be edited in the frontend. Applies to table
-      tl_member only.</td>
+  <td>If true the current field can be edited in the front end. Applies to table
+      <code>tl_member</code> only.</td>
 </tr>
 <tr>
   <td>feGroup</td>

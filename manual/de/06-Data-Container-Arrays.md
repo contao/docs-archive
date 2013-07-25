@@ -778,8 +778,8 @@ Ausdrucks geprüft werden.
 </tr>
 <tr>
   <td>datepicker</td>
-  <td>Date-Picker (<code>string</code>)</td>
-  <td>Konfiguration des Assistenten zur Datumsauswahl.</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Aktiviert das Popup zur Auswahl eines Datums.</td>
 </tr>
 <tr>
   <td>feEditable</td>
