@@ -373,12 +373,12 @@ supports 6 different page types which are explained below.
 <tr>
   <td>403 Access denied</td>
   <td>If a user requests a protected page without permission, a 403 error page
-      will be loaded instead.</td>
+      will be loaded instead. This page must be added <b>on the first level</b> inside your website root page.</td>
 </tr>
 <tr>
   <td>404 Page not found</td>
   <td>If a user requests a non-existent page, a 404 error page will be loaded
-      instead.</td>
+      instead. This page must be added <b>on the first level</b> inside your website root page.</td>
 </tr>
 </table>
 
