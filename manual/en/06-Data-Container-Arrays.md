@@ -131,6 +131,13 @@ edited or deleted.
   <td>Calls a custom function when a record is duplicated and passes the insert
       ID and the DataContainer object as argument. Added in version 2.8.2.</td>
 </tr>
+<tr>
+  <td>sql</td>
+  <td>Table configuration (<code>array</code>)</td>
+  <td>Describes table configuration, f.e. 
+      <code>'keys' => array('id'=>'primary', 'pid'=>'index')</code>
+  </td>
+</tr>
 </table>
 
 
@@ -502,6 +509,18 @@ filter criteria.
       specify as <code>array('Class', 'Method')</code>.</td>
 </tr>
 <tr>
+  <td>sql</td>
+  <td>Database field definition (<code>string</code>)</td>
+  <td>Describes data type and its database configuration, f.e.
+      <code>varchar(255) NOT NULL default ''</code></td>
+</tr>
+<tr>
+  <td>relation</td>
+  <td>Configuration of relations (<code>array</code>)</td>
+  <td>Describes relation to parent table (see next section "relations").
+  </td>
+</tr>
+<tr>
   <td>load_callback</td>
   <td>Callback functions (<code>array</code>)</td>
   <td>These functions will be called when the field is loaded. Please specify
@@ -787,6 +806,44 @@ Each field can be validated against a regular expression.
   <td>readonly</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Makes the field read only (not supported by all field types).</td>
+</tr>
+</table>
+
+
+### Relations
+
+Relations describe, how database fields are related to further tables. 
+Define the referenced table in the `foreignKey` key. Relations provide 
+model classes to load referenced data sets efficiently and developer friendly.
+(see `Model::getRelated()`).
+
+<table>
+<tr>
+  <th>Key</th>
+  <th>Value</th>
+  <th>Describtion</th>
+</tr>
+<tr>
+  <td>type</td>
+  <td>Type of relation<br> (<code>string</code>)
+  <td>
+    <b>hasOne</b> Value references a child data set<br>
+    <b>hasMany</b> Value references some child data sets
+       (serialized)<br>
+    <b>belongsTo</b> Value references a parent data set
+       (z.B. <code>pid</code>)<br>
+    <b>belongsToMany</b> Value references some parent data sets
+       (serialized)<br>
+  </td>
+</tr>
+<tr>
+  <td>load</td>
+  <td>Load behaviour<br> (<code>string</code>)</td>
+  <td>
+      <b>lazy</b> Loading referenced records only when necessary
+         (standard, saves RAM)<br>
+      <b>eager</b> Loading referenced records automatically (saves database calls)
+  </td>
 </tr>
 </table>
 
