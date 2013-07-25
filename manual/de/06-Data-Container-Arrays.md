@@ -78,6 +78,11 @@ beim Löschen von Elterndatensätzen passiert.
   <td>Verbietet das Bearbeiten der Tabelle.</td>
 </tr>
 <tr>
+  <td>notDeletable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Verbietet das Löschen von Datensätzen in der Tabelle.</td>
+</tr>
+<tr>
   <td>switchToEdit</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Aktiviert die "Speichern und Bearbeiten"-Schaltfläche beim Anlegen eines

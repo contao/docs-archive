@@ -78,6 +78,11 @@ edited or deleted.
   <td>If true, the table cannot be edited.</td>
 </tr>
 <tr>
+  <td>notDeletable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true, records in the table cannot be deleted.</td>
+</tr>
+<tr>
   <td>switchToEdit</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Activates the "save and edit" button when a new record is added (sorting
