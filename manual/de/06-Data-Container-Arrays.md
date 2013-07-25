@@ -782,6 +782,11 @@ Ausdrucks geprüft werden.
   <td>Aktiviert das Popup zur Auswahl eines Datums.</td>
 </tr>
 <tr>
+  <td>colorpicker</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Aktiviert das Popup zur Farbauswahl.</td>
+</tr>
+<tr>
   <td>feEditable</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Legt fest, ob ein Feld im Frontend bearbeitet werden darf. Gilt nur für
