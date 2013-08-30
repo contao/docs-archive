@@ -18,7 +18,7 @@ Wenn Sie SSH-Zugriff auf den Server haben, können Sie alternativ folgende
 Befehle verwenden:
 
 ``` {.bash}
-curl -L http://install.contao.org | tar -xzp
+curl -L http://download.contao.org | tar -xzp
 ```
 
 

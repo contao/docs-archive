@@ -9,7 +9,7 @@ Contao.
 ## Installing Contao
 
 First of all, download the [latest Contao archive][1] and extract it on your
-local computer. Move the files into the `htdocs` folder of your local installation 
+local computer. Move the files into the `htdocs` folder of your local installation
 (e.g. XAMPP) or upload them to your server with an FTP program (we recommend
 using [WinSCP][2]). Depending on your server configuration, the public folder is
 most likely called `htdocs`, `httpdocs`, `html` or `public_html`
@@ -18,7 +18,7 @@ If you have SSH access, you can download and extract the archive with the
 following commands:
 
 ``` {.bash}
-curl -L http://install.contao.org | tar -xzp
+curl -L http://download.contao.org | tar -xzp
 ```
 
 
@@ -76,7 +76,7 @@ user "k.jones" with the password "kevinjones".
 
 If you are running an Apache server and are allowed to use mod_rewrite, you can
 make Contao generate search engine friendly URLs that look like static HTML
-documents. A set of default rewrite rules is stored in the `.htaccess.default` 
+documents. A set of default rewrite rules is stored in the `.htaccess.default`
 file in the Contao directory. Rename this file to `.htaccess` so the Apache
 server can handle it and then log into the back end and navigate to the system
 settings. Select "Rewrite URLs" in the "Front end configuration" section and
