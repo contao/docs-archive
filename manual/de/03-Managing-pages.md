@@ -112,11 +112,11 @@ IE-spezifischen Wert überschreiben.
 
 ## Module
 
-Mit Hilfe von Frontend-Modulen können Sie Ihre Webseite um fast jedeerdenkliche
-Funktionalität erweitern. Der Contao-Core enthältModule, um verschiedene
-Navigationsmodule zu erstellen, dieBenutzerregistrierung und -anmeldung zu
-ermöglichen, die Webseite zudurchsuchen, RSS-Feeds zu importieren und vieles
-mehr. Module können imBackend unter "Themes" -> "Frontend-Module" konfiguriert
+Mit Hilfe von Frontend-Modulen können Sie Ihre Webseite um fast jede erdenkliche
+Funktionalität erweitern. Der Contao-Core enthält Module, um verschiedene
+Navigationsmodule zu erstellen, die Benutzerregistrierung und -anmeldung zu
+ermöglichen, die Webseite zu durchsuchen, RSS-Feeds zu importieren und vieles
+mehr. Module können im Backend unter "Themes" -> "Frontend-Module" konfiguriert
 werden.
 
 <table>
