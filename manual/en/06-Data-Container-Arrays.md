@@ -591,13 +591,6 @@ Each field can be validated against a regular expression.
   <td>Number of rows (textarea fields only).</td>
 </tr>
 <tr>
-  <td>wrap</td>
-  <td>Word wrapping (<code>string</code>)</td>
-  <td><b>off</b> disable word wrapping<br>
-      <b>soft</b> soft word wrapping<br>
-      <b>hard</b> hard word wrapping</td>
-</tr>
-<tr>
   <td>multiple</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Make the input field multiple. Applies to text fields, select menus, radio
