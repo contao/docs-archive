@@ -627,7 +627,7 @@ Ausdrucks geprüft werden.
   <td>Anzahl an Reihen (gilt nur für Textareas).</td>
 </tr>
 <tr>
-  <td>wrap</td>
+  <td><del>wrap</del></td>
   <td>Zeilenumbruch (<code>string</code>)</td>
   <td><b>off</b> Zeilenumbruch ausschalten<br>
       <b>soft</b> Weicher Zeilenumbruch<br>
