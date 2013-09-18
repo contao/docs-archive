@@ -1106,6 +1106,10 @@ the current date or including lightbox images.
   <td>This tag will be replaced with the request token of the current
       session.</td>
 </tr>
+<tr>
+  <td><code>{{toggle_view}}</code></td>
+  <td>Adds the link which allows you to switch between mobile and desktop layout.</td>
+</tr>
 </table>
 
 
