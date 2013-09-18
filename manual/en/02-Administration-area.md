@@ -75,9 +75,8 @@ edit, duplicate, delete and show.
 ### Parent view icons
 
 The "parent view" offers two additional navigation icons to control the order of
-the records. From version 2.7, the order can also be changed via drag and drop.
-To do so, simply click on a record (not a navigation icon) and drag it to its
-new position.
+the records. The order can also be changed via drag and drop. To do so, simply
+click on the navigation icon "Drag and drop" and drag it to its new position.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/parent-view-icons.jpg)
 
@@ -98,6 +97,8 @@ Contao automatically creates new versions of a record every time you save it. As
 soon as there is more than one version, a drop-down menu which allows you to
 revert back to a prior version appears at the top of the form. Simply choose a
 version and click the "Restore" button.
+
+The icon to the right of the "Restore" button allows you to see the differences between two versions.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/versioning.jpg)
 
