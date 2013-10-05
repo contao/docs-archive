@@ -8,6 +8,20 @@ Ablauf der Contao Core-Engine beeinflussen, ohne dabei deren Dateien ändern zu
 müssen.
 
 
+##Internen Cache umgehen 
+
+Vor der Anpassung von Contao oder der Entwicklung von Erweiterungen sollte 
+unbedingt der interne Cache deaktiviert bzw. umgangen werden.
+Dazu navigieren Sie im Backend zu "System"->"Einstellungen" und setzten einen 
+Haken unter "Globale Einstellungen" bei "Internen Cache umgehen".
+
+![](https://raw.github.com/contao/docs/3.1/manual/de/images/internen-cache-umgehen.jpg)
+
+Sobald die Seite jedoch in den produktiven Betrieb geht, sollte unbedingt der 
+Haken bei "Internen Cache umgehen" entfernt werden, da das System ohne den 
+Cache gerade bei größeren Projekten um einiges langsamer reagiert.
+
+
 ## Konfiguration anpassen
 
 Die Contao-Konfiguration ist in drei Bestandteile aufgeteilt: die
@@ -105,27 +119,12 @@ Reihenfolge geladen werden. Nennen Sie es also nicht `custom`, wenn Sie damit
 die `news`-Erweiterung anpassen wollen.
 
 
-### Die Datenbank erweitern
-
-Die Datenbank-Konfiguration ist in den `config/database.sql`-Dateien der
-verschiedenen Contao-Module gespeichert. Die SQL-Dateien werden nicht geparst,
-sondern dienen der Berechnung der Unterschiede zwischen den Contao-Vorgaben und
-den tatsächlichen Tabellen. Daher können Sie auch Felder beeinflussen, die von
-einem anderen Modul definiert wurden. Folgender Code legt das neue Feld an:
-
-``` {.sql}
-CREATE TABLE `tl_member`(
-  `customer_number` varchar(8) NOT NULL default ''
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-```
-
-Verwenden Sie das [Contao-Installtool][3], um die Datenbank zu aktualisieren.
-
-
 ### Die DCA-Konfiguration erweitern
 
 Legen Sie die Datei `dca/tl_member.php` in Ihrem Modulordner an und fügen Sie
 die Metadaten des neuen Feldes ein.
+Seit Contao 3 werden außerdem auch die dazugehörigen Felder sowie deren 
+Konfiguration für die Datenbank unter `sql` direkt mit angegeben. 
 
 ``` {.php}
 // Anpassung der Palette
@@ -142,12 +141,16 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
     'label'     => &$GLOBALS['TL_LANG']['tl_member']['customer_number'],
     'exclude'   => true,
     'inputType' => 'text',
-    'eval'      => array('mandatory'=>true, 'rgxp'=>'digit', 'maxlength'=>8)
+    'eval'      => array('mandatory'=>true, 'rgxp'=>'digit', 'maxlength'=>8),
+    'sql'       => "varchar(8) NOT NULL default ''"
 );
 ```
 
 Falls Sie den obigen Code nicht verstehen, lesen Sie den Abschnitt über [Data
 Container Arrays][1].
+
+Nachdem Sie die Datei abgespeichert haben, müssen Sie die Datenbank 
+aktualisieren. Dazu verwenden Sie das [Contao-Installtool][3].
 
 
 ### Eine Übersetzung hinzufügen
