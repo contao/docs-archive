@@ -955,7 +955,7 @@ page name or the request string.
 ### Include elements
 
 The following Insert Tags allow you to include various resources like articles,
-modules or files from the "templates" directoy.
+modules or files from the "templates" directory.
 
 <table>
 <tr>
