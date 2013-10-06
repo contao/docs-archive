@@ -107,19 +107,7 @@ die `news`-Erweiterung anpassen wollen.
 
 ### Die Datenbank erweitern
 
-Die Datenbank-Konfiguration ist in den `config/database.sql`-Dateien der
-verschiedenen Contao-Module gespeichert. Die SQL-Dateien werden nicht geparst,
-sondern dienen der Berechnung der Unterschiede zwischen den Contao-Vorgaben und
-den tatsächlichen Tabellen. Daher können Sie auch Felder beeinflussen, die von
-einem anderen Modul definiert wurden. Folgender Code legt das neue Feld an:
-
-``` {.sql}
-CREATE TABLE `tl_member`(
-  `customer_number` varchar(8) NOT NULL default ''
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-```
-
-Verwenden Sie das [Contao-Installtool][3], um die Datenbank zu aktualisieren.
+Die Datenbank-Konfiguration in den `config/database.sql`-Dateien wurde in das DCA Feld `sql` verlagert.
 
 
 ### Die DCA-Konfiguration erweitern
@@ -143,6 +131,7 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
     'exclude'   => true,
     'inputType' => 'text',
     'eval'      => array('mandatory'=>true, 'rgxp'=>'digit', 'maxlength'=>8)
+    'sql' => "varchar(8) NOT NULL default ''"
 );
 ```
 
