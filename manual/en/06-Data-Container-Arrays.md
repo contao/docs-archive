@@ -35,7 +35,7 @@ edited or deleted.
 </tr>
 <tr>
   <td>label</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>The label is used with page or file trees and typically includes reference
       to the language array.</td>
 </tr>
@@ -313,7 +313,7 @@ that relate to a particular record only (e.g. editing or deleting a record).
 </tr>
 <tr>
   <td>label</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Button label. Typically a reference to the global language array.</td>
 </tr>
 <tr>
@@ -351,7 +351,7 @@ that relate to a particular record only (e.g. editing or deleting a record).
 </tr>
 <tr>
   <td>label</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Button label. Typically a reference to the global language array.</td>
 </tr>
 <tr>
@@ -394,7 +394,7 @@ filter criteria.
 </tr>
 <tr>
   <td>label</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Field label. Typically a reference to the global language array.</td>
 </tr>
 <tr>
@@ -488,13 +488,13 @@ filter criteria.
 </tr>
 <tr>
   <td>reference</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Array that holds the options labels. Typically a reference to the global
       language array.</td>
 </tr>
 <tr>
   <td>explanation</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Array that holds the explanation. Typically a reference to the global
       language array.</td>
 </tr>
@@ -589,18 +589,82 @@ Each field can be validated against a regular expression.
 <tr>
   <td>rgxp</td>
   <td>Regular expression (<code>string</code>)</td>
-  <td><b>digit</b> allows numeric characters only<br>
-      <b>alpha</b> allows alphabetic characters only<br>
-      <b>alnum</b> allows alphanumeric characters only<br>
-      <b>prcnt</b> allows numbers between 0 and 100<br>
-      <b>extnd</b> disallows <code>#&amp;()/<=></code><br>
-      <b>date</b> expects a valid date<br>
-      <b>time</b> expects avalid time<br>
-      <b>datim</b> expects a valid date and time<br>
-      <b>email</b> expects a valid e-mail address<br>
-      <b>friendly</b> expects a valid "friendly name format" e-mail address<br>
-      <b>url</b> expects a valid URL<br>
-      <b>phone</b> expects a valid phone number</td>
+  <td>
+    <table>
+        <tr>
+          <td><b>alias</b></td>
+          <td>expects a valid alias</td>
+        </tr>
+        <tr>
+          <td><b>alnum</b></td>
+          <td>allows alphanumeric characters only (including full stop [.] 
+          minus [-], underscore [_] and space [ ])</td>
+        </tr>
+        <tr>
+          <td><b>alpha</b></td>
+          <td>allows alphabetic characters only (including full stop [.] 
+          minus [-] and space [ ])</td>
+        </tr>
+        <tr>
+          <td><b>date</b></td>
+          <td>expects a valid date</td>
+        </tr>
+        <tr>
+          <td><b>datim</b></td>
+          <td>expects a valid date and time</td>
+        </tr>
+        <tr>
+          <td><b>digit</b></td>
+          <td>allows numeric characters only (including full stop [.] and 
+          minus [-])</td>
+        </tr>
+        <tr>
+          <td><b>email</b></td>
+          <td>expects a valid e-mail address</td>
+        </tr>
+        <tr>
+          <td><b>emails</b></td>
+          <td>expects a valid list of valid e-mail addresses</td>
+        </tr>
+        <tr>
+          <td><b>extnd</b></td>
+          <td>disallows <code>#&amp;()/&lt;=&gt;</code></td>
+        </tr>
+        <tr>
+          <td><b>folderalias</b></td>
+          <td>expects a valid folder URL alias</td>
+        </tr>
+        <tr>
+          <td><b>friendly</b></td>
+          <td>expects a valid "friendly name format" e-mail address</td>
+        </tr>
+        <tr>
+          <td><b>language</b></td>
+          <td>expects a valid language code</td>
+        </tr>
+        <tr>
+          <td><b>locale</b></td>
+          <td>expects a valid locale (e.g. "de-CH")</td>
+        </tr>
+        <tr>
+          <td><b>phone</b></td>
+          <td>expects a valid phone number (numeric characters, space [ ], 
+          plus [+], minus [-], parentheses [()] and slash [/])</td>
+        </tr>
+        <tr>
+          <td><b>prcnt</b></td>
+          <td>allows numbers between 0 and 100</td>
+        </tr>
+        <tr>
+          <td><b>url</b></td>
+          <td>expects a valid URL</td>
+        </tr>
+        <tr>
+          <td><b>time</b></td>
+          <td>expects a valid time</td>
+        </tr>
+    </table>
+  </td>
 </tr>
 <tr>
   <td>cols</td>
