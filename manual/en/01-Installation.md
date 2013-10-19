@@ -2,7 +2,7 @@
 
 The following chapters explain how to install and update Contao. You will learn
 how to use the Contao install tool, how to synchronize an existing installation
-via FTP, how to set up the "Safe Mode Hack" and how to configure a live server for
+via FTP, how to set up the Safe Mode Hack and how to configure a live server for
 Contao.
 
 
@@ -258,7 +258,7 @@ Open "phpMyAdmin" on the target server and create a new database for Contao.
 Depending on the server configuration, you probably have to use the server
 administration panel (e.g. "Plesk" or "cPanel") to create new databases. Select
 the empty database and click the "Import" tab in the top menu. Then upload the
-SQL dump of your local database an start the import.
+SQL dump of your local database and start the import.
 
 ![](https://raw.github.com/contao/docs/2.11/manual/en/images/sql-import.jpg)
 
