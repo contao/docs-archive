@@ -112,7 +112,7 @@ an overview of the Contao core content elements:
   <td>Generates a video or audio player.</td>
 </tr>
 <tr>
-  <td>Youtube</td>
+  <td>YouTube</td>
   <td>ce_youtube</td>
   <td>Adds a YouTube video.</td>
 </tr>
