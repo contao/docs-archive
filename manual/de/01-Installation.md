@@ -39,7 +39,7 @@ $GLOBALS['TL_CONFIG']['installCount'] = 0; // Hebt die automatische Sperre auf
 #### Datenbankverbindung herstellen
 
 Melden Sie sich an der Administrationsoberfläche Ihres Servers (z.B. "Plesk"
-oder "Cpanel") an und erstellen Sie eine neue Datenbank für Contao. Geben Sie
+oder "cPanel") an und erstellen Sie eine neue Datenbank für Contao. Geben Sie
 die Zugangsdaten im Contao-Installtool ein und beachten Sie die abweichende
 Schreibweise `UTF8` anstatt `UTF-8` in MySQL!
 
@@ -270,7 +270,7 @@ folgenden Screenshots anzupassen:
 
 Öffnen Sie "phpMyAdmin" auf dem Zielserver an und erstellen Sie eine neue
 Datenbank für Contao. Je nach Serverkonfiguration ist das eventuell nur über die
-Verwaltungsoberfläche (z.B. "Plesk" oder "Cpanel") möglich. Wählen Sie die neue
+Verwaltungsoberfläche (z.B. "Plesk" oder "cPanel") möglich. Wählen Sie die neue
 leere Datenbank aus und klicken Sie auf die "Import"-Schaltfläche im oberen
 Menü. Laden Sie dann den SQL-Dump der lokalen Datenbank hoch und starten Sie den
 Import.
