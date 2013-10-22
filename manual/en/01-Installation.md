@@ -54,13 +54,13 @@ database. Confirm the changes and click the "Update database" button.
 
 #### Importing a template
 
-A template is a preconfigured website that includes an example site structure
-and several style sheets to format the Contao core modules and content elements.
+A template is a preconfigured website that includes an example site structure, 
+several style sheets to format the Contao core modules and content elements.
 The default template is called "Music Academy". To import it, choose the
 `example_website.sql` option from the drop-down menu an click the "Import
 template" button.
 
-**Existing data will be overriden during the template import!**
+**Existing data will be overridden during the template import!**
 
 
 #### Creating an admin user
