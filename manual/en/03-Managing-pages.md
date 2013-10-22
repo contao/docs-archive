@@ -72,9 +72,9 @@ can assign the page layout(s) of the new theme in the site structure.
 
 Accessible websites should always be styled using CSS, that is why Contao
 includes a "style sheets" module which allows you to manage format definitions
-in the back end. To reference the various Contao elements,you need to know their
-class names. [Content element classes][5] start with "ce_" (e.g. "ce_text") and
-[module classes][3] with "mod_" (e.g. "mod_search"). If you are not sure, simply
+in the back end. To reference the various Contao elements, you need to know their
+class names. [Content element classes][5] start with "ce\_" (e.g. "ce_text") and
+[module classes][3] with "mod\_" (e.g. "mod_search"). If you are not sure, simply
 look into the page source.
 
 ![](https://raw.github.com/contao/docs/2.11/manual/en/images/style-sheet.jpg)
