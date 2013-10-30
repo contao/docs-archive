@@ -648,6 +648,14 @@ Ausdrucks geprüft werden.
       format"</td>
         </tr>
         <tr>
+          <td><b>language</b></td>
+          <td>prüft auf einen gültigen Sprachcode</td>
+        </tr>
+        <tr>
+          <td><b>locale</b></td>
+          <td>prüft auf ein gültiges Gebietsschema (z.B. "de-CH")</td>
+        </tr>
+        <tr>
           <td><b>folderalias</b></td>
           <td>prüft auf ein gültiges Ordner-URL Alias</td>
         </tr>
