@@ -652,13 +652,6 @@ Ausdrucks geprüft werden.
   <td>Anzahl an Reihen (gilt nur für Textareas).</td>
 </tr>
 <tr>
-  <td>wrap</td>
-  <td>Zeilenumbruch (<code>string</code>)</td>
-  <td><b>off</b> Zeilenumbruch ausschalten<br>
-      <b>soft</b> Weicher Zeilenumbruch<br>
-      <b>hard</b> Harter Zeilenumbruch</td>
-</tr>
-<tr>
   <td>multiple</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Erlaubt die mehrfache Auswahl bzw. Eingabe und kann für Textfelder,
