@@ -592,6 +592,10 @@ Each field can be validated against a regular expression.
   <td>
     <table>
         <tr>
+          <td><b>alias</b></td>
+          <td>expects a valid alias</td>
+        </tr>
+        <tr>
           <td><b>alnum</b></td>
           <td>allows alphanumeric characters only (including full stop [.] 
           minus [-], underscore [_] and space [ ])</td>
@@ -625,6 +629,10 @@ Each field can be validated against a regular expression.
         <tr>
           <td><b>extnd</b></td>
           <td>disallows <code>#&amp;()/&lt;=&gt;</code></td>
+        </tr>
+        <tr>
+          <td><b>folderalias</b></td>
+          <td>expects a valid folder URL alias</td>
         </tr>
         <tr>
           <td><b>friendly</b></td>
