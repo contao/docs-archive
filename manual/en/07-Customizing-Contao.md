@@ -650,6 +650,23 @@ public function myGetPageIdFromUrl($arrFragments)
 ```
 
 
+### getPageLayout
+
+The "getPageLayout" hook is executed before initializing the frontend template.
+It passes the page model, the layout object and a reference to the page object and does not expect a return value. It is available from version 3.1.0.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getPageLayout'][] = array('MyClass', 'mygetPageLayout');
+
+// MyClass.php
+public function mygetPageLayout(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
+{
+    // Beliebiger Code
+}
+```
+
+
 ### getSearchablePages
 
 The "getSearchablePages" hook is triggered when the the search index is rebuilt.
