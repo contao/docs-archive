@@ -36,7 +36,7 @@ beim Löschen von Elterndatensätzen passiert.
 </tr>
 <tr>
   <td>label</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Die Bezeichnung wird in der Seitenstruktur und in der Dateiverwaltung
       verwendet. Enthält normalerweise eine Referenz auf das Spracharray.</td>
 </tr>
@@ -314,7 +314,7 @@ Bearbeiten oder Löschen).
 </tr>
 <tr>
   <td>label</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Bezeichnung der Schaltfläche. Enthält normalerweise eine Referenz auf
       das Spracharray.</td>
 </tr>
@@ -353,7 +353,7 @@ Bearbeiten oder Löschen).
 </tr>
 <tr>
   <td>label</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Bezeichnung der Schaltfläche. Enthält normalerweise eine Referenz auf
       das Spracharray.</td>
 </tr>
@@ -397,7 +397,7 @@ kann.
 </tr>
 <tr>
   <td>label</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Bezeichnung des Feldes. Enthält normalerweise eine Referenz auf das
       Spracharray.</td>
 </tr>
@@ -496,13 +496,13 @@ kann.
 </tr>
 <tr>
   <td>reference</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Bezeichnungen der Optionen. Enthält normalerweise eine Referenz auf das
       Spracharray.</td>
 </tr>
 <tr>
   <td>explanation</td>
-  <td><code>&$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
+  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Erklärung des Feldes. Enthält normalerweise eine Referenz auf das
       Spracharray.</td>
 </tr>
@@ -599,19 +599,66 @@ Ausdrucks geprüft werden.
 <tr>
   <td>rgxp</td>
   <td>Regulärer Ausdruck (<code>string</code>)</td>
-  <td><b>digit</b> erlaubt nur numerische Zeichen<br>
-      <b>alpha</b> erlaubt nur alphabetische Zeichen<br>
-      <b>alnum</b> erlaubt nur alphanumerische Zeichen<br>
-      <b>extnd</b> erlaubt alles außer <code>#&amp;()/<=></code><br>
-      <b>prcnt</b> erlaubt Zahlen zwischen 0 und 100<br>
-      <b>date</b> prüft auf ein gültiges Datum<br>
-      <b>time</b> prüft auf eine gültige Uhrzeit<br>
-      <b>datim</b> prüft auf ein gültiges Datum mit Uhrzeit<br>
-      <b>email</b> prüft auf eine gültige E-Mail-Adresse<br>
-      <b>friendly</b> prüft auf eine gültige E-Mail-Adresse im "friendly name
-      format"<br>
-      <b>url</b> prüft auf eine gültige URL<br>
-      <b>phone</b> prüft auf eine gültige Telefonnummer</td>
+  <td>
+    <table>
+        <tr>
+          <td><b>alnum</b></td>
+          <td>erlaubt nur alphanumerische Zeichen (inklusive Punkt [.] 
+          Minus [-], Unterstrich [_] und Leerschlag [ ])</td>
+        </tr>
+        <tr>
+          <td><b>alpha</b></td>
+          <td>erlaubt nur alphabetische Zeichen (inklusive Punkt [.] 
+          Minus [-] und Leerschlag [ ])</td>
+        </tr>
+        <tr>
+          <td><b>date</b></td>
+          <td>prüft auf ein gültiges Datum</td>
+        </tr>
+        <tr>
+          <td><b>datim</b></td>
+          <td>prüft auf ein gültiges Datum mit Uhrzeit</td>
+        </tr>
+        <tr>
+          <td><b>digit</b></td>
+          <td>erlaubt nur numerische Zeichen (inklusive Punkt [.] und Minus [-])</td>
+        </tr>
+        <tr>
+          <td><b>email</b></td>
+          <td>prüft auf eine gültige E-Mail-Adresse</td>
+        </tr>
+        <tr>
+          <td><b>emails</b></td>
+          <td>prüft auf eine Liste von gültigen E-Mail-Adressen</td>
+        </tr>
+        <tr>
+          <td><b>extnd</b></td>
+          <td>erlaubt alles außer <code>#&amp;()/<=></code></td>
+        </tr>
+        <tr>
+          <td><b>friendly</b></td>
+          <td>prüft auf eine gültige E-Mail-Adresse im "friendly name
+      format"</td>
+        </tr>
+        <tr>
+          <td><b>phone</b></td>
+          <td>prüft auf eine gültige Telefonnummer (Zahlen, Leerschlag [ ], 
+          Plus [+], Minus [-], Klammern [()] und Schrägstrich [/])</td>
+        </tr>
+        <tr>
+          <td><b>prcnt</b></td>
+          <td>erlaubt Zahlen zwischen 0 und 100</td>
+        </tr>
+        <tr>
+          <td><b>url</b></td>
+          <td>prüft auf eine gültige URL</td>
+        </tr>
+        <tr>
+          <td><b>time</b></td>
+          <td>prüft auf eine gültige Uhrzeit</td>
+        </tr>
+    </table>
+  </td>
 </tr>
 <tr>
   <td>cols</td>
