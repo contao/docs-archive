@@ -1106,6 +1106,10 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td>Dieses Tag wird mit dem zur aktuellen Session gehörenden Request-Token
       ersetzt.</td>
 </tr>
+<tr>
+  <td><code>{{toggle_view}}</code></td>
+  <td>Dieser Tag wird mit einem Link ersetzt, welcher zwischen Mobile- und Desktop-Layout wechselt.</td>
+</tr>
 </table>
 
 
