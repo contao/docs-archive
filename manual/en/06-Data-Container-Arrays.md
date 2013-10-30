@@ -639,6 +639,14 @@ Each field can be validated against a regular expression.
           <td>expects a valid "friendly name format" e-mail address</td>
         </tr>
         <tr>
+          <td><b>language</b></td>
+          <td>expects a valid language code</td>
+        </tr>
+        <tr>
+          <td><b>locale</b></td>
+          <td>expects a valid locale (e.g. "de-CH")</td>
+        </tr>
+        <tr>
           <td><b>phone</b></td>
           <td>expects a valid phone number (numeric characters, space [ ], 
           plus [+], minus [-], parentheses [()] and slash [/])</td>
