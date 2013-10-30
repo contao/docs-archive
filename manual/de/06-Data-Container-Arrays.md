@@ -602,6 +602,10 @@ Ausdrucks geprüft werden.
   <td>
     <table>
         <tr>
+          <td><b>alias</b></td>
+          <td>prüft auf ein gültiges Alias</td>
+        </tr>
+        <tr>
           <td><b>alnum</b></td>
           <td>erlaubt nur alphanumerische Zeichen (inklusive Punkt [.] 
           Minus [-], Unterstrich [_] und Leerschlag [ ])</td>
@@ -639,6 +643,10 @@ Ausdrucks geprüft werden.
           <td><b>friendly</b></td>
           <td>prüft auf eine gültige E-Mail-Adresse im "friendly name
       format"</td>
+        </tr>
+        <tr>
+          <td><b>folderalias</b></td>
+          <td>prüft auf ein gültiges Ordner-URL Alias</td>
         </tr>
         <tr>
           <td><b>phone</b></td>
