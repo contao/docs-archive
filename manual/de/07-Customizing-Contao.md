@@ -525,7 +525,7 @@ ein Array als Rückgabewert. Hinzugefügt in Version 2.10.0
 $GLOBALS['TL_HOOKS']['generateBreadcrumb'][] = array('MyClass', 'myGenerateBreadcrumb');
 
 // MyClass.php
-public function myGenerateBreadcrumb($arrItems, Module $objModule)
+public function myGenerateBreadcrumb($arrItems, \Module $objModule)
 {
 	return $arrItems;
 }

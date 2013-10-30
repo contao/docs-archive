@@ -531,7 +531,7 @@ It passes the navigation items and the frontend module as arguments and expects 
 $GLOBALS['TL_HOOKS']['generateBreadcrumb'][] = array('MyClass', 'myGenerateBreadcrumb');
 
 // MyClass.php
-public function myGenerateBreadcrumb($arrItems, Module $objModule)
+public function myGenerateBreadcrumb($arrItems, \Module $objModule)
 {
 	return $arrItems;
 }
