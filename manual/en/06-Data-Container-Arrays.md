@@ -190,9 +190,9 @@ order and you can add custom labels.
   <td><b>search</b> show the search records menu<br>
       <b>sort</b> show the sort records menu<br>
       <b>filter</b> show the filter records menu<br>
-      <b>limit</b> show the limit records menu. Separate options with comma
-      (= space) and semicolon (= new line) like
-      <code>sort,filter;search,limit</code>.</td>
+      <b>limit</b> show the limit records menu.<br>
+      <br>Separate options with comma (= space) and semicolon (= new line) 
+      like <code>sort,filter;search,limit</code>.</td>
 </tr>
 <tr>
   <td>fields</td>
