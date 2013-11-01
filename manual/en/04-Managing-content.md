@@ -1071,7 +1071,7 @@ the current date or including lightbox images.
   <td><code>{{iflng::*}}</code></td>
   <td>This tag will be completely removed if the page language does not match
       the tag language. You can use it to define language-specific labels:
-      <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
+      <code>{{iflng::en}}Your name{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
