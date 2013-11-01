@@ -19,7 +19,7 @@ related tables.
 The "list view" lists the records of a single table in a particular order. The
 results are usually grouped by their first letter.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/list-view.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/list-view.jpg)
 
 
 ### Parent view
@@ -29,7 +29,7 @@ particular record of a parent table. Parent-child relations are used a lot in
 Contao, e.g. for articles and content elements, news archives and news articles
 or style sheets and format definitions.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/parent-view.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/parent-view.jpg)
 
 
 ### Tree view
@@ -39,7 +39,7 @@ are organized in a hierarchical structure. Contao supports listing single
 hierarchical tables (e.g. the site structure) as well as child tables that
 relate to hierarchical parent tables (e.g. articles and pages).
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/tree-view.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/tree-view.jpg)
 
 
 ### Sorting and filtering data
@@ -51,7 +51,7 @@ listings additionally offer a full text search that even supports regular
 expressions. To keep the page loading time down to a minimum, Contao only shows
 30 records at a time.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/sorting-and-filtering.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/sorting-and-filtering.jpg)
 
 
 ## Editing records
@@ -69,7 +69,7 @@ navigation icons.
 The "list view" being the simplest view only offers the four basic actions:
 edit, duplicate, delete and show.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/list-view-icons.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/list-view-icons.jpg)
 
 
 ### Parent view icons
@@ -78,7 +78,7 @@ The "parent view" offers two additional navigation icons to control the order of
 the records. The order can also be changed via drag and drop. To do so, simply
 click on the navigation icon "Drag and drop" and drag it to its new position.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/parent-view-icons.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/parent-view-icons.jpg)
 
 
 ### Tree view icons
@@ -88,7 +88,7 @@ Besides duplicating a single record, it also supports duplicating a record with
 all its sub-records as well as pasting it after or into another record, so you
 can create a nested structure.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/tree-view-icons.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/tree-view-icons.jpg)
 
 
 ### Restoring prior versions
@@ -100,7 +100,7 @@ version and click the "Restore" button.
 
 The icon to the right of the "Restore" button allows you to see the differences between two versions.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/versioning.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/versioning.jpg)
 
 
 ### Editing multiple records
@@ -110,11 +110,11 @@ out from the variety of content management systems. Click the "Edit multiple"
 button to switch the editing mode, then select one or more records and choose
 the fields that you want to modify.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/select-multiple-records.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/select-multiple-records.jpg)
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/select-fields-to-edit.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/select-fields-to-edit.jpg)
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/edit-multiple-records.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/edit-multiple-records.jpg)
 
 
 ## Keyboard shortcuts

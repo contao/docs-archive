@@ -165,7 +165,7 @@ Contao-Core enthaltenen Inhaltselemente.
 Jedes Inhaltselement kann geschützt werden, so dass es nur Gäste oder Benutzer
 einer bestimmten Mitgliedergruppe sehen können.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/geschuetztes-element.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/de/images/geschuetztes-element.jpg)
 
 
 ### Flash-Inhalte
@@ -368,7 +368,7 @@ auch nicht angezeigt.
 Diese Funktion ist für News Archive und Kalender verfügbar.
 Hier ein Beispiel der Kalender-Liste.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/rss-kalender.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/de/images/rss-kalender.jpg)
 
 
 ### Einstellungen
@@ -377,7 +377,7 @@ Ein oder mehrere Kalender können gruppiert und als RSS- bzw. Atom-Feed ausgegeb
 Genau gleich funktioniert es bei News Archiven. Hier kann auch gewählt werden,
 ob nur der Teaser oder der komplette Artikel des Events bzw. der News ausgegeben werden soll.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/rss-bearbeiten.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/de/images/rss-bearbeiten.jpg)
 
 
 ### XML Dateien
@@ -403,7 +403,7 @@ Datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
 [Double Opt-In][2] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
 gespeichert.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/newsletter-abonnenten.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/de/images/newsletter-abonnenten.jpg)
 
 Falls Sie bereits einen Verteiler haben, können Sie die Abonnenten aus einer
 CSV-Datei in Contao importieren.
@@ -461,7 +461,7 @@ indem der Versendungsprozess in mehreren Teilschritten mit einer bestimmten
 Wartezeit dazwischen erfolgt und so die Anzahl der E-Mails pro Minute
 kontrolliert werden kann.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/newsletter-versenden.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/de/images/newsletter-versenden.jpg)
 
 
 ### Frontend-Module

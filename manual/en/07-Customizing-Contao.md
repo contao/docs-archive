@@ -176,7 +176,7 @@ include all TinyMCE plugins by default, so if you want to use a certain plugin
 that is not part of the Contao distribution, download it from the [TinyMCE
 project website][4] and move it into the `assets/tinymce/plugins` folder.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/rich-text-editor.jpg)
+![](https://raw.github.com/contao/docs/3.2/manual/en/images/rich-text-editor.jpg)
 
 To image above shows the default Rich Text Editor configuration file
 `system/config/tinyMCE.php`. To create a custom configuration file, simply copy
