@@ -74,9 +74,9 @@ Befehle: bearbeiten, duplizieren, löschen und Info.
 ### Icons im Parent View
 
 Der "Parent View" bietet zwei zusätzliche Icons, um die Reihenfolge der
-Datensätze zu kontrollieren. Ab Version 2.7 kann die Reihenfolge auch per Drag
-und Drop verändert werden, indem Sie einen Datensatz (außerhalb der
-Navigationssymbole) anklicken und an seine neue Position ziehen.
+Datensätze zu kontrollieren. Die Reihenfolge kann auch mittels Drag & Drop
+geändert werden. Dazu einfach auf das "Drag & Drop" Icon klicken und
+an die neue Position bewegen.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/de/images/parent-view-icons-de.jpg)
 
@@ -97,6 +97,9 @@ Contao erstellt bei jedem Speichervorgang automatisch eine neue Version eines
 Datensatzes. Sobald es mehr als eine Version gibt, erscheint oberhalb des
 Formulars ein Drop-Down-Menü, mit dem Sie zu einer früheren Versionen zurück
 gehen können.
+
+Durch Klick auf das Icon rechts des Drop-Down-Menü werden die Unterschiede
+zwischen der aktuelle und der gewählten Version angezeigt.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/de/images/versionierung.jpg)
 
