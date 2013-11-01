@@ -112,7 +112,7 @@ an overview of the Contao core content elements:
   <td>Generates a video or audio player.</td>
 </tr>
 <tr>
-  <td>Youtube</td>
+  <td>YouTube</td>
   <td>ce_youtube</td>
   <td>Adds a YouTube video.</td>
 </tr>
@@ -171,7 +171,7 @@ group can see it on the website.
 
 Flash content is a special type of content which is not shown in an article on
 the website but loaded into a dynamic Flash movie using "loadVars()". To allow
-communitcation between Contao and Flash, you have to add the following function
+communication between Contao and Flash, you have to add the following function
 to the root frame of your movie:
 
 ``` {.as}

@@ -12,7 +12,7 @@ First of all, download the [latest Contao archive][1] and extract it on your
 local computer. Move the files into the `htdocs` folder of your local installation
 (e.g. XAMPP) or upload them to your server with an FTP program (we recommend
 using [WinSCP][2]). Depending on your server configuration, the public folder is
-most likely called `htdocs`, `httpdocs`, `html` or `public_html`
+most likely called `htdocs`, `httpdocs`, `html` or `public_html`.
 
 If you have SSH access, you can download and extract the archive with the
 following commands:
@@ -37,7 +37,7 @@ $GLOBALS['TL_CONFIG']['installCount'] = 0; // This will remove the automatic loc
 
 #### Connecting to the database
 
-Log into your server administration panel (e.g. "Plesk" or "Cpanel") and create
+Log into your server administration panel (e.g. "Plesk" or "cPanel") and create
 a new database for Contao. Then enter the login credentials in the Contao
 install tool. Note that the Contao default character set `UTF-8` is written as
 `UTF8` in MySQL!
@@ -54,13 +54,13 @@ database. Confirm the changes and click the "Update database" button.
 
 #### Importing a template
 
-A template is a preconfigured website that includes an example site structure
-and several style sheets to format the Contao core modules and content elements.
+A template is a preconfigured website that includes an example site structure, 
+several style sheets to format the Contao core modules and content elements.
 The default template is called "Music Academy". To import it, choose the
 `music_academy.sql` option from the drop-down menu an click the "Import
 template" button.
 
-**Existing data will be overriden during the template import!**
+**Existing data will be overridden during the template import!**
 
 
 #### Creating an admin user
@@ -95,8 +95,8 @@ warning that the local configuration file is not writable.
 ### File permission issues
 
 The term "Safe Mode Hack" is actually misleading, because it implies that the
-problem was caused by the PHP safe_mode. However, it is caused by insufficient
-file permissions and can occur even if safe_mode is disabled, so it should be
+problem was caused by the PHP `safe_mode`. However, it is caused by insufficient
+file permissions and can occur even if `safe_mode` is disabled, so it should be
 called "File Permission Hack" instead. PHP as an Apache module is typically run
 as `wwwrun`, `www-data` or `nobody`, whereas the files that you upload via FTP
 belong to you (e.g. `web4` or `ab5678`). The server therefore denies the PHP
@@ -257,9 +257,9 @@ MySQL version compatibility problems.
 
 Open "phpMyAdmin" on the target server and create a new database for Contao.
 Depending on the server configuration, you probably have to use the server
-administration panel (e.g. "Plesk" or "Cpanel") to create new databases. Select
+administration panel (e.g. "Plesk" or "cPanel") to create new databases. Select
 the empty database and click the "Import" tab in the top menu. Then upload the
-SQL dump of your local database an start the import.
+SQL dump of your local database and start the import.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/sql-import.jpg)
 
