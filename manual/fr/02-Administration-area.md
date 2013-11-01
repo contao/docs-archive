@@ -49,7 +49,7 @@ La "vue en liste", étant la plus simple, ne propose que quatre actions de base 
 
 ### Icônes de la vue parent
 
-La "vue parent" propose deux icônes de navigation supplémentaires pour contrôler l'ordre des enregistrements. À partir de la version 2.7, l'ordre peut être modifié par glisser-déposer. Pour ce faire, cliquez simplement sur un enregistrement (et non pas sur un icône de navigation) et faites-le glisser vers sa nouvelle position.
+La "vue parent" propose deux icônes de navigation supplémentaires pour contrôler l'ordre des enregistrements. L'ordre peut être modifié par glisser-déposer. Pour ce faire, cliquez simplement sur l'icône de navigation "Glisser-déposer" et faites-le glisser vers sa nouvelle position.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-parent-icones.jpg)
 
@@ -64,6 +64,8 @@ La "vue arborescente" nécessite des icônes supplémentaires pour gérer la str
 ### Restaurer les versions précédentes
 
 Contao crée automatiquement les nouvelles versions d'un enregistrement chaque fois que vous le sauvegarder. Dès qu'il existe plus d'une version, un menu déroulant, qui vous permet de revenir à une version antérieure, apparaît en haut du formulaire. Choisissez simplement une version et cliquez sur le bouton "Restaurer".
+
+L'icône située à droite du bouton "Restaurer" vous permet de voir les différences entre deux versions.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/version.jpg)
 
