@@ -867,7 +867,7 @@ model classes to load referenced data sets efficiently and developer friendly.
 <tr>
   <th>Key</th>
   <th>Value</th>
-  <th>Describtion</th>
+  <th>Description</th>
 </tr>
 <tr>
   <td>type</td>
