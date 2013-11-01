@@ -1110,6 +1110,10 @@ the current date or including lightbox images.
   <td><code>{{toggle_view}}</code></td>
   <td>Adds the link which allows you to switch between mobile and desktop layout.</td>
 </tr>
+<tr>
+  <td><code>{{br}}</code></td>
+  <td>This tag will be replaced with the HTML &lt;br&gt; tag (line break).</td>
+</tr>
 </table>
 
 
