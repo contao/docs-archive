@@ -1016,13 +1016,13 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td><code>{{iflng::*}}</code></td>
   <td>Dieses Tag wird komplett entfernt, wenn die Sprache der Seite nicht mit
       der Tag-Sprache übereinstimmt. Sie können so sprachspezifische Bezeichnungen
-      erstellen: <code>{{iflng::en}}Your name{{iflng}}</code></td>
+      erstellen: <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code></td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
   <td>Dieses Tag wird komplett entfernt, wenn die Sprache der Seite mit der
       Tag-Sprache übereinstimmt. Sie können so sprachspezifische Bezeichnungen
-      erstellen: <code>{{ifnlng::de}}Your name{{iflng}}</code></td>
+      erstellen: <code>{{ifnlng::de}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code></td>
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
