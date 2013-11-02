@@ -1120,6 +1120,10 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td><code>{{toggle_view}}</code></td>
   <td>Dieser Tag wird mit einem Link ersetzt, welcher zwischen Mobile- und Desktop-Layout wechselt.</td>
 </tr>
+<tr>
+  <td><code>{{br}}</code></td>
+  <td>Dieser Tag wird mit einem HTML &lt;br&gt; Element (Zeilenumbruch) ersetzt.</td>
+</tr>
 </table>
 
 ### Inserttag-Flags
