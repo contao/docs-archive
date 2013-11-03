@@ -877,7 +877,7 @@ wizard'`).
 </tr>
 <tr>
   <td>clr</td>
-  <td>Clear all floats.</td>
+  <td>Clear all floats (<code>clear:both</code>).</td>
 </tr>
 <tr>
   <td>wizard</td>
@@ -890,7 +890,7 @@ wizard'`).
 </tr>
 <tr>
   <td>m12</td>
-  <td>Add a 12 pixel top margin to the element (used for single
+  <td>Add a 12 pixels top margin to the element (used for single
       checkboxes).</td>
 </tr>
 </table>
