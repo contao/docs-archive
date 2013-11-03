@@ -804,10 +804,7 @@ Le tableau d'évaluation configure en détail un champ particulier. Vous pouvez,
 
 ### Relations
 
-Relations describes, how database fields are related to other tables. 
-Define the referenced table in the `foreignKey` key. Relations provide 
-model classes to load referenced data sets efficiently and developer friendly.
-(see `Model::getRelated()`).
+Les relations décrivent, comment les champs de base de données sont liés à d'autres tables. Définit la table référencée dans la clé `foreignKey`. Les relations fournissent des classes de modèles pour charger des ensembles de données référencées de manière efficace et conviviale pour le développeur. (voir `Model::getRelated()`).
 
 <table>
 <tr>
@@ -899,13 +896,10 @@ Le back office de Contao utilise un système simple de grille en deux colonnes p
 
 ## Callbacks
 
-Callback functions are based on the event dispatcher pattern. You can register
-one or more callbacks for a certain event and when the event is triggered, the
-callback functions are being executed. Callbacks allow you to customize the
-program flow of the Contao core engine.
+Les fonctions callback sont fondés sur un pattern de répartition d'événements. Vous pouvez inscrire un ou plusieurs callbacks pour un certain événement et lorsque l'événement est déclenché, les fonctions callback sont exécutées. Les callbacks vous permettent de personnaliser le cours de l'exécution du coeur de Contao. 
 
 
-#### Global callbacks
+#### Callbacks globaux
 
 <table>
 <tr>
@@ -914,32 +908,28 @@ program flow of the Contao core engine.
 </tr>
 <tr>
   <td>onload_callback</td>
-  <td>Is executed when the DataContainer object is initialized. Allows you to
-      e.g. check permissions or to modify the Data Container Array dynamically
-      at runtime.</td>
+  <td>Est exécuté quand l'objet DataContainer est initialisé. Vous permet, par exemple, de vérifier les permissions ou de modifier le tableau conteneur de données dynamiquement à l'exécution.</td>
 </tr>
 <tr>
   <td>onsubmit_callback</td>
-  <td>Is executed when a back end form is submitted. Allows you to e.g. modify
-      the form data before it is written to the database (used to calculate
-      intervals in the calendar extension).</td>
+  <td>Est exécuté lorsqu'un formulaire du back office est soumis. Vous permet par exemple de modifier les données du formulaire avant qu'elles ne soient écrites dans la base de données (utilisé pour calculer les intervales dans l'extension calendar).</td>
 </tr>
 <tr>
   <td>ondelete_callback</td>
-  <td>Is executed before a record is removed from the database.</td>
+  <td>Est exécuté avant qu'un enregistrement soit supprimé de la base de données.</td>
 </tr>
 <tr>
   <td>oncut_callback</td>
-  <td>Is executed after a record has been moved to a new position.</td>
+  <td>Est exécuté après qu'un enregistrement ait été déplacé vers une nouvelle position.</td>
 </tr>
 <tr>
   <td>oncopy_callback</td>
-  <td>Is executed after a record has been duplicated.</td>
+  <td>Est exécuté après qu'un enregistrement ait été dupliqué.</td>
 </tr>
 </table>
 
 
-#### Listing callbacks
+#### Callbacks de listing
 
 <table>
 <tr>
@@ -948,27 +938,24 @@ program flow of the Contao core engine.
 </tr>
 <tr>
   <td>paste_button_callback</td>
-  <td>Allows for individual paste buttons and is e.g. used in the site structure
-      to disable buttons depending on the user's permissions (requires an
-      additional command check via load_callback).</td>
+  <td>Permet d'avoir des boutons de collage individuels et est, par exemple, utilisé dans la structure du site pour désactiver les boutons en fonction des permissions de l'utilisateur (nécessite un contrôle de commande additionnel via load_callback).</td>
 </tr>
 <tr>
   <td>child_record_callback</td>
-  <td>Defines how child elements are rendered in "parent view".</td>
+  <td>Définit comment les éléments enfants sont rendus dans la "vue parent".</td>
 </tr>
 <tr>
   <td>group_callback</td>
-  <td>Allows for individual group headers in the listing.</td>
+  <td>Permet d'avoir des en-têtes de groupes individuelles dans le listing.</td>
 </tr>
 <tr>
   <td>label_callback</td>
-  <td>Allows for individual labels in the listing and is e.g. used in the user
-      module to add status icons.</td>
+  <td>Permet d'avoir des labels individuels dans le listing et est, par exemple, utilisé dans le module utilisateurs pour ajouter des icônes de status.</td>
 </tr>
 </table>
 
 
-#### Operations callbacks
+#### Callbacks d'opérations
 
 <table>
 <tr>
@@ -977,14 +964,12 @@ program flow of the Contao core engine.
 </tr>
 <tr>
   <td>button_callback</td>
-  <td>Allows for individual navigation icons and is e.g. used in the site
-      structure to disable buttons depending on the user's permissions (requires
-      an additional command check via load_callback).</td>
+  <td>Permet d'avoir des icônes de navigation individuels et est, par exemple, utilisé dans la structure du site pour désactiver des boutons en fonction des permissions de l'utilisateur (nécessite un contrôle de commande additionnel via load_callback).</td>
 </tr>
 </table>
 
 
-#### Field callbacks
+#### Callbacks de champs
 
 <table>
 <tr>
@@ -993,25 +978,19 @@ program flow of the Contao core engine.
 </tr>
 <tr>
   <td>options_callback</td>
-  <td>Allows you to define an individual function to load data into a drop-down
-      menu or checkbox list. Useful e.g. for conditional
-      foreinKey-relations.</td>
+  <td>Vous permet de définir une fonction individuelle pour charger des données dans un menu déroulant ou une liste de cases à cocher. Utile, par exemple, pour des relations clés étrangères conditionnelles.</td>
 </tr>
 <tr>
   <td>input_field_callback</td>
-  <td>Allows for the creation of individual form fields and is e.g. used in the
-      back end module "personal data" to generate the "purge data" widget.
-      Attention: the field is not saved automatically!</td>
+  <td>Permet la création de champs de formulaires individuels et est, par exemple, utilisé dans le module back office "personal data" pour générer le widget "nettoyer les données". Attention: le champs n'est pas sauvegardé automatiquement !</td>
 </tr>
 <tr>
   <td>load_callback</td>
-  <td>Is executed when a form field is initialized and can e.g. be used to load
-      a default value.</td>
+  <td>Est exécuté lorsque un champs de formulaire est initialisé et peut, par exemple, être utilisé pour charger une valeur par défaut. </td>
 </tr>
 <tr>
   <td>save_callback</td>
-  <td>Is executed when a field is submitted and can e.g. be used to add an
-      individual validation routine.</td>
+  <td>Est exécuté quand un champs est soumis et peut, par exemple, être utilisé pour ajouter une routine de validation individuelle.</td>
 </tr>
 </table>
 
