@@ -616,13 +616,6 @@ Le tableau d'évaluation configure en détail un champ particulier. Vous pouvez,
   <td>Nombre de lignes (champs textarea seulement).</td>
 </tr>
 <tr>
-  <td>wrap</td>
-  <td>Césure des mots (<code>string</code>)</td>
-  <td><b>off</b> désactive la césure des mots<br>
-      <b>soft</b> retour à la ligne automatique (césure douce)<br>
-      <b>hard</b> saut de paragraphe (césure dure)</td>
-</tr>
-<tr>
   <td>multiple</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Autorise les valeurs multiples. S'applique aux champs textes, listes déroulantes, boutons radios et cases à cocher. Requis pour l'assistant de cases à cocher.</td>
