@@ -521,6 +521,23 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 ```
 
 
+### generateBreadcrumb
+
+The "generateBreadcrumb" hook allows to modify the breadcrumb navigation. 
+It passes the navigation items and the frontend module as arguments and expects the items as return value. It is available from version 2.10.0
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['generateBreadcrumb'][] = array('MyClass', 'myGenerateBreadcrumb');
+
+// MyClass.php
+public function myGenerateBreadcrumb($arrItems, \Module $objModule)
+{
+	return $arrItems;
+}
+```
+
+
 ### generateFrontendUrl
 
 The "generateFrontendUrl" hook is triggered when a front end URL is recreated.
@@ -629,6 +646,23 @@ $GLOBALS['TL_HOOKS']['getPageIdFromUrl'][] = array('MyClass', 'myGetPageIdFromUr
 public function myGetPageIdFromUrl($arrFragments)
 {
     return array_unique($arrFragments);
+}
+```
+
+
+### getPageLayout
+
+The "getPageLayout" hook is executed before initializing the frontend template.
+It passes the page model, the layout object and a reference to the page object and does not expect a return value. It is available from version 3.1.0.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getPageLayout'][] = array('MyClass', 'mygetPageLayout');
+
+// MyClass.php
+public function mygetPageLayout(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
+{
+    // Beliebiger Code
 }
 ```
 
