@@ -987,7 +987,7 @@ innerhalb ihrer Gruppen auszurichten. Folgende CSS-Klassen können in der
 </tr>
 <tr>
   <td>clr</td>
-  <td>Hebt alle Floats auf.</td>
+  <td>Hebt alle Floats auf (<code>clear:both</code>).</td>
 </tr>
 <tr>
   <td>wizard</td>
