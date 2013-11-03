@@ -27,8 +27,8 @@ will be written to the local configuration file automatically, so you hardly
 ever need to edit it manually.
 
 ``` {.php}
-// Disable the task center
-unset($GLOBALS['BE_MOD']['profile']['tasks']);
+// Disable the extension creator
+unset($GLOBALS['BE_MOD']['devtools']['extension']);
 
 ### INSTALL TOOL START ###
 $GLOBALS['TL_CONFIG']['debugMode'] = false;
