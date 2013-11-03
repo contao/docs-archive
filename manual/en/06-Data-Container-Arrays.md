@@ -682,13 +682,13 @@ Each field can be validated against a regular expression.
 <tr>
   <td>style</td>
   <td>Style attributes (<code>string</code>)</td>
-  <td>Style attributes (e.g. <code>border:2px</code>)</td>
+  <td>Style attributes (e.g. <code>border:2px</code>).</td>
 </tr>
 <tr>
   <td>rte</td>
   <td>Rich text editor file (<code>string</code>)</td>
-  <td><b>tinyMCE</b> use file <code>config/tinyMCE.php</code><br>
-      <b>tinyFlash</b> use file <code>config/tinyFlash.php</code><br>
+  <td><b>tinyMCE</b> use file <code>config/tinyMCE.php</code>.<br>
+      <b>tinyFlash</b> use file <code>config/tinyFlash.php</code>.<br>
       You can add your own configuration files too.</td>
 </tr>
 <tr>
@@ -858,7 +858,7 @@ Each field can be validated against a regular expression.
 
 ### Relations
 
-Relations describes, how database fields are related to other tables. 
+Relations describe, how database fields are related to other tables. 
 Define the referenced table in the `foreignKey` key. Relations provide 
 model classes to load referenced data sets efficiently and developer friendly.
 (see `Model::getRelated()`).
