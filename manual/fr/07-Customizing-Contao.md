@@ -1,33 +1,20 @@
-# Customizing Contao
+# Personnaliser Contao
 
-Customizability is one of the most important features of any application and
-particularly Content Management Systems. Contao provides many options to adjust
-the configuration, customize fields and labels, add own code snippets or even
-create new extensions. You can control almost any behaviour of the Contao core
-without even touching its files, so you do not have to reapply your changes
-after every update.
+La personnalisation est une des fonctionnalités les plus importantes de n'importe quelle application et particulièrement des systèmes de gestion de contenu. Contao fournit de nombreuses options pour ajuster la configuration, personnaliser les champs et les libellés, ajouter ses propres morceaux de code ou même créer de nouvelles extensions. Vous pouvez contrôler presque n'importe quel comportement du coeur de Contao sans même toucher ses fichiers, ainsi vous n'avez pas à réappliquer vos changements à chaque mise à jour. 
 
 
-## Custom configurations
+## Configurations personnalisées
 
-The Contao configuration is stored in one big array that is divided into three
-sections: the system configuration, the data container configuration and the
-language configuration. The configuration array is built at run-time and
-contains only those parts that are required to generate a certain page. Contao
-does not waste time and memory parsing a lot of redundant configuration files.
+La configuration de Contao est définie dans un grand tableau divisé en trois sections : la configuration du système, la configuration du conteneur de données et la configuration de la langue. Le tableau de configuration est construit au moment de l'exécution et ne contient que les parties nécessaires à la génération d'une page donnée. Contao ne perd pas de temps et de mémoire à "parser" de nombreux fichiers de configurations redondants. 
 
 
-### Customizing the system configuration
+### Personnaliser la configuration du système
 
-The system configuration is stored in the `config.php` files of the various
-Contao modules. If you want to customize it, apply your changes to the
-`system/config/localconfig.php` file, so they will not be overridden on the next
-update. Most parameters can be set in the back end in the settings module and
-will be written to the local configuration file automatically, so you hardly
-ever need to edit it manually.
+La configuration du système est enregistrée dans les fichiers `config.php` des différents modules de Contao. Si vous voulez la personnaliser, ajoutez vos modifications dans le fichier `system/config/localconfig.php`, afin qu'elles ne soient pas écrasées à la prochaine mise à jour. La plupart des paramètres peuvent être configurés dans le module Configuration du back office et seront écrits automatiquement dans le fichier de configuration; vous aurez donc rarement besoin de le modifier manuellement. 
+
 
 ``` {.php}
-// Disable the task center
+// Désactive le gestionnaire de tâches
 unset($GLOBALS['BE_MOD']['profile']['tasks']);
 
 ### INSTALL TOOL START ###
