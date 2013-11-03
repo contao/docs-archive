@@ -842,30 +842,22 @@ model classes to load referenced data sets efficiently and developer friendly.
 
 ## Palettes
 
-A palette is a group of form fields which are required to edit a record. A
-palette typically does not include all columns of a table but only the ones that
-belong to a particular module or content element. Palettes can change
-dynamically depending on the user's permissions or type of element and certain
-subparts of the form (called subpalettes) can be loaded interactively via Ajax.
+Une palette est un groupe de champs de formulaires qui sont nécessaires pour modifier un enregistrement. Une palette ne contient typiquement pas toutes les colonnes d'une table, mais seulement celles qui appartiennent à un certain module ou un certain élément de contenu. Les palettes peuvent changer dynamiquement suivant les droits de l'utilisateur ou le type de l'élément et certains sous-ensembles du formulaire (appelés des subpalettes) peuvent être chargés interactivement avec Ajax.
 
 
-### Defining groups
+### Définir des groupes
 
-A palette is a string of field names which are concatenated with either a
-semicolon (;) or a comma (,). Whereas the comma is just used to separate the
-field names, the semicolon indicates the beginning of a new fieldset, which can
-be expanded and collapsed.
+Une palette est une chaine de caractères composée de noms de champs concaténés et séparés soit par des points-virgules (;), soit par des virgules (,). Alors que la virgule est utilisée simplement pour séparer des noms de champs, le point-virgule indique le commencement d'un nouveau fieldset, qui peut être déroulé ou enroulé.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/palettes.jpg)
 
-The above example is defined by the following code:
+L'exemple ci-dessus se définit par le code suivant :
 
 ``` {.php}
 {title_legend},headline,alias,author;{date_legend},date,time;{teaser_legend:hide},subheadline,teaser
 ```
 
-The `title_legend` and `date_legend` placeholders will be replaced with the
-corresponding labels from the "TL_LANG" array.
+Les éléments de substitution `title_legend` et `date_legend` seront remplacés par leur label correspondant dans le tableau "TL_LANG". 
 
 ``` {.php}
 $GLOBALS['TL_LANG']['tl_news']['title_legend'] = 'Title and author';
@@ -873,12 +865,9 @@ $GLOBALS['TL_LANG']['tl_news']['date_legend']  = 'Date and time';
 ```
 
 
-### Arranging fields
+### Disposer les champs
 
-The Contao back end uses a simple two-column grid system to arrange input fields
-within their groups. You can apply the following CSS classes in the evaluation
-section of the Data Container Array as `tl_class` (e.g. `'tl_class'=>'w50
-wizard'`).
+Le back office de Contao utilise un système simple de grille en deux colonnes pour disposer les champs d'entrées dans leur groupes. Vous pouvez utiliser les classes CSS suivantes dans la section evaluation du tableau conteneur de données en tant que `tl_class` (exemple `'tl_class'=>'w50 wizard'`). 
 
 <table>
 <tr>
@@ -887,25 +876,23 @@ wizard'`).
 </tr>
 <tr>
   <td>w50</td>
-  <td>Set the field width to 50% and float it (<code>float:left</code>).</td>
+  <td>Définit la largeur du champs à 50% en le rend flottant (<code>float:left</code>).</td>
 </tr>
 <tr>
   <td>clr</td>
-  <td>Clear all floats.</td>
+  <td>Libère tous les éléments flottants (<code>clear:both</code>).</td>
 </tr>
 <tr>
   <td>wizard</td>
-  <td>Shorten the input field so there is enough room for the wizard button
-      (e.g. date picker fields).</td>
+  <td>Raccourcit le champ de saisie de sorte qu'il y ait assez de place pour le bouton "Assistant" (par exemple les champs avec un sélecteur de dates).</td>
 </tr>
 <tr>
   <td>long</td>
-  <td>Make the text input field span two columns.</td>
+  <td>Le champ de saisie de texte s'étend sur deux colonnes.</td>
 </tr>
 <tr>
   <td>m12</td>
-  <td>Add a 12 pixel top margin to the element (used for single
-      checkboxes).</td>
+  <td>Ajoute une marge supérieure de 12 pixels à l'élément (utilisé pour les cases à cocher uniques).</td>
 </tr>
 </table>
 
