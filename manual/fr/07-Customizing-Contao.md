@@ -22,52 +22,40 @@ $GLOBALS['TL_CONFIG']['debugMode'] = false;
 $GLOBALS['TL_CONFIG']['displayErrors'] = false;
 ```
 
-Make sure to store your changes above the `INSTALL SCRIPT START` line, otherwise
-they will be removed by the settings module. And **never use the `config.php` 
-file to store configuration parameters**, because the file might be overridden on
-updates!
+Pensez à mettre vos modifications au-dessus de la ligne `INSTALL SCRIPT START`; À défaut, elles seront supprimées par le module de configuration. Et **n'utilisez jamais le fichier `config.php` pour stocker des paramètres de configuration**, car ce fichier peut être écrasé lors des mises à jour ! 
 
 
-### Customizing the data container configuration
+### Personnaliser la configuration du conteneur de données
 
-Contao uses [Data Container Arrays][1] to store table meta information. The data
-container configuration is stored in the `dca` folders of the various Contao
-modules. Apply your changes to the `system/config/dcaconfig.php` file so they
-will not be overridden on the next update.
+Contao utilise le tableau conteneur de données (DCA) pour stocker les méta-informations relatives aux tables. La configuration du conteneur de données est enregistrée dans les dossiers `dca` des divers modules de Contao. Faites vos modifications dans le fichier `system/config/dcaconfig.php` afin qu'elles ne soient pas écrasées à la prochaine mise à jour. 
 
 ``` {.php}
-// Make company a mandatory field in the members table
+// Rend obligatoire le champ company dans la table des membres
 $GLOBALS['TL_DCA']['tl_member']['fields']['company']['eval']['mandatory'] =
 true;
 
-// Make sure that company names consist of alphanumeric characters only
+// Vérifie que les noms de company ne comprennent que des caractères alphanumériques
 $GLOBALS['TL_DCA']['tl_member']['fields']['company']['eval']['rgxp'] = 'alnum';
 
-// Allow only admins to use include content elements
+// N'autorise que les administrateurs à utiliser les éléments de contenu de type "includes"
 if (!BackendUser::getInstance()->isAdmin)
 {
     unset($GLOBALS['TL_CTE']['includes']);
 }
 ```
 
-As you see, the `dcaconfig.php` file is a good place to store minor
-modifications to the Contao configuration. If you need to make a lot of changes,
-you should consider encapsulating them in a custom extension so you do not lose
-track.
+Comme vous pouvez le voir, le fichier `dcaconfig.php` est un bon endroit pour enregistrer de petites modifications concernant la configuration de Contao. Pour faire de nombreux changements, pensez plutôt à les inclure dans une extension personnalisée, afin de ne pas en perdre la trace.
 
 
-### Customizing labels and translations
+### Personnaliser les libellés et les traductions
 
-Labels and translations are stored in the `languages` folders of the various
-Contao modules. Each language is identified by its [ISO-639-1 language code][2].
-Apply your changes to the `system/config/langconfig.php` file so they will not
-be overridden on the next update.
+Les libellés et les traductions sont enregistrés dans les dossiers `languages` des différents modules de ]Contao. Chaque langue est identifiée par son[code ISO-639-1][2]. Appliquez vos modifications dans le fichier `system/config/langconfig.php` afin qu'elles ne soient pas écrasées à la prochaine mise à jour. 
 
 ``` {.php}
-// Change a label for all languages
+// Modifie un libellé pour toutes les langues
 $GLOBALS['TL_LANG']['MSC']['goBack'] = '«';
 
-// Change a label for a particular language only
+// Modifie un libellé pour une seule langue
 if ($GLOBALS['TL_LANGUAGE'] == 'de')
 {
     $GLOBALS['TL_LANG']['tl_layout']['column'] = 'Bereich';
@@ -78,8 +66,7 @@ elseif ($GLOBALS['TL_LANGUAGE'] == 'fr')
 }
 ```
 
-Of course changes to the language array can also be encapsulated in a custom
-module, which is recommended if there are a lot of them.
+Bien entendu, les modifications du tableau de langues peuvent aussi être incluses dans un module personnalisé, ce qui est recommandé lorsqu'il y en a beaucoup. 
 
 
 ## Adding custom fields
