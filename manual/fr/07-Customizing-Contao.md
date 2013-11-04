@@ -27,7 +27,7 @@ Pensez à mettre vos modifications au-dessus de la ligne `INSTALL SCRIPT START`;
 
 ### Personnaliser la configuration du conteneur de données
 
-Contao utilise le tableau conteneur de données (DCA) pour stocker les méta-informations relatives aux tables. La configuration du conteneur de données est enregistrée dans les dossiers `dca` des divers modules de Contao. Faites vos modifications dans le fichier `system/config/dcaconfig.php` afin qu'elles ne soient pas écrasées à la prochaine mise à jour. 
+Contao utilise le [tableau conteneur de données (DCA)][1] pour stocker les méta-informations relatives aux tables. La configuration du conteneur de données est enregistrée dans les dossiers `dca` des divers modules de Contao. Faites vos modifications dans le fichier `system/config/dcaconfig.php` afin qu'elles ne soient pas écrasées à la prochaine mise à jour. 
 
 ``` {.php}
 // Rend obligatoire le champ company dans la table des membres
@@ -49,7 +49,7 @@ Comme vous pouvez le voir, le fichier `dcaconfig.php` est un bon endroit pour en
 
 ### Personnaliser les libellés et les traductions
 
-Les libellés et les traductions sont enregistrés dans les dossiers `languages` des différents modules de ]Contao. Chaque langue est identifiée par son[code ISO-639-1][2]. Appliquez vos modifications dans le fichier `system/config/langconfig.php` afin qu'elles ne soient pas écrasées à la prochaine mise à jour. 
+Les libellés et les traductions sont enregistrés dans les dossiers `languages` des différents modules de ]Contao. Chaque langue est identifiée par son [code ISO-639-1][2]. Appliquez vos modifications dans le fichier `system/config/langconfig.php` afin qu'elles ne soient pas écrasées à la prochaine mise à jour. 
 
 ``` {.php}
 // Modifie un libellé pour toutes les langues
@@ -84,7 +84,7 @@ CREATE TABLE `tl_member`(
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 ```
 
-Utilisez l'[assistant d'installation de Contao][3] pour mettre à jour les tables de votre base de données. 
+Utilisez l'[outil d'installation de Contao][3] pour mettre à jour les tables de votre base de données. 
 
 
 ### Étendre le DCA (tableau conteneur de données)
@@ -570,8 +570,7 @@ public function myGetSearchablePages($arrPages, $intRoot)
 
 ### initializeSystem
 
-The "initializeSystem" hook is triggered when the system is initialized. It is
-available from version 3.1.RC1.
+Le hook "initializeSystem" est déclenché lorsque le système est initialisé. Il est disponible à partir de la version 3.1.RC1.
 
 ``` {.php}
 // config.php
@@ -580,16 +579,14 @@ $GLOBALS['TL_HOOKS']['initializeSystem'][] = array('MyClass', 'myInitializeSyste
 // MyClass.php
 public function myInitializeSystem()
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### importUser
 
-The "importUser" hook is triggered when a username cannot be found in the
-database. It passes the username, the password and the table name as arguments
-and expects a boolean return value. It is available from version 2.7.RC1.
+Le hook "importUser" est déclenché lorsqu'un nom d'utilisateur ne peut être trouvé dans la base de données. Il passe en arguments le nom d'utilisateur, le mot de passe et le nom de la table, et attend une valeur de retour de type booléen. Il est disponible à partir de la version 2.7.RC1.
 
 ``` {.php}
 // config.php
@@ -600,7 +597,7 @@ public function myImportUser($strUsername, $strPassword, $strTable)
 {
     if ($strTable == 'tl_member')
     {
-        // Import user from an LDAP server
+        // Importe l'utilisateur à partir d'un serveur LDAP
         if ($this->importUserFromLdap($strUsername, $strPassword))
         {
             return true;
@@ -614,9 +611,7 @@ public function myImportUser($strUsername, $strPassword, $strTable)
 
 ### listComments
 
-The "listComments" hook is triggered when comments are listed in the back end.
-It passes the current record as argument and expects a string as return value.
-It is available from version 2.8.RC2.
+Le hook "listComments" est déclenché lorsque des commentaires sont listés dans le back office. Il passe l'enregistrement courant en argument, et attend une chaîne de caractères comme valeur de retour. Il est disponible à partir de la version 2.8.RC2.
 
 ``` {.php}
 // config.php
@@ -632,9 +627,7 @@ public function myListComments($arrRow)
 
 ### loadFormField
 
-The "loadFormField" hook is triggered when a form field is loaded. It passes the
-widget object, the form ID and the form data as arguments and expects a widget
-object as return value. It is available from version 2.5.0.
+Le hook "loadFormField" est déclenché lorsqu'un champ de formulaire est chargé. Il passe en arguments l'objet widget, l'ID et les données du formulaire, et attend un objet widget comme valeur de retour. Il est disponible à partir de la version 2.5.0.
 
 ``` {.php}
 // config.php
@@ -651,9 +644,8 @@ public function myLoadFormField(Widget $objWidget, $strForm, $arrForm)
 
 ### loadDataContainer
 
-The "loadDataContainer" hook is triggered when a DCA file is loaded. It passes
-the file name as argument and does not expect a return value. It is available
-from version 2.8.2.
+Le hook "loadDataContainer" est déclenché lorsqu'un fichier DCA est chargé. Il transmet le nom de fichier comme argument, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.8.2.
+
 
 ``` {.php}
 // config.php
@@ -662,16 +654,14 @@ $GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('MyClass', 'myLoadDataContai
 // MyClass.php
 public function myLoadDataContainer($strName)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### loadLanguageFile
 
-The "loadLanguageFile" hook is triggered when a language file is loaded. It
-passes the file name and the language as arguments and does not expect a return
-value. It is available from version 2.8.RC1.
+Le hook "loadLanguageFile" est déclenché au chargement d'un fichier de langue. Il passe en arguments le nom du fichier et la langue, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.8.RC1. 
 
 ``` {.php}
 // config.php
@@ -680,17 +670,14 @@ $GLOBALS['TL_HOOKS']['loadLanguageFile'][] = array('MyClass', 'myLoadLanguageFil
 // MyClass.php
 public function myLoadLanguageFile($strName, $strLanguage)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### outputBackendTemplate
 
-The "outputBackendTemplate" hook is triggered when a back end template is
-printed to the screen. It passes the template content and the template name as
-arguments and expects the template content as return value. It is available from
-version 2.6.0.
+Le hook "outputBackendTemplate" est déclenché lors de l'affichage à l'écran d'un template de back office. Il passe en arguments le contenu et le nom du template, et attend le contenu du template comme valeur de retour. Il est disponible à partir de la version 2.6.0.
 
 ``` {.php}
 // config.php
@@ -701,7 +688,7 @@ public function myOutputBackendTemplate($strContent, $strTemplate)
 {
     if ($strTemplate == 'be_main')
     {
-        // Modify output
+        // Modification de la sortie
     }
 
     return $strContent;
@@ -711,10 +698,7 @@ public function myOutputBackendTemplate($strContent, $strTemplate)
 
 ### outputFrontendTemplate
 
-The "outputFrontendTemplate" hook is triggered when a front end template is
-printed to the screen. It passes the template content and the template name as
-arguments and expects the template content as return value. It is available from
-version 2.6.0.
+Le hook "outputFrontendTemplate" est déclenché lors de l'affichage à l'écran d'un template de front office. Il passe en arguments le contenu et le nom du template, et attend le contenu du template comme valeur de retour. Il est disponible à partir de la version 2.6.0. 
 
 ``` {.php}
 // config.php
@@ -725,7 +709,7 @@ public function myOutputFrontendTemplate($strContent, $strTemplate)
 {
     if ($strTemplate == 'fe_page')
     {
-        // Modify output
+        // Modification de la sortie
     }
 
     return $strContent;
@@ -735,9 +719,7 @@ public function myOutputFrontendTemplate($strContent, $strTemplate)
 
 ### parseBackendTemplate
 
-The "parseBackendTemplate" hook is triggered when a back end template is parsed.
-It passes the template content and the template name as arguments and expects
-the template content as return value. It is available from version 2.6.0.
+Le hook "parseBackendTemplate" est déclenché lorsqu'un template de back office est analysé ("parsé"). Il passe en arguments le contenu et le nom du template, et attend le contenu du template comme valeur de retour. Il est disponible à partir de la version 2.6.0. 
 
 ``` {.php}
 // config.php
@@ -748,7 +730,7 @@ public function myParseBackendTemplate($strContent, $strTemplate)
 {
     if ($strTemplate == 'be_main')
     {
-        // Modify output
+        // Modification de la sortie
     }
 
     return $strContent;
@@ -758,10 +740,7 @@ public function myParseBackendTemplate($strContent, $strTemplate)
 
 ### parseFrontendTemplate
 
-The "parseFrontendTemplate" hook is triggered when a front end template is
-parsed. It passes the template content and the template name as arguments and
-expects the template content as return value. It is available from version
-2.6.0.
+Le hook "parseFrontendTemplate" est déclenché lors de l'analyse ("parsing") d'un template de front office. Il passe en arguments le contenu et le nom du template, et attend le contenu du template comme valeur de retour. Il est disponible à partir de la version 2.6.0. 
 
 ``` {.php}
 // config.php
@@ -772,7 +751,7 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
 {
     if ($strTemplate == 'ce_text')
     {
-        // Modify output
+        // Modification de la sortie
     }
 
     return $strContent;
@@ -782,9 +761,7 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
 
 ### postDownload
 
-The "postDownload" hook is triggered after a file has been downloaded with the
-download(s) element. It passes the file name as argument and does not expect a
-return value. It is available from version 2.4.6.
+Le hook "postDownload" est déclenché après qu'un fichier ait été téléchargé avec l'élément téléchargement(s). Il passe le nom du fichier en argument, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.4.6.
 
 ``` {.php}
 // config.php
@@ -793,16 +770,14 @@ $GLOBALS['TL_HOOKS']['postDownload'][] = array('MyClass', 'myPostDownload');
 // MyClass.php
 public function myPostDownload($strFile)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### postLogin
 
-The "postLogin" hook is triggered after a front end member or back end user
-has logged in. It passes the user object as argument and does not expect
-a return value.
+Le hook "postLogin" est déclenché après qu'un membre front office ou un utilisateur back office se soit identifié. Il passe l'objet utilisateur en argument et n'attend pas de valeur de retour.
 
 ``` {.php}
 // config.php
@@ -811,16 +786,14 @@ $GLOBALS['TL_HOOKS']['postLogin'][] = array('MyClass', 'myPostLogin');
 // MyClass.php
 public function myPostLogin(User $objUser)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### postLogout
 
-The "postLogout" hook is triggered after a front end member or back end user
-has logged out. It passes the user object as argument and does not expect
-a return value.
+Le hook "postLogout" est déclenché après qu'un membre front office ou un utilisateur back office se soit déconnecté. Il passe l'objet utilisateur en argument, et n'attend pas de valeur de retour.
 
 ``` {.php}
 // config.php
@@ -829,16 +802,14 @@ $GLOBALS['TL_HOOKS']['postLogout'][] = array('MyClass', 'myPostLogout');
 // MyClass.php
 public function myPostLogout(User $objUser)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### postUpload
 
-The "postUpload" hook is triggered after a user has uploaded one or more file in
-the back end. It passes an array of filenames as argument and does not expect a
-return value. It is available from version 2.6.4.
+Le hook "postUpload" est déclenché après qu'un utilisateur ait envoyé un ou plusieurs fichiers dans le back office. Il passe un tableau de noms de fichiers en argument, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.6.4. 
 
 ``` {.php}
 // config.php
@@ -847,16 +818,14 @@ $GLOBALS['TL_HOOKS']['postUpload'][] = array('MyClass', 'myPostUpload');
 // MyClass.php
 public function myPostUpload($arrFiles)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### printArticleAsPdf
 
-The "printArticleAsPdf" hook is triggered when an article is exported as PDF. It
-passes the article text and the article object as arguments and does not expect
-a return value. It is available from version 2.8.RC1.
+Le hook "printArticleAsPdf" est déclenché lorsqu'un article est exporté en format PDF. Il passe en arguments le texte de l'article et l'objet article, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.8.RC1. 
 
 ``` {.php}
 // config.php
@@ -865,7 +834,7 @@ $GLOBALS['TL_HOOKS']['printArticleAsPdf'][] = array('MyClass', 'myPrintArticleAs
 // MyClass.php
 public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 {
-    // Do something
+    // Faire quelque chose
     exit;
 }
 ```
@@ -873,10 +842,7 @@ public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 
 ### processFormData
 
-The "processFormData" hook is triggered after a form has been submitted. It
-passes the form data array, the [Data Container Array][1] and the files array as
-arguments and does not expect a return value. It is available from version
-2.4.4.
+Le hook "processFormData" est déclenché après la soumission d'un formulaire. Il passe en arguments le tableau des données du formulaire, le [tableau conteneur de données][1] et le tableau de fichiers, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.4.4.
 
 ``` {.php}
 // config.php
@@ -885,16 +851,14 @@ $GLOBALS['TL_HOOKS']['processFormData'][] = array('MyClass', 'myProcessFormData'
 // MyClass.php
 public function myProcessFormData($arrPost, $arrForm, $arrFiles)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### removeOldFeeds
 
-The "removeOldFeeds" hook is triggered when old XML files are being removed from
-the Contao directory. It does not pass an argument and expects an array of file
-names to preserve as return value. It is available from version 2.5.8.
+Le hook "removeOldFeeds" est déclenché lors de la suppression des vieux fichiers XML du répertoire de Contao. Il ne passe pas d'argument et attend un tableau de noms de fichiers à conserver comme valeur de retour. Il est disponible à partir de la version 2.5.8.
 
 ``` {.php}
 // config.php
@@ -910,9 +874,7 @@ public function myRemoveOldFeeds()
 
 ### removeRecipient
 
-The "removeRecipient" hook is triggered when a newsletter recipient is removed.
-It passes the e-mail address and the channel IDs as argument and does not expect
-a return value. It is available from version 2.8.RC1.
+Le hook "removeRecipient" est déclenché à la suppression d'un destinataire de newsletter. Il passe en arguments l'adresse e-mail et les ID de la liste de diffusion, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.8.RC1. 
 
 ``` {.php}
 // config.php
@@ -921,16 +883,14 @@ $GLOBALS['TL_HOOKS']['removeRecipient'][] = array('MyClass', 'myRemoveRecipient'
 // MyClass.php
 public function myRemoveRecipient($strEmail, $arrChannels)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### replaceInsertTags
 
-The "replaceInsertTags" hook is triggered when an unknown insert tag is found.
-It passes the insert tag as argument and expects the replacement value or
-"false" as return value. It is available from version 2.6.0.
+Le hook "replaceInsertTags" est déclenché lorsqu'une balise d'insertion inconnue est trouvé. Il passe la balise d'insertion en argument, et attend la valeur de remplacement ou "false" comme valeur de retour. Il est disponible à partir de la version 2.6.0. 
 
 ``` {.php}
 // config.php
@@ -951,11 +911,7 @@ public function myReplaceInsertTags($strTag)
 
 ### reviseTable
 
-The "reviseTable" hook is triggered when Contao removes orphan records from a
-table. It passes the name of the current table, the IDs of all new records, the
-name of the parent table and the names of all child tables as arguments and does
-expect a boolean return value (returning "true" will cause the current page to
-be reloaded). It is available from version 2.6.4.
+Le hook "reviseTable" est déclenché lorsque Contao supprime d'une table des enregistrements orphelins. Il passe en arguments le nom de la table courante, les ID de tous les nouveaux enregistrements, le nom de la table parente, et les noms de toutes les tables enfants, et attend un booléen comme valeur de retour (le retour de la valeur "true" provoque le rechargement de la page courante). Il est disponible à partir de la version 2.6.4.
 
 ``` {.php}
 // config.php
@@ -964,16 +920,14 @@ $GLOBALS['TL_HOOKS']['reviseTable'][] = array('MyClass', 'myReviseTable');
 // MyClass.php
 public function myReviseTable($table, $new_records, $parent_table, $child_tables)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### setNewPassword
 
-The "setNewPassword" hook is triggered after a new password has been set. It
-passes the user object and the encrypted password as arguments and does not
-expect a return value. It is available from version 2.2.3.
+Le hook "setNewPassword" est déclenché après la saisie d'un nouveau mot de passe. Il passe en arguments l'objet utilisateur et le mot de passe crypté, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.2.3.
 
 ``` {.php}
 // config.php
@@ -982,16 +936,14 @@ $GLOBALS['TL_HOOKS']['setNewPassword'][] = array('MyClass', 'mySetNewPassword');
 // MyClass.php
 public function mySetNewPassword($objUser, $strPassword)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### validateFormField
 
-The "validateFormField" hook is triggered when a form field is submitted. It
-passes the widget object and the form ID as arguments and expects a widget
-object as return value. It is available from version 2.5.0.
+Le hook "validateFormField" est déclenché à la soumission d'un champ de formulaire. Il passe en arguments l'objet widget et l'ID du formulaire, et attend un objet widet comme valeur de retour. Il est disponible à partir de la version 2.5.0. 
 
 ``` {.php}
 // config.php
@@ -1002,7 +954,7 @@ public function myValidateFormField(Widget $objWidget, $intId)
 {
     if ($objWidget instanceof FormPassword)
     {
-        // Do something
+        // Faire quelque chose
     }
 
     return $objWidget;
@@ -1011,8 +963,8 @@ public function myValidateFormField(Widget $objWidget, $intId)
 
 
 [1]: 06-Data-Container-Arrays.md
-[2]: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-[3]: 01-Installation.md#the-contao-install-tool
+[2]: http://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1
+[3]: 01-Installation.md#l-outil-d-installation-de-contao
 [4]: http://tinymce.moxiecode.com
-[5]: 07-Customizing-Contao.md#customizing-the-data-container-configuration
+[5]: 07-Customizing-Contao.md#personnaliser-la-configuration-du-conteneur-de-donnees
 [6]: 06-Data-Container-Arrays.md#callbacks
