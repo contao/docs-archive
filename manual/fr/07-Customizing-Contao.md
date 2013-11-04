@@ -191,7 +191,7 @@ Les hooks fonctionnent de la même manière que les [fonctions callback][6] du t
 
 ### activateAccount
 
-Le hook "activateAccount" est déclenché lorsqu'un nouveau compte en front office est activé. Il passe l'objet utilisateur en argument et n'attend pas de valeur de retour. Il est disponible depuis la version 2.4.3.
+Le hook "activateAccount" est déclenché lorsqu'un nouveau compte en front office est activé. Il passe l'objet utilisateur en argument et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.4.3.
 
 ``` {.php}
 // config.php
@@ -208,7 +208,7 @@ public function myActivateAccount(Database_Result $objUser)
 
 ### activateRecipient
 
-Le hook "activateRecipient" est déclenché lorsqu'un nouveau destinataire d'une newsletter est ajouté. Il passe en arguments l'adresse e-mail, les IDs du destinataire et de la liste de diffusion, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.8.RC1.
+Le hook "activateRecipient" est déclenché lorsqu'un nouveau destinataire d'une newsletter est ajouté. Il passe en arguments l'adresse e-mail, les ID du destinataire et de la liste de diffusion, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.8.RC1.
 
 ``` {.php}
 // config.php
@@ -225,7 +225,7 @@ public function myActivateRecipient($strEmail, $arrRecipients, $arrChannels)
 
 ### addComment
 
-Le hook "addComment" est déclenché lorsqu'un commentaire est ajouté. Il passe l'ID de l'enregistrement et de le tableau de données en arguments et n'attend pas de valeur de retour. Il est disponible depuis la version 2.8.2.
+Le hook "addComment" est déclenché lorsqu'un commentaire est ajouté. Il passe l'ID de l'enregistrement et de le tableau de données en arguments et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.8.2.
 
 ``` {.php}
 // config.php
@@ -241,7 +241,7 @@ public function myAddComment($intId, $arrSet)
 
 ### addCustomRegexp
 
-Le hook "addCustomRegexp" est déclenché lorsqu'une expression régulière inconnue est trouvée. Il passe en arguments le nom de l'expression régulière, la valeur courante et l'objet widget, et attend une valeur de retour de type booléen. Il est disponible depuis la version 2.6.2.
+Le hook "addCustomRegexp" est déclenché lorsqu'une expression régulière inconnue est trouvée. Il passe en arguments le nom de l'expression régulière, la valeur courante et l'objet widget, et attend une valeur de retour de type booléen. Il est disponible à partir de la version 2.6.2.
 
 ``` {.php}
 // config.php
@@ -268,7 +268,7 @@ public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
 
 ### addLogEntry
 
-Le hook "addLogEntry" est déclenché lorsqu'une nouvelle entrée est ajoutée au journal (log). Il passe en arguments le message, la fonction et l'action, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.8.RC1. 
+Le hook "addLogEntry" est déclenché lorsqu'une nouvelle entrée est ajoutée au journal (log). Il passe en arguments le message, la fonction et l'action, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.8.RC1. 
 
 ``` {.php}
 // config.php
@@ -284,7 +284,7 @@ public function myAddLogEntry($strText, $strFunction, $strAction)
 
 ### checkCredentials
 
-Le hook "checkCredentials" est déclenché lorsqu'une tentative d'identification échoue à cause d'un mot de passe incorrect. Il passe en arguments le nom de l'utilisateur, le mot de passe et l'objet utilisateur, et attend une valeur de retour de type booléen. Il est disponible depuis la version 2.6.0. 
+Le hook "checkCredentials" est déclenché lorsqu'une tentative d'identification échoue à cause d'un mot de passe incorrect. Il passe en arguments le nom de l'utilisateur, le mot de passe et l'objet utilisateur, et attend une valeur de retour de type booléen. Il est disponible à partir de la version 2.6.0. 
 
 ``` {.php}
 // config.php
@@ -307,7 +307,7 @@ public function myCheckCredentials($strUsername, $strPassword, User $objUser)
 
 ### closeAccount
 
-Le hook "closeAccount" est déclenché lorsqu'un utilisateur clôture son compte. Il passe en arguments l'ID de l'utilisateur, le mode opérationnel et le module, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.8.0. 
+Le hook "closeAccount" est déclenché lorsqu'un utilisateur clôture son compte. Il passe en arguments l'ID de l'utilisateur, le mode opérationnel et le module, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.8.0. 
 
 ``` {.php}
 // config.php
@@ -326,7 +326,7 @@ public function myCloseAccount($intId, $strMode, $objModule)
 
 ### compileDefinition
 
-Le hook "compileDefinition" est déclenché quand une définition de formatage d'une feuille de style est écrite. Il passe le tableau de configuration en argument et attend une chaîne de caractères comme valeur de retour. Il est disponible depuis la version 2.9.4. 
+Le hook "compileDefinition" est déclenché quand une définition de formatage d'une feuille de style est écrite. Il passe le tableau de configuration en argument et attend une chaîne de caractères comme valeur de retour. Il est disponible à partir de la version 2.9.4. 
 
 ``` {.php}
 // config.php
@@ -348,7 +348,7 @@ public function myCompileDefinition($arrRow)
 
 ### createDefinition
 
-Le hook "createDefinition" est déclenché quand une définition de formatage d'une feuille de style est importée. Il passe la clé et la valeur, la définition de formatage d'origine et le tableau de données en arguments et attend un tableau ou "false" comme valeur de retour. Il est disponible depuis la version 2.9.4. 
+Le hook "createDefinition" est déclenché quand une définition de formatage d'une feuille de style est importée. Il passe la clé et la valeur, la définition de formatage d'origine et le tableau de données en arguments et attend un tableau ou "false" comme valeur de retour. Il est disponible à partir de la version 2.9.4. 
 
 ``` {.php}
 // config.php
@@ -370,7 +370,7 @@ public function myCreateDefinition($strKey, $strValue, $strDefinition, $arrSet)
 
 ### createNewUser
 
-Le hook "createNewUser" est déclenché lorsqu'un nouvel utilisateur front office s'enregistre sur le site internet. Il passe en arguments le nouvel utilisateur et le tableau de données, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.2.0. 
+Le hook "createNewUser" est déclenché lorsqu'un nouvel utilisateur front office s'enregistre sur le site internet. Il passe en arguments le nouvel utilisateur et le tableau de données, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.2.0. 
 
 ``` {.php}
 // config.php
@@ -386,7 +386,7 @@ public function myCreateNewUser($intId, $arrData)
 
 ### executePreActions
 
-Le hook "executePreActions" est déclenché par les requêtes Ajax qui ne nécessitent pas un objet DCA. Il passe le nom de l'action en argument, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.6.1. 
+Le hook "executePreActions" est déclenché par les requêtes Ajax qui ne nécessitent pas un objet DCA. Il passe le nom de l'action en argument, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.6.1. 
 
 ``` {.php}
 // config.php
@@ -405,7 +405,7 @@ public function myExecutePreActions($strAction)
 
 ### executePostActions
 
-Le hook "executePostActions" est déclenché par les requêtes Ajax qui nécessitent un objet DCA. Il passe le nom de l'action et l'objet conteneur de données en arguments, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.6.1. 
+Le hook "executePostActions" est déclenché par les requêtes Ajax qui nécessitent un objet DCA. Il passe le nom de l'action et l'objet conteneur de données en arguments, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.6.1. 
 
 ``` {.php}
 // config.php
@@ -456,10 +456,8 @@ public function myGenerateFrontendUrl($arrRow, $strParams, $strUrl)
 
 ### generatePage
 
-The "generatePage" hook is triggered before the main layout ("fe_page") is
-compiled. It passes the page object, the layout object and a self-reference as
-arguments and does not expect a return value. It is available from version
-2.8.RC1.
+Le hook "generatePage" est déclenché avant la compilation du modèle de présentation principale ("fe_page"). Il passe en arguments l'objet page, l'objet modèle et une référence qui lui est propre, et n'attend pas de valeur de retour. Il est disponible à partir de la version 2.8.RC1.
+
 
 ``` {.php}
 // config.php
@@ -468,17 +466,14 @@ $GLOBALS['TL_HOOKS']['generatePage'][] = array('MyClass', 'myGeneratePage');
 // MyClass.php
 public function myGeneratePage(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### getAllEvents
 
-The "getAllEvents" hook allows you to modify the result sets of calendar and
-event modules. It passes the current result set, the IDs of the parent items and
-the start and end time as arguments and expects a result set (array) as return
-value. It is available from version 2.6.4.
+Le hook "getAllEvents" vous permet de modifier les jeux de résultats produits par les modules calendrier et événements. Il passe en arguments le jeu de résultats courant, les ID des éléments parents et l'heure de début et de fin, et attend un jeu de résultats (tableau) comme valeur de retour. Il est disponible à partir de la version 2.6.4.
 
 ``` {.php}
 // config.php
@@ -495,9 +490,7 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Mo
 
 ### getContentElement
 
-The "getContentElement" hook is triggered when a content element is rendered. It
-passes the database object and the buffer string as arguments and expects a
-buffer string as return value. It is available from version 2.9.0.
+Le hook "getContentElement" est déclenché lorsqu'un élément de contenu est rendu. Il passe en arguments l'objet base de données et une chaîne-tampon (buffer string), et attend une chaîne-tampon comme valeur de retour. Il est disponible à partir de la version 2.9.0.
 
 ``` {.php}
 // config.php
@@ -513,10 +506,7 @@ public function myGetContentElement(Database_Result $objElement, $strBuffer)
 
 ### getImage
 
-The "getImage" hook is triggered when a thumbnail is generated and allows you to
-add a custom routine. It passes the path, the width and height, the mode, the
-cache name and the file object as arguments and expects a path as return value.
-It is available from version 2.8.RC1.
+Le hook "getImage" est déclenché quand une vignette est générée et vous permet d'ajouter une routine personnalisée. Il passe en arguments le chemin d'accès, la largeur et la hauteur, la mode, le nom du cache et l'objet fichier, et attend à un chemin d'accès comme valeur de retour. Il est disponible à partir de la version 2.8.RC1.
 
 ``` {.php}
 // config.php
@@ -532,9 +522,7 @@ public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFi
 
 ### getPageIdFromUrl
 
-The "getPageIdFromUrl" hook is triggered when the URL fragments are evaluated.
-It passes the array of URL fragments as argument and expects an array of URL
-fragments as return value. It is available from version 2.5.4.
+Le hook "getPageIdFromUrl" est déclenché lors de l'évaluation des parties d'une URL. Il passe les fragments d'URL en argument, et attend un tableau de fragments d'une URL en valeur de retour. Il est disponible depuis la version 2.5.4. 
 
 ``` {.php}
 // config.php
@@ -550,8 +538,7 @@ public function myGetPageIdFromUrl($arrFragments)
 
 ### getPageLayout
 
-The "getPageLayout" hook is executed before initializing the frontend template.
-It passes the page model, the layout object and a reference to the page object and does not expect a return value. It is available from version 3.1.0.
+Le hook "getPageLayout" est exécutée avant d'initialiser le modèle front office. Il passe en arguments le modèle de la page, l'objet modèle et une référence à l'objet page et n'attend pas de valeur de retour. Il est disponible à partir de la version 3.1.0.
 
 ``` {.php}
 // config.php
@@ -560,17 +547,14 @@ $GLOBALS['TL_HOOKS']['getPageLayout'][] = array('MyClass', 'mygetPageLayout');
 // MyClass.php
 public function mygetPageLayout(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
 {
-    // Beliebiger Code
+    // Faire quelque chose
 }
 ```
 
 
 ### getSearchablePages
 
-The "getSearchablePages" hook is triggered when the the search index is rebuilt.
-It passes the array of pages and the ID of the root page as arguments and
-expects an array of absolute URLs (!) as return value. It is available from
-version 2.2.0.
+Le hook "getSearchablePages" est déclenché lors de la reconstruction de l'index de recherche. Il passe en arguments le tableau des pages et l'ID de la page racine, et attend un tableau d'URLs absolues (!) comme valeur de retour. Il est disponible à partir de la version 2.2.0.
 
 ``` {.php}
 // config.php
