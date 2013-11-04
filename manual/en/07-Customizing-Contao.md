@@ -524,7 +524,7 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 ### generateBreadcrumb
 
 The "generateBreadcrumb" hook allows to modify the breadcrumb navigation. 
-It passes the navigation items and the frontend module as arguments and expects the items as return value. It is available from version 2.10.0
+It passes the navigation items and the frontend module as arguments and expects the items as return value. It is available from version 2.10.0.
 
 ``` {.php}
 // config.php
