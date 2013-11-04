@@ -37,7 +37,7 @@ $GLOBALS['TL_CONFIG']['displayErrors'] = false;
 
 Make sure to store your changes above the `INSTALL SCRIPT START` line, otherwise
 they will be removed by the settings module. And **never use the `config.php` 
-file to store configuration parameters**, because the file might be overridden on
+file to store configuration parameters**, because this file might be overridden on
 updates!
 
 
