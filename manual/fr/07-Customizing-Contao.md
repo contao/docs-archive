@@ -69,23 +69,14 @@ elseif ($GLOBALS['TL_LANGUAGE'] == 'fr')
 Bien entendu, les modifications du tableau de langues peuvent aussi être incluses dans un module personnalisé, ce qui est recommandé lorsqu'il y en a beaucoup. 
 
 
-## Adding custom fields
+## Ajouter des champs personnalisés
 
-Let us assume that you want to add a customer number to the members table.
-Adding a custom field to a Contao table requires to change more than just one
-file, therefore it is recommended to create a custom module in the
-`system/modules` directory. Remember that modules are loaded in alphabetical
-order, so do not name your extension `custom` if you want to override settings
-of the `news` extension.
+Imaginons que vous souhaitiez ajouter un numéro de client à la table des membres. L'ajout d'un champ personnalisé à une table de Contao nécessite de modifier plus d'un fichier, il est donc préférable d'ajouter un module personnalisé dans le dossier `system/modules`. Gardez en mémoire que les modules sont chargés en suivant l'ordre alphabétique, n'appelez donc pas votre extension `custom` si vous souhaitez redéfinir les configurations de l'extension `news`.
 
 
-### Extending the database
+### Étendre la base de données
 
-The database configuration is stored in the `config/database.sql` files of the
-various Contao modules. The SQL files are not sent to the database but used to
-calculate the difference between the Contao specifications and the actual
-database tables. Therefore, you can also alter fields defined by another module
-in the `database.sql` file. Add the following code to create the new field:
+La configuration de la base de données est enregistrée dans les fichiers `config/database.sql` des différents modules de Contao. Les fichiers SQL ne sont pas envoyés à la base de données, mais utilisés pour évaluer les différences entre les spécifications de Contao et les tables existantes de la base. Vous devez donc également modifier les champs définis par un autre module dans le fichier `database.sql`. Ajoutez le code suivant pour créer le nouveau champ :
 
 ``` {.sql}
 CREATE TABLE `tl_member`(
@@ -93,16 +84,15 @@ CREATE TABLE `tl_member`(
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 ```
 
-Use the [Contao install tool][3] to update your database tables.
+Utilisez l'[assistant d'installation de Contao][3] pour mettre à jour les tables de votre base de données. 
 
 
-### Extending the DCA
+### Étendre le DCA (tableau conteneur de données)
 
-Create the file `dca/tl_member.php` in your module folder and add the meta data
-for the new field so Contao knows how to handle it.
+Créez le fichier `dca/tl_member.php` dans le dossier de votre module et ajoutez-y les méta-données pour le nouveau champ, afin que Contao sache comment le gérer. 
 
 ``` {.php}
-// Modify the palette
+// Modification de la palette
 $GLOBALS['TL_DCA']['tl_member']['palettes']['default'] = str_replace
 (
     'company',
@@ -110,7 +100,7 @@ $GLOBALS['TL_DCA']['tl_member']['palettes']['default'] = str_replace
     $GLOBALS['TL_DCA']['tl_member']['palettes']['default']
 );
 
-// Add the field meta data
+// Ajoute les méta-données du champ
 $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 (
     'label'     => &amp;$GLOBALS['TL_LANG']['tl_member']['customer_number'],
@@ -120,14 +110,12 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 );
 ```
 
-If you do not understand the code above, you might want to read the chapter on
-[Data Container Arrays][1].
+Si vous ne comprenez pas le code ci-dessus, il peut être utile de relire le chapitre sur les [tableaux conteneurs de données][1].
 
 
-### Adding a translation
+### Ajouter une traduction
 
-Create the file `languages/en/tl_member.php` in your module folder and add the
-English labels for the new field:
+Créez le fichier `languages/en/tl_member.php` dans le dossier de votre module, et ajoutez-y les libellés anglais pour votre nouveau champ :
 
 ``` {.php}
 $GLOBALS['TL_LANG']['tl_member']['customer_number'] = array
@@ -137,36 +125,25 @@ $GLOBALS['TL_LANG']['tl_member']['customer_number'] = array
 );
 ```
 
-Now you can enter a customer number in the "members" module which can contain up
-to 8 digits. If the field is left blank or contains any non-digit characters,
-Contao will not save the value and show an error message instead.
+Dans le module membres, vous pouvez désormais saisir un numéro de client qui peut contenir jusqu'à 8 caractères numériques. Si le champ n'est pas saisi, ou contient un caractère non numérique, Contao refusera d'enregistrer la valeur et affichera un message d'erreur à la place. 
 
 
-## Customizing TinyMCE
+## Personnaliser l'éditeur de texte riche (TinyMCE)
 
-This page explains how to customize the Rich Text Editor and save the changes so
-they will not be overriden on the next Contao update. Note that Contao does not
-include all TinyMCE plugins by default, so if you want to use a certain plugin
-that is not part of the Contao distribution, download it from the [TinyMCE
-project website][4] and move it into the `assets/tinymce/plugins` folder.
+Cette page explique comment personnaliser TinyMCE et sauvegarder les modifications afin qu'elles ne soient pas écrasées par la prochaine mise à jour de Contao. Notez que, par défaut, Contao n'inclut pas tous les plugins de TinyMCE; si vous souhaitez utiliser un plugin particulier qui ne fait pas partie de la distribution de Contao, il vous faut donc le télécharger à partir du [site du projet TinyMCE][4], et le mettre dans le dossier `assets/tinymce/plugins`. 
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/rich-text-editor.jpg)
 
-To image above shows the default Rich Text Editor configuration file
-`system/config/tinyMCE.php`. To create a custom configuration file, simply copy
-it and rename it e.g. to `tinyCustom.php`. Then apply your changes and save the
-new file. The last step is to adjust the [data container configuration][5] in
-the `system/config/dcaconfig.php` file and tell Contao to which fields the
-custom file shall be applied.
+L'image ci-dessus montre le fichier de configuration de l'éditeur de texte riche `system/config/tinyMCE.php`. Pour créer un fichier de configuration personnalisé, copiez simplement ce fichier et renommez-le, par exemple en `tinyCustom.php`. Faites ensuite vos modifications et sauvegardez le nouveau fichier. Il reste encore à adapter la [configuration du conteneur de données][5] dans le fichier `system/config/dcaconfig.php` et indiquer à Contao à quels champs le fichier personnalisé de configuration s'applique. 
 
 ``` {.php}
-// Use the custom RTE configuration for text elements
+// Utilisation d'une configuration personnalisée de l'éditeur de texte riche pour les éléments textes
 $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] =
 'tinyCustom';
 ```
 
 
-## Overriding class methods
+## Surcharger les méthodes de classes
 
 Let us assume that you want to modify the behaviour of the navigation module to
 always display even if there are no sub-pages and the module would not be shown
