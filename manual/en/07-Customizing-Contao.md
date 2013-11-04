@@ -662,7 +662,7 @@ $GLOBALS['TL_HOOKS']['getPageLayout'][] = array('MyClass', 'mygetPageLayout');
 // MyClass.php
 public function mygetPageLayout(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
 {
-    // Beliebiger Code
+    // Do something
 }
 ```
 
