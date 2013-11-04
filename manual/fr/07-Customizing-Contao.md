@@ -145,24 +145,12 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] =
 
 ## Surcharger les méthodes de classes
 
-Let us assume that you want to modify the behaviour of the navigation module to
-always display even if there are no sub-pages and the module would not be shown
-at all. In this case a note shall be printed to inform the user that there are
-no sub-pages. Of course we will try to preserve as much of the original
-navigation class as possible, so future updates do not require maintenance.
-Module and content element classes can be assigned dynamically in the Contao
-system configuration, which allows you to easily replace them with your own
-versions.
+Imaginons que vous vouliez modifier le comportement du module de navigation pour qu'il soit toujours visible, même en l'absence de sous-pages, alors que le module ne serait normalement pas affiché. Dans ce cas, une note doit informer l'utilisateur qu'il n'y a pas de sous-pages. Bien entendu, nous allons faire en sorte de conserver au maximum la classe originale de navigation, afin que les futures mises à jour ne nécessitent pas de maintenances. Les classes de modules et d'éléments de contenu peuvent être assignées dynamiquement dans la configuration du système de Contao, ce qui vous permet de les remplacer facilement par vos propres versions. 
 
 
-### Creating a custom class
+### Créer une classe personnalisée
 
-The default navigation class behaves pretty much like we want it to, except that
-the `generate()` method hides the module if there are no sub-pages. Therefore
-all we need to change is this particular method, so the best practice is to
-extend the original class and simply override it. To do so, create a new
-`xcustom/ModuleMyNavigation.php` file and define the custom class
-`ModuleMyNavigation`:
+Le comportement de la classe de navigation par défaut correspond assez bien à ce que nous voulons, sauf que la méthode `generate()` cache le module lorsqu'il n'y a pas de sous-pages. Il suffit donc de modifier cette méthode particulière, et la meilleure façon de le faire est d'étendre la classe originale en la supplantant. Pour ce faire, créez un nouveau fichier `xcustom/ModuleMyNavigation.php` et définissez la classe personnalisée `ModuleMyNavigation` :
 
 ``` {.php}
 // xcustom/ModuleMyNavigation.php
@@ -170,7 +158,7 @@ class ModuleMyNavigation extends ModuleNavigation
 {
     public function generate()
     {
-        // Execute the original method
+        // Exécute la méthode originale
         $buffer = parent::generate();
 
         if (empty($buffer))
@@ -184,37 +172,26 @@ class ModuleMyNavigation extends ModuleNavigation
 ```
 
 
-### Registering a custom class
+### Enregistrer une classe personnalisée
 
-Module and content element classes can be assigned dynamically in the Contao
-system configuration, which allows you to easily replace them with your own
-versions. The names of the module classes are stored in the global `FE_MOD` 
-array.
+Les classes de modules et d'éléments de contenu peuvent être assignées dynamiquement dans la configuration du système de Contao, ce qui vous permet de les remplacer facilement par vos propres versions. Les noms des classes de modules sont enregistrés dans le tableau global `FE_MOD`. 
 
 ``` {.php}
 // xcustom/config/config.php
 $GLOBALS['FE_MOD']['navigationMenu']['navigation'] = 'ModuleMyNavigation';
 ```
 
-Thanks to the dynamic configuration, Contao automatically loads the new class
-upon the next request and the navigation module prints the "There are no
-subpages" notice instead of not displaying at all. The modification is
-update-safe and does not require maintenance.
+Grâce à la configuration dynamique, Contao charge automatiquement la nouvelle classe à la requête suivante, et le module de navigation affichera le message "There are no subpages" au lieu de ne rien afficher du tout. La modification supporte les mises à jour sans nécessiter de maintenance. 
 
 
 ## Contao hooks
 
-Hooks work similar to the [callback functions][6] of the Data Container Array.
-You can register one or more functions for a certain event and when the event is
-triggered, the callback functions are executed. Hooks allow you to add custom
-functionality to the core.
+Les hooks fonctionnent de la même manière que les [fonctions callback][6] du tableau conteneur de données (DCA). Vous pouvez enregistrer une ou plusieurs fonctions pour un événement donné, et lorsque l'événement est déclenché, les fonctions callback sont exécutées. Les hooks vous permettent d'ajouter des fonctionnalités personnalisées au coeur de Contao.
 
 
 ### activateAccount
 
-The "activateAccount" hook is triggered when a new front end account is
-activated. It passes the user object as argument and does not expect a return
-value. It is available from version 2.4.3.
+Le hook "activateAccount" est déclenché lorsqu'un nouveau compte en front office est activé. Il passe l'objet utilisateur en argument et n'attend pas de valeur de retour. Il est disponible depuis la version 2.4.3.
 
 ``` {.php}
 // config.php
@@ -224,17 +201,14 @@ $GLOBALS['TL_HOOKS']['activateAccount'][] = array('MyClass',
 // MyClass.php
 public function myActivateAccount(Database_Result $objUser)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### activateRecipient
 
-The "activateRecipient" hook is triggered when a new newsletter recipient is
-added. It passes the e-mail address, the recipient IDs and the channel IDs as
-argument and does not expect a return value. It is available from version
-2.8.RC1.
+Le hook "activateRecipient" est déclenché lorsqu'un nouveau destinataire d'une newsletter est ajouté. Il passe en arguments l'adresse e-mail, les IDs du destinataire et de la liste de diffusion, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.8.RC1.
 
 ``` {.php}
 // config.php
@@ -244,16 +218,14 @@ $GLOBALS['TL_HOOKS']['activateRecipient'][] = array('MyClass',
 // MyClass.php
 public function myActivateRecipient($strEmail, $arrRecipients, $arrChannels)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### addComment
 
-The "addComment" hook is triggered when a comment is added. It passes the ID of
-the record and the data array as arguments and does not expect a return value.
-It is available from version 2.8.2.
+Le hook "addComment" est déclenché lorsqu'un commentaire est ajouté. Il passe l'ID de l'enregistrement et de le tableau de données en arguments et n'attend pas de valeur de retour. Il est disponible depuis la version 2.8.2.
 
 ``` {.php}
 // config.php
@@ -262,17 +234,14 @@ $GLOBALS['TL_HOOKS']['addComment'][] = array('MyClass', 'myAddComment');
 // MyClass.php
 public function myAddComment($intId, $arrSet)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### addCustomRegexp
 
-The "addCustomRegexp" hook is triggered when an unknown regular expression is
-found. It passes the name of the regexp, the current value and the widget object
-as arguments and expects a boolean return value. It is available from version
-2.6.2.
+Le hook "addCustomRegexp" est déclenché lorsqu'une expression régulière inconnue est trouvée. Il passe en arguments le nom de l'expression régulière, la valeur courante et l'objet widget, et attend une valeur de retour de type booléen. Il est disponible depuis la version 2.6.2.
 
 ``` {.php}
 // config.php
@@ -299,9 +268,7 @@ public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
 
 ### addLogEntry
 
-The "addLogEntry" hook is triggered when a new log entry is added. It passes the
-message, the function and the action as arguments and does not expect a return
-value. It is available from version 2.8.RC1.
+Le hook "addLogEntry" est déclenché lorsqu'une nouvelle entrée est ajoutée au journal (log). Il passe en arguments le message, la fonction et l'action, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.8.RC1. 
 
 ``` {.php}
 // config.php
@@ -310,17 +277,14 @@ $GLOBALS['TL_HOOKS']['addLogEntry'][] = array('MyClass', 'myAddLogEntry');
 // MyClass.php
 public function myAddLogEntry($strText, $strFunction, $strAction)
 {
-    // Do something
+    // Faire quelque chose
 }
 ```
 
 
 ### checkCredentials
 
-The "checkCredentials" hook is triggered when a login attempt fails due to a
-wrong password. It passes the username and password as well as the user object
-as arguments and expects a boolean return value. It is available from version
-2.6.0.
+Le hook "checkCredentials" est déclenché lorsqu'une tentative d'identification échoue à cause d'un mot de passe incorrect. Il passe en arguments le nom de l'utilisateur, le mot de passe et l'objet utilisateur, et attend une valeur de retour de type booléen. Il est disponible depuis la version 2.6.0. 
 
 ``` {.php}
 // config.php
@@ -343,9 +307,7 @@ public function myCheckCredentials($strUsername, $strPassword, User $objUser)
 
 ### closeAccount
 
-The "closeAccount" hook is triggered when a user closes his account. It passes
-the user ID, the operation mode and the module as arguments and does not expect
-a return value. It is available from version 2.8.0.
+Le hook "closeAccount" est déclenché lorsqu'un utilisateur clôture son compte. Il passe en arguments l'ID de l'utilisateur, le mode opérationnel et le module, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.8.0. 
 
 ``` {.php}
 // config.php
@@ -356,7 +318,7 @@ public function myCloseAccount($intId, $strMode, $objModule)
 {
     if ($strMode == 'close_delete')
     {
-        // Do something
+        // Faire quelque chose
     }
 }
 ```
@@ -364,9 +326,7 @@ public function myCloseAccount($intId, $strMode, $objModule)
 
 ### compileDefinition
 
-The "compileDefinition" hook is triggered when a format definition of a style
-sheet is written. It passes the configuration array as argument and expects a
-string as return value. It is available from version 2.9.4.
+Le hook "compileDefinition" est déclenché quand une définition de formatage d'une feuille de style est écrite. Il passe le tableau de configuration en argument et attend une chaîne de caractères comme valeur de retour. Il est disponible depuis la version 2.9.4. 
 
 ``` {.php}
 // config.php
@@ -388,10 +348,7 @@ public function myCompileDefinition($arrRow)
 
 ### createDefinition
 
-The "createDefinition" hook is triggered when a format definition of a style
-sheet is imported. It passes the key and value, the original format definition
-and the data array as arguments and expects an array or "false" as return value.
-It is available from version 2.9.4.
+Le hook "createDefinition" est déclenché quand une définition de formatage d'une feuille de style est importée. Il passe la clé et la valeur, la définition de formatage d'origine et le tableau de données en arguments et attend un tableau ou "false" comme valeur de retour. Il est disponible depuis la version 2.9.4. 
 
 ``` {.php}
 // config.php
@@ -413,9 +370,7 @@ public function myCreateDefinition($strKey, $strValue, $strDefinition, $arrSet)
 
 ### createNewUser
 
-The "createNewUser" hook is triggered when a new front end user registers on the
-website. It passes the ID of the new user and the data array as arguments and
-does not expect a return value. It is available from version 2.2.0.
+Le hook "createNewUser" est déclenché lorsqu'un nouvel utilisateur front office s'enregistre sur le site internet. Il passe en arguments le nouvel utilisateur et le tableau de données, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.2.0. 
 
 ``` {.php}
 // config.php
@@ -424,16 +379,14 @@ $GLOBALS['TL_HOOKS']['createNewUser'][] = array('MyClass', 'myCreateNewUser');
 // MyClass.php
 public function myCreateNewUser($intId, $arrData)
 {
-    // Modify the record
+    // Modification de l'enregistrement
 }
 ```
 
 
 ### executePreActions
 
-The "executePreActions" hook is triggered on Ajax requests that do not require a
-DCA object. It passes the name of the action as argument and does not expect a
-return value. It is available from version 2.6.1.
+Le hook "executePreActions" est déclenché par les requêtes Ajax qui ne nécessitent pas un objet DCA. Il passe le nom de l'action en argument, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.6.1. 
 
 ``` {.php}
 // config.php
@@ -444,7 +397,7 @@ public function myExecutePreActions($strAction)
 {
     if ($strAction == 'update')
     {
-        // Do something
+        // Faire quelque chose
     }
 }
 ```
@@ -452,10 +405,7 @@ public function myExecutePreActions($strAction)
 
 ### executePostActions
 
-The "executePostActions" hook is triggered on Ajax requests that require a DCA
-object. It passes the name of the action and the data container object as
-arguments and does not expect a return value. It is available from version
-2.6.1.
+Le hook "executePostActions" est déclenché par les requêtes Ajax qui nécessitent un objet DCA. Il passe le nom de l'action et l'objet conteneur de données en arguments, et n'attend pas de valeur de retour. Il est disponible depuis la version 2.6.1. 
 
 ``` {.php}
 // config.php
@@ -466,7 +416,7 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 {
     if ($strAction == 'update')
     {
-        // Do something
+        // Faire quelque chose
     }
 }
 ```
@@ -474,8 +424,7 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 
 ### generateBreadcrumb
 
-The "generateBreadcrumb" hook allows to modify the breadcrumb navigation. 
-It passes the navigation items and the frontend module as arguments and expects the items as return value. It is available from version 2.10.0
+Le hook "generateBreadcrumb" permet de modifier la navigation fil d'Ariane. Il passe en arguments les éléments de navigation et le module front office, et attend des éléments comme valeur de retour. Il est disponible à partir de la version 2.10.0.
 
 ``` {.php}
 // config.php
@@ -491,9 +440,7 @@ public function myGenerateBreadcrumb($arrItems, \Module $objModule)
 
 ### generateFrontendUrl
 
-The "generateFrontendUrl" hook is triggered when a front end URL is recreated.
-It passes the page object, the parameter string and the default URL as arguments
-and expects a string as return value. It is available from version 2.5.8.
+Le hook "generateFrontendUrl" est déclenché lors de la re-création d'une URL de front office. Il passe en arguments l'objet page, la chaîne de paramètres et l'URL par défaut, et attend une chaîne de caractères comme valeur de retour. Il est disponible à partir de la version 2.5.8. 
 
 ``` {.php}
 // config.php
