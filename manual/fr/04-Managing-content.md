@@ -1,21 +1,11 @@
-# Managing content
+# Gestion du contenu
 
-The following chapters explain how to manage content in Contao. The Contao core
-supports many different content types like articles, news, events, newsletters,
-forms or definitions. Further content types like banners, tickets, products or
-recommendations are available in the [Extension Repository][1]. To create
-content, log into the back end and choose one of the modules in the Content
-section of the navigation menu.
+Les chapitres suivants expliquent comment gérer le contenu dans Contao. Le noyau de Contao supporte de nombreux types de contenu comme des articles, des actualités, des événements, des bulletins d'information, des formulaires ou des définitions. D'autres types de contenu comme des bannières, des billets, des produits ou des recommandations sont disponibles dans le [référentiel d'extensions][1]. Pour créer du contenu, se connecter au back office et choisir un des modules dans la section "Contenu" du menu de navigation.
 
 
 ## Articles
 
-Articles are containers for content elements. Grouping content elements that
-belong together makes it easy to move, publish, copy, edit or export them all at
-once instead of one by one. Each article is associated with a particular page
-and layout section and therefore has a fixed position in the site structure and
-on the website. Contao optionally shows only the article teaser with a "Read
-more" link.
+Les articles sont des conteneurs pour les éléments de contenu. Regrouper les éléments de contenu par article rend le travail plus facile pour déplacer, publier, copier, éditer ou exporter ces éléments ensemble au lieu d'un par un. Chaque article est associé à une page particulière et à une section particulière de cette page, il a ainsi une position fixe dans la structure du site et sur le site internet. Contao peut optionnellement n'afficher qu'une accroche d'article avec un lien "En savoir plus...".
 
 
 ### Éléments de contenu
