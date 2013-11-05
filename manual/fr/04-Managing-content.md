@@ -559,10 +559,9 @@ Semblable aux éléments de contenu, Contao propose un élément séparé pour c
 Les balises d'insertion sont des jokers qui sont remplacés par du contenu dynamique quand une page est affichée à l'écran. Par exemple, elles vous permettent d'afficher la date courante, l'adresse d'un membre en fonction de son nom ou bien d'inclure un fichier. Les balises d'insertion peuvent être utilisées presque partout dans Contao, même dans les pages en cache.
 
 
-### Link elements
+### Les éléments de lien
 
-The following Insert Tags allow you to link to another page or article using its
-ID or alias.
+Les balises d'insertion suivantes vous permettent de faire un lien vers une autre page ou vers un article en utilisant son ID ou son alias.
 
 <table>
 <tr>
@@ -571,33 +570,27 @@ ID or alias.
 </tr>
 <tr>
   <td><code>{{link::*}}</code></td>
-  <td>This tag will be replaced with a link to an internal page (replace * with
-      the page ID or alias).</td>
+  <td>Sera remplacée par un lien vers une page interne (remplacez * par un ID ou un alias de page).</td>
 </tr>
 <tr>
   <td><code>{{link::back}}</code></td>
-  <td>This tag will be replaced with a link to the last page visited. Can also
-      be used with "link_open", "link_url" and "link_title".</td>
+  <td>Sera remplacée par un lien vers la dernière page visitée. Peut aussi être utilisée avec "link_open", "link_url" et "link_title".</td>
 </tr>
 <tr>
   <td><code>{{link::login}}</code></td>
-  <td>This tag will be replaced with a link to the login page of the currently
-      logged in front end user (if any).</td>
+  <td>Sera remplacée par un lien vers la page de connexion du membre actuellement connecté (s'il y en a un).</td>
 </tr>
 <tr>
   <td><code>{{link_open::*}}</code></td>
-  <td>Will be replaced with the opening tag of a link to an internal page:
-      <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
+  <td>Sera remplacée par la balise d'ouverture d'un lien vers une page interne : <code>{{link_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of an internal page: <code>&lt;a
-      href="{{link_url::12}}">Click here&lt;/a&gt;</code>.</td>
+  <td>Sera remplacée par l'URL d'une page interne : <code>&lt;a href="{{link_url::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_title::*}}</code></td>
-  <td>This tag will be replaced with the title of an internal page: <code>&lt;a
-      title="{{link_title::12}}">Click here&lt;/a&gt;</code>.</td>
+  <td>Sera remplacée par le titre d'une page interne : <code>&lt;a title="{{link_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_close}}</code></td>
@@ -687,14 +680,13 @@ ID or alias.
 </table>
 
 
-### User properties
+### Propriétés de l'utilisateur
 
-The following Insert Tags allow you to display any property of the currently
-logged in user.
+Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle propriété du membre actuellement connecté. 
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Balise d'insertion</th>
   <th>Description</th>
 </tr>
 <tr>
@@ -765,13 +757,13 @@ logged in user.
 </table>
 
 
-### Page properties
+### Propriétés de page
 
-The following Insert Tags allow you to display any property of the current page.
+Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle propriété de la page courante. 
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Balise d'insertion</th>
   <th>Description</th>
 </tr>
 <tr>
@@ -825,14 +817,13 @@ The following Insert Tags allow you to display any property of the current page.
 </table>
 
 
-### Environment variables
+### Variables d'environnement
 
-The following Insert Tags allow you to display environment variables like the
-page name or the request string.
+Les balises d'insertion suivantes vous permettent d'afficher les variables d'environnement comme le nom de la page ou la chaîne de requête. 
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Balise d'insertion</th>
   <th>Description</th>
 </tr>
 <tr>
@@ -877,14 +868,13 @@ page name or the request string.
 </table>
 
 
-### Include elements
+### Éléments inclus
 
-The following Insert Tags allow you to include various resources like articles,
-modules or files from the "templates" directoy.
+Les balises d'insertion suivantes vous permettent d'inclure différentes ressources comme des articles, des modules ou des fichiers qui se trouvent dans le dossier "templates". 
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Balise d'insertion</th>
   <th>Description</th>
 </tr>
 <tr>
@@ -926,14 +916,13 @@ modules or files from the "templates" directoy.
 </table>
 
 
-### Miscellaneous
+### Divers
 
-The following Insert Tags allow you to perform miscellaneous tasks like adding
-the current date or including lightbox images.
+Les balises d'insertion suivantes vous permettent d'effectuer différentes tâches comme ajouter la date courante ou ajouter des images lightbox.
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Balise d'insertion</th>
   <th>Description</th>
 </tr>
 <tr>
@@ -1205,5 +1194,5 @@ Available flags:
 
 
 [1]: https://contao.org/en/extension-list.html
-[2]: http://en.wikipedia.org/wiki/Opt_in_e-mail
-[3]: 04-Managing-content.md#insert-tags
+[2]: http://fr.wikipedia.org/wiki/Opt_in
+[3]: 04-Managing-content.md#balises-d-insertion
