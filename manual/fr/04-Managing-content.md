@@ -311,15 +311,13 @@ Les Modules front office sont utilisés pour afficher des événements sur le si
 
 ### Permaliens
 
-Each event has a unique URL (permalink) that can be used to reference it:
+Chaque événement a une URL unique (permalien) qui peut être utilisée pour le référencer :
 
 ```
 http://www.domain.com/event-reader/events/final-exams.html
 ```
 
-The above URL requests the event "final-exams" via the page "events". Remember
-that Contao is a page-based CMS, so if the page "events" did not exist or if it
-did not include the event reader module, the event would not be displayed.
+L'URL ci-dessus demande l'évènement "final-exams" via la page "events". Rappelez-vous que Contao est un CMS basé sur les pages, donc si la page "events" n'existait plus ou si elle n'incluait plus le module Lecteur d'évènements, l'évènement ne pourrait plus être affiché. 
 
 
 ## Flux RSS/Atom
@@ -341,87 +339,69 @@ Un ou plusieurs calendriers peuvent être regroupés et exportés en tant que fl
 Les fichiers XML sont générés automatiquement dans le répertoire ```share``` de votre installation de Contao. Dans cet exemple : ```share/events.xml```.
 
 
-## Newsletters
+## Bulletins d'information
 
-The newsletter extension allows you to manage and send newsletters and
-optionally display them on the website. Unlike articles that are associated with
-a particular page, newsletters are organized in channels, which allows you to
-easily group or categorize them.
+L'extension Bulletins d'information vous permet de gérer et d'envoyer des bulletins d'information et optionnellement de les afficher sur le site internet. Contrairement aux articles qui sont associés à une page particulière, les bulletins d'informations sont organisés en listes de diffusion, ce qui vous permet de facilement les regrouper ou les catégoriser.
 
 
-### Recipients
+### Destinataires
 
-Newsletter subscriptions are normally handled by the respective front end
-modules, so you do not have to manage recipients manually. For data privacy
-reasons, Contao requires [Double Opt-In][2] subscriptions and stores only the
-e-mail address of the subscriber.
+Les inscriptions à un bulletin d'information sont traitées par les modules front office créés à cet effet, donc vous n'avez pas à gérer les destinataires manuellement. Pour des raisons de protection des données privées, Contao utilise l'inscription par [Double Opt In][2] et ne stocke que l'adresse e-mail de l'abonné.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/newsletter-recipients.jpg)
 
-In case you already have a list of recipients, you can import them into Contao
-from a CSV file.
+Au cas où vous auriez déjà une liste de destinataires, vous pouvez l'importer dans Contao à partir d'un fichier CSV.
 
 
-### Personalized newsletters
+### Bulletins d'information personnalisés
 
-Insofar as you are sending newsletters to registered members, you can personalize
-them with so called "Simple Tokens". Simple tokens are similar to [insert tags][3] 
-and can be used in both the HTML and the text content of a newsletter.
+Dans la mesure où vous envoyez des bulletins d'information à des membres inscrits, vous pouvez personnaliser ces bulletins avec des "Simple Tokens". Les "Simple Tokens" fonctionnent d'une manière similaire à celle des [balises d'insertion][3] et peuvent être utilisés aussi bien dans la version HTML que dans la version texte de votre bulletin d'information.
 
 ```
-Dear ##firstname## ##lastname##,
+Cher ##firstname## ##lastname##,
 
-please check and update your personal data:
+Veuillez mettre à jour vos données personnelles :
 
-Street: ##street## 
-Postal: ##postal##
-City:   ##city##
-Phone:  ##phone## 
+Rue: ##street## 
+Code postal: ##postal##
+Ville: ##city##
+Téléphone: ##phone## 
 E-mail: ##email## 
 
-The Administrator
+L'administrateur
 ```
 
-In contrast to insert tags, however, simple tokens do not only allow you to
-insert data of the member table `tl_member`, but also to realize simple
-if-else statements to e.g. specify the salutation.
+Cependant, contrairement aux balises d'insertion, les "Simple Tokens" ne permettent pas seulement d'ajouter des données de la table `tl_member`, mais aussi de faire des déclarations if-else simples, par ex. de spécifier une salutation : 
 
 ```
 {if gender=="male"}
-Dear Mr ##lastname##,
+Monsieur ##lastname##,
 {elseif gender=="female"}
-Dear Mrs ##lastname##,
+Madame ##lastname##,
 {else}
-Dear Sirs,
+Madame, Monsieur,
 {endif}
 
-[newsletter content]
+[contenu du bulletin]
 
 {if phone==""}
-Please update your contact details and enter your phone number.
+Veuillez s'il vous plaît mettre à jour vos informations de contact et entrer votre numéro de téléphone.
 {endif}
 
-The Administrator
+L'administrateur
 ```
 
 
-### Sending newsletters
+### Envoyer des bulletins d'information
 
-Especially on shared hosting servers, there are typically limitations regarding
-the script execution time and/or the number of e-mails that can be sent per
-minute. Contao tries to work around both problems by splitting the sending
-process into several cycles to prevent script timeouts and adding a custom
-waiting time between each cycle to control the number of e-mails per minute.
+En particulier sur les hébergements mutualisés, il y a des limites concernant le temps d'exécution d'un script et/ou le nombre d'e-mails qui peuvent être envoyés par minute. Contao essaie de contourner ces deux problèmes en divisant le processus d'envoi en plusieurs cycles pour éviter le dépassement du temps d'exécution du script et en ajoutant une pause entre chaque cycle pour contrôler le nombre d'e-mails par minute.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/sending-newsletters.jpg)
 
 
 ### Modules front office
 
-Front end modules are used to handle subscriptions and to optionally display
-newsletters on the website. They can be configured with the "Modules" module in
-the back end and have to be added to an article or page layout to actually show
-up on the website.
+Les modules front office sont utilisés pour gérer les inscriptions aux bulletins d'information et optionnellement les afficher sur le site intenret. Ils peuvent être configurés avec le module "Modules" dans le  back office et et doivent être ajoutés à un article ou à une présentation de page pour être affichés sur le site internet.
 
 <table>
 <tr>
@@ -454,24 +434,18 @@ up on the website.
 
 ### Permaliens
 
-Each newsletter has a unique URL (permalink) that can be used to reference it:
+Chaque bulletin d'information a une URL unique (permalien) qui peut être utilisée pour le référencer :
 
 ```
 http://www.domain.com/newsletters/items/james-wilson-returns.html
 ```
 
-The above URL requests the newsletter "james-wilson-returns" via the page
-"newsletters". Remember that Contao is a page-based CMS, so if the page
-"newsletters" did not exist or if it did not include the newsletter reader
-module, the newsletter would not be displayed.
+L'URL ci-dessus demande le bulletin d'information "james-wilson-returns" via la page "newsletters". Rappelez-vous que Contao est un CMS basé sur les pages, donc si la page "newsletters" n'existait plus ou si elle n'incluait plus le module Lecteur de bulletins d'information, le bulletin d'information ne pourrait plus être affiché. 
 
 
 ## Formulaires
 
-The built-in form generator can be used to create interactive forms that are
-sent via e-mail or stored in the Contao database. Uploaded files can be sent as
-e-mail attachment or stored in the Contao files directory. The form generator
-supports four different data formats:
+Le générateur de formulaire intégré peut être utilisé pour créer des formulaires interactifs qui sont envoyées via e-mail ou stockés dans la base de données de Contao. Les fichiers téléversés peuvent être envoyés en tant que pièces jointes par e-mail ou stockés dans le répertoire des fichiers de Contao. Le générateur de formulaire prend en charge quatre formats de données différents :
 
 <table>
 <tr>
@@ -480,31 +454,26 @@ supports four different data formats:
 </tr>
 <tr>
   <td>Raw data</td>
-  <td>The form data will be sent as plain text message with each field in a new
-      line.</td>
+  <td>Les données du formulaire sont envoyées comme du simple texte avec une nouvelle ligne pour chaque champ.</td>
 </tr>
 <tr>
   <td>XML file</td>
-  <td>The form data will be attached to the e-mail as an XML file.</td>
+  <td>Les données du formulaire sont envoyées en pièce jointe sous la forme d'un fichier XML.</td>
 </tr>
 <tr>
   <td>CSV file</td>
-  <td>The form data will be attached to the e-mail as a CSV file.</td>
+  <td>Les données du formulaire sont envoyées en pièce jointe sous la forme d'un fichier CSV.</td>
 </tr>
 <tr>
   <td>E-mail</td>
-  <td>Ignores all fields except email, subject, message and cc (carbon copy) and
-      sends the form data like it had been sent from a mail client. File uploads
-      are allowed.</td>
+  <td>Tous les champs sont ignorés à part email, subject, message et cc (copie carbone) et les données sont envoyées comme si l'e-mail avait été envoyé depuis un client de messagerie. Les envois de fichiers sont autorisés.</td>
 </tr>
 </table>
 
 
-### Form fields
+### Les champs du formulaire
 
-Similar to content elements, Contao provides a separate element for each type of
-form field like text fields, password fields, select menus, file uploads, hidden
-fields or submit buttons. Here is an overview of the Contao core form fields:
+Semblable aux éléments de contenu, Contao propose un élément séparé pour chaque type de champ de formulaire tels que les champs de textes, les champs de mots de passe, les menus déroulants, les téléchargements de fichiers, les champs cachés ou boutons de soumission. Voici un aperçu des champs disponibles de Contao :
 
 <table>
 <tr>
@@ -585,12 +554,9 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 </table>
 
 
-## Insert tags
+## Balises d'insertion
 
-Insert Tags are wildcards that are replaced with dynamic content when a page is
-printed to the screen. They e.g. allow you to show the current date, address a
-front end user by his name or include a file. Insert tags can be used almost
-anywhere in Contao, even on cached pages.
+Les balises d'insertion sont des jokers qui sont remplacés par du contenu dynamique quand une page est affichée à l'écran. Par exemple, elles vous permettent d'afficher la date courante, l'adresse d'un membre en fonction de son nom ou bien d'inclure un fichier. Les balises d'insertion peuvent être utilisées presque partout dans Contao, même dans les pages en cache.
 
 
 ### Link elements
@@ -600,7 +566,7 @@ ID or alias.
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Balise d'insertion</th>
   <th>Description</th>
 </tr>
 <tr>
