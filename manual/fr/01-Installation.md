@@ -104,10 +104,7 @@ Pour synchroniser une installation de Contao, vous pouvez soit utiliser l'[utili
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/synchronization-options.jpg)
 
-Review the options carefully and make sure to choose "Preview changes", so you
-can check which files will be updated. Then confirm each file in the preview
-window and doublecheck the files that are marked for deletion! Click "OK" to
-start the synchronization process.
+Contrôlez les options attentivement et assurez-vous de choisir "Preview changes" pour que vous puissiez contrôler quels fichiers seront mis à jour. Ensuite confirmez chaque fichier dans la fenêtre d'aperçu et contrôlez spécialement les fichiers qui vont être effacés ! Cliquez sur OK pour démarrer le processus de synchronisation. 
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/synchronization-confirmation.jpg)
 
@@ -125,18 +122,18 @@ Le "Contao Live Update Service" est un service commercial fourni par [iNet Robot
 
 Le Live Update comprend les fonctionnalités suivantes:
 
-* Arbitrary up- and downgrades to any Contao version
+* Mise à jour et retour à une version antérieure vers n'importe quelle version de Contao
 * Sauvegarde automatique de la base de données avant la mise à jour
-* Individual validation and completion of the Contao installation
+* Validation personnalisée et achèvement de l'installation de Contao
 * Comparaison des modèles personnalisés et des fichiers originaux
 
 
-### Version selection
+### Sélection d'une version
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/live-update-1.jpg)
 
 
-### Template differences
+### Différences entre les modèles
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/live-update-2.jpg)
 

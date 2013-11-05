@@ -60,11 +60,7 @@ Si l'ordre est inversé, la valeur générale l'emporterait sur la marge spécif
 
 ## Modules
 
-Front end modules allow you to add almost any kind of functionality to your
-website. The Contao core includes modules to generate various navigation menus,
-handle user registration and authentication, search the website, import RSS
-feeds and many more. To create a module, log into the back end and choose
-"Themes" -> "Front end modules" in the navigation menu.
+Les modules front office vous permettent d'ajouter presque n'importe quel type de fonctionnalités à votre site internet. Le coeur de Contao comprend différents modules pour générer plusieurs menus de navigation, gérer l'enregistrement et l'authentification d'un membre, rechercher sur le site, l'importation de flux RSS et bien plus encore. Pour créer un module, connectez-vous au back office et choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 
 <table>
 <tr>
