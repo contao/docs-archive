@@ -364,7 +364,7 @@ newsletter.
 ```
 Dear ##firstname## ##lastname##,
 
-please check and update your personal data:
+Please check and update your personal data:
 
 Street: ##street## 
 Postal: ##postal##
