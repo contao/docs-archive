@@ -921,25 +921,21 @@ Les balises d'insertion suivantes vous permettent d'effectuer différentes tâch
 </tr>
 <tr>
   <td><code>{{lang::*}}</code></td>
-  <td>This tag can be used to mark foreign words within a text: <code>{{lang::fr}}Au
-      revoir{{lang}}</code>. It will be replaced with <code>&lt;span lang="fr"
-      xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
+  <td>Cette balise peut être utilisée pour marquer les mots étrangers à l'intérieur d'un texte : <code>{{lang::en}}Goodbye{{lang}}</code> sera remplacé par <code>&lt;span lang="en" xml:lang="en"&gt;Goodbye&lt;/span&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
-  <td>Mark abbreviations in a text: <code>{{abbr::World Wide Web}}WWW{{abbr}}</code>.
-      It will be replaced with <code>&lt;abbr title="World Wide Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
+  <td>Marque les abréviations dans un texte : <code>{{abbr::World Wide Web}}WWW{{abbr}}</code> sera remplacé par <code>&lt;abbr title="World Wide Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Mark acronyms in a text: <code>{{acronym::Multipurpose Internet Mail
-      Extensions}}MIME{{acronym}}</code>. It will be replaced with <code>&lt;acronym
+  <td>Marque les acronymes dans un texte : <code>{{acronym::Multipurpose Internet Mail
+      Extensions}}MIME{{acronym}}</code> sera remplacé par <code>&lt;acronym
       title="Multipurpose Internet Mail Extensions"&gt;MIME&lt;/acronym&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
-  <td>Output properties of the user agent: <code>{{ua::browser}}</code>. It will e.g. be
-      replaced with "chrome".</td>
+  <td>Propriétés de sortie de l'agent utilisateur : <code>{{ua::browser}}</code>. Elle sera, par exemple, remplacée par "chrome".</td>
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
