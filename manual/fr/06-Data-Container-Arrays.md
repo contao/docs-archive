@@ -982,7 +982,7 @@ Les fonctions callback sont fondés sur un pattern de répartition d'événement
 </tr>
 <tr>
   <td>input_field_callback</td>
-  <td>Permet la création de champs de formulaires individuels et est, par exemple, utilisé dans le module back office "personal data" pour générer le widget "nettoyer les données". Attention: le champs n'est pas sauvegardé automatiquement !</td>
+  <td>Permet la création de champs de formulaires individuels et est, par exemple, utilisé dans le module back office "personal data" pour générer le widget "nettoyer les données". Attention : le champs n'est pas sauvegardé automatiquement !</td>
 </tr>
 <tr>
   <td>load_callback</td>

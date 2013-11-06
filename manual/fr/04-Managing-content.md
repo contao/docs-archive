@@ -570,112 +570,102 @@ Les balises d'insertion suivantes vous permettent de faire un lien vers une autr
 </tr>
 <tr>
   <td><code>{{link::*}}</code></td>
-  <td>Sera remplacée par un lien vers une page interne (remplacez * par un ID ou un alias de page).</td>
+  <td>Cette balise sera remplacée par un lien vers une page interne (remplacez * par un ID ou un alias de page).</td>
 </tr>
 <tr>
   <td><code>{{link::back}}</code></td>
-  <td>Sera remplacée par un lien vers la dernière page visitée. Peut aussi être utilisée avec "link_open", "link_url" et "link_title".</td>
+  <td>Cette balise sera remplacée par un lien vers la dernière page visitée. Peut aussi être utilisée avec "link_open", "link_url" et "link_title".</td>
 </tr>
 <tr>
   <td><code>{{link::login}}</code></td>
-  <td>Sera remplacée par un lien vers la page de connexion du membre actuellement connecté (s'il y en a un).</td>
+  <td>Cette balise sera remplacée par un lien vers la page de connexion du membre actuellement connecté (s'il y en a un).</td>
 </tr>
 <tr>
   <td><code>{{link_open::*}}</code></td>
-  <td>Sera remplacée par la balise d'ouverture d'un lien vers une page interne : <code>{{link_open::12}}Cliquez ici{{link_close}}</code>.</td>
+  <td>Cette balise sera remplacée par la balise d'ouverture d'un lien vers une page interne : <code>{{link_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_url::*}}</code></td>
-  <td>Sera remplacée par l'URL d'une page interne : <code>&lt;a href="{{link_url::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
+  <td>Cette balise sera remplacée par l'URL d'une page interne : <code>&lt;a href="{{link_url::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_title::*}}</code></td>
-  <td>Sera remplacée par le titre d'une page interne : <code>&lt;a title="{{link_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
+  <td>Cette balise sera remplacée par le titre d'une page interne : <code>&lt;a title="{{link_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_close}}</code></td>
-  <td>Will be replaced with the closing tag of a link to an internal page:
-      <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
+  <td>Cette balise sera remplacée par la balise de fermeture d'un lien vers une page interne : <code>{{link_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article::*}}</code></td>
-  <td>This tag will be replaced with a link to an article (replace * with the
-      article ID or alias).</td>
+  <td>Cette balise sera remplacée par un lien vers un article (remplacez * par un ID ou un alias d'article).</td>
 </tr>
 <tr>
   <td><code>{{article_open::*}}</code></td>
-  <td>Will be replaced with the opening tag of a link to an article:
-      <code>{{article_open::12}}Click here{{link_close}}</code>.</td>
+  <td>Cette balise sera remplacé par la balise d'ouverture du lien vers un article : <code>{{article_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of an article: <code>&lt;a
-      href="{{article_url::12}}">Click here&lt;/a&gt;</code>.</td>
+  <td>Cette balise sera remplacée par l'URL d'un article : <code>&lt;a
+      href="{{article_url::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{article_title::*}}</code></td>
-  <td>This tag will be replaced with the title of an article: <code>&lt;a
-      title="{{article_title::12}}">Click here&lt;/a&gt;</code>.</td>
+  <td>Cette balise sera remplacée par le titre d'un article : <code>&lt;a
+      title="{{article_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news::*}}</code></td>
-  <td>This tag will be replaced with a link to a news item (replace * with the
-      news ID or alias).</td>
+  <td>Cette balise sera remplacée par un lien vers une actualité (remplacez * par un ID ou un alias d'actualité).</td>
 </tr>
 <tr>
   <td><code>{{news_open::*}}</code></td>
-  <td>Will be replaced with the opening tag of a link to a news article:
-      <code>{{news_open::12}}Click here{{link_close}}</code>.</td>
+  <td>Cette balise sera remplacé par la balise d'ouverture du lien vers une actualité : <code>{{news_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of a news article: <code>&lt;a
-      href="{{news_url::12}}">Click here&lt;/a&gt;</code>.</td>
+  <td>Cette balise sera remplacée par l'URL d'une actualité : <code>&lt;a
+      href="{{news_url::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{news_title::*}}</code></td>
-  <td>This tag will be replaced with the title of a news article: <code>&lt;a
-      title="{{news_title::12}}">Click here&lt;/a&gt;</code>.</td>
+  <td>Cette balise sera remplacée par le titre d'une actualité : <code>&lt;a
+      title="{{news_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event::*}}</code></td>
-  <td>This tag will be replaced with a link to an event (replace * with the
-      event ID or alias).</td>
+  <td>Cette balise sera remplacée par un lien vers un événement (remplacez * par un ID ou un alias d'événement).</td>
 </tr>
 <tr>
   <td><code>{{event_open::*}}</code></td>
-  <td>Will be replaced with the opening tag of a link to an event:
-      <code>{{event_open::12}}Click here{{link_close}}</code>.</td>
+  <td>Cette balise sera remplacé par la balise d'ouverture du lien vers un événement : <code>{{event_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of an event: <code>&lt;a
-      href="{{event_url::12}}">Click here&lt;/a&gt;</code>.</td>
+  <td>Cette balise sera remplacée par l'URL d'un événement : <code>&lt;a
+      href="{{event_url::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{event_title::*}}</code></td>
-  <td>This tag will be replaced with the title of an event: <code>&lt;a
-      title="{{event_title::12}}">Click here&lt;/a&gt;</code>.</td>
+  <td>Cette balise sera remplacée par le titre d'un événement : <code>&lt;a
+      title="{{event_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
-  <td>This tag will be replaced with a link to a frequently asked question
-      (replace * with the FAQ ID or alias).</td>
+  <td>Cette balise sera remplacée par un lien vers une question fréquemment posée (remplacez * par un ID ou un alias de FAQ).</td>
 </tr>
 <tr>
   <td><code>{{faq_open::*}}</code></td>
-  <td>Will be replaced with the opening tag of a link to a question:
-      <code>{{faq_open::12}}Click here{{link_close}}</code>.</td>
+  <td>Cette balise sera remplacé par la balise d'ouverture du lien d'une question : <code>{{faq_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_url::*}}</code></td>
-  <td>This tag will be replaced with the URL of a question:
-  <code>&lt;a href="{{faq_url::12}}">Click here&lt;/a&gt;</code>.</td>
+  <td>Cette balise sera remplacée par l'URL d'une question : <code>&lt;a href="{{faq_url::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_title::*}}</code></td>
-  <td>This tag will be replaced with the title of a question: <code>&lt;a
-      title="{{faq_title::12}}">Click here&lt;/a&gt;</code>.</td>
+  <td>Cette balise sera remplacée par le titre d'une question : <code>&lt;a
+      title="{{faq_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 </table>
 
@@ -691,68 +681,55 @@ Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle pr
 </tr>
 <tr>
   <td><code>{{user::firstname}}</code></td>
-  <td>This tag will be replaced with the first name of the currently logged in
-      user.</td>
+  <td>Cette balise sera remplacée par le prénom du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::lastname}}</code></td>
-  <td>This tag will be replaced with the last name of the currently logged in
-      user.</td>
+  <td>Cette balise sera remplacée par le nom de famille du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::company}}</code></td>
-  <td>This tag will be replaced with the company name of the currently logged in
-      user.</td>
+  <td>Cette balise sera remplacée par le nom de la société du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::phone}}</code></td>
-  <td>This tag will be replaced with the phone number of the currently logged in
-      user.</td>
+  <td>Cette balise sera remplacée par le n° de téléphone du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::mobile}}</code></td>
-  <td>This tag will be replaced with the mobile number of the currently logged
-      in user.</td>
+  <td>Cette balise sera remplacée par le n° de téléphone portable du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::fax}}</code></td>
-  <td>This tag will be replaced with the fax number of the currently logged in
-      user.</td>
+  <td>Cette balise sera remplacée par le n° de fax du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::email}}</code></td>
-  <td>This tag will be replaced with the e-mail address of the currently logged
-      in user.</td>
+  <td>Cette balise sera remplacée par l'adresse e-mail du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::website}}</code></td>
-  <td>This tag will be replaced with the web address of the currently logged in
-      user.</td>
+  <td>Cette balise sera remplacée par l'adresse du site internet du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::street}}</code></td>
-  <td>This tag will be replaced with the street name of the currently logged in
-      user.</td>
+  <td>Cette balise sera remplacée par le nom de la rue du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::postal}}</code></td>
-  <td>This tag will be replaced with the postal code of the currently logged in
-      user.</td>
+  <td>Cette balise sera remplacée par le code postal du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::city}}</code></td>
-  <td>This tag will be replaced with the city of the currently logged in
-      user.</td>
+  <td>Cette balise sera remplacée par le nom de la ville du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::country}}</code></td>
-  <td>This tag will be replaced with the country of the currently logged in
-      user.</td>
+  <td>Sera remplacée par le nom du pays du membre actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::username}}</code></td>
-  <td>This tag will be replaced with the username of the currently logged in
-      user.</td>
+  <td>Cette balise sera remplacée par le nom d'utilisateur du membre actuellement connecté.</td>
 </tr>
 </table>
 
@@ -768,51 +745,51 @@ Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle pr
 </tr>
 <tr>
   <td><code>{{page::id}}</code></td>
-  <td>This tag will be replaced with the ID of the current page.</td>
+  <td>Cette balise sera remplacée par l'ID de la page courante.</td>
 </tr>
 <tr>
   <td><code>{{page::alias}}</code></td>
-  <td>This tag will be replaced with the alias of the current page.</td>
+  <td>Cette balise sera remplacée par l'alias de la page courante.</td>
 </tr>
 <tr>
   <td><code>{{page::title}}</code></td>
-  <td>This tag will be replaced with the name of the current page.</td>
+  <td>Cette balise sera remplacée par le nom de la page courante.</td>
 </tr>
 <tr>
   <td><code>{{page::pageTitle}}</code></td>
-  <td>This tag will be replaced with the title of the current page.</td>
+  <td>Cette balise sera remplacée par le titre de la page courante.</td>
 </tr>
 <tr>
   <td><code>{{page::language}}</code></td>
-  <td>This tag will be replaced with the language of the current page.</td>
+  <td>Cette balise sera remplacée par la langue de la page courante.</td>
 </tr>
 <tr>
   <td><code>{{page::parentAlias}}</code></td>
-  <td>This tag will be replaced with the alias of the parent page.</td>
+  <td>Cette balise sera remplacée par l'alias de la page parente.</td>
 </tr>
 <tr>
   <td><code>{{page::parentTitle}}</code></td>
-  <td>This tag will be replaced with the name of the parent page.</td>
+  <td>Cette balise sera remplacée par le nom de la page parente.</td>
 </tr>
 <tr>
   <td><code>{{page::parentPageTitle}}</code></td>
-  <td>This tag will be replaced with the title of the parent page.</td>
+  <td>Cette balise sera remplacée par le titre de la page parente.</td>
 </tr>
 <tr>
   <td><code>{{page::mainAlias}}</code></td>
-  <td>This tag will be replaced with the alias of the parent main page.</td>
+  <td>Cette balise sera remplacée par l'alias de la page parente principale.</td>
 </tr>
 <tr>
   <td><code>{{page::mainTitle}}</code></td>
-  <td>This tag will be replaced with the name of the parent main page.</td>
+  <td>Cette balise sera remplacée par le nom de la page parente principale.</td>
 </tr>
 <tr>
   <td><code>{{page::mainPageTitle}}</code></td>
-  <td>This tag will be replaced with the title of the parent main page.</td>
+  <td>Cette balise sera remplacée par le titre de la page parente principale.</td>
 </tr>
 <tr>
   <td><code>{{page::rootTitle}}</code></td>
-  <td>This tag will be replaced with the title of the website.</td>
+  <td>Cette balise sera remplacée par le titre du site internet.</td>
 </tr>
 </table>
 
@@ -828,42 +805,39 @@ Les balises d'insertion suivantes vous permettent d'afficher les variables d'env
 </tr>
 <tr>
   <td><code>{{env::host}}</code></td>
-  <td>This tag will be replaced with the current host name.</td>
+  <td>Cette balise sera remplacée par le nom d'hôte actuel.</td>
 </tr>
 <tr>
   <td><code>{{env::url}}</code></td>
-  <td>This tag will be replaced with the host name and the protocol.</td>
+  <td>Cette balise sera remplacée par le nom d'hôte et le protocole.</td>
 </tr>
 <tr>
   <td><code>{{env::path}}</code></td>
-  <td>This tag will be replaced with the current base URL including the path to
-      the Contao directory.</td>
+  <td>Cette balise sera remplacée par la base de l'URL actuelle incluant le chemin vers le dossier Contao.</td>
 </tr>
 <tr>
   <td><code>{{env::request}}</code></td>
-  <td>This tag will be replaced with the current request string.</td>
+  <td>Cette balise sera remplacée par la chaîne de requête actuelle.</td>
 </tr>
 <tr>
   <td><code>{{env::ip}}</code></td>
-  <td>This tag will be replaced with the IP address of the current visitor.</td>
+  <td>Cette balise sera remplacée par l'adresse IP du visiteur actuel.</td>
 </tr>
 <tr>
   <td><code>{{env::referer}}</code></td>
-  <td>This tag will be replaced with the URL of the last page visited.</td>
+  <td>Cette balise sera remplacée par l'URL de la dernière page visitée.</td>
 </tr>
 <tr>
   <td><code>{{env::files_url}}</code></td>
-  <td>This tag will be replaced with the static URL of the files directory.</td>
+  <td>Cette balise sera remplacée par l'URL statique du répertoire files.</td>
 </tr>
 <tr>
   <td><code>{{env::script_url}}</code></td>
-  <td>This tag will be replaced with the static URL of the scripts
-      directory.</td>
+  <td>Cette balise sera remplacée par l'URL statique du répertoire scripts.</td>
 </tr>
 <tr>
   <td><code>{{env::plugins_url}}</code></td>
-  <td>This tag will be replaced with the static URL of the plugins
-      directory.</td>
+  <td>Cette balise sera remplacée par l'URL statique du répertoire plugins.</td>
 </tr>
 </table>
 
@@ -879,39 +853,31 @@ Les balises d'insertion suivantes vous permettent d'inclure différentes ressour
 </tr>
 <tr>
   <td><code>{{insert_article::*}}</code></td>
-  <td>This tag will be replaced with the referenced article (replace * with the
-      article ID or alias).</td>
+  <td>Cette balise sera remplacée par l'article référencé (remplacez * par l'ID ou l'alias de l'article).</td>
 </tr>
 <tr>
   <td><code>{{insert_content::*}}</code></td>
-  <td>This tag will be replaced with the referenced content element (replace *
-      with the element ID).</td>
+  <td>Cette balise sera remplacée par l'élément de contenu référencé (remplacez * par l'ID de l'élément).</td>
 </tr>
 <tr>
   <td><code>{{insert_module::*}}</code></td>
-  <td>This tag will be replaced with the referenced module (replace * with the
-      module ID).</td>
+  <td>Cette balise sera remplacée par le module référencé (remplacez * par l'ID du module).</td>
 </tr>
 <tr>
   <td><code>{{article_teaser::*}}</code></td>
-  <td>This tag will be replaced with the teaser of an article (replace * with
-      the article ID).</td>
+  <td>Cette balise sera remplacée par une accroche d'article (remplacez * par l'ID de l'article).</td>
 </tr>
 <tr>
   <td><code>{{news_teaser::*}}</code></td>
-  <td>This tag will be replaced with the teaser of a news item (replace * with
-      the news ID).</td>
+  <td>Cette balise sera remplacée par une accroche d'actualité (remplacez * par l'ID de l'actualité).</td>
 </tr>
 <tr>
   <td><code>{{event_teaser::*}}</code></td>
-  <td>This tag will be replaced with the teaser of an event (replace * with the
-      event ID).</td>
+  <td>Cette balise sera remplacée par une accroche d'évènement (remplacez * par l'ID de l'évènement).</td>
 </tr>
 <tr>
   <td><code>{{file::*}}</code></td>
-  <td>This tag will be replaced with the content of a file from the "templates"
-      directory (replace * with the file name). You can also provide arguments:
-      <code>{{file::file.php?arg1=val&amp;arg2=val}}</code>.</td>
+  <td>Cette balise sera remplacée par le contenu d'un fichier se trouvant dans le dossier "templates" (remplacez * par le nom du fichier). Vous pouvez aussi fournir des arguments : <code>{{file::file.php?arg1=val&amp;arg2=val}}</code>.</td>
 </tr>
 </table>
 
