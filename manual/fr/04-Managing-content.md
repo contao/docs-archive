@@ -362,11 +362,11 @@ Cher ##firstname## ##lastname##,
 
 Veuillez mettre à jour vos données personnelles :
 
-Rue: ##street## 
+Rue:         ##street## 
 Code postal: ##postal##
-Ville: ##city##
-Téléphone: ##phone## 
-E-mail: ##email## 
+Ville:       ##city##
+Téléphone:   ##phone## 
+E-mail:      ##email## 
 
 L'administrateur
 ```
@@ -939,173 +939,163 @@ Les balises d'insertion suivantes vous permettent d'effectuer différentes tâch
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
-  <td>This tag will be completely removed if the page language does not match
-      the tag language. You can use it to define language-specific labels:
-      <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
+  <tdCette balise sera complètement supprimé si la langue de la page ne correspond pas à la langue de la balise. Vous pouvez l'utiliser pour définir des labels spécifiques à une langue : <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
-  <td>This tag will be completely removed if the page language matches the tag
-      language. You can use it to define language-specific labels:
-      <code>{{ifnlng::de}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
+  <td>Cette balise sera complètement supprimé si la langue de la page correspond à la langue de la balise. Vous pouvez l'utiliser pour définir des labels spécifiques à une langue : <code>{{ifnlng::de}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
-  <td>This tag will be replaced with the thumbnail of an image:
+  <td>Cette balise sera remplacée par une vignette d'image : 
       <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br />
-      <strong>width</strong>: Thumbnail width,<br />
-      <strong>height</strong>: Thumbnail height,<br />
-      <strong>alt</strong>: Alternative text,<br />
-      <strong>class</strong>: CSS class,<br />
-      <strong>rel</strong>: rel-attribute (e.g. "lightbox"),<br />
-      <strong>mode</strong>: Mode ("proportional", "crop" or "box").</td>
+      <strong>width</strong>: Largeur de la vignette,<br />
+      <strong>height</strong>: Hauteur de la vignette,<br />
+      <strong>alt</strong>: Texte alternatif,<br />
+      <strong>class</strong>: Classe CSS,<br />
+      <strong>rel</strong>: Attribut rel (par ex. "lightbox"),<br />
+      <strong>mode</strong>: Mode ("proportional", "crop" ou "box").</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>This tag will be replaced with a translated label: <code>{{label::CNT:au}}</code> or
-      <code>{{label::tl_article:title:0}}</code>. Note that only the first colon is a
-      double colon.</td>
+  <td>Cette balise sera remplacée par un libellé traduit : <code>{{label::CNT:au}}</code> ou <code>{{label::tl_article:title:0}}</code>. Notez que seul le premier deux-points est doublé.</td>
 </tr>
 <tr>
   <td><code>{{version::*}}</code></td>
-  <td>This tag will be replaced with the current Contao version (e.g.
-      2.11.2).</td>
+  <td>Cette balise sera remplacée par la version actuelle de Contao (par exemple 2.11.2).</td>
 </tr>
 <tr>
   <td><code>{{request_token::*}}</code></td>
-  <td>This tag will be replaced with the request token of the current
-      session.</td>
+  <td>Cette balise sera remplacée par la demande de jeton de la session en cours.</td>
 </tr>
 <tr>
   <td><code>{{toggle_view}}</code></td>
-  <td>Adds the link which allows you to switch between mobile and desktop layout.</td>
+  <td>Ajoute le lien qui vous permet de basculer entre le modèle pour mobile et ordinateur de bureau.</td>
 </tr>
 </table>
 
 
-### Insert tag flags
+### Drapeaux des balises d'insertion
 
-Using flags, insert tags can be further processed. For example, the value can be
-passed to specific PHP methods. Multiple flags can be applied:
+En utilisant des drapeaux, les balises d'insertion peuvent être traitées de manière plus approfondie. Par exemple, la valeur peut être transmise aux méthodes PHP spécifiques. Plusieurs drapeaux peuvent être appliqués :
 
 ```
 {{ua::browser|uncached}}  
 {{page::title|decodeEntities|strtoupper}}
 ```
 
-Available flags:
+Drapeaux disponibles :
 
 <table>
 <tr>
-    <th>Flag</th>
+    <th>Drapeau</th>
     <th>Description</th>
-    <th>More information</th>
+    <th>Plus d'information</th>
 </tr>
 <tr>
     <td><code>uncached</code></td>
-    <td>Do not replace insert tag when the page is cached</td>
+    <td>Ne pas remplacer une balise d'insertion lorsque la page est mise en cache</td>
     <td></td>
 </tr>
 <tr>
     <td><code>refresh</code></td>
-    <td>Do not cache the insert tag, even if it is used multiple times on the
-      same page</td>
+    <td>Ne pas mettre en cache la balise d'insertion, même si elle est utilisée plusieurs fois sur la même page</td>
     <td></td>
 </tr>
 <tr>
     <td><code>addslashes</code></td>
-    <td>Quote a string with slashes</td>
-    <td><a target="_blank" href="http://php.net/addslashes">PHP function</a></td>
+    <td>Ajoute des barres obliques inversées dans une chaîne</td>
+    <td><a target="_blank" href="http://php.net/addslashes">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>stripslashes</code></td>
-    <td>Remove the slashes from a quoted string</td>
-    <td><a target="_blank" href="http://php.net/stripslashes">PHP function</a></td>
+    <td>Supprime les barres obliques inversées d'une chaîne</td>
+    <td><a target="_blank" href="http://php.net/stripslashes">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>standardize</code></td>
-    <td>Standardize the output (e.g. for a page alias or CSS class)</td>
+    <td>Normaliser la sortie (par exemple pour un alias de page ou une classe CSS)</td>
     <td></td>
 </tr>
 <tr>
     <td><code>ampersand</code></td>
-    <td>Convert ampersands to HTML entities</td>
+    <td>Convertir les esperluettes en entités de caractère HTML</td>
     <td></td>
 </tr>
 <tr>
     <td><code>specialchars</code></td>
-    <td>Convert special characters to HTML entities</td>
+    <td>Convertir les caractères spéciaux en entités de caractère HTML</td>
     <td></td>
 </tr>
 <tr>
     <td><code>nl2br</code></td>
-    <td>Inserts HTML line breaks before all newlines in a string</td>
-    <td><a target="_blank" href="http://php.net/nl2br">PHP function</a></td>
+    <td>Insère des retours à la lign HTML à chaque nouvelle ligne dans une chaîne</td>
+    <td><a target="_blank" href="http://php.net/nl2br">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>nl2br_pre</code></td>
-    <td>Same as nl2br, but keeps line breaks in <code>&lt;pre&gt;</code> tags</td>
+    <td>Identique à nl2br, mais conserve les retours à la ligne dans la balise <code>&lt;pre&gt;</code></td>
     <td></td>
 </tr>
 <tr>
     <td><code>strtolower</code></td>
-    <td>Make a string lowercase</td>
-    <td><a target="_blank" href="http://php.net/strtolower">PHP function</a></td>
+    <td>Renvoie une chaîne en minuscules</td>
+    <td><a target="_blank" href="http://php.net/strtolower">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>utf8_strtolower</code></td>
-    <td>Unicode-aware lowercase conversion</td>
+    <td>Conversion Unicode en minuscules</td>
     <td></td>
 </tr>
 <tr>
     <td><code>strtoupper</code></td>
-    <td>Make a string uppercase</td>
-    <td><a target="_blank" href="http://php.net/strtoupper">PHP function</a></td>
+    <td>Renvoie une chaîne en majuscules</td>
+    <td><a target="_blank" href="http://php.net/strtoupper">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>utf8_strtoupper</code></td>
-    <td>Unicode-aware uppercase conversion</td>
+    <td>Conversion Unicode en majuscules</td>
     <td></td>
 </tr>
 <tr>
     <td><code>ucfirst</code></td>
-    <td>Make a string's first character uppercase</td>
-    <td><a target="_blank" href="http://php.net/ucfirst">PHP function</a></td>
+    <td>Met le premier caractère d'une chaîne en majuscule</td>
+    <td><a target="_blank" href="http://php.net/ucfirst">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>lcfirst</code></td>
-    <td>Make a string's first character lowercase</td>
-    <td><a target="_blank" href="http://php.net/lcfirst">PHP function</a></td>
+    <td>Met le premier caractère d'une chaîne en minuscule</td>
+    <td><a target="_blank" href="http://php.net/lcfirst">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>ucwords</code></td>
-    <td>Uppercase the first character of each word in a string</td>
-    <td><a target="_blank" href="http://php.net/ucwords">PHP function</a></td>
+    <td>Met en majuscule la première lettre de tous les mots dans une chaîne</td>
+    <td><a target="_blank" href="http://php.net/ucwords">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>trim</code></td>
-    <td>Strip whitespace from the beginning and end of a string</td>
-    <td><a target="_blank" href="http://php.net/trim">PHP function</a></td>
+    <td>Supprime les espaces en début et fin de chaîne</td>
+    <td><a target="_blank" href="http://php.net/trim">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>rtrim</code></td>
-    <td>Strip whitespace from the end of a string</td>
-    <td><a target="_blank" href="http://php.net/rtrim">PHP function</a></td>
+    <td>Supprime les espaces de fin de chaîne</td>
+    <td><a target="_blank" href="http://php.net/rtrim">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>ltrim</code></td>
-    <td>Strip whitespace from the beginning of a string</td>
-    <td><a target="_blank" href="http://php.net/ltrim">PHP function</a></td>
+    <td>Supprime les espaces de début de chaîne</td>
+    <td><a target="_blank" href="http://php.net/ltrim">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>utf8_romanize</code></td>
-    <td>Romanize the output</td>
+    <td>Romaniser la sortie</td>
     <td></td>
 </tr>
 <tr>
     <td><code>strrev</code></td>
-    <td>Reverse a string</td>
-    <td><a target="_blank" href="http://php.net/strrev">PHP function</a></td>
+    <td>Inverse une chaîne</td>
+    <td><a target="_blank" href="http://php.net/strrev">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>encodeEmail</code></td>
@@ -1114,37 +1104,33 @@ Available flags:
 </tr>
 <tr>
     <td><code>decodeEntities</code></td>
-    <td>Decodes HTML entities in the output</td>
+    <td>Décode les entités de caractère HTML dans la sortie</td>
     <td>see <code>String::decodeEntities()</code></td>
 </tr>
 <tr>
     <td><code>number_format</code></td>
-    <td>Formats a number (without decimal places)</td>
+    <td>Formate un numéro (sans décimale)</td>
     <td>see <code>System::getFormattedNumber()</code></td>
 </tr>
 <tr>
     <td><code>currency_format</code></td>
-    <td>Formats a currency (two decimal places)</td>
+    <td>Formate une devise (deux décimales)</td>
     <td>see <code>System::getFormattedNumber()</code></td>
 </tr>
 <tr>
     <td><code>readable_size</code></td>
-    <td>Convert file sizes to human readable format</td>
+    <td>Convertir des tailles de fichiers dans un format lisible par un humain</td>
     <td>see <code>System::getReadableSize()</code></td>
 </tr>
 <tr>
     <td><code>base64_encode</code></td>
-    <td>Encodes a text using the <a href="https://en.wikipedia
-    .org/wiki/Base64" target="_blank">Base64 algorithm</a>.</td>
-    <td><a target="_blank" href="http://php.net/base64_encode">PHP
-    function</a></td>
+    <td>Encode un texte en utilisant l'<a href="http://fr.wikipedia.org/wiki/Base64" target="_blank">algorithme base64</a>.</td>
+    <td><a target="_blank" href="http://php.net/base64_encode">Fonction PHP</a></td>
 </tr>
 <tr>
     <td><code>base64_decode</code></td>
-    <td>Decodes a text using the <a href="https://en.wikipedia
-    .org/wiki/Base64" target="_blank">Base64 algorithm</a>.</td>
-    <td><a target="_blank" href="http://php.net/base64_decode">PHP
-    function</a></td>
+    <td>Décode un texte en utilisant l'<a href="http://fr.wikipedia.org/wiki/Base64" target="_blank">algorithme base64</a>.</td>
+    <td><a target="_blank" href="http://php.net/base64_decode">Fonction PHP</a></td>
 </tr>
 </table>
 
