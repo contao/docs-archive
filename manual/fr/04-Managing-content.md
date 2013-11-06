@@ -893,37 +893,31 @@ Les balises d'insertion suivantes vous permettent d'effectuer différentes tâch
 </tr>
 <tr>
   <td><code>{{date}}</code></td>
-  <td>This tag will be replaced with the current date according to the global
-      date format.</td>
+  <td>Cette balise sera remplacée par la date courante dans le format de date global.</td>
 </tr>
 <tr>
   <td><code>{{date::*}}</code></td>
-  <td>This tag will be replaced with the current date according to a custom date
-      format.</td>
+  <td>Cette balise sera remplacée par la date courante dans un format de date personnalisé.</td>
 </tr>
 <tr>
   <td><code>{{last_update}}</code></td>
-  <td>This tag will be replaced with the date of the last update according to
-      the global date format.</td>
+  <td>Cette balise sera remplacée par la date de la dernière mise à jour dans le format de date global.</td>
 </tr>
 <tr>
   <td><code>{{last_update::*}}</code></td>
-  <td>This tag will be replaced with the date of the last update according to a
-      custom date format.</td>
+  <td>Cette balise sera remplacée par la date de la dernière mise à jour dans un format de date personnalisé.</td>
 </tr>
 <tr>
   <td><code>{{email::*}}</code></td>
-  <td>This tag will be replaced with a clickable and encrypted link to an e-mail
-      address.</td>
+  <td>Cette balise sera remplacée un lien cliquable et encodé vers une adresse e-mail.</td>
 </tr>
 <tr>
   <td><code>{{email_open::*}}</code></td>
-  <td>This tag will be replaced with a clickable and encrypted link to an e-mail
-      address. However, the closing <code>&lt;/a&gt;</code> will not be added.</td>
+  <td>Cette balise sera remplacée par un lien cliquable et encodé vers une adresse e-mail. Toutefois, la balise de fermeture <code>&lt;/a&gt;</code> ne sera pas ajoutée.</td>
 </tr>
 <tr>
   <td><code>{{email_url::*}}</code></td>
-  <td>This tag will be replaced by the encrypted e-mail address only.</td>
+  <td>Cette balise sera remplacée par l'adresse e-mail encodée seulement.</td>
 </tr>
 <tr>
   <td><code>{{lang::*}}</code></td>
