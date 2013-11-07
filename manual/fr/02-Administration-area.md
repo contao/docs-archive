@@ -1,78 +1,127 @@
 # Panneau d'administration
 
-Pour accéder au panneau d'administration de Contao (back office), il suffit d'ajouter `/contao` à l'URL de votre site internet. Le formulaire d'identification du back office est protégé contre les attaques par force brute, donc si vous entrez un mot de passe erroné plus de trois fois de suite, votre compte sera bloqué durant 5 minutes.
+Pour accéder au panneau d'administration de Contao (back office), il suffit 
+d'ajouter `/contao` à l'URL de votre site internet. Le formulaire 
+d'identification du back office est protégé contre les attaques par force brute, 
+donc si vous entrez un mot de passe erroné plus de trois fois de suite, votre 
+compte sera bloqué durant 5 minutes.
 
 ## Liste d'enregistrements
 
-Le moteur de base Contao supporte trois vues: une simple liste ("vue en liste"), une liste qui est regroupée par sa table parent («vue parent») et une liste hiérarchique («vue arborescente"). Ces trois vues peuvent être utilisées pour lister des enregistrements de n'importe quelle table ou de tables liées entre elles.
+Le moteur de base Contao supporte trois vues: une simple liste ("vue en liste"), 
+une liste qui est regroupée par sa table parent («vue parent») et une liste 
+hiérarchique («vue arborescente"). Ces trois vues peuvent être utilisées pour 
+lister des enregistrements de n'importe quelle table ou de tables liées entre 
+elles.
 
 
 ### Vue en liste
 
-La "vue en liste" répertorie les enregistrements d'une table unique dans un ordre particulier. Les résultats sont généralement regroupés par leur première lettre.
+La "vue en liste" répertorie les enregistrements d'une table unique dans un 
+ordre particulier. Les résultats sont généralement regroupés par leur première 
+lettre.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-liste.jpg)
 
 
 ### Vue parent
 
-La "vue parent" répertorie les enregistrements d'une table enfant qui sont liés à un enregistrement particulier d'une table parent. Les relations de type parents-enfants sont beaucoup utilisées dans Contao. Par exemple, pour les articles et les éléments de contenu, les archives d'actualités et les actualités ou les feuilles de style et les définitions de format.
+La "vue parent" répertorie les enregistrements d'une table enfant qui sont liés 
+à un enregistrement particulier d'une table parent. Les relations de type 
+parents-enfants sont beaucoup utilisées dans Contao. Par exemple, pour les 
+articles et les éléments de contenu, les archives d'actualités et les actualités 
+ou les feuilles de style et les définitions de format.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-parent.jpg)
 
 
 ### Vue arborescente
 
-La "vue arborescente" répertorie des enregistrements et d'autres ressources tels que des fichiers et des dossiers qui sont organisés dans une structure hiérarchique. Contao prend en charge les relations hiérarchiques au sein d'une table (par exemple, la structure du site) ainsi que des tables enfants qui se rapportent aux tables hiérarchiques parents (par exemple, les articles et les pages).
+La "vue arborescente" répertorie des enregistrements et d'autres ressources tels 
+que des fichiers et des dossiers qui sont organisés dans une structure 
+hiérarchique. Contao prend en charge les relations hiérarchiques au sein d'une 
+table (par exemple, la structure du site) ainsi que des tables enfants qui se 
+rapportent aux tables hiérarchiques parents (par exemple, les articles et les 
+pages).
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-arborescente.jpg)
 
 
 ### Tri et filtrage des données
 
-Contao supporte différentes façons d'affiner les résultats de sorte que vous ne lâchiez pas le fil même si une table possède plusieurs milliers de lignes. Un grand nombre d'entrées peuvent être filtrés par un ou plusieurs champs de sorte qu'ils ne montrent que les enregistrements correspondant aux critères de filtrage. La plupart des entrées offrent de plus une recherche en texte intégral qui prend même en charge les expressions régulières. Afin de réduire le temps de chargement de la page au minimum, Contao affiche seulement trente enregistrements à la fois.
+Contao supporte différentes façons d'affiner les résultats de sorte que vous ne 
+lâchiez pas le fil même si une table possède plusieurs milliers de lignes. Un 
+grand nombre d'entrées peuvent être filtrés par un ou plusieurs champs de sorte 
+qu'ils ne montrent que les enregistrements correspondant aux critères de 
+filtrage. La plupart des entrées offrent de plus une recherche en texte intégral 
+qui prend même en charge les expressions régulières. Afin de réduire le temps de 
+chargement de la page au minimum, Contao affiche seulement trente 
+enregistrements à la fois.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/trier-et-filtrer.jpg)
 
 
 ## Édition des enregistrements
 
-L'édition des données est l'une des fonctions centrales d'un système de gestion de contenu. Contao offre beaucoup de fonctionnalités professionnelles qui rend le processus d'édition aussi facile et confortable que possible. Vous pouvez revenir à des versions antérieures d'un enregistrement, restaurer des enregistrements supprimés, déplacer des enregistrements via le presse-papiers et même éditer plusieurs enregistrements à la fois. La plupart de ces fonctions sont accessibles en utilisant les icônes de navigation.
+L'édition des données est l'une des fonctions centrales d'un système de gestion 
+de contenu. Contao offre beaucoup de fonctionnalités professionnelles qui rend 
+le processus d'édition aussi facile et confortable que possible. Vous pouvez 
+revenir à des versions antérieures d'un enregistrement, restaurer des 
+enregistrements supprimés, déplacer des enregistrements via le presse-papiers et 
+même éditer plusieurs enregistrements à la fois. La plupart de ces fonctions 
+sont accessibles en utilisant les icônes de navigation.
 
 
 ### Icônes de la vue en liste
 
-La "vue en liste", étant la plus simple, ne propose que quatre actions de base : éditer, dupliquer, supprimer et afficher les détails.
+La "vue en liste", étant la plus simple, ne propose que quatre actions de base : 
+éditer, dupliquer, supprimer et afficher les détails.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-liste-icones.jpg)
 
 
 ### Icônes de la vue parent
 
-La "vue parent" propose deux icônes de navigation supplémentaires pour contrôler l'ordre des enregistrements. L'ordre peut être modifié par glisser-déposer. Pour ce faire, cliquez simplement sur l'icône de navigation "Glisser-déposer" et faites-le glisser vers sa nouvelle position.
+La "vue parent" propose deux icônes de navigation supplémentaires pour contrôler 
+l'ordre des enregistrements. L'ordre peut être modifié par glisser-déposer. Pour 
+ce faire, cliquez simplement sur l'icône de navigation "Glisser-déposer" et 
+faites-le glisser vers sa nouvelle position.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-parent-icones.jpg)
 
 
 ### Icônes de la vue arborescente
 
-La "vue arborescente" nécessite des icônes supplémentaires pour gérer la structure hiérarchique. Outre la duplication d'un enregistrement unique, il prend en charge la duplication d'un enregistrement avec tous ses sous-enregistrements ainsi que la fonction "coller après" ou "coller dedans" un autre enregistrement, vous pouvez donc créer une structure imbriquée.
+La "vue arborescente" nécessite des icônes supplémentaires pour gérer la 
+structure hiérarchique. Outre la duplication d'un enregistrement unique, il 
+prend en charge la duplication d'un enregistrement avec tous ses 
+sous-enregistrements ainsi que la fonction "coller après" ou "coller dedans" un 
+autre enregistrement, vous pouvez donc créer une structure imbriquée.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-arborescente-icones.jpg)
 
 
 ### Restaurer les versions précédentes
 
-Contao crée automatiquement les nouvelles versions d'un enregistrement chaque fois que vous le sauvegarder. Dès qu'il existe plus d'une version, un menu déroulant, qui vous permet de revenir à une version antérieure, apparaît en haut du formulaire. Choisissez simplement une version et cliquez sur le bouton "Restaurer".
+Contao crée automatiquement les nouvelles versions d'un enregistrement chaque 
+fois que vous le sauvegarder. Dès qu'il existe plus d'une version, un menu 
+déroulant, qui vous permet de revenir à une version antérieure, apparaît en haut 
+du formulaire. Choisissez simplement une version et cliquez sur le bouton 
+"Restaurer".
 
-L'icône située à droite du bouton "Restaurer" vous permet de voir les différences entre deux versions.
+L'icône située à droite du bouton "Restaurer" vous permet de voir les 
+différences entre deux versions.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/version.jpg)
 
 
 ### Édition de plusieurs enregistrements
 
-La possibilité de modifier plusieurs enregistrements à la fois permet à Contao de clairement se démarquer de la variété des systèmes de gestion de contenu. Cliquez sur le bouton "Édition multiple" afin de changer le mode d'édition, puis sélectionnez un ou plusieurs enregistrements et choisissez les champs que vous souhaitez modifier.
+La possibilité de modifier plusieurs enregistrements à la fois permet à Contao 
+de clairement se démarquer de la variété des systèmes de gestion de contenu. 
+Cliquez sur le bouton "Édition multiple" afin de changer le mode d'édition, puis 
+sélectionnez un ou plusieurs enregistrements et choisissez les champs que vous 
+souhaitez modifier.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/sselectionner-multiple-enregistrements.jpg)
 
@@ -83,7 +132,11 @@ La possibilité de modifier plusieurs enregistrements à la fois permet à Conta
 
 ## Raccourcis clavier
 
-Afin d'accélérer le flux de travail lorsque vous travaillez avec Contao, il existe plusieurs raccourcis associés au back office qui vous permettent d'exécuter certaines commandes. Vous pouvez par exemple déclencher le bouton "Enregistrer" à la fin d'un formulaire en cliquant avec votre souris ou en utilisant le raccourci clavier `[Alt]+[s]`.
+Afin d'accélérer le flux de travail lorsque vous travaillez avec Contao, il 
+existe plusieurs raccourcis associés au back office qui vous permettent 
+d'exécuter certaines commandes. Vous pouvez par exemple déclencher le bouton 
+"Enregistrer" à la fin d'un formulaire en cliquant avec votre souris ou en 
+utilisant le raccourci clavier `[Alt]+[s]`.
 
 
 ### Raccourcis clavier généraux
@@ -127,7 +180,8 @@ Afin d'accélérer le flux de travail lorsque vous travaillez avec Contao, il ex
 <tr>
   <td><code>[Alt]+[f]</code></td>
   <td>Aperçu du <b>F</b>ront office</td>
-  <td>Ouvrir l'aperçu du front office dans une nouvelle fenêtre du navigateur.</td>
+  <td>Ouvrir l'aperçu du front office dans une nouvelle fenêtre du navigateur.
+  </td>
 </tr>
 </table>
 
@@ -148,17 +202,22 @@ Afin d'accélérer le flux de travail lorsque vous travaillez avec Contao, il ex
 <tr>
   <td><code>[Alt]+[c]</code></td>
   <td>Sauvegarder et fermer</td>
-  <td>Sauvegarde le formulaire courant et se redirige vers la page précédente.</td>
+  <td>Sauvegarde le formulaire courant et se redirige vers la page précédente.
+  </td>
 </tr>
 <tr>
   <td><code>[Alt]+[g]</code></td>
   <td>Sauvegarder et retour</td>
-  <td>Sauvegarde le formulaire courant et se redirige vers la page parent, par exemple, à partir d'un élément de contenu vers la vue arborescente des articles.</td>
+  <td>Sauvegarde le formulaire courant et se redirige vers la page parent, par 
+  exemple, à partir d'un élément de contenu vers la vue arborescente des 
+  articles.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[e]</code></td>
   <td>Sauvegarder et éditer</td>
-  <td>Sauvegarde le formulaire courant et se redirige vers la vue des enregistrements enfants. Par exemple, lors de la création de feuilles de style.</td>
+  <td>Sauvegarde le formulaire courant et se redirige vers la vue des 
+  enregistrements enfants. Par exemple, lors de la création de feuilles de 
+  style.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[n]</code></td>
@@ -179,23 +238,31 @@ Afin d'accélérer le flux de travail lorsque vous travaillez avec Contao, il ex
 <tr>
   <td><code>[Alt]+[d]</code></td>
   <td>Suppression multiple</td>
-  <td>Supprime tous les enregistrements sélectionnés en mode d'édition multiple.</td>
+  <td>Supprime tous les enregistrements sélectionnés en mode d'édition 
+  multiple.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[x]</code></td>
   <td>Coupe multiple</td>
-  <td>Déplace tous les enregistrements sélectionnés en mode d'édition multiple.</td>
+  <td>Déplace tous les enregistrements sélectionnés en mode d'édition 
+  multiple.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[c]</code></td>
   <td><b>C</b>opie multiple</td>
-  <td>Duplique tous les enregistrements sélectionnés en mode d'édition multiple.</td>
+  <td>Duplique tous les enregistrements sélectionnés en mode d'édition 
+  multiple.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[v]</code></td>
   <td>Remplacer multiple</td>
-  <td>Remplace tous les enregistrements sélectionnés en mode d'édition multiple.</td>
+  <td>Remplace tous les enregistrements sélectionnés en mode d'édition 
+  multiple.</td>
 </tr>
 </table>
 
-Les raccourcis clavier ci-dessus ne fonctionnent que sous Windows sous cette forme. Les utilisateurs de Mac doivent utiliser `[Ctrl]+[⌥ Opt]` au lieu de la touche `[Alt]` avec le raccourci clavier. En outre, Firefox sur Windows fait exception à la norme : vous devez appuyer sur le raccourci clavier `[Alt]+[Shift]`.
+Les raccourcis clavier ci-dessus ne fonctionnent que sous Windows sous cette 
+forme. Les utilisateurs de Mac doivent utiliser `[Ctrl]+[⌥ Opt]` au lieu de la 
+touche `[Alt]` avec le raccourci clavier. En outre, Firefox sur Windows fait 
+exception à la norme : vous devez appuyer sur le raccourci clavier 
+`[Alt]+[Shift]`.
