@@ -1,46 +1,96 @@
 # Gestion des pages
 
-Les chapitres suivants expliquent comment gérer les pages de Contao. Depuis que Contao est un système de gestion de contenu basé sur les pages, ces dernières et la structure du site sont les éléments centraux de votre site internet et tout contenu qui n'est pas associé à une page ne ​​pourra jamais être vu.
+Les chapitres suivants expliquent comment gérer les pages de Contao. Depuis que 
+Contao est un système de gestion de contenu basé sur les pages, ces dernières et 
+la structure du site sont les éléments centraux de votre site internet et tout 
+contenu qui n'est pas associé à une page ne ​​pourra jamais être vu.
+
 
 ## Composants
 
-Comprendre comment les pages, les articles, les éléments de contenu et les modules sont liés entre eux est la clé de l'apprentissage de Contao. Comme mentionné précédemment, la structure du site est l'élément central de votre site. Les visiteurs de votre site internet demandent toujours des pages et non des articles comme dans un CMS basé sur des nœuds.
+Comprendre comment les pages, les articles, les éléments de contenu et les 
+modules sont liés entre eux est la clé de l'apprentissage de Contao. Comme 
+mentionné précédemment, la structure du site est l'élément central de votre 
+site. Les visiteurs de votre site internet demandent toujours des pages et non 
+des articles comme dans un CMS basé sur des nœuds.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/components.jpg)
 
-Le diagramme montre que les articles et les présentations de page sont les deux éléments les plus importantes d'une page. Alors que les articles stockent le contenu d'une page, la présentation de page définit la façon dont il est affiché sur le site. Les présentations de page de Contao sont basé sur les CSS et bien sûr elles n'utilisent pas de mise en page avec des tables. Les chapitres suivants expliquent comment créer des feuilles de style et des modules, comment les combiner dans une présentation de page et comment créer des pages qui l'utilisent.
+Le diagramme montre que les articles et les présentations de page sont les deux 
+éléments les plus importantes d'une page. Alors que les articles stockent le 
+contenu d'une page, la présentation de page définit la façon dont il est affiché 
+sur le site. Les présentations de page de Contao sont basé sur les CSS et bien 
+sûr elles n'utilisent pas de mise en page avec des tables. Les chapitres suivants 
+expliquent comment créer des feuilles de style et des modules, comment les 
+combiner dans une présentation de page et comment créer des pages qui l'utilisent.
+
 
 ## Thèmes
 
-Bien que le gestionnaire de thème est une nouvelle fonctionnalité de la version 2.9, il est en fait juste une interface améliorée pour quelque chose qui faisait déjà partie de Contao. Une design de site internet se compose généralement de feuilles de style, de modules front office, de présentations de page, de fichiers et de modèles que vous pouvez gérer dans le back office de Contao. Le gestionnaire de thème ne change pas cette approche du tout, il ajoute juste une option pour exporter et importer ces ressources.
+Bien que le gestionnaire de thème est une nouvelle fonctionnalité de la version 
+2.9, il est en fait juste une interface améliorée pour quelque chose qui faisait 
+déjà partie de Contao. Une design de site internet se compose généralement de 
+feuilles de style, de modules front office, de présentations de page, de 
+fichiers et de modèles que vous pouvez gérer dans le back office de Contao. Le 
+gestionnaire de thème ne change pas cette approche du tout, il ajoute juste une 
+option pour exporter et importer ces ressources.
 
 
 ### Thèmes par opposition aux modèles du front office
 
-La principale différence entre les [thèmes][1] et les modèles du front office est qu'un modèle du front office contient un exemple de site internet entièrement préconfiguré, y compris un exemple de structure du site, d'articles, d'éléments de contenu et même d'utilisateurs et de groupes d'utilisateurs. Un thème, en revanche, ne contient que le design du site internet et peut donc être importé sans risque de perdre toutes les données existantes.
+La principale différence entre les [thèmes][1] et les modèles du front office 
+est qu'un modèle du front office contient un exemple de site internet 
+entièrement préconfiguré, y compris un exemple de structure du site, d'articles, 
+d'éléments de contenu et même d'utilisateurs et de groupes d'utilisateurs. Un 
+thème, en revanche, ne contient que le design du site internet et peut donc être 
+importé sans risque de perdre toutes les données existantes.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/theme-manager.jpg)
 
 
 ### Composants d'un thème
 
-Un thème est un groupe de [feuilles de style][2], de [modules front office][3] et de [présentations de page][4], qui sont tous stockés dans la base de données et automatiquement reconnu par l'exportateur de thème. Vous en apprendrez plus sur ces éléments dans les chapitres suivants. Un thème inclut habituellement des images et d'autres fichiers à partir du répertoire des fichiers et des modèles personnalisés en option à partir du répertoire des modèles. Toutefois, ces ressources ne sont pas automatiquement liées avec le thème et doivent donc être ajoutées dans la configuration du thème pour y être inclues dans l'exportation.
+Un thème est un groupe de [feuilles de style][2], de [modules front office][3] 
+et de [présentations de page][4], qui sont tous stockés dans la base de données 
+et automatiquement reconnu par l'exportateur de thème. Vous en apprendrez plus 
+sur ces éléments dans les chapitres suivants. Un thème inclut habituellement des 
+images et d'autres fichiers à partir du répertoire des fichiers et des modèles 
+personnalisés en option à partir du répertoire des modèles. Toutefois, ces 
+ressources ne sont pas automatiquement liées avec le thème et doivent donc être 
+ajoutées dans la configuration du thème pour y être inclues dans l'exportation.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/theme-settings.jpg)
 
 
 ### Exportation et importation d'un thème
 
-Pour exporter un thème, cliquez simplement sur le bouton d'exportation et télécharger le fichier .cto en local sur votre ordinateur. Bien que .cto est une extension de fichier propriétaire pour les thèmes de Contao, le fichier est en fait une archive ZIP qui peut être extraite avec chaque programme qui traite les fichiers .zip. Pour réimporter un thème, téléversez le fichier .cto dans votre installation Contao, ouvrez le gestionnaire de thèmes et cliquez sur "Import de thème". Vous pouvez importer plusieurs thèmes à la fois. Une fois l'importation terminée, vous pouvez affecter une ou plusieurs présentations de page du nouveau thème dans la structure du site.
+Pour exporter un thème, cliquez simplement sur le bouton d'exportation et 
+télécharger le fichier .cto en local sur votre ordinateur. Bien que .cto est une 
+extension de fichier propriétaire pour les thèmes de Contao, le fichier est en 
+fait une archive ZIP qui peut être extraite avec chaque programme qui traite les 
+fichiers .zip. Pour réimporter un thème, téléversez le fichier .cto dans votre 
+installation Contao, ouvrez le gestionnaire de thèmes et cliquez sur "Import de 
+thème". Vous pouvez importer plusieurs thèmes à la fois. Une fois l'importation 
+terminée, vous pouvez affecter une ou plusieurs présentations de page du nouveau 
+thème dans la structure du site.
 
 
 ## Feuilles de style
 
-Les sites internet accessibles doivent toujours être formatés à l'aide des CSS, c'est pourquoi Contao inclut un module "feuilles de style" qui vous permet de gérer les définitions de formatage dans le back office. Pour référencer les différents éléments de Contao, vous devez connaître leurs noms de classe. Les [classes des éléments de contenu][5] commencent par "ce\_" (par exemple "ce_text") et les [classes des modules][3] avec "mod\_" (par exemple "mod_search"). Si vous n'êtes pas sûr, il suffit de regarder dans le code source de la page.
+Les sites internet accessibles doivent toujours être formatés à l'aide des CSS, 
+c'est pourquoi Contao inclut un module "feuilles de style" qui vous permet de 
+gérer les définitions de formatage dans le back office. Pour référencer les 
+différents éléments de Contao, vous devez connaître leurs noms de classe. Les 
+[classes des éléments de contenu][5] commencent par "ce\_" (par exemple "ce_text") 
+et les [classes des modules][3] avec "mod\_" (par exemple "mod_search"). Si vous 
+n'êtes pas sûr, il suffit de regarder dans le code source de la page.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/style-sheet.jpg)
 
-Chaque feuille de style peut être limitée par un ou plusieurs types de média et/ou par une version particulière d'Internet Explorer, dans le cas où vous avez besoin de fixer un de ses nombreux bogues. Faites attention à l'ordre des définitions de formatage, car celles qui suivent, remplacent les précédentes.
+Chaque feuille de style peut être limitée par un ou plusieurs types de média 
+et/ou par une version particulière d'Internet Explorer, dans le cas où vous avez 
+besoin de fixer un de ses nombreux bogues. Faites attention à l'ordre des 
+définitions de formatage, car celles qui suivent, remplacent les précédentes.
 
 ``` {.css}
 /* Définir la valeur générale d'abord */
@@ -60,7 +110,11 @@ Si l'ordre est inversé, la valeur générale l'emporterait sur la marge spécif
 
 ## Modules
 
-Les modules front office vous permettent d'ajouter presque n'importe quel type de fonctionnalités à votre site internet. Le coeur de Contao comprend différents modules pour générer plusieurs menus de navigation, gérer l'enregistrement et l'authentification d'un membre, rechercher sur le site, l'importation de flux RSS et bien plus encore. Pour créer un module, connectez-vous au back office et choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
+Les modules front office vous permettent d'ajouter presque n'importe quel type 
+de fonctionnalités à votre site internet. Le coeur de Contao comprend différents 
+modules pour générer plusieurs menus de navigation, gérer l'enregistrement et l'authentification d'un membre, rechercher sur le site, l'importation de flux 
+RSS et bien plus encore. Pour créer un module, connectez-vous au back office et 
+choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 
 <table>
 <tr>
@@ -86,7 +140,8 @@ Les modules front office vous permettent d'ajouter presque n'importe quel type d
 <tr>
   <td>Navigation rapide</td>
   <td>mod_quicknav</td>
-  <td>Génère un menu de type liste déroulante à partir de la structure du site.</td>
+  <td>Génère un menu de type liste déroulante à partir de la structure du 
+  site.</td>
 </tr>
 <tr>
   <td>Lien rapide</td>
@@ -121,7 +176,8 @@ Les modules front office vous permettent d'ajouter presque n'importe quel type d
 <tr>
   <td>Données personnelles</td>
   <td>mod_personalData</td>
-  <td>Génère un formulaire permettant de modifier les données personnelles d'un membre.</td>
+  <td>Génère un formulaire permettant de modifier les données personnelles 
+  d'un membre.</td>
 </tr>
 <tr>
   <td>Formulaire d'inscription</td>
@@ -181,12 +237,14 @@ Les modules front office vous permettent d'ajouter presque n'importe quel type d
 <tr>
   <td>S'abonner</td>
   <td>mod_subscribe</td>
-  <td>Génère un formulaire pour s'abonner à une ou plusieurs listes de diffusion.</td>
+  <td>Génère un formulaire pour s'abonner à une ou plusieurs listes de 
+  diffusion.</td>
 </tr>
 <tr>
   <td>Se désabonner</td>
   <td>mod_unsubscribe</td>
-  <td>Génère un formulaire pour se désabonner à une ou plusieurs listes de diffusion.</td>
+  <td>Génère un formulaire pour se désabonner à une ou plusieurs listes de 
+  diffusion.</td>
 </tr>
 <tr>
   <td>Liste de bulletins d'information</td>
@@ -261,120 +319,127 @@ Les modules front office vous permettent d'ajouter presque n'importe quel type d
 </table>
 
 
-### Access control
+### Contrôle d'accès
 
-Each front end module can be protected so only guests or members of a particular
-group can see it on the website.
+Chaque module front office peut être protégé de sorte que seuls les invités ou 
+les membres d'un groupe en particulier puissent le voir sur le site internet.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/protected-module.jpg)
 
 
-## Page layouts
+## Présentations de page
 
-Page layouts determine the basic page setup, e.g. the number of columns or the
-overall width, and they define which front end modules are shown in which
-columns. They also allow you to include style sheets, to link to RSS or Atom
-feeds, to associate a Google Analytics ID and to add arbitrary JavaScript code
-that is required to control interactive elements and plugins. The Contao CSS
-framework automatically divides the browser window into several layout sections
-and shows the modules that have been assigned to them one below the other.
+Les présentations de page déterminent l'agencement basique d'une page (par ex. 
+le nombre de colonnes ou la largeur générale) et elle définissent quels modules 
+de front office vont être affichés dans quelles colonnes. Elles permettent aussi 
+d'inclure des feuilles de style, de lier la page à un flux RSS ou Atom, 
+d'indiquer un ID Google Analytics et d'ajouter du code JavaScript qui pourrait 
+être requis pour contrôler des éléments interactifs ou des plugins. La structure 
+CSS de Contao divise automatiquement la fenêtre du navigateur en plusieurs 
+sections et affiche les modules qui ont été assignés à ces sections les uns à 
+la suite des autres.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/front-end-structure.jpg)
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/front-end-modules.jpg)
 
-That implies that by the time you create a page layout, you have to have created
-all style sheets and front end modules that you want to include in it. Therefore
-it is recommended to create resources in the following order:
+Cela implique que lorsque vous allez créer une présentation de page, vous devriez 
+déjà avoir créé toutes les feuilles de style et les modules front office que  vous 
+voulez inclure. C'est pourquoi, il est recommandé de créer les ressources dans 
+l'ordre suivant :
 
-* Create the necessary front end modules
-* Create the necessary style sheets
-* Optionally create news archives or calendars
-* Create a new page layout and combine the components
+* Créer les modules front office nécessaires
+* Créer les feuilles de style nécessaires
+* Optionnellement, créer des archives d'actualités ou des calendriers
+* Créer une présentation de page et combiner tous les composants
 
 
-## Page types
+## Types de page
 
-The page type determines whether a page shows content, forwards to another page
-or defines the starting point of a new website within the page tree. Contao
-supports 6 different page types which are explained below.
+Le type de page détermine si la page va afficher du contenu, rediriger vers une 
+autre page ou définir le point de départ d'un nouveau site internet dans la 
+structure de page. Contao supporte six types de pages différents qui sont 
+expliqués ci-dessous. 
 
 <table>
 <tr>
-  <th>Page type</th>
+  <th>Type de page</th>
   <th>Description</th>
 </tr>
 <tr>
-  <td>Regular page</td>
-  <td>A regular page contains articles and content elements. It behaves like a
-      static HTML page.</td>
+  <td>Page simple</td>
+  <td>Une page simple contient des articles et des éléments de contenu. C'est 
+  le type de page par défaut.</td>
 </tr>
 <tr>
-  <td>External redirect</td>
-  <td>This type of page automatically redirects visitors to an external website.
-      It works like a hyperlink.</td>
+  <td>Rediriger vers une URL externe</td>
+  <td>Ce type de page réoriente automatiquement les visiteurs vers une URL 
+  externe. Cela fonctionne comme un lien hypertexte.</td>
 </tr>
 <tr>
-  <td>Internal redirect</td>
-  <td>This type of page automatically forwards visitors to another page within
-      the site structure.</td>
+  <td>Rediriger vers une autre page du site</td>
+  <td>Ce type de page réoriente automatiquement les visiteurs vers une autre 
+  page de la structure de site.</td>
 </tr>
 <tr>
-  <td>Website root</td>
-  <td>This type of page marks the starting point of a new website within the
-      site structure.</td>
+  <td>Racine d'un nouveau site</td>
+  <td>Ce type de page est le point de départ pour créer un site internet dans 
+  la structure de site.</td>
 </tr>
 <tr>
-  <td>403 Access denied</td>
-  <td>If a user requests a protected page without permission, a 403 error page
-      will be loaded instead. This page must be added <b>on the first level</b> inside your website root page.</td>
+  <td>Erreur 403 (accès interdit)</td>
+  <td>Si un utilisateur sans permission essaye d'accéder à une page protégée, 
+  une page d'erreur 403 sera retournée. Cette page doit être ajoutée <b>au 
+  premier niveau</b> dans votre page racine d'un nouveau site.</td>
 </tr>
 <tr>
-  <td>404 Page not found</td>
-  <td>If a user requests a non-existent page, a 404 error page will be loaded
-      instead. This page must be added <b>on the first level</b> inside your website root page.</td>
+  <td>Erreur 404 (page non trouvée)</td>
+  <td>Si un utilisateur essaye d'accéder à une page qui n'existe pas, une page 
+  d'erreur 404 sera retournée. Cette page doit être ajoutée <b>au premier 
+  niveau</b> dans votre page racine d'un nouveau site.</td>
 </tr>
 </table>
 
 
-### Multi-domain mode
+### Mode multi-domaines
 
-Contao supports multiple websites within the site structure and automatically
-redirects visitors to a particular website root page depending on its DNS and
-language settings. Let us assume that you are running a bilingual corporate
-website which uses the domain "www.company.com" and a small private website
-which uses the domain "www.personal-website.com". You need three website root
-pages for that:
+Contao supporte plusieurs sites internet à l'intérieur de la structure de site 
+et redirige automatiquement les visiteurs vers une racine de site particulière 
+en fonction du nom de domaine ou des réglages de langues. Imaginons par exemple 
+que vous deviez créer un site d'entreprise bilingue qui utilise le nom de 
+domaine "www.company.com" et un petit site personnel qui utilise le nom de 
+domaine "www.personal-website.com". Vous aurez besoin de trois pages racines 
+d'un nouveau site pour cela : 
 
 <table>
 <tr>
   <th>Type</th>
   <th>DNS</th>
-  <th>Language code</th>
-  <th>Fallback language</th>
+  <th>Code de langue</th>
+  <th>Langue de secours</th>
 </tr>
 <tr>
-  <td>German corporate website</td>
-  <td>none</td>
+  <td>Site internet d'entreprise en allemand</td>
+  <td>aucun</td>
   <td>de</td>
-  <td>no</td>
+  <td>non</td>
 </tr>
 <tr>
-  <td>English corporate website</td>
-  <td>none</td>
+  <td>Site internet d'entreprise en Anglais</td>
+  <td>aucun</td>
   <td>en</td>
-  <td>yes</td>
+  <td>oui</td>
 </tr>
 <tr>
-  <td>Personal website</td>
+  <td>Site internet personnel</td>
   <td>personal-website.com</td>
   <td>de</td>
-  <td>yes</td>
+  <td>oui</td>
 </tr>
 </table>
 
-The following table shows to which page a visitor will be redirected depending
-on the domain and his browser language.
+Le tableau suivant montre vers quelle page un visiteur va être redirigé en 
+fonction du nom de domaine et de la langue de son navigateur.
 
 <table>
 <tr>
@@ -404,22 +469,28 @@ on the domain and his browser language.
 </tr>
 </table>
 
-Note that if we had not set the "language fallback" option, the personal website
-would only be available for German speaking users!
+Notez que si nous n'utilisions pas l'option "langue de secours", le site internet 
+personnel ne serait disponible que pour les utilisateurs dont la langue du 
+navigateur est l'Allemand ! 
 
 
 ### Droits d'accès
 
-Les droits d'accès déterminent ce que les utilisateurs du back office sont autorisés à faire avec une page et ses articles. Ils n'ont rien à voir avec les pages protégées qui ne sont accessibles que par certains utilisateurs front office ! Similaire au système de permissions des fichiers Unix, il existe trois niveaux d'autorisation :
+Les droits d'accès déterminent ce que les utilisateurs du back office sont 
+autorisés à faire avec une page et ses articles. Ils n'ont rien à voir avec les 
+pages protégées qui ne sont accessibles que par certains utilisateurs front 
+office ! Similaire au système de permissions des fichiers Unix, il existe trois 
+niveaux d'autorisation :
 
 * Accès en tant que propriétaire d'une page
 * Accès en tant que membre d'un groupe propriétaire de la page
 * Accès en tant qu'utilisateur sans privilège
 
-Each level can have different permissions. By default, the owner of a page is
-allowed to edit the page itself as well as its articles, whereas a member of the
-group that owns a page is only allowed to edit articles. Unprivileged users have
-no writing permissions at all.
+Chaque niveau peut avoir différentes permissions. Par défaut, le propriétaire de 
+la page est autorisé à éditer la page elle-même ainsi que les articles de la 
+page, tandis qu'un utilisateur d'un groupe qui possède une page est autorisé à 
+éditer les articles seulement. Les utilisateurs sans privilège n'ont aucun droits 
+en écriture.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/access-rights.jpg)
 
