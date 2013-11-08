@@ -1,7 +1,7 @@
-# Data Container Arrays
+# Tableaux conteneurs de données
 
-Les tableaux conteneurs de données (Data Container Arrays, ou DCA) sont 
-utilisés pour stocker les meta-informations des tables. Chaque DCA décrit 
+Les tableaux conteneurs de données ("Data Container Arrays" en Anglais, ou DCA) 
+sont utilisés pour stocker les meta-informations des tables. Chaque DCA décrit 
 une table particulière du point de vue de sa configuration, de ses relations 
 avec les autres tables et de ses champs. Le noyau de Contao détermine grâce à 
 ces meta-informations comment lister les enregistrements, comment générer les 
@@ -12,7 +12,7 @@ afin que chaque module puisse surcharger la configuration existante. Le fichier
 `system/config/dcaconfig.php` est inclus à la fin.
 
 
-## Reference
+## Référence
 
 Un tableau conteneur de données est divisé en six sections. La première section 
 contient les configurations générales de la table, comme les relations avec 
@@ -27,9 +27,9 @@ champs en détails.
 
 La configuration de la table décrit la table elle-même, par exemple quel type 
 de conteneur de données est utilisé pour stocker les données ou ses relations 
-avec les autres tables. Vous pouvez également activer le versioning ou définir 
-ce qui arrive aux enregistrements enfants lorsque les données sont éditées ou 
-supprimées. 
+avec les autres tables. Vous pouvez également activer le suivi des versions ou 
+définir ce qui arrive aux enregistrements enfants lorsque les données sont 
+éditées ou supprimées. 
 
 <table>
 <tr>
@@ -470,7 +470,7 @@ un champ peut être utilisé comme critère de tri ou de filtre.
 </tr>
 <tr>
   <td>length</td>
-  <td>Longeur du critère de tri (<code>integer</code>)</td>
+  <td>Longueur du critère de tri (<code>integer</code>)</td>
   <td>Permet de spécifier le nombre de caractères utilisés pour les groupes 
   de tris (flags 3 et 4).</td>
 </tr>
@@ -614,7 +614,7 @@ données. Chaque champ peut être validé par une expression régulière.
 <tr>
   <td>fallback</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>ISi true, le champ ne peut être assigné qu'une fois par table.</td>
+  <td>Si true, le champ ne peut être assigné qu'une fois par table.</td>
 </tr>
 <tr>
     <td>rgxp</td>
@@ -662,7 +662,7 @@ données. Chaque champ peut être validé par une expression régulière.
         </tr>
         <tr>
           <td><b>folderalias</b></td>
-          <td>expects a valid folder URL alias</td>
+          <td>exige une URL d'alias de dossier valide</td>
         </tr>
         <tr>
           <td><b>friendly</b></td>
@@ -1001,7 +1001,7 @@ $GLOBALS['TL_LANG']['tl_news']['date_legend']  = 'Date and time';
 
 Le back office de Contao utilise un système simple de grille en deux colonnes 
 pour disposer les champs d'entrées dans leur groupes. Vous pouvez utiliser 
-les classes CSS suivantes dans la section evaluation du tableau conteneur de 
+les classes CSS suivantes dans la section évaluation du tableau conteneur de 
 données en tant que `tl_class` (exemple `'tl_class'=>'w50 wizard'`). 
 
 <table>
@@ -1062,7 +1062,7 @@ de Contao.
   <td>onsubmit_callback</td>
   <td>Est exécuté lorsqu'un formulaire du back office est soumis. Vous permet 
   par exemple de modifier les données du formulaire avant qu'elles ne soient 
-  écrites dans la base de données (utilisé pour calculer les intervales dans 
+  écrites dans la base de données (utilisé pour calculer les intervalles dans 
   l'extension calendar).</td>
 </tr>
 <tr>
@@ -1109,7 +1109,7 @@ de Contao.
 <tr>
   <td>label_callback</td>
   <td>Permet d'avoir des labels individuels dans le listing et est, par exemple, 
-  utilisé dans le module utilisateurs pour ajouter des icônes de status.</td>
+  utilisé dans le module utilisateurs pour ajouter des icônes de statut.</td>
 </tr>
 </table>
 

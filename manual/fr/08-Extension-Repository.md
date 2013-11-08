@@ -69,7 +69,7 @@ correspondante et cliquez sur le bouton "Add release".
 
 Les numéros de versions dans le référentiel d'extensions sont formés de trois 
 blocs de chiffres qui indiquent s'il s'agit d'une version majeure, mineure ou 
-de maintenance (par exemple `1.0.0`) ainsi qu'un status de développement sous 
+de maintenance (par exemple `1.0.0`) ainsi qu'un statut de développement sous 
 forme de texte (par exemple `beta1`).
 
 <table>

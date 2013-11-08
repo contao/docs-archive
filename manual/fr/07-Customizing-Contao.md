@@ -283,7 +283,7 @@ fonctionnalités personnalisées au coeur de Contao.
 ### activateAccount
 
 Le hook "activateAccount" est déclenché lorsqu'un nouveau compte en front office 
-est activé. Il passe l'objet utilisateur en argument et n'attend pas de valeur 
+est activé. Il passe l'objet User en argument et n'attend pas de valeur 
 de retour. Il est disponible à partir de la version 2.4.3.
 
 ``` {.php}
@@ -341,7 +341,7 @@ public function myAddComment($intId, $arrSet)
 
 Le hook "addCustomRegexp" est déclenché lorsqu'une expression régulière inconnue 
 est trouvée. Il passe le nom de l'expression régulière, la valeur courante et 
-l'objet widget en arguments et attend une valeur de retour de type booléen. Il 
+l'objet Widget en arguments et attend une valeur de retour de type booléen. Il 
 est disponible à partir de la version 2.6.2.
 
 ``` {.php}
@@ -390,7 +390,7 @@ public function myAddLogEntry($strText, $strFunction, $strAction)
 
 Le hook "checkCredentials" est déclenché lorsqu'une tentative d'identification 
 échoue à cause d'un mot de passe incorrect. Il passe le nom de l'utilisateur, 
-le mot de passe et l'objet utilisateur en arguments et attend une valeur de 
+le mot de passe et l'objet User en arguments et attend une valeur de 
 retour de type booléen. Il est disponible à partir de la version 2.6.0.
 
 ``` {.php}
@@ -528,8 +528,8 @@ public function myExecutePreActions($strAction)
 ### executePostActions
 
 Le hook "executePostActions" est déclenché par les requêtes Ajax qui nécessitent 
-un objet DCA. Il passe le nom de l'action et l'objet conteneur de données en 
-arguments et n'attend pas de valeur de retour. Il est disponible à partir de la 
+un objet DCA. Il passe le nom de l'action et l'objet DataContainer en arguments 
+et n'attend pas de valeur de retour. Il est disponible à partir de la 
 version 2.6.1.
 
 ``` {.php}
@@ -569,7 +569,7 @@ public function myGenerateBreadcrumb($arrItems, \Module $objModule)
 ### generateFrontendUrl
 
 Le hook "generateFrontendUrl" est déclenché lors de la re-création d'une URL 
-de front office. Il passe l'objet page, la chaîne de paramètres et l'URL par 
+de front office. Il passe l'objet Page, la chaîne de paramètres et l'URL par 
 défaut en arguments et attend une chaîne de caractères comme valeur de retour. 
 Il est disponible à partir de la version 2.5.8.
 
@@ -588,7 +588,7 @@ public function myGenerateFrontendUrl($arrRow, $strParams, $strUrl)
 ### generatePage
 
 Le hook "generatePage" est déclenché avant la compilation du modèle de 
-présentation principale ("fe_page"). Il passe l'objet page, l'objet modèle 
+présentation principale ("fe_page"). Il passe l'objet Page, l'objet Model 
 et une référence qui lui est propre en arguments et n'attend pas de valeur 
 de retour. Il est disponible à partir de la version 2.8.RC1.
 
@@ -629,7 +629,7 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Mo
 ### getContentElement
 
 Le hook "getContentElement" est déclenché lorsqu'un élément de contenu est 
-rendu. Il passe l'objet base de données et une chaîne-tampon (buffer string) en 
+rendu. Il passe l'objet Database et une chaîne-tampon (buffer string) en 
 arguments et attend une chaîne-tampon comme valeur de retour. Il est disponible 
 à partir de la version 2.9.0.
 
@@ -649,7 +649,7 @@ public function myGetContentElement(Database_Result $objElement, $strBuffer)
 
 Le hook "getImage" est déclenché quand une vignette est générée et vous permet 
 d'ajouter une routine personnalisée. Il passe le chemin d'accès, la largeur et 
-la hauteur, la mode, le nom du cache et l'objet fichier en arguments et attend 
+la hauteur, la mode, le nom du cache et l'objet File en arguments et attend 
 à un chemin d'accès comme valeur de retour. Il est disponible à partir de la 
 version 2.8.RC1.
 
@@ -686,7 +686,7 @@ public function myGetPageIdFromUrl($arrFragments)
 ### getPageLayout
 
 Le hook "getPageLayout" est exécutée avant d'initialiser le modèle front office. 
-Il passe le modèle de la page, l'objet modèle et une référence à l'objet page en 
+Il passe le modèle de la page, l'objet Model et une référence à l'objet Page en 
 arguments et n'attend pas de valeur de retour. Il est disponible à partir de la 
 version 3.1.0.
 
@@ -788,8 +788,8 @@ public function myListComments($arrRow)
 ### loadFormField
 
 Le hook "loadFormField" est déclenché lorsqu'un champ de formulaire est chargé. 
-Il passe l'objet widget, l'ID et les données du formulaire en arguments et 
-attend un objet widget comme valeur de retour. Il est disponible à partir de 
+Il passe l'objet Widget, l'ID et les données du formulaire en arguments et 
+attend un objet Widget comme valeur de retour. Il est disponible à partir de 
 la version 2.5.0.
 
 ``` {.php}
@@ -960,7 +960,7 @@ public function myPostDownload($strFile)
 ### postLogin
 
 Le hook "postLogin" est déclenché après qu'un membre front office ou un 
-utilisateur back office se soit identifié. Il passe l'objet utilisateur en 
+utilisateur back office se soit identifié. Il passe l'objet User en 
 argument et n'attend pas de valeur de retour.
 
 ``` {.php}
@@ -978,7 +978,7 @@ public function myPostLogin(User $objUser)
 ### postLogout
 
 Le hook "postLogout" est déclenché après qu'un membre front office ou un 
-utilisateur back office se soit déconnecté. Il passe l'objet utilisateur 
+utilisateur back office se soit déconnecté. Il passe l'objet User 
 en argument et n'attend pas de valeur de retour.
 
 ``` {.php}
@@ -1015,7 +1015,7 @@ public function myPostUpload($arrFiles)
 ### printArticleAsPdf
 
 Le hook "printArticleAsPdf" est déclenché lorsqu'un article est exporté au 
-format PDF. Il passe le texte de l'article et l'objet article en arguments 
+format PDF. Il passe le texte de l'article et l'objet Article en arguments 
 et n'attend pas de valeur de retour. Il est disponible à partir de la version 
 2.8.RC1.
 
@@ -1137,7 +1137,7 @@ public function myReviseTable($table, $new_records, $parent_table, $child_tables
 ### setNewPassword
 
 Le hook "setNewPassword" est déclenché après la saisie d'un nouveau mot de 
-passe. Il passe l'objet utilisateur et le mot de passe crypté en arguments 
+passe. Il passe l'objet User et le mot de passe crypté en arguments 
 et n'attend pas de valeur de retour. Il est disponible à partir de la 
 version 2.2.3.
 
@@ -1156,8 +1156,8 @@ public function mySetNewPassword($objUser, $strPassword)
 ### validateFormField
 
 Le hook "validateFormField" est déclenché à la soumission d'un champ de 
-formulaire. Il passe l'objet widget et l'ID du formulaire en arguments et 
-attend un objet widet comme valeur de retour. Il est disponible à partir de 
+formulaire. Il passe l'objet Widget et l'ID du formulaire en arguments et 
+attend un objet Widget comme valeur de retour. Il est disponible à partir de 
 la version 2.5.0.
 
 ``` {.php}

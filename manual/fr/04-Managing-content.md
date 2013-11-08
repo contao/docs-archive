@@ -484,7 +484,7 @@ contrôler le nombre d'e-mails par minute.
 ### Modules front office
 
 Les modules front office sont utilisés pour gérer les inscriptions aux 
-bulletins d'information et optionnellement les afficher sur le site intenret. 
+bulletins d'information et optionnellement les afficher sur le site internet. 
 Ils peuvent être configurés avec le module "Modules" dans le back office et 
 doivent être ajoutés à un article ou à une présentation de page pour être 
 affichés sur le site internet.
@@ -1291,7 +1291,7 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>utf8_romanize</code></td>
-    <td>Romaniser la sortie</td>
+    <td>Romanise la sortie</td>
     <td></td>
 </tr>
 <tr>
@@ -1301,7 +1301,7 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>encodeEmail</code></td>
-    <td>Encode email addresses in the output</td>
+    <td>Encode les adresses e-mail dans la sortie</td>
     <td>see <code>String::encodeEmail</code></td>
 </tr>
 <tr>
