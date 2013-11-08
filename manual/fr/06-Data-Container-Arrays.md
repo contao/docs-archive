@@ -1,23 +1,11 @@
 # Data Container Arrays
 
-Data Container Arrays (DCAs) are used to store table meta data. Each DCA
-describes a particular table in terms of its configuration, its relations to
-other tables and its fields. The Contao core engine determines by this meta data
-how to list records, how to render back end forms and how to save data.  The DCA
-files of all active module are loaded one after the other (starting with
-"backend" and "frontend" and then in alphabetical order), so that every module
-can override the existing configuration. The `system/config/dcaconfig.php` file
-is included at the end.
+Les tableaux conteneurs de données (Data Container Arrays, ou DCA) sont utilisés pour stocker les meta-informations des tables. Chaque DCA décrit une table particulière du point de vue de sa configuration, de ses relations avec les autres tables et de ses champs. Le noyau de Contao détermine grâce à ces meta-informations comment lister les enregistrements, comment générer les formulaires dans le back office et comment enregistrer les données. Les fichiers DCA de tous les modules actifs sont chargés les uns après les autres (en commençant par "backend", puis "frontend" et ensuite dans l'ordre alphabétique) afin que chaque module puisse surcharger la configuration existante. Le fichier `system/config/dcaconfig.php` est inclus à la fin.
 
 
 ## Reference
 
-A Data Container Array is devided into six sections. The first section stores
-the general table configuration like relations to other tables. The second and
-third section determine how records are listed and which operations a user is
-allowed to execute. The fourth section defines different groups of form fields
-which are called "palettes" and the last two sections describe the input fields
-in detail.
+Un tableau conteneur de données est divisé en six sections. La première section contient les configurations générales de la table, comme les relations avec d'autres tables. Les deuxième et troisième sections déterminent la manière dont les enregistrements sont listés, et quelles opérations un utilisateur est en droit d'exécuter. La quatrième section définit différents groupes de champs de formulaires, appelés "palettes", et les deux dernières sections décrivent les champs en détails.
 
 
 ### Configuration de la table
@@ -153,7 +141,7 @@ Le tableau « listing » définit comment les enregistrements sont listés. Le m
       <b>1</b> Les enregistrements sont triés selon un champ déterminé<br>
       <b>2</b> Les enregistrements sont triés selon un champs sélectionnable<br>
       <b>3</b> Les enregistrements sont triés par la table parente<br>
-      <b>4</b>Affiche les enregistrements enfants d'une table parente (voir le module feuilles de style)<br>
+      <b>4</b> Affiche les enregistrements enfants d'une table parente (voir le module feuilles de style)<br>
       <b>5</b> Les enregistrements sont présentés en arborescence (voir la structure du site)<br>
       <b>6</b> Affiche les enregistrements enfants dans une structure en arborescence (voir le module articles)</td>
 </tr>
@@ -986,7 +974,7 @@ Les fonctions callback sont fondés sur un pattern de répartition d'événement
 </tr>
 <tr>
   <td>load_callback</td>
-  <td>Est exécuté lorsque un champs de formulaire est initialisé et peut, par exemple, être utilisé pour charger une valeur par défaut. </td>
+  <td>Est exécuté lorsque un champs de formulaire est initialisé et peut, par exemple, être utilisé pour charger une valeur par défaut.</td>
 </tr>
 <tr>
   <td>save_callback</td>
@@ -995,4 +983,4 @@ Les fonctions callback sont fondés sur un pattern de répartition d'événement
 </table>
 
 
-[1]: 02-Administration-area.md#listing-records
+[1]: 02-Administration-area.md#liste-d-enregistrements
