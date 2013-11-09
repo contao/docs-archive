@@ -50,16 +50,16 @@ le jeu de caractères par défaut de Contao `UTF-8` s'écrit `UTF8` dans MySQL !
 
 Lorsque que vous êtes connecté à la base de données, Contao vérifie
 automatiquement ses tables et affiche une liste de changements recommandés dans
-le cas où ils ne sont pas à jour. Assurez-vous de lire attentivement ces 
-recommandations, parce que Contao ne connaît que ses propres tables et tentera
-de supprimer celles d'autres applications éventuellement en partage avec la base
-de données. Confirmez les modifications et cliquez sur le bouton "Mettre à jour
-la base de données".
+le cas où ils ne seraient pas à jour. Assurez-vous de lire attentivement ces 
+recommandations, car Contao ne connaît que ses propres tables et tentera de 
+supprimer celles d'autres applications en partage avec la base de données. 
+Confirmez les modifications et cliquez sur le bouton "Mettre à jour la base 
+de données".
 
 
 #### Importer un modèle
 
-Un modèle est un site internet préconfiguré qui comprend un exemple de structure
+Un modèle est un site internet pré-configuré qui comprend un exemple de structure
 du site, plusieurs feuilles de style pour formater les modules de base de Contao 
 et des éléments de contenu. Le modèle par défaut est appelé "Music Academy". 
 Pour l'importer, choisissez l'option `music_academy.sql` dans le menu déroulant 
@@ -73,7 +73,7 @@ et cliquez sur le bouton "Importer un modèle".
 Si vous n'avez pas importé un modèle, vous devez créer un utilisateur
 administrateur pour se connecter au back office de Contao. Après avoir créé le
 compte, le processus d'installation est terminé. Le lien dans le coin inférieur 
-droit vous amène vers le panneau d'administration. Si vous avez importé le site 
+droit vous amènera vers le panneau d'administration. Si vous avez importé le site 
 internet d'exemple, vous pouvez vous connecter en tant qu'utilisateur "k.jones" 
 avec le mot de passe "kevinjones".
 
@@ -108,14 +108,14 @@ permissions de fichiers insuffisantes et peut se produire même si le `safe_mode
 est désactivé, il devrait donc être appelé "File Permission Hack" à la place. 
 PHP en tant que module Apache est généralement exécuté comme `wwwrun`, `www-data`
 ou `nobody`, alors que les fichiers que vous téléverser via FTP vous 
-appartiennent (par exemple `web4` ou `ab5678`). Le serveur refuse donc l'accès
-du script PHP de Contao vers ces fichiers.
+appartiennent (par exemple `web4` ou `ab5678`). Le serveur refuse donc, au 
+script PHP de Contao, l'accès à ces fichiers.
 
 
 #### Utilisation du FTP pour les opérations sur les fichiers
 
-Pour contourner le problème de permissions, Contao établit une connexion FTP 
-pour modifier les fichiers et répertoires. Tout ce que vous avez à faire est 
+Pour contourner le problème des permissions, Contao établit une connexion FTP 
+pour modifier les fichiers et les répertoires. Tout ce que vous avez à faire est 
 d'entrer vos identifiants de connexion FTP. Faites attention lorsque vous entrez
 le chemin relatif à partir de votre répertoire racine FTP vers le répertoire de 
 Contao (par exemple `html/`, `public_html/` ou `httpdocs/`).
@@ -137,12 +137,13 @@ avoir lu dans un tutoriel ou dans les forums de Contao !
 
 ## Mise à jour manuelle
 
-Lorsqu'il s'agit de mettre à jour manuellement une installation Contao, vous 
-pouvez soit téléverser l'archive complète de Contao sur le serveur (remplacement 
-des fichiers) ou vous pouvez téléverser uniquement les fichiers qui ont été 
-modifiés depuis la dernière mise à jour (synchronisation des fichiers). De toute 
-façon, vous devriez toujours sauvegarder les fichiers et dossiers ci-dessous - 
-juste au cas où il y aurait une erreur ou lors d'un remplacement accidentel :
+Pour mettre à jour manuellement une installation de Contao, vous pouvez soit 
+téléverser l'archive complète de Contao sur le serveur (remplacement des 
+fichiers) ou vous pouvez téléverser uniquement les fichiers qui ont été 
+modifiés depuis la dernière mise à jour (synchronisation des fichiers). De 
+toute façon, vous devriez toujours sauvegarder les fichiers et dossiers 
+ci-dessous juste au cas où il y aurait une erreur ou lors d'un remplacement 
+accidentel :
 
 * `files/*`
 * `system/config/dcaconfig.php`
@@ -159,9 +160,9 @@ personnalisés et vos fichiers.
 
 Le remplacement des fichiers d'une installation de Contao est assez simple. Il 
 suffit de décompresser l'archive de Contao sur le serveur ou de l'extraire sur 
-votre ordinateur et téléverser les fichiers avec un client FTP. Puis, restaurer 
-les fichiers que vous avez sauvegardés et enlever les éventuels fichiers 
-inutilisés des versions antérieures de Contao.
+votre ordinateur et de téléverser les fichiers avec un client FTP. Puis, 
+restaurer les fichiers que vous avez sauvegardés et enlever les éventuels 
+fichiers inutilisés des versions antérieures de Contao.
 
 **Attention:** Si vous avez installé des extensions tierces, assurez-vous de 
 les sauvegarder et de les restaurer eux aussi, ou ne les écraser pas du tout. 
@@ -201,7 +202,7 @@ confirmez les modifications.
 
 ## Live Update Service
 
-Le "Contao Live Update Service" est un service commercial fourni par [iNet 
+Le "Contao Live Update Service" est un service commercial proposé par [iNet 
 Robots][4], la compagnie du fondateur de Contao et développeur principal, Leo 
 Feyer. Il vous permet de mettre à jour votre installation en quelques clics à 
 partir du panneau d'administration, sans avoir à télécharger une archive de 
@@ -234,7 +235,7 @@ de Contao
 99% de tous les problèmes de mise à jour du Live Update sont causés par des 
 permissions de fichiers erronés. Contao requiert des autorisations d'écriture 
 pour gérer les fichiers et les dossiers, en conséquence si le Live Update ne 
-peut pas fonctionner correctement, vérifier la configuration de votre serveur et 
+fonctionne pas correctement, vérifiez la configuration de votre serveur et 
 assurez-vous de mettre en place le Safe Mode Hack **tel que décrit dans ce mode 
 d'emploi** !
 
@@ -295,8 +296,8 @@ l'importation.
 Enfin, ouvrez l'outil d'installation de Contao de la nouvelle installation 
 (le mot de passe doit être le même que pour votre installation locale) et 
 ajustez la configuration de la base de données si nécessaire. Ensuite, allez au 
-panneau d'administration et connectez-vous avec votre identifiant et votre mot 
-de passe.
+panneau d'administration et connectez-vous avec votre nom d'utilisateur et 
+votre mot de passe.
 
 
 ## Configuration du serveur en ligne
