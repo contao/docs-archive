@@ -1,18 +1,18 @@
 # Panneau d'administration
 
-Pour accéder au panneau d'administration de Contao (back office), il suffit 
-d'ajouter `/contao` à l'URL de votre site internet. Le formulaire 
+Pour accéder au panneau d'administration de Contao (back office), ajouter 
+simplement `/contao` à l'URL de votre site internet. Le formulaire 
 d'identification du back office est protégé contre les attaques par force brute, 
 donc si vous entrez un mot de passe erroné plus de trois fois de suite, votre 
 compte sera bloqué durant 5 minutes.
 
+
 ## Liste d'enregistrements
 
-Le moteur de base Contao supporte trois vues: une simple liste ("vue en liste"), 
-une liste qui est regroupée par sa table parent («vue parent») et une liste 
-hiérarchique («vue arborescente"). Ces trois vues peuvent être utilisées pour 
-lister des enregistrements de n'importe quelle table ou de tables liées entre 
-elles.
+Contao supporte trois vues: une simple liste ("vue en liste"), une liste qui est 
+regroupée par sa table parente («vue parent») et une liste hiérarchique ("vue 
+arborescente"). Ces trois vues peuvent être utilisées pour lister des 
+enregistrements de n'importe quelle table ou de tables liées entre elles.
 
 
 ### Vue en liste
@@ -27,20 +27,20 @@ lettre.
 ### Vue parent
 
 La "vue parent" répertorie les enregistrements d'une table enfant qui sont liés 
-à un enregistrement particulier d'une table parent. Les relations de type 
-parents-enfants sont beaucoup utilisées dans Contao. Par exemple, pour les 
+à un enregistrement particulier d'une table parente. Les relations de type 
+parent-enfant sont beaucoup utilisées dans Contao. Par exemple, pour les 
 articles et les éléments de contenu, les archives d'actualités et les actualités 
-ou les feuilles de style et les définitions de format.
+ou les feuilles de style et les définitions de formatage.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-parent.jpg)
 
 
 ### Vue arborescente
 
-La "vue arborescente" répertorie des enregistrements et d'autres ressources tels 
-que des fichiers et des dossiers qui sont organisés dans une structure 
+La "vue arborescente" liste des enregistrements et d'autres ressources tels 
+que des fichiers et des répertoires qui sont organisés dans une structure 
 hiérarchique. Contao prend en charge les relations hiérarchiques au sein d'une 
-table (par exemple, la structure du site) ainsi que des tables enfants qui se 
+table (par exemple, la structure de site) ainsi que des tables enfants qui se 
 rapportent aux tables hiérarchiques parents (par exemple, les articles et les 
 pages).
 
@@ -51,7 +51,7 @@ pages).
 
 Contao supporte différentes façons d'affiner les résultats de sorte que vous ne 
 lâchiez pas le fil même si une table possède plusieurs milliers de lignes. Un 
-grand nombre d'entrées peuvent être filtrés par un ou plusieurs champs de sorte 
+grand nombre d'entrées peuvent être filtrées par un ou plusieurs champs de sorte 
 qu'ils ne montrent que les enregistrements correspondant aux critères de 
 filtrage. La plupart des entrées offrent de plus une recherche en texte intégral 
 qui prend même en charge les expressions régulières. Afin de réduire le temps de 
@@ -64,9 +64,9 @@ enregistrements à la fois.
 ## Édition des enregistrements
 
 L'édition des données est l'une des fonctions centrales d'un système de gestion 
-de contenu. Contao offre beaucoup de fonctionnalités professionnelles qui rend 
-le processus d'édition aussi facile et confortable que possible. Vous pouvez 
-revenir à des versions antérieures d'un enregistrement, restaurer des 
+de contenu. Contao offre beaucoup de fonctionnalités professionnelles qui 
+rendent le processus d'édition aussi facile et confortable que possible. Vous 
+pouvez revenir à des versions antérieures d'un enregistrement, restaurer des 
 enregistrements supprimés, déplacer des enregistrements via le presse-papiers et 
 même éditer plusieurs enregistrements à la fois. La plupart de ces fonctions 
 sont accessibles en utilisant les icônes de navigation.
@@ -202,20 +202,20 @@ utilisant le raccourci clavier `[Alt]+[s]`.
 <tr>
   <td><code>[Alt]+[c]</code></td>
   <td>Sauvegarder et fermer</td>
-  <td>Sauvegarde le formulaire courant et se redirige vers la page précédente.
+  <td>Sauvegarde le formulaire courant et redirige vers la page précédente.
   </td>
 </tr>
 <tr>
   <td><code>[Alt]+[g]</code></td>
   <td>Sauvegarder et retour</td>
-  <td>Sauvegarde le formulaire courant et se redirige vers la page parent, par 
+  <td>Sauvegarde le formulaire courant et redirige vers la page parent, par 
   exemple, à partir d'un élément de contenu vers la vue arborescente des 
   articles.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[e]</code></td>
   <td>Sauvegarder et éditer</td>
-  <td>Sauvegarde le formulaire courant et se redirige vers la vue des 
+  <td>Sauvegarde le formulaire courant et redirige vers la vue des 
   enregistrements enfants. Par exemple, lors de la création de feuilles de 
   style.</td>
 </tr>
@@ -255,7 +255,7 @@ utilisant le raccourci clavier `[Alt]+[s]`.
 </tr>
 <tr>
   <td><code>[Alt]+[v]</code></td>
-  <td>Remplacer multiple</td>
+  <td>Remplacement multiple</td>
   <td>Remplace tous les enregistrements sélectionnés en mode d'édition 
   multiple.</td>
 </tr>
