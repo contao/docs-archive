@@ -1,16 +1,17 @@
 # Gestion des pages
 
-Les chapitres suivants expliquent comment gérer les pages de Contao. Depuis que 
-Contao est un système de gestion de contenu basé sur les pages, ces dernières et 
-la structure du site sont les éléments centraux de votre site internet et tout 
-contenu qui n'est pas associé à une page ne ​​pourra jamais être vu.
+Les chapitres suivants expliquent comment gérer les pages dans Contao. Depuis 
+que Contao est un système de gestion de contenu basé sur les pages, ces 
+dernières et la structure de site sont les éléments centraux de votre site 
+internet et tout contenu qui n'est pas associé à une page ne ​​pourra jamais 
+être vu.
 
 
 ## Composants
 
 Comprendre comment les pages, les articles, les éléments de contenu et les 
 modules sont liés entre eux est la clé de l'apprentissage de Contao. Comme 
-mentionné précédemment, la structure du site est l'élément central de votre 
+mentionné précédemment, la structure de site est l'élément central de votre 
 site. Les visiteurs de votre site internet demandent toujours des pages et non 
 des articles comme dans un CMS basé sur des nœuds.
 
@@ -19,15 +20,16 @@ des articles comme dans un CMS basé sur des nœuds.
 Le diagramme montre que les articles et les présentations de page sont les deux 
 éléments les plus importantes d'une page. Alors que les articles stockent le 
 contenu d'une page, la présentation de page définit la façon dont il est affiché 
-sur le site. Les présentations de page de Contao sont basé sur les CSS et bien 
+sur le site. Les présentations de page de Contao sont basées sur les CSS et bien 
 sûr elles n'utilisent pas de mise en page avec des tables. Les chapitres suivants 
 expliquent comment créer des feuilles de style et des modules, comment les 
-combiner dans une présentation de page et comment créer des pages qui l'utilisent.
+combiner dans une présentation de page et comment créer des pages qui 
+l'utilisent.
 
 
 ## Thèmes
 
-Bien que le gestionnaire de thème est une nouvelle fonctionnalité de la version 
+Bien que le gestionnaire de thèmes est une nouvelle fonctionnalité de la version 
 2.9, il est en fait juste une interface améliorée pour quelque chose qui faisait 
 déjà partie de Contao. Une design de site internet se compose généralement de 
 feuilles de style, de modules front office, de présentations de page, de 
@@ -52,7 +54,7 @@ importé sans risque de perdre toutes les données existantes.
 
 Un thème est un groupe de [feuilles de style][2], de [modules front office][3] 
 et de [présentations de page][4], qui sont tous stockés dans la base de données 
-et automatiquement reconnu par l'exportateur de thème. Vous en apprendrez plus 
+et automatiquement reconnus par l'exportateur de thème. Vous en apprendrez plus 
 sur ces éléments dans les chapitres suivants. Un thème inclut habituellement des 
 images et d'autres fichiers à partir du répertoire des fichiers et des modèles 
 personnalisés en option à partir du répertoire des modèles. Toutefois, ces 
@@ -69,10 +71,10 @@ télécharger le fichier .cto en local sur votre ordinateur. Bien que .cto est u
 extension de fichier propriétaire pour les thèmes de Contao, le fichier est en 
 fait une archive ZIP qui peut être extraite avec chaque programme qui traite les 
 fichiers .zip. Pour réimporter un thème, téléversez le fichier .cto dans votre 
-installation Contao, ouvrez le gestionnaire de thèmes et cliquez sur "Import de 
-thème". Vous pouvez importer plusieurs thèmes à la fois. Une fois l'importation 
-terminée, vous pouvez affecter une ou plusieurs présentations de page du nouveau 
-thème dans la structure du site.
+installation de Contao, ouvrez le gestionnaire de thèmes et cliquez sur "Import 
+de thème". Vous pouvez importer plusieurs thèmes à la fois. Une fois 
+l'importation terminée, vous pouvez associer une ou plusieurs présentations de 
+page du nouveau thème dans la structure de site.
 
 
 ## Feuilles de style
@@ -111,8 +113,9 @@ Si l'ordre est inversé, la valeur générale l'emporterait sur la marge spécif
 ## Modules
 
 Les modules front office vous permettent d'ajouter presque n'importe quel type 
-de fonctionnalités à votre site internet. Le coeur de Contao comprend différents 
-modules pour générer plusieurs menus de navigation, gérer l'enregistrement et l'authentification d'un membre, rechercher sur le site, l'importation de flux 
+de fonctionnalités à votre site internet. Le cœur de Contao comprend des 
+modules pour générer différents menus de navigation, gérer l'enregistrement et 
+l'authentification d'un membre, rechercher sur le site, l'importation de flux 
 RSS et bien plus encore. Pour créer un module, connectez-vous au back office et 
 choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 
@@ -329,12 +332,12 @@ les membres d'un groupe en particulier puissent le voir sur le site internet.
 
 ## Présentations de page
 
-Les présentations de page déterminent l'agencement basique d'une page (par ex. 
-le nombre de colonnes ou la largeur générale) et elle définissent quels modules 
+Les présentations de page déterminent l'agencement basique d'une page, par ex. 
+le nombre de colonnes ou la largeur générale, et elle définissent quels modules 
 de front office vont être affichés dans quelles colonnes. Elles permettent aussi 
 d'inclure des feuilles de style, de lier la page à un flux RSS ou Atom, 
-d'indiquer un ID Google Analytics et d'ajouter du code JavaScript qui pourrait 
-être requis pour contrôler des éléments interactifs ou des plugins. La structure 
+d'associer un ID Google Analytics et d'ajouter du code JavaScript qui pourrait 
+être requis pour contrôler des éléments interactifs ou des plugins. Le framework 
 CSS de Contao divise automatiquement la fenêtre du navigateur en plusieurs 
 sections et affiche les modules qui ont été assignés à ces sections les uns à 
 la suite des autres.
@@ -344,7 +347,7 @@ la suite des autres.
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/front-end-modules.jpg)
 
 Cela implique que lorsque vous allez créer une présentation de page, vous devriez 
-déjà avoir créé toutes les feuilles de style et les modules front office que  vous 
+déjà avoir créé toutes les feuilles de style et les modules front office que vous 
 voulez inclure. C'est pourquoi, il est recommandé de créer les ressources dans 
 l'ordre suivant :
 
@@ -419,7 +422,7 @@ d'un nouveau site pour cela :
   <th>Langue de secours</th>
 </tr>
 <tr>
-  <td>Site internet d'entreprise en allemand</td>
+  <td>Site internet d'entreprise en Allemand</td>
   <td>aucun</td>
   <td>de</td>
   <td>non</td>
@@ -496,7 +499,7 @@ en écriture.
 
 
 [1]: https://contao.org/en/contao-themes-and-templates.html
-[2]: 03-Managing-pages.md#style-sheets
+[2]: 03-Managing-pages.md#feuilles-de-style
 [3]: 03-Managing-pages.md#modules
-[4]: 03-Managing-pages.md#page-layouts
+[4]: 03-Managing-pages.md#presentations-de-page
 [5]: 04-Managing-content.md#articles
