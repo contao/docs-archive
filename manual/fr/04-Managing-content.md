@@ -1,6 +1,6 @@
 # Gestion du contenu
 
-Les chapitres suivants expliquent comment gérer le contenu dans Contao. Le noyau 
+Les chapitres suivants expliquent comment gérer le contenu dans Contao. Le cœur 
 de Contao supporte de nombreux types de contenu comme des articles, des 
 actualités, des événements, des bulletins d'information, des formulaires ou des 
 définitions. D'autres types de contenu comme des bannières, des billets, des 
@@ -15,7 +15,7 @@ Les articles sont des conteneurs pour les éléments de contenu. Regrouper les
 éléments de contenu par article rend le travail plus facile pour déplacer, 
 publier, copier, éditer ou exporter ces éléments ensemble au lieu d'un par un. 
 Chaque article est associé à une page particulière et à une section particulière 
-de cette page, il a ainsi une position fixe dans la structure du site et sur le 
+de cette page, il a ainsi une position fixe dans la structure de site et sur le 
 site internet. Contao peut optionnellement n'afficher qu'une accroche d'article 
 avec un lien "En savoir plus...".
 
@@ -169,8 +169,9 @@ aperçu des éléments de contenu de base de Contao :
 
 ### Contrôle d'accès
 
-Chaque élément de contenu peut être protégé de manière que seuls les invités 
-ou les membres d'un groupe particulier peuvent le voir sur le site internet.
+Chaque élément de contenu peut être protégé de sorte que seuls les invités 
+ou les membres d'un groupe en particulier puissent le voir sur le site 
+internet.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/protected-element.jpg)
 
@@ -179,7 +180,7 @@ ou les membres d'un groupe particulier peuvent le voir sur le site internet.
 
 Le contenu Flash est un type particulier de contenu qui n'est pas affiché dans 
 un article sur le site internet mais chargé dans un film Flash dynamique en 
-utilisant "loadVars()". Pour permettre communication entre Contao et Flash, 
+utilisant "loadVars()". Pour permettre la communication entre Contao et Flash, 
 vous devez ajouter la fonction suivante au frame principal de votre film :
 
 
@@ -187,11 +188,11 @@ vous devez ajouter la fonction suivante au frame principal de votre film :
 TextField.prototype._loadArticle = function(flashID) {
   tf = this;
 
-  // Enable HTML mode and remove content
+  // Autoriser le mode HTML et supprimer le contenu
   tf.html = true;
   tf.htmlText = "";
 
-  // Instantiate a new LoadVars object
+  // Instancier un nouvel objet LoadVars
   lv = new LoadVars();
   lv["flashID"] = flashID;
   lv.sendAndLoad(URL + "flash.php", lv, "POST");
@@ -203,12 +204,12 @@ TextField.prototype._loadArticle = function(flashID) {
   }
 }
 
-// Load the Flash content "myArticle" into the text field "myTextBox"
+// Charger le contenu Flash "myArticle" dans le champ texte "myTextBox"
 myTextBox._loadArticle("myArticle");
 ```
 
 
-#### Importation d'une feuille de style
+#### Importer une feuille de style
 
 Le code ActionScript suivant vous permet d'importer une feuille de style 
 pour formater un champ de texte dynamique :
@@ -219,7 +220,7 @@ TextField.prototype._addCSS = function(style_sheet) {
   tf= this;
   tf.styleSheet = null;
 
-  // Instantiate a new StyleSheet object
+  // Instancier un nouvel objet StyleSheet
   st = new TextField.StyleSheet();
   st.load(URL + style_sheet);
 
@@ -230,12 +231,12 @@ TextField.prototype._addCSS = function(style_sheet) {
   }
 }
 
-// Add the style sheet "basic.css" to the text box "myTextBox"
+// Ajouter la feuille de style "basic.css" au champ texte "myTextBox"
 myTextBox._addCSS("basic.css");
 ```
 
 Notez que Flash ne prend en charge qu'un petit sous-ensemble de balises HTML, 
-de sorte que certains de vos styles peuvent ne pas s'afficher correctement.
+de sorte que certains de vos styles puissent ne pas s'afficher correctement.
 
 
 ## Actualités
@@ -306,7 +307,7 @@ la page "actualités" n'existait pas ou si elle ne comprenait pas le module
 lecteur d'actualités, alors l'actualité ne serait pas affichée.
 
 
-## Calendrier/Événements
+## Événements
 
 L'extension calendrier vous permet de gérer des événements et de les afficher 
 dans un calendrier ou une liste d'événements sur le site internet. Contrairement 
@@ -342,7 +343,7 @@ comprend quatre modules front office :
   <td>Ajoute un calendrier dans une page.</td>
 </tr>
 <tr>
-  <td>Lecteur d'événement</td>
+  <td>Lecteur d'événements</td>
   <td>mod_eventreader</td>
   <td>Affiche les détails d'un événement.</td>
 </tr>
@@ -369,10 +370,10 @@ référencer :
 http://www.domain.com/event-reader/events/final-exams.html
 ```
 
-L'URL ci-dessus demande l'évènement "final-exams" via la page "events". 
+L'URL ci-dessus sollicite l'événement "final-exams" via la page "events". 
 Rappelez-vous que Contao est un CMS basé sur les pages, donc si la page "events" 
-n'existait plus ou si elle n'incluait plus le module Lecteur d'évènements, 
-l'évènement ne pourrait plus être affiché. 
+n'existait pas ou si elle n'incluait pas le module lecteur d'événements, alors
+l'événement ne serait pas affiché. 
 
 
 ## Flux RSS/Atom
@@ -388,7 +389,7 @@ calendriers. Voici un exemple avec la liste des calendriers.
 Un ou plusieurs calendriers peuvent être regroupés et exportés en tant que flux 
 RSS ou Atom. Il en va de même pour les archives d'actualités. Dans un même 
 temps, vous pouvez choisir d'exporter uniquement les accroches ou les articles 
-complets de chaque événement ou actualités.
+complets de chaque événement ou actualité.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/rss-settings.jpg)
 
@@ -401,11 +402,11 @@ de votre installation de Contao. Dans cet exemple : ```share/events.xml```.
 
 ## Bulletins d'information
 
-L'extension Bulletins d'information vous permet de gérer et d'envoyer des 
+L'extension bulletins d'information vous permet de gérer et d'envoyer des 
 bulletins d'information et optionnellement de les afficher sur le site 
 internet. Contrairement aux articles qui sont associés à une page particulière, 
-les bulletins d'informations sont organisés en listes de diffusion, ce qui vous 
-permet de facilement les regrouper ou les catégoriser.
+les bulletins d'information sont organisés en listes de diffusion, ce qui vous 
+permet de facilement les regrouper ou de les catégoriser.
 
 
 ### Destinataires
@@ -529,11 +530,11 @@ utilisée pour le référencer :
 http://www.domain.com/newsletters/items/james-wilson-returns.html
 ```
 
-L'URL ci-dessus demande le bulletin d'information "james-wilson-returns" via 
+L'URL ci-dessus sollicite le bulletin d'information "james-wilson-returns" via 
 la page "newsletters". Rappelez-vous que Contao est un CMS basé sur les pages, 
-donc si la page "newsletters" n'existait plus ou si elle n'incluait plus le 
-module Lecteur de bulletins d'information, le bulletin d'information ne 
-pourrait plus être affiché. 
+donc si la page "newsletters" n'existait pas ou si elle n'incluait pas le 
+module lecteur de bulletins d'information, alors le bulletin d'information ne 
+serait pas affiché. 
 
 
 ## Formulaires
@@ -668,8 +669,8 @@ Contao :
 ## Balises d'insertion
 
 Les balises d'insertion sont des jokers qui sont remplacés par du contenu 
-dynamique quand une page est affichée à l'écran. Par exemple, elles vous 
-permettent d'afficher la date courante, l'adresse d'un membre en fonction de 
+dynamique quand une page est affichée à l'écran. Elles vous permettent, par 
+exemple, d'afficher la date courante, l'adresse d'un membre en fonction de 
 son nom ou bien d'inclure un fichier. Les balises d'insertion peuvent être 
 utilisées presque partout dans Contao, même dans les pages en cache.
 
@@ -999,7 +1000,7 @@ d'environnement comme le nom de la page ou la chaîne de requête.
 
 Les balises d'insertion suivantes vous permettent d'inclure différentes 
 ressources comme des articles, des modules ou des fichiers qui se trouvent dans 
-le dossier "templates". 
+le répertoire "templates". 
 
 <table>
 <tr>
@@ -1118,17 +1119,19 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
-  <tdCette balise sera complètement supprimé si la langue de la page ne correspond 
-  pas à la langue de la balise. Vous pouvez l'utiliser pour définir des labels 
-  spécifiques à une langue : <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr 
-  Name{{iflng}}</code>.</td>
+  <td>Cette balise sera complètement supprimée si la langue de la page ne 
+  correspond pas à la langue de la balise. Vous pouvez l'utiliser pour définir 
+  des labels spécifiques à une langue : 
+  <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.
+  </td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
-  <td>Cette balise sera complètement supprimé si la langue de la page correspond 
-  à la langue de la balise. Vous pouvez l'utiliser pour définir des labels 
-  spécifiques à une langue : <code>{{ifnlng::de}}Your name{{iflng}}{{iflng::de}}
-  Ihr Name{{iflng}}</code>.</td>
+  <td>Cette balise sera complètement supprimée si la langue de la page 
+  correspond à la langue de la balise. Vous pouvez l'utiliser pour définir des 
+  labels spécifiques à une langue : 
+  <code>{{ifnlng::de}}Your name{{iflng}}{{iflng::de}} Ihr Name{{iflng}}</code>.
+  </td>
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
@@ -1160,7 +1163,7 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 <tr>
   <td><code>{{toggle_view}}</code></td>
   <td>Ajoute le lien qui vous permet de basculer entre le modèle pour mobile et 
-  ordinateur de bureau.</td>
+  celui d'un ordinateur de bureau.</td>
 </tr>
 </table>
 
@@ -1210,23 +1213,23 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>standardize</code></td>
-    <td>Normaliser la sortie (par exemple pour un alias de page ou une classe 
+    <td>Normalise la sortie (par exemple pour un alias de page ou une classe 
     CSS)</td>
     <td></td>
 </tr>
 <tr>
     <td><code>ampersand</code></td>
-    <td>Convertir les esperluettes en entités de caractère HTML</td>
+    <td>Convertit les esperluettes en entités de caractère HTML</td>
     <td></td>
 </tr>
 <tr>
     <td><code>specialchars</code></td>
-    <td>Convertir les caractères spéciaux en entités de caractère HTML</td>
+    <td>Convertit les caractères spéciaux en entités de caractère HTML</td>
     <td></td>
 </tr>
 <tr>
     <td><code>nl2br</code></td>
-    <td>Insère des retours à la lign HTML à chaque nouvelle ligne dans une 
+    <td>Insère des retours à la ligne HTML à chaque nouvelle ligne dans une 
     chaîne</td>
     <td><a target="_blank" href="http://php.net/nl2br">Fonction PHP</a></td>
 </tr>
@@ -1321,7 +1324,7 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>readable_size</code></td>
-    <td>Convertir des tailles de fichiers dans un format lisible par 
+    <td>Convertit des tailles de fichiers dans un format lisible par 
     un humain</td>
     <td>see <code>System::getReadableSize()</code></td>
 </tr>
