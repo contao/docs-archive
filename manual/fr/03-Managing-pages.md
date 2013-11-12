@@ -42,7 +42,7 @@ option pour exporter et importer ces ressources.
 
 La principale différence entre les [thèmes][1] et les modèles du front office 
 est qu'un modèle du front office contient un exemple de site internet 
-entièrement préconfiguré, y compris un exemple de structure du site, d'articles, 
+entièrement préconfiguré, y compris un exemple de structure de site, d'articles, 
 d'éléments de contenu et même d'utilisateurs et de groupes d'utilisateurs. Un 
 thème, en revanche, ne contient que le design du site internet et peut donc être 
 importé sans risque de perdre toutes les données existantes.
@@ -128,7 +128,7 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 <tr>
   <td>Menu de navigation</td>
   <td>mod_navigation</td>
-  <td>Génère un menu de navigation à partir de la structure du site.</td>
+  <td>Génère un menu de navigation à partir de la structure de site.</td>
 </tr>
 <tr>
   <td>Navigation personnalisée</td>
@@ -143,7 +143,7 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 <tr>
   <td>Navigation rapide</td>
   <td>mod_quicknav</td>
-  <td>Génère un menu de type liste déroulante à partir de la structure du 
+  <td>Génère un menu de type liste déroulante à partir de la structure de 
   site.</td>
 </tr>
 <tr>
@@ -164,7 +164,7 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 <tr>
   <td>Plan du site</td>
   <td>mod_sitemap</td>
-  <td>Génère une liste de toutes les pages de la structure du site.</td>
+  <td>Génère une liste de toutes les pages de la structure de site.</td>
 </tr>
 <tr>
   <td>Formulaire de connexion</td>

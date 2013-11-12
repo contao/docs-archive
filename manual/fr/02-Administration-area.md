@@ -10,7 +10,7 @@ compte sera bloqué durant 5 minutes.
 ## Liste d'enregistrements
 
 Contao supporte trois vues: une simple liste ("vue en liste"), une liste qui est 
-regroupée par sa table parente («vue parent») et une liste hiérarchique ("vue 
+regroupée par sa table parente («vue parente») et une liste hiérarchique ("vue 
 arborescente"). Ces trois vues peuvent être utilisées pour lister des 
 enregistrements de n'importe quelle table ou de tables liées entre elles.
 
@@ -24,15 +24,15 @@ lettre.
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-liste.jpg)
 
 
-### Vue parent
+### Vue parente
 
-La "vue parent" répertorie les enregistrements d'une table enfant qui sont liés 
+La "vue parente" répertorie les enregistrements d'une table enfant qui sont liés 
 à un enregistrement particulier d'une table parente. Les relations de type 
 parent-enfant sont beaucoup utilisées dans Contao. Par exemple, pour les 
 articles et les éléments de contenu, les archives d'actualités et les actualités 
 ou les feuilles de style et les définitions de formatage.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-parent.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-parente.jpg)
 
 
 ### Vue arborescente
@@ -41,7 +41,7 @@ La "vue arborescente" liste des enregistrements et d'autres ressources tels
 que des fichiers et des répertoires qui sont organisés dans une structure 
 hiérarchique. Contao prend en charge les relations hiérarchiques au sein d'une 
 table (par exemple, la structure de site) ainsi que des tables enfants qui se 
-rapportent aux tables hiérarchiques parents (par exemple, les articles et les 
+rapportent aux tables hiérarchiques parentes (par exemple, les articles et les 
 pages).
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-arborescente.jpg)
@@ -80,14 +80,14 @@ La "vue en liste", étant la plus simple, ne propose que quatre actions de base 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-liste-icones.jpg)
 
 
-### Icônes de la vue parent
+### Icônes de la vue parente
 
-La "vue parent" propose deux icônes de navigation supplémentaires pour contrôler 
+La "vue parente" propose deux icônes de navigation supplémentaires pour contrôler 
 l'ordre des enregistrements. L'ordre peut être modifié par glisser-déposer. Pour 
 ce faire, cliquez simplement sur l'icône de navigation "Glisser-déposer" et 
 faites-le glisser vers sa nouvelle position.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-parent-icones.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-parente-icones.jpg)
 
 
 ### Icônes de la vue arborescente
@@ -208,7 +208,7 @@ utilisant le raccourci clavier `[Alt]+[s]`.
 <tr>
   <td><code>[Alt]+[g]</code></td>
   <td>Sauvegarder et retour</td>
-  <td>Sauvegarde le formulaire courant et redirige vers la page parent, par 
+  <td>Sauvegarde le formulaire courant et redirige vers la page parente, par 
   exemple, à partir d'un élément de contenu vers la vue arborescente des 
   articles.</td>
 </tr>

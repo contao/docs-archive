@@ -141,7 +141,7 @@ aperçu des éléments de contenu de base de Contao :
 </tr>
 <tr>
   <td>Élément de contenu</td>
-  <td>(classe parent)</td>
+  <td>(classe parente)</td>
   <td>Insère un autre élément de contenu.</td>
 </tr>
 <tr>
@@ -151,7 +151,7 @@ aperçu des éléments de contenu de base de Contao :
 </tr>
 <tr>
   <td>Module</td>
-  <td>(classe parent)</td>
+  <td>(classe parente)</td>
   <td>Insère un module front office.</td>
 </tr>
 <tr>
