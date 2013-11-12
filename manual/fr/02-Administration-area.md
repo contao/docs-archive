@@ -123,7 +123,7 @@ Cliquez sur le bouton "Édition multiple" afin de changer le mode d'édition, pu
 sélectionnez un ou plusieurs enregistrements et choisissez les champs que vous 
 souhaitez modifier.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/sselectionner-multiple-enregistrements.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/selectionner-multiple-enregistrements.jpg)
 
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/selectionner-champs-a-editer.jpg)
 
