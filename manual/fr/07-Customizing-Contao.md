@@ -5,7 +5,7 @@ n'importe quelle application et particulièrement des systèmes de gestion de
 contenu. Contao fournit de nombreuses options pour ajuster la configuration, 
 personnaliser les champs et les libellés, ajouter ses propres morceaux de code 
 ou même créer de nouvelles extensions. Vous pouvez contrôler presque n'importe 
-quel comportement du coeur de Contao sans même toucher ses fichiers, ainsi vous 
+quel comportement du cœur de Contao sans même toucher ses fichiers, ainsi vous 
 n'avez pas à réappliquer vos changements à chaque mise à jour. 
 
 
@@ -48,7 +48,7 @@ configuration**, car ce fichier peut être écrasé lors des mises à jour !
 ### Personnaliser la configuration du conteneur de données
 
 Contao utilise le [tableau conteneur de données (DCA)][1] pour stocker les 
-méta-informations relatives aux tables. La configuration du conteneur de données 
+métadonnées relatives aux tables. La configuration du conteneur de données 
 est enregistrée dans les dossiers `dca` des divers modules de Contao. Faites vos 
 modifications dans le fichier `system/config/dcaconfig.php` afin qu'elles ne 
 soient pas écrasées à la prochaine mise à jour. 
@@ -79,7 +79,7 @@ personnalisée, afin de ne pas en perdre la trace.
 ### Personnaliser les libellés et les traductions
 
 Les libellés et les traductions sont enregistrés dans les dossiers `languages` 
-des différents modules de ]Contao. Chaque langue est identifiée par son [code 
+des différents modules de Contao. Chaque langue est identifiée par son [code 
 ISO-639-1][2]. Appliquez vos modifications dans le fichier `system/config/
 langconfig.php` afin qu'elles ne soient pas écrasées à la prochaine mise à jour. 
 
@@ -108,7 +108,7 @@ a beaucoup.
 Imaginons que vous souhaitiez ajouter un numéro de client à la table des 
 membres. L'ajout d'un champ personnalisé à une table de Contao nécessite de 
 modifier plus d'un fichier, il est donc préférable d'ajouter un module 
-personnalisé dans le dossier `system/modules`. Gardez en mémoire que les 
+personnalisé dans le répertoire `system/modules`. Gardez en mémoire que les 
 modules sont chargés en suivant l'ordre alphabétique, n'appelez donc pas votre 
 extension `custom` si vous souhaitez redéfinir les configurations de 
 l'extension `news`.
@@ -136,8 +136,8 @@ votre base de données.
 
 ### Étendre le DCA (tableau conteneur de données)
 
-Créez le fichier `dca/tl_member.php` dans le dossier de votre module et 
-ajoutez-y les méta-données pour le nouveau champ, afin que Contao sache comment 
+Créez le fichier `dca/tl_member.php` dans le répertoire de votre module et 
+ajoutez-y les métadonnées pour le nouveau champ, afin que Contao sache comment 
 le gérer. 
 
 ``` {.php}
@@ -165,8 +165,8 @@ chapitre sur les [tableaux conteneurs de données][1].
 
 ### Ajouter une traduction
 
-Créez le fichier `languages/en/tl_member.php` dans le dossier de votre module, 
-et ajoutez-y les libellés anglais pour votre nouveau champ :
+Créez le fichier `languages/en/tl_member.php` dans le répertoire de votre 
+module, et ajoutez-y les libellés anglais pour votre nouveau champ :
 
 ``` {.php}
 $GLOBALS['TL_LANG']['tl_member']['customer_number'] = array
@@ -189,7 +189,7 @@ modifications afin qu'elles ne soient pas écrasées par la prochaine mise à
 jour de Contao. Notez que, par défaut, Contao n'inclut pas tous les plugins 
 de TinyMCE; si vous souhaitez utiliser un plugin particulier qui ne fait pas 
 partie de la distribution de Contao, il vous faut donc le télécharger à partir 
-du [site du projet TinyMCE][4], et le mettre dans le dossier 
+du [site du projet TinyMCE][4], et le mettre dans le répertoire 
 `assets/tinymce/plugins`. 
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/rich-text-editor.jpg)
@@ -217,7 +217,7 @@ qu'il soit toujours visible, même en l'absence de sous-pages, alors que le
 module ne serait normalement pas affiché. Dans ce cas, une note doit informer 
 l'utilisateur qu'il n'y a pas de sous-pages. Bien entendu, nous allons faire en 
 sorte de conserver au maximum la classe originale de navigation, afin que les 
-futures mises à jour ne nécessitent pas de maintenances. Les classes de modules 
+futures mises à jour ne nécessitent pas de maintenance. Les classes de modules 
 et d'éléments de contenu peuvent être assignées dynamiquement dans la 
 configuration du système de Contao, ce qui vous permet de les remplacer 
 facilement par vos propres versions. 
@@ -277,14 +277,14 @@ Les hooks fonctionnent de la même manière que les [fonctions callback][6] du
 tableau conteneur de données (DCA). Vous pouvez enregistrer une ou plusieurs 
 fonctions pour un événement donné, et lorsque l'événement est déclenché, les 
 fonctions callback sont exécutées. Les hooks vous permettent d'ajouter des 
-fonctionnalités personnalisées au coeur de Contao.
+fonctionnalités personnalisées au cœur de Contao.
 
 
 ### activateAccount
 
-Le hook "activateAccount" est déclenché lorsqu'un nouveau compte en front office 
-est activé. Il passe l'objet User en argument et n'attend pas de valeur 
-de retour. Il est disponible à partir de la version 2.4.3.
+Le hook "activateAccount" est déclenché lorsqu'un nouveau compte en front 
+office est activé. Il passe l'objet User en argument et n'attend pas de 
+valeur de retour. Il est disponible à partir de la version 2.4.3.
 
 ``` {.php}
 // config.php
@@ -650,7 +650,7 @@ public function myGetContentElement(Database_Result $objElement, $strBuffer)
 Le hook "getImage" est déclenché quand une vignette est générée et vous permet 
 d'ajouter une routine personnalisée. Il passe le chemin d'accès, la largeur et 
 la hauteur, la mode, le nom du cache et l'objet File en arguments et attend 
-à un chemin d'accès comme valeur de retour. Il est disponible à partir de la 
+un chemin d'accès comme valeur de retour. Il est disponible à partir de la 
 version 2.8.RC1.
 
 ``` {.php}
@@ -826,7 +826,7 @@ public function myLoadDataContainer($strName)
 
 ### loadLanguageFile
 
-Le hook "loadLanguageFile" est déclenché au chargement d'un fichier de langue. 
+Le hook "loadLanguageFile" est déclenché au chargement d'un fichier de langues. 
 Il passe le nom du fichier et la langue en arguments et n'attend pas de valeur 
 de retour. Il est disponible à partir de la version 2.8.RC1.
 
@@ -845,8 +845,8 @@ public function myLoadLanguageFile($strName, $strLanguage)
 ### outputBackendTemplate
 
 Le hook "outputBackendTemplate" est déclenché lors de l'affichage à l'écran 
-d'un template de back office. Il passe le contenu et le nom du template en 
-arguments et attend le contenu du template comme valeur de retour. Il est 
+d'un modèle du back office. Il passe le contenu et le nom du modèle en 
+arguments et attend le contenu du modèle comme valeur de retour. Il est 
 disponible à partir de la version 2.6.0.
 
 ``` {.php}
@@ -869,8 +869,8 @@ public function myOutputBackendTemplate($strContent, $strTemplate)
 ### outputFrontendTemplate
 
 Le hook "outputFrontendTemplate" est déclenché lors de l'affichage à l'écran 
-d'un template de front office. Il passe le contenu et le nom du template en 
-arguments et attend le contenu du template comme valeur de retour. Il est 
+d'un modèle du front office. Il passe le contenu et le nom du modèle en 
+arguments et attend le contenu du modèle comme valeur de retour. Il est 
 disponible à partir de la version 2.6.0.
 
 ``` {.php}
@@ -892,9 +892,9 @@ public function myOutputFrontendTemplate($strContent, $strTemplate)
 
 ### parseBackendTemplate
 
-Le hook "parseBackendTemplate" est déclenché lorsqu'un template de back office 
-est analysé ("parsé"). Il passe le contenu et le nom du template en arguments 
-et attend le contenu du template comme valeur de retour. Il est disponible à 
+Le hook "parseBackendTemplate" est déclenché lorsqu'un modèle de back office 
+est analysé ("parsé"). Il passe le contenu et le nom du modèle en arguments 
+et attend le contenu du modèle comme valeur de retour. Il est disponible à 
 partir de la version 2.6.0.
 
 ``` {.php}
@@ -917,8 +917,8 @@ public function myParseBackendTemplate($strContent, $strTemplate)
 ### parseFrontendTemplate
 
 Le hook "parseFrontendTemplate" est déclenché lors de l'analyse ("parsing") 
-d'un template de front office. Il passe le contenu et le nom du template en 
-arguments et attend le contenu du template comme valeur de retour. Il est 
+d'un modèle de front office. Il passe le contenu et le nom du modèle en 
+arguments et attend le contenu du modèle comme valeur de retour. Il est 
 disponible à partir de la version 2.6.0.
 
 ``` {.php}
@@ -1054,7 +1054,7 @@ public function myProcessFormData($arrPost, $arrForm, $arrFiles)
 ### removeOldFeeds
 
 Le hook "removeOldFeeds" est déclenché lors de la suppression des vieux fichiers 
-XML du répertoire de Contao. Il ne passe pas d'argument et attend un tableau de 
+XML du répertoire de Contao. Il ne passe pas d'arguments et attend un tableau de 
 noms de fichiers à conserver comme valeur de retour. Il est disponible à partir 
 de la version 2.5.8.
 
@@ -1092,7 +1092,7 @@ public function myRemoveRecipient($strEmail, $arrChannels)
 ### replaceInsertTags
 
 Le hook "replaceInsertTags" est déclenché lorsqu'une balise d'insertion 
-inconnue est trouvé. Il passe la balise d'insertion en argument et attend la 
+inconnue est trouvée. Il passe la balise d'insertion en argument et attend la 
 valeur de remplacement ou "false" comme valeur de retour. Il est disponible 
 à partir de la version 2.6.0.
 
