@@ -1,18 +1,18 @@
-# Référentiel d'extension
+# Référentiel d'extensions
 
-Pour publier votre propre extension dans le référentiel d'extension, vous avez 
+Pour publier votre propre extension dans le référentiel d'extensions, vous avez 
 besoin d'un [compte de contributeur][1]. Une fois que vous êtes connecté, vous 
-pouvez accéder à l'interface du développeur du [référentiel d'extension][2] 
-par l'intermédiaire des liens  "Manage extensions" et "Manage translations".
+pouvez accéder à l'interface du développeur du [référentiel d'extensions][2] 
+par l'intermédiaire des liens "Manage extensions" et "Manage translations".
 
 
 ## Ajout d'une extension
 
 Pour ajouter une nouvelle extension, suivez le lien "Manage extensions" et 
-cliquez sur le bouton "Add extension". Vous serez redirigé vers un formulaire
- où vous pouvez entrer les détails de l'extension. La boîte jaune ci-dessus 
- contient des informations importantes sur les conventions de nommage, que 
- vous devriez lire attentivement.
+cliquez sur le bouton "Add extension". Vous serez redirigé vers un formulaire 
+où vous pouvez entrer les détails de l'extension. La boîte jaune au-dessus 
+contient des informations importantes sur les conventions de nommage, que 
+vous devriez lire attentivement.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/add-extension.jpg)
 
@@ -118,14 +118,14 @@ GitHub.
 
 Entrez l'URL HTTPS du référentiel GitHub dans les paramètres.
 
-Vous pouvez également spécifier le nom du dossier racine de votre référentiel. 
-Dans ce cas, les fichiers et dossiers en dehors de ce dossier racine seront 
-ignorés lors de l'importation.
+Vous pouvez également spécifier le nom du répertoire racine de votre référentiel. 
+Dans ce cas, les fichiers et les répertoires en dehors de ce répertoire racine 
+seront ignorés lors de l'importation.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/github-import.jpg)
 
 Si vous sélectionnez un tag, ses fichiers seront téléchargés automatiquement 
-et sont alors disponibles comme lors d'un téléversement manuel.
+et seront alors disponibles comme lors d'un téléversement manuel.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/github-import-tag.jpg)
 
@@ -150,15 +150,16 @@ navigation correspondante.
 ## Ajouter des dépendances
 
 Peut-être que l'une de vos extensions utilise les fonctionalités d'une autre 
-extension, par exemple les tâches planifiées (cron jobs). Pour faire fonctionner 
-votre extension, l'installation de l'extension cron constitue donc un pré-requis, 
-généralement appelé dépendance. Ces dépendances peuvent être enregistrées dans 
-le référentiel des extensions, de telle sorte que les modules nécessaires soient 
-automatiquement installés lorsque vous installez une extension particulière.
+extension comme par exemple les tâches planifiées (cron jobs). Pour faire 
+fonctionner votre extension, l'installation de l'extension cron constitue donc 
+un pré-requis, généralement appelé dépendance. Ces dépendances peuvent être 
+enregistrées dans le référentiel d'extensions, de telle sorte que les modules 
+nécessaires soient automatiquement installés lorsque vous installez une 
+extension particulière.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/add-dependency.jpg)
 
-Choisissez d'abord l'extension que vous souhaitez ajouter en tant que dépendance, 
+Choisissez d'abord l'extension que vous souhaitez ajouter en tant que dépendance 
 et confirmez votre choix en cliquant sur le bouton "Continue". Puis sélectionnez 
 la version minimale et maximale dont le fonctionnement avec votre extension est 
 reconnu.
