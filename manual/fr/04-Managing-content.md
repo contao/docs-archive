@@ -23,7 +23,7 @@ avec un lien "En savoir plus...".
 ### Éléments de contenu
 
 Les éléments de contenu sont un moyen simple et intuitif pour créer du contenu. 
-Au lieu d'utiliser un éditeur de texte enrichi, Contao fournit un élément 
+Au lieu d'utiliser un éditeur de texte riche, Contao fournit un élément 
 distinct pour chaque type de contenu comme les textes, les listes, les 
 tableaux, les liens hypertextes, les images ou les téléchargements. Voici un 
 aperçu des éléments de contenu de base de Contao :
