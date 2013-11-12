@@ -20,7 +20,7 @@ d'autres tables. Les deuxième et troisième sections déterminent la manière d
 les enregistrements sont listés, et quelles opérations un utilisateur est en 
 droit d'exécuter. La quatrième section définit différents groupes de champs de 
 formulaires, appelés "palettes", et les deux dernières sections décrivent les 
-champs en détails.
+champs en détail.
 
 
 ### Configuration de la table
