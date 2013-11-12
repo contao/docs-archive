@@ -1,11 +1,11 @@
 # Tableaux conteneurs de données
 
 Les tableaux conteneurs de données ("Data Container Arrays" en Anglais, ou DCA) 
-sont utilisés pour stocker les meta-informations des tables. Chaque DCA décrit 
+sont utilisés pour stocker les métadonnées des tables. Chaque DCA décrit 
 une table particulière du point de vue de sa configuration, de ses relations 
 avec les autres tables et de ses champs. Le noyau de Contao détermine grâce à 
-ces meta-informations comment lister les enregistrements, comment générer les 
-formulaires dans le back office et comment enregistrer les données. Les fichiers 
+ces métadonnées comment lister les enregistrements, comment générer les 
+formulaires dans le back office et comment sauvegarder les données. Les fichiers 
 DCA de tous les modules actifs sont chargés les uns après les autres (en 
 commençant par "backend", puis "frontend" et ensuite dans l'ordre alphabétique) 
 afin que chaque module puisse surcharger la configuration existante. Le fichier 
@@ -26,10 +26,10 @@ champs en détails.
 ### Configuration de la table
 
 La configuration de la table décrit la table elle-même, par exemple quel type 
-de conteneur de données est utilisé pour stocker les données ou ses relations 
-avec les autres tables. Vous pouvez également activer le suivi des versions ou 
-définir ce qui arrive aux enregistrements enfants lorsque les données sont 
-éditées ou supprimées. 
+de conteneurs de données est utilisé pour stocker les données ou comment elle 
+est en relation avec d'autres tables. Vous pouvez également activer le suivi 
+des versions ou définir ce qui arrive aux enregistrements enfants lorsque les 
+données sont éditées ou supprimées. 
 
 <table>
 <tr>
@@ -41,12 +41,12 @@ définir ce qui arrive aux enregistrements enfants lorsque les données sont
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Le libellé utilisé dans l'arborescence des pages ou des fichiers, et 
-  inclut typiquement une référence au tableau de langue.</td>
+  inclut typiquement une référence au tableau de langues.</td>
 </tr>
 <tr>
   <td>ptable</td>
-  <td>Table parent (<code>string</code>)</td>
-  <td>Le nom de la table parent (table.pid = ptable.id).</td>
+  <td>Table parente (<code>string</code>)</td>
+  <td>Le nom de la table parente (table.pid = ptable.id).</td>
 </tr>
 <tr>
   <td>ctable</td>
@@ -91,7 +91,7 @@ définir ce qui arrive aux enregistrements enfants lorsque les données sont
 <tr>
   <td>switchToEdit</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Active le bouton « Sauvegarder et éditer » lorsqu'un nouvel 
+  <td>Active le bouton "Sauvegarder et éditer" lorsqu'un nouvel 
   enregistrement est ajouté (mode de tri 4 uniquement).</td>
 </tr>
 <tr>
@@ -159,11 +159,10 @@ définir ce qui arrive aux enregistrements enfants lorsque les données sont
 
 ### Liste des enregistrements
 
-Le tableau « listing » définit comment les enregistrements sont listés. Le 
-moteur de Contao fournit trois [vues][1] différentes : la vue en liste, la vue 
-parent et la vue arborescente. Vous pouvez configurer différentes options de 
-tri, telles que des filtres ou un ordre de tri par défaut, et ajouter des 
-libellés personnalisés. 
+Le tableau "list" définit comment les enregistrements sont listés. Contao fournit 
+trois [vues][1] différentes : la vue en liste, la vue parente et la vue 
+arborescente. Vous pouvez configurer différentes options de tri, tels que des 
+filtres ou un ordre de tri par défaut et ajouter des libellés personnalisés.
 
 
 #### Tri
@@ -179,12 +178,12 @@ libellés personnalisés.
   <td>Mode de tri (<code>integer</code>)</td>
   <td><b>0</b> Les enregistrements ne sont pas triés<br>
       <b>1</b> Les enregistrements sont triés selon un champ déterminé<br>
-      <b>2</b> Les enregistrements sont triés selon un champs sélectionnable<br>
+      <b>2</b> Les enregistrements sont triés selon un champ sélectionnable<br>
       <b>3</b> Les enregistrements sont triés par la table parente<br>
       <b>4</b> Affiche les enregistrements enfants d'une table parente (voir le 
       module feuilles de style)<br>
       <b>5</b> Les enregistrements sont présentés en arborescence (voir la 
-      structure du site)<br>
+      structure de site)<br>
       <b>6</b> Affiche les enregistrements enfants dans une structure en 
       arborescence (voir le module articles)</td>
 </tr>
@@ -209,11 +208,11 @@ libellés personnalisés.
   <td>Présentation du panneau (<code>string</code>)</td>
   <td><b>search</b> affiche le menu de recherche des enregistrements<br>
       <b>sort</b> affiche le menu de tri des enregistrements<br>
-      <b>filter</b> affiche le menu de filtre des enregistrements<br>
+      <b>filter</b> affiche le menu de filtrage des enregistrements<br>
       <b>limit</b> affiche le menu de limitation du nombre des enregistrements
       <br>
       <br>Les options doivent être séparées par des virgules (= espace) et des 
-      points virgules (= nouvelle ligne) comme 
+      points-virgules (= nouvelle ligne) comme 
       <code>sort,filter;search,limit</code>.</td>
 </tr>
 <tr>
@@ -235,9 +234,9 @@ libellés personnalisés.
 </tr>
 <tr>
   <td>root</td>
-  <td>Noeuds racines (<code>array</code>)</td>
-  <td>ID des enregistrements racines (pagemounts). En général, cette valeur se 
-  gère toute seule.</td>
+  <td>Nœuds racines (<code>array</code>)</td>
+  <td>ID des enregistrements racines (pages autorisées). En général, cette 
+  valeur se gère toute seule.</td>
 </tr>
 <tr>
   <td>filter</td>
@@ -249,7 +248,7 @@ libellés personnalisés.
   <td>disableGrouping</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Vous permet de désactiver les en-têtes de groupe dans les vues en liste 
-  et dans les vues parent. </td>
+  et dans les vues parentes. </td>
 </tr>
 <tr>
   <td>paste_button_callback</td>
@@ -261,14 +260,14 @@ libellés personnalisés.
 <tr>
   <td>child_record_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Cette fonction sera appelée pour restituer les éléments enfants ( mode 
-  de tri 4 uniquement ). A spécifier en tant que 
+  <td>Cette fonction sera appelée pour restituer les éléments enfants (mode 
+  de tri 4 uniquement). A spécifier en tant que 
   <code>array('Class', 'Method')</code>.</td>
 </tr>
 <tr>
   <td>child_record_class</td>
   <td>Class CSS (<code>string</code>)</td>
-  <td>Vous permet d'ajouter une classe CSS aux éléments de la vue parent.</td>
+  <td>Vous permet d'ajouter une classe CSS aux éléments de la vue parente.</td>
 </tr>
 </table>
 
@@ -301,7 +300,7 @@ libellés personnalisés.
   <td>group_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
   <td>Appelle une fonction personnalisée plutôt que la fonction par défaut pour 
-  l'entête de groupe.</td>
+  l'en-tête de groupe.</td>
 </tr>
 <tr>
   <td>label_callback</td>
@@ -332,14 +331,14 @@ enregistrement).
 <tr>
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Label du bouton. Typiquement une référence au tableau global de langue.
+  <td>Label du bouton. Typiquement une référence au tableau global de langues.
   </td>
 </tr>
 <tr>
   <td>href</td>
   <td>Fragment d'URL (<code>string</code>)</td>
-  <td>Un fragment d'URL ajouté au string d'URI lors du clic sur un bouton (par 
-  exemple, <code>act=editAll</code>).</td>
+  <td>Un fragment d'URL ajouté à la chaîne de l'URI lors du clic sur un bouton 
+  (par exemple, <code>act=editAll</code>).</td>
 </tr>
 <tr>
   <td>class</td>
@@ -349,7 +348,7 @@ enregistrement).
 <tr>
   <td>attributes</td>
   <td>Attributs supplémentaires (<code>string</code>)</td>
-  <td>Attributs supplémentaires, comme un gestionnaire d'événement ou des 
+  <td>Attributs supplémentaires comme un gestionnaire d'événements ou de 
   définitions de style.</td>
 </tr>
 <tr>
@@ -374,13 +373,13 @@ enregistrement).
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Intitulé du bouton. Typiquement une référence au tableau global de 
-  langue.</td>
+  langues.</td>
 </tr>
 <tr>
   <td>href</td>
   <td>Fragment d'URL (<code>string</code>)</td>
-  <td>Fragment d'URL ajouté au string d'URI lors du clic sur le bouton (par 
-  exemple, <code>act=edit</code>).</td>
+  <td>Fragment d'URL ajouté à la chaîne de l'URI lors du clic sur le bouton 
+  (par exemple, <code>act=edit</code>).</td>
 </tr>
 <tr>
   <td>icon</td>
@@ -390,7 +389,7 @@ enregistrement).
 <tr>
   <td>attributes</td>
   <td>Attributs supplémentaires (<code>string</code>)</td>
-  <td>Attributs supplémentaires comme un gestionnaire d'événement ou des 
+  <td>Attributs supplémentaires comme un gestionnaire d'événements ou de 
   définitions de style.</td>
 </tr>
 <tr>
@@ -406,8 +405,8 @@ enregistrement).
 ### Champs
 
 Le tableau des champs définit les colonnes d'une table. En fonction de ces 
-paramétrages, le moteur de Contao détermine quel type de champs de formulaire à 
-charger, si un utilisateur est autorisé ou non à accéder à certain champ, et si 
+paramétrages, Contao détermine quel type de champs de formulaire à charger, 
+si un utilisateur est autorisé ou non à accéder à certain champ et si 
 un champ peut être utilisé comme critère de tri ou de filtre. 
 
 <table>
@@ -420,7 +419,7 @@ un champ peut être utilisé comme critère de tri ou de filtre.
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Intitulé du champ. Typiquement, une référence au tableau global de 
-  langue.</td>
+  langues.</td>
 </tr>
 <tr>
   <td>default</td>
@@ -472,7 +471,7 @@ un champ peut être utilisé comme critère de tri ou de filtre.
   <td>length</td>
   <td>Longueur du critère de tri (<code>integer</code>)</td>
   <td>Permet de spécifier le nombre de caractères utilisés pour les groupes 
-  de tris (flags 3 et 4).</td>
+  de tri (flags 3 et 4).</td>
 </tr>
 <tr>
   <td>inputType</td>
@@ -484,8 +483,8 @@ un champ peut être utilisé comme critère de tri ou de filtre.
       <b>checkbox</b> Case à cocher<br>
       <b>radio</b> Bouton radio<br>
       <b>radioTable</b> Tableau avec images et boutons radio<br>
-      <b>inputUnit</b> Champ texte avec petit menu déroulant d'éléments<br>
-      <b>trbl</b> Quatre champs textes avec petit menu menu déroulant 
+      <b>inputUnit</b> Champ texte avec un petit menu déroulant d'éléments<br>
+      <b>trbl</b> Quatre champs textes avec un petit menu déroulant 
       d'éléments<br>
       <b>chmod</b> Tableau CHMOD<br>
       <b>pageTree</b> Arborescence des pages<br>
@@ -517,13 +516,13 @@ un champ peut être utilisé comme critère de tri ou de filtre.
   <td>reference</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Tableau contenant les intitulés des options. Typiquement, une référence au 
-  tableau global de langue.</td>
+  tableau global de langues.</td>
 </tr>
 <tr>
   <td>explanation</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Tableau contenant les descriptions. Typiquement, une référence au tableau 
-  global de langue.</td>
+  global de langues.</td>
 </tr>
 <tr>
   <td>input_field_callback</td>
@@ -540,8 +539,8 @@ un champ peut être utilisé comme critère de tri ou de filtre.
 <tr>
   <td>wizard</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction et ajoute sa valeur de retour dans le champ de 
-  saisie. 
+  <td>Appelle une fonction personnalisée et ajoute sa valeur de retour dans 
+  le champ de saisie.
   A spécifier en tant que <code>array('Class', 'Method')</code>.</td>
 </tr>
 <tr>
@@ -553,7 +552,7 @@ un champ peut être utilisé comme critère de tri ou de filtre.
 <tr>
   <td>relation</td>
   <td>Configuration des relations (<code>array</code>)</td>
-  <td>Décrit la relation à la table parent (voir le paragraphe "relations").
+  <td>Décrit la relation à la table parente (voir le paragraphe "relations").
   </td>
 </tr>
 <tr>
@@ -671,7 +670,7 @@ données. Chaque champ peut être validé par une expression régulière.
         </tr>
         <tr>
           <td><b>language</b></td>
-          <td>exige un code de langue valide</td>
+          <td>exige un code de langues valide</td>
         </tr>
         <tr>
           <td><b>locale</b></td>
@@ -799,14 +798,14 @@ données. Chaque champ peut être validé par une expression régulière.
   <td>files</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Si true, les fichiers et les dossiers seront affichés. Si false, seuls 
-  les dossiers seront affichés. Ne s'applique qu'aux arborescences de fichiers.
-  </td>
+  les répertoires seront affichés. Ne s'applique qu'aux arborescences de 
+  fichiers.</td>
 </tr>
 <tr>
   <td>filesOnly</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Supprime les boutons radio ou les cases à cocher à côté des noms de 
-  dossiers. Ne s'applique qu'aux arborescences de fichiers.</td>
+  <td>Supprime les boutons radio ou les cases à cocher à côté des noms des 
+  répertoires. Ne s'applique qu'aux arborescences de fichiers.</td>
 </tr>
 <tr>
   <td>extensions</td>
@@ -818,7 +817,7 @@ données. Chaque champ peut être validé par une expression régulière.
 <tr>
   <td>path</td>
   <td>Chemin (<code>string</code>)</td>
-  <td>Dossier racine personnalisé pour l'arborescence de fichiers. Ne 
+  <td>Répertoire racine personnalisé pour l'arborescence de fichiers. Ne 
   s'applique qu'aux arborescences de fichiers.</td>
 </tr>
 <tr>
@@ -937,25 +936,26 @@ données référencées de manière efficace et conviviale pour le développeur.
 </tr>
 <tr>
   <td>type</td>
-  <td>Type of relation<br> (<code>string</code>)
+  <td>Type de relation<br> (<code>string</code>)
   <td>
-    <b>hasOne</b> Value references a child data set<br>
-    <b>hasMany</b> Value references some child data sets
-       (serialized)<br>
-    <b>belongsTo</b> Value references a parent data set
+    <b>hasOne</b> La valeur référence un ensemble de données enfants<br>
+    <b>hasMany</b> La valeur référence certains ensembles de données enfants
+       (sérialisé)<br>
+    <b>belongsTo</b> La valeur référence un ensemble de données parentes
        (z.B. <code>pid</code>)<br>
-    <b>belongsToMany</b> Value references some parent data sets
-       (serialized)<br>
+    <b>belongsToMany</b> La valeur référence certains ensembles de données 
+    parentes (sérialisé)<br>
   </td>
 </tr>
 <tr>
   <td>load</td>
-  <td>Load behaviour<br> (<code>string</code>)</td>
+  <td>Comportement au chargement<br> (<code>string</code>)</td>
   <td>
-      <b>lazy</b> Loading referenced records only when necessary
-         (default, saves RAM)<br>
-      <b>eager</b> Loading referenced records automatically (saves database 
-      calls)
+      <b>lazy</b> Charge les enregistrements référencés uniquement lorsque 
+      cela est nécessaire.
+         (par défaut, économise de la RAM)<br>
+      <b>eager</b> Charge automatiquement les enregistrements référencés 
+      (économise les appels à la base de données)
   </td>
 </tr>
 </table>
@@ -963,7 +963,7 @@ données référencées de manière efficace et conviviale pour le développeur.
 
 ## Palettes
 
-Une palette est un groupe de champs de formulaires qui sont nécessaires pour 
+Une palette est un groupe de champs de formulaire qui sont nécessaires pour 
 modifier un enregistrement. Une palette ne contient typiquement pas toutes les 
 colonnes d'une table, mais seulement celles qui appartiennent à un certain 
 module ou un certain élément de contenu. Les palettes peuvent changer 
@@ -974,7 +974,7 @@ chargés interactivement avec Ajax.
 
 ### Définir des groupes
 
-Une palette est une chaine de caractères composée de noms de champs concaténés 
+Une palette est une chaîne de caractères composée de noms de champs concaténés 
 et séparés soit par des points-virgules (;), soit par des virgules (,). Alors 
 que la virgule est utilisée simplement pour séparer des noms de champs, le 
 point-virgule indique le commencement d'un nouveau fieldset, qui peut être 
@@ -989,7 +989,7 @@ L'exemple ci-dessus se définit par le code suivant :
 ```
 
 Les éléments de substitution `title_legend` et `date_legend` seront remplacés 
-par leur label correspondant dans le tableau "TL_LANG". 
+par leur libellé correspondant dans le tableau "TL_LANG". 
 
 ``` {.php}
 $GLOBALS['TL_LANG']['tl_news']['title_legend'] = 'Title and author';
@@ -1000,7 +1000,7 @@ $GLOBALS['TL_LANG']['tl_news']['date_legend']  = 'Date and time';
 ### Disposer les champs
 
 Le back office de Contao utilise un système simple de grille en deux colonnes 
-pour disposer les champs d'entrées dans leur groupes. Vous pouvez utiliser 
+pour disposer les champs d'entrées dans leurs groupes. Vous pouvez utiliser 
 les classes CSS suivantes dans la section évaluation du tableau conteneur de 
 données en tant que `tl_class` (exemple `'tl_class'=>'w50 wizard'`). 
 
@@ -1011,7 +1011,7 @@ données en tant que `tl_class` (exemple `'tl_class'=>'w50 wizard'`).
 </tr>
 <tr>
   <td>w50</td>
-  <td>Définit la largeur du champs à 50% en le rend flottant 
+  <td>Définit la largeur du champs à 50% et le rend flottant 
   (<code>float:left</code>).</td>
 </tr>
 <tr>
@@ -1038,11 +1038,11 @@ données en tant que `tl_class` (exemple `'tl_class'=>'w50 wizard'`).
 
 ## Callbacks
 
-Les fonctions callback sont fondés sur un pattern de répartition d'événements. 
-Vous pouvez inscrire un ou plusieurs callbacks pour un certain événement et 
+Les fonctions callback sont fondées sur un pattern de répartition d'événements. 
+Vous pouvez inscrire une ou plusieurs callbacks pour un certain événement et 
 lorsque l'événement est déclenché, les fonctions callback sont exécutées. Les 
-callbacks vous permettent de personnaliser le cours de l'exécution du coeur 
-de Contao. 
+callbacks vous permettent de personnaliser le cours de l'exécution du cœur 
+de Contao.
 
 
 #### Callbacks globaux
@@ -1054,30 +1054,30 @@ de Contao.
 </tr>
 <tr>
   <td>onload_callback</td>
-  <td>Est exécuté quand l'objet DataContainer est initialisé. Vous permet, par
-   exemple, de vérifier les permissions ou de modifier le tableau conteneur de 
-   données dynamiquement à l'exécution.</td>
+  <td>Est exécutée quand l'objet DataContainer est initialisé. Cela vous permet, 
+  par exemple, de vérifier les permissions ou de modifier le tableau conteneur 
+  de données dynamiquement à l'exécution.</td>
 </tr>
 <tr>
   <td>onsubmit_callback</td>
-  <td>Est exécuté lorsqu'un formulaire du back office est soumis. Vous permet 
-  par exemple de modifier les données du formulaire avant qu'elles ne soient 
-  écrites dans la base de données (utilisé pour calculer les intervalles dans 
-  l'extension calendar).</td>
+  <td>Est exécutée lorsqu'un formulaire du back office est soumis. Cela vous 
+  permet, par exemple, de modifier les données du formulaire avant qu'elles ne 
+  soient écrites dans la base de données (utilisée pour calculer les intervalles 
+  dans l'extension calendrier).</td>
 </tr>
 <tr>
   <td>ondelete_callback</td>
-  <td>Est exécuté avant qu'un enregistrement soit supprimé de la base de 
+  <td>Est exécutée avant qu'un enregistrement soit supprimé de la base de 
   données.</td>
 </tr>
 <tr>
   <td>oncut_callback</td>
-  <td>Est exécuté après qu'un enregistrement ait été déplacé vers une nouvelle 
+  <td>Est exécutée après qu'un enregistrement ait été déplacé vers une nouvelle 
   position.</td>
 </tr>
 <tr>
   <td>oncopy_callback</td>
-  <td>Est exécuté après qu'un enregistrement ait été dupliqué.</td>
+  <td>Est exécutée après qu'un enregistrement ait été dupliqué.</td>
 </tr>
 </table>
 
@@ -1092,24 +1092,25 @@ de Contao.
 <tr>
   <td>paste_button_callback</td>
   <td>Permet d'avoir des boutons de collage individuels et est, par exemple, 
-  utilisé dans la structure du site pour désactiver les boutons en fonction des 
-  permissions de l'utilisateur (nécessite un contrôle de commande additionnel 
-  via load_callback).</td>
+  utilisée dans la structure de site pour désactiver les boutons en fonction 
+  des permissions de l'utilisateur (nécessite un contrôle de commande 
+  additionnel via load_callback).</td>
 </tr>
 <tr>
   <td>child_record_callback</td>
-  <td>Définit comment les éléments enfants sont rendus dans la "vue parent".
+  <td>Définit comment les éléments enfants sont rendus dans la "vue parente".
   </td>
 </tr>
 <tr>
   <td>group_callback</td>
-  <td>Permet d'avoir des en-têtes de groupes individuelles dans le listing.
+  <td>Permet d'avoir des en-têtes de groupes individuels dans le listing.
   </td>
 </tr>
 <tr>
   <td>label_callback</td>
-  <td>Permet d'avoir des labels individuels dans le listing et est, par exemple, 
-  utilisé dans le module utilisateurs pour ajouter des icônes de statut.</td>
+  <td>Permet d'avoir des libellés individuels dans le listing et est, par 
+  exemple, utilisée dans le module utilisateurs pour ajouter des icônes de 
+  statut.</td>
 </tr>
 </table>
 
@@ -1124,9 +1125,9 @@ de Contao.
 <tr>
   <td>button_callback</td>
   <td>Permet d'avoir des icônes de navigation individuels et est, par exemple, 
-  utilisé dans la structure du site pour désactiver des boutons en fonction des 
-  permissions de l'utilisateur (nécessite un contrôle de commande additionnel 
-  via load_callback).</td>
+  utilisée dans la structure de site pour désactiver des boutons en fonction 
+  des permissions de l'utilisateur (nécessite un contrôle de commande 
+  additionnel via load_callback).</td>
 </tr>
 </table>
 
@@ -1142,24 +1143,24 @@ de Contao.
   <td>options_callback</td>
   <td>Vous permet de définir une fonction individuelle pour charger des données 
   dans un menu déroulant ou une liste de cases à cocher. Utile, par exemple, 
-  pour des relations clés étrangères conditionnelles.</td>
+  pour des relations avec clés étrangères conditionnelles.</td>
 </tr>
 <tr>
   <td>input_field_callback</td>
-  <td>Permet la création de champs de formulaires individuels et est, par 
-  exemple, utilisé dans le module back office "personal data" pour générer le 
-  widget "nettoyer les données". Attention : le champs n'est pas sauvegardé 
-  automatiquement !</td>
+  <td>Permet la création de champs de formulaire individuels et est, par 
+  exemple, utilisée dans le module back office "données personnelles" pour 
+  générer le widget "nettoyer les données". Attention : le champs n'est pas 
+  sauvegardé automatiquement !</td>
 </tr>
 <tr>
   <td>load_callback</td>
-  <td>Est exécuté lorsque un champs de formulaire est initialisé et peut, par 
-  exemple, être utilisé pour charger une valeur par défaut.</td>
+  <td>Est exécutée lorsque un champs de formulaire est initialisé et peut, par 
+  exemple, être utilisée pour charger une valeur par défaut.</td>
 </tr>
 <tr>
   <td>save_callback</td>
-  <td>Est exécuté quand un champs est soumis et peut, par exemple, être utilisé 
-  pour ajouter une routine de validation individuelle.</td>
+  <td>Est exécutée quand un champs est soumis et peut, par exemple, être 
+  utilisée pour ajouter une routine de validation individuelle.</td>
 </tr>
 </table>
 
