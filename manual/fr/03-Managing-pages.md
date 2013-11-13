@@ -87,7 +87,7 @@ différents éléments de Contao, vous devez connaître leurs noms de classe. Le
 et les [classes des modules][3] avec "mod\_" (par exemple "mod_search"). Si vous 
 n'êtes pas sûr, il suffit de regarder dans le code source de la page.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/style-sheet.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/feuille-de-style.jpg)
 
 Chaque feuille de style peut être limitée par un ou plusieurs types de média 
 et/ou par une version particulière d'Internet Explorer, dans le cas où vous avez 
@@ -327,7 +327,7 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 Chaque module front office peut être protégé de sorte que seuls les invités ou 
 les membres d'un groupe en particulier puissent le voir sur le site internet.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/protected-module.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/module-protege.jpg)
 
 
 ## Présentations de page
