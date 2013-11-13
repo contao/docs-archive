@@ -47,7 +47,7 @@ d'éléments de contenu et même d'utilisateurs et de groupes d'utilisateurs. Un
 thème, en revanche, ne contient que le design du site internet et peut donc être 
 importé sans risque de perdre toutes les données existantes.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/theme-manager.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/gestionnaire-theme.jpg)
 
 
 ### Composants d'un thème
@@ -61,7 +61,7 @@ personnalisés en option à partir du répertoire des modèles. Toutefois, ces
 ressources ne sont pas automatiquement liées avec le thème et doivent donc être 
 ajoutées dans la configuration du thème pour y être inclues dans l'exportation.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/theme-settings.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/parametres-theme.jpg)
 
 
 ### Exportation et importation d'un thème
