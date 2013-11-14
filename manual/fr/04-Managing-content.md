@@ -381,7 +381,7 @@ l'événement ne serait pas affiché.
 Cette fonctionnalité peut être utilisée pour les archives d'actualités et les 
 calendriers. Voici un exemple avec la liste des calendriers.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/rss-calendar.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/rss-calendrier.jpg)
 
 
 ### Paramètres
@@ -391,7 +391,7 @@ RSS ou Atom. Il en va de même pour les archives d'actualités. Dans un même
 temps, vous pouvez choisir d'exporter uniquement les accroches ou les articles 
 complets de chaque événement ou actualité.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/rss-settings.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/rss-parametres.jpg)
 
 
 ### Fichiers XML
@@ -417,7 +417,7 @@ manuellement. Pour des raisons de protection des données privées, Contao utili
 l'inscription par [Double Opt In][2] et ne stocke que l'adresse e-mail de 
 l'abonné.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/newsletter-recipients.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/destinataires-newsletter.jpg)
 
 Au cas où vous auriez déjà une liste de destinataires, vous pouvez l'importer 
 dans Contao à partir d'un fichier CSV.
@@ -479,7 +479,7 @@ le processus d'envoi en plusieurs cycles pour éviter le dépassement du temps
 d'exécution du script et en ajoutant une pause entre chaque cycle pour 
 contrôler le nombre d'e-mails par minute.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/sending-newsletters.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/envoyer-newsletters.jpg)
 
 
 ### Modules front office
