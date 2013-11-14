@@ -173,7 +173,7 @@ Chaque élément de contenu peut être protégé de sorte que seuls les invités
 ou les membres d'un groupe en particulier puissent le voir sur le site 
 internet.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/protected-element.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/element-protege.jpg)
 
 
 ### Contenu Flash
