@@ -344,7 +344,7 @@ la suite des autres.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/front-end-structure.jpg)
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/front-end-modules.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/modules-front-office.jpg)
 
 Cela implique que lorsque vous allez créer une présentation de page, vous devriez 
 déjà avoir créé toutes les feuilles de style et les modules front office que vous 
@@ -463,7 +463,7 @@ fonction du nom de domaine et de la langue de son navigateur.
 <tr>
   <td>www.company.com</td>
   <td>Espagnol</td>
-  <td>Site internet d'entreprise en Espagnol</td>
+  <td>Site internet d'entreprise en Anglais</td>
 </tr>
 <tr>
   <td>www.personal-website.com</td>
@@ -495,7 +495,7 @@ page, tandis qu'un utilisateur d'un groupe qui possède une page est autorisé �
 éditer les articles seulement. Les utilisateurs sans privilège n'ont aucun droits 
 en écriture.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/access-rights.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/droits-acces.jpg)
 
 
 [1]: https://contao.org/en/contao-themes-and-templates.html
