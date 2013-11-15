@@ -3,7 +3,7 @@
 Data Container Arrays (DCAs) are used to store table meta data. Each DCA
 describes a particular table in terms of its configuration, its relations to
 other tables and its fields. The Contao core engine determines by this meta data
-how to list records, how to render back end forms and how to save data.  The DCA
+how to list records, how to render back end forms and how to save data. The DCA
 files of all active module are loaded one after the other (starting with
 "backend" and "frontend" and then in alphabetical order), so that every module
 can override the existing configuration. The `system/config/dcaconfig.php` file
@@ -690,13 +690,13 @@ Each field can be validated against a regular expression.
 <tr>
   <td>style</td>
   <td>Style attributes (<code>string</code>)</td>
-  <td>Style attributes (e.g. <code>border:2px</code>)</td>
+  <td>Style attributes (e.g. <code>border:2px</code>).</td>
 </tr>
 <tr>
   <td>rte</td>
   <td>Rich text editor file (<code>string</code>)</td>
-  <td><b>tinyMCE</b> use file <code>config/tinyMCE.php</code><br>
-      <b>tinyFlash</b> use file <code>config/tinyFlash.php</code><br>
+  <td><b>tinyMCE</b> use file <code>config/tinyMCE.php</code>.<br>
+      <b>tinyFlash</b> use file <code>config/tinyFlash.php</code>.<br>
       You can add your own configuration files too.</td>
 </tr>
 <tr>
@@ -877,7 +877,7 @@ Each field can be validated against a regular expression.
 
 ### Relations
 
-Relations describes, how database fields are related to other tables. 
+Relations describe, how database fields are related to other tables. 
 Define the referenced table in the `foreignKey` key. Relations provide 
 model classes to load referenced data sets efficiently and developer friendly.
 (see `Model::getRelated()`).
@@ -964,7 +964,7 @@ wizard'`).
 </tr>
 <tr>
   <td>clr</td>
-  <td>Clear all floats.</td>
+  <td>Clear all floats (<code>clear:both</code>).</td>
 </tr>
 <tr>
   <td>wizard</td>
@@ -977,7 +977,7 @@ wizard'`).
 </tr>
 <tr>
   <td>m12</td>
-  <td>Add a 12 pixel top margin to the element (used for single
+  <td>Add a 12 pixels top margin to the element (used for single
       checkboxes).</td>
 </tr>
 </table>

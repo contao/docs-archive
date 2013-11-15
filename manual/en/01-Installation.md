@@ -169,7 +169,7 @@ button.
 
 Review the options carefully and make sure to choose "Preview changes", so you
 can check which files will be updated. Then confirm each file in the preview
-window and doublecheck the files that are marked for deletion! Click "OK" to
+window and double check the files that are marked for deletion! Click "OK" to
 start the synchronization process.
 
 ![](https://raw.github.com/contao/docs/3.2/manual/en/images/synchronization-confirmation.jpg)
