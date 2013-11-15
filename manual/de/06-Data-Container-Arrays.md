@@ -83,6 +83,21 @@ beim Löschen von Elterndatensätzen passiert.
   <td>Verbietet das Löschen von Datensätzen in der Tabelle.</td>
 </tr>
 <tr>
+  <td>notSortable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Verbietet das Sortieren von Datensätzen in der Tabelle.</td>
+</tr>
+<tr>
+  <td>notCopyable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Verbietet das Kopieren von Datensätzen in der Tabelle.</td>
+</tr>
+<tr>
+  <td>notCreatable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Verbietet das erstellen von neuen Datensätzen (kopieren bleibt erlaubt).</td>
+</tr>
+<tr>
   <td>switchToEdit</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Aktiviert die "Speichern und Bearbeiten"-Schaltfläche beim Anlegen eines
