@@ -83,6 +83,21 @@ edited or deleted.
   <td>If true, records in the table cannot be deleted.</td>
 </tr>
 <tr>
+  <td>notSortable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true, records in the table cannot be sorted.</td>
+</tr>
+<tr>
+  <td>notCopyable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true, records in the table cannot be duplicated.</td>
+</tr>
+<tr>
+  <td>notCreatable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true, records in the table cannot be created but can be duplicated.</td>
+</tr>
+<tr>
   <td>switchToEdit</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Activates the "save and edit" button when a new record is added (sorting
