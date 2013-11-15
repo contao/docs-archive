@@ -441,7 +441,7 @@ on the domain and his browser language.
 <tr>
   <td>www.company.com</td>
   <td>Spanish</td>
-  <td>Spanish corporate website</td>
+  <td>English corporate website</td>
 </tr>
 <tr>
   <td>www.personal-website.com</td>
