@@ -9,10 +9,10 @@ Contao.
 ## Installing Contao
 
 First of all, download the [latest Contao archive][1] and extract it on your
-local computer. Move the files into the `htdocs` folder of your local installation
-(e.g. XAMPP) or upload them to your server with an FTP program (we recommend
-using [WinSCP][2]). Depending on your server configuration, the public folder is
-most likely called `htdocs`, `httpdocs`, `html` or `public_html`.
+local computer. Move the files into the `htdocs` folder of your local
+installation (e.g. XAMPP) or upload them to your server with an FTP program (we
+recommend using [WinSCP][2]). Depending on your server configuration, the public
+folder is most likely called `htdocs`, `httpdocs`, `html` or `public_html`.
 
 If you have SSH access, you can download and extract the archive with the
 following commands:
@@ -54,7 +54,7 @@ database. Confirm the changes and click the "Update database" button.
 
 #### Importing a template
 
-A template is a preconfigured website that includes an example site structure, 
+A template is a preconfigured website that includes an example site structure,
 several style sheets to format the Contao core modules and content elements.
 The default template is called "Music Academy". To import it, choose the
 `music_academy.sql` option from the drop-down menu an click the "Import

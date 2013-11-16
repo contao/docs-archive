@@ -98,7 +98,8 @@ soon as there is more than one version, a drop-down menu which allows you to
 revert back to a prior version appears at the top of the form. Simply choose a
 version and click the "Restore" button.
 
-The icon to the right of the "Restore" button allows you to see the differences between two versions.
+The icon to the right of the "Restore" button allows you to see the differences
+between two versions.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/versioning.jpg)
 

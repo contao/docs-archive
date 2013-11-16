@@ -72,10 +72,10 @@ can assign the page layout(s) of the new theme in the site structure.
 
 Accessible websites should always be styled using CSS, that is why Contao
 includes a "style sheets" module which allows you to manage format definitions
-in the back end. To reference the various Contao elements, you need to know their
-class names. [Content element classes][5] start with "ce\_" (e.g. "ce_text") and
-[module classes][3] with "mod\_" (e.g. "mod_search"). If you are not sure, simply
-look into the page source.
+in the back end. To reference the various Contao elements, you need to know
+their class names. [Content element classes][5] start with "ce\_"
+(e.g. "ce_text") and [module classes][3] with "mod\_" (e.g. "mod_search"). If
+you are not sure, simply look into the page source.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/en/images/style-sheet.jpg)
 
@@ -373,12 +373,14 @@ supports 6 different page types which are explained below.
 <tr>
   <td>403 Access denied</td>
   <td>If a user requests a protected page without permission, a 403 error page
-      will be loaded instead. This page must be added <b>on the first level</b> inside your website root page.</td>
+      will be loaded instead. This page must be added <b>on the first level</b>
+      inside your website root page.</td>
 </tr>
 <tr>
   <td>404 Page not found</td>
   <td>If a user requests a non-existent page, a 404 error page will be loaded
-      instead. This page must be added <b>on the first level</b> inside your website root page.</td>
+      instead. This page must be added <b>on the first level</b> inside your
+      website root page.</td>
 </tr>
 </table>
 

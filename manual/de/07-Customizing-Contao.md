@@ -516,8 +516,8 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 
 ### generateBreadcrumb
 
-Der "generateBreadcrumb"-Hook ermöglicht das Modifizieren der Pfadnavigation. 
-Er übergibt das Navigations-Array und das Modul-Objekt als Argument und erwartet 
+Der "generateBreadcrumb"-Hook ermöglicht das Modifizieren der Pfadnavigation.
+Er übergibt das Navigations-Array und das Modul-Objekt als Argument und erwartet
 ein Array als Rückgabewert. Hinzugefügt in Version 2.10.0
 
 ``` {.php}
@@ -645,8 +645,10 @@ public function myGetPageIdFromUrl($arrFragments)
 
 ### getPageLayout
 
-Der "getPageLayout"-Hook wird vor dem Initialisieren des Frontend-Templates ausgeführt.
-Er übergibt das Seitenobjekt, das Layoutobjekt und eine Eigenreferenz als Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 3.1.0.
+Der "getPageLayout"-Hook wird vor dem Initialisieren des Frontend-Templates
+ausgeführt. Er übergibt das Seitenobjekt, das Layoutobjekt und eine
+Eigenreferenz als Argument und erwartet keinen Rückgabewert. Hinzugefügt in
+Version 3.1.0.
 
 ``` {.php}
 // config.php

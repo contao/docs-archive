@@ -40,7 +40,8 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Text</td>
   <td>ce_text</td>
-  <td>Erzeugt einen Rich Text, der mit <a href="http://www.tinymce.com">TinyMCE</a> formatiert werden kann.</td>
+  <td>Erzeugt einen Rich Text, der mit <a href="http://www.tinymce.com">TinyMCE</a>
+      formatiert werden kann.</td>
 </tr>
 <tr>
   <td>HTML</td>
@@ -105,7 +106,8 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Galerie</td>
   <td>ce_gallery</td>
-  <td>Erzeugt eine <a href="http://www.digitalia.be/software/slimbox">lightbox</a> Bildergalerie.</td>
+  <td>Erzeugt eine <a href="http://www.digitalia.be/software/slimbox">lightbox</a>
+      Bildergalerie.</td>
 </tr>
 <tr>
   <td>Video/Audio</td>
@@ -373,17 +375,18 @@ Hier ein Beispiel der Kalender-Liste.
 
 ### Einstellungen
 
-Ein oder mehrere Kalender können gruppiert und als RSS- bzw. Atom-Feed ausgegeben werden.
-Genau gleich funktioniert es bei News Archiven. Hier kann auch gewählt werden,
-ob nur der Teaser oder der komplette Artikel des Events bzw. der News ausgegeben werden soll.
+Ein oder mehrere Kalender können gruppiert und als RSS- bzw. Atom-Feed
+ausgegeben werden. Genau gleich funktioniert es bei News Archiven. Hier kann
+auch gewählt werden, ob nur der Teaser oder der komplette Artikel des Events
+bzw. der News ausgegeben werden soll.
 
 ![](https://raw.github.com/contao/docs/3.1/manual/de/images/rss-bearbeiten.jpg)
 
 
 ### XML Dateien
 
-Die XML Dateien werden automatisch generiert und im ```share``` Verzeichnis Ihrer Contao
-Installation abgelegt. In diesem Beispiel: ```share/events.xml```.
+Die XML Dateien werden automatisch generiert und im ```share``` Verzeichnis
+Ihrer Contao Installation abgelegt. In diesem Beispiel: ```share/events.xml```.
 
 
 ## Newsletter
@@ -421,10 +424,10 @@ Sehr geehrte(r) ##firstname## ##lastname##,
 
 bitte prüfen und aktualisieren Sie Ihre Daten:
 
-Anschrift: ##street## 
-PLZ/Ort:   ##postal## ##city## 
-Telefon:   ##phone## 
-E-Mail:    ##email## 
+Anschrift: ##street##
+PLZ/Ort:   ##postal## ##city##
+Telefon:   ##phone##
+E-Mail:    ##email##
 
 Ihr Administrator
 ```
@@ -1057,25 +1060,25 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{lang::*}}</code></td>
   <td>Mit diesem Tag können fremdsprachige Wörter in einem Text markiert
-      werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit <code>&lt;span
-      lang="fr" xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
+      werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit
+      <code>&lt;span lang="fr" xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
   <td>Abkürzungen in einem Text markieren: <code>{{abbr::World Wide
-      Web}}WWW{{abbr}}</code>. Dies wird ersetzt mit <code>&lt;abbr title="World Wide
-      Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
+      Web}}WWW{{abbr}}</code>. Dies wird ersetzt mit <code>&lt;abbr title="World
+      Wide Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Acronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet Mail
-      Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
+  <td>Acronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet
+      Mail Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
       title="Multipurpose Internet Mail Extensions">MIME</acronym></code>.</td>
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
-  <td>Eigenschaften des Browsers (User Agent) ausgeben: <code>{{ua::browser}}</code>. Dies
-      wird beispielsweise ersetzt mit "chrome".</td>
+  <td>Eigenschaften des Browsers (User Agent) ausgeben: <code>{{ua::browser}}</code>.
+      Dies wird beispielsweise ersetzt mit "chrome".</td>
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
@@ -1092,19 +1095,20 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt:
-      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br />
-      <strong>width</strong>: Breite des Vorschaubildes,<br />
-      <strong>height</strong>: Höhe des Vorschaubildes,<br />
-      <strong>alt</strong>: Alternativer Text,<br />
-      <strong>class</strong>: CSS-Klasse,<br />
-      <strong>rel</strong>: rel-Attribut (z.B. "lightbox"),<br />
+      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br>
+      <strong>width</strong>: Breite des Vorschaubildes,<br>
+      <strong>height</strong>: Höhe des Vorschaubildes,<br>
+      <strong>alt</strong>: Alternativer Text,<br>
+      <strong>class</strong>: CSS-Klasse,<br>
+      <strong>rel</strong>: rel-Attribut (z.B. "lightbox"),<br>
       <strong>mode</strong>: Modus ("proportional", "crop" oder "box").</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>Dieses Tag wird mit einer Übersetzung ersetzt: <code>{{label::CNT:au}}</code> oder
-      <code>{{label::tl_article:title:0}}</code>. Beachten Sie, dass innerhalb des Pfads
-      zur Bezeichnung nur einfache Doppelpunkte verwendet werden.</td>
+  <td>Dieses Tag wird mit einer Übersetzung ersetzt: <code>{{label::CNT:au}}</code>
+      oder <code>{{label::tl_article:title:0}}</code>. Beachten Sie, dass
+      innerhalb des Pfads zur Bezeichnung nur einfache Doppelpunkte verwendet
+      werden.</td>
 </tr>
 <tr>
   <td><code>{{version::*}}</code></td>
@@ -1118,7 +1122,8 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{toggle_view}}</code></td>
-  <td>Dieser Tag wird mit einem Link ersetzt, welcher zwischen Mobile- und Desktop-Layout wechselt.</td>
+  <td>Dieser Tag wird mit einem Link ersetzt, welcher zwischen Mobile- und
+      Desktop-Layout wechselt.</td>
 </tr>
 </table>
 
@@ -1129,7 +1134,7 @@ z.B. einer PHP-Funktion übergeben werden. Beliebig viele Flags können
 miteinander kombiniert werden:
 
 ```
-{{ua::browser|uncached}}  
+{{ua::browser|uncached}}
 {{page::title|decodeEntities|strtoupper}}
 ```
 

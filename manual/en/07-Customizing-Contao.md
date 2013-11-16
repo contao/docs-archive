@@ -36,9 +36,9 @@ $GLOBALS['TL_CONFIG']['displayErrors'] = false;
 ```
 
 Make sure to store your changes above the `INSTALL SCRIPT START` line, otherwise
-they will be removed by the settings module. And **never use the `config.php` 
-file to store configuration parameters**, because this file might be overridden on
-updates!
+they will be removed by the settings module. And **never use the `config.php`
+file to store configuration parameters**, because this file might be overridden
+on updates!
 
 
 ### Customizing the data container configuration
@@ -237,7 +237,7 @@ class ModuleMyNavigation extends ModuleNavigation
 
 Module and content element classes can be assigned dynamically in the Contao
 system configuration, which allows you to easily replace them with your own
-versions. The names of the module classes are stored in the global `FE_MOD` 
+versions. The names of the module classes are stored in the global `FE_MOD`
 array.
 
 ``` {.php}
@@ -523,8 +523,9 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 
 ### generateBreadcrumb
 
-The "generateBreadcrumb" hook allows to modify the breadcrumb navigation. 
-It passes the navigation items and the frontend module as arguments and expects the items as return value. It is available from version 2.10.0.
+The "generateBreadcrumb" hook allows to modify the breadcrumb navigation.
+It passes the navigation items and the frontend module as arguments and expects
+the items as return value. It is available from version 2.10.0.
 
 ``` {.php}
 // config.php
@@ -653,7 +654,8 @@ public function myGetPageIdFromUrl($arrFragments)
 ### getPageLayout
 
 The "getPageLayout" hook is executed before initializing the frontend template.
-It passes the page model, the layout object and a reference to the page object and does not expect a return value. It is available from version 3.1.0.
+It passes the page model, the layout object and a reference to the page object
+and does not expect a return value. It is available from version 3.1.0.
 
 ``` {.php}
 // config.php
