@@ -56,18 +56,6 @@ edited or deleted.
       manager).</td>
 </tr>
 <tr>
-  <td>validFileTypes</td>
-  <td>File types (<code>string</code>)</td>
-  <td>Comma separated list of valid file extensions (applies to file trees
-      only).</td>
-</tr>
-<tr>
-  <td>uploadScript</td>
-  <td>File name (<code>string</code>)</td>
-  <td>Name of the FancyUpload script in the system/config folder (without file
-      extension).</td>
-</tr>
-<tr>
   <td>closed</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>If true, you cannot add further records to the table.</td>
@@ -150,6 +138,18 @@ edited or deleted.
   <td>Callback function (<code>array</code>)</td>
   <td>Calls a custom function when a record is duplicated and passes the insert
       ID and the DataContainer object as argument. Added in version 2.8.2.</td>
+</tr>
+<tr>
+  <td>onversion_callback</td>
+  <td>Callback function (<code>array</code>)</td>
+  <td>Calls a custom function when a new version of a record is created and
+      passes the table, the insert ID and the DataContainer object as argument.</td>
+</tr>
+<tr>
+  <td>onrestore_callback</td>
+  <td>Callback function (<code>array</code>)</td>
+  <td>Calls a custom function when a version of a record is restored and passes
+      the insert ID, the table, the data array and the version as argument.</td>
 </tr>
 <tr>
   <td>sql</td>

@@ -190,8 +190,8 @@ Tastaturkürzel `[Alt]+[s]` ansteuern.
 <tr>
   <td><code>[Alt]+[c]</code></td>
   <td>Speichern und schließen</td>
-  <td>Speichert und schließt das aktuelle Eingabeformular (Save and <b>c</b>lose).
-      Sie gelangen zurück zur vorherigen Seite.</td>
+  <td>Speichert und schließt das aktuelle Eingabeformular (Save and
+      <b>c</b>lose). Sie gelangen zurück zur vorherigen Seite.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[g]</code></td>
