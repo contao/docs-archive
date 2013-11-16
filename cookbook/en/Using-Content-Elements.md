@@ -12,58 +12,60 @@ All you need to do are the following three steps:
 
 1. Define `tl_content` as a child table of your current DCA
 
-``` {.php}
-// system/modules/news/dca/tl_news.php
-/**
- * Table tl_news
- */
-$GLOBALS['TL_DCA']['tl_news'] = array
-(
-    // Config
-    'config' => array
+    ``` {.php}
+    // system/modules/news/dca/tl_news.php
+    
+    /**
+     * Table tl_news
+     */
+    $GLOBALS['TL_DCA']['tl_news'] = array
     (
-        [...]
-        'ctable'                      => array('tl_content'),
-```
+        // Config
+        'config' => array
+        (
+            [...]
+            'ctable'                      => array('tl_content'),
+    ```
 
 2. Dynamically set the parent table in the DCA of `tl_content`
 
-``` {.php}
-// system/modules/news/dca/tl_content.php
-/**
- * Dynamically add parent table
- */
-if (Input::get('do') == 'news')
-{
-    $GLOBALS['TL_DCA']['tl_content']['config']['ptable'] = 'tl_news';
-}
-```
+    ``` {.php}
+    // system/modules/news/dca/tl_content.php
+    
+    /**
+     * Dynamically add parent table
+     */
+    if (\Input::get('do') == 'news')
+    {
+        $GLOBALS['TL_DCA']['tl_content']['config']['ptable'] = 'tl_news';
+    }
+    ```
 
 3. Route your edit link to the `tl_content` table
 
-Instead of
+    Instead of
 
-``` {.php}
-// system/modules/news/dca/tl_news.php
-'edit' => array
-(
-    'label'               => &$GLOBALS['TL_LANG']['tl_news']['edit'],
-    'href'                => 'act=edit',
-    'icon'                => 'edit.gif'
-),
-```
+    ``` {.php}
+    // system/modules/news/dca/tl_news.php
+    'edit' => array
+    (
+        'label'               => &$GLOBALS['TL_LANG']['tl_news']['edit'],
+        'href'                => 'act=edit',
+        'icon'                => 'edit.gif'
+    ),
+    ```
 
-you should now use
+    you should now use
 
-``` {.php}
-// system/modules/news/dca/tl_news.php
-'edit' => array
-(
-    'label'               => &$GLOBALS['TL_LANG']['tl_news']['edit'],
-    'href'                => 'table=tl_content',
-    'icon'                => 'edit.gif'
-),
-```
+    ``` {.php}
+    // system/modules/news/dca/tl_news.php
+    'edit' => array
+    (
+        'label'               => &$GLOBALS['TL_LANG']['tl_news']['edit'],
+        'href'                => 'table=tl_content',
+        'icon'                => 'edit.gif'
+    ),
+    ```
 
 That's it. You can now use content elements within your own DCA.
 
@@ -87,6 +89,6 @@ if ($objElements !== null)
     }
 }
 
-// Now contains a string of all rendered content elements
+// Now contains a string of all generated content elements
 echo $strContent;
 ```
