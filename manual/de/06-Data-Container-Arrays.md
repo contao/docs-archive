@@ -125,6 +125,20 @@ beim Löschen von Elterndatensätzen passiert.
   <td>Ruft eine Callback-Funktion beim Duplizieren eines Datensatzes auf und
       übergibt die Insert ID sowie das DataContainer-Objekt als Argument.</td>
 </tr>
+<tr>
+  <td>onversion_callback</td>
+  <td>Callback-Funktion (<code>array</code>)</td>
+  <td>Ruft eine Callback-Funktion beim Erstellen einer neuen Version eines
+      Datensatzes auf und übergibt die Tabelle, die Insert ID
+      sowie das DataContainer-Objekt als Argument.</td>
+</tr>
+<tr>
+  <td>onrestore_callback</td>
+  <td>Callback-Funktion (<code>array</code>)</td>
+  <td>Ruft eine Callback-Funktion beim Wiederherstellen einer Version eines
+      Datensatzes auf und übergibt die Insert ID, die Tabelle, die Daten sowie
+      die Version als Argument.</td>
+</tr>
 </table>
 
 
