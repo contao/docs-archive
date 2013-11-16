@@ -17,7 +17,7 @@ Dieser Hook erhält das unbekannte Insert-Tag als Parameter. Der Entwickler muss
 Wenn der Entwickler nichts mit dem unbekannten Insert-Tag anfangen kann, so muss `false` zurück gegeben werden. Wird das nicht getan, ist die gesamte Hook Kette unterbrochen, nachfolgende Erweiterungen die ebenfalls Insert-Tag anbieten werden dann nicht mehr aufgerufen!
 
 
-# Codebeispiel Contao 2
+# Code-Beispiel Contao 2
 In diesem Code-Beispiel soll der Insert-Tag {{foo::bar}} ersetzt werden durch das Modul "myinserttag". Als erstes muss der Hook registriert werden. 
 
 ``` {.php}
@@ -62,4 +62,4 @@ Außerdem muss der Name der Datei (ohne Endung) identisch sein wie der Name der 
 ```
 
 Wenn man einen zweigeteilten Insert-Tag verwendet, splittet man den Tag mittels `explode` anhand des Gültigkeitsbereichsoperator  `::`. Die geschweiften Klammern werden bereits von Contao entfernt und müssen daher nicht mehr entfernt werden.
-Im Beispiel wurde zusätzlich noch eine Ausgabe ermöglicht, wenn der Parameter "bar" nicht angegeben wurde.
+Im Code-Beispiel wurde zusätzlich noch eine Ausgabe ermöglicht, wenn der Parameter "bar" nicht angegeben wurde.
