@@ -27,9 +27,11 @@ aufrufen:
 
 ``` {.php}
 $objUser = BackendUser::getInstance();
+echo $objUser->username;
 
 // Im Objekt-Kontext
-$objUser = $this->import('BackendUser', 'User');
+$this->import('BackendUser', 'User');
+echo $this->User->username;
 ```
 
 Da der Zugang zum Backend grundsätzlich nicht ohne Authentifizierung möglich
@@ -171,9 +173,11 @@ aufrufen:
 
 ``` {.php}
 $objUser = FrontendUser::getInstance();
+echo $objUser->username;
 
 // Im Objekt-Kontext
-$objUser = $this->import('FrontendUser', 'User');
+$this->import('FrontendUser', 'User');
+echo $this->User->username;
 ```
 
 Den Login-Status kann man über die Konstante `FE_USER_LOGGED_IN` abfragen:
