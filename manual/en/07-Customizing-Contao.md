@@ -30,12 +30,12 @@ ever need to edit it manually.
 // Disable the task center
 unset($GLOBALS['BE_MOD']['profile']['tasks']);
 
-### INSTALL TOOL START ###
+### INSTALL SCRIPT START ###
 $GLOBALS['TL_CONFIG']['debugMode'] = false;
 $GLOBALS['TL_CONFIG']['displayErrors'] = false;
 ```
 
-Make sure to store your changes above the `INSTALL TOOL START` line, otherwise
+Make sure to store your changes above the `INSTALL SCRIPT START` line, otherwise
 they will be removed by the settings module. And **never use the `config.php`
 file to store configuration parameters**, because the file might be overridden on
 updates!
