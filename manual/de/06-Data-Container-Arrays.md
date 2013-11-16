@@ -57,17 +57,6 @@ beim Löschen von Elterndatensätzen passiert.
       (Dateiverwaltung).</td>
 </tr>
 <tr>
-  <td>validFileTypes</td>
-  <td>Dateitypen (<code>string</code>)</td>
-  <td>Kommagetrennte Liste gültiger Dateiendungen (nur für Dateibäume).</td>
-</tr>
-<tr>
-  <td>uploadScript</td>
-  <td>Dateiname (<code>string</code>)</td>
-  <td>Dateiname des FancyUpload-Skripts im Ordner `system/config` (ohne
-      Dateiendung).</td>
-</tr>
-<tr>
   <td>closed</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Verbietet das Anlegen neuer Datensätze in der Tabelle.</td>

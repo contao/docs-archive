@@ -56,18 +56,6 @@ edited or deleted.
       manager).</td>
 </tr>
 <tr>
-  <td>validFileTypes</td>
-  <td>File types (<code>string</code>)</td>
-  <td>Comma separated list of valid file extensions (applies to file trees
-      only).</td>
-</tr>
-<tr>
-  <td>uploadScript</td>
-  <td>File name (<code>string</code>)</td>
-  <td>Name of the FancyUpload script in the system/config folder (without file
-      extension).</td>
-</tr>
-<tr>
   <td>closed</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>If true, you cannot add further records to the table.</td>
