@@ -1,8 +1,8 @@
 # Managing content
 
 The following chapters explain how to manage content in Contao. The Contao core
-supports many different content types like articles, news, events, newsletters or
-forms. Further content types like banners, tickets, products or
+supports many different content types like articles, news, events, newsletters
+or forms. Further content types like banners, tickets, products or
 recommendations are available in the [Extension Repository][1]. To create
 content, log into the back end and choose one of the modules in the Content
 section of the navigation menu.
@@ -366,11 +366,11 @@ Dear ##firstname## ##lastname##,
 
 Please check and update your personal data:
 
-Street: ##street## 
+Street: ##street##
 Postal: ##postal##
 City:   ##city##
-Phone:  ##phone## 
-E-mail: ##email## 
+Phone:  ##phone##
+E-mail: ##email##
 
 The Administrator
 ```

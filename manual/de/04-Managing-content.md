@@ -40,7 +40,8 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Text</td>
   <td>ce_text</td>
-  <td>Erzeugt einen Rich Text, der mit <a href="http://www.tinymce.com">TinyMCE</a> formatiert werden kann.</td>
+  <td>Erzeugt einen Rich Text, der mit <a href="http://www.tinymce.com">TinyMCE</a>
+      formatiert werden kann.</td>
 </tr>
 <tr>
   <td>HTML</td>
@@ -85,7 +86,8 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Galerie</td>
   <td>ce_gallery</td>
-  <td>Erzeugt eine <a href="http://www.digitalia.be/software/slimbox">lightbox</a> Bildergalerie.</td>
+  <td>Erzeugt eine <a href="http://www.digitalia.be/software/slimbox">lightbox</a>
+      Bildergalerie.</td>
 </tr>
 <tr>
   <td>Download</td>
@@ -373,10 +375,10 @@ Sehr geehrte(r) ##firstname## ##lastname##,
 
 bitte prüfen und aktualisieren Sie Ihre Daten:
 
-Anschrift: ##street## 
-PLZ/Ort:   ##postal## ##city## 
-Telefon:   ##phone## 
-E-Mail:    ##email## 
+Anschrift: ##street##
+PLZ/Ort:   ##postal## ##city##
+Telefon:   ##phone##
+E-Mail:    ##email##
 
 Ihr Administrator
 ```
@@ -992,25 +994,25 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{lang::*}}</code></td>
   <td>Mit diesem Tag können fremdsprachige Wörter in einem Text markiert
-      werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit <code>&lt;span
-      lang="fr" xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
+      werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit
+      <code>&lt;span lang="fr" xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
   <td>Abkürzungen in einem Text markieren: <code>{{abbr::World Wide
-      Web}}WWW{{abbr}}</code>. Dies wird ersetzt mit <code>&lt;abbr title="World Wide
-      Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
+      Web}}WWW{{abbr}}</code>. Dies wird ersetzt mit <code>&lt;abbr title="World
+      Wide Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Acronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet Mail
-      Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
+  <td>Acronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet
+      Mail Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
       title="Multipurpose Internet Mail Extensions">MIME</acronym></code>.</td>
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
-  <td>Eigenschaften des Browsers (User Agent) ausgeben: <code>{{ua::browser}}</code>. Dies
-      wird beispielsweise ersetzt mit "chrome".</td>
+  <td>Eigenschaften des Browsers (User Agent) ausgeben: <code>{{ua::browser}}</code>.
+      Dies wird beispielsweise ersetzt mit "chrome".</td>
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
@@ -1027,16 +1029,17 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt:
-      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>. **width** Breite
-      des Vorschaubildes, **height** Höhe des Vorschaubildes, **alt**
-      Alternativer Text, **class** CSS-Klasse, **rel** rel-Attribut (z.B.
-      "lightbox"), **mode** Modus ("proportional", "crop" oder "box")</td>
+      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.
+      **width** Breite des Vorschaubildes, **height** Höhe des Vorschaubildes,
+      **alt** Alternativer Text, **class** CSS-Klasse, **rel** rel-Attribut
+      (z.B. "lightbox"), **mode** Modus ("proportional", "crop" oder "box")</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>Dieses Tag wird mit einer Übersetzung ersetzt: <code>{{label::CNT:au}}</code> oder
-      <code>{{label::tl_article:title:0}}</code>. Beachten Sie, dass innerhalb des Pfads
-      zur Bezeichnung nur einfache Doppelpunkte verwendet werden.</td>
+  <td>Dieses Tag wird mit einer Übersetzung ersetzt: <code>{{label::CNT:au}}</code>
+      oder <code>{{label::tl_article:title:0}}</code>. Beachten Sie, dass
+      innerhalb des Pfads zur Bezeichnung nur einfache Doppelpunkte verwendet
+      werden.</td>
 </tr>
 <tr>
   <td><code>{{version::*}}</code></td>

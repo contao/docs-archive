@@ -37,8 +37,8 @@ $GLOBALS['TL_CONFIG']['displayErrors'] = false;
 
 Make sure to store your changes above the `INSTALL TOOL START` line, otherwise
 they will be removed by the settings module. And **never use the `config.php`
-file to store configuration parameters**, because the file might be overridden on
-updates!
+file to store configuration parameters**, because the file might be overridden
+on updates!
 
 
 ### Customizing the data container configuration
@@ -523,8 +523,9 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 
 ### generateBreadcrumb
 
-The "generateBreadcrumb" hook allows to modify the breadcrumb navigation. 
-It passes the navigation items and the frontend module as arguments and expects the items as return value. It is available from version 2.10.0.
+The "generateBreadcrumb" hook allows to modify the breadcrumb navigation.
+It passes the navigation items and the frontend module as arguments and expects
+the items as return value. It is available from version 2.10.0.
 
 ``` {.php}
 // config.php
