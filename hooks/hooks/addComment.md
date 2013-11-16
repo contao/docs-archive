@@ -31,7 +31,7 @@ $GLOBALS['TL_HOOKS']['addComment'][] = array('MyClass', 'myAddComment');
  * @param  Comments $objComments The Comments object
  * @return void                No return value expected
  */
-public function myAddComment($intId, $arrSet, $objComments)
+public function myAddComment($intId, $arrSet, Comments $objComments)
 {
     // Do something
 }
