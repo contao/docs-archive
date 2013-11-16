@@ -1,6 +1,6 @@
 # Pseudo-Cronjobs in Contao (2.11)
 
-Jede Contao Installation enthält eine cron.php im root Ordner. Diese wird bei jedem Seitenaufruf einer Frontendseite über das `fe_page.html5` oder `fe_page.xhtml` Template getriggert:
+Jede Contao Installation enthält eine `cron.php` im root Ordner. Diese wird bei jedem Seitenaufruf einer Frontendseite über das `fe_page.html5` oder `fe_page.xhtml` Template getriggert:
 
 ```
 new Request({
@@ -23,7 +23,7 @@ $GLOBALS['TL_CRON']['daily']
 $GLOBALS['TL_CRON']['hourly']
 ```
 
-Die kleinst möglichste Taktung ist hier also Stündlich.
+Die kleinst möglichste Interval ist hier also Stündlich.
 
 ## Unerwartete Verhaltensweisen
 
@@ -40,4 +40,4 @@ Um den Cronjob direkt zu triggern muss man ihn an 3 Punkten zurücksetzen:
 	- `$GLOBALS['TL_CONFIG']['cron_weekly']`
 	- `$GLOBALS['TL_CONFIG']['cron_daily']`
 	- `$GLOBALS['TL_CONFIG']['cron_hourly']`
-- Die Einträge in der `tl_cron` Tabelle löschen bzw. leeren
+- Die Einträge in der `tl_cron` Tabelle leeren
