@@ -78,12 +78,12 @@ $strContent = '';
 
 $objElements = \ContentModel::findPublishedByPidAndTable($objNews->id, 'tl_news');
 
-if ($objNews !== null)
+if ($objElements !== null)
 {
-    while ($objNews->next())
+    while ($objElements->next())
     {
         // Controller::getContentElement()
-        $strContent .= $this->getContentElement($objNews->id);
+        $strContent .= $this->getContentElement($objElements->id);
     }
 }
 
