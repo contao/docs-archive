@@ -1,4 +1,4 @@
-# Pseudo-Cronjobs in Contao (2.11)
+# Pseudo-Cronjobs in Contao
 
 Jede Contao Installation enthält eine `cron.php` im root Ordner. Diese wird bei jedem Seitenaufruf einer Frontendseite über das `fe_page.html5` oder `fe_page.xhtml` Template getriggert:
 

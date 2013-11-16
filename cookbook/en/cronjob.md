@@ -1,4 +1,4 @@
-# Pseudo-Cronjobs in Contao (2.11)
+# Pseudo-Cronjobs in Contao
 
 Each contao installation contains a `cron.php`in the root folder. It is called with each frontend page load through the `fe_page.html5`or `fe_page.xhtml`template:
 
