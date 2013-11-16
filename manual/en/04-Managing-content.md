@@ -1,8 +1,8 @@
 # Managing content
 
 The following chapters explain how to manage content in Contao. The Contao core
-supports many different content types like articles, news, events, newsletters or
-forms. Further content types like banners, tickets, products or
+supports many different content types like articles, news, events, newsletters
+or forms. Further content types like banners, tickets, products or
 recommendations are available in the [Extension Repository][1]. To create
 content, log into the back end and choose one of the modules in the Content
 section of the navigation menu.
@@ -104,7 +104,8 @@ an overview of the Contao core content elements:
 <tr>
   <td>Gallery</td>
   <td>ce_gallery</td>
-  <td>Generates a <a href="http://www.digitalia.be/software/slimbox">lightbox</a> image gallery.</td>
+  <td>Generates a <a href="http://www.digitalia.be/software/slimbox">lightbox</a>
+      image gallery.</td>
 </tr>
 <tr>
   <td>Video/audio</td>
@@ -402,20 +403,21 @@ from a CSV file.
 
 ### Personalized newsletters
 
-Insofar as you are sending newsletters to registered members, you can personalize
-them with so called "Simple Tokens". Simple tokens are similar to [insert tags][3] 
-and can be used in both the HTML and the text content of a newsletter.
+Insofar as you are sending newsletters to registered members, you can
+personalize them with so called "Simple Tokens". Simple tokens are similar to
+[insert tags][3] and can be used in both the HTML and the text content of a
+newsletter.
 
 ```
 Dear ##firstname## ##lastname##,
 
 Please check and update your personal data:
 
-Street: ##street## 
+Street: ##street##
 Postal: ##postal##
 City:   ##city##
-Phone:  ##phone## 
-E-mail: ##email## 
+Phone:  ##phone##
+E-mail: ##email##
 
 The Administrator
 ```
@@ -568,7 +570,7 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 <tr>
   <td>Fieldset</td>
   <td>-</td>
-  <td>A container for form fields with an optional legend 
+  <td>A container for form fields with an optional legend
   (only available for tableless forms).</td>
 </tr>
 <tr>
@@ -615,7 +617,7 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 <tr>
   <td>Security question</td>
   <td>captcha</td>
-  <td>A simple math question to verify that the form is being 
+  <td>A simple math question to verify that the form is being
       submitted by a human (CAPTCHA).</td>
 </tr>
 <tr>
@@ -1055,8 +1057,8 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
-  <td>Output properties of the user agent: <code>{{ua::browser}}</code>. It will e.g. be
-      replaced with "chrome".</td>
+  <td>Output properties of the user agent: <code>{{ua::browser}}</code>. It will
+      e.g. be replaced with "chrome".</td>
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
@@ -1073,19 +1075,19 @@ the current date or including lightbox images.
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>This tag will be replaced with the thumbnail of an image:
-      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br />
-      <strong>width</strong>: Thumbnail width,<br />
-      <strong>height</strong>: Thumbnail height,<br />
-      <strong>alt</strong>: Alternative text,<br />
-      <strong>class</strong>: CSS class,<br />
-      <strong>rel</strong>: rel-attribute (e.g. "lightbox"),<br />
+      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br>
+      <strong>width</strong>: Thumbnail width,<br>
+      <strong>height</strong>: Thumbnail height,<br>
+      <strong>alt</strong>: Alternative text,<br>
+      <strong>class</strong>: CSS class,<br>
+      <strong>rel</strong>: rel-attribute (e.g. "lightbox"),<br>
       <strong>mode</strong>: Mode ("proportional", "crop" or "box").</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>This tag will be replaced with a translated label: <code>{{label::CNT:au}}</code> or
-      <code>{{label::tl_article:title:0}}</code>. Note that only the first colon is a
-      double colon.</td>
+  <td>This tag will be replaced with a translated label: <code>{{label::CNT:au}}</code>
+      or <code>{{label::tl_article:title:0}}</code>. Note that only the first
+      colon is a double colon.</td>
 </tr>
 <tr>
   <td><code>{{version::*}}</code></td>

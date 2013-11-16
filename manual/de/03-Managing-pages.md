@@ -384,12 +384,14 @@ Seitenstruktur markiert. Contao unterstützt folgende 6 Seitentypen:
 <tr>
   <td>403 Zugriff verweigert</td>
   <td>Beim Aufruf einer geschützte Seite ohne Zugriffsrechte wird stattdessen
-      die 403-Fehlerseite geladen. Diese Seite muss <b>direkt unterhalb</b> des Startpunktes einer Webseite angelegt werden.</td>
+      die 403-Fehlerseite geladen. Diese Seite muss <b>direkt unterhalb</b>
+      des Startpunktes einer Webseite angelegt werden.</td>
 </tr>
 <tr>
   <td>404 Seite nicht gefunden</td>
   <td>Beim Aufruf einer nicht vorhandenen Seite wird stattdessen die
-      404-Fehlerseite geladen. Diese Seite muss <b>direkt unterhalb</b> des Startpunktes einer Webseite angelegt werden.</td>
+      404-Fehlerseite geladen. Diese Seite muss <b>direkt unterhalb</b>
+      des Startpunktes einer Webseite angelegt werden.</td>
 </tr>
 </table>
 
