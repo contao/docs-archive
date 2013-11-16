@@ -1,5 +1,7 @@
 # Autoloading
 
+Die Definitionen zum Autloader befinden sich innerhalb jeder Erweiterung im Verzeichnis `config`
+
 ## autoload.ini
 
 ### Abhängigkeiten definieren
@@ -7,7 +9,7 @@
 Der Schlüssel `requires` bestimmt, von welchen anderen Erweiterungen meine Erweiterung abhängig ist
  
 ``` {.ini}
-requires[] = core
+requires[] = "core"
 ```
 
 ### Konfiguration
