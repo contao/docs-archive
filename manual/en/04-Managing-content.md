@@ -1066,8 +1066,8 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
-  <td>Output properties of the user agent: <code>{{ua::browser}}</code>. It will e.g. be
-      replaced with "chrome".</td>
+  <td>Output properties of the user agent: <code>{{ua::browser}}</code>. It will
+      e.g. be replaced with "chrome".</td>
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
@@ -1094,9 +1094,9 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>This tag will be replaced with a translated label: <code>{{label::CNT:au}}</code> or
-      <code>{{label::tl_article:title:0}}</code>. Note that only the first colon is a
-      double colon.</td>
+  <td>This tag will be replaced with a translated label: <code>{{label::CNT:au}}</code>
+      or <code>{{label::tl_article:title:0}}</code>. Note that only the first
+      colon is a double colon.</td>
 </tr>
 <tr>
   <td><code>{{version::*}}</code></td>
