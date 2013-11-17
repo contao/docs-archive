@@ -8,6 +8,18 @@ without even touching its files, so you do not have to reapply your changes
 after every update.
 
 
+##Bypass the internal cache 
+
+Before developing extensions for Contao, you should bypass the internal cache.
+If you want to bypass the internal cache, navigate to "System"->"Settings" and 
+enable the checkbox "Bypass the internal cache" under "Global configuration".
+
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/bypass-internal-cache.jpg)
+
+As soon as the site goes into production, you should uncheck "Bypass the 
+internal cache" in order to minimize the response time.  
+
+
 ## Custom configurations
 
 The Contao configuration is stored in one big array that is divided into three
@@ -105,27 +117,15 @@ order, so do not name your extension `custom` if you want to override settings
 of the `news` extension.
 
 
-### Extending the database
-
-The database configuration is stored in the `config/database.sql` files of the
-various Contao modules. The SQL files are not sent to the database but used to
-calculate the difference between the Contao specifications and the actual
-database tables. Therefore, you can also alter fields defined by another module
-in the `database.sql` file. Add the following code to create the new field:
-
-``` {.sql}
-CREATE TABLE `tl_member`(
-  `customer_number` varchar(8) NOT NULL default ''
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-```
-
-Use the [Contao install tool][3] to update your database tables.
-
-
 ### Extending the DCA
 
 Create the file `dca/tl_member.php` in your module folder and add the meta data
 for the new field so Contao knows how to handle it.
+
+Since Contao 3 you can also specify directly the correspondig fields and their 
+configuration for the database in the DCA under `sql`. The SQL details are not 
+sent to the database but they are used to calculate the difference between the 
+Contao specifications and the actual database tables.
 
 ``` {.php}
 // Modify the palette
@@ -142,12 +142,15 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
     'label'     => &amp;$GLOBALS['TL_LANG']['tl_member']['customer_number'],
     'exclude'   => true,
     'inputType' => 'text',
-    'eval'      => array('mandatory'=>true, 'rgxp'=>'digit', 'maxlength'=>8)
+    'eval'      => array('mandatory'=>true, 'rgxp'=>'digit', 'maxlength'=>8),
+    'sql'       => "varchar(8) NOT NULL default ''"
 );
 ```
 
 If you do not understand the code above, you might want to read the chapter on
 [Data Container Arrays][1].
+
+After adding or modifying a field in the DCA you should visit the [Contao install tool][3] in order to update your database tables.
 
 
 ### Adding a translation
