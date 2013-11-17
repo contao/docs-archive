@@ -21,12 +21,10 @@ Wenn der Entwickler nichts mit dem unbekannten Insert-Tag anfangen kann, so muss
 In diesem Code-Beispiel soll der Insert-Tag {{foo::bar}} ersetzt werden durch das Modul "myinserttag". Als erstes muss der Hook registriert werden. 
 
 ``` {.php}
-<?php 
  // Datei /system/modules/myinserttag/config/config.php
  
  // Registrieren im Hooks replaceInsertTags
  $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MyClass', 'myReplaceInsertTags');
-?>
 ```
 
 Nach der Registrierung im Hooks muss eine Klasse erstellt werden, welche eine Methode zur Ersetzung beinhaltet.
@@ -34,7 +32,6 @@ Dabei muss der Name der Klasse und der Methode identisch sein wie bei der Hook R
 Außerdem muss der Name der Datei (ohne Endung) identisch sein wie der Name der Klasse. 
 
 ``` {.php}
-<?php 
  // Datei /system/modules/myinserttag/MyClass.php
  
  class MyClass extends Frontend
@@ -58,10 +55,51 @@ Außerdem muss der Name der Datei (ohne Endung) identisch sein wie der Name der 
         }
     }
  }
-?>
 ```
 
 Wenn man einen zweigeteilten Insert-Tag verwendet, splittet man den Tag mittels `explode` anhand des Gültigkeitsbereichsoperator  `::`. Die geschweiften Klammern werden bereits von Contao entfernt und müssen daher nicht mehr entfernt werden.
 Im Code-Beispiel wurde zusätzlich noch eine Ausgabe ermöglicht, wenn der Parameter "bar" nicht angegeben wurde.
 
 Damit Contao 3 nun die Klasse findet, muss nun im Backend der Autoload Generator für dieses Modul aufgerufen werde um die autoload.php zu generieren im config Verzeichnis. 
+
+# Code-Beispiel mit Namespace
+Ist die Klasse innerhalb eines Namespaces, ändert sich der Syntax ein wenig.
+Ansonsten gelten die selben bereits genannten Hinweise.
+
+``` {.php}
+ // Datei /system/modules/myinserttag/config/config.php
+ 
+ // Registrieren im Hooks replaceInsertTags
+ $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MyModule\MyClass', 'myReplaceInsertTags');
+```
+
+``` {.php}
+// Datei /system/modules/myinserttag/MyClass.php
+ 
+/**
+* Run in a custom namespace, so the class can be replaced
+*/
+namespace Vendor\MyModule;
+
+ class MyClass extends \Frontend
+ {
+    public function myReplaceInsertTags($strTag)
+    {
+        // Parameter abtrennen
+        $arrSplit = explode('::', $strTag);
+ 
+        if ($arrSplit[0] != 'foo' || $arrSplit[0] == 'cache_foo')
+        {
+            //nicht unser Insert-Tag
+            return false;
+        }
+        // Parameter angegeben?
+        if (isset($arrSplit[1]) && $arrSplit[1] == 'bar')
+        {
+            return 'Parameter bar';
+        } else {
+            return 'Fehler! foo ohne Parameter!';
+        }
+    }
+ }
+```
