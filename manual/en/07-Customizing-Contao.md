@@ -30,7 +30,7 @@ ever need to edit it manually.
 // Disable the task center
 unset($GLOBALS['BE_MOD']['profile']['tasks']);
 
-### INSTALL TOOL START ###
+### INSTALL SCRIPT START ###
 $GLOBALS['TL_CONFIG']['debugMode'] = false;
 $GLOBALS['TL_CONFIG']['displayErrors'] = false;
 ```
