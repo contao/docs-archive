@@ -124,6 +124,11 @@ if ($objUser->hasAccess('tl_faq::published', 'alexf')) {
 }
 ```
 
+Der zweite Parameter der Methode `hasAccess()` bezieht sich auf das Feld in der
+Tabelle `tl_user` bzw. `tl_user_group`, in dem die jeweilige Berechtigung
+gespeichert ist. Zum Beispiel fragt "modules" das Feld `tl_user.modules` bzw.
+`tl_user_group.modules` ab.
+
 
 #### Die Methode `isAllowed()`
 
@@ -161,9 +166,8 @@ if ($objUser->isAllowed(6, $objPage->row())) {
 
 ## Frontend
 
-Auch im Frontend erfolgt die Benutzer-Authentifizierung automatisch, allerdings
-kann man nicht davon ausgehen, dass es immer einen authentifizierten Benutzer
-gibt.
+Auch im Frontend erfolgt die Authentifizierung automatisch, allerdings kann man
+nicht davon ausgehen, dass es immer ein authentifiziertes Mitglied gibt.
 
 
 ### Aufruf des Benutzer-Objektes
@@ -183,7 +187,7 @@ echo $this->User->username;
 Den Login-Status kann man über die Konstante `FE_USER_LOGGED_IN` abfragen:
 
 ``` {.php}
-if (FE_USER_LOGGED_IN) {
+if (FE_USER_LOGGED_IN === true) {
     $objUser = FrontendUser::getInstance();
     // es gibt einen authentifizierten Frontend-Benutzer
 } else {
@@ -204,8 +208,8 @@ if ($objUser->isMemberOf(3)) {
 }
 ```
 
-Ein Array der IDs aller Benutzergruppen, denen ein Benutzer angehört, lässt sich
-über das Feld `groups` abfragen:
+Ein Array der IDs aller Mitgliedergruppen, denen ein Mitglied angehört, lässt
+sich über das Feld `groups` abfragen:
 
 ``` {.php}
 print_r($objUser->groups);
