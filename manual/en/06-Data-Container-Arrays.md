@@ -911,7 +911,7 @@ model classes to load referenced data sets efficiently and developer friendly.
     <b>hasMany</b> Value references some child data sets
        (serialized)<br>
     <b>belongsTo</b> Value references a parent data set
-       (z.B. <code>pid</code>)<br>
+       (e.g. <code>pid</code>)<br>
     <b>belongsToMany</b> Value references some parent data sets
        (serialized)<br>
   </td>
