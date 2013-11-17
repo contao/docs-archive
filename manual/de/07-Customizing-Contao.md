@@ -31,12 +31,12 @@ bearbeiten müssen.
 // Das Task Center abschalten
 unset($GLOBALS['BE_MOD']['profile']['tasks']);
 
-### INSTALL TOOL START ###
+### INSTALL SCRIPT START ###
 $GLOBALS['TL_CONFIG']['debugMode'] = false;
 $GLOBALS['TL_CONFIG']['displayErrors'] = false;
 ```
 
-Platzieren Sie Ihre Änderungen unbedingt oberhalb der Zeile `INSTALL TOOL
+Platzieren Sie Ihre Änderungen unbedingt oberhalb der Zeile `INSTALL SCRIPT
 START`, da sie andernfalls automatisch entfernt werden. Und **speichern Sie Ihre
 Einstellungen niemals in der Datei config.php**, da diese Datei bei
 Aktualisierungen überschrieben werden kann!
