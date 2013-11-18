@@ -257,7 +257,7 @@ extension includes 4 front end modules:
 Each news item has a unique URL (permalink) that can be used to reference it:
 
 ```
-http://www.domain.com/news/items/james-wilson-returns.html
+http://www.example.com/news/items/james-wilson-returns.html
 ```
 
 The above URL requests the news item "james-wilson-returns" via the page "news".
@@ -325,7 +325,7 @@ extension includes 4 front end modules:
 Each event has a unique URL (permalink) that can be used to reference it:
 
 ```
-http://www.domain.com/event-reader/events/final-exams.html
+http://www.example.com/event-reader/events/final-exams.html
 ```
 
 The above URL requests the event "final-exams" via the page "events". Remember
@@ -450,7 +450,7 @@ up on the website.
 Each newsletter has a unique URL (permalink) that can be used to reference it:
 
 ```
-http://www.domain.com/newsletters/items/james-wilson-returns.html
+http://www.example.com/newsletters/items/james-wilson-returns.html
 ```
 
 The above URL requests the newsletter "james-wilson-returns" via the page
