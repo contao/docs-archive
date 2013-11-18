@@ -11,7 +11,7 @@ Um Insert-Tags nutzen zu können und demzufolge auch eigene anzubieten, gibt es 
 Um eine eigenen Insert-Tag zu erstellen muss man den Ablauf kennen:
 1. Contao parsed einen Seitenaufruf und stößt dabei auf ein Insert-Tag
 2. Contao probiert dieses Insert-Tag mit den Core-Möglichkeiten zu ersetzen
-3. Wenn Contao den Insert-Tag nicht kennt, wird es an den Hook "replaceInsertTags" weitergereicht. 
+3. Wenn Contao den Insert-Tag nicht kennt, wird es an den Hook"replaceInsertTags" weitergereicht. 
 
 Dieser Hook erhält das unbekannte Insert-Tag als Parameter. Der Entwickler muss nun prüfen ob er das unbekannte Insert-Tag ersetzen möchte. Wenn ja, gibt er einen beliebigen Content zurück.
 Wenn der Entwickler nichts mit dem unbekannten Insert-Tag anfangen kann, so muss `false` zurück gegeben werden. Wird das nicht getan, ist die gesamte Hook Kette unterbrochen, nachfolgende Erweiterungen die ebenfalls Insert-Tag anbieten werden dann nicht mehr aufgerufen!
