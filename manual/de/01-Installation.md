@@ -315,7 +315,7 @@ Hack benötigen oder nicht. Je nach Systemkonfiguration können Sie mit Hilfe de
 Web-Installers eine neue Contao-Installation aufsetzen oder eine bestehende
 Installation prüfen.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/contao-check-de.jpg)
+![](https://raw.github.com/contao/docs/3.1/manual/de/images/contao-check.jpg)
 
 Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
 `check` in Ihr Contao-Verzeichnis und öffnen Sie ihn in einem Browser.
