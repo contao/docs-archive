@@ -31,10 +31,10 @@ rarement besoin de le modifier manuellement.
 
 
 ``` {.php}
-// Désactive le gestionnaire de tâches
-unset($GLOBALS['BE_MOD']['profile']['tasks']);
+// Désactive le créateur d'extension
+unset($GLOBALS['BE_MOD']['devtools']['extension']);
 
-### INSTALL TOOL START ###
+### INSTALL SCRIPT START ###
 $GLOBALS['TL_CONFIG']['debugMode'] = false;
 $GLOBALS['TL_CONFIG']['displayErrors'] = false;
 ```

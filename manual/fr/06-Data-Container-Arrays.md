@@ -60,18 +60,6 @@ données sont éditées ou supprimées.
   local) ou Folder (gestionnaire de fichiers).</td>
 </tr>
 <tr>
-  <td>validFileTypes</td>
-  <td>Types de fichiers (<code>string</code>)</td>
-  <td>Une liste d'extensions de fichiers valides, séparées par des virgules 
-  (ne s'applique qu'aux arborescences de fichiers).</td>
-</tr>
-<tr>
-  <td>uploadScript</td>
-  <td>Nom du fichier (<code>string</code>)</td>
-  <td>Nom du script FancyUpload dans le répertoire system/config (sans 
-  l'extension de fichier).</td>
-</tr>
-<tr>
   <td>closed</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Si true, vous ne pouvez plus rajouter d'enregistrement dans cette 
@@ -143,6 +131,20 @@ données sont éditées ou supprimées.
   <td>Appelle une fonction personnalisée lorsqu'un enregistrement est dupliqué, 
   et passe l'objet DataContainer en argument. Ajoutée à partir de la version 
   2.8.2 de Contao.</td>
+</tr>
+<tr>
+  <td>onversion_callback</td>
+  <td>Fonction callback (<code>array</code>)</td>
+  <td>Appelle une fonction personnalisée lorsqu'une nouvelle version d'un 
+  enregistrement est créée et passe la table, l'ID d'insertion et l'objet 
+  DataContainer en arguments.</td>
+</tr>
+<tr>
+  <td>onrestore_callback</td>
+  <td>Fonction callback (<code>array</code>)</td>
+  <td>Appelle une fonction personnalisée lorsqu'une version d'un enregistrement
+  est restaurée et passe l'ID d'insertion, la table, le tableau de données et 
+  la version en arguments.</td>
 </tr>
 <tr>
   <td>sql</td>
