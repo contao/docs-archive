@@ -15,7 +15,7 @@ requires[] = "core"
 ### Konfiguration
 
 Die Schlüssel `register_namespaces`, `register_classes` und 
-`register_templates` bestimmen, ob der Autoload Generator diese Bereiche beim `autoload.php` generieren berücksichtigen soll.
+`register_templates` bestimmen, ob der Autoload Generator diese Bereiche beim generieren der `autoload.php` berücksichtigen soll.
 
 ``` {.ini}
 register_namespaces = true
