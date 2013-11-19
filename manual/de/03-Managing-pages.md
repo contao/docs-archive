@@ -314,8 +314,8 @@ Seitenstruktur markiert. Contao unterstützt folgende 6 Seitentypen:
 Contao unterstützt mehrere Webseiten innerhalb der Seitenstruktur und leitet
 Besucher je nach DNS- und Spracheinstellungen automatisch auf einen bestimmten
 Startpunkt einer Webseite weiter. Nehmen wir an, Sie betreiben eine
-zweisprachige Firmenwebseite unter "www.firma.de" und eine kleine private
-Webseite unter der Domain "www.private-seite.de". Sie benötigen dafür drei
+zweisprachige Firmenwebseite unter "www.example.com" und eine kleine private
+Webseite unter der Domain "www.personal.example.org". Sie benötigen dafür drei
 Startpunkte:
 
 <table>
@@ -355,22 +355,22 @@ Domain und seiner Browsersprache weitergeleitet wird.
   <th>Weiterleitung</th>
 </tr>
 <tr>
-  <td>www.firma.de</td>
+  <td>www.example.com</td>
   <td>Englisch</td>
   <td>Englische Firmenseite</td>
 </tr>
 <tr>
-  <td>www.firma.de</td>
+  <td>www.example.com</td>
   <td>Deutsch</td>
   <td>Deutsche Firmenseite</td>
 </tr>
 <tr>
-  <td>www.firma.de</td>
+  <td>www.example.com</td>
   <td>Spanisch</td>
   <td>Englische Firmenseite</td>
 </tr>
 <tr>
-  <td>www.private-seite.de</td>
+  <td>www.personal.example.org</td>
   <td>egal</td>
   <td>Persönliche Webseite</td>
 </tr>
