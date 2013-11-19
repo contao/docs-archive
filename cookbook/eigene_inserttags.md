@@ -22,7 +22,7 @@ in Contao einen Hook "replaceInsertTags ". Um einen eigenen Inserttag zu
 erstellen muss man den Ablauf kennen:
 
 1. Contao parst den Seiteninhalt und stößt dabei auf ein Inserttag
-2. Contao versucht dieses Inserttag mit den Core-Möglichkeiten zu ersetzen
+2. Contao versucht diesen Inserttag mit den Core-Möglichkeiten zu ersetzen
 3. Wenn Contao den Inserttag nicht kennt, wird es an den Hook
     "replaceInsertTags" weitergereicht.
 
@@ -86,7 +86,7 @@ ermöglicht, wenn der Parameter "bar" nicht angegeben wurde.
 
 Damit Contao 3 nun die Klasse findet, muss nun im Backend der Autoload
 Generator für dieses Modul aufgerufen werden, um die autoload.php im config
-Verzeichniszu generieren.
+Verzeichnis zu generieren.
 
 
 ## Code-Beispiel mit Namespace
