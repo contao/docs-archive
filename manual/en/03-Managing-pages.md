@@ -390,8 +390,8 @@ supports 6 different page types which are explained below.
 Contao supports multiple websites within the site structure and automatically
 redirects visitors to a particular website root page depending on its DNS and
 language settings. Let us assume that you are running a bilingual corporate
-website which uses the domain "www.company.com" and a small private website
-which uses the domain "www.personal-website.com". You need three website root
+website which uses the domain "www.example.com" and a small private website
+which uses the domain "www.personal.example.org". You need three website root
 pages for that:
 
 <table>
@@ -431,22 +431,22 @@ on the domain and his browser language.
   <th>Redirect target</th>
 </tr>
 <tr>
-  <td>www.company.com</td>
+  <td>www.example.com</td>
   <td>English</td>
   <td>English corporate website</td>
 </tr>
 <tr>
-  <td>www.company.com</td>
+  <td>www.example.com</td>
   <td>German</td>
   <td>German corporate website</td>
 </tr>
 <tr>
-  <td>www.company.com</td>
+  <td>www.example.com</td>
   <td>Spanish</td>
   <td>English corporate website</td>
 </tr>
 <tr>
-  <td>www.personal-website.com</td>
+  <td>www.personal.example.org</td>
   <td>irrelevant</td>
   <td>Personal website</td>
 </tr>
