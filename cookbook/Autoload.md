@@ -1,5 +1,14 @@
 # Autoloading
 
+## Hinweis
+Der Contao Autoloader unterstützt Namespaces nach dem Schema
+`VendorExample\ClassXY`, dh. einen Vendorprefix und den Klassennamen,
+längere Namespaces werden nicht unterstützt. Die Klassen werden
+im Rootnamespace registriert, so dass sie per`\ClassXY`verfügbar ist, damit ist
+es möglich sämtliche Core Klassen, oder auch jene von anderen Erweiterungen zu
+überschreiben. Es ist kein Autoloading nach PSR-0 möglich.
+
+## Wo befinden sich die Definitionen?
 Die Definitionen zum Autoloader befinden sich innerhalb jeder Erweiterung
 im Verzeichnis `config`
 
