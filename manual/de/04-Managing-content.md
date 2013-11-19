@@ -289,7 +289,7 @@ Jede Nachricht hat eine eindeutige URL (Permalink), die zur Referenzierung des
 Beitrags verwendet werden kann:
 
 ```
-http://www.domain.com/news/items/james-wilson-returns.html
+http://www.example.com/news/items/james-wilson-returns.html
 ```
 
 Die oben genannte URL fordert den Beitrag "james-wilson-returns" auf der Seite
@@ -356,7 +356,7 @@ Jeder Termin hat eine eindeutige URL (Permalink), die zur Referenzierung des
 Events verwendet werden kann:
 
 ```
-http://www.domain.com/event-reader/events/final-exams.html
+http://www.example.com/event-reader/events/final-exams.html
 ```
 
 Die oben genannte URL fordert den Event "final-exams" auf der Seite "events" an.
@@ -509,7 +509,7 @@ Jeder Newsletter hat eine eindeutige URL (Permalink), die zur Referenzierung der
 Nachricht verwendet werden kann:
 
 ```
-http://www.domain.com/newsletters/items/james-wilson-returns.html
+http://www.example.com/newsletters/items/james-wilson-returns.html
 ```
 
 Die obige URL fordert den Newsletter "james-wilson-returns" auf der Seite
