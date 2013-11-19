@@ -51,7 +51,7 @@ können die Methoden auch dort eingefügt werden.
 class myClass
 {
     /**
-     * Aendert das Aussehen der Toogel-Buttons.
+     * Aendert das Aussehen der Toggel-Buttons.
      * @param $row
      * @param $href
      * @param $label
