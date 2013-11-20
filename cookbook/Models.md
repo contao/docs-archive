@@ -44,15 +44,48 @@ Die statische Basismethode `find($arrData)` ermöglicht eine genaue Spezifizieru
 ### Methode: find($arrData)
 Die Methode akzeptiert ein Array mit folgenden Array-Keys:
 
-| key       |  type  | Beschreibung |
-|--         | --     | -- |
-| column	| array  | Feld(er) zur Selektion (WHERE) |
-| value     | array  | Wert(e) zur Selektion (WHERE)  |
-| limit     | int	 | Beschränkt die Ergebnismenge (LIMIT) |
-| offset    | int    | Offset einer beschränkten Ergebnismenge (LIMIT) |
-| order     | string | Sortierung der Ergebnismenge (ORDER BY) |
-| eager     | bool   | Lädt die referenzierten Datensätze durch einen JOIN |
-| return    | string | Gültige Werte: Model,Collection Legt fest, ob eine Collection-Intanz (default) oder eine Model-Instanz zurück gegeben wird. |
+<table>
+	<tr>
+		<th>key</th>
+		<th>type</th>
+		<th>Beschreibung</th>
+	<tr>
+	<tr>
+		<td>column</td>
+		<td>array</td>
+		<td>Feld(er) zur Selektion (WHERE)</td>
+	</tr>
+	<tr>
+		<td>value</td>
+		<td>array</td>
+		<td>Wert(e) zur Selektion (WHERE)</td>
+	</tr>
+	<tr>
+		<td>limit</td>
+		<td>int</td>
+		<td>Beschränkt die Ergebnismenge (LIMIT)</td>
+	</tr>
+	<tr>
+		<td>offset</td>
+		<td>int</td>
+		<td>Offset einer beschränkten Ergebnismenge (LIMIT)</td>
+	</tr>
+	<tr>
+		<td>order</td>
+		<td>string</td>
+		<td>Sortierung der Ergebnismenge (ORDER BY)</td>
+	</tr>
+	<tr>
+		<td>eager</td>
+		<td>bool</td>
+		<td>Lädt die referenzierten Datensätze durch einen JOIN</td>
+	</tr>
+	<tr>
+		<td>return</td>
+		<td>string</td>
+		<td>Gültige Werte: Model,Collection Legt fest, ob eine Collection-Intanz (default) oder eine Model-Instanz zurück gegeben wird.</td>
+	</tr>
+</table>
 
 ### Getter & Setter
 Um auf den Wert einer Spalte einer Entität zuzugreifen benutzt Contao die *Magic-Methods* `__get($key)` und `__set($key, $value)`. Diese werden von PHP immer dann aufgerufen, wenn der Zugriff auf ein nicht existierendes Klassen-Attribut erfolgt. Contao gibt dann die Werte des Datensatzes zurück, bzw. setzt diese.
@@ -71,7 +104,7 @@ $objectArticleModel->save(); // speichert die Änderung des Datensatzes in die D
 
 #### `row()` 
 Gibt alle Werte des Datensatzes als assoziatives Array zurück.
-``` {.php} 
+```{.php} 
 print_r($objectArticelModel->row());
 // Array (
 //           [id] => 12,
@@ -83,7 +116,7 @@ print_r($objectArticelModel->row());
 
 #### array `setRow()`
 Setzt alle Werte des Datensatzes anhand des übergebenen assoziativen Arrays
-``` {.php} 
+```{.php} 
 $objectArticelModel->setRow(array
 (
   'id' => 12,
@@ -101,13 +134,13 @@ Der optionale Parameter `$blnForceInsert` erzeugt einen neuen Datensatz, selbst 
 #### static `countBy($strColumn=null, $varValue=null)`
 Gibt die Anzahl der Datensätzen, die in der Spalte `$strColumn` den Wert `SstrValue` enthalten zurück. 
 
-``` {.php}
+```{.php}
 // Zählt die Anzahl der Datensätze die in der Spalte pid den Wert 2 enthalten
 echo ArticelModel::countBy('pid', 2);
 // 2
 ```
 
-`countAll()`
+#### `countAll()`
 Gibt die Anzahl aller Datensätze der Tabelle zurück.
 
 ### preSave / preFind / postFind
@@ -120,7 +153,7 @@ Die statischen Methoden `preSave`, `preFind`, `postFind` können von einer konkr
 ### Instanziierung
 Eine `Collection` Instanz wird durch die `find($arr)` Methode  (bzw. `findAll($arr)`, `findBy($col, $val)`, usw.) instanziiert.   
 
-``` {.php}
+```{.php}
 // Finde alle Artikel WHERE pid=2
 $objArticles = \ArticleModel::findByPid(2);
 // alternativ
@@ -155,3 +188,119 @@ $objArticles = \ArticleModel::find(
 ```
 
 ### Zugriff
+
+**ACHTUNG**: Es gibt keine leere *Collection*! Werden keine Datensätze gefunden, ist der Rückgabewert von `find()` bzw. `findAll()` gleich `null`! Es ist **kein** *Collection* Object!
+
+```{.php}
+// Fetch all published Articles
+$objArticles = \ArticleModel::findAll(array('column'=>'published', 'value'=>'1'));
+
+echo "Found ".$objArticles->count().' articles <br>';
+
+// Useing the IteratorAggregate interface
+foreach($objArticles as $objArticle) {
+	echo $objArticle->title.'<br>';
+}
+
+// Using the iterator methods
+while($objArticles->next()) {
+	echo $objArticles->current()->title.'<br>';
+}
+
+```
+
+## Referenzierte Datensätze
+
+Ein Contao *Model* kann auf refernzierte Datensätze zugreifen. Beispiel: Artikel->Autor. Damit Contao diese Referenzen auflösen kann, muss dem *Model* ein `DCA` zugeordnet sein. Sie ist normalerweise identisch mit dem Namen der Tabelle.
+
+```{.php}
+class ArticleModel extends \Model
+{
+	/**
+	 * Table name
+	 * @var string
+	 */
+	protected static $strTable = 'tl_article';
+...
+```
+
+Im `DCA` wird die Relation anhand der `foreignKey` und `relation` Keys definiert:
+```{.php}
+$GLOBALS['TL_DCA']['tl_article'] = array
+(
+...
+// Fields
+	'fields' => array
+	(
+		'pid' => array
+		(
+			'sql'                     => "int(10) unsigned NOT NULL default '0'",
+            // Relation definition for `pid`
+			'foreignKey'              => 'tl_page.title',
+			'relation'                => array('type'=>'belongsTo', 'load'=>'lazy')
+		),
+		'author' => array
+		(
+			'label'                   => &$GLOBALS['TL_LANG']['tl_article']['author'],
+			'exclude'                 => true,
+			'inputType'               => 'select',
+			'sql'                     => "int(10) unsigned NOT NULL default '0'",
+            // Relation definition for `author`
+			'foreignKey'              => 'tl_user.name',
+			'relation'                => array('type'=>'hasOne', 'load'=>'eager')
+		),
+```
+Im oberen Beispiel wird eine Relation für die Spalte `pid` auf die Tabelle `tl_page` festgelegt.
+Die Datensätze werden *lazy*, d.h. erst bei Bedarf geladen. Die Relation für `author` zur Tabelle `tl_user` wird
+dagege *eager*, also durch einen SQL-JOIN geladen.
+
+Contao versucht die Klasse des referenzierten Models anhand des Namens der Tabelle zu finden. Bsp.: 
+```
+tl_page => \PageModel
+tl_form_field => \FormFieldModel
+```
+Folgt die Implementierung nicht dieser Konvention oder befindet sich die Model-Klasse nicht im globalen Namenspace, muss die entsprechende Klasse konfiguriert werden:
+```{.php}
+$GLOBALS['TL_MODELS']['tl_my_table'] = 'MyNamespace\TblModel';
+```
+
+### Relations-Typen
+
+#### load
+<table>
+	<tr>
+		<td>**eager**</td>
+        <td>Wird ein in Beziehung stehendes Objekt „eager“ geladen, erstellt der QueryBuilder automatisch ein JOIN-Query und lädt die Objekte in einer einzigen Datenbank-Abfrage.</td>
+    </tr>
+	<tr>
+		<td><b>lazy</b></td>
+    	<td>Wird ein in Beziehung stehendes Objekt „lazy“ geladen, wird es erst auf Anfrage in einer separaten Datenbank-Abfrage nachgeladen.</td>
+    </tr>
+</table>
+
+#### type
+<table>
+	<tr>
+		<td><b>belongsToMany</b></td>
+        <td>Referenz auf einen Elterndatensatz (z.B. pid)</td>
+    </tr>
+	<tr>
+		<td><b>belongsTo</b></td>
+        <td> Referenz auf mehrere Elterndatensätze (z.B. serialized)</td>
+    </tr>
+	<tr>
+		<td><b>hasOne</b></td>
+        <td> Referenz auf ein Kinddatensatz (z.B. Artikel hat einen Autor)</td>
+    </tr>
+	<tr>
+		<td><b>hasMany</b></td>
+        <td>Referenz auf mehrere Kinddatensätze (z.B. Galerie hat mehrere Bilder)</td>
+    </tr>
+</table>
+
+
+## Weiterführende Informationen
+
+* [API-Doku Model Klasse](http://api.contao.org/v3/classes/Contao.Model.html)
+* [API-Doku Collection Klasse](http://api.contao.org/v3/classes/Contao.Model.Collection.html)
+* [Foliensatz Entwickler-Workshop der Konferenz 2012](https://contao.org/files/conference/conference-2012/papers/Entwickler-Workshop.pdf)
