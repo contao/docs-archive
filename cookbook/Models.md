@@ -40,6 +40,32 @@ Diese Methoden existieren für jedes Feld der Tabelle. Bsp: `findOneByName()`.
 Best practice ist `findOneBy($col, $val)` zu nutzen.
 Die statische Basismethode `find($arrData)` ermöglicht eine genaue Spezifizierung der Anfrage. Alle anderen *find*-Methoden benutzen implizit *find()*.
 
+### Model-Registry
+
+Contao besitzt ab Version 3.2 eine *Model-Registry*. Das bedeutet das die selbe Instanz eines Models zurückgegeben wird, sofern der Primärschlüssel übereinstimmt. 
+
+```{.php}
+$objArticle = \ArticleModel::findByPk(1);
+$objArticle2 = \ArticleModel::findByPk(1);
+
+var_dump($objArticle === $objArticle2); // true
+
+echo $objArticle->title; // Home
+$objArticle2->title = 'Home2';
+echo $objArticle->title; // Home2
+```
+
+Das ist vor allem wichtig, wenn Änderungen im Model vorgenommen werden.
+Sollen Änderungen nur *local* verfügbar sein, muss eine Kopie der Instanz erzeugt werden:
+```{.php}
+$objArticle = \ArticleModel::findByPk(1);
+echo $objArticle->title; // Home
+
+$objArticle2 = clone $objArticle;
+$objArticle2->title = 'Home2';
+echo $objArticle->title; // Home2
+```
+
 
 ### Methode: find($arrData)
 Die Methode akzeptiert ein Array mit folgenden Array-Keys:
@@ -127,9 +153,9 @@ $objectArticelModel->setRow(array
 ));
 ```
 
-#### `save($blnForceInsert=false)`
+#### `save()`
 Speichert alle Änderungen in der Datenbank.
-Der optionale Parameter `$blnForceInsert` erzeugt einen neuen Datensatz, selbst wenn das Attribut `$id` gesetzt ist. 
+
 
 #### static `countBy($strColumn=null, $varValue=null)`
 Gibt die Anzahl der Datensätzen, die in der Spalte `$strColumn` den Wert `SstrValue` enthalten zurück. 
@@ -269,7 +295,7 @@ $GLOBALS['TL_MODELS']['tl_my_table'] = 'MyNamespace\TblModel';
 #### load
 <table>
 	<tr>
-		<td>**eager**</td>
+		<td><b>eager</b></td>
         <td>Wird ein in Beziehung stehendes Objekt „eager“ geladen, erstellt der QueryBuilder automatisch ein JOIN-Query und lädt die Objekte in einer einzigen Datenbank-Abfrage.</td>
     </tr>
 	<tr>
@@ -301,6 +327,6 @@ $GLOBALS['TL_MODELS']['tl_my_table'] = 'MyNamespace\TblModel';
 
 ## Weiterführende Informationen
 
-* [API-Doku Model Klasse](http://api.contao.org/v3/classes/Contao.Model.html)
-* [API-Doku Collection Klasse](http://api.contao.org/v3/classes/Contao.Model.Collection.html)
+* [API-Doku Model Klasse](http://api.contao.org/classes/Contao.Model.html)
+* [API-Doku Collection Klasse](http://api.contao.org/classes/Contao.Model.Collection.html)
 * [Foliensatz Entwickler-Workshop der Konferenz 2012](https://contao.org/files/conference/conference-2012/papers/Entwickler-Workshop.pdf)
