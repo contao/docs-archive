@@ -43,11 +43,11 @@ das Modul "myinserttag". Als erstes muss der Hook registriert werden.
 ``` {.php}
 // Datei /system/modules/myinserttag/config/config.php
  
- // Registrieren im Hooks replaceInsertTags
+// Registrieren im Hooks replaceInsertTags
 $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MyClass', 'myReplaceInsertTags');
 ```
 
-Nach der Registrierung im Hook, muss eine Klasse erstellt werden, welche eine
+Nach der Registrierung im Hook muss eine Klasse erstellt werden, welche die
 Methode zur Ersetzung beinhaltet. Dabei muss der Name der Klasse und der
 Methode identisch sein wie bei der Hook Registration. Außerdem muss der Name
 der Datei (ohne Endung) identisch sein wie der Name der Klasse.
@@ -67,11 +67,14 @@ class MyClass extends Frontend
             //nicht unser Inserttag
             return false;
         }
+        
         // Parameter angegeben?
         if (isset($arrSplit[1]) && $arrSplit[1] == 'bar')
         {
             return 'Parameter bar';
-        } else {
+        }
+        else
+        {
             return 'Fehler! foo ohne Parameter!';
         }
     }
@@ -82,4 +85,4 @@ Wenn man einen zweigeteilten Inserttag verwendet, splittet man den Tag mittels
 `explode` anhand des Gültigkeitsbereichsoperator  `::`.  Die geschweiften
 Klammern werden bereits von Contao entfernt und müssen daher nicht mehr
 entfernt werden. Im Code-Beispiel wurde zusätzlich noch eine Ausgabe
-ermöglicht, wenn der Parameter "bar" nicht angegeben wurde.
+erzeugt, wenn der Parameter "bar" nicht angegeben wurde.
