@@ -426,7 +426,7 @@ Startpunkte:
 </tr>
 <tr>
   <td>Private Webseite</td>
-  <td>private-seite.de</td>
+  <td>www.personal.example.org</td>
   <td>de</td>
   <td>ja</td>
 </tr>
