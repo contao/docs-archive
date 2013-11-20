@@ -17,13 +17,13 @@ Beides wird im Code-Beispiel erläutert.
 
 ## Eigene Inserttags erstellen  
 
-Um Inserttags nutzen zu können und demzufolge auch eigene Inserttags
-anzubieten, gibt es in Contao einen Hook "replaceInsertTags ". Um eine eigenen
-Inserttag zu erstellen muss man den Ablauf kennen:
+Um Inserttags nutzen zu können und demzufolge auch eigene anzubieten, gibt es
+in Contao einen Hook "replaceInsertTags ". Um einen eigenen Inserttag zu
+erstellen muss man den Ablauf kennen:
 
-1. Contao parst den Seiteninhalt und stößt dabei auf einen Inserttag
-2. Contao versucht diesen Inserttag mit den Core-Möglichkeiten zu ersetzen 
-3. Wenn Contao den Inserttag nicht kennt, wird es an den Hook 
+1. Contao parst den Seiteninhalt und stößt dabei auf ein Inserttag
+2. Contao versucht diesen Inserttag mit den Core-Möglichkeiten zu ersetzen
+3. Wenn Contao den Inserttag nicht kennt, wird es an den Hook
     "replaceInsertTags" weitergereicht.
 
 Dieser Hook erhält das unbekannte Inserttag als Parameter. Der Entwickler
@@ -82,7 +82,7 @@ class MyClass extends Frontend
  ```
 
 Wenn man einen zweigeteilten Inserttag verwendet, splittet man den Tag mittels
-`explode` anhand des Gültigkeitsbereichsoperator  `::`.  Die geschweiften
+`explode` anhand des Gültigkeitsbereichsoperator  `::`. Die geschweiften
 Klammern werden bereits von Contao entfernt und müssen daher nicht mehr
 entfernt werden. Im Code-Beispiel wurde zusätzlich noch eine Ausgabe
 erzeugt, wenn der Parameter "bar" nicht angegeben wurde.
