@@ -9,6 +9,19 @@ quel comportement du cœur de Contao sans même toucher ses fichiers, ainsi vous
 n'avez pas à réappliquer vos changements à chaque mise à jour. 
 
 
+## Contourner le cache interne
+
+Avant de développer des extensions pour Contao, vous devez contourner le cache 
+interne. Si vous voulez contourner le cache interne, Suivez les liens 
+"Système" -> "Configuration" et cochez la case "Contourner le cache interne" 
+sous "Configuration globale".
+
+![](https://raw.github.com/contao/docs/3.1/manual/fr/images/contourner-cache-interne.jpg)
+
+Dès que le site internet sera en production, vous devrez décocher la case 
+"Contourner le cache interne", afin de réduire au maximum le temps de réponse.
+
+
 ## Configurations personnalisées
 
 La configuration de Contao est définie dans un grand tableau divisé en trois 
@@ -114,31 +127,17 @@ extension `custom` si vous souhaitez redéfinir les configurations de
 l'extension `news`.
 
 
-### Étendre la base de données
-
-La configuration de la base de données est enregistrée dans les fichiers 
-`config/database.sql` des différents modules de Contao. Les fichiers SQL ne 
-sont pas envoyés à la base de données, mais utilisés pour évaluer les 
-différences entre les spécifications de Contao et les tables existantes de la 
-base. Vous devez donc également modifier les champs définis par un autre module 
-dans le fichier `database.sql`. Ajoutez le code suivant pour créer le nouveau 
-champ :
-
-``` {.sql}
-CREATE TABLE `tl_member`(
-  `customer_number` varchar(8) NOT NULL default ''
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-```
-
-Utilisez l'[outil d'installation de Contao][3] pour mettre à jour les tables de 
-votre base de données. 
-
-
 ### Étendre le DCA (tableau conteneur de données)
 
 Créez le fichier `dca/tl_member.php` dans le répertoire de votre module et 
 ajoutez-y les métadonnées pour le nouveau champ, afin que Contao sache comment 
-le gérer. 
+le gérer.
+
+À partir de la version 3 de Contao, vous pouvez également spécifier directement 
+les champs correspondants et leur configuration pour la base de données dans le 
+tableau conteneur de données sous `sql`. Les détails SQL ne sont pas envoyés à 
+la base de données, mais sont utilisés pour calculer la différence entre les 
+spécifications de Contao et les tables existantes.
 
 ``` {.php}
 // Modification de la palette
@@ -149,18 +148,23 @@ $GLOBALS['TL_DCA']['tl_member']['palettes']['default'] = str_replace
     $GLOBALS['TL_DCA']['tl_member']['palettes']['default']
 );
 
-// Ajoute les méta-données du champ
+// Ajoute les métadonnées du champ
 $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 (
     'label'     => &amp;$GLOBALS['TL_LANG']['tl_member']['customer_number'],
     'exclude'   => true,
     'inputType' => 'text',
-    'eval'      => array('mandatory'=>true, 'rgxp'=>'digit', 'maxlength'=>8)
+    'eval'      => array('mandatory'=>true, 'rgxp'=>'digit', 'maxlength'=>8),
+    'sql'       => "varchar(8) NOT NULL default ''"
 );
 ```
 
 Si vous ne comprenez pas le code ci-dessus, il peut être utile de relire le 
 chapitre sur les [tableaux conteneurs de données][1].
+
+Après l'ajout ou la modification d'un champ dans le tableau conteneurs de 
+données, vous devriez utiliser l'[outil d'installation de Contao][3] afin de 
+mettre à jour les tables de votre base de données.
 
 
 ### Ajouter une traduction

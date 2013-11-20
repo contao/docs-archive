@@ -298,7 +298,7 @@ Chaque actualité a une URL unique (permalien) qui peut être utilisée pour
 la référencer :
 
 ```
-http://www.domain.com/news/items/james-wilson-returns.html
+http://www.example.com/news/items/james-wilson-returns.html
 ```
 
 L'URL ci-dessus sollicite l'actualité "james-Wilson-retours" via la page 
@@ -367,7 +367,7 @@ Chaque événement a une URL unique (permalien) qui peut être utilisée pour le
 référencer :
 
 ```
-http://www.domain.com/event-reader/events/final-exams.html
+http://www.example.com/event-reader/events/final-exams.html
 ```
 
 L'URL ci-dessus sollicite l'événement "final-exams" via la page "events". 
@@ -527,7 +527,7 @@ Chaque bulletin d'information a une URL unique (permalien) qui peut être
 utilisée pour le référencer :
 
 ```
-http://www.domain.com/newsletters/items/james-wilson-returns.html
+http://www.example.com/newsletters/items/james-wilson-returns.html
 ```
 
 L'URL ci-dessus sollicite le bulletin d'information "james-wilson-returns" via 

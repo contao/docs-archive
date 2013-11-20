@@ -410,8 +410,8 @@ Contao supporte plusieurs sites internet à l'intérieur de la structure de site
 et redirige automatiquement les visiteurs vers une racine de site particulière 
 en fonction du nom de domaine ou des réglages de langues. Imaginons par exemple 
 que vous deviez créer un site d'entreprise bilingue qui utilise le nom de 
-domaine "www.company.com" et un petit site personnel qui utilise le nom de 
-domaine "www.personal-website.com". Vous aurez besoin de trois pages racines 
+domaine "www.example.com" et un petit site personnel qui utilise le nom de 
+domaine "www.personal.example.org". Vous aurez besoin de trois pages racines 
 d'un nouveau site pour cela : 
 
 <table>
@@ -435,7 +435,7 @@ d'un nouveau site pour cela :
 </tr>
 <tr>
   <td>Site internet personnel</td>
-  <td>personal-website.com</td>
+  <td>www.personal.example.org</td>
   <td>de</td>
   <td>oui</td>
 </tr>
@@ -451,22 +451,22 @@ fonction du nom de domaine et de la langue de son navigateur.
   <th>Cible de redirection</th>
 </tr>
 <tr>
-  <td>www.company.com</td>
+  <td>www.example.com</td>
   <td>Anglais</td>
   <td>Site internet d'entreprise en Anglais</td>
 </tr>
 <tr>
-  <td>www.company.com</td>
+  <td>www.example.com</td>
   <td>Allemand</td>
   <td>Site internet d'entreprise en Allemand</td>
 </tr>
 <tr>
-  <td>www.company.com</td>
+  <td>www.example.com</td>
   <td>Espagnol</td>
   <td>Site internet d'entreprise en Anglais</td>
 </tr>
 <tr>
-  <td>www.personal-website.com</td>
+  <td>www.personal.example.org</td>
   <td>Non pertinent</td>
   <td>Site internet personnel</td>
 </tr>
