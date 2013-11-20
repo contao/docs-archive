@@ -329,4 +329,4 @@ $GLOBALS['TL_MODELS']['tl_my_table'] = 'MyNamespace\TblModel';
 
 * [API-Doku Model Klasse](http://api.contao.org/classes/Contao.Model.html)
 * [API-Doku Collection Klasse](http://api.contao.org/classes/Contao.Model.Collection.html)
-* [Foliensatz Entwickler-Workshop der Konferenz 2012](https://contao.org/files/conference/conference-2012/papers/Entwickler-Workshop.pdf)
+* [Foliensatz Entwickler-Workshop der Konferenz 2012](https://contao.org/files/conference/2012/papers/Entwickler-Workshop.pdf)
