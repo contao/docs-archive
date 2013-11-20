@@ -162,7 +162,7 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 Si vous ne comprenez pas le code ci-dessus, il peut être utile de relire le 
 chapitre sur les [tableaux conteneurs de données][1].
 
-Après l'ajout ou la modification d'un champ dans le tableau conteneurs de 
+Après l'ajout ou la modification d'un champ dans le tableau conteneur de 
 données, vous devriez utiliser l'[outil d'installation de Contao][3] afin de 
 mettre à jour les tables de votre base de données.
 
