@@ -415,7 +415,7 @@ pages for that:
 </tr>
 <tr>
   <td>Personal website</td>
-  <td>personal-website.com</td>
+  <td>www.personal.example.org</td>
   <td>de</td>
   <td>yes</td>
 </tr>
