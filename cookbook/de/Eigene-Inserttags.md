@@ -4,7 +4,7 @@ Nachfolgend wird beschrieben, wie man eigene Inserttags programmiert und
 welche Dinge dabei zu beachten sind.
 
 
-# Kurze Einführung 
+## Kurze Einführung 
 
 Contao bietet die Möglichkeit, mittels so genannter Inserttags (Platzhalter)
 beim Laden der Webseite bestimmte Inhalte zu ersetzen. Ist der Seiten Cache
@@ -15,7 +15,7 @@ Browser ersetzt wird mittels einem Präfix "cache_".
 Beides wird im Code-Beispiel erläutert.
 
 
-# Eigene Inserttags erstellen  
+## Eigene Inserttags erstellen  
 
 Um Inserttags nutzen zu können und demzufolge auch eigene Inserttags
 anzubieten, gibt es in Contao einen Hook "replaceInsertTags ". Um eine eigenen
@@ -35,7 +35,7 @@ Erweiterungen die ebenfalls Inserttags anbieten werden dann nicht mehr
 aufgerufen!
 
 
-# Code-Beispiel Contao 2 
+## Code-Beispiel
 
 In diesem Code-Beispiel soll der Inserttag {{foo::bar}} ersetzt werden durch
 das Modul "myinserttag". Als erstes muss der Hook registriert werden.
