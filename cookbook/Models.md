@@ -1,6 +1,6 @@
 # Models
 
-Ein *Model* repräsentiert einen Datensatz aue einer Tabelle (Entität). Models ersetzen weitgehend SQL-Statements und wrappen diese in Objekte und darüber hinaus bieten sie viele weitere Vorteile.
+Ein *Model* repräsentiert einen Datensatz aus einer Tabelle (Entität). Models ersetzen weitgehend SQL-Statements und wrappen diese in Objekte und darüber hinaus bieten sie viele weitere Vorteile.
 Mehrere Models werden durch eine *Collection* referenziert, dies entspricht einer SQL-Abfrage die mehr als eine Ergebniszeile liefert.
 Contao3 bietet - wenn dem Model eine DCA-Struktur zugeordnet ist - etwas Magic um referenzierte Datensätze zu laden. Beispiel: Der Author (`UserModel`) eines Artikels (`ArticleModel`).
 
@@ -32,7 +32,7 @@ $objArticleModel = \ArticleModel::find(
 ```
 
 Die oben verwendeten Methoden sind durch die `\Contao\Model` Klasse implementiert.
-Sie können intern von einem speziellen Model wie das *ArticleModel* genutzt werden um weitere Constraints in Methoden zu kapseln.
+Sie können intern von einem speziellen Model wie dem *ArticleModel* genutzt werden um weitere Constraints in Methoden zu kapseln.
 
 Bsp.: `ArticleModel::findPublishedById()`.
 *findOneByAlias()* ist eine virtuelle Methode um auf das *alias* Feld zu referenzieren.
@@ -42,7 +42,7 @@ Die statische Basismethode `find($arrData)` ermöglicht eine genaue Spezifizieru
 
 ### Model-Registry
 
-Contao besitzt ab Version 3.2 eine *Model-Registry*. Das bedeutet das die selbe Instanz eines Models zurückgegeben wird, sofern der Primärschlüssel übereinstimmt. 
+Contao besitzt ab Version 3.2 eine *Model-Registry*. Das bedeutet, dass die selbe Instanz eines Models zurückgegeben wird, sofern der Primärschlüssel übereinstimmt. 
 
 ```{.php}
 $objArticle = \ArticleModel::findByPk(1);
@@ -109,7 +109,7 @@ Die Methode akzeptiert ein Array mit folgenden Array-Keys:
 	<tr>
 		<td>return</td>
 		<td>string</td>
-		<td>Gültige Werte: Model,Collection Legt fest, ob eine Collection-Intanz (default) oder eine Model-Instanz zurück gegeben wird.</td>
+		<td>Gültige Werte: Model,Collection Legt fest, ob eine Collection-Instanz (default) oder eine Model-Instanz zurück gegeben wird.</td>
 	</tr>
 </table>
 
@@ -158,7 +158,7 @@ Speichert alle Änderungen in der Datenbank.
 
 
 #### static `countBy($strColumn=null, $varValue=null)`
-Gibt die Anzahl der Datensätzen, die in der Spalte `$strColumn` den Wert `SstrValue` enthalten zurück. 
+Gibt die Anzahl der Datensätzen, die in der Spalte `$strColumn` den Wert `SstrValue` enthalten, zurück. 
 
 ```{.php}
 // Zählt die Anzahl der Datensätze die in der Spalte pid den Wert 2 enthalten
