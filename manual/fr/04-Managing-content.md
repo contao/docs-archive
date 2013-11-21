@@ -1347,4 +1347,4 @@ Drapeaux disponibles :
 
 [1]: https://contao.org/en/extension-list.html
 [2]: http://fr.wikipedia.org/wiki/Opt_in
-[3]: 04-Managing-content.md#balises-d-insertion
+[3]: 04-Managing-content.md#balises-dinsertion

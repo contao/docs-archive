@@ -176,6 +176,6 @@ l'index de recherche manuellement.
 ![](https://raw.github.com/contao/docs/3.1/manual/fr/images/recreer-recherche-index.jpg)
 
 
-[1]: 03-Managing-pages.md#controle-d-acces
+[1]: 03-Managing-pages.md#contrôle-daccès
 [2]: https://contao.org/en/extension-list.html
-[3]: 01-Installation.md#l-outil-d-installation-de-contao
+[3]: 01-Installation.md#loutil-dinstallation-de-contao

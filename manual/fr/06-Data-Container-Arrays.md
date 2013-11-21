@@ -1167,4 +1167,4 @@ de Contao.
 </table>
 
 
-[1]: 02-Administration-area.md#liste-d-enregistrements
+[1]: 02-Administration-area.md#liste-denregistrements

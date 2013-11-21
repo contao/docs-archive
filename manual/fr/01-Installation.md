@@ -25,8 +25,8 @@ curl -L http://download.contao.org | tar -xzp
 
 ### L'outil d'installation de Contao
 
-Pour ouvrir l'outil d'installation de Contao, il suffit d'ajouter `/contao/
-install.php` à l'URL de votre installation de Contao. Notez que l'outil 
+Pour ouvrir l'outil d'installation de Contao, il suffit d'ajouter 
+`/contao/install.php` à l'URL de votre installation de Contao. Notez que l'outil 
 d'installation est protégé contre les attaques par force brute et sera bloqué si
 un mauvais mot de passe a été inséré trois fois de suite. Pour enlever le verrou,
 ouvrez le fichier `system/config/localconfig.php` dans un éditeur de texte, 
@@ -165,8 +165,8 @@ restaurer les fichiers que vous avez sauvegardés et enlever les éventuels
 fichiers inutilisés des versions antérieures de Contao.
 
 **Attention:** Si vous avez installé des extensions tierces, assurez-vous de 
-les sauvegarder et de les restaurer eux aussi, ou ne les écraser pas du tout. 
-Sinon, vous devrez réinstaller les modules et en fonction de l'extension que 
+les sauvegarder et de les restaurer eux aussi, ou ne les effacer pas du tout. 
+Sinon, vous devrez réinstaller les modules et, en fonction de l'extension, 
 vous pourriez finir par perdre des données !
 
 

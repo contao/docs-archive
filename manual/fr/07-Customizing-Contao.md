@@ -1183,7 +1183,7 @@ public function myValidateFormField(Widget $objWidget, $intId)
 
 [1]: 06-Data-Container-Arrays.md
 [2]: http://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1
-[3]: 01-Installation.md#l-outil-d-installation-de-contao
+[3]: 01-Installation.md#loutil-dinstallation-de-contao
 [4]: http://tinymce.moxiecode.com
-[5]: 07-Customizing-Contao.md#personnaliser-la-configuration-du-conteneur-de-donnees
+[5]: 07-Customizing-Contao.md#personnaliser-la-configuration-du-conteneur-de-données
 [6]: 06-Data-Container-Arrays.md#callbacks

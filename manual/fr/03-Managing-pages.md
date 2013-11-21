@@ -501,5 +501,5 @@ en écriture.
 [1]: https://contao.org/en/contao-themes-and-templates.html
 [2]: 03-Managing-pages.md#feuilles-de-style
 [3]: 03-Managing-pages.md#modules
-[4]: 03-Managing-pages.md#presentations-de-page
+[4]: 03-Managing-pages.md#présentations-de-page
 [5]: 04-Managing-content.md#articles
