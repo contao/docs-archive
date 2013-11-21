@@ -303,7 +303,7 @@ wobei wir für eine bessere Performance MySQL 5 empfehlen. Außerdem benötigen
 Sie die PHP-Erweiterungen "GDlib" (Bildbearbeitung), "DOM" (XML-Dateien) und
 "SOAP" (Extension Repository) sowie optional "mbstring" (internationale Zeichen)
 und "mcrypt" (Verschlüsselung). Contao wurde erfolgreich in allen modernen
-Browsern wie Firefox (ab Version 2) oder Internet Explorer (ab Version 7) getestet.
+Browsern wie Firefox (ab Version 2) oder Internet Explorer (ab Version 8) getestet.
 
 
 ### Der Contao-Check

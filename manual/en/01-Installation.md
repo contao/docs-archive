@@ -289,7 +289,7 @@ extensions "GDlib" (image resizing), "DOM" (XML files) and "SOAP"
 (Extension Repository) and optionally "mbstring" (multi-byte character handling)
 and "mcrypt" (data encryption). Contao has been tested successfully with
 all major browsers like Firefox (from version 2) or Internet Explorer
-(from version 7).
+(from version 8).
 
 
 ### The Contao check
