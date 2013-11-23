@@ -1,6 +1,8 @@
 # Die Toggle-Funktion in eigenen Erweiterungen nutzen
 
-Die Toggle-Funktion wird in Contao in der Regel durch ein grüne Auge symbolisiert und dient dem schnellen ein- und ausblenden von Datensätzen über die Listenansicht.
+Die Toggle-Funktion wird in Contao in der Regel durch ein grüne Auge 
+symbolisiert und dient dem schnellen ein- und ausblenden von Datensätzen 
+über die Listenansicht.
 
 Es sind drei Schritte nötig: 
 
@@ -21,11 +23,12 @@ $GLOBALS['TL_DCA']['tl_test']['list']['operations']['toggle'] = array(
 ```
 *`tl_test` ist durch den Namen der Tabelle zu ersetzen!*
 
+
 ## 2. Einfügen eines Feldes in die Datenbank und DCA
 
-Als erstes wird ein Feld in der Tabelle und eine entsprechende Konfiguration im DCA angelegt. 
-Seit Contao 3 wird keine `database.sql` mehr benötigt. Die SQL-Definitionen werden direkt im 
-DCA implementiert.
+Als erstes wird ein Feld in der Tabelle und eine entsprechende Konfiguration 
+im DCA angelegt. Seit Contao 3 wird keine `database.sql` mehr benötigt. Die 
+SQL-Definitionen werden direkt im DCA implementiert.
 
 ```{.php}
 $GLOBALS['TL_DCA']['tl_example']['list']['operations']['published'] = array
@@ -40,11 +43,12 @@ $GLOBALS['TL_DCA']['tl_example']['list']['operations']['published'] = array
 
 *`tl_example` ist durch den Namen der Tabelle zu ersetzen!*
 
+
 ## 3. Erstellen einer Methode, die das Icon gemäß dem Status setzt
 
-Nun wird eine Methode erstellt, die das Icon anhand des Status setzt. Hier für wird eine 
-eigene Klasse angelegt. Wenn bereits eine Klasse mit anderen Callbacks o.ä. vorhanden ist, 
-können die Methoden auch dort eingefügt werden.
+Nun wird eine Methode erstellt, die das Icon anhand des Status setzt. Hier für 
+wird eine eigene Klasse angelegt. Wenn bereits eine Klasse mit anderen 
+Callbacks o.ä. vorhanden ist, können die Methoden auch dort eingefügt werden.
 
 ```{.php}
 
@@ -88,10 +92,12 @@ class myClass
 }
 ```
 
+
 ## 4. Erstellen einer Methode, die den Status in der Datenbank setzt
 
-In der Methode `toggleIcon` wird die Methode `toggleVisibility` da diese über `$this->toggleVisibility()` 
-aufgerufen wird, muss sie in der gleichen KLasse liegen. Die Klasse wird in dem Beilspiel nicht noch einmal 
+In der Methode `toggleIcon` wird die Methode `toggleVisibility` da diese über 
+`$this->toggleVisibility()` aufgerufen wird, muss sie in der gleichen KLasse 
+liegen. Die Klasse wird in dem Beilspiel nicht noch einmal 
 aufgeführt.
 
 ```{.php}
