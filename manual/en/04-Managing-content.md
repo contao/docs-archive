@@ -628,7 +628,7 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 </table>
 
 
-## Custom templates
+## Templates
 
 A template is mainly composed of HTML and PHP code. It is used to structure a 
 piece of content of a module or a content element, etc. For example, the 
