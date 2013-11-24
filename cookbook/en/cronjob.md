@@ -1,6 +1,8 @@
 # Pseudo-Cronjobs in Contao
 
-Each contao installation contains a `cron.php`in the root folder. It is called with each frontend page load through the `fe_page.html5`or `fe_page.xhtml`template:
+Each contao installation contains a `cron.php`in the root folder. It is called 
+with each frontend page load through the `fe_page.html5`or `fe_page.xhtml` 
+template:
 
 ```
 new Request({
@@ -28,7 +30,8 @@ The smallest interval is hourly.
 ## Unexpected behaviour
 
 - The cronjob can only be called every 5 minutes
-- The script runs from monthly to hourly. When it hits one in the chain it will exits the process and the other intervals **won't be processed**.
+- The script runs from monthly to hourly. When it hits one in the chain it 
+will exits the process and the other intervals **won't be processed**.
 
 ## Reset cronjob to test
 

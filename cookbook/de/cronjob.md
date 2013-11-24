@@ -1,6 +1,8 @@
 # Pseudo-Cronjobs in Contao
 
-Jede Contao Installation enthält eine `cron.php` im root Ordner. Diese wird bei jedem Seitenaufruf einer Frontendseite über das `fe_page.html5` oder `fe_page.xhtml` Template getriggert:
+Jede Contao Installation enthält eine `cron.php` im root Ordner. Diese wird bei 
+jedem Seitenaufruf einer Frontendseite über das `fe_page.html5` oder 
+`fe_page.xhtml` Template getriggert:
 
 ```
 new Request({
@@ -28,7 +30,9 @@ Die kleinst möglichste Interval ist hier also Stündlich.
 ## Unerwartete Verhaltensweisen
 
 - Der Cronjob wird nur alle 5min getestet
-- Das Script arbeitet sich von Monatlich zu Stündlich durch, wenn einer in der Kette abgearbeitet wird, wird der Prozess danach abgebrochen und die weiteren werden **nicht mehr ausgeführt**.
+- Das Script arbeitet sich von Monatlich zu Stündlich durch, wenn einer in der 
+Kette abgearbeitet wird, wird der Prozess danach abgebrochen und die weiteren 
+werden **nicht mehr ausgeführt**.
 
 ## Cronjob zum Testen zurücksetzen
 
