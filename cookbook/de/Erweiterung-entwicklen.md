@@ -49,3 +49,46 @@ Contao wurden Namespaces nur eingeführt, um die Klassen des Cores ersetzen zu k
 
 Durch den Verzicht auf Namespaces erspart man sich den Ärger, dass Klassen womöglich nicht korrekt
 oder gar nicht geladen werden können.
+
+
+Model
+-----
+
+Das mit Contao 3 eingeführte Model ist die erste Implementierung eines OR-Mapper (
+[object-relational mapping](http://de.wikipedia.org/wiki/Objektrelationale_Abbildung)) in Contao.
+
+Das Contao Model reicht nicht an bestehenden OR-Mapper wie _JPA_ (Java Persistence API) für Java
+oder _Core Data_ für Cocoa unter iOS und Mac OS X heran. Man muss aber dazusagen das die JPA und
+Core Data seit Jahren mit für Contao unmöglicher Man Power beständig weiterentwickelt wird. Mit der
+Zeit und Unterstützung der Community wird Contao diesen Vorsprung sicher in der Zukunft verkürzen
+können ;-)
+
+Der Extension-Creator erzeugt für Frontend-Tabellen eine dazugehörige Model-Klasse im Verzeichnis
+`models` der Erweiterung. Diese Klasse kann ohne weitere Anpassung über die folgenden statischen
+Methoden genutzt werden:
+
+- `findByPk` - Gibt ein Objekt zu einem Schlüsselwert zurück, es wird dabei der Primary Key der
+  Tabelle verwendet.
+- `findByIdOrAlias`- Gibt ein Objekt anhand seiner ID oder seines Aliases zurück; als Alternative zu
+  `findByPk` verwendet diese Methode die Spalten `id` und `alias`; nützlich für alle Objekte die
+  über eine URL erreichbar sind.
+- `findByPk` - Gibt alle Objekte dieses Typs zurück.
+
+Methoden die nur ein Objekt zurück geben, geben dies direkt zurück. Methoden die mehrere Objekte
+zurückgeben, geben diese als `Contao\Model\Collection` verpackt zurück.
+
+Es gibt noch weitere Methoden die die Suche nach Objekten über Suchkriterien einschränken. Diese
+Methoden schaut man sich am besten in der Klasse `Contao\Model` an.
+
+Um effektiver mit dem Model zu arbeiten, sollte man sich in der eigenen Model-Klasse weitere
+statische Methoden definieren. Diese folgen dem Muster:
+
+- `findPublishedByFoo` - Zur Suche nach Objekte, die für die Property (=Tabellenspalte) _Foo_ einen
+  bestimmten Wert haben.
+- `coundPublishedByFoo` - Zum Zählen der Objekte, die für die Property (=Tabellenspalte) _Foo_ einen
+  bestimmten Wert haben.
+
+__Achtung:__ Die _find_-Methoden geben `null` zurück, wenn es keine Objekte gibt, die dem
+angegebenen Kriterien entsprechen. In Contao 4 soll das geändert werden, so das statt `null` eine
+leere Collection zurückgegeben wird
+([GutHub Issue #6147](https://github.com/contao/core/issues/6147)).
