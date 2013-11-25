@@ -83,12 +83,56 @@ Methoden schaut man sich am besten in der Klasse `Contao\Model` an.
 Um effektiver mit dem Model zu arbeiten, sollte man sich in der eigenen Model-Klasse weitere
 statische Methoden definieren. Diese folgen dem Muster:
 
-- `findPublishedByFoo` - Zur Suche nach Objekte, die für die Property (=Tabellenspalte) _Foo_ einen
+- `findByFoo` - Zur Suche nach Objekte, die für die Property (=Tabellenspalte) _Foo_ einen
   bestimmten Wert haben.
-- `coundPublishedByFoo` - Zum Zählen der Objekte, die für die Property (=Tabellenspalte) _Foo_ einen
+- `findPublishedByFoo` - Zur Suche nach allen veröffentlichten Objekte, die für die Property
+  (=Tabellenspalte) _Foo_ einen bestimmten Wert haben.
+- `countByFoo` - Zum Zählen der Objekte, die für die Property (=Tabellenspalte) _Foo_ einen
   bestimmten Wert haben.
 
 __Achtung:__ Die _find_-Methoden geben `null` zurück, wenn es keine Objekte gibt, die dem
 angegebenen Kriterien entsprechen. In Contao 4 soll das geändert werden, so das statt `null` eine
 leere Collection zurückgegeben wird
 ([GutHub Issue #6147](https://github.com/contao/core/issues/6147)).
+
+
+Frontend-Module
+---------------
+
+Das Model liefert entweder eine `Model`-Instanz oder eine `Collection`-Instanz die man direkt im
+Frontend-Template verwenden kann. Besser ist es jedoch die Logik zum Lesen aus dem Model soweit wie
+möglich in der Frontend-Klasse zu lassen und im Template nur Strings zu verwenden.
+
+Um eine Liste von Objekten vom Typ _Foo_ im Frontend darzustellen, sind drei Methoden in der
+Frontend-Klasse notwendig:
+
+- `compile` - Verwendet die _findBy_-Methoden des Models zum Bestimmen der anzuzeigenden Objekte und
+  delegiert dann `parseFoos`.
+- `parseFoos` - Iteriert über alle gefunden Objekte und delegiert an `parseFoo` um für jedes Objekt
+  einen String zu bestimmen. Die Methode gint ein Array von Strings zurück, ein String pro Objekt
+  der Collection. Gibt es keine Objekte, gibt die Methode ein leeres Array zurück.
+- `parseFoo` - Erzeugt zu einem Objekt seine Repräsentation als String.
+
+Bei diesem Muster sind zwei Templates beteiligt. Eines für das Frontend-Modul `mod_foo`, welches in
+der Variablen `$strTemplate` der Frontend-Klasse deklariert ist. Ein zweites Template wird in der
+Methode `parseFoo` geladen, nennen wir es `foo`.
+
+Im Template `mod_foo` werden mit einer Schleife die Objekte angezeigt:
+
+``` {.php}
+<?php foreach ($this->foos as $foo) echo $foo; ?>
+```
+
+Im Template `foo` ist nur das für ein einzelnes Objekt notwendige HTML enthalten:
+
+``` {.php}
+<h2><?php echo $this->title; ?></h2>
+<p><?php echo $this->description; ?></p>
+```
+
+Somit hat man nicht nur eine elegante Überführung des Models auf Strings für das Template, sondern
+das Template wird dabei noch in handliche Bausteine zerlegt.
+
+So lässt z.B. sich der Template-Baustein für ein Objekt, abhängig von seine Typ in der `parseFoos`
+variieren. Auch das Überscheiben von Templates durch Designer wird einfacher, weil im Template
+weniger Logik enthalten ist und nur mit Platzhaltern gearbeitet werden kann.
