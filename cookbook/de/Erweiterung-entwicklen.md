@@ -17,6 +17,26 @@ auswählen und den den Button _Daten bereinigen_ nicht vergessen.
 Best Practices
 ==============
 
+
+Verwenden der Entwickler-Tools
+------------------------------
+
+Mit dem _Extension-Creator_ im Backend kann ein Grundgerüst für eigene Contao-Erweiterungen angelegt
+werden.
+
+__Achtung:__ Nach dem Anlegen dieses Grundgerüsts und auch nach dem Hinzufügen neuer Klassen, immer
+im Backend mit dem _Autoload-Creator_ die Datei `autoload.php` aktualisieren, damit alle Klassen der
+Erweiterung gefunden werden können.
+
+
+Lernen durch Kopieren
+---------------------
+
+Wenn man eine ähnliche Funktion implementieren möchte, wie sie in Contao oder einer anderen
+Erweiterung bereits besteht, dort im Quelltext nachsehen, wie sie implementiert ist. Versuchen das
+Muster zu verstehen und dann das Muster kopieren und für den eigenen Zweck anpassen.
+
+
 Namespaces
 ----------
 
