@@ -1,5 +1,4 @@
-Erweiterung entwicklen
-======================
+# Erweiterung entwicklen
 
 Für das Testen der Erweiterung auf einer lokalen Contao-Installation in den
 Einstellungen (Backend: _System_ -> _Einstellungen_) die beiden folgenden
@@ -16,12 +15,10 @@ bereinigen_ -> _Internen Cache leeren_ auswählen und den den Button _Daten
 bereinigen_ nicht vergessen.
 
 
-Best Practices
-==============
+# Best Practices
 
 
-Verwenden der Entwickler-Tools
-------------------------------
+## Verwenden der Entwickler-Tools
 
 Mit dem _Extension-Creator_ im Backend kann ein Grundgerüst für eigene
 Contao-Erweiterungen angelegt werden.
@@ -32,8 +29,7 @@ neuer Klassen, immer im Backend mit dem _Autoload-Creator_ die Datei
 können.
 
 
-Lernen durch Kopieren
----------------------
+## Lernen durch Kopieren
 
 Wenn man eine ähnliche Funktion implementieren möchte, wie sie in Contao oder
 einer anderen Erweiterung bereits besteht, dort im Quelltext nachsehen, wie sie
@@ -41,8 +37,7 @@ implementiert ist. Versuchen das Muster zu verstehen und dann das Muster
 kopieren und für den eigenen Zweck anpassen.
 
 
-Namespaces
-----------
+## Namespaces
 
 [Auf Empfehlung vom Contao Team](https://community.contao.org/de/showthread.php?30961-Contao-3-und-Namespace&p=203762&viewfull=1#post203762)
 sollten Namespace in Erweiterungen für Contao nicht verwendet werden.
@@ -56,14 +51,13 @@ Durch den Verzicht auf Namespaces erspart man sich den Ärger, dass Klassen
 womöglich nicht korrekt oder gar nicht geladen werden können.
 
 
-Model
------
+## Model
 
 Das mit Contao 3 eingeführte Model ist die erste Implementierung eines OR-Mapper
 ([object-relational mapping](http://de.wikipedia.org/wiki/Objektrelationale_Abbildung))
 in Contao.
 
-__Anmerlung:__ Das Contao Model reicht nicht an bestehenden OR-Mapper wie _JPA_
+__Anmerkung:__ Das Contao Model reicht nicht an bestehenden OR-Mapper wie _JPA_
 (Java Persistence API) für Java oder _Core Data_ für Cocoa unter iOS und
 Mac OS X heran. Man muss aber dazusagen das die JPA und Core Data seit Jahren
 mit für Contao unmöglicher Man Power beständig weiterentwickelt wird. Mit der
@@ -105,8 +99,7 @@ werden, so das statt `null` eine leere Collection zurückgegeben wird
 ([GutHub Issue #6147](https://github.com/contao/core/issues/6147)).
 
 
-Frontend-Module
----------------
+## Frontend-Module
 
 Das Model liefert entweder eine `Model`-Instanz oder eine `Collection`-Instanz
 die man direkt im Frontend-Template verwenden kann. Besser ist es jedoch die
