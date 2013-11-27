@@ -39,10 +39,9 @@ Bsp.: `ArticleModel::findPublishedById()`.
 *findOneByAlias()* ist eine virtuelle Methode um auf das *alias* Feld zu
 referenzieren. Diese Methoden existieren für jedes Feld der Tabelle.
 Bsp: `findOneByName()`. Best practice ist `findOneBy($col, $val)` zu nutzen.
-Die statische Basismethode `find($arrData)` ermöglicht eine genaue 
-Spezifizierung der Anfrage. Alle anderen *find*-Methoden benutzen implizit
-die protected-Method *find()*. Nahezu alle dieser Methoden unterstützen als
-letzten Parameter ein Subset des `$arrData` Arrays, siehe [Methode find()](#methode-findarrdata)
+Alle anderen *find*-Methoden benutzen implizit die protected-Method *find()*.
+Nahezu alle dieser Methoden unterstützen als letzten Parameter ein Subset
+des `$arrData` Arrays, siehe [Methode find()](#methode-findarrdata).
 
 
 ### Model-Registry
@@ -71,7 +70,7 @@ echo $objArticle->title; // Home
 
 $objArticle2 = clone $objArticle;
 $objArticle2->title = 'Home2';
-echo $objArticle->title; // Home2
+echo $objArticle->title; // Home
 ```
 
 
