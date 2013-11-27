@@ -29,16 +29,6 @@ $objArticleModel = \ArticleModel::findByIdOrAlias('contact');
 $objArticleModel = \ArticleModel::findOneBy('alias','contact');
 // alternativ
 $objArticleModel = \ArticleModel::findOneByAlias('contact');
-// alternativ
-$objArticleModel = \ArticleModel::find(
-  array (
-    'limit'   => 1,
-    'column'  => 'alias',   // mehrere Spalten durch array() möglich, 
-                            //dann muss nach den Feldnamen =? eingefügt werden (z.B. 'alias =?')
-    'value'   => 'contact', // mehrere Werte durch array() möglich, Reiehenfolge analog 'column'
-    'return   => 'Model'
-  )
-);
 ```
 
 Die oben verwendeten Methoden sind durch die `\Contao\Model` Klasse 
@@ -51,7 +41,8 @@ referenzieren. Diese Methoden existieren für jedes Feld der Tabelle.
 Bsp: `findOneByName()`. Best practice ist `findOneBy($col, $val)` zu nutzen.
 Die statische Basismethode `find($arrData)` ermöglicht eine genaue 
 Spezifizierung der Anfrage. Alle anderen *find*-Methoden benutzen implizit
-*find()*.
+die protected-Method *find()*. Nahezu alle dieser Methoden unterstützen als
+letzten Parameter ein Subset des `$arrData` Arrays, siehe [Methode find()](#methode-findarrdata)
 
 
 ### Model-Registry
@@ -84,7 +75,8 @@ echo $objArticle->title; // Home2
 ```
 
 
-### Methode: find($arrData)
+### Methode: protected `find($arrData)`
+Implizit arbeiten alle `find*` Methoden mit `find()`.
 Die Methode akzeptiert ein Array mit folgenden Array-Keys:
 
 <table>
@@ -140,6 +132,9 @@ PHP immer dann aufgerufen, wenn der Zugriff auf ein nicht existierendes
 Klassen-Attribut erfolgt. Contao gibt dann die Werte des Datensatzes zurück, 
 bzw. setzt diese.
 
+Achtung: Es werden nur Attribute gespiechert, die eine Entsprechung in der
+Datenbank-Tabelle haben.
+
 ``` {.php}
 // Titel des Artikels ausgeben
 echo $objArticleModel->title;
@@ -147,9 +142,11 @@ echo $objArticleModel->title;
 
 // Verändern/setzen des Titels
 $objectArticelModel->title = "Mein besonderer Artikel";
-$objectArticleModel->save(); // speichert die Änderung des Datensatzes in 
-die Datenbank
+$objectArticelModel->fld_not_exists_in_db = "AnyValue";
+$objectArticleModel->save(); // speichert die Änderung des Datensatzes in die Datenbank
+// fld_not_exists_in_db wurde nicht festgeschrieben, da es keine gleichnamige Spalte gibt.
 ```
+
 
 ### Weitere relevante Methoden
 
@@ -183,6 +180,8 @@ $objectArticelModel->setRow(array
 
 #### `save()`
 Speichert alle Änderungen in der Datenbank.
+Es werden nur Attribute gespiechert, die eine gleichnamige Splate in der
+Datenbank-Tabelle haben.
 
 
 #### static `countBy($strColumn=null, $varValue=null)`
@@ -276,7 +275,7 @@ while($objArticles->next()) {
 
 ## Referenzierte Datensätze
 
-Ein Contao *Model* kann auf refernzierte Datensätze zugreifen. Beispiel: 
+Ein Contao *Model* kann auf referenzierte Datensätze zugreifen. Beispiel: 
 Artikel->Autor. Damit Contao diese Referenzen auflösen kann, muss dem *Model* 
 ein `DCA` zugeordnet sein. Sie ist normalerweise identisch mit dem Namen 
 der Tabelle.
@@ -320,7 +319,7 @@ $GLOBALS['TL_DCA']['tl_article'] = array
 ```
 Im oberen Beispiel wird eine Relation für die Spalte `pid` auf die Tabelle 
 `tl_page` festgelegt. Die Datensätze werden *lazy*, d.h. erst bei Bedarf 
-geladen. Die Relation für `author` zur Tabelle `tl_user` wird dagege *eager*, 
+geladen. Die Relation für `author` zur Tabelle `tl_user` wird dagegen *eager*, 
 also durch einen SQL-JOIN geladen.
 
 Contao versucht die Klasse des referenzierten Models anhand des Namens der 
@@ -344,7 +343,7 @@ $GLOBALS['TL_MODELS']['tl_my_table'] = 'MyNamespace\TblModel';
 <table>
 	<tr>
 		<td><b>eager</b></td>
-        <td>Wird ein in Beziehung stehendes Objekt „eager“ geladen, erstellt 
+        <td>Wird ein in Beziehung (nur hasOne, belongsTo) stehendes Objekt „eager“ geladen, erstellt 
         der QueryBuilder automatisch ein JOIN-Query und lädt die Objekte in 
         einer einzigen Datenbank-Abfrage.</td>
     </tr>
@@ -359,11 +358,11 @@ $GLOBALS['TL_MODELS']['tl_my_table'] = 'MyNamespace\TblModel';
 #### type
 <table>
 	<tr>
-		<td><b>belongsToMany</b></td>
+		<td><b>belongsTo</b></td>
         <td>Referenz auf einen Elterndatensatz (z.B. pid)</td>
     </tr>
 	<tr>
-		<td><b>belongsTo</b></td>
+		<td><b>belongsToMany</b></td>
         <td> Referenz auf mehrere Elterndatensätze (z.B. serialized)</td>
     </tr>
 	<tr>
