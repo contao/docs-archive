@@ -137,7 +137,7 @@ Contao-Core enthaltenen Inhaltselemente.
 Jedes Inhaltselement kann geschützt werden, so dass es nur Gäste oder Benutzer
 einer bestimmten Mitgliedergruppe sehen können.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/geschuetztes-element.jpg)
+![](images/geschuetztes-element.jpg?raw=true)
 
 
 ### Flash-Inhalte
@@ -217,7 +217,7 @@ verwendet. Jedes Archiv kann sich auf eine bestimmte Sprache oder ein bestimmtes
 Thema beziehen und die Beiträge können als RSS- oder Atom-Feed exportiert
 werden.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/newsfeed.jpg)
+![](images/newsfeed.jpg?raw=true)
 
 
 ### Frontend-Module
@@ -286,7 +286,7 @@ Kalender werden zur Gruppierung und/oder Kategorisierung von Terminenverwendet.
 Jeder Kalender kann sich auf eine bestimmte Sprache oder einbestimmtes Thema
 beziehen und die Termine können als RSS- oderAtom-Feed exportiert werden.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/kalender-feed.jpg)
+![](images/kalender-feed.jpg?raw=true)
 
 
 ### Frontend-Module
@@ -357,7 +357,7 @@ Datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
 [Double Opt-In][5] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
 gespeichert.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/newsletter-abonnenten.jpg)
+![](images/newsletter-abonnenten.jpg?raw=true)
 
 Falls Sie bereits einen Verteiler haben, können Sie die Abonnenten aus einer
 CSV-Datei in Contao importieren.
@@ -415,7 +415,7 @@ indem der Versendungsprozess in mehreren Teilschritten mit einer bestimmten
 Wartezeit dazwischen erfolgt und so die Anzahl der E-Mails pro Minute
 kontrolliert werden kann.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/newsletter-versenden.jpg)
+![](images/newsletter-versenden.jpg?raw=true)
 
 
 ### Frontend-Module
