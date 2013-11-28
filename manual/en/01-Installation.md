@@ -89,7 +89,7 @@ save your changes. Now Contao generates static URLs like `home.html` instead of
 While trying to install Contao with the install tool, you might have seen a
 warning that the local configuration file is not writable.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/localconfig-not-writable.jpg)
+![](images/localconfig-not-writable.jpg?raw=true)
 
 
 ### File permission issues
@@ -164,14 +164,14 @@ via FTP, open WinSCP and connect to the server. Backup the files mentioned above
 and then navigate to the Contao directory and click the "Synchronize files"
 button.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/synchronization-options.jpg)
+![](images/synchronization-options.jpg?raw=true)
 
 Review the options carefully and make sure to choose "Preview changes", so you
 can check which files will be updated. Then confirm each file in the preview
 window and double check the files that are marked for deletion! Click "OK" to
 start the synchronization process.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/synchronization-confirmation.jpg)
+![](images/synchronization-confirmation.jpg?raw=true)
 
 
 ### Updating the database
@@ -202,12 +202,12 @@ The Live Update includes the following features:
 
 ### Version selection
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/live-update-1.jpg)
+![](images/live-update-1.jpg?raw=true)
 
 
 ### Template differences
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/live-update-2.jpg)
+![](images/live-update-2.jpg?raw=true)
 
 
 ### Troubleshooting
@@ -249,7 +249,7 @@ you want to export and click the "Export" tab in the top menu. It is important
 to adjust the export settings according to the screenshot below to minimize
 MySQL version compatibility problems.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/sql-export.jpg)
+![](images/sql-export.jpg?raw=true)
 
 
 ### Importing the database
@@ -260,7 +260,7 @@ administration panel (e.g. "Plesk" or "cPanel") to create new databases. Select
 the empty database and click the "Import" tab in the top menu. Then upload the
 SQL dump of your local database and start the import.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/sql-import.jpg)
+![](images/sql-import.jpg?raw=true)
 
 
 ### Adjusting the database configuration
@@ -299,7 +299,7 @@ Repository and the Live Update and whether you have to use the Safe Mode Hack or
 not. Depending on your system configuration, you can set up a new Contao
 installation with the web installer or validate an existing installation.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/contao-check.jpg)
+![](images/contao-check.jpg?raw=true)
 
 Extract the Zip file, upload the `check` folder to your Contao installation
 directory and open it in a web browser.

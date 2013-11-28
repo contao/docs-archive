@@ -13,7 +13,7 @@ extension" button. You will be redirected to a form where you can enter the
 extension details. The yellow box above contains important information about
 naming conventions, which you should read carefully.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/add-extension.jpg)
+![](images/add-extension.jpg?raw=true)
 
 The following categories are currently available:
 
@@ -55,7 +55,7 @@ After you have created the extension, you can add a first release. Every new
 version of the extension will be stored as separate release. Open the release
 manager with the respective navigation icon and click the "Add release" button.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/add-release.jpg)
+![](images/add-release.jpg?raw=true)
 
 Version numbers in the Extension Repository consist of three numeric blocks that
 indicate the major, minor and maintenance version (e.g. `1.0.0`) as well as a
@@ -92,9 +92,9 @@ the "Add/update files" button. You can upload single files or complete .zip
 archives. Make sure to choose the correct target directory so the file paths are
 correct after the upload.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/add-files.jpg)
+![](images/add-files.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/edit-files.jpg)
+![](images/edit-files.jpg?raw=true)
 
 
 ## Adding translations
@@ -105,9 +105,9 @@ It is recommended to always create an English translation, because back end
 users generally only see extensions in the extension manager which are available
 in their language or in English (fallback language).
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/add-translation.jpg)
+![](images/add-translation.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/edit-translation.jpg)
+![](images/edit-translation.jpg?raw=true)
 
 Completed translations can be published by clicking the respective navigation
 icon.
@@ -121,7 +121,7 @@ extension, which is usually referred to as dependency. Those dependencies can be
 stored in the Extension Repository, so all required modules are installed
 automatically when you install a particular extension.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/add-dependency.jpg)
+![](images/add-dependency.jpg?raw=true)
 
 First choose the extension that you want to add as dependency and confirm your
 choice by clicking the "Continue" button. Then select the minimum and maximum
