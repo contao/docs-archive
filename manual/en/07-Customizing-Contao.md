@@ -14,7 +14,7 @@ Before developing extensions for Contao, you should bypass the internal cache.
 If you want to bypass the internal cache, navigate to "System"->"Settings" and 
 enable the checkbox "Bypass the internal cache" under "Global configuration".
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/bypass-internal-cache.jpg)
+![](images/bypass-internal-cache.jpg?raw=true)
 
 As soon as the site goes into production, you should uncheck "Bypass the 
 internal cache" in order to minimize the response time.  
@@ -179,7 +179,7 @@ include all TinyMCE plugins by default, so if you want to use a certain plugin
 that is not part of the Contao distribution, download it from the [TinyMCE
 project website][4] and move it into the `assets/tinymce/plugins` folder.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/rich-text-editor.jpg)
+![](images/rich-text-editor.jpg?raw=true)
 
 To image above shows the default Rich Text Editor configuration file
 `system/config/tinyMCE.php`. To create a custom configuration file, simply copy

@@ -19,7 +19,7 @@ Darstellung der Daten im Backend verwendet.
 Der "List View" listet die Datensätze einer Tabelle in einer bestimmten
 Reihenfolge auf, normalerweise gruppiert nach Anfangsbuchstabe.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/list-view-de.jpg)
+![](images/list-view-de.jpg?raw=true)
 
 
 ### Parent View
@@ -29,7 +29,7 @@ einen Datensatz der Elterntabelle beziehen. Eltern-Kind-Relationen kommen
 häufig vor in Contao, z.B. bei Artikeln und Inhaltselementen, Archiven und
 Nachrichten oder Stylesheets und Formatdefinitionen.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/parent-view-de.jpg)
+![](images/parent-view-de.jpg?raw=true)
 
 
 ### Tree View
@@ -39,7 +39,7 @@ organisiert sind. Contao unterstützt sowohl hierarchische Beziehungen innerhalb
 einer Tabelle (z.B. Seitenstruktur)  als auch Kindtabellen, die sich auf
 hierarchische Elterntabellen beziehen (z.B. Artikel und Seiten).
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/tree-view-de.jpg)
+![](images/tree-view-de.jpg?raw=true)
 
 
 ### Daten sortieren und filtern
@@ -51,7 +51,7 @@ meisten bieten zusätzlich eine Volltext-Suche an, die sogar reguläre
 Ausdrücke unterstützt. Um die Ladezeit zu optimieren, zeigt Contao immer nur
 30 Datensätze auf einmal an.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/sortieren-und-filtern.jpg)
+![](images/sortieren-und-filtern.jpg?raw=true)
 
 
 ## Datensätze bearbeiten
@@ -68,7 +68,7 @@ dieser Funktionen sind über die Navigationssymbole aufrufbar.
 Der "List View" als einfachste Ansicht bietet nur die vier grundlegenden
 Befehle: bearbeiten, duplizieren, löschen und Info.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/list-view-icons-de.jpg)
+![](images/list-view-icons-de.jpg?raw=true)
 
 
 ### Icons im Parent View
@@ -78,7 +78,7 @@ Datensätze zu kontrollieren. Die Reihenfolge kann auch mittels Drag & Drop
 geändert werden. Dazu einfach auf das "Drag & Drop" Icon klicken und
 an die neue Position bewegen.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/parent-view-icons-de.jpg)
+![](images/parent-view-icons-de.jpg?raw=true)
 
 
 ### Icons im Tree View
@@ -88,7 +88,7 @@ abbilden zu können. Neben dem Kopieren eines einzelnen Datensatzes können auch
 ganze Teilbäume dupliziert und entweder in einen oder nach einem anderen
 Datensatz eingefügt werden.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/tree-view-icons-de.jpg)
+![](images/tree-view-icons-de.jpg?raw=true)
 
 
 ### Frühere Versionen wiederherstellen
@@ -101,7 +101,7 @@ gehen können.
 Durch Klick auf das Icon rechts des Drop-Down-Menü werden die Unterschiede
 zwischen der aktuelle und der gewählten Version angezeigt.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/versionierung.jpg)
+![](images/versionierung.jpg?raw=true)
 
 
 ### Mehrere Datensätze bearbeiten
@@ -111,11 +111,11 @@ von den Mitbewerbern ab. Wechseln Sie den Bearbeitungsmodus durch Anklicken der
 "Mehrere bearbeiten"-Schaltfläche und wählen Sie dann die zu berabeitenden
 Datensätze und Felder aus.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/mehrere-datensaetze-auswaehlen.jpg)
+![](images/mehrere-datensaetze-auswaehlen.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/zu-bearbeitende-felder-auswaehlen.jpg)
+![](images/zu-bearbeitende-felder-auswaehlen.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/mehrere-datensaetze-bearbeiten.jpg)
+![](images/mehrere-datensaetze-bearbeiten.jpg?raw=true)
 
 
 ## Backend-Tastaturkürzel

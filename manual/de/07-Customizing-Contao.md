@@ -15,7 +15,7 @@ unbedingt der interne Cache deaktiviert bzw. umgangen werden.
 Dazu navigieren Sie im Backend zu "System"->"Einstellungen" und setzten einen 
 Haken unter "Globale Einstellungen" bei "Internen Cache umgehen".
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/internen-cache-umgehen.jpg)
+![](images/internen-cache-umgehen.jpg?raw=true)
 
 Sobald die Seite jedoch in den produktiven Betrieb geht, sollte unbedingt der 
 Haken bei "Internen Cache umgehen" entfernt werden, da das System ohne den 
@@ -180,7 +180,7 @@ TinyMCE-Plugins enthält und fehlende Ressourcen gegebenenfalls von der
 [TinyMCE-Projektwebseite][4] heruntergeladen und in den Ordner
 `assets/tinyMCE/plugins` Ihrer Contao-Installation kopiert werden müssen.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/rich-text-editor.jpg)
+![](images/rich-text-editor.jpg?raw=true)
 
 Das obige Bild zeigt die Standardkonfiguration des Editors, die in der Datei
 `system/config/tinyMCE.php` hinterlegt ist. Um eine eigene Konfiguration zu

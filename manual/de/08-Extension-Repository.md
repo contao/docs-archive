@@ -14,7 +14,7 @@ gelangen nun zu einem Formular, in das Sie die Daten der Erweiterung eingeben
 können. Der Kasten oberhalb des Formulars enthält wichtige Hinweise zur
 Namensgebung, die Sie unbedingt berücksichtigen sollten.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/erweiterung-hinzufuegen.jpg)
+![](images/erweiterung-hinzufuegen.jpg?raw=true)
 
 Folgende Kategorien sind momentan verfügbar:
 
@@ -67,7 +67,7 @@ Wechseln Sie mit Hilfe des entsprechenden Navigationssymbols in die
 Freigabenverwaltung und klicken Sie auf die Schaltfläche "Freigabe
 hinzufügen".
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/freigabe-hinzufuegen.jpg)
+![](images/freigabe-hinzufuegen.jpg?raw=true)
 
 Versionsnummern im Extension Repository bestehen immer aus drei Zahlenblöcken,
 die die Major-, Minor- und Maintenance-Version kennzeichnen (z.B. "1.0.0"),
@@ -105,9 +105,9 @@ hinzufügen/aktualisieren". Sie können nun einzelne Dateien oder ganze
 Zip-Archive auf den Server übertragen. Achten Sie dabei darauf, das richtige
 Zielverzeichnis auszuwählen, damit die Pfade nach dem Upload stimmen.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/dateien-hinzufuegen.jpg)
+![](images/dateien-hinzufuegen.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/dateien-bearbeiten.jpg)
+![](images/dateien-bearbeiten.jpg?raw=true)
 
 ## Dateien aus einem GitHub-Repository hinzufügen
 
@@ -120,12 +120,12 @@ In den Einstellungen muss die HTTPS-URL des GitHub-Repository hinterlegt werden.
 Wird ein Wurzelverzeichnis festgelegt, ignoriert das System Dateien und
 Verzeichnisse ausserhalb dieses Ordners beim Import.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/github-importieren.jpg)
+![](images/github-importieren.jpg?raw=true)
 
 Wenn Sie ein Tag auswählen, werden dessen Dateien automatisch heruntergeladen
 und stehen danach wie bei einem manuellen Upload zur Verfügung.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/github-importieren-tag.jpg)
+![](images/github-importieren-tag.jpg?raw=true)
 
 
 ## Eine Übersetzung hinzufügen
@@ -137,9 +137,9 @@ immer auch eine englische Übersetzung anzulegen, da die Benutzer im Backend
 grundsätzlich nur die Erweiterungen sehen, die in ihrer jeweiligen Sprache oder
 in Englisch verfügbar sind.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/uebersetzung-hinzufuegen.jpg)
+![](images/uebersetzung-hinzufuegen.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/uebersetzung-bearbeiten.jpg)
+![](images/uebersetzung-bearbeiten.jpg?raw=true)
 
 Fertige Übersetzungen können Sie mit einem Klick auf das entsprechende
 Navigationssymbol veröffentlichen.
@@ -155,7 +155,7 @@ Abhängigkeiten können im Extension Repository gespeichert werden, so dass bei
 der Installation einer Erweiterung automatisch alle für deren Betrieb
 benötigten Module ebenfalls installiert werden.
 
-![](https://raw.github.com/contao/docs/3.1/manual/de/images/abhaengigkeit-hinzufuegen.jpg)
+![](images/abhaengigkeit-hinzufuegen.jpg?raw=true)
 
 Wählen Sie als Erstes die Erweiterung aus, die Sie als Abhängigkeit
 hinzufügen möchten, und bestätigen Sie Ihre Auswahl mit "Weiter". Im
