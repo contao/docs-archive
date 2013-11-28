@@ -910,7 +910,7 @@ semicolon (;) or a comma (,). Whereas the comma is just used to separate the
 field names, the semicolon indicates the beginning of a new fieldset, which can
 be expanded and collapsed.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/palettes.jpg)
+![](images/palettes.jpg?raw=true)
 
 The above example is defined by the following code:
 

@@ -34,7 +34,7 @@ davon sehen, denn nur die "Courses"-Seite wurde in in der "Editors"-Gruppe
 gemountet. Beachten Sie außerdem, dass Helen Lewis nur eine der drei Seiten
 bearbeiten kann!
 
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/seitenstruktur-hlewis.jpg)
+![](images/seitenstruktur-hlewis.jpg?raw=true)
 
 Eine Seite sehen zu können beinhaltet noch nicht das Recht, sie zu bearbeiten.
 Erinnern Sie sich, dass [Zugriffsrechte][1] in der Seitenstruktur vergeben

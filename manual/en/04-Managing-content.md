@@ -165,7 +165,7 @@ an overview of the Contao core content elements:
 Each content element can be protected so only guests or members of a particular
 group can see it on the website.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/protected-element.jpg)
+![](images/protected-element.jpg?raw=true)
 
 
 ### Flash content
@@ -395,7 +395,7 @@ modules, so you do not have to manage recipients manually. For data privacy
 reasons, Contao requires [Double Opt-In][2] subscriptions and stores only the
 e-mail address of the subscriber.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/newsletter-recipients.jpg)
+![](images/newsletter-recipients.jpg?raw=true)
 
 In case you already have a list of recipients, you can import them into Contao
 from a CSV file.
@@ -453,7 +453,7 @@ minute. Contao tries to work around both problems by splitting the sending
 process into several cycles to prevent script timeouts and adding a custom
 waiting time between each cycle to control the number of e-mails per minute.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/sending-newsletters.jpg)
+![](images/sending-newsletters.jpg?raw=true)
 
 
 ### Front end modules
