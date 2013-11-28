@@ -362,7 +362,7 @@ did not include the event reader module, the event would not be displayed.
 This feature can be used for news archives and calendars. Here is an example
 with the calendars list.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/rss-calendar.jpg)
+![](images/rss-calendar.jpg?raw=true)
 
 
 ### Settings
@@ -371,7 +371,7 @@ One or several calendars can be grouped and exported as an RSS or Atom feed.
 It goes the same for news archives. At the same time, you can choose to export
 only the teasers or full articles of each event or news.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/rss-settings.jpg)
+![](images/rss-settings.jpg?raw=true)
 
 
 ### XML files

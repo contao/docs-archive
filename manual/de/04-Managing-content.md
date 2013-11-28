@@ -370,7 +370,7 @@ auch nicht angezeigt.
 Diese Funktion ist für News Archive und Kalender verfügbar.
 Hier ein Beispiel der Kalender-Liste.
 
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/rss-kalender.jpg)
+![](images/rss-kalender.jpg?raw=true)
 
 
 ### Einstellungen
@@ -380,7 +380,7 @@ ausgegeben werden. Genau gleich funktioniert es bei News Archiven. Hier kann
 auch gewählt werden, ob nur der Teaser oder der komplette Artikel des Events
 bzw. der News ausgegeben werden soll.
 
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/rss-bearbeiten.jpg)
+![](images/rss-bearbeiten.jpg?raw=true)
 
 
 ### XML Dateien

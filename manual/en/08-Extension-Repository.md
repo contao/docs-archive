@@ -115,12 +115,12 @@ You can also specify the root folder name of your repository. In this case, the
 files and folders outside of this root folder will be ignored during
 the import.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/github-import.jpg)
+![](images/github-import.jpg?raw=true)
 
 If you select a tag, its files will be downloaded automatically and are then
 available just like after a manual upload.
 
-![](https://raw.github.com/contao/docs/3.0/manual/en/images/github-import-tag.jpg)
+![](images/github-import-tag.jpg?raw=true)
 
 ## Adding translations
 

@@ -14,7 +14,7 @@ Before developing extensions for Contao, you should bypass the internal cache.
 If you want to bypass the internal cache, navigate to "System"->"Settings" and 
 enable the checkbox "Bypass the internal cache" under "Global configuration".
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/bypass-internal-cache.jpg)
+![](images/bypass-internal-cache.jpg?raw=true)
 
 As soon as the site goes into production, you should uncheck "Bypass the 
 internal cache" in order to minimize the response time.  

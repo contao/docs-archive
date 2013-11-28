@@ -120,12 +120,12 @@ In den Einstellungen muss die HTTPS-URL des GitHub-Repository hinterlegt werden.
 Wird ein Wurzelverzeichnis festgelegt, ignoriert das System Dateien und
 Verzeichnisse ausserhalb dieses Ordners beim Import.
 
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/github-importieren.jpg)
+![](images/github-importieren.jpg?raw=true)
 
 Wenn Sie ein Tag auswählen, werden dessen Dateien automatisch heruntergeladen
 und stehen danach wie bei einem manuellen Upload zur Verfügung.
 
-![](https://raw.github.com/contao/docs/3.0/manual/de/images/github-importieren-tag.jpg)
+![](images/github-importieren-tag.jpg?raw=true)
 
 
 ## Eine Übersetzung hinzufügen
