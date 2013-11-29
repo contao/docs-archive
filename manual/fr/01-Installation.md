@@ -97,7 +97,7 @@ En essayant d'installer Contao avec l'outil d'installation, vous pourriez voir
 un avertissement que le fichier de configuration local n'est pas accessible en 
 écriture.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/localconfig-not-writable.jpg)
+![](../en/images/localconfig-not-writable.jpg?raw=true)
 
 
 ### Problèmes d'autorisation de fichiers
@@ -180,7 +180,7 @@ FTP, ouvrez WinSCP et connectez-vous au serveur. Sauvegardez les fichiers
 mentionnés ci-dessus, puis accédez au répertoire de Contao et cliquez sur le 
 bouton "Synchroniser les fichiers".
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/synchronization-options.jpg)
+![](../en/images/synchronization-options.jpg?raw=true)
 
 Contrôlez les options attentivement et assurez-vous de choisir "Preview changes" 
 pour que vous puissiez contrôler quels fichiers seront mis à jour. Ensuite 
@@ -188,7 +188,7 @@ confirmez chaque fichier dans la fenêtre d'aperçu et contrôlez spécialement 
 fichiers qui vont être effacés ! Cliquez sur OK pour démarrer le processus de 
 synchronisation. 
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/synchronization-confirmation.jpg)
+![](../en/images/synchronization-confirmation.jpg?raw=true)
 
 
 ### Mise à jour de la base de données
@@ -222,12 +222,12 @@ de Contao
 
 ### Sélection d'une version
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/live-update-1.jpg)
+![](../en/images/live-update-1.jpg?raw=true)
 
 
 ### Différences entre les modèles
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/live-update-2.jpg)
+![](../en/images/live-update-2.jpg?raw=true)
 
 
 ### Résolution de problèmes
@@ -275,7 +275,7 @@ menu supérieur. Il est important d'ajuster les paramètres d'exportation
 conformément à la capture d'écran ci-dessous afin de restreindre les problèmes 
 de compatibilité de versions de MySQL.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/sql-export.jpg)
+![](../en/images/sql-export.jpg?raw=true)
 
 
 ### Importation de la base de données
@@ -288,7 +288,7 @@ base de données vide et cliquez sur l'onglet "Importer" dans le menu supérieur
 Puis télécharger la sauvegarde SQL de votre base de données locale et lancez 
 l'importation.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/sql-import.jpg)
+![](../en/images/sql-import.jpg?raw=true)
 
 
 ### Ajustement de la configuration de la base de données
@@ -331,7 +331,7 @@ référentiel d'extensions ainsi que le "Live Update" et si vous devez utiliser 
 mettre en place une nouvelle installation de Contao avec l'installateur web ou 
 valider une installation existante.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/contao-check-fr.jpg)
+![](images/contao-check-fr.jpg?raw=true)
 
 Extrayez le fichier Zip, téléversez le dossier `check` dans votre répertoire 
 d'installation de Contao et ouvrez-le dans un navigateur Web.

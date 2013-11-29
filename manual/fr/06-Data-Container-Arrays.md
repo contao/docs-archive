@@ -982,7 +982,7 @@ que la virgule est utilisée simplement pour séparer des noms de champs, le
 point-virgule indique le commencement d'un nouveau fieldset, qui peut être 
 déroulé ou enroulé.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/palettes.jpg)
+![](../en/images/palettes.jpg?raw=true)
 
 L'exemple ci-dessus se définit par le code suivant :
 

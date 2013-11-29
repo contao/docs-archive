@@ -37,7 +37,7 @@ que seul l'accès à la page "Courses" a été autorisé dans les paramètres du
 groupe "Editors". Notez que même si Helen Lewis est autorisée à voir trois 
 pages, elle ne peut modifier que l'une d'elles !
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/site-structure-hlewis-fr.jpg)
+![](images/site-structure-hlewis-fr.jpg?raw=true)
 
 Être capable de voir une page n'inclut pas le droit de la modifier (ou de 
 modifier ses articles). Rappelez-vous que [les permissions d'une page][1] sont 
@@ -54,7 +54,7 @@ ci-dessous montre le gestionnaire de fichiers tel qu'il est perçu par Helen Lew
 Elle n'est autorisée de voir que le répertoire "campus", alors que les 
 administrateurs peuvent voir le répertoire complet des fichiers (`files`).
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/gestionnaire-fichiers-hlewis.jpg)
+![](images/gestionnaire-fichiers-hlewis.jpg?raw=true)
 
 
 #### Champs autorisés
@@ -66,7 +66,7 @@ module d'actualités, le formulaire pour créer une nouvelle entrée sera vide
 jusqu'à ce que l'administrateur sélectionne un ou plusieurs champs de la table 
 `tl_news` dans les paramètres du groupe.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/champs-autorises.jpg)
+![](images/champs-autorises.jpg?raw=true)
 
 
 ### Membres
@@ -98,19 +98,19 @@ Utilisez les options de filtrage et de tri pour trouver une extension
 particulière et cliquez sur l'icône d'information ou le titre de l'extension 
 pour ouvrir la page de détails et installer le module.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/liste-extension.jpg)
+![](images/liste-extension.jpg?raw=true)
 
 La page de détails contient une description de l'extension et des informations 
 importantes concernant les configurations du système requises ainsi que les 
 versions et les dépendances d'autres modules. Cliquez sur le bouton "Installer" 
 pour télécharger et installer l'extension.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/details-extension.jpg)
+![](images/details-extension.jpg?raw=true)
 
 Contao téléchargera et installera automatiquement l'extension et mettra à jour 
 la base de données si nécessaire.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/installer-extension.jpg)
+![](images/installer-extension.jpg?raw=true)
 
 
 ### Gestionnaire d'extensions
@@ -121,7 +121,7 @@ vous avertit si une nouvelle version est disponible. De nombreuses extensions
 incluent également des liens vers un manuel en ligne et/ou un fil de discussion 
 dans un forum où vous pouvez obtenir de l'aide.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/gestionnaire-extension.jpg)
+![](images/gestionnaire-extension.jpg?raw=true)
 
 Pour désinstaller une extension, cliquez simplement sur l'icône de 
 désinstallation et suivez les instructions. Le gestionnaire d'extensions va 
@@ -129,7 +129,7 @@ supprimer tous les fichiers et répertoires et mettre à jour la base de donnée
 si nécessaire. Notez que cette action ne peut pas être annulée et les tables ne 
 peuvent pas être restaurées !
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/desinstaller-extension.jpg)
+![](images/desinstaller-extension.jpg?raw=true)
 
 
 ### Installation manuelle
@@ -160,7 +160,7 @@ manuellement par exemple pour supprimer les anciennes vignettes à partir du
 cache d'images ou pour recréer les fichiers XML du plan du site après que vous 
 ayez modifié la structure de site.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/nettoyer-donnees.jpg)
+![](images/nettoyer-donnees.jpg?raw=true)
 
 
 ### Reconstruire l'index de recherche
@@ -173,7 +173,7 @@ pages, il est plus commode de les mettre à jour toutes à la fois au lieu de le
 ouvrir une par une dans le navigateur. Dans ce cas, vous pouvez reconstruire 
 l'index de recherche manuellement.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/recreer-recherche-index.jpg)
+![](images/recreer-recherche-index.jpg?raw=true)
 
 
 [1]: 03-Managing-pages.md#contrôle-daccès

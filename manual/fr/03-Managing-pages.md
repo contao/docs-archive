@@ -15,7 +15,7 @@ mentionné précédemment, la structure de site est l'élément central de votre
 site. Les visiteurs de votre site internet demandent toujours des pages et non 
 des articles comme dans un CMS basé sur des nœuds.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/composants.jpg)
+![](images/composants.jpg?raw=true)
 
 Le diagramme montre que les articles et les présentations de page sont les deux 
 éléments les plus importantes d'une page. Alors que les articles stockent le 
@@ -47,7 +47,7 @@ d'éléments de contenu et même d'utilisateurs et de groupes d'utilisateurs. Un
 thème, en revanche, ne contient que le design du site internet et peut donc être 
 importé sans risque de perdre toutes les données existantes.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/gestionnaire-theme.jpg)
+![](images/gestionnaire-theme.jpg?raw=true)
 
 
 ### Composants d'un thème
@@ -61,7 +61,7 @@ personnalisés en option à partir du répertoire des modèles. Toutefois, ces
 ressources ne sont pas automatiquement liées avec le thème et doivent donc être 
 ajoutées dans la configuration du thème pour y être inclues dans l'exportation.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/parametres-theme.jpg)
+![](images/parametres-theme.jpg?raw=true)
 
 
 ### Exportation et importation d'un thème
@@ -87,7 +87,7 @@ différents éléments de Contao, vous devez connaître leurs noms de classe. Le
 et les [classes des modules][3] avec "mod\_" (par exemple "mod_search"). Si vous 
 n'êtes pas sûr, il suffit de regarder dans le code source de la page.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/feuille-de-style.jpg)
+![](images/feuille-de-style.jpg?raw=true)
 
 Chaque feuille de style peut être limitée par un ou plusieurs types de média 
 et/ou par une version particulière d'Internet Explorer, dans le cas où vous avez 
@@ -327,7 +327,7 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 Chaque module front office peut être protégé de sorte que seuls les invités ou 
 les membres d'un groupe en particulier puissent le voir sur le site internet.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/module-protege.jpg)
+![](images/module-protege.jpg?raw=true)
 
 
 ## Présentations de page
@@ -342,9 +342,9 @@ CSS de Contao divise automatiquement la fenêtre du navigateur en plusieurs
 sections et affiche les modules qui ont été assignés à ces sections les uns à 
 la suite des autres.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/front-end-structure.jpg)
+![](../en/images/front-end-structure.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/modules-front-office.jpg)
+![](images/modules-front-office.jpg?raw=true)
 
 Cela implique que lorsque vous allez créer une présentation de page, vous devriez 
 déjà avoir créé toutes les feuilles de style et les modules front office que vous 
@@ -495,7 +495,7 @@ page, tandis qu'un utilisateur d'un groupe qui possède une page est autorisé �
 éditer les articles seulement. Les utilisateurs sans privilège n'ont aucun droits 
 en écriture.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/droits-acces.jpg)
+![](images/droits-acces.jpg?raw=true)
 
 
 [1]: https://contao.org/en/contao-themes-and-templates.html

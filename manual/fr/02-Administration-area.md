@@ -21,7 +21,7 @@ La "vue en liste" répertorie les enregistrements d'une table unique dans un
 ordre particulier. Les résultats sont généralement regroupés par leur première 
 lettre.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-liste.jpg)
+![](images/vue-liste.jpg?raw=true)
 
 
 ### Vue parente
@@ -32,7 +32,7 @@ parent-enfant sont beaucoup utilisées dans Contao. Par exemple, pour les
 articles et les éléments de contenu, les archives d'actualités et les actualités 
 ou les feuilles de style et les définitions de formatage.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-parente.jpg)
+![](images/vue-parente.jpg?raw=true)
 
 
 ### Vue arborescente
@@ -44,7 +44,7 @@ table (par exemple, la structure de site) ainsi que des tables enfants qui se
 rapportent aux tables hiérarchiques parentes (par exemple, les articles et les 
 pages).
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-arborescente.jpg)
+![](images/vue-arborescente.jpg?raw=true)
 
 
 ### Tri et filtrage des données
@@ -58,7 +58,7 @@ qui prend même en charge les expressions régulières. Afin de réduire le temp
 chargement de la page au minimum, Contao affiche seulement trente 
 enregistrements à la fois.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/trier-et-filtrer.jpg)
+![](images/trier-et-filtrer.jpg?raw=true)
 
 
 ## Édition des enregistrements
@@ -77,7 +77,7 @@ sont accessibles en utilisant les icônes de navigation.
 La "vue en liste", étant la plus simple, ne propose que quatre actions de base : 
 éditer, dupliquer, supprimer et afficher les détails.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-liste-icones.jpg)
+![](images/vue-liste-icones.jpg?raw=true)
 
 
 ### Icônes de la vue parente
@@ -87,7 +87,7 @@ l'ordre des enregistrements. L'ordre peut être modifié par glisser-déposer. P
 ce faire, cliquez simplement sur l'icône de navigation "Glisser-déposer" et 
 faites-le glisser vers sa nouvelle position.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-parente-icones.jpg)
+![](images/vue-parente-icones.jpg?raw=true)
 
 
 ### Icônes de la vue arborescente
@@ -98,7 +98,7 @@ prend en charge la duplication d'un enregistrement avec tous ses
 sous-enregistrements ainsi que la fonction "coller après" ou "coller dedans" un 
 autre enregistrement, vous pouvez donc créer une structure imbriquée.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/vue-arborescente-icones.jpg)
+![](images/vue-arborescente-icones.jpg?raw=true)
 
 
 ### Restaurer les versions précédentes
@@ -112,7 +112,7 @@ du formulaire. Choisissez simplement une version et cliquez sur le bouton
 L'icône située à droite du bouton "Restaurer" vous permet de voir les 
 différences entre deux versions.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/version.jpg)
+![](images/version.jpg?raw=true)
 
 
 ### Édition de plusieurs enregistrements
@@ -123,11 +123,11 @@ Cliquez sur le bouton "Édition multiple" afin de changer le mode d'édition, pu
 sélectionnez un ou plusieurs enregistrements et choisissez les champs que vous 
 souhaitez modifier.
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/selectionner-multiple-enregistrements.jpg)
+![](images/selectionner-multiple-enregistrements.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/selectionner-champs-a-editer.jpg)
+![](images/selectionner-champs-a-editer.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/editer-multiple-enregistrements.jpg)
+![](images/editer-multiple-enregistrements.jpg?raw=true)
 
 
 ## Raccourcis clavier

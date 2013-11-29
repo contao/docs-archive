@@ -16,7 +16,7 @@ interne. Si vous voulez contourner le cache interne, Suivez les liens
 "Système" -> "Configuration" et cochez la case "Contourner le cache interne" 
 sous "Configuration globale".
 
-![](https://raw.github.com/contao/docs/3.1/manual/fr/images/contourner-cache-interne.jpg)
+![](images/contourner-cache-interne.jpg?raw=true)
 
 Dès que le site internet sera en production, vous devrez décocher la case 
 "Contourner le cache interne", afin de réduire au maximum le temps de réponse.
@@ -93,8 +93,9 @@ personnalisée, afin de ne pas en perdre la trace.
 
 Les libellés et les traductions sont enregistrés dans les dossiers `languages` 
 des différents modules de Contao. Chaque langue est identifiée par son [code 
-ISO-639-1][2]. Appliquez vos modifications dans le fichier `system/config/
-langconfig.php` afin qu'elles ne soient pas écrasées à la prochaine mise à jour. 
+ISO-639-1][2]. Appliquez vos modifications dans le fichier 
+`system/config/langconfig.php` afin qu'elles ne soient pas écrasées à la 
+prochaine mise à jour. 
 
 ``` {.php}
 // Modifie un libellé pour toutes les langues
@@ -196,7 +197,7 @@ partie de la distribution de Contao, il vous faut donc le télécharger à parti
 du [site du projet TinyMCE][4], et le mettre dans le répertoire 
 `assets/tinymce/plugins`. 
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/rich-text-editor.jpg)
+![](../en/images/rich-text-editor.jpg?raw=true)
 
 L'image ci-dessus montre le fichier de configuration de l'éditeur de texte 
 riche `system/config/tinyMCE.php`. Pour créer un fichier de configuration 
