@@ -982,7 +982,7 @@ que la virgule est utilisée simplement pour séparer des noms de champs, le
 point-virgule indique le commencement d'un nouveau fieldset, qui peut être 
 déroulé ou enroulé.
 
-![](../en/images/palettes.jpg?raw=true)
+![](images/palettes-fr.jpg?raw=true)
 
 L'exemple ci-dessus se définit par le code suivant :
 
