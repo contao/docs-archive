@@ -14,13 +14,15 @@ Es sind drei Schritte nötig:
 
 ## 1. Einfügen einer Aktion in den DCA
 ```{.php}
-$GLOBALS['TL_DCA']['tl_test']['list']['operations']['toggle'] = array(
-    'label'                      => &$GLOBALS['TL_LANG']['tl_test']['toggle'],
-    'icon'                        => 'visible.gif',
-    'attributes'               => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
+$GLOBALS['TL_DCA']['tl_test']['list']['operations']['toggle'] = array
+(
+    'label'               => &$GLOBALS['TL_LANG']['tl_test']['toggle'],
+    'icon'                => 'visible.gif',
+    'attributes'          => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
     'button_callback'     => array('tl_test', 'toggleIcon')
 );
 ```
+
 *`tl_test` ist durch den Namen der Tabelle zu ersetzen!*
 
 
@@ -33,11 +35,11 @@ SQL-Definitionen werden direkt im DCA implementiert.
 ```{.php}
 $GLOBALS['TL_DCA']['tl_example']['list']['operations']['published'] = array
 (
-    'label'                   => &$GLOBALS['TL_LANG']['tl_test']['published'],
+    'label'                => &$GLOBALS['TL_LANG']['tl_test']['published'],
      'exclude'             => true,
-     'filter'                  => true,
-     'inputType'         => 'checkbox',
-     'sql'                     => "char(1) NOT NULL default ''"
+     'filter'              => true,
+     'inputType'           => 'checkbox',
+     'sql'                 => "char(1) NOT NULL default ''"
 );
 ```
 
@@ -51,7 +53,6 @@ wird eine eigene Klasse angelegt. Wenn bereits eine Klasse mit anderen
 Callbacks o.ä. vorhanden ist, können die Methoden auch dort eingefügt werden.
 
 ```{.php}
-
 class myClass
 {
     /**
@@ -101,40 +102,39 @@ liegen. Die Klasse wird in dem Beilspiel nicht noch einmal
 aufgeführt.
 
 ```{.php}
-    /**
-     * Toggle the visibility of an element
-     * @param integer
-     * @param boolean
-     */
-    public function toggleVisibility($intId, $blnPublished)
+/**
+ * Toggle the visibility of an element
+ * @param integer
+ * @param boolean
+ */
+public function toggleVisibility($intId, $blnPublished)
+{
+    // Check permissions to edit
+    $this->Input->setGet('id', $intId);
+    $this->Input->setGet('act', 'toggle');
+
+    // Check permissions to publish
+    if (!$this->User->isAdmin && !$this->User->hasAccess('tl_example::published', 'alexf'))
     {
-        // Check permissions to edit
-        $this->Input->setGet('id', $intId);
-        $this->Input->setGet('act', 'toggle');
-
-        // Check permissions to publish
-        if (!$this->User->isAdmin && !$this->User->hasAccess('tl_example::published', 'alexf'))
-        {
-            $this->log(
-                'Not enough permissions to show/hide content element ID "'.$intId.'" tl_example toggleVisibility', 'tl_content toggleVisibility', TL_ERROR);
-            $this->redirect('contao/main.php?act=error');
-        }
-
-        $this->createInitialVersion('tl_example', $intId);
-
-        // Trigger the save_callback
-        if (is_array($GLOBALS['TL_DCA']['tl_example']['fields']['published']['save_callback']))
-        {
-            foreach ($GLOBALS['TL_DCA']['tl_example']['fields']['published']['save_callback'] as $callback)
-            {
-                $this->import($callback[0]);
-                $blnPublished = $this->$callback[0]->$callback[1]($blnPublished, $this);
-            }
-        }
-
-        // Update the database
-        $this->Database->prepare("UPDATE tl_test SET tstamp=". time() .", published='" . ($blnPublished ? '' : 1) . "' WHERE id=?")
-            ->execute($intId);
-        $this->createNewVersion('tl_example', $intId);
+        $this->log('Not enough permissions to show/hide content element ID "'.$intId.'" tl_example toggleVisibility', 'tl_content toggleVisibility', TL_ERROR);
+        $this->redirect('contao/main.php?act=error');
     }
+
+    $this->createInitialVersion('tl_example', $intId);
+
+    // Trigger the save_callback
+    if (is_array($GLOBALS['TL_DCA']['tl_example']['fields']['published']['save_callback']))
+    {
+        foreach ($GLOBALS['TL_DCA']['tl_example']['fields']['published']['save_callback'] as $callback)
+        {
+            $this->import($callback[0]);
+            $blnPublished = $this->$callback[0]->$callback[1]($blnPublished, $this);
+        }
+    }
+
+    // Update the database
+    $this->Database->prepare("UPDATE tl_test SET tstamp=". time() .", published='" . ($blnPublished ? '' : 1) . "' WHERE id=?")
+        ->execute($intId);
+    $this->createNewVersion('tl_example', $intId);
+}
 ```
