@@ -1270,17 +1270,19 @@ Available flags:
 </tr>
 <tr>
     <td><code>base64_encode</code></td>
-    <td>Encodes a text using the <a href="https://en.wikipedia
-    .org/wiki/Base64" target="_blank">Base64 algorithm</a>.</td>
-    <td><a target="_blank" href="http://php.net/base64_encode">PHP
-    function</a></td>
+    <td>Encodes a text using the 
+    <a href="https://en.wikipedia.org/wiki/Base64" 
+    target="_blank">Base64 algorithm</a>.</td>
+    <td><a target="_blank" 
+    href="http://php.net/base64_encode">PHP function</a></td>
 </tr>
 <tr>
     <td><code>base64_decode</code></td>
-    <td>Decodes a text using the <a href="https://en.wikipedia
-    .org/wiki/Base64" target="_blank">Base64 algorithm</a>.</td>
-    <td><a target="_blank" href="http://php.net/base64_decode">PHP
-    function</a></td>
+    <td>Decodes a text using the 
+    <a href="https://en.wikipedia.org/wiki/Base64" 
+    target="_blank">Base64 algorithm</a>.</td>
+    <td><a target="_blank" 
+    href="http://php.net/base64_decode">PHP function</a></td>
 </tr>
 </table>
 
