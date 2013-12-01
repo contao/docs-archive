@@ -49,9 +49,10 @@ $GLOBALS['TL_DCA']['tl_example']['list']['operations']['toggle'] = array
 
 ## 3. Erstellen einer Methode, die das Icon gemäß dem Status setzt
 
-Nun wird eine Methode erstellt, die das Icon anhand des Status setzt. Hier für 
-wird eine eigene Klasse angelegt. Wenn bereits eine Klasse mit anderen 
-Callbacks o.ä. vorhanden ist, können die Methoden auch dort eingefügt werden.
+Für das in Punkt 2 definierte `button_callback` muss auch eine Methode
+erstellt werden, die das Icon anhand des Status setzt. Hierfür wird eine
+eigene Klasse angelegt. Wenn bereits eine Klasse mit anderen Callbacks
+o.ä. vorhanden ist, können die Methoden auch dort eingefügt werden.
 
 ```{.php}
 class tl_example
@@ -97,9 +98,9 @@ class tl_example
 
 ## 4. Erstellen einer Methode, die den Status in der Datenbank setzt
 
-In der Methode `toggleIcon` wird die Methode `toggleVisibility` da diese über 
-`$this->toggleVisibility()` aufgerufen wird, muss sie in der gleichen Klasse 
-liegen. Die Klasse wird in dem Beispiel nicht noch einmal aufgeführt.
+In der Methode `toggleIcon` wird die Methode `toggleVisibility` aufgerufen,
+wenn ein entsprechender URL-Parameter vorhanden ist. Dies funktioniert sowohl
+per Ajax als auch als Javascript-Fallback-Link.
 
 ```{.php}
 /**
