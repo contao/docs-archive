@@ -4,28 +4,29 @@ Die Toggle-Funktion wird in Contao in der Regel durch ein grüne Auge
 symbolisiert und dient dem schnellen ein- und ausblenden von Datensätzen 
 über die Listenansicht.
 
-Es sind drei Schritte nötig: 
+Es sind vier Schritte nötig: 
 
 1. Einfügen eines Feldes in die Datenbank und DCA
 2. Einfügen einer Aktion in den DCA
-2. Erstellen einer Methode, die das Icon gemäß dem Status setzt
-3. Erstellen einer Methode, die den Status in der Datenbank setzt
+3. Erstellen einer Methode, die das Icon gemäß dem Status anzeigt
+4. Erstellen einer Methode, die den Status in der Datenbank setzt
 
 
 ## 1. Einfügen eines Feldes in die Datenbank und DCA
 
-Als erstes wird ein Feld in der Tabelle und eine entsprechende Konfiguration 
-im DCA angelegt. Seit Contao 3 wird keine `database.sql` mehr benötigt. Die 
-SQL-Definitionen werden direkt im DCA implementiert.
+Falls noch nicht vorhanden, muss als erstes ein Feld in der Tabelle
+und eine entsprechende Konfiguration im DCA angelegt werden. Seit
+Contao 3 wird keine `database.sql` mehr benötigt. Die SQL-Definitionen
+werden direkt im DCA implementiert.
 
 ```{.php}
 $GLOBALS['TL_DCA']['tl_example']['fields']['published'] = array
 (
-    'label'                => &$GLOBALS['TL_LANG']['tl_example']['published'],
-     'exclude'             => true,
-     'filter'              => true,
-     'inputType'           => 'checkbox',
-     'sql'                 => "char(1) NOT NULL default ''"
+    'label'               => &$GLOBALS['TL_LANG']['tl_example']['published'],
+    'exclude'             => true,
+    'filter'              => true,
+    'inputType'           => 'checkbox',
+    'sql'                 => "char(1) NOT NULL default ''"
 );
 ```
 
@@ -56,7 +57,7 @@ Callbacks o.ä. vorhanden ist, können die Methoden auch dort eingefügt werden.
 class tl_example
 {
     /**
-     * Aendert das Aussehen der Toggel-Buttons.
+     * Ändert das Aussehen des Toggle-Buttons.
      * @param $row
      * @param $href
      * @param $label
@@ -97,9 +98,8 @@ class tl_example
 ## 4. Erstellen einer Methode, die den Status in der Datenbank setzt
 
 In der Methode `toggleIcon` wird die Methode `toggleVisibility` da diese über 
-`$this->toggleVisibility()` aufgerufen wird, muss sie in der gleichen KLasse 
-liegen. Die Klasse wird in dem Beilspiel nicht noch einmal 
-aufgeführt.
+`$this->toggleVisibility()` aufgerufen wird, muss sie in der gleichen Klasse 
+liegen. Die Klasse wird in dem Beispiel nicht noch einmal aufgeführt.
 
 ```{.php}
 /**
@@ -116,7 +116,7 @@ public function toggleVisibility($intId, $blnPublished)
     // Check permissions to publish
     if (!$this->User->isAdmin && !$this->User->hasAccess('tl_example::published', 'alexf'))
     {
-        $this->log('Not enough permissions to show/hide content element ID "'.$intId.'" tl_example toggleVisibility', 'tl_content toggleVisibility', TL_ERROR);
+        $this->log('Not enough permissions to show/hide record ID "'.$intId.'"', 'tl_example toggleVisibility', TL_ERROR);
         $this->redirect('contao/main.php?act=error');
     }
 
@@ -133,7 +133,7 @@ public function toggleVisibility($intId, $blnPublished)
     }
 
     // Update the database
-    $this->Database->prepare("UPDATE tl_example SET tstamp=". time() .", published='" . ($blnPublished ? '' : 1) . "' WHERE id=?")
+    $this->Database->prepare("UPDATE tl_example SET tstamp=". time() .", published='" . ($blnPublished ? '' : '1') . "' WHERE id=?")
         ->execute($intId);
     $this->createNewVersion('tl_example', $intId);
 }
