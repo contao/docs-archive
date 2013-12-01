@@ -6,27 +6,13 @@ symbolisiert und dient dem schnellen ein- und ausblenden von Datensätzen
 
 Es sind drei Schritte nötig: 
 
-1. Einfügen einer Aktion in den DCA
-2. Einfügen eines Feldes in die Datenbank und DCA
+1. Einfügen eines Feldes in die Datenbank und DCA
+2. Einfügen einer Aktion in den DCA
 2. Erstellen einer Methode, die das Icon gemäß dem Status setzt
 3. Erstellen einer Methode, die den Status in der Datenbank setzt
 
 
-## 1. Einfügen einer Aktion in den DCA
-```{.php}
-$GLOBALS['TL_DCA']['tl_test']['list']['operations']['toggle'] = array
-(
-    'label'               => &$GLOBALS['TL_LANG']['tl_test']['toggle'],
-    'icon'                => 'visible.gif',
-    'attributes'          => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
-    'button_callback'     => array('tl_test', 'toggleIcon')
-);
-```
-
-*`tl_test` ist durch den Namen der Tabelle zu ersetzen!*
-
-
-## 2. Einfügen eines Feldes in die Datenbank und DCA
+## 1. Einfügen eines Feldes in die Datenbank und DCA
 
 Als erstes wird ein Feld in der Tabelle und eine entsprechende Konfiguration 
 im DCA angelegt. Seit Contao 3 wird keine `database.sql` mehr benötigt. Die 
@@ -44,6 +30,20 @@ $GLOBALS['TL_DCA']['tl_example']['list']['operations']['published'] = array
 ```
 
 *`tl_example` ist durch den Namen der Tabelle zu ersetzen!*
+
+
+## 2. Einfügen einer Aktion in den DCA
+```{.php}
+$GLOBALS['TL_DCA']['tl_test']['list']['operations']['toggle'] = array
+(
+    'label'               => &$GLOBALS['TL_LANG']['tl_test']['toggle'],
+    'icon'                => 'visible.gif',
+    'attributes'          => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
+    'button_callback'     => array('tl_test', 'toggleIcon')
+);
+```
+
+*`tl_test` ist durch den Namen der Tabelle zu ersetzen!*
 
 
 ## 3. Erstellen einer Methode, die das Icon gemäß dem Status setzt
