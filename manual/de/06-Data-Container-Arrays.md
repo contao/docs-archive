@@ -640,7 +640,7 @@ Ausdrucks geprüft werden.
         </tr>
         <tr>
           <td><b>extnd</b></td>
-          <td>erlaubt alles außer <code>#&amp;()/<=></code></td>
+          <td>erlaubt alles außer <code>#&amp;()/&lt;=&gt;</code></td>
         </tr>
         <tr>
           <td><b>friendly</b></td>
