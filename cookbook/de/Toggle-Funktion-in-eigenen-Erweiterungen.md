@@ -109,10 +109,6 @@ liegen. Die Klasse wird in dem Beispiel nicht noch einmal aufgeführt.
  */
 public function toggleVisibility($intId, $blnPublished)
 {
-    // Check permissions to edit
-    $this->Input->setGet('id', $intId);
-    $this->Input->setGet('act', 'toggle');
-
     // Check permissions to publish
     if (!$this->User->isAdmin && !$this->User->hasAccess('tl_example::published', 'alexf'))
     {
