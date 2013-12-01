@@ -19,9 +19,9 @@ im DCA angelegt. Seit Contao 3 wird keine `database.sql` mehr benötigt. Die
 SQL-Definitionen werden direkt im DCA implementiert.
 
 ```{.php}
-$GLOBALS['TL_DCA']['tl_example']['list']['operations']['published'] = array
+$GLOBALS['TL_DCA']['tl_example']['fields']['published'] = array
 (
-    'label'                => &$GLOBALS['TL_LANG']['tl_test']['published'],
+    'label'                => &$GLOBALS['TL_LANG']['tl_example']['published'],
      'exclude'             => true,
      'filter'              => true,
      'inputType'           => 'checkbox',
@@ -34,16 +34,16 @@ $GLOBALS['TL_DCA']['tl_example']['list']['operations']['published'] = array
 
 ## 2. Einfügen einer Aktion in den DCA
 ```{.php}
-$GLOBALS['TL_DCA']['tl_test']['list']['operations']['toggle'] = array
+$GLOBALS['TL_DCA']['tl_example']['list']['operations']['toggle'] = array
 (
-    'label'               => &$GLOBALS['TL_LANG']['tl_test']['toggle'],
+    'label'               => &$GLOBALS['TL_LANG']['tl_example']['toggle'],
     'icon'                => 'visible.gif',
     'attributes'          => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
-    'button_callback'     => array('tl_test', 'toggleIcon')
+    'button_callback'     => array('tl_example', 'toggleIcon')
 );
 ```
 
-*`tl_test` ist durch den Namen der Tabelle zu ersetzen!*
+*`tl_example` ist durch den Namen der Tabelle zu ersetzen!*
 
 
 ## 3. Erstellen einer Methode, die das Icon gemäß dem Status setzt
@@ -53,7 +53,7 @@ wird eine eigene Klasse angelegt. Wenn bereits eine Klasse mit anderen
 Callbacks o.ä. vorhanden ist, können die Methoden auch dort eingefügt werden.
 
 ```{.php}
-class myClass
+class tl_example
 {
     /**
      * Aendert das Aussehen der Toggel-Buttons.
@@ -133,7 +133,7 @@ public function toggleVisibility($intId, $blnPublished)
     }
 
     // Update the database
-    $this->Database->prepare("UPDATE tl_test SET tstamp=". time() .", published='" . ($blnPublished ? '' : 1) . "' WHERE id=?")
+    $this->Database->prepare("UPDATE tl_example SET tstamp=". time() .", published='" . ($blnPublished ? '' : 1) . "' WHERE id=?")
         ->execute($intId);
     $this->createNewVersion('tl_example', $intId);
 }
