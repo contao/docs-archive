@@ -74,7 +74,7 @@ echo $objArticle->title; // Home
 ```
 
 
-### Methode: protected `find($arrData)`
+### Methode: protected `find($arrOptions)`
 Implizit arbeiten alle `find*` Methoden mit `find()`.
 Die Methode akzeptiert ein Array mit folgenden Array-Keys:
 
@@ -131,7 +131,7 @@ PHP immer dann aufgerufen, wenn der Zugriff auf ein nicht existierendes
 Klassen-Attribut erfolgt. Contao gibt dann die Werte des Datensatzes zurück, 
 bzw. setzt diese.
 
-Achtung: Es werden nur Attribute gespiechert, die eine Entsprechung in der
+Achtung: Es werden nur Attribute gespeichert, die eine Entsprechung in der
 Datenbank-Tabelle haben.
 
 ``` {.php}
@@ -179,13 +179,13 @@ $objectArticelModel->setRow(array
 
 #### `save()`
 Speichert alle Änderungen in der Datenbank.
-Es werden nur Attribute gespiechert, die eine gleichnamige Splate in der
+Es werden nur Attribute gespeichert, die eine gleichnamige Splate in der
 Datenbank-Tabelle haben.
 
 
 #### static `countBy($strColumn=null, $varValue=null)`
 Gibt die Anzahl der Datensätzen, die in der Spalte `$strColumn` den Wert 
-`SstrValue` enthalten, zurück. 
+`$strValue` enthalten, zurück.
 
 ```{.php}
 // Zählt die Anzahl der Datensätze die in der Spalte pid den Wert 2 enthalten
