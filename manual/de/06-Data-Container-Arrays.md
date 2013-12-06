@@ -204,7 +204,7 @@ und eigene Bezeichnungen einfügen.
       <b>sort</b> zeigt das Sortiermenü an<br>
       <b>filter</b> zeigt die Filtermenüs an<br>
       <b>limit</b> zeigt das Limitmenü an. Trennen Sie die Menüs mit Komma
-      (= Abstand) oder Strichpunkt (= neue Zeile), also z.B. 
+      (= Abstand) oder Strichpunkt (= neue Zeile), also z.B.
       <code>sort,filter;search,limit</code>.</td>
 </tr>
 <tr>
@@ -1017,119 +1017,476 @@ Eintreten ausgeführt werden. Mit Hilfe von Callbacks kann der Programmablauf
 der Contao Core-Engine angepasst werden.
 
 
-#### Globale Callbacks
-
-<table>
-<tr>
-  <th>Callback</th>
-  <th>Beschreibung</th>
-</tr>
-<tr>
-  <td>onload_callback</td>
-  <td>Wird bei der Initialisierung des DataContainer-Objekts ausgeführt.
-      Ermöglicht z.B. das Prüfen von Zugriffsrechten oder die dynamische
-      Änderung des Data Container Array zur Laufzeit.</td>
-</tr>
-<tr>
-  <td>onsubmit_callback</td>
-  <td>Wird beim Abschicken eines Backend-Formulars ausgeführt. Ermöglicht z.B.
-      die Modifizierung der Formulardaten, bevor diese in die Datenbank
-      geschrieben werden (wird in der Kalender-Erweiterung zur
-      Intervalberechnung eingesetzt).</td>
-</tr>
-<tr>
-  <td>ondelete_callback</td>
-  <td>Wird ausgeführt bevor ein Datensatz aus der Datenbank entfernt wird.</td>
-</tr>
-<tr>
-  <td>oncut_callback</td>
-  <td>Wird ausgeführt nachdem ein Datensatz verschoben wurde.</td>
-</tr>
-<tr>
-  <td>oncopy_callback</td>
-  <td>Wird ausgeführt nachdem ein Datensatz dupliziert wurde.</td>
-</tr>
-</table>
+### Globale Callbacks
 
 
-#### Auflistungscallbacks
+#### onload_callback
 
-<table>
-<tr>
-  <th>Callback</th>
-  <th>Beschreibung</th>
-</tr>
-<tr>
-  <td>paste_button_callback</td>
-  <td>Ermöglicht individuelle Einfüge-Schaltflächen und wird z.B. in der
-      Seitenstruktur verwenden, um die Icons abhängig von den Benutzerrechten zu
-      deaktivieren (erfordert eine zusätzliche Prüfung mittels
-      load_callback).</td>
-</tr>
-<tr>
-  <td>child_record_callback</td>
-  <td>Legt fest, wie die Kindelemente im "Parent View" dargestellt werden.</td>
-</tr>
-<tr>
-  <td>group_callback</td>
-  <td>Ermöglicht individuelle Gruppennamen in der Listenansicht.</td>
-</tr>
-<tr>
-  <td>label_callback</td>
-  <td>Ermöglicht individuelle Bezeichnungen in der Listenansicht und wird z.B.
-      im Benutzer-Modul verwendet, um die Status-Icons hinzuzufügen.</td>
-</tr>
-</table>
+Wird bei der Initialisierung des DataContainer-Objekts ausgeführt.
+Ermöglicht z.B. das Prüfen von Zugriffsrechten oder die dynamische
+Änderung des Data Container Array zur Laufzeit. Übergibt ein DCA-Objekt
+und erwartet keinen Rückgabewert.
 
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    'config' => array(
+        // ...
+        'onload_callback' => array(array('myClass', 'myOnloadCallback')),
+    )
+    // ...
+); 
 
-#### Aktionscallbacks
-
-<table>
-<tr>
-  <th>Callback</th>
-  <th>Beschreibung</th>
-</tr>
-<tr>
-  <td>button_callback</td>
-  <td>Ermöglicht individuelle Navigationssymbole und wird z.B. in der
-      Seitenstruktur verwenden, um Icons abhängig von den Benutzerrechten zu
-      deaktivieren (erfordert eine zusätzliche Prüfung mittels
-      load_callback).</td>
-</tr>
-</table>
+// myClass.php
+/**
+ * onload_callback: Fuehrt eine Aktion bei der Initialisierung des DataContainer-Objekts aus.
+ * @param DataContainer DataContainer
+ */
+public function myOnloadCallback(DataContainer $dc){
+    // do something ...
+} 
+```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
 
 
-#### Feldcallbacks
+#### onsubmit_callback
 
-<table>
-<tr>
-  <th>Callback</th>
-  <th>Beschreibung</th>
-</tr>
-<tr>
-  <td>options_callback</td>
-  <td>Ermöglicht das Befüllen eines Drop-Down-Menüs oder einer Checkbox-Liste
-      mittels einer individuellen Funktion. Kann z.B. für bedingte
-      Fremdschlüssel-Relationen verwendet werden.</td>
-</tr>
-<tr>
-  <td>input_field_callback</td>
-  <td>Ermöglicht das Erstellen individueller Formularfelder und wird z.B. im
-      Backend-Modul "Persönliche Daten" verwendet, um das
-      "Daten bereinigen"-Feld zu erstellen. Achtung: Eingaben werden nicht
-      automatisch gespeichert!</td>
-</tr>
-<tr>
-  <td>load_callback</td>
-  <td>Wird bei der Initialisierung eines Formularfeldes ausgeführt. Ermöglicht
-      z.B. das Laden eines Standardwertes.</td>
-</tr>
-<tr>
-  <td>save_callback</td>
-  <td>Wird beim Abschicken eines Feldes ausgeführt. Ermöglicht z.B. das
-      Hinzufügen einer individuellen Prüfung.</td>
-</tr>
-</table>
+Wird beim Abschicken eines Backend-Formulars ausgeführt. Ermöglicht z.B.
+die Modifizierung der Formulardaten, bevor diese in die Datenbank
+geschrieben werden (wird in der Kalender-Erweiterung zur
+Intervalberechnung eingesetzt). Übergibt ein DCA-Objekt und erwartet 
+keinen Rückgabewert.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    'config' => array(
+        // ...
+        'onsubmit_callback' => array(array('myClass', 'myOnsubmitCallback')),
+    )
+    // ...
+); 
+
+// myClass.php
+/**
+ * onsubmit_callback: Wird beim Abschicken eines Backend-Formulars ausgefuehrt.
+ * @param DataContainer $dc
+ */
+public function myOnsubmitCallback(DataContainer $dc){
+    // do something ...
+}
+```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
+
+
+#### ondelete_callback
+
+Wird ausgeführt bevor ein Datensatz aus der Datenbank entfernt wird. Übergibt 
+ein DCA-Objekt und erwartet keinen Rückgabewert.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    'config' => array(
+        // ...
+        'ondelete_callback' => array(array('myClass', 'myOndeleteCallback')),
+    )
+    // ...
+); 
+
+// myClass.php
+/**
+ * ondelete_callback: Wird ausgefuehrt bevor ein Datensatz aus der Datenbank entfernt wird.
+ * @param DataContainer $dc
+ */
+public function myOndeleteCallback(DataContainer $dc){
+    // do something ...
+} 
+```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
+
+
+#### oncut_callback
+
+Wird ausgeführt nachdem ein Datensatz verschoben wurde. Übergibt nichts und 
+erwartet keinen Rückgebewert.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'config' => array
+        // ...
+        'oncut_callback' => array(array('myClass', 'myOncutCallback'))
+    )
+);
+
+// myClass.php
+/**
+ * oncut_callback: Wird ausgefuehrt nachdem ein Datensatz verschoben wurde.
+ */
+public function myOncutCallback(){
+    // do something ...
+
+}
+```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
+
+
+#### oncopy_callback
+
+Wird ausgeführt nachdem ein Datensatz dupliziert wurde. Übergibt nichts und 
+erwartet keinen Rückgebewert.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'config' => array
+        // ...
+        'oncopy_callback' => array(array('myClass', 'myOncopyCallback'))
+    )
+);
+
+// myClass.php
+/**
+ * oncopy_callback: Wird ausgefuehrt nachdem ein Datensatz dupliziert wurde.
+ */
+public function myOncopyCallback(){
+    // do something ...
+
+}
+```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
+
+
+### Auflistungscallbacks
+
+
+#### paste_button_callback
+
+Ermöglicht individuelle Einfüge-Schaltflächen und wird z.B. in der
+Seitenstruktur verwenden, um die Icons abhängig von den Benutzerrechten zu
+deaktivieren (erfordert eine zusätzliche Prüfung mittels
+load_callback). Eine Liste der übergebenen Parameter befindet sich im
+Quelltextbeispiel, erwartet den Button (als String) als Rückgabewert.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'list' => array(
+        'sorting' => array(
+            // ...
+            'paste_button_callback' => array('myClass', 'myPastebuttonCallback')
+        )
+        // ...
+    )
+);
+
+// myClass.php
+/**
+ * paste_button_callback: Ermoeglicht individuelle Einfuege-Schaltflaechen.
+ * @param DataContainer $dc
+ * @param array $row
+ * @param string $table
+ * @param boolean $cr
+ * @param array $arrClipboard
+ * @return string
+ */
+public function myPastebuttonCallback(DataContainer $dc, $row, $table, $cr, $arrClipboard=false){
+    // do something ...
+    return $button;
+}
+```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
+
+
+#### child_record_callback
+
+Legt fest, wie die Kindelemente im "Parent View" dargestellt werden. Übergibt die Tabellenzeile
+und erwartet das Label für das Kindelement zurück.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'list' => array(
+        'sorting' => array(
+            // ...
+            'child_record_callback' => array('myClass', 'myChildrecordCallback')
+        )
+        // ...
+    )
+);
+
+// myClass.php
+/**
+ * child_record_callback: Legt fest, wie die Kindelemente im "Parent View" dargestellt werden.
+ * @param array $row
+ * @return string
+ */
+public function myChildrecordCallback($row){
+    // do something ...
+    return $label;
+}
+```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
+
+
+#### group_callback
+
+Ermöglicht individuelle Gruppennamen in der Listenansicht.
+
+
+#### label_callback
+
+Ermöglicht individuelle Bezeichnungen in der Listenansicht und wird z.B.
+im Benutzer-Modul verwendet, um die Status-Icons hinzuzufügen. Übergibt
+die Datenbankzeile, das Label und erwartet das geänderte Label
+als Rückgabewert.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'list' => array(
+        // ...
+        'label' => array(
+            // ...
+            'label_callback' = array('myClass', 'myLabelCallback')
+        )
+    )
+);
+
+// myClass.php
+/**
+ * label_callback: Ermoeglicht individuelle Bezeichnungen.
+ * @param array $row
+ * @param string $label
+ * @return string
+ */
+public function myLabelCallback($row, $label){
+    // do something ...
+    return $newLabel
+}
+```
+*(TABLENAME muss durch den Tabellennamen ersetzt werden!)*
+
+
+### Aktionscallbacks
+
+
+#### button_callback
+
+Ermöglicht individuelle Navigationssymbole und wird z.B. in der
+Seitenstruktur verwenden, um Icons abhängig von den Benutzerrechten zu
+deaktivieren (erfordert eine zusätzliche Prüfung mittels
+load_callback). Eine Liste der übergebenen Parameter befindet sich im Quelltextbeispiel,
+erwartet einen String mit dem erzeugten Link als Rückgebewert.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'list' => array(
+        // ..
+        'operations' => array(
+            // ...
+            'NAMEDEROPERATION' => array(
+                // ...
+                'button_callback' => array('myClass', 'myButtonCallback')
+            )
+        )
+    )
+);
+
+// myClass.php
+/**
+ * button_callback: Ermoeglicht individuelle Navigationssymbole
+ * @param array $arrRow the current row
+ * @param string $href the url of the embedded link of the button
+ * @param string $label label text for the button
+ * @param string $title title value for the button
+ * @param string $icon url of the image for the button
+ * @param array $attributes additional attributes for the button (fetched from the array key "attributes" in the DCA)
+ * @param string $strTable the name of the current table
+ * @param $arrRootIds array of the ids of the selected "page mounts" (only in tree view)
+ * @param $arrChildRecordIds ids of the childs of the current record (only in tree view)
+ * @param boolean $blnCircularReference determines if this record has a circular reference (used to prevent pasting of an cutted item from an tree into any of it's childs).
+ * @param string $strPrevious id of the previous entry on the same parent/child level. Used for move up/down buttons. Not for root entries in tree view.
+ * @param string $strNext id of the next entry on the same parent/child level. Used for move up/down buttons. Not for root entries in tree view.
+ */
+public function myButtonCallback($arrRow, $href, $label, $title, $icon, $attributes, $strTable, $arrRootIds, $arrChildRecordIds, $blnCircularReference, $strPrevious, $strNext){
+    // do something ...
+    return '<a href="'.$this->addToUrl($href).'" title="'.specialchars($title).'"'.$attributes.'>'.$this->generateImage($icon, $label).'</a> ';
+}
+```
+*(TABLENAME und NAMEDEROPERATION müssen durch den Tabellennamen bzw. den Namen der Operation ersetzt werden!)*
+
+
+### Feldcallbacks
+
+#### options_callback
+
+Ermöglicht das Befüllen eines Drop-Down-Menüs oder einer Checkbox-Liste
+mittels einer individuellen Funktion. Kann z.B. für bedingte
+Fremdschlüssel-Relationen verwendet werden. Es wird ein DCA-Objekt
+übergeben und ein Array mit den Optionen als Rückgabewert erwartet.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'fields' => array
+    (
+        // ...
+        'FELDNAME' => array
+        (
+            // ...
+            'options_callback' => array('myClass', 'myOptionsCallback'),
+            // ...
+        )
+    ),
+    // ...
+);
+
+// myClass.php
+ /**
+  * options_callback: Gibt ein Array mit den Optionen fuer das Auswahlfeld zurueck.
+  * @param DataContainer $dc
+  * @return array
+  */
+public function myOptionsCallback(DataContainer $dc){
+    // do something and return array with options.
+    // Example:
+    $arrOpt = array('test01', 'test02');
+    return $arrOpt;
+}
+
+```
+*(TABLENAME und FELDNAME müssen durch den Tabellennamen bzw. den Feldnamen ersetzt werden!)*
+
+
+#### input_field_callback
+
+Ermöglicht das Erstellen individueller Formularfelder und wird z.B. im
+Backend-Modul "Persönliche Daten" verwendet, um das "Daten bereinigen"-Feld
+zu erstellen. Achtung: Eingaben werden nicht automatisch gespeichert! Die Daten
+müssen mit einem save_callback gespeichert werden. Übergibt ein DCA-Objekt,
+das definierte Label und erwartet das Formularfeld (als String) als Rückgabewert.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'fields' => array
+    (
+        // ...
+        'FELDNAME' => array
+        (
+            // ...
+            'input_field_callback' => array('myClass', 'myIputFieldCallback'),
+            // ...
+        )
+    ),
+    // ...
+);
+
+// myClass.php
+/**
+ * input_field_callback: Erstellt ein individuelles Eingabefeld und gibt es als String zurueck.
+ * @param DataContainer $dc
+ * @param string $strLabel
+ * @return string
+ */
+public function myIputFieldCallback(DataContainer $dc, $strLabel){
+    // do something and return a string.
+    return $myField;
+}
+
+```
+*(TABLENAME und FELDNAME müssen durch den Tabellennamen bzw. den Feldnamen ersetzt werden!)*
+
+
+#### load_callback
+
+Wird bei der Initialisierung eines Formularfeldes ausgefuehrt. Ermöglicht
+z.B. das Laden eines Standardwertes. Übergibt den aktuellen Wert des Feldes,
+ein DCA-Objekt und erwartet den geänderten Wert als Rückgabewert.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'fields' => array
+    (
+        // ...
+        'FELDNAME' => array
+        (
+            // ...
+            'load_callback' => array('myClass', 'myLoadCallback'),
+            // ...
+        )
+    ),
+    // ...
+);
+
+// myClass.php
+/**
+ * load_callback: Wird bei der Initialisierung eines Formularfeldes ausgefuehrt.
+ * @param var $varValue
+ * @param DataContainer $dc
+ * @return var
+ */
+public function myLoadCallback($varValue, DataContainer $dc) {
+    // do somethig ...
+    // Example:
+    if($varValue != ''){
+        return $varValue
+    } else {
+        return "Test!";
+    }
+}
+```
+*(TABLENAME und FELDNAME müssen durch den Tabellennamen bzw. den Feldnamen ersetzt werden!)*
+
+
+#### save_callback
+
+Wird beim Abschicken eines Feldes ausgefuehr und ermöglicht das Ändern des Werts vor dem Speichern.
+Übergibt den Feldwert, ein DCA-Object und erwartet den geänderten Wert als Rückgabewert.
+
+``` {.php}
+// dca/TABLENAME.php
+$GLOBALS['TL_DCA']['TABLENAME'] = array(
+    // ...
+    'fields' => array
+    (
+        // ...
+        'FELDNAME' => array
+        (
+            // ...
+            'save_callback' => array(array('myClass', 'mySaveCallback')),
+            // ...
+        )
+    ),
+    // ...
+);
+
+// myClass.php
+/**
+ * save_callback: Wird beim Abschicken eines Feldes ausgefuehrt.
+ * @param var $varValue
+ * @param DataContainer $dc
+ * @return var
+ */
+public function mySaveCallback($varValue, DataContainer $dc) {
+        // do somethig ...
+        return $varValue
+}
+```
+*(TABLENAME und FELDNAME müssen durch den Tabellennamen bzw. den Feldnamen ersetzt werden!)*
 
 
 [1]: 02-Administration-area.md#datens%C3%A4tze-auflisten
