@@ -579,9 +579,9 @@ Comments are another form of content that you can manage from the back end.
 Comments must be enabled in the calendar and news archive preferences.
 
 
-### Front end modules
+### Front end module
 
-Front end modules are used to display comments on the website. They can be 
+The front end module is used to display comments on the website. They can be 
 configured with the "Modules" module in the back end and have to be added to an 
 article or page layout to actually show up on the website. The comments 
 extension includes one front end module:
@@ -596,6 +596,27 @@ extension includes one front end module:
   <td>Comments</td>
   <td>mod_comments</td>
   <td>Manage comments or guestbook entries.</td>
+</tr>
+</table>
+
+
+### Content element
+
+The content element is used to display comments on the website. They can be 
+configured with the "Comments" content element in the back end and have to be 
+added to an article to actually show up on the website. The comments extension 
+includes one content element:
+
+<table>
+<tr>
+  <th>Content element</th>
+  <th>CSS class</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>Comments</td>
+  <td>ce_comments</td>
+  <td>Adds a comment form to the page.</td>
 </tr>
 </table>
 
