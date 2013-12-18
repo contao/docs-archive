@@ -8,13 +8,13 @@ without even touching its files, so you do not have to reapply your changes
 after every update.
 
 
-##Bypass the internal cache 
+## Bypass the internal cache 
 
 Before developing extensions for Contao, you should bypass the internal cache.
-If you want to bypass the internal cache, navigate to "System"->"Settings" and 
+If you want to bypass the internal cache, navigate to "System" -> "Settings" and 
 enable the checkbox "Bypass the internal cache" under "Global configuration".
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/bypass-internal-cache.jpg)
+![](images/bypass-internal-cache.jpg?raw=true)
 
 As soon as the site goes into production, you should uncheck "Bypass the 
 internal cache" in order to minimize the response time.  
@@ -122,7 +122,7 @@ of the `news` extension.
 Create the file `dca/tl_member.php` in your module folder and add the meta data
 for the new field so Contao knows how to handle it.
 
-Since Contao 3 you can also specify directly the correspondig fields and their 
+Since Contao 3 you can also specify directly the corresponding fields and their 
 configuration for the database in the DCA under `sql`. The SQL details are not 
 sent to the database but they are used to calculate the difference between the 
 Contao specifications and the actual database tables.
@@ -150,7 +150,8 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 If you do not understand the code above, you might want to read the chapter on
 [Data Container Arrays][1].
 
-After adding or modifying a field in the DCA you should visit the [Contao install tool][3] in order to update your database tables.
+After adding or modifying a field in the DCA you should visit the 
+[Contao install tool][3] in order to update your database tables.
 
 
 ### Adding a translation
@@ -179,7 +180,7 @@ include all TinyMCE plugins by default, so if you want to use a certain plugin
 that is not part of the Contao distribution, download it from the [TinyMCE
 project website][4] and move it into the `assets/tinymce/plugins` folder.
 
-![](https://raw.github.com/contao/docs/3.2/manual/en/images/rich-text-editor.jpg)
+![](images/rich-text-editor.jpg?raw=true)
 
 To image above shows the default Rich Text Editor configuration file
 `system/config/tinyMCE.php`. To create a custom configuration file, simply copy

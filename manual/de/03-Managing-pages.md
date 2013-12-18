@@ -14,7 +14,7 @@ die Seitenstruktur das zentrale Element der Webseite. Besucher rufen
 grundsätzlich immer Seiten auf und niemals einzelne Artikel, wie es in einem
 Node-basierten Content Management System der Fall ist.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/komponenten.jpg)
+![](images/komponenten.jpg?raw=true)
 
 Das Diagramm verdeutlicht, dass Artikel und Layouts die beiden wichtigsten
 Komponenten einer Seite sind. Während Artikel die Inhalte einer Seite
@@ -45,7 +45,7 @@ und Gruppen enthält. Ein Theme enthält dagegen nur das eigentliche Design der
 Webseite und kann deswegen importiert werden, ohne dass bestehende Daten
 verloren gehen.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/themes-verwalten.jpg)
+![](images/themes-verwalten.jpg?raw=true)
 
 
 ### Theme-Bestandteile
@@ -60,7 +60,7 @@ nicht automatisch mit dem Theme verlinkt und müssen deswegen in den
 Theme-Einstellungen hinzugefügt werden, damit sie beim Theme-Export
 berücksichtigt werden.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/theme-einstellungen.jpg)
+![](images/theme-einstellungen.jpg?raw=true)
 
 
 ### Theme-Export und Import
@@ -86,7 +86,7 @@ Stylesheet zu referenzieren, müssen Sie deren Klassennamen kennen.
 [Modul-Klassen][4] mit "mod_" (z.B. "mod_search"). Falls Sie sich nicht sicher
 sind, sehen Sie einfach im Quelltext der Webseite nach.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/stylesheet.jpg)
+![](images/stylesheet.jpg?raw=true)
 
 Jedes Stylesheet kann auf einen oder mehrere Medientypen und/oder eine bestimmte
 Version des Internet Explorers beschränkt werden, falls Sie einen der vielen
@@ -323,7 +323,7 @@ werden.
 Jedes Frontend-Modul kann geschützt werden, so dass es nur Gäste oder Benutzer
 einer bestimmten Mitgliedergruppe sehen können.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/geschuetztes-modul.jpg)
+![](images/geschuetztes-modul.jpg?raw=true)
 
 
 ## Seitenlayouts
@@ -336,9 +336,9 @@ Google Analytics ID oder beliebigem JavaScript-Code, der für die Steuerung
 interaktiver Elemente und Plugins benötigt wird. Das Contao CSS-Framework teilt
 das Browserfenster automatisch in mehrere Layoutbreiche auf.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/front-end-structure.jpg)
+![](images/front-end-structure.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/frontend-module.jpg)
+![](images/frontend-module.jpg?raw=true)
 
 Das impliziert, dass Sie zum Zeitpunkt der Erstellung eines Seitenlayouts
 bereits die benötigten Stylesheets und Frondend-Module angelegt haben müssen.
@@ -485,7 +485,7 @@ die damit verbundenen Artikel bearbeiten. Ein Mitglied der Gruppe einer Seite
 darf hingegen nur die Artikel bearbeiten und ein unpriviligierter Benutzer hat
 überhaupt keine Schreibrechte.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/benutzerrechte.jpg)
+![](images/benutzerrechte.jpg?raw=true)
 
 
 [1]: http://www.youtube.com/watch?v=6z744hsR8I0

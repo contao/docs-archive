@@ -92,7 +92,7 @@ speichern Sie Ihre Änderungen. Contao generiert jetzt statische URLs wie z.B.
 Eventuell haben Sie beim Aufruf des Contao-Installtools die Mitteilung erhalten,
 dass die lokale Konfigurationsdatei nicht beschreibbar ist.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/localconfig-not-writable.jpg)
+![](images/localconfig-not-writable.jpg?raw=true)
 
 
 ### Dateizugriffsrechte
@@ -176,7 +176,7 @@ verbinden Sie sich mit dem Server. Erstellen Sie ein Backup der oben genannten
 Dateien und navigieren Sie dann zum Contao-Verzeichnis und klicken Sie auf die
 "Dateien synchronisieren"-Schaltfläche.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/synchronization-options.jpg)
+![](images/synchronization-options.jpg?raw=true)
 
 Treffen Sie Ihre Auswahl wie in der Abbildung und wählen Sie unbedingt die
 Option "Änderungsvorschau" aus, damit Sie die zu aktualisierenden Dateien noch
@@ -184,7 +184,7 @@ einmal prüfen können. Bestätigen Sie danach die Einstellungen im Vorschaufens
 und achten Sie besonders auf die zu löschenden Ressourcen! Klicken Sie "OK", um
 den Synchronisationsvorgang zu starten.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/synchronization-confirmation.jpg)
+![](images/synchronization-confirmation.jpg?raw=true)
 
 
 ### Die Datenbank aktualisieren
@@ -215,12 +215,12 @@ Das Live Update umfasst folgende Funktionen:
 
 ### Versionsauswahl
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/live-update-1.jpg)
+![](images/live-update-1.jpg?raw=true)
 
 
 ### Template-Unterschiede
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/live-update-2.jpg)
+![](images/live-update-2.jpg?raw=true)
 
 
 ### Fehlersuche
@@ -264,7 +264,7 @@ oberen Menü. Um Kompatibilitätsprobleme zwischen verschiedenen MySQL-Versionen
 zu minimieren `,ist es wichtig, die Einstellungen für den Export gemäß des
 folgenden Screenshots anzupassen:
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/sql-export.jpg)
+![](images/sql-export.jpg?raw=true)
 
 
 ### Datenbank importieren
@@ -276,7 +276,7 @@ leere Datenbank aus und klicken Sie auf die "Import"-Schaltfläche im oberen
 Menü. Laden Sie dann den SQL-Dump der lokalen Datenbank hoch und starten Sie den
 Import.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/sql-import.jpg)
+![](images/sql-import.jpg?raw=true)
 
 
 ### Datenbank-Konfiguration anpassen
@@ -315,7 +315,7 @@ Hack benötigen oder nicht. Je nach Systemkonfiguration können Sie mit Hilfe de
 Web-Installers eine neue Contao-Installation aufsetzen oder eine bestehende
 Installation prüfen.
 
-![](https://raw.github.com/contao/docs/3.2/manual/de/images/contao-check.jpg)
+![](images/contao-check.jpg?raw=true)
 
 Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
 `check` in Ihr Contao-Verzeichnis und öffnen Sie ihn in einem Browser.

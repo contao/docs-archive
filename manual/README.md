@@ -34,10 +34,10 @@ GitHub syntax.
 
 ### Images
 
-We are using the GitHub CDN for images, therefore please specify the absolute
-URL to any image you upload to the repository:
+Links to images should be relative to the current document. To make them work on
+GitHub, please add `raw=true` as a parameter:
 
-    ![](https://raw.github.com/contao/docs/3.1/manual/en/images/synchronization-options.jpg)
+    ![](images/synchronization-options.jpg?raw=true)
 
 
 ### Internal links

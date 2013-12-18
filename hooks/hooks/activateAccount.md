@@ -20,7 +20,12 @@ The `activateAccount` hook is triggered when a new front end account is activate
 $GLOBALS['TL_HOOKS']['activateAccount'][] = array('MyClass', 'myActivateAccount');
 
 // MyClass.php
-public function myActivateAccount(Database_Result $objUser)
+/**
+ * @param  Database_Result    $objUser         The database result object
+ * @param  ModuleRegistration $objRegistration The registration module
+ * @return void                                No return value expected
+ */
+public function myActivateAccount(Database_Result $objUser, ModuleRegistration $objRegistration)
 {
     // Do something
 }

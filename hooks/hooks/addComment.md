@@ -24,7 +24,14 @@ The `addComment` hook is triggered when a comment is added. It passes the ID of 
 $GLOBALS['TL_HOOKS']['addComment'][] = array('MyClass', 'myAddComment');
 
 // MyClass.php
-public function myAddComment($intId, $arrSet)
+
+/**
+ * @param  integer  $intId       id of the comment
+ * @param  array    $arrSet      The comments data
+ * @param  Comments $objComments The Comments object
+ * @return void                No return value expected
+ */
+public function myAddComment($intId, $arrSet, Comments $objComments)
 {
     // Do something
 }
