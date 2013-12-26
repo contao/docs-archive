@@ -5,7 +5,7 @@ Frontend-Seite ausgeführt. Entsprechend funktionieren diese Cronjobs
 standardmässig nur, wenn die Webseite auch besucht wird. Erweiterungen können
 über folgende [Hooks][1] periodische Aufgaben ausführen:
 
-```
+```{.php}
 $GLOBALS['TL_CRON']['monthly']
 $GLOBALS['TL_CRON']['weekly']
 $GLOBALS['TL_CRON']['daily']
