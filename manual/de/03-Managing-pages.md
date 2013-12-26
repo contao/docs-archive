@@ -14,7 +14,7 @@ die Seitenstruktur das zentrale Element der Webseite. Besucher rufen
 grundsätzlich immer Seiten auf und niemals einzelne Artikel, wie es in einem
 Node-basierten Content Management System der Fall ist.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/komponenten.jpg)
+![](images/komponenten.jpg?raw=true)
 
 Das Diagramm verdeutlicht, dass Artikel und Layouts die beiden wichtigsten
 Komponenten einer Seite sind. Während Artikel die Inhalte einer Seite
@@ -45,7 +45,7 @@ und Gruppen enthält. Ein Theme enthält dagegen nur das eigentliche Design der
 Webseite und kann deswegen importiert werden, ohne dass bestehende Daten
 verloren gehen.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/themes-verwalten.jpg)
+![](images/themes-verwalten.jpg?raw=true)
 
 
 ### Theme-Bestandteile
@@ -60,7 +60,7 @@ nicht automatisch mit dem Theme verlinkt und müssen deswegen in den
 Theme-Einstellungen hinzugefügt werden, damit sie beim Theme-Export
 berücksichtigt werden.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/theme-einstellungen.jpg)
+![](images/theme-einstellungen.jpg?raw=true)
 
 
 ### Theme-Export und Import
@@ -86,7 +86,7 @@ Stylesheet zu referenzieren, müssen Sie deren Klassennamen kennen.
 [Modul-Klassen][4] mit "mod_" (z.B. "mod_search"). Falls Sie sich nicht sicher
 sind, sehen Sie einfach im Quelltext der Webseite nach.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/stylesheet.jpg)
+![](images/stylesheet.jpg?raw=true)
 
 Jedes Stylesheet kann auf einen oder mehrere Medientypen und/oder eine bestimmte
 Version des Internet Explorers beschränkt werden, falls Sie einen der vielen
@@ -238,7 +238,7 @@ werden.
 Jedes Frontend-Modul kann geschützt werden, so dass es nur Gäste oder Benutzer
 einer bestimmten Mitgliedergruppe sehen können.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/geschuetztes-modul.jpg)
+![](images/geschuetztes-modul.jpg?raw=true)
 
 
 ## Seitenlayouts
@@ -251,9 +251,9 @@ Google Analytics ID oder beliebigem JavaScript-Code, der für die Steuerung
 interaktiver Elemente und Plugins benötigt wird. Das Contao CSS-Framework teilt
 das Browserfenster automatisch in mehrere Layoutbreiche auf.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/front-end-structure.jpg)
+![](images/front-end-structure.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/frontend-module.jpg)
+![](images/frontend-module.jpg?raw=true)
 
 Das impliziert, dass Sie zum Zeitpunkt der Erstellung eines Seitenlayouts
 bereits die benötigten Stylesheets und Frondend-Module angelegt haben müssen.
@@ -314,8 +314,8 @@ Seitenstruktur markiert. Contao unterstützt folgende 6 Seitentypen:
 Contao unterstützt mehrere Webseiten innerhalb der Seitenstruktur und leitet
 Besucher je nach DNS- und Spracheinstellungen automatisch auf einen bestimmten
 Startpunkt einer Webseite weiter. Nehmen wir an, Sie betreiben eine
-zweisprachige Firmenwebseite unter "www.firma.de" und eine kleine private
-Webseite unter der Domain "www.private-seite.de". Sie benötigen dafür drei
+zweisprachige Firmenwebseite unter "www.example.com" und eine kleine private
+Webseite unter der Domain "www.personal.example.org". Sie benötigen dafür drei
 Startpunkte:
 
 <table>
@@ -339,7 +339,7 @@ Startpunkte:
 </tr>
 <tr>
   <td>Private Webseite</td>
-  <td>private-seite.de</td>
+  <td>www.personal.example.org</td>
   <td>de</td>
   <td>ja</td>
 </tr>
@@ -355,22 +355,22 @@ Domain und seiner Browsersprache weitergeleitet wird.
   <th>Weiterleitung</th>
 </tr>
 <tr>
-  <td>www.firma.de</td>
+  <td>www.example.com</td>
   <td>Englisch</td>
   <td>Englische Firmenseite</td>
 </tr>
 <tr>
-  <td>www.firma.de</td>
+  <td>www.example.com</td>
   <td>Deutsch</td>
   <td>Deutsche Firmenseite</td>
 </tr>
 <tr>
-  <td>www.firma.de</td>
+  <td>www.example.com</td>
   <td>Spanisch</td>
   <td>Englische Firmenseite</td>
 </tr>
 <tr>
-  <td>www.private-seite.de</td>
+  <td>www.personal.example.org</td>
   <td>egal</td>
   <td>Persönliche Webseite</td>
 </tr>
@@ -398,7 +398,7 @@ die damit verbundenen Artikel bearbeiten. Ein Mitglied der Gruppe einer Seite
 darf hingegen nur die Artikel bearbeiten und ein unpriviligierter Benutzer hat
 überhaupt keine Schreibrechte.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/benutzerrechte.jpg)
+![](images/benutzerrechte.jpg?raw=true)
 
 
 [1]: http://www.youtube.com/watch?v=6z744hsR8I0

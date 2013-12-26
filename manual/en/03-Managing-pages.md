@@ -13,7 +13,7 @@ other is the key to learning Contao. As mentioned before, the site structure is
 the central element of your website. Visitors of your website always request
 pages and not articles like in a node-based CMS.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/components.jpg)
+![](images/components.jpg?raw=true)
 
 The diagram shows that articles and layouts are the two most important page
 elements. Whereas articles store the content of a page, the page layout defines
@@ -41,7 +41,7 @@ example site structure, articles, content elements and even users and groups. A
 theme, in contrast, contains only the actual website design and can therefore be
 imported without losing any existing data.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/theme-manager.jpg)
+![](images/theme-manager.jpg?raw=true)
 
 
 ### Theme components
@@ -54,7 +54,7 @@ directory and optional custom templates from the templates directory. However,
 those resources are not automatically linked with the theme and therefore have
 to be added in the theme configuration to be included in the theme export.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/theme-settings.jpg)
+![](images/theme-settings.jpg?raw=true)
 
 
 ### Theme export and import
@@ -77,7 +77,7 @@ their class names. [Content element classes][5] start with "ce\_"
 (e.g. "ce_text") and [module classes][3] with "mod\_" (e.g. "mod_search"). If
 you are not sure, simply look into the page source.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/style-sheet.jpg)
+![](images/style-sheet.jpg?raw=true)
 
 Every style sheet can be limited to one or more media types and/or to a
 particular Internet Explorer version, in case you need to fix one of its
@@ -227,7 +227,7 @@ feeds and many more. To create a module, log into the back end and choose
 Each front end module can be protected so only guests or members of a particular
 group can see it on the website.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/protected-module.jpg)
+![](images/protected-module.jpg?raw=true)
 
 
 ## Page layouts
@@ -240,9 +240,9 @@ that is required to control interactive elements and plugins. The Contao CSS
 framework automatically divides the browser window into several layout sections
 and shows the modules that have been assigned to them one below the other.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/front-end-structure.jpg)
+![](images/front-end-structure.jpg?raw=true)
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/front-end-modules.jpg)
+![](images/front-end-modules.jpg?raw=true)
 
 That implies that by the time you create a page layout, you have to have created
 all style sheets and front end modules that you want to include in it. Therefore
@@ -303,8 +303,8 @@ supports 6 different page types which are explained below.
 Contao supports multiple websites within the site structure and automatically
 redirects visitors to a particular website root page depending on its DNS and
 language settings. Let us assume that you are running a bilingual corporate
-website which uses the domain "www.company.com" and a small private website
-which uses the domain "www.personal-website.com". You need three website root
+website which uses the domain "www.example.com" and a small private website
+which uses the domain "www.personal.example.org". You need three website root
 pages for that:
 
 <table>
@@ -328,7 +328,7 @@ pages for that:
 </tr>
 <tr>
   <td>Personal website</td>
-  <td>personal-website.com</td>
+  <td>www.personal.example.org</td>
   <td>de</td>
   <td>yes</td>
 </tr>
@@ -344,22 +344,22 @@ on the domain and his browser language.
   <th>Redirect target</th>
 </tr>
 <tr>
-  <td>www.company.com</td>
+  <td>www.example.com</td>
   <td>English</td>
   <td>English corporate website</td>
 </tr>
 <tr>
-  <td>www.company.com</td>
+  <td>www.example.com</td>
   <td>German</td>
   <td>German corporate website</td>
 </tr>
 <tr>
-  <td>www.company.com</td>
+  <td>www.example.com</td>
   <td>Spanish</td>
   <td>English corporate website</td>
 </tr>
 <tr>
-  <td>www.personal-website.com</td>
+  <td>www.personal.example.org</td>
   <td>irrelevant</td>
   <td>Personal website</td>
 </tr>
@@ -386,7 +386,7 @@ allowed to edit the page itself as well as its articles, whereas a user of the
 group that owns a page is only allowed to edit articles. Unprivileged users have
 no writing permissions at all.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/access-rights.jpg)
+![](images/access-rights.jpg?raw=true)
 
 
 [1]: https://contao.org/en/contao-themes-and-templates.html

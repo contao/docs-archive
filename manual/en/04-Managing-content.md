@@ -134,7 +134,7 @@ an overview of the Contao core content elements:
 Each content element can be protected so only guests or members of a particular
 group can see it on the website.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/protected-element.jpg)
+![](images/protected-element.jpg?raw=true)
 
 
 ### Flash content
@@ -213,7 +213,7 @@ relate to a certain language or a particular topic and its posts can be exported
 as an RSS or Atom feed. The XML files are generated automatically in the Contao
 root folder.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/news-feed.jpg)
+![](images/news-feed.jpg?raw=true)
 
 
 ### Front end modules
@@ -257,7 +257,7 @@ extension includes 4 front end modules:
 Each news item has a unique URL (permalink) that can be used to reference it:
 
 ```
-http://www.domain.com/news/items/james-wilson-returns.html
+http://www.example.com/news/items/james-wilson-returns.html
 ```
 
 The above URL requests the news item "james-wilson-returns" via the page "news".
@@ -281,7 +281,7 @@ to a certain language or a particular topic and its events can be exported as an
 RSS or Atom feed. The XML files are generated automatically in the Contao root
 folder.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/calendar-feed.jpg)
+![](images/calendar-feed.jpg?raw=true)
 
 
 ### Front end modules
@@ -325,7 +325,7 @@ extension includes 4 front end modules:
 Each event has a unique URL (permalink) that can be used to reference it:
 
 ```
-http://www.domain.com/event-reader/events/final-exams.html
+http://www.example.com/event-reader/events/final-exams.html
 ```
 
 The above URL requests the event "final-exams" via the page "events". Remember
@@ -348,7 +348,7 @@ modules, so you do not have to manage recipients manually. For data privacy
 reasons, Contao requires [Double Opt-In][5] subscriptions and stores only the
 e-mail address of the subscriber.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/newsletter-recipients.jpg)
+![](images/newsletter-recipients.jpg?raw=true)
 
 In case you already have a list of recipients, you can import them into Contao
 from a CSV file.
@@ -406,7 +406,7 @@ minute. Contao tries to work around both problems by splitting the sending
 process into several cycles to prevent script timeouts and adding a custom
 waiting time between each cycle to control the number of e-mails per minute.
 
-![](https://raw.github.com/contao/docs/2.11/manual/en/images/sending-newsletters.jpg)
+![](images/sending-newsletters.jpg?raw=true)
 
 
 ### Front end modules
@@ -450,7 +450,7 @@ up on the website.
 Each newsletter has a unique URL (permalink) that can be used to reference it:
 
 ```
-http://www.domain.com/newsletters/items/james-wilson-returns.html
+http://www.example.com/newsletters/items/james-wilson-returns.html
 ```
 
 The above URL requests the newsletter "james-wilson-returns" via the page

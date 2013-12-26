@@ -57,17 +57,6 @@ beim Löschen von Elterndatensätzen passiert.
       (Dateiverwaltung).</td>
 </tr>
 <tr>
-  <td>validFileTypes</td>
-  <td>Dateitypen (<code>string</code>)</td>
-  <td>Kommagetrennte Liste gültiger Dateiendungen (nur für Dateibäume).</td>
-</tr>
-<tr>
-  <td>uploadScript</td>
-  <td>Dateiname (<code>string</code>)</td>
-  <td>Dateiname des FancyUpload-Skripts im Ordner `system/config` (ohne
-      Dateiendung).</td>
-</tr>
-<tr>
   <td>closed</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Verbietet das Anlegen neuer Datensätze in der Tabelle.</td>
@@ -135,6 +124,20 @@ beim Löschen von Elterndatensätzen passiert.
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Ruft eine Callback-Funktion beim Duplizieren eines Datensatzes auf und
       übergibt die Insert ID sowie das DataContainer-Objekt als Argument.</td>
+</tr>
+<tr>
+  <td>onversion_callback</td>
+  <td>Callback-Funktion (<code>array</code>)</td>
+  <td>Ruft eine Callback-Funktion beim Erstellen einer neuen Version eines
+      Datensatzes auf und übergibt die Tabelle, die Insert ID
+      sowie das DataContainer-Objekt als Argument.</td>
+</tr>
+<tr>
+  <td>onrestore_callback</td>
+  <td>Callback-Funktion (<code>array</code>)</td>
+  <td>Ruft eine Callback-Funktion beim Wiederherstellen einer Version eines
+      Datensatzes auf und übergibt die Insert ID, die Tabelle, die Daten sowie
+      die Version als Argument.</td>
 </tr>
 </table>
 
@@ -614,7 +617,7 @@ Ausdrucks geprüft werden.
         </tr>
         <tr>
           <td><b>extnd</b></td>
-          <td>erlaubt alles außer <code>#&amp;()/<=></code></td>
+          <td>erlaubt alles außer <code>#&amp;()/&lt;=&gt;</code></td>
         </tr>
         <tr>
           <td><b>friendly</b></td>
@@ -862,7 +865,7 @@ Eine Palette ist eine Reihung mehrerer Feldnamen, die durch einen Strichpunkt
 Feldnamen verwendet wird, markiert der Strichpunkt den Beginn einer neuen
 Gruppe, die aus- und eingeklappt werden kann.
 
-![](https://raw.github.com/contao/docs/2.11/manual/de/images/paletten.jpg)
+![](images/paletten.jpg?raw=true)
 
 Das obige Beispiel wird durch folgenden Code definiert:
 
