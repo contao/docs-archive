@@ -50,12 +50,12 @@ Instead of using [wget][1], we could also consider executing the PHP script
 directly on the server (via CLI). However, this can have serious drawbacks
 depending on your Contao configuration. For example if your root page does
 not have a domain configured, newsletter emails will be send without absolute
-links and will therefore be unuseable.
+links and will therefore be unusable.
 
 
 ## Workflow of a cron job
 
-Your `fe_page.html5` or. `fe_page.xhtml` template contains the following 
+Your `fe_page.html5` or `fe_page.xhtml` template contains the following 
 javascript code which is responsible for executing the `cron.php`. First of all,
 a text file is retrieved that contains the timestamp of the last execution.
 
@@ -71,9 +71,9 @@ new Request({
 }).get();
 ```
 
-Only every five minutes a second ajax-request to the `cron.php` is triggered.
+Only every five minutes a second ajax request to the `cron.php` is triggered.
 Using the `tl_lock` table, it verifies again that at least five minutes have
-passed since the last execution. Af that's the case, it will trigger the jobs
+passed since the last execution. If that's the case, it will trigger the jobs
 of the next upcoming interval. This information is stored in the `localconfig.php`.
 
 ```{.php}
