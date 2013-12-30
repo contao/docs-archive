@@ -1,10 +1,7 @@
-class ##class## 
+class ##class##
 ------------
 
-##description## 
-
-
-### Description ###
+##intro##
 
 **Definition:** `abstract class Module extends Frontend`
 
@@ -13,9 +10,16 @@ class ##class##
 **Class hierarchy:** *[System](System.md) > [Controller](Controller.md) > [Frontend](Frontend.md) > Module*
 
 
+{if description!=""}
+### Description ###
+
+##description##
+{endif}
+
+
 ### Methods ###
 
-##methods## 
+##methods##
 
 
 ### Properties ###

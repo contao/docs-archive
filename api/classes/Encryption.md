@@ -1,10 +1,7 @@
 class ##class##
 ----------------
 
-##description## 
-
-
-### Description ###
+##intro##
 
 **Definition:** `class Encryption`
 
@@ -12,6 +9,12 @@ class ##class##
 
 **Class hierarchy:** *Encryption*
 
+
+{if description!=""}
+### Description ###
+
+##description##
+{endif}
 
 
 ### Methods ###

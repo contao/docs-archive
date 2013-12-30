@@ -1,10 +1,7 @@
-class ##class## 
+class ##class##
 -----------
 
-##description## 
-
-
-### Description ###
+##intro##
 
 **Definition:** `class Email extends System`
 
@@ -13,6 +10,13 @@ class ##class##
 **Class hierarchy:** *[System](System.md) > Email*
 
 
+{if description!=""}
+### Description ###
+
+##description##
+{endif}
+
+
 ### Methods ###
 
-##methods## 
+##methods##

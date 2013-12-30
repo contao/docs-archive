@@ -1,10 +1,7 @@
-class ##class## 
+class ##class##
 ------------
 
-##description## 
-
-
-### Description ###
+##intro##
 
 **Definition:** `class Config`
 
@@ -13,6 +10,13 @@ class ##class##
 **Class hierarchy:** *Config*
 
 
+{if description!=""}
+### Description ###
+
+##description##
+{endif}
+
+
 ### Methods ###
 
-##methods## 
+##methods##

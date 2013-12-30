@@ -1,10 +1,7 @@
-class ##class## 
+class ##class##
 -----------------
 
-##description## 
-
-
-### Description ###
+##intro##
 
 **Definition:** `class Environment`
 
@@ -13,7 +10,13 @@ class ##class##
 **Class hierarchy:** *Environment*
 
 
+{if description!=""}
+### Description ###
+
+##description##
+{endif}
+
 
 ### Methods ###
 
-##methods## 
+##methods##

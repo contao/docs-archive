@@ -1,10 +1,7 @@
-class ##class## 
+class ##class##
 --------------
 
-##description## 
-
-
-### Description ###
+##intro##
 
 **Definition:** `abstract class Database`
 
@@ -12,6 +9,12 @@ class ##class##
 
 **Class hierarchy:** *Database*
 
+
+{if description!=""}
+### Description ###
+
+##description##
+{endif}
 
 
 ### Methods ###
