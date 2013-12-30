@@ -3,11 +3,11 @@ class ##class##
 
 ##intro##
 
-**Definition:** `class FeedItem extends System`
+**Definition:** ##definition##
 
-**Located in:** *system/libraries/Feed.php*
+**Located in:** ##location##
 
-**Class hierarchy:** *[System](System.md) > FeedItem*
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}

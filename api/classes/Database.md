@@ -3,11 +3,11 @@ class ##class##
 
 ##intro##
 
-**Definition:** `abstract class Database`
+**Definition:** ##definition##
 
-**Located in:** *system/libraries/Database.php*
+**Located in:** ##location##
 
-**Class hierarchy:** *Database*
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}

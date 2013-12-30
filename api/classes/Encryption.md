@@ -3,11 +3,11 @@ class ##class##
 
 ##intro##
 
-**Definition:** `class Encryption`
+**Definition:** ##definition##
 
-**Located in:** *system/libraries/Encryption.php*
+**Located in:** ##location##
 
-**Class hierarchy:** *Encryption*
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}

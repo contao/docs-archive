@@ -3,11 +3,11 @@ class ##class##
 
 ##intro##
 
-**Definition:** `abstract class Controller extends System`
+**Definition:** ##definition##
 
-**Located in:** *system/libraries/Controller.php*
+**Located in:** ##location##
 
-**Class hierarchy:** *[System](System.md) > Controller*
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}

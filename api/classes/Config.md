@@ -3,11 +3,11 @@ class ##class##
 
 ##intro##
 
-**Definition:** `class Config`
+**Definition:** ##definition##
 
-**Located in:** *system/libraries/Config.php*
+**Located in:** ##location##
 
-**Class hierarchy:** *Config*
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}

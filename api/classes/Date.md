@@ -3,9 +3,11 @@ class ##class##
 
 ##intro##
 
-**Located in:** *system/libraries/Date.php*
+**Definition:** ##definition##
 
-**Class hierarchy:** *[System](System.md) > Date*
+**Located in:** ##location##
+
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}

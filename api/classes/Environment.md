@@ -3,11 +3,11 @@ class ##class##
 
 ##intro##
 
-**Definition:** `class Environment`
+**Definition:** ##definition##
 
-**Located in:** *system/libraries/Environment.php*
+**Located in:** ##location##
 
-**Class hierarchy:** *Environment*
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}

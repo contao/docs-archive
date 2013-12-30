@@ -3,11 +3,11 @@ class ##class##
 
 ##intro##
 
-**Definition:** `abstract class Module extends Frontend`
+**Definition:** ##definition##
 
-**Located in:** *system/modules/frontend/Module.php*
+**Located in:** ##location##
 
-**Class hierarchy:** *[System](System.md) > [Controller](Controller.md) > [Frontend](Frontend.md) > Module*
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}

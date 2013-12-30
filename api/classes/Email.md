@@ -3,11 +3,11 @@ class ##class##
 
 ##intro##
 
-**Definition:** `class Email extends System`
+**Definition:** ##definition##
 
-**Located in:** *system/libraries/Email.php*
+**Located in:** ##location##
 
-**Class hierarchy:** *[System](System.md) > Email*
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}

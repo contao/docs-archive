@@ -3,11 +3,11 @@ class ##class##
 
 ##intro##
 
-**Definition:** `class File extends System`
+**Definition:** ##definition##
 
-**Located in:** *system/libraries/File.php*
+**Located in:** ##location##
 
-**Class hierarchy:** *[System](System.md) > File*
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}

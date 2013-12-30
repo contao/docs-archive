@@ -3,11 +3,11 @@ class ##class##
 
 ##intro##
 
-**Definition:** `abstract class System extends System`
+**Definition:** ##definition##
 
-**Located in:** *system/libraries/System*
+**Located in:** ##location##
 
-**Class hierarchy:** *System*
+**Class hierarchy:** ##hierarchy##
 
 
 {if description!=""}
