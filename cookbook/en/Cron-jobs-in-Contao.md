@@ -56,7 +56,7 @@ Instead of using [wget][1], we could also consider executing the PHP script
 directly on the server (via CLI). However, this can have serious drawbacks
 depending on your Contao configuration. For example if your root page does
 not have a domain configured, newsletter emails will be send without absolute
-links and will therefore be unuseable.
+links and will therefore be unusable.
 
 
 ## Workflow of a cron job
