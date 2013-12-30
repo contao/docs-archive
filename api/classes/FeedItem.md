@@ -1,22 +1,20 @@
-class ##class##
+class ##class## 
 --------------
 
-##intro##
+##intro## 
 
-**Definition:** ##definition##
-
-**Located in:** ##location##
-
-**Class hierarchy:** ##hierarchy##
+**Definition:** `##definition##`  
+**Located in:** *##location##*  
+**Class hierarchy:** ##hierarchy##  
 
 
 {if description!=""}
 ### Description ###
 
-##description##
+##description## 
 {endif}
 
 
 ### Methods ###
 
-##mehods##
+##mehods## 
