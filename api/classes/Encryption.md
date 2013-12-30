@@ -1,7 +1,8 @@
-class Encryption
+class ##class##
 ----------------
 
-Provide methods to encrypt and decrypt data.
+##description## 
+
 
 ### Description ###
 
@@ -15,6 +16,4 @@ Provide methods to encrypt and decrypt data.
 
 ### Methods ###
 
-- *public* [`getInstance`](Encryption/getInstance.md) – Return the current object instance (Singleton)
-- *public* [`encrypt`](Encryption/encrypt.md) – Encrypt a value
-- *public* [`decrypt`](Encryption/decrypt.md) – Decrypt a value
+##methods##

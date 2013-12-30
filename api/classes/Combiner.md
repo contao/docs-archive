@@ -1,7 +1,8 @@
-class Combiner
+class ##class## 
 --------------
 
-This class provides methods to combine CSS and JavaScript files.
+##description## 
+
 
 ### Description ###
 
@@ -14,6 +15,4 @@ This class provides methods to combine CSS and JavaScript files.
 
 ### Methods ###
 
-- *public* [`add`](Combiner/add.md) – Add a file
-- *public* [`hasEntries`](Combiner/hasEntries.md) – Return true if there are files
-- *public* [`getCombinedFile`](Combiner/getCombinedFile.md) – Generate the combined file and return the path
+##methods## 

@@ -1,8 +1,7 @@
-
-class Module
+class ##class## 
 ------------
 
-Parent class for front end modules.
+##description## 
 
 
 ### Description ###
@@ -16,12 +15,7 @@ Parent class for front end modules.
 
 ### Methods ###
 
-- *public* `__construct` — Initialize the object
-- *public* `__set` – Set an object property
-- *public* `__get` – Return an object property
-- *public* [`generate`](Module/generate.md) – Parse the template
-- *abstract protected* `compile` – Compile the current element
-- *protected* `renderNavigation` – Recursively compile the navigation menu and return it as HTML string
+##methods## 
 
 
 ### Properties ###

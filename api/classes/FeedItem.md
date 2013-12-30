@@ -1,8 +1,7 @@
-
-class FeedItem
+class ##class## 
 --------------
 
-Provide methods to generate RSS/Atom feed items.
+##description## 
 
 
 ### Description ###
@@ -16,8 +15,4 @@ Provide methods to generate RSS/Atom feed items.
 
 ### Methods ###
 
-- *public* [`__construct()`](FeedItem/__construct.md) – Take an array of arguments and initialize the object
-- *public* [`__set`](FeedItem/__set.md) – Set an object property
-- *public* [`__get`](FeedItem/__get.md) – Return an object property
-- *public* [`__isset`](FeedItem/__isset.md) – Check whether a property is set
-- *public* [`addEnclosure`](FeedItem/addEnclosure.md) – Add an enclosure
+##mehods##

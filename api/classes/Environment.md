@@ -1,7 +1,8 @@
-class Environment
+class ##class## 
 -----------------
 
-Provide methods to get OS independent environment parameters.
+##description## 
+
 
 ### Description ###
 
@@ -15,5 +16,4 @@ Provide methods to get OS independent environment parameters.
 
 ### Methods ###
 
-- *public* [`getInstance`](Environment/getInstance.md) – Return the current object instance (Singleton)
-- *public* [`__get`](Environment/__get.md) – Return an environment parameter
+##methods## 
