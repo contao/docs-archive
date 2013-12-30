@@ -1,18 +1,17 @@
 # Cron jobs in Contao (Poor-Man-Cron)
 
-The `cron.php` file in the root folder of every Contao installation is triggered
-every time a front end page is accessed. Respectively, these cron jobs only work
-if your website has visitors. Extensions can use hooks to register for periodical
-tasks:
+The `cron.php` file in `system/cron` folder of every Contao installation is
+triggered every time a front end page is accessed. Respectively, these cron jobs
+only work if your website has visitors. Extensions can use hooks to register
+for periodical tasks:
 
 ```{.php}
 $GLOBALS['TL_CRON']['monthly']
 $GLOBALS['TL_CRON']['weekly']
 $GLOBALS['TL_CRON']['daily']
 $GLOBALS['TL_CRON']['hourly']
+$GLOBALS['TL_CRON']['minutely']
 ```
-
-The smallest possible interval for Contao 2.11 is hourly execution.
 
 
 ## Execute cron jobs on the server
@@ -22,25 +21,32 @@ if possible. Otherwise the jobs would not be executed if there are no visitors.
 If your server provides such features, you can add the `cron.php` to your 
 crontab (or similar) configuration.
 
-Do not execute the file more than every five minutes. Be aware that Cronjobs
-are not executed in parallel, the script will decide itself what job to
-run next. A useful configuration could look like this:
+Depending on the extensions in your installation, the `cron.php` has to be
+executed every minute or else every hour. If you need it to run every
+minute, the following configuration is sufficient:
+
+```
+* * * * * wget --silent http://example.com/system/cron/cron.php
+```
+
+Be aware that Cronjobs are not executed in parallel, the script will
+decide itself what job to run next. A useful configuration if there are no
+minutely jobs could look like this:
 
 ```
 # 22 minutes after every full hour (for hourly jobs)
-22 * * * * wget --silent http://example.com/cron.php
+22 * * * * wget --silent http://example.com/system/cron/cron.php
 
 # 16 minutes after midnight (for daily jobs)
-16 0 * * * wget --silent http://example.com/cron.php
+16 0 * * * wget --silent http://example.com/system/cron/cron.php
 
 # 10 minutes after midnight every monday (for weekly jobs)
-10 0 * * 1 wget --silent http://example.com/cron.php
+10 0 * * 1 wget --silent http://example.com/system/cron/cron.php
 
 # 4 minutes after midnight on the 1st each month (for monthly jobs)
-4 0 1 * *  wget --silent http://example.com/cron.php
+4 0 1 * *  wget --silent http://example.com/system/cron/cron.php
 ```
 
-By using a delay of six minutes, two jobs can never be executed at the same time.
 *Also make sure your server supports [wget][1] and if the path is correct!*
 
 
@@ -55,45 +61,48 @@ links and will therefore be unuseable.
 
 ## Workflow of a cron job
 
-Your `fe_page.html5` or. `fe_page.xhtml` template contains the following 
-javascript code which is responsible for executing the `cron.php`. First of all,
-a text file is retrieved that contains the timestamp of the last execution.
+In your `fe_page.html5` or `fe_page.xhtml` template, the 
+[`assets/contao/js/scheduler.js`][2] script is included which retrieves
+a text file (either using jQuery or MooTools) that contains the timestamp of the last execution.
 
 ```{.js}
+// MooTools version
 new Request({
-  url:'system/html/cron.txt',
+  url:'system/cron/cron.txt',
   onComplete: function(txt) {
     if (!txt) txt = 0;
-    if (parseInt(txt) < (Math.round(+new Date()/1000) - 300)) {
-      new Request({url:'cron.php'}).get();
+    if (parseInt(txt) < (Math.round(+new Date()/1000) - tmo)) {
+      new Request({url:'system/cron/cron.php'}).get();
     }
   }
 }).get();
 ```
 
-Only every five minutes a second ajax-request to the `cron.php` is triggered.
-Using the `tl_lock` table, it verifies again that at least five minutes have
-passed since the last execution. Af that's the case, it will trigger the jobs
-of the next upcoming interval. This information is stored in the `localconfig.php`.
+Depending on the registered jobs (see [`Frontend::getCronTimeout`][3]) a
+second ajax request to the `cron.php` is triggered. Using the `tl_cron` table
+it verifies again that there are jobs to run and executes the jobs
+of the next upcoming interval.
 
 ```{.php}
-$GLOBALS['TL_CONFIG']['cron_monthly']
-$GLOBALS['TL_CONFIG']['cron_weekly']
-$GLOBALS['TL_CONFIG']['cron_daily']
-$GLOBALS['TL_CONFIG']['cron_hourly']
+$arrCurrent = array
+(
+    'monthly'  => date('Ym'),
+    'weekly'   => date('YW'),
+    'daily'    => date('Ymd'),
+    'hourly'   => date('YmdH'),
+    'minutely' => date('YmdHi')
+);
 ```
 
 For every call to the `cron.php`, only one of the four available intervals is
-executed. After a successful run, the `localconfig.php` is updated and the
-process is terminated.
+executed.
 
 ### Please be aware
 
-- Cron jobs will only be executed every five minutes.
+- The `cron.php` will only be included every minute if there are
+  minutely cron jobs registered.
 - The order of execution is maintained. `weekly` jobs are only run if the
   `monthly` jobs of the current month have already been executed.
-- If a job terminates the process (e.g. due to an exception), all following
-  jobs are not executed and the last execution date will not be updated!
 
 
 ## Testing cron jobs
@@ -101,9 +110,8 @@ process is terminated.
 To manually execute cron jobs for testing purposes, you need to reset multiple
 environment settings:
 
-- Delete the `cron.txt` in `system/html/`
-- Delete the respective last execution timestamp in your `localconfig.php`
-- Delete the entry in the `tl_lock` database table
+- Delete the `cron.txt` in `system/cron/`
+- Delete the entries in the `tl_cron` database table
 
 Now you can open the `cron.php` in a regular browser window to execute the 
 next jobs (the order will be maintained!). A successful execution will be
@@ -111,3 +119,5 @@ reported to the Contao log in the backend.
 
 
 [1]: http://en.wikipedia.org/wiki/Wget
+[2]: https://github.com/contao/core/blob/3.0.0/assets/contao/js/scheduler-uncompressed.js
+[3]: https://github.com/contao/core/blob/3.0.0/system/modules/core/classes/Frontend.php#L601
