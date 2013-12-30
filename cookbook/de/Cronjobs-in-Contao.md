@@ -64,22 +64,20 @@ entsprechend unbrauchbar.
 
 ## Funktionsweise des Cron-Aufrufs
 
-Im `fe_page.html5` bzw. `fe_page.xhtml` Template wird die Datei
-[`assets/contao/js/scheduler.js`][3] eingebunden, die (entweder per jQuery
-oder MooTools) eine Textdatei abgefragt, welche den Zeitstempel der
-letzten Ausführung enthält.
+Im `fe_page.html5` bzw. `fe_page.xhtml` Template wird ein kleines Stück 
+Javascript eingebunden, welches (entweder per jQuery oder MooTools) eine
+Textdatei abgefragt die den Zeitstempel der letzten Ausführung enthält.
 
 ```{.js}
-// MooTools-Variante
+// (gekürzte) MooTools-Variante
 new Request({
-  url:'system/cron/cron.txt',
-  onComplete: function(txt) {
-    if (!txt) txt = 0;
-    if (parseInt(txt) < (Math.round(+new Date()/1000) - tmo)) {
-      new Request({url:'system/cron/cron.php'}).get();
-    }
+  url:"system/cron/cron.txt",
+  onComplete: function(e) {
+    e||(e=0),
+    parseInt(e)<Math.round(+(new Date)/1e3)-<?php echo $this->cronTimeout; ?>
+    && (new Request({url:"system/cron/cron.php"})).get()
   }
-}).get();
+})).get()
 ```
 
 Abhängig von den vorhandenen Jobs (siehe [`Frontend::getCronTimeout`][4]) wird
