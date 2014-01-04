@@ -10,7 +10,7 @@ um referenzierte Datensätze zu laden. Beispiel: Der Author (`UserModel`)
 eines Artikels (`ArticleModel`).
 
 
-## Model Object
+## Das Model Objekt
 
 
 ### Instanziierung
@@ -81,8 +81,8 @@ Die Methode akzeptiert ein Array mit folgenden Array-Keys:
 
 <table>
 	<tr>
-		<th>key</th>
-		<th>type</th>
+		<th>Schlüssel</th>
+		<th>Typ</th>
 		<th>Beschreibung</th>
 	<tr>
 	<tr>
@@ -259,12 +259,12 @@ $objArticles = \ArticleModel::findAll(array('column'=>'published', 'value'=>'1')
 
 echo "Found ".$objArticles->count().' articles <br>';
 
-// Useing the IteratorAggregate interface
+// Verwenden des IteratorAggregate interface
 foreach($objArticles as $objArticle) {
 	echo $objArticle->title.'<br>';
 }
 
-// Using the iterator methods
+// Verwenden der Iterator-Methoden
 while($objArticles->next()) {
 	echo $objArticles->current()->title.'<br>';
 }
