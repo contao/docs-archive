@@ -271,11 +271,15 @@ foreach($objArticles as $objArticle) {
 }
 
 // Verwenden der Iterator-Methoden
+$objArticles->reset();
 while($objArticles->next()) {
-	echo $objArticles->current()->title.'<br>';
+	echo $objArticles->title.'<br>';
 }
 
 ```
+
+**HINWEIS:** Es wird empfohlen die *foreach*-Variante zu verwenden, da dessen
+Position nicht vom internen Zähler der *Collection* abhängig ist.
 
 
 ## Referenzierte Datensätze
