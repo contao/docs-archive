@@ -234,30 +234,17 @@ $objArticles = \ArticleModel::findByPid(2);
 $objArticles = \ArticleModel::findBy('pid', 2);
 // alternativ
 $objArticles = \ArticleModel::findAll(
-  array
-  (
-      'column' => 'pid',
-      'value' => 2
-  )
-);
-// alternativ
-$objArticles = \ArticleModel::find(
-  array
-  (
-      'return' => 'Collection',
-      'column' => 'pid',
-      'value' => 2
-  )
+	array
+	(
+		'column' => 'pid',
+		'value' => 2
+	)
 );
 
-// Finde alle Artikel WHERE pid=2 AND published="1"
-$objArticles = \ArticleModel::find(
-  array
-  (
-      'return' => 'Collection',
-      'column' => array('pid=>?', 'published=>?'),
-      'value' => array(2, '1')
-  )
+// Finde alle Artikel WHERE pid=2 AND published='1'
+$objArticles = \ArticleModel::findBy(
+	array('pid=?', 'published=?'),
+	array(2, '1')
 );
 ```
 
