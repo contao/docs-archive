@@ -259,7 +259,11 @@ Es ist **kein** *Collection* Object!
 // Fetch all published Articles
 $objArticles = \ArticleModel::findAll(array('column'=>'published', 'value'=>'1'));
 
-echo "Found ".$objArticles->count().' articles <br>';
+if (null === $objArticles) {
+	echo 'Keine Artikel gefunden.';
+} else {
+	echo $objArticles->count().' Artikel gefunden.';
+}
 
 // Verwenden des IteratorAggregate interface
 foreach($objArticles as $objArticle) {
