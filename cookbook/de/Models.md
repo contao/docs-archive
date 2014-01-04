@@ -87,13 +87,24 @@ Die Methode akzeptiert ein Array mit folgenden Array-Keys:
 	<tr>
 	<tr>
 		<td>column</td>
-		<td>array</td>
-		<td>Feld(er) zur Selektion (WHERE)</td>
+		<td>mixed</td>
+		<td>
+			Es gibt zwei Möglichkeiten, die Tabellenspalten anzugeben:<br>
+			Als String, z.B. <code>alias</code><br>
+			Als Array, z.B. <code>array('tl_article.alias=?')</code><br>
+			<br>
+			Wird ein String übergeben, konvertiert Contao dies automatisch zu
+			einem entsprechenden Array und ergänzt Tabelle und Operator.
+			Beim Array sollte darauf geachtet werden, dass auch die Tabelle
+			angegeben wird, da bei referenzierten Datensätzen sonst ggf.
+			Fehler wegen duplikaten Spaltennamen auftreten können.
+		</td>
 	</tr>
 	<tr>
 		<td>value</td>
-		<td>array</td>
-		<td>Wert(e) zur Selektion (WHERE)</td>
+		<td>mixed</td>
+		<td>Ein Array sollte übergeben werden, falls in mehreren Spalten
+		gesucht wird. Ansonsten reicht die Übergabe des einzelnen Wertes.</td>
 	</tr>
 	<tr>
 		<td>limit</td>
@@ -112,15 +123,15 @@ Die Methode akzeptiert ein Array mit folgenden Array-Keys:
 	</tr>
 	<tr>
 		<td>eager</td>
-		<td>bool</td>
-		<td>Lädt die referenzierten Datensätze durch einen JOIN</td>
+		<td>boolean</td>
+		<td>Versucht referenzierten Datensätze durch einen OUTER JOIN zu
+		laden.</td>
 	</tr>
 	<tr>
 		<td>return</td>
 		<td>string</td>
-		<td>Gültige Werte: Model,Collection Legt fest, ob eine 
-		Collection-Instanz (default) oder eine Model-Instanz zurück gegeben 
-		wird.</td>
+		<td>Bei Übergabe von <i>Model</i> wird eine Instanz des ersten Resultats
+		zurückgegeben, ansonsten immer eine Model-Collection.</td>
 	</tr>
 </table>
 
