@@ -343,41 +343,70 @@ $GLOBALS['TL_MODELS']['tl_my_table'] = 'MyNamespace\TblModel';
 
 ### Relations-Typen
 
-
-#### load
 <table>
 	<tr>
-		<td><b>eager</b></td>
-        <td>Wird ein in Beziehung (nur hasOne, belongsTo) stehendes Objekt „eager“ geladen, erstellt 
-        der QueryBuilder automatisch ein JOIN-Query und lädt die Objekte in 
-        einer einzigen Datenbank-Abfrage.</td>
-    </tr>
+		<th>Schlüssel</th>
+		<th>Wert</th>
+		<th>Beschreibung</th>
+	</tr>
 	<tr>
-		<td><b>lazy</b></td>
-    	<td>Wird ein in Beziehung stehendes Objekt „lazy“ geladen, wird es 
-    	erst auf Anfrage in einer separaten Datenbank-Abfrage nachgeladen.</td>
-    </tr>
-</table>
-
-
-#### type
-<table>
+		<td>load</td>
+		<td>eager</td>
+		<td>Wird ein in Beziehung (nur *hasOne* oder *belongsTo*) stehendes
+		Objekt „eager“ geladen, erstellt der QueryBuilder automatisch ein
+		OUTER JOIN-Query und lädt die Objekte in einer einzigen Datenbank-
+		Abfrage.</td>
+	</tr>
 	<tr>
-		<td><b>belongsTo</b></td>
-        <td>Referenz auf einen Elterndatensatz (z.B. pid)</td>
-    </tr>
+		<td>load</td>
+		<td>lazy</td>
+		<td>Wird ein in Beziehung stehendes Objekt „lazy“ geladen, wird es 
+		erst auf Anfrage in einer separaten Datenbank-Abfrage nachgeladen.</td>
+	</tr>
 	<tr>
-		<td><b>belongsToMany</b></td>
-        <td> Referenz auf mehrere Elterndatensätze (z.B. serialized)</td>
-    </tr>
+		<th>Schlüssel</th>
+		<th>Wert</th>
+		<th>Beschreibung</th>
+	</tr>
 	<tr>
-		<td><b>hasOne</b></td>
-        <td> Referenz auf ein Kinddatensatz (z.B. Artikel hat einen Autor)</td>
-    </tr>
+		<td>type</td>
+		<td>belongsTo</td>
+		<td>Referenz auf einen Elterndatensatz (z.B. pid)</td>
+	</tr>
 	<tr>
-		<td><b>hasMany</b></td>
-        <td>Referenz auf mehrere Kinddatensätze (z.B. Galerie hat mehrere Bilder)</td>
-    </tr>
+		<td>type</td>
+		<td>belongsToMany</td>
+		<td>Referenz auf mehrere Elterndatensätze (z.B. serialized)</td>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td>hasOne</td>
+		<td>Referenz auf ein Kinddatensatz (z.B. Artikel hat einen Autor)</td>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td>hasMany</td>
+		<td>Referenz auf mehrere Kinddatensätze (z.B. Galerie hat mehrere
+		Bilder)</td>
+	</tr>
+	<tr>
+		<th>Schlüssel</th>
+		<th>Wert</th>
+		<th>Beschreibung</th>
+	</tr>
+	<tr>
+		<td>table</td>
+		<td><i>string</i></td>
+		<td>Der Name der verknüpften Tabelle, falls <code>foreignKey</code>
+		bereits anderweitig verwendet wird. Vorsicht: bis Contao 3.2.2 musste
+		immer ein <code>foreignKey</code> gesetzt sein!</td>
+	</tr>
+	<tr>
+		<td>field</td>
+		<td><i>string</i></td>
+		<td>Name des Tabellenfeldes, falls sich die Relation nicht auf 
+		<code>id</code> (den Standard-Primärschlüssel) bezieht.</td>
+	</tr>
 </table>
 
 
