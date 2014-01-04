@@ -13,13 +13,13 @@ eines Artikels (`ArticleModel`).
 ## Model Object
 
 
-### Instanziierung 
+### Instanziierung
 
 
 Folgend wird eine Instanz von `ArticleModel` erstellt, welche eine bestimmte 
-Entität der Tabelle tl_article referenziert.
+Entität der Tabelle `tl_article` referenziert.
 
-``` {.php}
+```{.php}
 // ArticleModel mit den Daten der Entität id=5 erstellen
 $objArticleModel = \ArticleModel::findByPk(5);
  
@@ -64,6 +64,7 @@ echo $objArticle->title; // Home2
 Das ist vor allem wichtig, wenn Änderungen im Model vorgenommen werden.
 Sollen Änderungen nur *local* verfügbar sein, muss eine Kopie der Instanz 
 erzeugt werden:
+
 ```{.php}
 $objArticle = \ArticleModel::findByPk(1);
 echo $objArticle->title; // Home
@@ -96,12 +97,12 @@ Die Methode akzeptiert ein Array mit folgenden Array-Keys:
 	</tr>
 	<tr>
 		<td>limit</td>
-		<td>int</td>
+		<td>integer</td>
 		<td>Beschränkt die Ergebnismenge (LIMIT)</td>
 	</tr>
 	<tr>
 		<td>offset</td>
-		<td>int</td>
+		<td>integer</td>
 		<td>Offset einer beschränkten Ergebnismenge (LIMIT)</td>
 	</tr>
 	<tr>
@@ -153,7 +154,7 @@ $objectArticleModel->save(); // speichert die Änderung des Datensatzes in die D
 #### `row()` 
 Gibt alle Werte des Datensatzes als assoziatives Array zurück.
 ```{.php} 
-print_r($objectArticelModel->row());
+print_r($objArticelModel->row());
 // Array (
 //           [id] => 12,
 //           [pid] => 1,
@@ -166,7 +167,7 @@ print_r($objectArticelModel->row());
 #### array `setRow()`
 Setzt alle Werte des Datensatzes anhand des übergebenen assoziativen Arrays
 ```{.php} 
-$objectArticelModel->setRow(array
+$objArticelModel->setRow(array
 (
   'id' => 12,
   'pid' => 1,
@@ -188,7 +189,6 @@ Gibt die Anzahl der Datensätzen, die in der Spalte `$strColumn` den Wert
 `$strValue` enthalten, zurück.
 
 ```{.php}
-// Zählt die Anzahl der Datensätze die in der Spalte pid den Wert 2 enthalten
 echo ArticelModel::countBy('pid', 2);
 // 2
 ```
@@ -205,7 +205,7 @@ konkreten Model Implementierung überschrieben werden um zusätzliche Logik
 an den entsprechenden Stellen einzufügen.
 
 
-## Collection Object
+## Collection Objekt
 
 
 ### Instanziierung
@@ -216,7 +216,7 @@ Eine `Collection` Instanz wird durch die `find($arr)` Methode
 // Finde alle Artikel WHERE pid=2
 $objArticles = \ArticleModel::findByPid(2);
 // alternativ
-$objArticles = \ArticleModel::findBy('pid',2);
+$objArticles = \ArticleModel::findBy('pid', 2);
 // alternativ
 $objArticles = \ArticleModel::findAll(
   array
@@ -301,7 +301,7 @@ $GLOBALS['TL_DCA']['tl_article'] = array
 		'pid' => array
 		(
 			'sql'                     => "int(10) unsigned NOT NULL default '0'",
-            // Relation definition for `pid`
+			// Relation definition for `pid`
 			'foreignKey'              => 'tl_page.title',
 			'relation'                => array('type'=>'belongsTo', 'load'=>'lazy')
 		),
