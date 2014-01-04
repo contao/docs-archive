@@ -1,13 +1,13 @@
 # Models
 
 Ein *Model* repräsentiert einen Datensatz aus einer Tabelle (Entität). Models 
-ersetzen weitgehend SQL-Statements und wrappen diese in Objekte und darüber 
-hinaus bieten sie viele weitere Vorteile.
+bieten einen Objekt-orientierten Zugriff auf Tabellen und ersetzen damit SQL-
+Statements  weitgehend. Darüber hinaus bieten sie viele weitere Vorteile.
 Mehrere Models werden durch eine *Collection* referenziert, dies entspricht 
 einer SQL-Abfrage die mehr als eine Ergebniszeile liefert.
-Contao3 bietet - wenn dem Model eine DCA-Struktur zugeordnet ist - etwas Magic 
-um referenzierte Datensätze zu laden. Beispiel: Der Author (`UserModel`) 
-eines Artikels (`ArticleModel`).
+Contao 3 bietet - wenn dem Model eine DCA-Struktur zugeordnet ist - ausserdem
+die Möglichkeit, referenzierte Datensätze automatisch zu laden. Beispielsweise
+der Author (`UserModel`) eines Artikels (`ArticleModel`).
 
 
 ## Das Model Objekt
@@ -32,22 +32,24 @@ $objArticleModel = \ArticleModel::findOneByAlias('contact');
 ```
 
 Die oben verwendeten Methoden sind durch die `\Contao\Model` Klasse 
-implementiert. Sie können intern von einem speziellen Model wie dem 
-*ArticleModel* genutzt werden um weitere Constraints in Methoden zu kapseln.
+implementiert. Jedes Model kann zusätzlich in seiner Klasse weitere Constraints
+in Methoden kapseln, z.B. `ArticleModel::findPublishedById()`.
+Nahezu alle *findBy*-Methoden unterstützen als letzten Parameter ein Array mit
+zusätzlichen Parametern, siehe [Methode find()](#methode-findarrdata).
 
-Bsp.: `ArticleModel::findPublishedById()`.
-*findOneByAlias()* ist eine virtuelle Methode um auf das *alias* Feld zu
-referenzieren. Diese Methoden existieren für jedes Feld der Tabelle.
-Bsp: `findOneByName()`. Best practice ist `findOneBy($col, $val)` zu nutzen.
-Alle anderen *find*-Methoden benutzen implizit die protected-Method *find()*.
-Nahezu alle dieser Methoden unterstützen als letzten Parameter ein Subset
-des `$arrData` Arrays, siehe [Methode find()](#methode-findarrdata).
+
+### Virtuelle Methoden
+
+Die oben verwendete `findOneByAlias()` ist eine virtuelle Methode um auf das
+*alias* Feld zu referenzieren. Diese Methoden stehen automatisch über Magic-
+Methoden für alle Felder der Tabelle zur Verfügung. Best practice ist es aber,
+`findOneBy($column, $value)` zu nutzen.
 
 
 ### Model-Registry
 
-Contao besitzt ab Version 3.2 eine *Model-Registry*. Das bedeutet, dass die 
-selbe Instanz eines Models zurückgegeben wird, sofern der Primärschlüssel 
+Contao besitzt seit Version 3.2 eine *Model-Registry*. Das bedeutet, dass immer
+dieselbe Instanz eines Models zurückgegeben wird, sofern der Primärschlüssel 
 übereinstimmt. 
 
 ```{.php}
@@ -61,8 +63,8 @@ $objArticle2->title = 'Home2';
 echo $objArticle->title; // Home2
 ```
 
-Das ist vor allem wichtig, wenn Änderungen im Model vorgenommen werden.
-Sollen Änderungen nur *local* verfügbar sein, muss eine Kopie der Instanz 
+Das ist besonders wichtig, wenn Änderungen im Model vorgenommen werden.
+Sollen Änderungen nur lokal verfügbar sein, muss eine Kopie der Instanz 
 erzeugt werden:
 
 ```{.php}
@@ -76,8 +78,9 @@ echo $objArticle->title; // Home
 
 
 ### Die *protected*-Methode `find($arrOptions)`
-Implizit arbeiten alle `find*` Methoden mit `find()`.
-Die Methode akzeptiert ein Array mit folgenden Array-Keys:
+
+Implizit arbeiten alle *findBy*-Methoden mit `find()`.
+Die Methode akzeptiert ein Array mit folgenden Werten:
 
 <table>
 	<tr>
@@ -137,14 +140,15 @@ Die Methode akzeptiert ein Array mit folgenden Array-Keys:
 
 
 ### Getter & Setter
-Um auf den Wert einer Spalte einer Entität zuzugreifen benutzt Contao die 
+
+Um auf den Wert einer Spalte der Entität zuzugreifen benutzt Contao die 
 *Magic-Methods* `__get($key)` und `__set($key, $value)`. Diese werden von 
 PHP immer dann aufgerufen, wenn der Zugriff auf ein nicht existierendes 
 Klassen-Attribut erfolgt. Contao gibt dann die Werte des Datensatzes zurück, 
 bzw. setzt diese.
 
-Achtung: Es werden nur Attribute gespeichert, die eine Entsprechung in der
-Datenbank-Tabelle haben.
+**ACHTUNG:** Es können beliebige Spalten im Model gesetzt werden, gespeichert
+werden nur Attribute für die eine Spalte in der Datenbank-Tabelle vorhanden ist.
 
 ``` {.php}
 // Titel des Artikels ausgeben
@@ -190,18 +194,23 @@ $objArticelModel->setRow(array
   // ... more attributes
 ));
 ```
+**ACHTUNG:** Bei Verwendung von `setRow` werden die Model-Daten direkt
+überschrieben und die Felder nicht als "zu speichern" markiert! Dies
+ist nur sinnvoll um ein Model aus einem bestehenden Datensatz zu erzeugen.
 
 
 #### Die Methode `save()`
 
 Speichert alle Änderungen in der Datenbank.
-Es werden nur Attribute gespeichert, die eine gleichnamige Splate in der
-Datenbank-Tabelle haben.
+Es werden nur Attribute gespeichert, für die eine Spalte in der Datenbank-
+Tabelle vorhanden ist.
 
 
 #### Die statische Methode `countBy($varColumn=null, $varValue=null)`
-Gibt die Anzahl der Datensätzen, die in der Spalte `$strColumn` den Wert 
-`$strValue` enthalten, zurück.
+
+Gibt die Anzahl zutreffender Datensätze zurück. Die möglichen Werte für
+`$varColumn` und `$varValue` entsprechen dabei den entsprechenden Optionen
+der `find()`-Methode.
 
 ```{.php}
 echo ArticelModel::countBy('pid', 2);
@@ -216,17 +225,17 @@ Gibt die Anzahl aller Datensätze der Tabelle zurück.
 
 ### preSave / preFind / postFind
 
-Die statischen Methoden `preSave`, `preFind`, `postFind` können von einer 
-konkreten Model Implementierung überschrieben werden um zusätzliche Logik 
-an den entsprechenden Stellen einzufügen.
+Die Methoden `preSave`, `preFind`, `postFind` können von einer Kindklasse
+überschrieben werden um zusätzliche Logik  an den entsprechenden Stellen
+einzufügen.
 
 
 ## Collection Objekt
 
-
 ### Instanziierung
-Eine `Collection` Instanz wird durch die `find($arr)` Methode
-(bzw. `findAll($arr)`, `findBy($col, $val)`, usw.) instanziiert.
+
+Eine `Collection` Instanz wird durch `Model::findBy()` (bzw. `Model::findAll()`
+usw.) instanziiert.
 
 ```{.php}
 // Finde alle Artikel WHERE pid=2
@@ -253,12 +262,12 @@ $objArticles = \ArticleModel::findBy(
 ### Zugriff
 
 **ACHTUNG**: Es gibt keine leere *Collection*! Werden keine Datensätze gefunden,
-ist der Rückgabewert von `find()` bzw. `findAll()` gleich `null`!
-Es ist **kein** *Collection* Object!
+ist der Rückgabewert von `findBy()` bzw. `findAll()` gleich `null`!
+Es ist **kein** *Collection* Objekt!
 
 ```{.php}
 // Fetch all published Articles
-$objArticles = \ArticleModel::findAll(array('column'=>'published', 'value'=>'1'));
+$objArticles = \ArticleModel::findBy('published', '1');
 
 if (null === $objArticles) {
 	echo 'Keine Artikel gefunden.';
@@ -285,10 +294,9 @@ Position nicht vom internen Zähler der *Collection* abhängig ist.
 
 ## Referenzierte Datensätze
 
-Ein Contao *Model* kann auf referenzierte Datensätze zugreifen. Beispiel: 
-Artikel->Autor. Damit Contao diese Referenzen auflösen kann, muss dem *Model* 
-ein `DCA` zugeordnet sein. Sie ist normalerweise identisch mit dem Namen 
-der Tabelle.
+Ein Contao *Model* kann auf referenzierte Datensätze zugreifen. Damit Contao
+diese Referenzen auflösen kann, muss dem *Model* ein *DCA* zugeordnet sein,
+welches normalerweise identisch mit dem Namen der Tabelle ist.
 
 ```{.php}
 class ArticleModel extends \Model
@@ -301,7 +309,7 @@ class ArticleModel extends \Model
 ...
 ```
 
-Im `DCA` wird die Relation anhand der `foreignKey` und `relation` Keys definiert:
+Im *DCA* wird die Relation anhand von `foreignKey` und `relation` definiert:
 ```{.php}
 $GLOBALS['TL_DCA']['tl_article'] = array
 (
@@ -342,7 +350,7 @@ Folgt die Implementierung nicht dieser Konvention oder befindet sich die
 Model-Klasse nicht im globalen Namenspace, muss die entsprechende Klasse 
 konfiguriert werden:
 ```{.php}
-$GLOBALS['TL_MODELS']['tl_my_table'] = 'MyNamespace\TblModel';
+$GLOBALS['TL_MODELS']['tl_my_table'] = 'Vendor\Models\MyTable';
 ```
 
 
