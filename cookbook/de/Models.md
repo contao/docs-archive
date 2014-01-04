@@ -151,11 +151,12 @@ Datenbank-Tabelle haben.
 echo $objArticleModel->title;
 // Ausgabe: Mein Artikel
 
-// Verändern/setzen des Titels
-$objectArticelModel->title = "Mein besonderer Artikel";
-$objectArticelModel->fld_not_exists_in_db = "AnyValue";
-$objectArticleModel->save(); // speichert die Änderung des Datensatzes in die Datenbank
-// fld_not_exists_in_db wurde nicht festgeschrieben, da es keine gleichnamige Spalte gibt.
+// Ändern des Titels
+$objArticelModel->title = "Mein besonderer Artikel";
+$objArticelModel->something_else = "AnyValue";
+$objArticleModel->save();
+// Speichert die Änderung des Datensatzes in die Datenbank
+// *something_else* wurde nicht gespeichert, da es keine gleichnamige Spalte gibt.
 ```
 
 
