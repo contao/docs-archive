@@ -75,7 +75,7 @@ echo $objArticle->title; // Home
 ```
 
 
-### Methode: protected `find($arrOptions)`
+### Die *protected*-Methode `find($arrOptions)`
 Implizit arbeiten alle `find*` Methoden mit `find()`.
 Die Methode akzeptiert ein Array mit folgenden Array-Keys:
 
@@ -151,7 +151,8 @@ $objectArticleModel->save(); // speichert die Änderung des Datensatzes in die D
 ### Weitere relevante Methoden
 
 
-#### `row()` 
+#### Die Methode `row()` 
+
 Gibt alle Werte des Datensatzes als assoziatives Array zurück.
 ```{.php} 
 print_r($objArticelModel->row());
@@ -164,7 +165,8 @@ print_r($objArticelModel->row());
 ```
 
 
-#### array `setRow()`
+#### Die Methode `setRow(array $values)`
+
 Setzt alle Werte des Datensatzes anhand des übergebenen assoziativen Arrays
 ```{.php} 
 $objArticelModel->setRow(array
@@ -178,13 +180,14 @@ $objArticelModel->setRow(array
 ```
 
 
-#### `save()`
+#### Die Methode `save()`
+
 Speichert alle Änderungen in der Datenbank.
 Es werden nur Attribute gespeichert, die eine gleichnamige Splate in der
 Datenbank-Tabelle haben.
 
 
-#### static `countBy($strColumn=null, $varValue=null)`
+#### Die statische Methode `countBy($varColumn=null, $varValue=null)`
 Gibt die Anzahl der Datensätzen, die in der Spalte `$strColumn` den Wert 
 `$strValue` enthalten, zurück.
 
@@ -194,7 +197,8 @@ echo ArticelModel::countBy('pid', 2);
 ```
 
 
-#### `countAll()`
+#### Die statische Methode `countAll()`
+
 Gibt die Anzahl aller Datensätze der Tabelle zurück.
 
 
