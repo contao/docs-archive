@@ -28,13 +28,18 @@ neuer Klassen, immer im Backend mit dem _Autoload-Creator_ die Datei
 `autoload.php` aktualisieren, damit alle Klassen der Erweiterung gefunden werden
 können.
 
+Die Datei `autoload.php` konfiguriert das Finden und Laden der Klassen innerhalb
+von Contao. In [Autoloading](Autoloading.md) ist die Konfiguration näher
+beschrieben.
+
 
 ## Lernen durch Kopieren
 
 Wenn man eine ähnliche Funktion implementieren möchte, wie sie in Contao oder
-einer anderen Erweiterung bereits besteht, dort im Quelltext nachsehen, wie sie
-implementiert ist. Versuchen das Muster zu verstehen und dann das Muster
-kopieren und für den eigenen Zweck anpassen.
+einer anderen Erweiterung bereits besteht, sieht man am besten dort im Quelltext
+nach, wie sie implementiert ist. Dabei sollte man den Quelltext nicht einfach
+kopieren, sondern versuchen das Muster zu verstehen und so das Muster für den
+eigenen Zweck leichter anpassen zu können.
 
 
 ## Namespaces
@@ -73,15 +78,18 @@ weitere Anpassung über die folgenden statischen Methoden genutzt werden:
 - `findByIdOrAlias` - Gibt ein Objekt anhand seiner ID oder seines Aliases
   zurück; als Alternative zu `findByPk` verwendet diese Methode die Spalten `id`
   und `alias`; nützlich für alle Objekte die   über eine URL erreichbar sind.
-- `findByPk` - Gibt alle Objekte dieses Typs zurück.
+- `findByAll` - Gibt alle Objekte dieses Typs zurück.
 
 Methoden die nur ein Objekt zurück geben, geben dies direkt zurück. Methoden die
 mehrere Objekte zurückgeben, geben diese als `Contao\Model\Collection` verpackt
 zurück.
 
-Es gibt noch weitere Methoden die die Suche nach Objekten über Suchkriterien
-einschränken. Diese Methoden schaut man sich am besten in der Klasse
-`Contao\Model` an.
+Mehr Informationen zur Erstellung und Nutzung von Modellklassen finden sich im
+[Models-Tutorial](Models.md)
+
+__Tip:__ In der Klassendokumentation der Modellklasse können mit `@property` die
+Eigenschaften (=Spalten) des Modells dokumentiert werden. Moderne IDEs bieten
+dann bei der Codevervollständigung diese Felder mit an.
 
 Um effektiver mit dem Model zu arbeiten, sollte man sich in der eigenen
 Model-Klasse weitere statische Methoden definieren. Diese folgen dem Muster:
@@ -97,6 +105,10 @@ __Achtung:__ Die _find_-Methoden geben `null` zurück, wenn es keine Objekte
 gibt, die dem angegebenen Kriterien entsprechen. In Contao 4 soll das geändert
 werden, so das statt `null` eine leere Collection zurückgegeben wird
 ([GutHub Issue #6147](https://github.com/contao/core/issues/6147)).
+
+__Tip:__ Wie man die Toggle-Funktion für die Veröffentlichung von Inhalten im
+Backend implementiert, wird [Toggle-Funktion-in-eigenen-Erweiterungen.md](hier)
+beschrieben.
 
 
 ## Frontend-Module
