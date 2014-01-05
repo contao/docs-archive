@@ -8,17 +8,12 @@ the corresponding subdirectory.
 
 ## API
 
-Translatable API documentation (not yet used).
+Documentation of Contao APIs (Hooks, Callbacks, Core classes) (not yet used).
 
 
 ## Cookbook
 
 Practical information and tipps (not yet used).
-
-
-## Hooks
-
-Overview of the Contao core hooks (not yet used).
 
 
 ## Manual
