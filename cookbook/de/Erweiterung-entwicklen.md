@@ -107,7 +107,8 @@ werden, so das statt `null` eine leere Collection zurückgegeben wird
 ([GutHub Issue #6147](https://github.com/contao/core/issues/6147)).
 
 __Tip:__ Wie man die Toggle-Funktion für die Veröffentlichung von Inhalten im
-Backend implementiert, wird [Toggle-Funktion-in-eigenen-Erweiterungen.md](hier)
+Backend implementiert, wird in
+[Toggle Funktion in eigenen Erweiterungen](Toggle-Funktion-in-eigenen-Erweiterungen.md)
 beschrieben.
 
 
