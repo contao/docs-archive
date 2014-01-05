@@ -78,8 +78,8 @@ class MyClass extends Frontend
             return 'Fehler! foo ohne Parameter!';
         }
     }
- }
- ```
+}
+```
 
 Wenn man einen zweigeteilten Inserttag verwendet, splittet man den Tag mittels
 `explode` anhand des Gültigkeitsbereichsoperator  `::`. Die geschweiften
