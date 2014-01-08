@@ -195,6 +195,18 @@ für Sie. Geben Sie Ihr Passwort ein, scrollen Sie bis zum Datenbank-Abschnitt
 und bestätigen Sie die Änderungen.
 
 
+### Den internen Cache leeren
+
+Zum Schluss muss noch der interne Cache (DCA- und Sprachdateien) geleert und neu
+angelegt werden. Gehen Sie im Backend zur "Systemwartung" und wählen unter
+"Daten bereinigen" den Punkt "Internen Cache leeren" aus. Bestätigen Sie die
+Aktion mit "Daten bereinigen".
+
+Nun erscheint in der Kopfzeile vom Backend ein Hinweis, dass der interne Cache
+noch nicht aufgebaut wurde. Erstellen Sie den internen Cache in dem Sie in der
+Kopfzeile "Den Cache aufbauen" anklicken.
+
+
 ## Live Update Service
 
 Der Contao Live Update-Service ist ein kommerzielles Contao Add-on von [iNet
