@@ -289,7 +289,8 @@ und eigene Bezeichnungen einfügen.
 <tr>
   <td>fields</td>
   <td>Felder (<code>array</code>)</td>
-  <td>Eines oder mehrere Felder, die in der Liste angezeigt werden.</td>
+  <td>Eines oder mehrere Felder, die in der Liste angezeigt werden (z.B.
+      <code>array('title', 'user_id:tl_user.name')</code>).</td>
 </tr>
 <tr>
   <td>format</td>
