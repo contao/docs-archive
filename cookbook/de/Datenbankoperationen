@@ -1,0 +1,76 @@
+#Datenbanken Contao 3
+
+In Contao 3 gibt es ActiveRecords, damit sind die meisten Datenbankabfragen ohne großen Aufwand bzw. ohne eigene SQL-Anweisungen spielend leicht zu handhaben.
+
+Um in Contao mit einer Tabelle kommunizieren zu können, brauchen wir Models. Diese befinden sich im Modul-Verzeichnis meist im Unterverzeichnis `models`. Diese müssen, weil es sich um Klassen handelt, in der Autoload.php registriert werden. In einem Model definieren wir um welche Tabelle es sich handelt, in unserem Fall als Beispiel `tl_employee` in der Datei /module/modulname/modules/EmployeeModel.php mit der Klasse `EmployeeModel`.
+
+Das folgende Code-Schnippsel reicht föllig aus für die einfachen Datenbankabfragen mit findBy() oder findOneBy() die weiter unten beschrieben werden.
+
+**Wichtig:** Wir verzichten in diesen Beispielen auf Kommentare, um die Code-Schnippsel übersichtlicher zu halten.
+
+```
+<?php
+	
+class EmployeeModel extends \Model
+{
+	protected static $strTable = 'tl_employee';
+}
+```
+
+##Daten aus der Datenbank lesen
+
+###findBy(fields, values, options);
+
+- EmployeeModel::findBy('title','Hallo, Welt!');
+- EmployeeModel::findByTitle('Hallo, Welt!');
+- EmployeeModel::findBy(array('title = ? OR id = ?'),array('Hallo, Welt!',10),array('order'=>'title','limit'=>10,'offset'=>5));
+
+Das erste Beispiel, übernimmt die gesuchte Spalte als Parameter und den Wert den es haben soll und entspricht etwa `WHERE title = 'Hallo, Welt!'`. Beispiel zwei dagegen nimmt den String der nach `findBy` folgt und baut den selben SQL-Query wie Beispiel 1.
+
+Beispiel 3 ist geeignet um mehrere Felder mit `AND`, `OR`, `IN` und so weiter in einem Query zu verknüpfen, jedes Fragezeichen wird durch einen Wert im zweiten Parameter-Array ersetzt - Fragezeichen 1 durch Array-Eintrag 1. Der dritte Parameter enthält Optionen zum sortieren und beschränken. Wichtig ist auch zu sagen das die ersten beiden Beispiele genauso ein Optionen-Array bekommen können:
+
+```
+findByTitle('Hallo, Welt!',array(),array('order'=>'title'));
+```
+
+####Optionen
+
+- order: Sortierung der Resultate
+- limit: Begrenzung der Resultate
+- offset: Offset/Start für Limit
+
+###Abfragen mit IN (1,2,3) und LIKE '%...%'
+
+Sobald Datenbankabfragen komplizierter werden, das heißt wie in Beispiel 3 des findBy()-Abschnittes, sollten diese in das Model EmployeeModel.php als Methode geschrieben werden. Hier ein Beispiel, wie man nach einem Titel oder mehreren IDs suchen kann:
+
+```
+<?php
+	
+class EmployeeModel extends \Model
+{
+	protected static $strTable = 'tl_employee';
+
+	public static function findTitleAndMultibleId($arrID,$title,$arrOptions = array())
+	{
+		$t = static::$strTable;
+		$arrFields = array("$t.title = ? OR $t.id IN (".implode("', '",$arrID).")");
+		return static::findBy($arrFields,array($title),$arrOptions);
+	}
+}
+```
+
+Diese Methode kann nun mit `EmployeeModel::findTitleAndMultibleId(array(1,23,14,17),'Hallo, Welt!');` aufgerufen werden. Die Werte der IDs werden mit `implode()` direkt in den SQL-Query geschreiben und der Titel wird als Array für das `?` übergeben. `LIKE` funktioniert ähnlich, anstatt `Feldname IN(..)` schreibt man `$t.feldName LIKE '%Begriff%'` und schon hat man ein LIKE.
+
+##Daten Speichern
+
+Wollen wir Daten in die Datenbank schreiben, instanzieren wir das Model zu der jeweiligen Datenbank. Wollen wir einen neuen Mitarbeiter in der Datenbank tl_employee erstellen, brauchen wir das Model EmployeeModel:
+
+```
+$employee = new EmployeeModel();
+$employee->name = 'Max Mustermann';
+$employee->age = 20;
+$employee->department = 'Coffee';
+$employee->save();
+```
+
+
