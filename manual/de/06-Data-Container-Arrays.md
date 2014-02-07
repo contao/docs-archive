@@ -115,7 +115,9 @@ beim Löschen von Elterndatensätzen passiert.
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Ruft eine Callback-Funktion beim Initialisieren des Data Containers auf
       und übergibt das DataContainer-Objekt als Argument.
-      Der Default Wert für einzelne Felder kann hier nicht mehr definiert werden.</td>
+      Der Default Wert für einzelne Felder kann hier nicht mehr definiert werden.
+      Ebenso ist es nicht mehr möglich einem Feld dynamisch Optionen (z.B. bei dem InputType "Select") zuzuweisen.
+	  Nutzen Sie stattdessen den <code>load_callback</code> bzw. den <code>options_callback</code> des jeweiligen Feldes.</td>
 </tr>
 <tr>
   <td>onsubmit_callback</td>
