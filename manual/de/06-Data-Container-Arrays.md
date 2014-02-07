@@ -3,20 +3,20 @@
 Data Container Arrays (DCAs) dienen zur Speicherung von Tabellen-Metadaten.
 Jedes DCA beschreibt die Konfiguration einer bestimmten Tabelle, ihre
 Beziehungen zu anderen Tabellen sowie die einzelnen Felder. Die Contao
-Core-Engine erkennt anhand dieser Metadaten, wie DatensÃ¤tze aufgelistet,
+Core-Engine erkennt anhand dieser Metadaten, wie Datensätze aufgelistet,
 bearbeitet und gespeichert werden. Die DCA-Dateien aller aktiven Module werden
 nacheinander geladen (zuerst `backend` und `frontend` und dann in alphabetischer
-Reihenfolge) und jedes Modul kann die bestehende Konfiguration Ã¼berschreiben.
+Reihenfolge) und jedes Modul kann die bestehende Konfiguration überschreiben.
 Die Datei `system/config/dcaconfig.php` wird ganz am Ende eingelesen, so dass
-dort Ã„nderungen updatesicher gespeichert werden kÃ¶nnen.
+dort Änderungen updatesicher gespeichert werden können.
 
 
 ## Referenz
 
 Ein Data Container Array ist in 6 Sektionen unterteilt. Die erste Sektion
 speichert globale Informationen wie z.B. Relationen zu anderen Tabellen. Die
-zweite und dritte Sektion legt fest, wie DatensÃ¤tze aufgelistet werden und
-welche Aktionen ein Benutzer ausfÃ¼hren kann. Die vierte Sektion definiert
+zweite und dritte Sektion legt fest, wie Datensätze aufgelistet werden und
+welche Aktionen ein Benutzer ausführen kann. Die vierte Sektion definiert
 verschiedene Gruppen von Eingabefelder (Paletten) und die letzten beiden
 Sektionen beschreiben die Eingabefelder im Detail.
 
@@ -24,13 +24,13 @@ Sektionen beschreiben die Eingabefelder im Detail.
 ### Tabellenkonfiguration
 
 Die Tabellenkonfiguration legt unter anderem fest, welcher Data Container-Typ
-verwendet wird oder ob Relationen zu anderen Tabellen bestehen. Sie kÃ¶nnen
-auÃŸerdem die Versionierung aktivieren und festlegen, was mit KinddatensÃ¤tzen
-beim LÃ¶schen von ElterndatensÃ¤tzen passiert.
+verwendet wird oder ob Relationen zu anderen Tabellen bestehen. Sie können
+außerdem die Versionierung aktivieren und festlegen, was mit Kinddatensätzen
+beim Löschen von Elterndatensätzen passiert.
 
 <table>
 <tr>
-  <th>SchlÃ¼ssel</th>
+  <th>Schlüssel</th>
   <th>Wert</th>
   <th>Beschreibung</th>
 </tr>
@@ -38,7 +38,7 @@ beim LÃ¶schen von ElterndatensÃ¤tzen passiert.
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
   <td>Die Bezeichnung wird in der Seitenstruktur und in der Dateiverwaltung
-      verwendet. EnthÃ¤lt normalerweise eine Referenz auf das Spracharray.</td>
+      verwendet. Enthält normalerweise eine Referenz auf das Spracharray.</td>
 </tr>
 <tr>
   <td>ptable</td>
@@ -59,7 +59,7 @@ beim LÃ¶schen von ElterndatensÃ¤tzen passiert.
 <tr>
   <td>closed</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Verbietet das Anlegen neuer DatensÃ¤tze in der Tabelle.</td>
+  <td>Verbietet das Anlegen neuer Datensätze in der Tabelle.</td>
 </tr>
 <tr>
   <td>notEditable</td>
@@ -69,27 +69,27 @@ beim LÃ¶schen von ElterndatensÃ¤tzen passiert.
 <tr>
   <td>notDeletable</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Verbietet das LÃ¶schen von DatensÃ¤tzen in der Tabelle.</td>
+  <td>Verbietet das Löschen von Datensätzen in der Tabelle.</td>
 </tr>
 <tr>
   <td>notSortable</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Verbietet das Sortieren von DatensÃ¤tzen in der Tabelle.</td>
+  <td>Verbietet das Sortieren von Datensätzen in der Tabelle.</td>
 </tr>
 <tr>
   <td>notCopyable</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Verbietet das Kopieren von DatensÃ¤tzen in der Tabelle.</td>
+  <td>Verbietet das Kopieren von Datensätzen in der Tabelle.</td>
 </tr>
 <tr>
   <td>notCreatable</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Verbietet das erstellen von neuen DatensÃ¤tzen (kopieren bleibt erlaubt).</td>
+  <td>Verbietet das erstellen von neuen Datensätzen (kopieren bleibt erlaubt).</td>
 </tr>
 <tr>
   <td>switchToEdit</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Aktiviert die "Speichern und Bearbeiten"-SchaltflÃ¤che beim Anlegen eines
+  <td>Aktiviert die "Speichern und Bearbeiten"-Schaltfläche beim Anlegen eines
       neuen Datensatzes (nur Sortierungsmodus 4).</td>
 </tr>
 <tr>
@@ -101,57 +101,58 @@ beim LÃ¶schen von ElterndatensÃ¤tzen passiert.
 <tr>
   <td>doNotCopyRecords</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Verhindert die Duplizierung der KinddatensÃ¤tze, wenn ein Datensatz der
+  <td>Verhindert die Duplizierung der Kinddatensätze, wenn ein Datensatz der
       Elterntabelle dupliziert wird.</td>
 </tr>
 <tr>
   <td>doNotDeleteRecords</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Verhindert die LÃ¶schung der KinddatensÃ¤tze, wenn ein Datensatz der
-      Elterntabelle gelÃ¶scht wird.</td>
+  <td>Verhindert die Löschung der Kinddatensätze, wenn ein Datensatz der
+      Elterntabelle gelöscht wird.</td>
 </tr>
 <tr>
   <td>onload_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Ruft eine Callback-Funktion beim Initialisieren des Data Containers auf
-      und Ã¼bergibt das DataContainer-Objekt als Argument. Der Default Wert für einzelne Felder kann hier nicht mehr definiert werden. </td>
+      und übergibt das DataContainer-Objekt als Argument.
+      Der Default Wert für einzelne Felder kann hier nicht mehr definiert werden.</td>
 </tr>
 <tr>
   <td>onsubmit_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Ruft eine Callback-Funktion nach der Aktualisierung eines Datensatzes auf
-      und Ã¼bergibt das DataContainer-Objekt als Argument.</td>
+      und übergibt das DataContainer-Objekt als Argument.</td>
 </tr>
 <tr>
   <td>ondelete_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
-  <td>Ruft eine Callback-Funktion beim LÃ¶schen eines Datensatzes auf und
-      Ã¼bergibt das DataContainer-Objekt als Argument.</td>
+  <td>Ruft eine Callback-Funktion beim Löschen eines Datensatzes auf und
+      übergibt das DataContainer-Objekt als Argument.</td>
 </tr>
 <tr>
   <td>oncut_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Ruft eine Callback-Funktion beim Verschieben eines Datensatzes auf und
-      Ã¼bergibt das DataContainer-Objekt als Argument.</td>
+      übergibt das DataContainer-Objekt als Argument.</td>
 </tr>
 <tr>
   <td>oncopy_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Ruft eine Callback-Funktion beim Duplizieren eines Datensatzes auf und
-      Ã¼bergibt die Insert ID sowie das DataContainer-Objekt als Argument.</td>
+      übergibt die Insert ID sowie das DataContainer-Objekt als Argument.</td>
 </tr>
 <tr>
   <td>onversion_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Ruft eine Callback-Funktion beim Erstellen einer neuen Version eines
-      Datensatzes auf und Ã¼bergibt die Tabelle, die Insert ID
+      Datensatzes auf und übergibt die Tabelle, die Insert ID
       sowie das DataContainer-Objekt als Argument.</td>
 </tr>
 <tr>
   <td>onrestore_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Ruft eine Callback-Funktion beim Wiederherstellen einer Version eines
-      Datensatzes auf und Ã¼bergibt die Insert ID, die Tabelle, die Daten sowie
+      Datensatzes auf und übergibt die Insert ID, die Tabelle, die Daten sowie
       die Version als Argument.</td>
 </tr>
 <tr>
@@ -167,19 +168,19 @@ beim LÃ¶schen von ElterndatensÃ¤tzen passiert.
 </table>
 
 
-### DatensÃ¤tze auflisten
+### Datensätze auflisten
 
-Das Auflistungsarray legt fest, wie DatensÃ¤tze aufgelistet werden. Die Contao
-Core-Engine unterstÃ¼tzt drei [Ansichen][1]: den "List View", den "Parent View"
-und den "Tree View". Sie kÃ¶nnen verschiedene Filter- und Sortieroptionen setzen
-und eigene Bezeichnungen einfÃ¼gen.
+Das Auflistungsarray legt fest, wie Datensätze aufgelistet werden. Die Contao
+Core-Engine unterstützt drei [Ansichen][1]: den "List View", den "Parent View"
+und den "Tree View". Sie können verschiedene Filter- und Sortieroptionen setzen
+und eigene Bezeichnungen einfügen.
 
 
 #### Sortieroptionen
 
 <table>
 <tr>
-  <th>SchlÃ¼ssel</th>
+  <th>Schlüssel</th>
   <th>Wert</th>
   <th>Beschreibung</th>
 </tr>
@@ -190,10 +191,10 @@ und eigene Bezeichnungen einfÃ¼gen.
       <b>1</b> Sortierung nach einem festen Feld<br>
       <b>2</b> Sortierung nach einem variablen Feld<br>
       <b>3</b> Sortierung anhand der Elterntabelle<br>
-      <b>4</b> Darstellung der KinddatensÃ¤tze eines Elterndatensatzes (vgl.
+      <b>4</b> Darstellung der Kinddatensätze eines Elterndatensatzes (vgl.
       Stylesheets-Modul)<br>
       <b>5</b> Darstellung als Baum (vgl. Seitenstruktur)<br>
-      <b>6</b> Sortierung der KinddatensÃ¤tze anhand eines Baumes (vgl.
+      <b>6</b> Sortierung der Kinddatensätze anhand eines Baumes (vgl.
       Artikelverwaltung)</td>
 </tr>
 <tr>
@@ -216,9 +217,9 @@ und eigene Bezeichnungen einfÃ¼gen.
   <td>panelLayout</td>
   <td>Paneellayout (<code>string</code>)</td>
   <td><b>search</b> zeigt das Suchfeld an<br>
-      <b>sort</b> zeigt das SortiermenÃ¼ an<br>
-      <b>filter</b> zeigt die FiltermenÃ¼s an<br>
-      <b>limit</b> zeigt das LimitmenÃ¼ an. Trennen Sie die MenÃ¼s mit Komma
+      <b>sort</b> zeigt das Sortiermenü an<br>
+      <b>filter</b> zeigt die Filtermenüs an<br>
+      <b>limit</b> zeigt das Limitmenü an. Trennen Sie die Menüs mit Komma
       (= Abstand) oder Strichpunkt (= neue Zeile), also z.B. 
       <code>sort,filter;search,limit</code>.</td>
 </tr>
@@ -241,38 +242,38 @@ und eigene Bezeichnungen einfÃ¼gen.
 </tr>
 <tr>
   <td>root</td>
-  <td>WurzeldatensÃ¤tze (<code>array</code>)</td>
-  <td>IDs der WurzeldatensÃ¤tze (Pagemounts). Wird normalerweise automatisch
+  <td>Wurzeldatensätze (<code>array</code>)</td>
+  <td>IDs der Wurzeldatensätze (Pagemounts). Wird normalerweise automatisch
       gesetzt.</td>
 </tr>
 <tr>
   <td>filter</td>
   <td>Abfragefilter (<code>array</code>)</td>
-  <td>ErmÃ¶glicht das HinzufÃ¼gen eigener Filter als Arrays, z.B.
+  <td>Ermöglicht das Hinzufügen eigener Filter als Arrays, z.B.
       <code>array('status=?', 'active')</code>.</td>
 </tr>
 <tr>
   <td>disableGrouping</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>ErmÃ¶glicht das Deaktivieren der GruppenÃ¼berschriften im List View und
+  <td>Ermöglicht das Deaktivieren der Gruppenüberschriften im List View und
       Parent View.</td>
 </tr>
 <tr>
   <td>paste_button_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Wird anstatt der Standardroutine zur Erstellung der
-      EinfÃ¼ge-SchaltflÃ¤chen ausgefÃ¼hrt.</td>
+      Einfüge-Schaltflächen ausgeführt.</td>
 </tr>
 <tr>
   <td>child_record_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
-  <td>Wird zur Darstellung der KinddatensÃ¤tze ausgefÃ¼hrt (nur Sortierungsmodus
+  <td>Wird zur Darstellung der Kinddatensätze ausgeführt (nur Sortierungsmodus
       4).</td>
 </tr>
 <tr>
   <td>child_record_class</td>
   <td>CSS-Klasse (<code>string</code>)</td>
-  <td>ErmÃ¶glicht das HinzufÃ¼gen einer CSS-Klasse zu den
+  <td>Ermöglicht das Hinzufügen einer CSS-Klasse zu den
       Parent-View-Elementen.</td>
 </tr>
 </table>
@@ -282,7 +283,7 @@ und eigene Bezeichnungen einfÃ¼gen.
 
 <table>
 <tr>
-  <th>SchlÃ¼ssel</th>
+  <th>Schlüssel</th>
   <th>Wert</th>
   <th>Beschreibung</th>
 </tr>
@@ -300,19 +301,19 @@ und eigene Bezeichnungen einfÃ¼gen.
 <tr>
   <td>maxCharacters</td>
   <td>Anzahl an Zeichen (<code>integer</code>)</td>
-  <td>Maximale LÃ¤nge der Bezeichnung.</td>
+  <td>Maximale Länge der Bezeichnung.</td>
 </tr>
 <tr>
   <td>group_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Wird anstatt der Standardroutine zur Erstellung der Gruppennamen
-      ausgefÃ¼hrt.</td>
+      ausgeführt.</td>
 </tr>
 <tr>
   <td>label_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Wird anstatt der Standardroutine zur Erstellung der Bezeichnung
-      ausgefÃ¼hrt.</td>
+      ausgeführt.</td>
 </tr>
 </table>
 
@@ -320,68 +321,68 @@ und eigene Bezeichnungen einfÃ¼gen.
 ### Aktionen
 
 Das Aktionsarray ist in zwei Bereiche unterteilt: globale Aktionen, die sich auf
-die Tabelle beziehen (z.B. mehrere DatensÃ¤tze auf einmal bearbeiten), sowie
-regulÃ¤re Aktionen, die sich auf einen bestimmten Datensatz beziehen (z.B.
-Bearbeiten oder LÃ¶schen).
+die Tabelle beziehen (z.B. mehrere Datensätze auf einmal bearbeiten), sowie
+reguläre Aktionen, die sich auf einen bestimmten Datensatz beziehen (z.B.
+Bearbeiten oder Löschen).
 
 
 #### Globale Aktionen
 
 <table>
 <tr>
-  <th>SchlÃ¼ssel</th>
+  <th>Schlüssel</th>
   <th>Wert</th>
   <th>Beschreibung</th>
 </tr>
 <tr>
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Bezeichnung der SchaltflÃ¤che. EnthÃ¤lt normalerweise eine Referenz auf
+  <td>Bezeichnung der Schaltfläche. Enthält normalerweise eine Referenz auf
       das Spracharray.</td>
 </tr>
 <tr>
   <td>href</td>
   <td>URL-Fragment (<code>string</code>)</td>
-  <td>URL-Fragment, das beim Anklicken der SchaltflÃ¤che an die URL angehÃ¤ngt
+  <td>URL-Fragment, das beim Anklicken der Schaltfläche an die URL angehängt
       wird (z.B. <code>act=editAll</code>).</td>
 </tr>
 <tr>
   <td>class</td>
   <td>CSS-Klasse (<code>string</code>)</td>
-  <td>CSS-Klasse der SchaltflÃ¤che.</td>
+  <td>CSS-Klasse der Schaltfläche.</td>
 </tr>
 <tr>
   <td>attributes</td>
-  <td>ZusÃ¤tzliche Attribute (<code>string</code>)</td>
-  <td>ZusÃ¤tzliche Attribute wie z.B. Eventhandler oder Style-Definitionen.</td>
+  <td>Zusätzliche Attribute (<code>string</code>)</td>
+  <td>Zusätzliche Attribute wie z.B. Eventhandler oder Style-Definitionen.</td>
 </tr>
 <tr>
   <td>button_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Wird anstatt der Standardroutine zur Erstellung des Navigationssymbols
-      ausgefÃ¼hrt.</td>
+      ausgeführt.</td>
 </tr>
 </table>
 
 
-#### RegulÃ¤re Aktionen
+#### Reguläre Aktionen
 
 <table>
 <tr>
-  <th>SchlÃ¼ssel</th>
+  <th>Schlüssel</th>
   <th>Wert</th>
   <th>Beschreibung</th>
 </tr>
 <tr>
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Bezeichnung der SchaltflÃ¤che. EnthÃ¤lt normalerweise eine Referenz auf
+  <td>Bezeichnung der Schaltfläche. Enthält normalerweise eine Referenz auf
       das Spracharray.</td>
 </tr>
 <tr>
   <td>href</td>
   <td>URL-Fragment (<code>string</code>)</td>
-  <td>URL-Fragment, das beim Anklicken der SchaltflÃ¤che an die URL angehÃ¤ngt
+  <td>URL-Fragment, das beim Anklicken der Schaltfläche an die URL angehängt
       wird (z.B. <code>act=edit</code>).</td>
 </tr>
 <tr>
@@ -391,14 +392,14 @@ Bearbeiten oder LÃ¶schen).
 </tr>
 <tr>
   <td>attributes</td>
-  <td>ZusÃ¤tzliche Attribute (<code>string</code>)</td>
-  <td>ZusÃ¤tzliche Attribute wie z.B. Eventhandler oder Style-Definitionen.</td>
+  <td>Zusätzliche Attribute (<code>string</code>)</td>
+  <td>Zusätzliche Attribute wie z.B. Eventhandler oder Style-Definitionen.</td>
 </tr>
 <tr>
   <td>button_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Wird anstatt der Standardroutine zur Erstellung des Navigationssymbols
-      ausgefÃ¼hrt.</td>
+      ausgeführt.</td>
 </tr>
 </table>
 
@@ -412,14 +413,14 @@ kann.
 
 <table>
 <tr>
-  <th>SchlÃ¼ssel</th>
+  <th>Schlüssel</th>
   <th>Wert</th>
   <th>Beschreibung</th>
 </tr>
 <tr>
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Bezeichnung des Feldes. EnthÃ¤lt normalerweise eine Referenz auf das
+  <td>Bezeichnung des Feldes. Enthält normalerweise eine Referenz auf das
       Spracharray.</td>
 </tr>
 <tr>
@@ -431,25 +432,25 @@ kann.
 <tr>
   <td>exclude</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Blendet das Feld fÃ¼r regulÃ¤re Benutzer aus. Kann in den
+  <td>Blendet das Feld für reguläre Benutzer aus. Kann in den
       Gruppeneinstellungen festgelegt werden (erlaubte Felder).</td>
 </tr>
 <tr>
   <td>search</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>FÃ¼gt das Feld dem SuchmenÃ¼ hinzu (vgl. "DatensÃ¤tze sortieren" ->
+  <td>Fügt das Feld dem Suchmenü hinzu (vgl. "Datensätze sortieren" ->
       "Paneellayout").</td>
 </tr>
 <tr>
   <td>sorting</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>FÃ¼gt das Feld dem SortiermenÃ¼ hinzu (vgl. "DatensÃ¤tze sortieren" ->
+  <td>Fügt das Feld dem Sortiermenü hinzu (vgl. "Datensätze sortieren" ->
       "Paneellayout").</td>
 </tr>
 <tr>
   <td>filter</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>FÃ¼gt das Feld dem FiltermenÃ¼ hinzu (vgl. "DatensÃ¤tze sortieren" ->
+  <td>Fügt das Feld dem Filtermenü hinzu (vgl. "Datensätze sortieren" ->
       "Paneellayout").</td>
 </tr>
 <tr>
@@ -472,8 +473,8 @@ kann.
 </tr>
 <tr>
   <td>length</td>
-  <td>SortierlÃ¤nge (<code>integer</code>)</td>
-  <td>Gibt die Anzahl der Zeichen an, die zur Gruppierung der DatensÃ¤tze
+  <td>Sortierlänge (<code>integer</code>)</td>
+  <td>Gibt die Anzahl der Zeichen an, die zur Gruppierung der Datensätze
       verwendet wird (Sortierflag 3 und 4).</td>
 </tr>
 <tr>
@@ -482,12 +483,12 @@ kann.
   <td><b>text</b> Textfeld<br>
       <b>password</b> Passwortfeld<br>
       <b>textarea</b> Textarea<br>
-      <b>select</b> Drop-Down-MenÃ¼<br>
+      <b>select</b> Drop-Down-Menü<br>
       <b>checkbox</b> Checkbox<br>
       <b>radio</b> Radio-Button<br>
       <b>radioTable</b> Tabelle mit Bildern und Radio-Buttons<br>
-      <b>inputUnit</b> Textfeld mit Drop-Down-MenÃ¼ zur Auswahl der Einheit<br>
-      <b>trbl</b> Vier Textfelder mit Drop-Down-MenÃ¼ zur Auswahl der Einheit<br>
+      <b>inputUnit</b> Textfeld mit Drop-Down-Menü zur Auswahl der Einheit<br>
+      <b>trbl</b> Vier Textfelder mit Drop-Down-Menü zur Auswahl der Einheit<br>
       <b>chmod</b> CHMOD-Tabelle<br>
       <b>pageTree</b> Seitenbaum<br>
       <b>fileTree</b> Dateibaum<br>
@@ -500,49 +501,49 @@ kann.
 <tr>
   <td>options</td>
   <td>Optionen (<code>array</code>)</td>
-  <td>Optionen eines Drop-Down- oder Radio-Button-MenÃ¼s.</td>
+  <td>Optionen eines Drop-Down- oder Radio-Button-Menüs.</td>
 </tr>
 <tr>
   <td>options_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Kann verwendet werden, um die Optionen eines Drow-Down- oder
-      Radio-Button-MenÃ¼s mit Hilfe einer individuellen Funktion zu laden.</td>
+      Radio-Button-Menüs mit Hilfe einer individuellen Funktion zu laden.</td>
 </tr>
 <tr>
   <td>foreignKey</td>
   <td>tabelle.feld (<code>string</code>)</td>
-  <td>LÃ¤dt die Optionen eines Drop-Down- oder Radio-Button-MenÃ¼s aus einer
-      Tabelle. Verwendet die ID als SchlÃ¼ssel und das angegebenen Feld als
+  <td>Lädt die Optionen eines Drop-Down- oder Radio-Button-Menüs aus einer
+      Tabelle. Verwendet die ID als Schlüssel und das angegebenen Feld als
       Wert.</td>
 </tr>
 <tr>
   <td>reference</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Bezeichnungen der Optionen. EnthÃ¤lt normalerweise eine Referenz auf das
+  <td>Bezeichnungen der Optionen. Enthält normalerweise eine Referenz auf das
       Spracharray.</td>
 </tr>
 <tr>
   <td>explanation</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>ErklÃ¤rung des Feldes. EnthÃ¤lt normalerweise eine Referenz auf das
+  <td>Erklärung des Feldes. Enthält normalerweise eine Referenz auf das
       Spracharray.</td>
 </tr>
 <tr>
   <td>input_field_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Wird anstatt der Standardroutine zur Erstellung eines Formularfeldes
-      ausgefÃ¼hrt und Ã¼bergibt das DataContainer-Objekt sowie die Bezeichnung als
+      ausgeführt und übergibt das DataContainer-Objekt sowie die Bezeichnung als
       Argument.</td>
 </tr>
 <tr>
   <td>eval</td>
   <td>Feldkonfiguration (<code>array</code>)</td>
-  <td>Verschiedene Einstellungen (vgl. nÃ¤chsten Abschnitt).</td>
+  <td>Verschiedene Einstellungen (vgl. nächsten Abschnitt).</td>
 </tr>
 <tr>
   <td>wizard</td>
   <td>Callback-Funktion (<code>array</code>)</td>
-  <td>FÃ¼gt dem Eingabefeld den RÃ¼ckgabewert einer individuellen Funktion
+  <td>Fügt dem Eingabefeld den Rückgabewert einer individuellen Funktion
       hinzu.</td>
 </tr>
 <tr>
@@ -560,16 +561,16 @@ kann.
 <tr>
   <td>load_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
-  <td>Wird beim Laden des Eingabefeldes ausgefÃ¼hrt und Ã¼bergibt den Feldwert
+  <td>Wird beim Laden des Eingabefeldes ausgeführt und übergibt den Feldwert
       sowie das DataContainer-Objekt als Argument. Erwartet einen Feldwert als
-      RÃ¼ckgabewert.</td>
+      Rückgabewert.</td>
 </tr>
 <tr>
   <td>save_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
-  <td>Wird beim Speichern des Feldes ausgefÃ¼hrt und Ã¼bergibt den Feldwert
+  <td>Wird beim Speichern des Feldes ausgeführt und übergibt den Feldwert
       sowie das DataContainer-Objekt als Argument. Erwartet einen Feldwert als
-      RÃ¼ckgabewert. Durch AuslÃ¶sen einer Exception kann eine Fehlermeldung
+      Rückgabewert. Durch Auslösen einer Exception kann eine Fehlermeldung
       ausgegeben werden.</td>
 </tr>
 </table>
@@ -577,14 +578,14 @@ kann.
 
 ### Evaluation
 
-Das Evaluationsarray konfiguriert ein Eingabefeld im Detail. Sie kÃ¶nnen es z.B.
-zu einem Pflichtfeld machen,  die verschlÃ¼sselte Datenspeicherung aktivieren
-oder sein Aussehen verÃ¤ndern. Benutzereingaben kÃ¶nnen anhand eines regulÃ¤ren
-Ausdrucks geprÃ¼ft werden.
+Das Evaluationsarray konfiguriert ein Eingabefeld im Detail. Sie können es z.B.
+zu einem Pflichtfeld machen,  die verschlüsselte Datenspeicherung aktivieren
+oder sein Aussehen verändern. Benutzereingaben können anhand eines regulären
+Ausdrucks geprüft werden.
 
 <table>
 <tr>
-  <th>SchlÃ¼ssel</th>
+  <th>Schlüssel</th>
   <th>Wert</th>
   <th>Beschreibung</th>
 </tr>
@@ -601,30 +602,30 @@ Ausdrucks geprÃ¼ft werden.
 </tr>
 <tr>
   <td>maxlength</td>
-  <td>Maximale LÃ¤nge (<code>integer</code>)</td>
+  <td>Maximale Länge (<code>integer</code>)</td>
   <td>Legt die maximale Anzahl an Zeichen fest, die in das Feld eingegeben
-      werden dÃ¼rfen.</td>
+      werden dürfen.</td>
 </tr>
 <tr>
   <td>minlength</td>
-  <td>MindestlÃ¤nge (<code>integer</code>)</td>
+  <td>Mindestlänge (<code>integer</code>)</td>
   <td>Legt die Anzahl an Zeichen fest, die mindestens in das Feld eingegeben
-      werden mÃ¼ssen.</td>
+      werden müssen.</td>
 </tr>
 <tr>
   <td>fallback</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Legt fest, dass das Feld nur ein einziges Mal pro Tabelle ausgewÃ¤hlt
+  <td>Legt fest, dass das Feld nur ein einziges Mal pro Tabelle ausgewählt
       werden darf.</td>
 </tr>
 <tr>
   <td>rgxp</td>
-  <td>RegulÃ¤rer Ausdruck (<code>string</code>)</td>
+  <td>Regulärer Ausdruck (<code>string</code>)</td>
   <td>
     <table>
         <tr>
           <td><b>alias</b></td>
-          <td>prÃ¼ft auf ein gÃ¼ltiges Alias</td>
+          <td>prüft auf ein gültiges Alias</td>
         </tr>
         <tr>
           <td><b>alnum</b></td>
@@ -638,11 +639,11 @@ Ausdrucks geprÃ¼ft werden.
         </tr>
         <tr>
           <td><b>date</b></td>
-          <td>prÃ¼ft auf ein gÃ¼ltiges Datum</td>
+          <td>prüft auf ein gültiges Datum</td>
         </tr>
         <tr>
           <td><b>datim</b></td>
-          <td>prÃ¼ft auf ein gÃ¼ltiges Datum mit Uhrzeit</td>
+          <td>prüft auf ein gültiges Datum mit Uhrzeit</td>
         </tr>
         <tr>
           <td><b>digit</b></td>
@@ -650,37 +651,37 @@ Ausdrucks geprÃ¼ft werden.
         </tr>
         <tr>
           <td><b>email</b></td>
-          <td>prÃ¼ft auf eine gÃ¼ltige E-Mail-Adresse</td>
+          <td>prüft auf eine gültige E-Mail-Adresse</td>
         </tr>
         <tr>
           <td><b>emails</b></td>
-          <td>prÃ¼ft auf eine Liste von gÃ¼ltigen E-Mail-Adressen</td>
+          <td>prüft auf eine Liste von gültigen E-Mail-Adressen</td>
         </tr>
         <tr>
           <td><b>extnd</b></td>
-          <td>erlaubt alles auÃŸer <code>#&amp;()/&lt;=&gt;</code></td>
+          <td>erlaubt alles außer <code>#&amp;()/&lt;=&gt;</code></td>
         </tr>
         <tr>
           <td><b>friendly</b></td>
-          <td>prÃ¼ft auf eine gÃ¼ltige E-Mail-Adresse im "friendly name
+          <td>prüft auf eine gültige E-Mail-Adresse im "friendly name
       format"</td>
         </tr>
         <tr>
           <td><b>language</b></td>
-          <td>prÃ¼ft auf einen gÃ¼ltigen Sprachcode</td>
+          <td>prüft auf einen gültigen Sprachcode</td>
         </tr>
         <tr>
           <td><b>locale</b></td>
-          <td>prÃ¼ft auf ein gÃ¼ltiges Gebietsschema (z.B. "de-CH")</td>
+          <td>prüft auf ein gültiges Gebietsschema (z.B. "de-CH")</td>
         </tr>
         <tr>
           <td><b>folderalias</b></td>
-          <td>prÃ¼ft auf ein gÃ¼ltiges Ordner-URL Alias</td>
+          <td>prüft auf ein gültiges Ordner-URL Alias</td>
         </tr>
         <tr>
           <td><b>phone</b></td>
-          <td>prÃ¼ft auf eine gÃ¼ltige Telefonnummer (Zahlen, Leerschlag [ ], 
-          Plus [+], Minus [-], Klammern [()] und SchrÃ¤gstrich [/])</td>
+          <td>prüft auf eine gültige Telefonnummer (Zahlen, Leerschlag [ ], 
+          Plus [+], Minus [-], Klammern [()] und Schrägstrich [/])</td>
         </tr>
         <tr>
           <td><b>prcnt</b></td>
@@ -688,11 +689,11 @@ Ausdrucks geprÃ¼ft werden.
         </tr>
         <tr>
           <td><b>url</b></td>
-          <td>prÃ¼ft auf eine gÃ¼ltige URL</td>
+          <td>prüft auf eine gültige URL</td>
         </tr>
         <tr>
           <td><b>time</b></td>
-          <td>prÃ¼ft auf eine gÃ¼ltige Uhrzeit</td>
+          <td>prüft auf eine gültige Uhrzeit</td>
         </tr>
     </table>
   </td>
@@ -700,24 +701,24 @@ Ausdrucks geprÃ¼ft werden.
 <tr>
   <td>cols</td>
   <td>Spalten (<code>integer</code>)</td>
-  <td>Anzahl an Spalten (gilt nur fÃ¼r Textareas).</td>
+  <td>Anzahl an Spalten (gilt nur für Textareas).</td>
 </tr>
 <tr>
   <td>rows</td>
   <td>Reihen (<code>integer</code>)</td>
-  <td>Anzahl an Reihen (gilt nur fÃ¼r Textareas).</td>
+  <td>Anzahl an Reihen (gilt nur für Textareas).</td>
 </tr>
 <tr>
   <td>multiple</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Erlaubt die mehrfache Auswahl bzw. Eingabe und kann fÃ¼r Textfelder,
-      Drop-Down-MenÃ¼s, Radio-Buttons und Checkboxen verwendet werden. FÃ¼r den
-      Checkbox-Assistenten benÃ¶tigt.</td>
+  <td>Erlaubt die mehrfache Auswahl bzw. Eingabe und kann für Textfelder,
+      Drop-Down-Menüs, Radio-Buttons und Checkboxen verwendet werden. Für den
+      Checkbox-Assistenten benötigt.</td>
 </tr>
 <tr>
   <td>size</td>
-  <td>GrÃ¶ÃŸe (<code>integer</code>)</td>
-  <td>GrÃ¶ÃŸe eines Mehrfachfeldes bzw. Anzahl an Eingabefeldern.</td>
+  <td>Größe (<code>integer</code>)</td>
+  <td>Größe eines Mehrfachfeldes bzw. Anzahl an Eingabefeldern.</td>
 </tr>
 <tr>
   <td>style</td>
@@ -731,18 +732,18 @@ Ausdrucks geprÃ¼ft werden.
       verwenden<br>
       <b>tinyFlash</b> Konfigurationsdatei <code>config/tinyFlash.php</code>
       verwenden<br>
-      Die Verwendung eigener Konfigurationsdateien ist mÃ¶glich.</td>
+      Die Verwendung eigener Konfigurationsdateien ist möglich.</td>
 </tr>
 <tr>
   <td>submitOnChange</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Legt fest, ob das Formular bei der Ã„nderung des Feldwertes automatisch
+  <td>Legt fest, ob das Formular bei der Änderung des Feldwertes automatisch
       abgeschickt wird.</td>
 </tr>
 <tr>
   <td>nospace</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Legt fest, ob Leerzeichen eingegeben werden dÃ¼rfen.</td>
+  <td>Legt fest, ob Leerzeichen eingegeben werden dürfen.</td>
 </tr>
 <tr>
   <td>allowHtml</td>
@@ -769,7 +770,7 @@ Ausdrucks geprÃ¼ft werden.
   <td>alwaysSave</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Legt fest, dass Eingaben immer gespeichert werden, selbst wenn der
-      Feldwert nicht verÃ¤ndert wurde.</td>
+      Feldwert nicht verändert wurde.</td>
 </tr>
 <tr>
   <td>spaceToUnderscore</td>
@@ -784,48 +785,48 @@ Ausdrucks geprÃ¼ft werden.
 <tr>
   <td>encrypt</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Speichert den Feldwert verschlÃ¼sselt.</td>
+  <td>Speichert den Feldwert verschlüsselt.</td>
 </tr>
 <tr>
   <td>trailingSlash</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Legt fest, ob dem Feldwert ein SchrÃ¤gstrich hinzugefÃ¼gt (`true`) oder ein
-      bestehender SchrÃ¤gstrich am Ende entfernt (`false`) wird.</td>
+  <td>Legt fest, ob dem Feldwert ein Schrägstrich hinzugefügt (`true`) oder ein
+      bestehender Schrägstrich am Ende entfernt (`false`) wird.</td>
 </tr>
 <tr>
   <td>files</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Legt fest, ob Dateien und Ordner oder nur Ordner angezeigt werden. Gilt
-      nur fÃ¼r DateibÃ¤ume.</td>
+      nur für Dateibäume.</td>
 </tr>
 <tr>
   <td>filesOnly</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Entfernt die Radio Buttons bzw. Checkboxen zur Auswahl von Ordnern. Gilt
-      nur fÃ¼r DateibÃ¤ume.</td>
+      nur für Dateibäume.</td>
 </tr>
 <tr>
   <td>extensions</td>
   <td>Dateitypen (<code>string</code>)</td>
-  <td>BeschrÃ¤nkt den Dateibaum auf bestimmte Dateitypen (kommagetrennte Liste).
-      Gilt nur fÃ¼r DateibÃ¤ume.</td>
+  <td>Beschränkt den Dateibaum auf bestimmte Dateitypen (kommagetrennte Liste).
+      Gilt nur für Dateibäume.</td>
 </tr>
 <tr>
   <td>path</td>
   <td>Pfad (<code>string</code>)</td>
-  <td>Individuelles Wurzelverzeichnis fÃ¼r DateibÃ¤ume.</td>
+  <td>Individuelles Wurzelverzeichnis für Dateibäume.</td>
 </tr>
 <tr>
   <td>fieldType</td>
   <td>Feldtyp (<code>string</code>)</td>
   <td><b>checkbox</b> erlaubt die Auswahl mehrerer Dateien<br>
-      <b>radio</b> erlaubt die Auswahl genau einer Datei. Gilt nur fÃ¼r
-      DateibÃ¤ume.</td>
+      <b>radio</b> erlaubt die Auswahl genau einer Datei. Gilt nur für
+      Dateibäume.</td>
 </tr>
 <tr>
   <td>includeBlankOption</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Legt fest, ob ein Drop-Down-MenÃ¼ eine leere Option am Anfang enthÃ¤lt.</td>
+  <td>Legt fest, ob ein Drop-Down-Menü eine leere Option am Anfang enthält.</td>
 </tr>
 <tr>
   <td>blankOptionLabel</td>
@@ -835,14 +836,14 @@ Ausdrucks geprÃ¼ft werden.
 <tr>
   <td>chosen</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>AuswahlmenÃ¼s mittels 
+  <td>Auswahlmenüs mittels 
       <a href="http://harvesthq.github.io/chosen/" target="_blank">Chosen</a>
       erweitern.</td>
 </tr>
 <tr>
   <td>findInSet</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Sortiert ein Optionsarray anhand der SchlÃ¼ssel anstatt anhand der
+  <td>Sortiert ein Optionsarray anhand der Schlüssel anstatt anhand der
       Werte.</td>
 </tr>
 <tr>
@@ -858,17 +859,17 @@ Ausdrucks geprÃ¼ft werden.
 <tr>
   <td>feEditable</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Legt fest, ob ein Feld im Frontend bearbeitet werden darf. Gilt nur fÃ¼r
+  <td>Legt fest, ob ein Feld im Frontend bearbeitet werden darf. Gilt nur für
       die Tabelle tl_member.</td>
 </tr>
 <tr>
   <td>feGroup</td>
   <td>Gruppe (<code>string</code>)</td>
-  <td><b>personal</b> PersÃ¶nliche Daten<br>
+  <td><b>personal</b> Persönliche Daten<br>
       <b>address</b> Adressdaten<br>
       <b>contact</b> Kontaktdaten<br>
       <b>login</b> Login-Daten (nur Tabelle <code>tl_member</code>)<br>
-      Das HinzufÃ¼gen eigener Gruppen ist mÃ¶glich.</td>
+      Das Hinzufügen eigener Gruppen ist möglich.</td>
 </tr>
 <tr>
   <td>feViewable</td>
@@ -902,13 +903,13 @@ Ausdrucks geprÃ¼ft werden.
   <td>disabled</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Deaktiviert das Eingabefeld (wird nicht von allen Feldern
-      unterstÃ¼tzt).</td>
+      unterstützt).</td>
 </tr>
 <tr>
   <td>readonly</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Das Feld kann nur gelesen werden (wird nicht von allen Feldern
-      unterstÃ¼tzt).</td>
+      unterstützt).</td>
 </tr>
 </table>
 
@@ -916,14 +917,14 @@ Ausdrucks geprÃ¼ft werden.
 ### Relationen
 
 Relationen definieren, ob und wie Feldwerte mit einer weiteren
-Tabelle zusammen hÃ¤ngen. Die referenzierte Tabelle wird im `foreignKey`
-SchlÃ¼ssel definiert. Relationen ermÃ¶glichen den Model-Klassen,
-referenzierte DatensÃ¤tze effizient und entwicklerfreundlich
+Tabelle zusammen hängen. Die referenzierte Tabelle wird im `foreignKey`
+Schlüssel definiert. Relationen ermöglichen den Model-Klassen,
+referenzierte Datensätze effizient und entwicklerfreundlich
 zu laden (siehe `Model::getRelated()`).
 
 <table>
 <tr>
-  <th>SchlÃ¼ssel</th>
+  <th>Schlüssel</th>
   <th>Wert</th>
   <th>Beschreibung</th>
 </tr>
@@ -932,21 +933,21 @@ zu laden (siehe `Model::getRelated()`).
   <td>Beziehungstyp<br> (<code>string</code>)
   <td>
     <b>hasOne</b> Feldwert referenziert einen Kinddatensatz<br>
-    <b>hasMany</b> Feldwert referenziert mehrere KinddatensÃ¤tze
+    <b>hasMany</b> Feldwert referenziert mehrere Kinddatensätze
        (serialisiert)<br>
     <b>belongsTo</b> Feldwert referenziert eine Elterntabelle
        (z.B. <code>pid</code>)<br>
     <b>belongsToMany</b> Feldwert referenziert mehrere
-    ElterndatensÃ¤tze (serialisiert)
+    Elterndatensätze (serialisiert)
   </td>
 </tr>
 <tr>
   <td>load</td>
   <td>Ladeverhalten<br> (<code>string</code>)</td>
   <td>
-      <b>lazy</b> LÃ¤dt referenzierte DatensÃ¤tze erst wenn erforderlich
+      <b>lazy</b> Lädt referenzierte Datensätze erst wenn erforderlich
          (Standard, spart RAM)<br>
-      <b>eager</b> LÃ¤dt referenzierte DatensÃ¤tze automatisch (spart DB-Abfragen)
+      <b>eager</b> Lädt referenzierte Datensätze automatisch (spart DB-Abfragen)
   </td>
 </tr>
 </table>
@@ -955,17 +956,17 @@ zu laden (siehe `Model::getRelated()`).
 ## Paletten
 
 Eine Palette besteht aus mehreren Formularfeldern, die zur Bearbeitung eines
-Datensatzes benÃ¶tigt werden. Dabei sind meistens nicht alle Spalten einer
+Datensatzes benötigt werden. Dabei sind meistens nicht alle Spalten einer
 Tabelle enthalten, sondern nur die, die zu einem bestimmten Modul oder Element
-gehÃ¶ren. Paletten kÃ¶nnen sich je nach Benutzerrechten oder Elementtyp
-dynamisch Ã¤ndern und Teile des Formulars (Subpaletten) kÃ¶nnen interaktiv per
+gehören. Paletten können sich je nach Benutzerrechten oder Elementtyp
+dynamisch ändern und Teile des Formulars (Subpaletten) können interaktiv per
 Ajax nachgeladen werden.
 
 
 ### Gruppen definieren
 
 Eine Palette ist eine Reihung mehrerer Feldnamen, die durch einen Strichpunkt
-(;) oder ein Komma (,) verbunden sind. WÃ¤hrend das Komma nur zur Abgrenzung der
+(;) oder ein Komma (,) verbunden sind. Während das Komma nur zur Abgrenzung der
 Feldnamen verwendet wird, markiert der Strichpunkt den Beginn einer neuen
 Gruppe, die aus- und eingeklappt werden kann.
 
@@ -978,7 +979,7 @@ Das obige Beispiel wird durch folgenden Code definiert:
 ```
 
 Die Platzhalter `title_legend` und `date_legend` werden durch die entsprechenden
-Ãœbersetzungen im "TL_LANG"-Array ersetzt.
+Übersetzungen im "TL_LANG"-Array ersetzt.
 
 ```
 $GLOBALS['TL_LANG']['tl_news']['title_legend'] = 'Titel und Autor';
@@ -989,7 +990,7 @@ $GLOBALS['TL_LANG']['tl_news']['date_legend']  = 'Datum und Uhrzeit';
 ### Felder ausrichten
 
 Das Contao-Backend verwendet ein 2-spaltiges Grid-System, um Formularfelder
-innerhalb ihrer Gruppen auszurichten. Folgende CSS-Klassen kÃ¶nnen in der
+innerhalb ihrer Gruppen auszurichten. Folgende CSS-Klassen können in der
 "eval"-Sektion des Data Container Arrays als `tl_class` vergeben werden (z.B.
 `'tl_class'=>'w50 wizard'`):
 
@@ -1009,16 +1010,16 @@ innerhalb ihrer Gruppen auszurichten. Folgende CSS-Klassen kÃ¶nnen in der
 </tr>
 <tr>
   <td>wizard</td>
-  <td>VerkÃ¼rzt das Eingabefeld, damit genug Platz fÃ¼r den Wizard (z.B. Date
+  <td>Verkürzt das Eingabefeld, damit genug Platz für den Wizard (z.B. Date
       Picker) ist.</td>
 </tr>
 <tr>
   <td>long</td>
-  <td>LÃ¤sst das Eingabefeld zwei Spalten umspannen.</td>
+  <td>Lässt das Eingabefeld zwei Spalten umspannen.</td>
 </tr>
 <tr>
   <td>m12</td>
-  <td>FÃ¼gt dem Element einen oberen Abstand von 12 Pixeln hinzu (z.B. fÃ¼r
+  <td>Fügt dem Element einen oberen Abstand von 12 Pixeln hinzu (z.B. für
       einzelne Checkboxen).</td>
 </tr>
 </table>
@@ -1026,9 +1027,9 @@ innerhalb ihrer Gruppen auszurichten. Folgende CSS-Klassen kÃ¶nnen in der
 
 ## Callbacks
 
-Callback-Funktionen basieren auf dem Event Dispatcher-Pattern. Sie kÃ¶nnen
+Callback-Funktionen basieren auf dem Event Dispatcher-Pattern. Sie können
 mehrere Callback-Funktionen pro Ereignis registrieren, die dann bei dessen
-Eintreten ausgefÃ¼hrt werden. Mit Hilfe von Callbacks kann der Programmablauf
+Eintreten ausgeführt werden. Mit Hilfe von Callbacks kann der Programmablauf
 der Contao Core-Engine angepasst werden.
 
 
@@ -1041,28 +1042,28 @@ der Contao Core-Engine angepasst werden.
 </tr>
 <tr>
   <td>onload_callback</td>
-  <td>Wird bei der Initialisierung des DataContainer-Objekts ausgefÃ¼hrt.
-      ErmÃ¶glicht z.B. das PrÃ¼fen von Zugriffsrechten oder die dynamische
-      Ã„nderung des Data Container Array zur Laufzeit.</td>
+  <td>Wird bei der Initialisierung des DataContainer-Objekts ausgeführt.
+      Ermöglicht z.B. das Prüfen von Zugriffsrechten oder die dynamische
+      Änderung des Data Container Array zur Laufzeit.</td>
 </tr>
 <tr>
   <td>onsubmit_callback</td>
-  <td>Wird beim Abschicken eines Backend-Formulars ausgefÃ¼hrt. ErmÃ¶glicht z.B.
+  <td>Wird beim Abschicken eines Backend-Formulars ausgeführt. Ermöglicht z.B.
       die Modifizierung der Formulardaten, bevor diese in die Datenbank
       geschrieben werden (wird in der Kalender-Erweiterung zur
       Intervalberechnung eingesetzt).</td>
 </tr>
 <tr>
   <td>ondelete_callback</td>
-  <td>Wird ausgefÃ¼hrt bevor ein Datensatz aus der Datenbank entfernt wird.</td>
+  <td>Wird ausgeführt bevor ein Datensatz aus der Datenbank entfernt wird.</td>
 </tr>
 <tr>
   <td>oncut_callback</td>
-  <td>Wird ausgefÃ¼hrt nachdem ein Datensatz verschoben wurde.</td>
+  <td>Wird ausgeführt nachdem ein Datensatz verschoben wurde.</td>
 </tr>
 <tr>
   <td>oncopy_callback</td>
-  <td>Wird ausgefÃ¼hrt nachdem ein Datensatz dupliziert wurde.</td>
+  <td>Wird ausgeführt nachdem ein Datensatz dupliziert wurde.</td>
 </tr>
 </table>
 
@@ -1076,9 +1077,9 @@ der Contao Core-Engine angepasst werden.
 </tr>
 <tr>
   <td>paste_button_callback</td>
-  <td>ErmÃ¶glicht individuelle EinfÃ¼ge-SchaltflÃ¤chen und wird z.B. in der
-      Seitenstruktur verwenden, um die Icons abhÃ¤ngig von den Benutzerrechten zu
-      deaktivieren (erfordert eine zusÃ¤tzliche PrÃ¼fung mittels
+  <td>Ermöglicht individuelle Einfüge-Schaltflächen und wird z.B. in der
+      Seitenstruktur verwenden, um die Icons abhängig von den Benutzerrechten zu
+      deaktivieren (erfordert eine zusätzliche Prüfung mittels
       load_callback).</td>
 </tr>
 <tr>
@@ -1087,12 +1088,12 @@ der Contao Core-Engine angepasst werden.
 </tr>
 <tr>
   <td>group_callback</td>
-  <td>ErmÃ¶glicht individuelle Gruppennamen in der Listenansicht.</td>
+  <td>Ermöglicht individuelle Gruppennamen in der Listenansicht.</td>
 </tr>
 <tr>
   <td>label_callback</td>
-  <td>ErmÃ¶glicht individuelle Bezeichnungen in der Listenansicht und wird z.B.
-      im Benutzer-Modul verwendet, um die Status-Icons hinzuzufÃ¼gen.</td>
+  <td>Ermöglicht individuelle Bezeichnungen in der Listenansicht und wird z.B.
+      im Benutzer-Modul verwendet, um die Status-Icons hinzuzufügen.</td>
 </tr>
 </table>
 
@@ -1106,9 +1107,9 @@ der Contao Core-Engine angepasst werden.
 </tr>
 <tr>
   <td>button_callback</td>
-  <td>ErmÃ¶glicht individuelle Navigationssymbole und wird z.B. in der
-      Seitenstruktur verwenden, um Icons abhÃ¤ngig von den Benutzerrechten zu
-      deaktivieren (erfordert eine zusÃ¤tzliche PrÃ¼fung mittels
+  <td>Ermöglicht individuelle Navigationssymbole und wird z.B. in der
+      Seitenstruktur verwenden, um Icons abhängig von den Benutzerrechten zu
+      deaktivieren (erfordert eine zusätzliche Prüfung mittels
       load_callback).</td>
 </tr>
 </table>
@@ -1123,26 +1124,26 @@ der Contao Core-Engine angepasst werden.
 </tr>
 <tr>
   <td>options_callback</td>
-  <td>ErmÃ¶glicht das BefÃ¼llen eines Drop-Down-MenÃ¼s oder einer Checkbox-Liste
-      mittels einer individuellen Funktion. Kann z.B. fÃ¼r bedingte
-      FremdschlÃ¼ssel-Relationen verwendet werden.</td>
+  <td>Ermöglicht das Befüllen eines Drop-Down-Menüs oder einer Checkbox-Liste
+      mittels einer individuellen Funktion. Kann z.B. für bedingte
+      Fremdschlüssel-Relationen verwendet werden.</td>
 </tr>
 <tr>
   <td>input_field_callback</td>
-  <td>ErmÃ¶glicht das Erstellen individueller Formularfelder und wird z.B. im
-      Backend-Modul "PersÃ¶nliche Daten" verwendet, um das
+  <td>Ermöglicht das Erstellen individueller Formularfelder und wird z.B. im
+      Backend-Modul "Persönliche Daten" verwendet, um das
       "Daten bereinigen"-Feld zu erstellen. Achtung: Eingaben werden nicht
       automatisch gespeichert!</td>
 </tr>
 <tr>
   <td>load_callback</td>
-  <td>Wird bei der Initialisierung eines Formularfeldes ausgefÃ¼hrt. ErmÃ¶glicht
+  <td>Wird bei der Initialisierung eines Formularfeldes ausgeführt. Ermöglicht
       z.B. das Laden eines Standardwertes.</td>
 </tr>
 <tr>
   <td>save_callback</td>
-  <td>Wird beim Abschicken eines Feldes ausgefÃ¼hrt. ErmÃ¶glicht z.B. das
-      HinzufÃ¼gen einer individuellen PrÃ¼fung.</td>
+  <td>Wird beim Abschicken eines Feldes ausgeführt. Ermöglicht z.B. das
+      Hinzufügen einer individuellen Prüfung.</td>
 </tr>
 </table>
 
