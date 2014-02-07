@@ -114,7 +114,7 @@ beim Löschen von Elterndatensätzen passiert.
   <td>onload_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
   <td>Ruft eine Callback-Funktion beim Initialisieren des Data Containers auf
-      und übergibt das DataContainer-Objekt als Argument.</td>
+      und übergibt das DataContainer-Objekt als Argument. Der Default Wert f�r einzelne Felder kann hier nicht mehr definiert werden. </td>
 </tr>
 <tr>
   <td>onsubmit_callback</td>
