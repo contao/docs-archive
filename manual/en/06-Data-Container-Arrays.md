@@ -448,12 +448,14 @@ filter criteria.
       <b>checkbox</b> Checkbox<br>
       <b>radio</b> Radio button<br>
       <b>radioTable</b> Table with images and radio buttons<br>
+      <b>imageSize</b> Two text fields with drop-down menu<br>
       <b>inputUnit</b> Text field with small unit drop-down menu<br>
       <b>trbl</b> Four text fields with a small unit drop-down menu<br>
       <b>chmod</b> CHMOD table<br>
       <b>pageTree</b> Page tree<br>
       <b>fileTree</b> File tree<br>
       <b>tableWizard</b> Table wizard<br>
+      <b>timePeriod</b> Text field with drop-down menu<br>
       <b>listWizard</b> List wizard<br>
       <b>optionWizard</b> Option wizard<br>
       <b>moduleWizard</b> Module wizard<br>
