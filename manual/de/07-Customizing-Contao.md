@@ -8,17 +8,17 @@ Ablauf der Contao Core-Engine beeinflussen, ohne dabei deren Dateien ändern zu
 müssen.
 
 
-##Internen Cache umgehen 
+##Internen Cache umgehen
 
-Vor der Anpassung von Contao oder der Entwicklung von Erweiterungen sollte 
+Vor der Anpassung von Contao oder der Entwicklung von Erweiterungen sollte
 unbedingt der interne Cache deaktiviert bzw. umgangen werden.
-Dazu navigieren Sie im Backend zu "System"->"Einstellungen" und setzten einen 
+Dazu navigieren Sie im Backend zu "System"->"Einstellungen" und setzten einen
 Haken unter "Globale Einstellungen" bei "Internen Cache umgehen".
 
 ![](images/internen-cache-umgehen.jpg?raw=true)
 
-Sobald die Seite jedoch in den produktiven Betrieb geht, sollte unbedingt der 
-Haken bei "Internen Cache umgehen" entfernt werden, da das System ohne den 
+Sobald die Seite jedoch in den produktiven Betrieb geht, sollte unbedingt der
+Haken bei "Internen Cache umgehen" entfernt werden, da das System ohne den
 Cache gerade bei größeren Projekten um einiges langsamer reagiert.
 
 
@@ -123,8 +123,8 @@ die `news`-Erweiterung anpassen wollen.
 
 Legen Sie die Datei `dca/tl_member.php` in Ihrem Modulordner an und fügen Sie
 die Metadaten des neuen Feldes ein.
-Seit Contao 3 werden außerdem auch die dazugehörigen Felder sowie deren 
-Konfiguration für die Datenbank unter `sql` direkt mit angegeben. 
+Seit Contao 3 werden außerdem auch die dazugehörigen Felder sowie deren
+Konfiguration für die Datenbank unter `sql` direkt mit angegeben.
 
 ``` {.php}
 // Anpassung der Palette
@@ -149,7 +149,7 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 Falls Sie den obigen Code nicht verstehen, lesen Sie den Abschnitt über [Data
 Container Arrays][1].
 
-Nachdem Sie die Datei abgespeichert haben, müssen Sie die Datenbank 
+Nachdem Sie die Datei abgespeichert haben, müssen Sie die Datenbank
 aktualisieren. Dazu verwenden Sie das [Contao-Installtool][3].
 
 
@@ -474,27 +474,6 @@ public function myCreateNewUser($intId, $arrData)
 ```
 
 
-### executePreActions
-
-Der "executePreActions"-Hook wird bei unbekannten Ajax-Anfragen ausgeführt, die
-keine DCA-Objekt benötigen. Er übergibt den Namen der Aktion als Argument und
-erwartet keinen Rückgabewert. Hinzugefügt in Version 2.6.1.
-
-``` {.php}
-// config.php
-$GLOBALS['TL_HOOKS']['executePreActions'][] = array('MyClass', 'myExecutePreActions');
-
-// MyClass.php
-public function myExecutePreActions($strAction)
-{
-    if ($strAction == 'update')
-    {
-        // Beliebiger Code
-    }
-}
-```
-
-
 ### executePostActions
 
 Der "executePostActions"-Hook wird bei unbekannten Ajax-Anfragen ausgegeben, die
@@ -508,6 +487,27 @@ $GLOBALS['TL_HOOKS']['executePostActions'][] = array('MyClass', 'myExecutePostAc
 
 // MyClass.php
 public function myExecutePostActions($strAction, DataContainer $dc)
+{
+    if ($strAction == 'update')
+    {
+        // Beliebiger Code
+    }
+}
+```
+
+
+### executePreActions
+
+Der "executePreActions"-Hook wird bei unbekannten Ajax-Anfragen ausgeführt, die
+keine DCA-Objekt benötigen. Er übergibt den Namen der Aktion als Argument und
+erwartet keinen Rückgabewert. Hinzugefügt in Version 2.6.1.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['executePreActions'][] = array('MyClass', 'myExecutePreActions');
+
+// MyClass.php
+public function myExecutePreActions($strAction)
 {
     if ($strAction == 'update')
     {
@@ -571,6 +571,22 @@ public function myGeneratePage(\PageModel $objPage, \LayoutModel $objLayout, \Pa
 ```
 
 
+### generateXmlFiles
+
+Der "generateXmlFiles"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['generateXmlFiles'][] = array('MyClass', 'myGenerateXmlFiles');
+
+// MyClass.php
+public function myGenerateXmlFiles()
+{
+    // Code
+}
+```
+
+
 ### getAllEvents
 
 Der "getAllEvents"-Hook ermöglicht das Modifizieren von Terminen in Kalendern
@@ -591,6 +607,70 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Mo
 ```
 
 
+### getArticle
+
+Der "getArticle"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getArticle'][] = array('MyClass', 'myGetArticle');
+
+// MyClass.php
+public function myGetArticle()
+{
+    // Code
+}
+```
+
+
+### getAttributesFromDca
+
+Der "getAttributesFromDca"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getAttributesFromDca'][] = array('MyClass', 'myGetAttributesFromDca');
+
+// MyClass.php
+public function myGetAttributesFromDca()
+{
+    // Code
+}
+```
+
+
+### getCacheKey
+
+Der "getCacheKey"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getCacheKey'][] = array('MyClass', 'myGetCacheKey');
+
+// MyClass.php
+public function myGetCacheKey()
+{
+    // Code
+}
+```
+
+
+### getCombinedFile
+
+Der "getCombinedFile"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getCombinedFile'][] = array('MyClass', 'myGetCombinedFile');
+
+// MyClass.php
+public function myGetCombinedFile()
+{
+    // Code
+}
+```
+
+
 ### getContentElement
 
 Der "getContentElement"-Hook wird beim Rendern von Inhaltselementen ausgeführt.
@@ -605,6 +685,54 @@ $GLOBALS['TL_HOOKS']['getContentElement'][] = array('MyClass', 'myGetContentElem
 public function myGetContentElement(Database_Result $objElement, $strBuffer)
 {
     return $strBuffer;
+}
+```
+
+
+### getCountries
+
+Der "getCountries"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getCountries'][] = array('MyClass', 'myGetCountries');
+
+// MyClass.php
+public function myGetCountries()
+{
+    // Code
+}
+```
+
+
+### getForm
+
+Der "getForm"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getForm'][] = array('MyClass', 'myGetForm');
+
+// MyClass.php
+public function myGetForm()
+{
+    // Code
+}
+```
+
+
+### getFrontendModule
+
+Der "getFrontendModule"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getFrontendModule'][] = array('MyClass', 'myGetFrontendModule');
+
+// MyClass.php
+public function myGetFrontendModule()
+{
+    // Code
 }
 ```
 
@@ -665,6 +793,22 @@ public function mygetPageLayout(\PageModel $objPage, \LayoutModel $objLayout, \P
 ```
 
 
+### getRootPageFromUrl
+
+Der "getRootPageFromUrl"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getRootPageFromUrl'][] = array('MyClass', 'myGetRootPageFromUrl');
+
+// MyClass.php
+public function myGetRootPageFromUrl()
+{
+    // Code
+}
+```
+
+
 ### getSearchablePages
 
 Der "getSearchablePages"-Hook wird beim Aufbau des Suchindex ausgeführt. Er
@@ -683,19 +827,34 @@ public function myGetSearchablePages($arrPages, $intRoot)
 ```
 
 
-### initializeSystem
+### getSystemMessages
 
-Der "initializeSystem"-Hook wird bei der Initialisierung des Systems ausgeführt.
-Hinzugefügt in Version 3.1.RC1.
+Der "getSystemMessages"-Hook...
 
 ``` {.php}
 // config.php
-$GLOBALS['TL_HOOKS']['initializeSystem'][] = array('MyClass', 'myInitializeSystem');
+$GLOBALS['TL_HOOKS']['getSystemMessages'][] = array('MyClass', 'myGetSystemMessages');
 
 // MyClass.php
-public function myInitializeSystem()
+public function myGetSystemMessages()
 {
-    // Beliebiger Code
+    // Code
+}
+```
+
+
+### getUserNavigation
+
+Der "getUserNavigation"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getUserNavigation'][] = array('MyClass', 'myGetUserNavigation');
+
+// MyClass.php
+public function myGetUserNavigation()
+{
+    // Code
 }
 ```
 
@@ -728,6 +887,87 @@ public function myImportUser($strUsername, $strPassword, $strTable)
 ```
 
 
+### indexPage
+
+Der "indexPage"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['indexPage'][] = array('MyClass', 'myIndexPage');
+
+// MyClass.php
+public function myIndexPage()
+{
+    // Code
+}
+```
+
+
+### initializeSystem
+
+Der "initializeSystem"-Hook wird bei der Initialisierung des Systems ausgeführt.
+Hinzugefügt in Version 3.1.RC1.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['initializeSystem'][] = array('MyClass', 'myInitializeSystem');
+
+// MyClass.php
+public function myInitializeSystem()
+{
+    // Beliebiger Code
+}
+```
+
+
+### insertTagFlags
+
+Der "insertTagFlags"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['insertTagFlags'][] = array('MyClass', 'myInsertTagFlags');
+
+// MyClass.php
+public function myInsertTagFlags()
+{
+    // Code
+}
+```
+
+
+### isAllowedToEditComment
+
+Der "isAllowedToEditComment"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['isAllowedToEditComment'][] = array('MyClass', 'myIsAllowedToEditComment');
+
+// MyClass.php
+public function myIsAllowedToEditComment()
+{
+    // Code
+}
+```
+
+
+### isVisibleElement
+
+Der "isVisibleElement"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['isVisibleElement'][] = array('MyClass', 'myIsVisibleElement');
+
+// MyClass.php
+public function myIsVisibleElement()
+{
+    // Code
+}
+```
+
+
 ### listComments
 
 Der "listComments"-Hook wird bei der Darstellung von Kommentaren im Backend
@@ -742,25 +982,6 @@ $GLOBALS['TL_HOOKS']['listComments'][] = array('MyClass', 'myListComments');
 public function myListComments($arrRow)
 {
     return '<a href="contao/main.php?do= … ">' . $arrRow['title'] . '</a>';
-}
-```
-
-
-### loadFormField
-
-Der "loadFormField"-Hook wird beim Laden eines Formularfeldes ausgeführt. Er
-übergibt das Widget-Objekt, die ID und die Metadaten des Formulars als Argument
-und erwartet ein Widget-Objekt als Rückgabewert. Hinzugefügt in Version 2.5.0.
-
-``` {.php}
-// config.php
-$GLOBALS['TL_HOOKS']['loadFormField'][] = array('MyClass', 'myLoadFormField');
-
-// MyClass.php
-public function myLoadFormField(Widget $objWidget, $strForm, $arrForm)
-{
-    $objWidget->class = 'myclass';
-    return $objWidget;
 }
 ```
 
@@ -798,6 +1019,22 @@ $GLOBALS['TL_HOOKS']['loadLanguageFile'][] = array('MyClass',
 public function myLoadLanguageFile($strName, $strLanguage)
 {
     // Beliebiger Code
+}
+```
+
+
+### modifyFrontendPage
+
+Der "modifyFrontendPage"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['modifyFrontendPage'][] = array('MyClass', 'myModifyFrontendPage');
+
+// MyClass.php
+public function myModifyFrontendPage()
+{
+    // Code
 }
 ```
 
@@ -850,6 +1087,22 @@ public function myOutputFrontendTemplate($strContent, $strTemplate)
 ```
 
 
+### parseArticles
+
+Der "parseArticles"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['parseArticles'][] = array('MyClass', 'myParseArticles');
+
+// MyClass.php
+public function myParseArticles()
+{
+    // Code
+}
+```
+
+
 ### parseBackendTemplate
 
 Der "parseBackendTemplate"-Hook wird bei der Aufbereitung eines
@@ -894,6 +1147,38 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
     }
 
     return $strContent;
+}
+```
+
+
+### parseTemplate
+
+Der "parseTemplate"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['parseTemplate'][] = array('MyClass', 'myParseTemplate');
+
+// MyClass.php
+public function myParseTemplate()
+{
+    // Code
+}
+```
+
+
+### parseWidget
+
+Der "parseWidget"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['parseWidget'][] = array('MyClass', 'myParseWidget');
+
+// MyClass.php
+public function myParseWidget()
+{
+    // Code
 }
 ```
 
@@ -989,24 +1274,6 @@ public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 ```
 
 
-### processFormData
-
-Der "processFormData"-Hook wird nach dem Abschicken eines Formulars ausgeführt.
-Er übergibt das Datenarray, das [Data Container Array][1] und das Dateiarray
-als Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.4.4.
-
-``` {.php}
-// config.php
-$GLOBALS['TL_HOOKS']['processFormData'][] = array('MyClass', 'myProcessFormData');
-
-// MyClass.php
-public function myProcessFormData($arrPost, $arrForm, $arrFiles)
-{
-    // Beliebiger Code
-}
-```
-
-
 ### removeOldFeeds
 
 Der "removeOldFeeds"-Hook wird beim Entfernen alter XML-Dateien aus dem
@@ -1041,6 +1308,22 @@ $GLOBALS['TL_HOOKS']['removeRecipient'][] = array('MyClass', 'myRemoveRecipient'
 public function myRemoveRecipient($strEmail, $arrChannels)
 {
     // Beliebiger Code
+}
+```
+
+
+### replaceDynamicScriptTags
+
+Der "replaceDynamicScriptTags"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['replaceDynamicScriptTags'][] = array('MyClass', 'myReplaceDynamicScriptTags');
+
+// MyClass.php
+public function myReplaceDynamicScriptTags()
+{
+    // Code
 }
 ```
 
@@ -1088,6 +1371,22 @@ public function myReviseTable($table, $new_records, $parent_table, $child_tables
 ```
 
 
+### setCookie
+
+Der "setCookie"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['setCookie'][] = array('MyClass', 'mySetCookie');
+
+// MyClass.php
+public function mySetCookie()
+{
+    // Code
+}
+```
+
+
 ### setNewPassword
 
 Der "setNewPassword"-Hook wird nach dem Abspeichern eines neuen Passworts
@@ -1106,26 +1405,82 @@ public function mySetNewPassword($objUser, $strPassword)
 ```
 
 
-### validateFormField
+### sqlCompileCommands
 
-Der "validateFormField"-Hook wird beim Abschicken eines Formularfeldes
-ausgeführt. Er übergibt das Widget-Objekt und die ID des Formulars als
-Argument und erwartet ein Widget-Objekt als Rückgabewert. Hinzugefügt in
-Version 2.5.0.
+Der "sqlCompileCommands"-Hook...
 
 ``` {.php}
 // config.php
-$GLOBALS['TL_HOOKS']['validateFormField'][] = array('MyClass', 'myValidateFormField');
+$GLOBALS['TL_HOOKS']['sqlCompileCommands'][] = array('MyClass', 'mySqlCompileCommands');
 
 // MyClass.php
-public function myValidateFormField(Widget $objWidget, $intId)
+public function mySqlCompileCommands()
 {
-    if ($objWidget instanceof FormPassword)
-    {
-        // Beliebiger Code
-    }
+    // Code
+}
+```
 
-    return $objWidget;
+
+### sqlGetFromDB
+
+Der "sqlGetFromDB"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['sqlGetFromDB'][] = array('MyClass', 'mySqlGetFromDB');
+
+// MyClass.php
+public function mySqlGetFromDB()
+{
+    // Code
+}
+```
+
+
+### sqlGetFromDca
+
+Der "sqlGetFromDca"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['sqlGetFromDca'][] = array('MyClass', 'mySqlGetFromDca');
+
+// MyClass.php
+public function mySqlGetFromDca()
+{
+    // Code
+}
+```
+
+
+### sqlGetFromFile
+
+Der "sqlGetFromFile"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['sqlGetFromFile'][] = array('MyClass', 'mySqlGetFromFile');
+
+// MyClass.php
+public function mySqlGetFromFile()
+{
+    // Code
+}
+```
+
+
+### updatePersonalData
+
+Der "updatePersonalData"-Hook...
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['updatePersonalData'][] = array('MyClass', 'myUpdatePersonalData');
+
+// MyClass.php
+public function myUpdatePersonalData()
+{
+    // Code
 }
 ```
 
