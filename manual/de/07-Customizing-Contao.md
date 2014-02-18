@@ -1004,6 +1004,25 @@ public function myLoadDataContainer($strName)
 ```
 
 
+### loadFormField
+
+Der "loadFormField"-Hook wird beim Laden eines Formularfeldes ausgeführt. Er
+übergibt das Widget-Objekt, die ID und die Metadaten des Formulars als Argument
+und erwartet ein Widget-Objekt als Rückgabewert. Hinzugefügt in Version 2.5.0.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['loadFormField'][] = array('MyClass', 'myLoadFormField');
+
+// MyClass.php
+public function myLoadFormField(Widget $objWidget, $strForm, $arrForm)
+{
+    $objWidget->class = 'myclass';
+    return $objWidget;
+}
+```
+
+
 ### loadLanguageFile
 
 Der "loadLanguageFile"-Hook wird beim Laden einer Sprachdatei ausgeführt. Er
@@ -1255,6 +1274,24 @@ public function myPostUpload($arrFiles)
 ```
 
 
+### processFormData
+
+Der "processFormData"-Hook wird nach dem Abschicken eines Formulars ausgeführt.
+Er übergibt das Datenarray, das [Data Container Array][1] und das Dateiarray
+als Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.4.4.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['processFormData'][] = array('MyClass', 'myProcessFormData');
+
+// MyClass.php
+public function myProcessFormData($arrPost, $arrForm, $arrFiles)
+{
+    // Beliebiger Code
+}
+```
+
+
 ### printArticleAsPdf
 
 Der "printArticleAsPdf"-Hook wird beim der Ausgabe eines Artikels im PDF-Format
@@ -1481,6 +1518,30 @@ $GLOBALS['TL_HOOKS']['updatePersonalData'][] = array('MyClass', 'myUpdatePersona
 public function myUpdatePersonalData()
 {
     // Code
+}
+```
+
+
+### validateFormField
+
+Der "validateFormField"-Hook wird beim Abschicken eines Formularfeldes
+ausgeführt. Er übergibt das Widget-Objekt und die ID des Formulars als
+Argument und erwartet ein Widget-Objekt als Rückgabewert. Hinzugefügt in
+Version 2.5.0.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['validateFormField'][] = array('MyClass', 'myValidateFormField');
+
+// MyClass.php
+public function myValidateFormField(Widget $objWidget, $intId)
+{
+    if ($objWidget instanceof FormPassword)
+    {
+        // Beliebiger Code
+    }
+
+    return $objWidget;
 }
 ```
 
