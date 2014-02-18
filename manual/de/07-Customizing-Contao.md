@@ -1274,24 +1274,6 @@ public function myPostUpload($arrFiles)
 ```
 
 
-### processFormData
-
-Der "processFormData"-Hook wird nach dem Abschicken eines Formulars ausgeführt.
-Er übergibt das Datenarray, das [Data Container Array][1] und das Dateiarray
-als Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.4.4.
-
-``` {.php}
-// config.php
-$GLOBALS['TL_HOOKS']['processFormData'][] = array('MyClass', 'myProcessFormData');
-
-// MyClass.php
-public function myProcessFormData($arrPost, $arrForm, $arrFiles)
-{
-    // Beliebiger Code
-}
-```
-
-
 ### printArticleAsPdf
 
 Der "printArticleAsPdf"-Hook wird beim der Ausgabe eines Artikels im PDF-Format
@@ -1307,6 +1289,24 @@ public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 {
     // Beliebiger Code
     exit;
+}
+```
+
+
+### processFormData
+
+Der "processFormData"-Hook wird nach dem Abschicken eines Formulars ausgeführt.
+Er übergibt das Datenarray, das [Data Container Array][1] und das Dateiarray
+als Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.4.4.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['processFormData'][] = array('MyClass', 'myProcessFormData');
+
+// MyClass.php
+public function myProcessFormData($arrPost, $arrForm, $arrFiles)
+{
+    // Beliebiger Code
 }
 ```
 
