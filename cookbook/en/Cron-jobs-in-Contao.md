@@ -26,7 +26,7 @@ executed every minute or else every hour. If you need it to run every
 minute, the following configuration is sufficient:
 
 ```
-* * * * * wget --silent http://example.com/system/cron/cron.php
+* * * * * wget --quiet http://example.com/system/cron/cron.php
 ```
 
 Be aware that Cronjobs are not executed in parallel, the script will
@@ -35,16 +35,16 @@ minutely jobs could look like this:
 
 ```
 # 22 minutes after every full hour (for hourly jobs)
-22 * * * * wget --silent http://example.com/system/cron/cron.php
+22 * * * * wget --quiet http://example.com/system/cron/cron.php
 
 # 16 minutes after midnight (for daily jobs)
-16 0 * * * wget --silent http://example.com/system/cron/cron.php
+16 0 * * * wget --quiet http://example.com/system/cron/cron.php
 
 # 10 minutes after midnight every monday (for weekly jobs)
-10 0 * * 1 wget --silent http://example.com/system/cron/cron.php
+10 0 * * 1 wget --quiet http://example.com/system/cron/cron.php
 
 # 4 minutes after midnight on the 1st each month (for monthly jobs)
-4 0 1 * *  wget --silent http://example.com/system/cron/cron.php
+4 0 1 * *  wget --quiet http://example.com/system/cron/cron.php
 ```
 
 *Also make sure your server supports [wget][1] and if the path is correct!*
