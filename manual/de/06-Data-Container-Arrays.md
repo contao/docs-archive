@@ -895,6 +895,11 @@ Ausdrucks geprüft werden.
   <td>Das Feld kann nur gelesen werden (wird nicht von allen Feldern
       unterstützt).</td>
 </tr>
+<tr>
+  <td>csv</td>
+  <td>Trennzeichen (<code>string</code>)</td>
+  <td>Die Auswahl dieses Feldes wird nicht als serialisierter String sondern als Trennzeichen-separierte Liste gespeichert. Bsp: <code>'eval' => array('csv'=>',')</td>
+</tr>
 </table>
 
 
