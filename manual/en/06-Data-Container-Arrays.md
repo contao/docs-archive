@@ -887,6 +887,11 @@ Each field can be validated against a regular expression.
   <td>true/false (<code>boolean</code>)</td>
   <td>Makes the field read only (not supported by all field types).</td>
 </tr>
+<tr>
+  <td>csv</td>
+  <td>Delimiter (<code>string</code>)</td>
+  <td>The choice of this field will not be stored as serialized string but rather as given delimiter-separated list. Example: <code>'eval' => array('csv'=>',')</td>
+</tr>
 </table>
 
 
