@@ -485,6 +485,7 @@ un champ peut être utilisé comme critère de tri ou de filtre.
       <b>checkbox</b> Case à cocher<br>
       <b>radio</b> Bouton radio<br>
       <b>radioTable</b> Tableau avec images et boutons radio<br>
+      <b>imageSize</b> Deux champs de texte avec un menu déroulant<br>
       <b>inputUnit</b> Champ texte avec un petit menu déroulant d'éléments<br>
       <b>trbl</b> Quatre champs textes avec un petit menu déroulant 
       d'éléments<br>
@@ -492,6 +493,7 @@ un champ peut être utilisé comme critère de tri ou de filtre.
       <b>pageTree</b> Arborescence des pages<br>
       <b>fileTree</b> Arborescence des fichiers<br>
       <b>tableWizard</b> Assistant de tables<br>
+      <b>timePeriod</b> Champ de texte avec un menu déroulant<br>
       <b>listWizard</b> Assistant de listes<br>
       <b>optionWizard</b> Assistant d'options<br>
       <b>moduleWizard</b> Assistant de modules<br>
