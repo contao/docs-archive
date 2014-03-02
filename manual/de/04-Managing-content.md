@@ -471,9 +471,9 @@ Newsletterleser, würde der Beitrag auch nicht angezeigt.
 
 ## Formulare
 
-Mit dem Formulargenerator lassen sich interaktive Formulare erstellen,die per
-E-Mail verschickt oder in der Datenbank gespeichert werdenkönnen. Hochgeladene
-Dateien werden als Anhang versendet oder aufdem Server gespeichert. Folgende
+Mit dem Formulargenerator lassen sich interaktive Formulare erstellen, die per
+E-Mail verschickt oder in der Datenbank gespeichert werden können. Hochgeladene
+Dateien werden als Anhang versendet oder auf dem Server gespeichert. Folgende
 Datenformate werden unterstützt:
 
 <table>
