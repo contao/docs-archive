@@ -919,6 +919,13 @@ données. Chaque champ peut être validé par une expression régulière.
   <td>Rend le champ en lecture seule (n'est pas supporté par tous les types de 
   champs).</td>
 </tr>
+<tr>
+  <td>csv</td>
+  <td>Délimiteur (<code>string</code>)</td>
+  <td>Le choix de ce champ ne sera pas sauvegardé comme une chaîne sérialisée
+  mais comme une liste séparée par des virgules. Exemple:
+  <code>'eval' => array('csv'=>',')</code></td>
+</tr>
 </table>
 
 
