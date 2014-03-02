@@ -471,12 +471,14 @@ kann.
       <b>checkbox</b> Checkbox<br>
       <b>radio</b> Radio-Button<br>
       <b>radioTable</b> Tabelle mit Bildern und Radio-Buttons<br>
+      <b>imageSize</b> 2 Textfelder mit Drop Down-Menü zur Auswahl<br>
       <b>inputUnit</b> Textfeld mit Drop-Down-Menü zur Auswahl der Einheit<br>
       <b>trbl</b> Vier Textfelder mit Drop-Down-Menü zur Auswahl der Einheit<br>
       <b>chmod</b> CHMOD-Tabelle<br>
       <b>pageTree</b> Seitenbaum<br>
       <b>fileTree</b> Dateibaum<br>
       <b>tableWizard</b> Tabellenassistent<br>
+      <b>timePeriod</b> Textfeld mit Drop Down-Menü zur Auswahl<br>
       <b>listWizard</b> Listenassistent<br>
       <b>optionWizard</b> Optionsassistent<br>
       <b>moduleWizard</b> Modulassistent<br>
