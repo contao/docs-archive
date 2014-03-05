@@ -28,16 +28,16 @@ run next. A useful configuration could look like this:
 
 ```
 # 22 minutes after every full hour (for hourly jobs)
-22 * * * * wget --quiet http://example.com/cron.php
+22 * * * * wget -O /dev/null -q http://example.com/system/cron/cron.php
 
 # 16 minutes after midnight (for daily jobs)
-16 0 * * * wget --quiet http://example.com/cron.php
+16 0 * * * wget -O /dev/null -q http://example.com/system/cron/cron.php
 
 # 10 minutes after midnight every monday (for weekly jobs)
-10 0 * * 1 wget --quiet http://example.com/cron.php
+10 0 * * 1 wget -O /dev/null -q http://example.com/system/cron/cron.php
 
 # 4 minutes after midnight on the 1st each month (for monthly jobs)
-4 0 1 * *  wget --quiet http://example.com/cron.php
+4 0 1 * *  wget -O /dev/null -q http://example.com/system/cron/cron.php
 ```
 
 By using a delay of six minutes, two jobs can never be executed at the same time.

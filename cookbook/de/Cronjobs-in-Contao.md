@@ -30,16 +30,16 @@ folgendermassen aussehen:
 
 ```
 # 22 Minuten nach jeder vollen Stunde (für hourly-Jobs)
-22 * * * * wget --quiet http://example.com/cron.php
+22 * * * * wget -O /dev/null -q http://example.com/system/cron/cron.php
 
 # 16 Minuten nach Mitternacht (für daily-Jobs)
-16 0 * * * wget --quiet http://example.com/cron.php
+16 0 * * * wget -O /dev/null -q http://example.com/system/cron/cron.php
 
 # 10 Minuten nach Mitternacht jeden Montag (für weekly-Jobs)
-10 0 * * 1 wget --quiet http://example.com/cron.php
+10 0 * * 1 wget -O /dev/null -q http://example.com/system/cron/cron.php
 
 # 4 Minuten nach Mitternacht am 1. jedes Monats (für monthly-Jobs)
-4 0 1 * *  wget --quiet http://example.com/cron.php
+4 0 1 * *  wget -O /dev/null -q http://example.com/system/cron/cron.php
 ```
 
 Durch den Abstand von sechs Minuten wird eine Überschneidung verhindert.
