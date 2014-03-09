@@ -635,9 +635,10 @@ aktiviert werden.
 
 ### Frontend-Modul
 
-Das Frontend-Modul bindet die Kommentarfunktion auf der Webseite ein. Es wird
-im Theme konfiguriert und kann übers Seitenlayout eingebunden werden.
-Die Kommentar-Erweiterung enthält ein Modul:
+Mit dem Frontend-Module der Kommentar-Erweiterung können Kommentare ein- und
+ausgegeben werden. Module können im Backend unter "Layout" -> "Module"
+konfiguriert werden und müssen anschließend in einem Artikel oder Seitenlayout
+eingebunden werden.
 
 <table>
 <tr>
