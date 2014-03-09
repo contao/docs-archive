@@ -586,6 +586,46 @@ enthalten:
 </table>
 
 
+### Frontend-Modul
+
+Mit dem Frontend-Module des Formulargenerators können Formulare angezeigt werden.
+Module können im Backend unter "Layout" -> "Module" konfiguriert werden und
+müssen anschließend in einem Artikel oder Seitenlayout eingebunden werden.
+
+<table>
+<tr>
+  <th>Modul</th>
+  <th>CSS-Klasse</th>
+  <th>Beschreibung</th>
+</tr>
+<tr>
+  <td>Formular</td>
+  <td>mod_form</td>
+  <td>Fügt ein Formular auf der Seite ein.</td>
+</tr>
+</table>
+
+
+### Inhaltselement
+
+Das Inhaltselement bietet dieselben Funktionen wie das Modul, lässt sich aber
+direkt im Artikel einbinden und konfigurieren. Der Formulargenerator
+stellt ein Inhaltselement zur Verfügung:
+
+<table>
+<tr>
+  <th>Inhaltselement</th>
+  <th>CSS-Klasse</th>
+  <th>Beschreibung</th>
+</tr>
+<tr>
+  <td>Formular</td>
+  <td>ce_form</td>
+  <td>Fügt ein Formular ein.</td>
+</tr>
+</table>
+
+
 ## Kommentare
 
 Kommentare sind eine weiter Form von Inhalt welcher übers das Backend
