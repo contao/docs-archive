@@ -666,6 +666,50 @@ Contao :
 </table>
 
 
+### Module front office
+
+Le module front office est utilisé pour afficher des formulaires sur le 
+site internet. Il peut être configuré avec le module "Modules" dans le 
+back office et doit être ajouté à un article ou à une présentation de 
+page pour pouvoir apparaître sur le site internet. L'extension générateur
+de formulaire comprend un module front office :
+
+<table>
+<tr>
+  <th>Module</th>
+  <th>Classe CSS</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>Formulaire</td>
+  <td>mod_form</td>
+  <td>Ajoute un formulaire dans la page.</td>
+</tr>
+</table>
+
+
+### Élément de contenu
+
+L'élément de contenu est utilisé pour afficher des formulaires sur le site 
+internet. Il peut être configuré avec l'élément de contenu "Formulaire"
+dans le back office et doit être ajouté à un article pour pouvoir apparaître 
+sur le site internet. L'extension générateur de formulaire comprend un élément
+de contenu :
+
+<table>
+<tr>
+  <th>Élément de contenu</th>
+  <th>Classe CSS</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>Formulaire</td>
+  <td>ce_form</td>
+  <td>Insère un formulaire.</td>
+</tr>
+</table>
+
+
 ## Commentaires
 
 Les commentaires sont une autre forme de contenu que vous pouvez gérer à partir
