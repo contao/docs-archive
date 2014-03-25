@@ -1139,6 +1139,11 @@ Dateien aus dem "templates"-Verzeichnis eingebunden werden.
       der ID des Moduls).</td>
 </tr>
 <tr>
+  <td><code>{{insert_form::*}}</code></td>
+  <td>Dieses Tag wird mit dem referenzierten Formular ersetzt (ersetzen Sie * mit
+      der ID des Formulars).</td>
+</tr>
+<tr>
   <td><code>{{article_teaser::*}}</code></td>
   <td>Dieses Tag wird mit dem Teaser eines Artikels ersetzt (ersetzen Sie * mit
       der ID des Artikels).</td>
