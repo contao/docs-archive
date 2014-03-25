@@ -1182,6 +1182,11 @@ le répertoire "templates".
   du module).</td>
 </tr>
 <tr>
+  <td><code>{{insert_form::*}}</code></td>
+  <td>Cette balise sera remplacée par le formulaire référencé (remplacez * par 
+  l'ID du formulaire).</td>
+</tr>
+<tr>
   <td><code>{{article_teaser::*}}</code></td>
   <td>Cette balise sera remplacée par une accroche d'article (remplacez * par 
   l'ID de l'article).</td>
