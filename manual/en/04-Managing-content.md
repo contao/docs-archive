@@ -1134,6 +1134,11 @@ modules or files from the "templates" directory.
       module ID).</td>
 </tr>
 <tr>
+  <td><code>{{insert_form::*}}</code></td>
+  <td>This tag will be replaced with the referenced form (replace * with the
+      form ID).</td>
+</tr>
+<tr>
   <td><code>{{article_teaser::*}}</code></td>
   <td>This tag will be replaced with the teaser of an article (replace * with
       the article ID).</td>
