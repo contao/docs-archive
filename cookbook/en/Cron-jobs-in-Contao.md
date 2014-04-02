@@ -47,7 +47,7 @@ minutely jobs could look like this:
 4 0 1 * *  wget -O /dev/null -q http://example.com/system/cron/cron.php
 ```
 
-*Also make sure your server supports [wget][1] and if the path is correct!*
+*Also make sure your server supports [wget][1] and if the path is correct! Note: In some server, they don’t allow to use cron jobs, you can use third party sites like [easycron][4] to run the cron.*
 
 
 ### Why not execute the PHP file directly?
@@ -120,3 +120,4 @@ reported to the Contao log in the backend.
 [1]: http://en.wikipedia.org/wiki/Wget
 [2]: https://github.com/contao/core/blob/3.0.0/assets/contao/js/scheduler-uncompressed.js
 [3]: https://github.com/contao/core/blob/3.0.0/system/modules/core/classes/Frontend.php#L601
+[4]: http://www.easycron.com
