@@ -756,7 +756,7 @@ ihres Alias verlinkt werden.
 </tr>
 <tr>
   <td><code>{{link::*}}</code></td>
-  <td>Dieses Tag wird mit einem Link zu einer interne Seite ersetzt (ersetzen
+  <td>Dieses Tag wird mit einem Link zu einer internen Seite ersetzt (ersetzen
       Sie * mit der ID oder dem Alias).</td>
 </tr>
 <tr>
