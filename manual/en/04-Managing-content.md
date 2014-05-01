@@ -790,8 +790,9 @@ can be automatically converted to HTML.
 
 You will find some examples of this syntax below:
 
+### Syntax
 
-### Paragraphs
+#### Paragraphs
 
 Paragraphs are separated by line breaks:
 
@@ -800,7 +801,7 @@ Paragraphs are separated by line breaks:
     Second paragraph 
 
 
-### Headings
+#### Headings
 
 There are six levels of headings:
 
@@ -812,7 +813,7 @@ There are six levels of headings:
     ###### Heading 6
 
 
-### Strong
+#### Strong
 
 To mark important text:
 
@@ -822,7 +823,7 @@ To mark important text:
 It will be converted to HTML with the following code: `<strong>strong</strong>`
 
 
-### Emphasize
+#### Emphasize
 
 To mark text that has stress emphasis:
 
@@ -832,7 +833,7 @@ To mark text that has stress emphasis:
 It will be converted to HTML with the following code: `<em>emphasize</em>`
 
 
-### Code
+#### Code
 
 To mark a piece of computer code:
 
@@ -841,7 +842,7 @@ To mark a piece of computer code:
 It will be converted to HTML with the following code: `<code>monospaced font</code>`
 
 
-#### Block of code
+##### Block of code
 
 For a block of code, add four spaces before each line.
 
@@ -849,7 +850,7 @@ For a block of code, add four spaces before each line.
         ... on several lines
 
 
-### Blockquotes
+#### Blockquotes
 
 Blockquotes can be created with a right angle bracket placed at the beginning
 of the line.
@@ -857,7 +858,7 @@ of the line.
     > This is a blockquote.
 
 
-### Links
+#### Links
 
 There are two syntaxes for links: **inline** and **reference**.
 
@@ -876,7 +877,7 @@ A reference-style link:
 The reference can be added anywhere in the document.
 
 
-### Images
+#### Images
 
 There are also two syntaxes for images as for links.
 
@@ -893,9 +894,9 @@ A reference-style image:
 The reference can be added anywhere in the document.
 
 
-### Lists
+#### Lists
 
-#### Unordered lists
+##### Unordered lists
 
 Unordered lists use asterisks or hyphens:
 
@@ -910,7 +911,7 @@ Unordered lists use asterisks or hyphens:
     - List item
 
 
-#### Ordered lists
+##### Ordered lists
 
 Ordered lists use numbers:
 
@@ -919,7 +920,7 @@ Ordered lists use numbers:
     3. List item
 
 
-### Further information
+#### Further information
 
 For a complete documentation about Markdown, please refer to the official
 website by following this [link][8].
