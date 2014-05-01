@@ -949,17 +949,21 @@ You will find some examples of this extended syntax below:
 
 A table can be created like this:
 
-    First Header | Second Header | Third Header  
-    ------------ | ------------- | ------------  
-    Content Cell | Content Cell  | Content Cell  
-    Content Cell | Content Cell  | Content Cell  
+```
+First Header | Second Header | Third Header  
+------------ | ------------- | ------------  
+Content Cell | Content Cell  | Content Cell  
+Content Cell | Content Cell  | Content Cell  
+```
 
 You can add alignements by adding colons:
 
-    First Header | Second Header | Third Header  
-    :----------- | :-----------: | -----------:  
-    Left         | Center        | Right  
-    Left         | Center        | Right  
+```
+First Header | Second Header | Third Header  
+:----------- | :-----------: | -----------:  
+Left         | Center        | Right  
+Left         | Center        | Right  
+```
 
 
 #### Footnotes
