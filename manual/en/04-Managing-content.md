@@ -858,6 +858,14 @@ of the line.
     > This is a blockquote.
 
 
+#### Line breaks
+
+Add two or more spaces at the end of a line:
+
+    Contao is an accessible Open Source  
+    content management system.
+
+
 #### Links
 
 There are two syntaxes for links: **inline** and **reference**.
@@ -904,8 +912,8 @@ Unordered lists use asterisks or hyphens:
 
     * List item  
     * List item  
-        * Sub-list item
-        * Sub-list item
+        * A nested list item
+        * A nested list item
     * List item
 
     - List item  
