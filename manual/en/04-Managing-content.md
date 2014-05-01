@@ -1447,15 +1447,13 @@ Available flags:
     <td><code>urlencode</code></td>
     <td>URL-encodes strings.</td>
     <td><a target="_blank" 
-    href="http://ch1.php.net/manual/en/function.urlencode.php">
-    PHP function</a></td>
+    href="http://php.net/urlencode">PHP function</a></td>
 </tr>
 <tr>
     <td><code>rawurlencode</code></td>
     <td>URL-encode according to RFC 3986.</td>
     <td><a target="_blank" 
-    href="http://ch1.php.net/manual/en/function.rawurlencode.php">
-    PHP function</a></td>
+    href="http://php.net/rawurlencode">PHP function</a></td>
 </tr>
 </table>
 
