@@ -864,11 +864,13 @@ There are two syntaxes for links: **inline** and **reference**.
 
 An inline link is structured as follows:
 
-    [An inline link](https://contao.org/en)
+    [Contao](https://contao.org/en)
 
-    [An inline link with a title](https://contao.org/en "Contao's official website")
+or with an optional title
 
-A reference-style link:
+    [Contao](https://contao.org/en "Contao's official website")
+
+A reference-style link is structured as follows:
 
     [Contao's official website][1]
     
@@ -885,11 +887,11 @@ An inline image is structured as follows:
 
     ![Alt text](/path/to/img.jpg "Optional title")
 
-A reference-style image:
+A reference-style image is structured as follows:
 
-    ![Official Contao logo][1]
+    ![Alt text][id]
 
-    [1]: https://cdn.contao.org/files/images/layout/logo-trans.png "Official Contao logo"
+    [id]: /path/to/img.jpg "Optional title"
 
 The reference can be added anywhere in the document.
 
