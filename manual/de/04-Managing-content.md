@@ -1455,15 +1455,13 @@ Verfügbare Flags:
     <td><code>urlencode</code></td>
     <td>URL-kodiert einen String.</td>
     <td><a target="_blank" 
-    href="http://ch1.php.net/manual/de/function.urlencode.php">
-    PHP-Funktion</a></td>
+    href="http://php.net/urlencode">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>rawurlencode</code></td>
     <td>URL-Kodierung nach RFC 3986.</td>
     <td><a target="_blank" 
-    href="http://ch1.php.net/manual/de/function.rawurlencode.php">
-    PHP-Funktion</a></td>
+    href="http://php.net/rawurlencode">PHP-Funktion</a></td>
 </tr>
 </table>
 
