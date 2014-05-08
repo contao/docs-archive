@@ -61,21 +61,20 @@ links and will therefore be unusable.
 
 ## Workflow of a cron job
 
-In your `fe_page.html5` or `fe_page.xhtml` template, the 
-[`assets/contao/js/scheduler.js`][2] script is included which retrieves
-a text file (either using jQuery or MooTools) that contains the timestamp of the last execution.
+In your `fe_page.html5` or `fe_page.xhtml` template, a tiny bit of javascript
+is included which retrieves a text file (either using jQuery or MooTools)
+that contains the timestamp of the last execution.
 
 ```{.js}
-// MooTools version
+// (shortened) MooTools version
 new Request({
-  url:'system/cron/cron.txt',
-  onComplete: function(txt) {
-    if (!txt) txt = 0;
-    if (parseInt(txt) < (Math.round(+new Date()/1000) - tmo)) {
-      new Request({url:'system/cron/cron.php'}).get();
-    }
+  url:"system/cron/cron.txt",
+  onComplete: function(e) {
+    e||(e=0),
+    parseInt(e)<Math.round(+(new Date)/1e3)-<?php echo $this->cronTimeout; ?>
+    && (new Request({url:"system/cron/cron.php"})).get()
   }
-}).get();
+})).get()
 ```
 
 Depending on the registered jobs (see [`Frontend::getCronTimeout`][3]) a

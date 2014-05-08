@@ -71,6 +71,21 @@ edited or deleted.
   <td>If true, records in the table cannot be deleted.</td>
 </tr>
 <tr>
+  <td>notSortable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true, records in the table cannot be sorted.</td>
+</tr>
+<tr>
+  <td>notCopyable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true, records in the table cannot be duplicated.</td>
+</tr>
+<tr>
+  <td>notCreatable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true, records in the table cannot be created but can be duplicated.</td>
+</tr>
+<tr>
   <td>switchToEdit</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Activates the "save and edit" button when a new record is added (sorting
@@ -641,6 +656,14 @@ Each field can be validated against a regular expression.
           <td>expects a valid "friendly name format" e-mail address</td>
         </tr>
         <tr>
+          <td><b>language</b></td>
+          <td>expects a valid language code</td>
+        </tr>
+        <tr>
+          <td><b>locale</b></td>
+          <td>expects a valid locale (e.g. "de-CH")</td>
+        </tr>
+        <tr>
           <td><b>phone</b></td>
           <td>expects a valid phone number (numeric characters, space [ ], 
           plus [+], minus [-], parentheses [()] and slash [/])</td>
@@ -793,6 +816,12 @@ Each field can be validated against a regular expression.
   <td>Label for the blank option (defaults to <code>-</code>).</td>
 </tr>
 <tr>
+  <td>chosen</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Native selects enhanced with
+      <a href="http://harvesthq.github.io/chosen/" target="_blank">Chosen</a>.</td>
+</tr>
+<tr>
   <td>findInSet</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Sort by the actual option values instead of their labels.</td>
@@ -801,6 +830,11 @@ Each field can be validated against a regular expression.
   <td>datepicker</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>If true the current field has a date picker.</td>
+</tr>
+<tr>
+  <td>colorpicker</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true the current field has a color picker.</td>
 </tr>
 <tr>
   <td>feEditable</td>

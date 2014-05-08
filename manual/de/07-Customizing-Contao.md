@@ -519,8 +519,8 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 
 ### generateBreadcrumb
 
-Der "generateBreadcrumb"-Hook ermöglicht das Modifizieren der Pfadnavigation. 
-Er übergibt das Navigations-Array und das Modul-Objekt als Argument und erwartet 
+Der "generateBreadcrumb"-Hook ermöglicht das Modifizieren der Pfadnavigation.
+Er übergibt das Navigations-Array und das Modul-Objekt als Argument und erwartet
 ein Array als Rückgabewert. Hinzugefügt in Version 2.10.0
 
 ``` {.php}
@@ -646,6 +646,25 @@ public function myGetPageIdFromUrl($arrFragments)
 ```
 
 
+### getPageLayout
+
+Der "getPageLayout"-Hook wird vor dem Initialisieren des Frontend-Templates
+ausgeführt. Er übergibt das Seitenobjekt, das Layoutobjekt und eine
+Eigenreferenz als Argument und erwartet keinen Rückgabewert. Hinzugefügt in
+Version 3.1.0.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['getPageLayout'][] = array('MyClass', 'mygetPageLayout');
+
+// MyClass.php
+public function mygetPageLayout(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
+{
+    // Beliebiger Code
+}
+```
+
+
 ### getSearchablePages
 
 Der "getSearchablePages"-Hook wird beim Aufbau des Suchindex ausgeführt. Er
@@ -660,6 +679,23 @@ $GLOBALS['TL_HOOKS']['getSearchablePages'][] = array('MyClass', 'myGetSearchable
 public function myGetSearchablePages($arrPages, $intRoot)
 {
     return array_merge($arrPages, array('Additional pages'));
+}
+```
+
+
+### initializeSystem
+
+Der "initializeSystem"-Hook wird bei der Initialisierung des Systems ausgeführt.
+Hinzugefügt in Version 3.1.RC1.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['initializeSystem'][] = array('MyClass', 'myInitializeSystem');
+
+// MyClass.php
+public function myInitializeSystem()
+{
+    // Beliebiger Code
 }
 ```
 

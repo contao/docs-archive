@@ -1198,6 +1198,15 @@ the current date or including lightbox images.
       address.</td>
 </tr>
 <tr>
+  <td><code>{{email_open::*}}</code></td>
+  <td>This tag will be replaced with a clickable and encrypted link to an e-mail
+      address. However, the closing <code>&lt;/a&gt;</code> will not be added.</td>
+</tr>
+<tr>
+  <td><code>{{email_url::*}}</code></td>
+  <td>This tag will be replaced by the encrypted e-mail address only.</td>
+</tr>
+<tr>
   <td><code>{{lang::*}}</code></td>
   <td>This tag can be used to mark foreign words within a text: <code>{{lang::fr}}Au
       revoir{{lang}}</code>. It will be replaced with <code>&lt;span lang="fr"
@@ -1223,7 +1232,7 @@ the current date or including lightbox images.
   <td><code>{{iflng::*}}</code></td>
   <td>This tag will be completely removed if the page language does not match
       the tag language. You can use it to define language-specific labels:
-      <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
+      <code>{{iflng::en}}Your name{{iflng::de}}Ihr Name{{iflng}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
@@ -1261,6 +1270,178 @@ the current date or including lightbox images.
 <tr>
   <td><code>{{toggle_view}}</code></td>
   <td>Adds the link which allows you to switch between mobile and desktop layout.</td>
+</tr>
+<tr>
+  <td><code>{{br}}</code></td>
+  <td>This tag will be replaced with the HTML &lt;br&gt; tag (line break).</td>
+</tr>
+</table>
+
+
+### Insert tag flags
+
+Using flags, insert tags can be further processed. For example, the value can be
+passed to specific PHP methods. Multiple flags can be applied:
+
+```
+{{ua::browser|uncached}}
+{{page::title|decodeEntities|strtoupper}}
+```
+
+Available flags:
+
+<table>
+<tr>
+    <th>Flag</th>
+    <th>Description</th>
+    <th>More information</th>
+</tr>
+<tr>
+    <td><code>uncached</code></td>
+    <td>Do not replace insert tag when the page is cached</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>refresh</code></td>
+    <td>Do not cache the insert tag, even if it is used multiple times on the
+      same page</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>addslashes</code></td>
+    <td>Quote a string with slashes</td>
+    <td><a target="_blank" href="http://php.net/addslashes">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>stripslashes</code></td>
+    <td>Remove the slashes from a quoted string</td>
+    <td><a target="_blank" href="http://php.net/stripslashes">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>standardize</code></td>
+    <td>Standardize the output (e.g. for a page alias or CSS class)</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>ampersand</code></td>
+    <td>Convert ampersands to HTML entities</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>specialchars</code></td>
+    <td>Convert special characters to HTML entities</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>nl2br</code></td>
+    <td>Inserts HTML line breaks before all newlines in a string</td>
+    <td><a target="_blank" href="http://php.net/nl2br">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>nl2br_pre</code></td>
+    <td>Same as nl2br, but keeps line breaks in <code>&lt;pre&gt;</code> tags</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>strtolower</code></td>
+    <td>Make a string lowercase</td>
+    <td><a target="_blank" href="http://php.net/strtolower">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>utf8_strtolower</code></td>
+    <td>Unicode-aware lowercase conversion</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>strtoupper</code></td>
+    <td>Make a string uppercase</td>
+    <td><a target="_blank" href="http://php.net/strtoupper">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>utf8_strtoupper</code></td>
+    <td>Unicode-aware uppercase conversion</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>ucfirst</code></td>
+    <td>Make a string's first character uppercase</td>
+    <td><a target="_blank" href="http://php.net/ucfirst">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>lcfirst</code></td>
+    <td>Make a string's first character lowercase</td>
+    <td><a target="_blank" href="http://php.net/lcfirst">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>ucwords</code></td>
+    <td>Uppercase the first character of each word in a string</td>
+    <td><a target="_blank" href="http://php.net/ucwords">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>trim</code></td>
+    <td>Strip whitespace from the beginning and end of a string</td>
+    <td><a target="_blank" href="http://php.net/trim">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>rtrim</code></td>
+    <td>Strip whitespace from the end of a string</td>
+    <td><a target="_blank" href="http://php.net/rtrim">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>ltrim</code></td>
+    <td>Strip whitespace from the beginning of a string</td>
+    <td><a target="_blank" href="http://php.net/ltrim">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>utf8_romanize</code></td>
+    <td>Romanize the output</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>strrev</code></td>
+    <td>Reverse a string</td>
+    <td><a target="_blank" href="http://php.net/strrev">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>encodeEmail</code></td>
+    <td>Encode email addresses in the output</td>
+    <td>see <code>String::encodeEmail</code></td>
+</tr>
+<tr>
+    <td><code>decodeEntities</code></td>
+    <td>Decodes HTML entities in the output</td>
+    <td>see <code>String::decodeEntities()</code></td>
+</tr>
+<tr>
+    <td><code>number_format</code></td>
+    <td>Formats a number (without decimal places)</td>
+    <td>see <code>System::getFormattedNumber()</code></td>
+</tr>
+<tr>
+    <td><code>currency_format</code></td>
+    <td>Formats a currency (two decimal places)</td>
+    <td>see <code>System::getFormattedNumber()</code></td>
+</tr>
+<tr>
+    <td><code>readable_size</code></td>
+    <td>Convert file sizes to human readable format</td>
+    <td>see <code>System::getReadableSize()</code></td>
+</tr>
+<tr>
+    <td><code>base64_encode</code></td>
+    <td>Encodes a text using the 
+    <a href="https://en.wikipedia.org/wiki/Base64" 
+    target="_blank">Base64 algorithm</a>.</td>
+    <td><a target="_blank" 
+    href="http://php.net/base64_encode">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>base64_decode</code></td>
+    <td>Decodes a text using the 
+    <a href="https://en.wikipedia.org/wiki/Base64" 
+    target="_blank">Base64 algorithm</a>.</td>
+    <td><a target="_blank" 
+    href="http://php.net/base64_decode">PHP function</a></td>
 </tr>
 </table>
 

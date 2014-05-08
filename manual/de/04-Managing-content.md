@@ -1203,6 +1203,16 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
       ersetzt.</td>
 </tr>
 <tr>
+  <td><code>{{email_open::*}}</code></td>
+  <td>Dieses Tag wird mit einem verschlüsselten Link zu einer E-Mail-Adresse
+      ersetzt. Allerdings wird das schliessende <code>&lt;/a&gt;</code> nicht
+      angefügt.</td>
+</tr>
+<tr>
+  <td><code>{{email_url::*}}</code></td>
+  <td>Dieses Tag wird nur durch die verschlüsselte E-Mail-Adresse ersetzt.</td>
+</tr>
+<tr>
   <td><code>{{lang::*}}</code></td>
   <td>Mit diesem Tag können fremdsprachige Wörter in einem Text markiert
       werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit
@@ -1229,7 +1239,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td><code>{{iflng::*}}</code></td>
   <td>Dieses Tag wird komplett entfernt, wenn die Sprache der Seite nicht mit
       der Tag-Sprache übereinstimmt. Sie können so sprachspezifische Bezeichnungen
-      erstellen: <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code></td>
+      erstellen: <code>{{iflng::en}}Your name{{iflng::de}}Ihr Name{{iflng}}</code></td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
@@ -1269,6 +1279,177 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td><code>{{toggle_view}}</code></td>
   <td>Dieser Tag wird mit einem Link ersetzt, welcher zwischen Mobile- und
       Desktop-Layout wechselt.</td>
+</tr>
+<tr>
+  <td><code>{{br}}</code></td>
+  <td>Dieser Tag wird mit einem HTML &lt;br&gt; Element (Zeilenumbruch) ersetzt.</td>
+</tr>
+</table>
+
+### Inserttag-Flags
+
+Mittels Flags können Sie Insert-Tags weiter verarbeiten. Der Wert kann damit
+z.B. einer PHP-Funktion übergeben werden. Beliebig viele Flags können
+miteinander kombiniert werden:
+
+```
+{{ua::browser|uncached}}
+{{page::title|decodeEntities|strtoupper}}
+```
+
+Verfügbare Flags:
+
+<table>
+<tr>
+    <th>Flag</th>
+    <th>Beschreibung</th>
+    <th>Weitere Informationen</th>
+</tr>
+<tr>
+    <td><code>uncached</code></td>
+    <td>erhält das Tag beim Schreiben der Cache-Datei</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>refresh</code></td>
+    <td>erstellt die Ausgabe bei jeder Anfrage neu</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>addslashes</code></td>
+    <td>Stellt bestimmten Zeichen eines Strings ein "\" voran</td>
+    <td><a target="_blank" href="http://php.net/addslashes">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>stripslashes</code></td>
+    <td>Entfernt das "\" vor bestimmten Zeichen eines Strings</td>
+    <td><a target="_blank" href="http://php.net/stripslashes">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>standardize</code></td>
+    <td>standardisiert die Ausgabe (z.B. das Alias bei der Seitenstruktur)</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>ampersand</code></td>
+    <td>wandelt Und-Zeichen in Entities um</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>specialchars</code></td>
+    <td>wandelt Sonderzeichen in Entities um</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>nl2br</code></td>
+    <td>Fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein</td>
+    <td><a target="_blank" href="http://php.net/nl2br">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>nl2br_pre</code></td>
+    <td>erhält die Zeilenumbrüche innerhalb von <code>&lt;pre&gt;</code>-Tags</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>strtolower</code></td>
+    <td>wandelt die Ausgabe in Kleinbuchstaben um</td>
+    <td><a target="_blank" href="http://php.net/strtolower">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>utf8_strtolower</code></td>
+    <td>Unicode-bewusste Umwandlung in Kleinbuchstaben</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>strtoupper</code></td>
+    <td>wandelt die Ausgabe in Großbuchstaben um</td>
+    <td><a target="_blank" href="http://php.net/strtoupper">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>utf8_strtoupper</code></td>
+    <td>Unicode-bewusste Umwandlung in Großbuchstaben</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>ucfirst</code></td>
+    <td>wandelt das erste Zeichen in einen Großbuchstaben um</td>
+    <td><a target="_blank" href="http://php.net/ucfirst">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>lcfirst</code></td>
+    <td>wandelt das erste Zeichen in einen Kleinbuchstaben um</td>
+    <td><a target="_blank" href="http://php.net/lcfirst">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>ucwords</code></td>
+    <td>wandelt das erste Zeichen jedes Wortes in einen Großbuchstaben um</td>
+    <td><a target="_blank" href="http://php.net/ucwords">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>trim</code></td>
+    <td>entfernt Leerzeichen vom Anfang und Ende der Ausgabe</td>
+    <td><a target="_blank" href="http://php.net/trim">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>rtrim</code></td>
+    <td>entfernt Leerzeichen vom Anfang der Ausgabe</td>
+    <td><a target="_blank" href="http://php.net/rtrim">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>ltrim</code></td>
+    <td>entfernt Leerzeichen vom Ende der Ausgabe</td>
+    <td><a target="_blank" href="http://php.net/ltrim">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>utf8_romanize</code></td>
+    <td>romanisiert die Ausgabe</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>strrev</code></td>
+    <td>dreht die Ausgabe um</td>
+    <td><a target="_blank" href="http://php.net/strrev">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>encodeEmail</code></td>
+    <td>kodiert E-Mail-Adressen in der Ausgabe</td>
+    <td>siehe <code>String::encodeEmail</code></td>
+</tr>
+<tr>
+    <td><code>decodeEntities</code></td>
+    <td>dekodiert Entities in der Ausgabe</td>
+    <td>siehe <code>String::decodeEntities()</code></td>
+</tr>
+<tr>
+    <td><code>number_format</code></td>
+    <td>formatiert eine Zahl (keine Dezimalstellen)</td>
+    <td>siehe <code>System::getFormattedNumber()</code></td>
+</tr>
+<tr>
+    <td><code>currency_format</code></td>
+    <td>formatiert eine Währung (zwei Dezimalstellen)</td>
+    <td>siehe <code>System::getFormattedNumber()</code></td>
+</tr>
+<tr>
+    <td><code>readable_size</code></td>
+    <td>wandelt die Ausgabe in ein menschenlesbares Format um</td>
+    <td>siehe <code>System::getReadableSize()</code></td>
+</tr>
+<tr>
+    <td><code>base64_encode</code></td>
+    <td>Enkodiert einen Text mittels des 
+    <a href="https://de.wikipedia.org/wiki/Base64" 
+    target="_blank">Base64-Verfahrens</a>.</td>
+    <td><a target="_blank" href="http://php.net/base64_encode">PHP-Funktion</a>
+    </td>
+</tr>
+<tr>
+    <td><code>base64_decode</code></td>
+    <td>Dekodiert einen Text mittels des 
+    <a href="https://de.wikipedia.org/wiki/Base64" 
+    target="_blank">Base64-Verfahrens</a>.</td>
+    <td><a target="_blank" href="http://php.net/base64_decode">PHP-Funktion</a>
+    </td>
 </tr>
 </table>
 

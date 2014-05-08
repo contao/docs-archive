@@ -72,6 +72,21 @@ beim Löschen von Elterndatensätzen passiert.
   <td>Verbietet das Löschen von Datensätzen in der Tabelle.</td>
 </tr>
 <tr>
+  <td>notSortable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Verbietet das Sortieren von Datensätzen in der Tabelle.</td>
+</tr>
+<tr>
+  <td>notCopyable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Verbietet das Kopieren von Datensätzen in der Tabelle.</td>
+</tr>
+<tr>
+  <td>notCreatable</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Verbietet das erstellen von neuen Datensätzen (kopieren bleibt erlaubt).</td>
+</tr>
+<tr>
   <td>switchToEdit</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Aktiviert die "Speichern und Bearbeiten"-Schaltfläche beim Anlegen eines
@@ -143,8 +158,11 @@ beim Löschen von Elterndatensätzen passiert.
   <td>sql</td>
   <td>Tabellen-Konfiguration (<code>array</code>)</td>
   <td>Bestimmt die Konfigurartion der Datenbank-Tabelle, z.B. 
-      <code>'keys' => array('id'=>'primary', 'pid'=>'index')</code>
-  </td>
+  <code>'keys' => array
+  		(
+				'id' => 'primary',
+				'pid' => 'index'
+			)</code></td>
 </tr>
 </table>
 
@@ -531,7 +549,7 @@ kann.
 </tr>
 <tr>
   <td>sql</td>
-  <td>Datenbank-Felddefinition (<code>string</code>)</td>
+  <td>Tabellenkonfiguration (<code>string</code>)</td>
   <td>Bestimmt den Datentyp und seine Konfiguration in der Datenbank, z.B.
       <code>varchar(255) NOT NULL default ''</code></td>
 </tr>
@@ -648,6 +666,14 @@ Ausdrucks geprüft werden.
           <td><b>friendly</b></td>
           <td>prüft auf eine gültige E-Mail-Adresse im "friendly name
       format"</td>
+        </tr>
+        <tr>
+          <td><b>language</b></td>
+          <td>prüft auf einen gültigen Sprachcode</td>
+        </tr>
+        <tr>
+          <td><b>locale</b></td>
+          <td>prüft auf ein gültiges Gebietsschema (z.B. "de-CH")</td>
         </tr>
         <tr>
           <td><b>folderalias</b></td>
@@ -809,6 +835,13 @@ Ausdrucks geprüft werden.
   <td>Bezeichnung der leeren Option (Standard: <code>-</code>).</td>
 </tr>
 <tr>
+  <td>chosen</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Auswahlmenüs mittels 
+      <a href="http://harvesthq.github.io/chosen/" target="_blank">Chosen</a>
+      erweitern.</td>
+</tr>
+<tr>
   <td>findInSet</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Sortiert ein Optionsarray anhand der Schlüssel anstatt anhand der
@@ -818,6 +851,11 @@ Ausdrucks geprüft werden.
   <td>datepicker</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Aktiviert das Popup zur Auswahl eines Datums.</td>
+</tr>
+<tr>
+  <td>colorpicker</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Aktiviert das Popup zur Farbauswahl.</td>
 </tr>
 <tr>
   <td>feEditable</td>

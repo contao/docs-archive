@@ -3,7 +3,8 @@
 To access the Contao administration area (back end) simply add `/contao` to the
 URL of your Contao website. The back end login is protected against brute force
 attacks, so if you enter a wrong password more than three times in a row, your
-account will be locked for 5 minutes.
+account will be locked for 5 minutes. Please note that usernames and passwords
+are case-sensitive.
 
 
 ## Listing records
@@ -75,9 +76,8 @@ edit, duplicate, delete and show.
 ### Parent view icons
 
 The "parent view" offers two additional navigation icons to control the order of
-the records. From version 2.7, the order can also be changed via drag and drop.
-To do so, simply click on a record (not a navigation icon) and drag it to its
-new position.
+the records. The order can also be changed via drag and drop. To do so, simply
+click on the navigation icon "Drag and drop" and drag it to its new position.
 
 ![](images/parent-view-icons.jpg?raw=true)
 
@@ -98,6 +98,9 @@ Contao automatically creates new versions of a record every time you save it. As
 soon as there is more than one version, a drop-down menu which allows you to
 revert back to a prior version appears at the top of the form. Simply choose a
 version and click the "Restore" button.
+
+The icon to the right of the "Restore" button allows you to see the differences
+between two versions.
 
 ![](images/versioning.jpg?raw=true)
 
