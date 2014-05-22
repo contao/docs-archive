@@ -22,6 +22,41 @@ Haken bei "Internen Cache umgehen" entfernt werden, da das System ohne den
 Cache gerade bei größeren Projekten um einiges langsamer reagiert.
 
 
+##Debugmodus aktivieren 
+
+Um bestimmte Laufzeitinformationen wie z.B. Datenbankabfragen auf dem Bildschirm ausgeben,
+können Sie den Debugmodus aktivieren. In diesem werden auch die SASS/LESS -Dateien bei
+jedem Seitenaufruf neu generiert.
+Dazu navigieren Sie im Backend zu "System"->"Einstellungen" und setzten einen 
+Haken unter "Globale Einstellungen" bei "Debugmodus aktivieren".
+
+![](images/debugmodus_aktivieren.jpg?raw=true)
+
+Sobald die Seite jedoch in den produktiven Betrieb geht, sollte unbedingt der 
+Haken bei "Debugmodus aktivieren" entfernt werden, da das System ohne den 
+Cache gerade bei größeren Projekten um einiges langsamer reagiert.
+
+
+##Wartungsmodus 
+
+Möchte Sie in eine Live-Seite eine größere Änderung einspielen, so empfiehlt
+es sich die Seite für die Zeit in den Wartungsmodus zu setzen.
+Dazu navigieren Sie im Backend zu "System"->"Einstellungen" und setzten einen 
+Haken unter "Globale Einstellungen" bei "Wartungsmodus".
+
+![](images/wartungsmodus.jpg?raw=true)
+
+Solange Sie im Backend angemeldet sind, sehen Sie Seite. Besucher der Seite
+sehen hingegen die Wartungsseite. (Sendet einen 503er HTTP-Header und 
+gibt eine Wartungsseite im Frontend aus.)
+
+![](images/wartungsseite.jpg?raw=true)
+
+Die Wartungsseite können Sie über das Template `be_unavailable.html5`
+
+Solange der Wartungsmodus aktive ist, haben Sie im Backend eine entsprechende
+Warnmeldung.
+
 ## Konfiguration anpassen
 
 Die Contao-Konfiguration ist in drei Bestandteile aufgeteilt: die
