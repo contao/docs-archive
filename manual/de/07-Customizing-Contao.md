@@ -46,16 +46,18 @@ Haken unter "Globale Einstellungen" bei "Wartungsmodus".
 
 ![](images/wartungsmodus.jpg?raw=true)
 
-Solange Sie im Backend angemeldet sind, sehen Sie Seite. Besucher der Seite
+Solange Sie im Backend angemeldet sind, sehen Sie die Seite. Besucher der Seite
 sehen hingegen die Wartungsseite. (Sendet einen 503er HTTP-Header und 
 gibt eine Wartungsseite im Frontend aus.)
 
 ![](images/wartungsseite.jpg?raw=true)
 
-Die Wartungsseite können Sie über das Template `be_unavailable.html5`
+Die Wartungsseite können Sie über das Template `be_unavailable.html5` bearbeiten.
 
-Solange der Wartungsmodus aktive ist, haben Sie im Backend eine entsprechende
+Solange der Wartungsmodus aktiv ist, haben Sie im Backend eine entsprechende
 Warnmeldung.
+Nach Beendigung der Wartungsarbeiten sollten Sie den Wartungsmodus über den
+Hinweis oder die "System"->"Einstellung" wider deaktiviert werden.
 
 ## Konfiguration anpassen
 
