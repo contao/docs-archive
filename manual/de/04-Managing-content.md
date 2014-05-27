@@ -1256,12 +1256,12 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
       werden.</td>
 </tr>
 <tr>
-  <td><code>{{version::*}}</code></td>
+  <td><code>{{version}}</code></td>
   <td>Dieses Tag wird mit der verwendeten Contao-Version (z.B. 2.11.2)
       ersetzt.</td>
 </tr>
 <tr>
-  <td><code>{{request_token::*}}</code></td>
+  <td><code>{{request_token}}</code></td>
   <td>Dieses Tag wird mit dem zur aktuellen Session gehörenden Request-Token
       ersetzt.</td>
 </tr>
