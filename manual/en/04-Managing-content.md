@@ -1191,12 +1191,12 @@ the current date or including lightbox images.
       double colon.</td>
 </tr>
 <tr>
-  <td><code>{{version::*}}</code></td>
+  <td><code>{{version}}</code></td>
   <td>This tag will be replaced with the current Contao version (e.g.
       2.11.2).</td>
 </tr>
 <tr>
-  <td><code>{{request_token::*}}</code></td>
+  <td><code>{{request_token}}</code></td>
   <td>This tag will be replaced with the request token of the current
       session.</td>
 </tr>
