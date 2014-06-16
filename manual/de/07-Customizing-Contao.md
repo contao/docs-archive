@@ -870,9 +870,9 @@ Hinzugefügt in Version 2.10.0.
 $GLOBALS['TL_HOOKS']['parseTemplate'][] = array('MyClass', 'myParseTemplate');
 
 // MyClass.php
-public function myParseTemplate(\FrontendTemplate $feTempObj)
+public function myParseTemplate(&$TempObj)
 {
-    if ($feTempObj->fullsize == '1')
+    if ($TempObj->fullsize == '1')
     {
         // Objekt modifizieren
     }
