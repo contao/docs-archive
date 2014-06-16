@@ -860,7 +860,7 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
 
 ### parseTemplate
 
-Der "parseTemplate"-Hook wird vor der der Verarbeitung eines
+Der "parseTemplate"-Hook wird vor der Verarbeitung eines
 Frontend-Templates ausgeführt. Er übergibt das Template-Objekt als
 Argument und erwartet keinen Rückgabewert.
 Hinzugefügt in Version 2.10.0.
