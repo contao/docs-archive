@@ -909,9 +909,9 @@ Hinzugefügt in Version 2.10.0.
 $GLOBALS['TL_HOOKS']['parseTemplate'][] = array('MyClass', 'myParseTemplate');
 
 // MyClass.php
-public function myParseTemplate(&$TempObj)
+public function myParseTemplate($TempObj)
 {
-    if ($TempObj->fullsize == '1')
+    if ($TempObj->getName() == 'mod_html')
     {
         // Objekt modifizieren
     }
