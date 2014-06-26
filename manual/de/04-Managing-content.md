@@ -1179,7 +1179,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td><code>{{ifnlng::*}}</code></td>
   <td>Dieses Tag wird komplett entfernt, wenn die Sprache der Seite mit der
       Tag-Sprache übereinstimmt. Sie können so sprachspezifische Bezeichnungen
-      erstellen: <code>{{ifnlng::de}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code></td>
+      erstellen: <code>{{ifnlng::de}}Your name{{ifnlng}}</code></td>
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
