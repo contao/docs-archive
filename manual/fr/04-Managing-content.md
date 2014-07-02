@@ -1294,7 +1294,7 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
   <td>Cette balise sera complètement supprimée si la langue de la page 
   correspond à la langue de la balise. Vous pouvez l'utiliser pour définir des 
   labels spécifiques à une langue : 
-  <code>{{ifnlng::de}}Your name{{iflng}}{{iflng::de}} Ihr Name{{iflng}}</code>.
+  <code>{{ifnlng::de}}Your name{{ifnlng}}{{iflng::de}}Ihr Name{{iflng}}</code>.
   </td>
 </tr>
 <tr>
