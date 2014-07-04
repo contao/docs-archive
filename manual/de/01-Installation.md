@@ -338,12 +338,12 @@ Momentan (V3.3.1) sind weder die neue "Contao Official Demo" noch die alte "Musi
 Anmerkung: Zur Zeit ist nur die Music-Accademy für Contao 3.3 & 3.2 installierbar.
 Eine Contao-Official-Demo für Contao 3.2 ist in Planung (Community Project).
 
-1) Eine frische Contao 3.3-Installation mit Admin-Account erstellen 
-2) Als Admin im Backend anmelden 
-3) Erweiterung [official_demo][11] oder [music_academy][12] hinzufügen 
-4) Als Admin vom Backend abmelden 
-5) Installtool aufrufen
-6) Gewünschtes Frontend-Template installieren
+1. Eine frische Contao 3.3-Installation mit Admin-Account erstellen 
+2. Als Admin im Backend anmelden 
+3. Erweiterung [official_demo][11] oder [music_academy][12] hinzufügen 
+4. Als Admin vom Backend abmelden 
+5. Installtool aufrufen
+6. Gewünschtes Frontend-Template installieren
 
 [1]: https://contao.org/de/download.html
 [2]: http://www.winscp.com
