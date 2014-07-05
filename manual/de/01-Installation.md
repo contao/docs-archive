@@ -331,19 +331,21 @@ Ausnahme von der Regel. Die Provider-spezifische Einstellungen finden Sie im
 [Contao-Forum][10]. Sorgenfreies Contao-Hosting erhalten Sie bei den [Contao
 Hosting-Partnern][11].
 
-### Beispiel-Website für Contao 3.2/3.3 installieren (Contao-Official-Demo & Music-Accademy)
+### Beispiel-Website für Contao (Music-Accademy)
 
-Momentan (V3.3.1) sind weder die neue "Contao Official Demo" noch die alte "Music Academy" im Contao-Downloadpaket enthalten, aber beide können in einer Contao-Installation als Erweiterung installiert werden.
+Momentan sind weder die neue "Contao Official Demo" noch die alte "Music Academy" im Contao-Downloadpaket enthalten, aber beide können in einer Contao-Installation als Erweiterung installiert werden.
 
-Anmerkung: Zur Zeit ist nur die Music-Accademy für Contao 3.3 & 3.2 installierbar.
-Eine Contao-Official-Demo für Contao 3.2 ist in Planung (Community Project).
+**Achtung:** Zur Zeit ist **nur die Music-Accademy** für diese Contao Version installierbar.
+Eine Contao-Official-Demo für diese Version ist in Planung [siehe Contao-Forum][11].
 
-1. Eine frische Contao 3.3-Installation mit Admin-Account erstellen 
+Vorgehen bei Demo Installation:
+
+1. Eine frische Contao Installation mit Admin-Account erstellen 
 2. Als Admin im Backend anmelden 
-3. Erweiterung [official_demo][11] oder [music_academy][12] hinzufügen 
+3. Erweiterung [music_academy][12] hinzufügen
 4. Als Admin vom Backend abmelden 
 5. Installtool aufrufen
-6. Gewünschtes Frontend-Template installieren
+6. Frontend-Template installieren
 
 [1]: https://contao.org/de/download.html
 [2]: http://www.winscp.com
@@ -356,5 +358,5 @@ Eine Contao-Official-Demo für Contao 3.2 ist in Planung (Community Project).
 [9]: https://github.com/contao/check
 [10]: https://community.contao.org/de/forumdisplay.php?67-Erfahrungen-mit-Webhostern
 [11]: https://contao.org/de/partners.html?search=services&for=partner_hosting
-[12]: https://contao.org/de/extension-list/view/official_demo.de.html
-[13]: https://contao.org/de/extension-list/view/music_academy.de.html
+[12]: https://community.contao.org/de/showthread.php?32316-Music-Academy-2-0-Contao-Offical-Demo-(COD)/page4&p=330207&viewfull=1#post330207
+[13]: https://contao.org/de/extension-list/view/official_demo.de.html
