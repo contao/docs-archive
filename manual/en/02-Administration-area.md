@@ -123,7 +123,7 @@ the fields that you want to modify.
 
 To speed up the workflow when working with Contao, there are several back end
 shortcuts which allow you to execute certain commands. You can e.g. trigger the
-"save" button at the end of a form by klicking it with your mouse or by using
+"save" button at the end of a form by clicking it with your mouse or by using
 the keyboard shortcut `[Alt]+[s]`.
 
 
@@ -244,4 +244,5 @@ creating style sheets.</td>
 The keyboard shortcuts above only work on Windows in this form. Mac users have
 to use `[Ctrl]+[⌥ Opt]` instead of the `[Alt]` key together with the keyboard
 shortcut. In addition, Firefox on Windows deviates from the standard: you have
-to press `[Alt]+[Shift]` and the keyboard shortcut.
+to press `[Alt]+[Shift]` and the keyboard shortcut. Chrome users have to use 
+`[Alt]+[Shift]+e` and `[Alt]+[Shift]+f` for those shortcuts.
