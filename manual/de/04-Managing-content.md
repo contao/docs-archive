@@ -1309,13 +1309,8 @@ oder der Request-String ausgegeben werden.
   <td>Dieses Tag wird mit der statischen URL des Uploadverzeichnis ersetzt.</td>
 </tr>
 <tr>
-  <td><code>{{env::script_url}}</code></td>
-  <td>Dieses Tag wird mit der statischen URL des Skriptverzeichnis ersetzt.</td>
-</tr>
-<tr>
-  <td><code>{{env::plugins_url}}</code></td>
-  <td>Dieses Tag wird mit der statischen URL des Pluginsverzeichnis
-      ersetzt.</td>
+  <td><code>{{env::assets_url}}</code></td>
+  <td>Dieses Tag wird mit der statischen URL des Assets-Verzeichnis ersetzt.</td>
 </tr>
 </table>
 

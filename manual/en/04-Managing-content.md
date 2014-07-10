@@ -1302,13 +1302,8 @@ page name or the request string.
   <td>This tag will be replaced with the static URL of the files directory.</td>
 </tr>
 <tr>
-  <td><code>{{env::script_url}}</code></td>
-  <td>This tag will be replaced with the static URL of the scripts
-      directory.</td>
-</tr>
-<tr>
-  <td><code>{{env::plugins_url}}</code></td>
-  <td>This tag will be replaced with the static URL of the plugins
+  <td><code>{{env::assets_url}}</code></td>
+  <td>This tag will be replaced with the static URL of the assets
       directory.</td>
 </tr>
 </table>
