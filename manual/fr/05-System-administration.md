@@ -42,7 +42,7 @@ pages, elle ne peut modifier que l'une d'elles !
 Être capable de voir une page n'inclut pas le droit de la modifier (ou de 
 modifier ses articles). Rappelez-vous que [les permissions d'une page][1] sont 
 définies dans la structure de site, donc pour permettre l'accès à une page à un 
-utilisateur, vous devez le sélectionner dans son profil et accorder son accès 
+utilisateur, vous devez la sélectionner dans son profil et accorder son accès 
 dans la structure de site.
 
 
@@ -71,11 +71,11 @@ jusqu'à ce que l'administrateur sélectionne un ou plusieurs champs de la table
 
 ### Membres
 
-La gestion des membres (utilisateurs front office) est beaucoup plus facile que 
-de gérer des utilisateurs back office, car il n'y a pas de pages ou de champs à 
-autoriser. La gestion des membres est principalement requise pour contrôler 
-l'accès aux pages protégées, qui est mis en œuvre au niveau du groupe. En 
-fonction de la configuration du site internet, les membres inscrits pourront 
+La gestion des membres (utilisateurs front office) est beaucoup plus facile à
+gérer que celle des utilisateurs back office, car il n'y a pas de pages ou de
+champs à autoriser. La gestion des membres est principalement requise pour
+contrôler l'accès aux pages protégées, qui est mis en œuvre au niveau du groupe.
+En fonction de la configuration du site internet, les membres inscrits pourront 
 voir des pages protégées ou accéder à des téléchargements protégés qui ne sont 
 pas disponibles pour les invités.
 
