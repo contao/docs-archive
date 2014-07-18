@@ -754,7 +754,7 @@ public function myIsVisibleElement($objElement, $blnIsVisible)
         }
     }
 
-    // Wenn $blnVisible bereits false ist, wollen wir das nicht ändern
+    // Andernfalls verändern wir den Sichtbarkeitsstatus nicht
     return $blnIsVisible;
 }
 ```
