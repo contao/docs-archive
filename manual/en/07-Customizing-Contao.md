@@ -736,6 +736,38 @@ public function myImportUser($strUsername, $strPassword, $strTable)
 ```
 
 
+### isVisibleElement
+
+The "isVisibleElement" hook is triggered when checking if an element should be
+visible in the front end or not. An "element" in this case means either an
+article, a front end module or a content element. In contrast to the other three
+hooks "getArticle", "getFrontendModule" and "getContentElement" one can prevent
+generating the complete markup. The hook passes the model of the instance and the
+current visibility state as arguments and expects the new visibility state as return
+value. Available from version 3.2.RC1.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['isVisibleElement'][] = array('MyClass', 'myIsVisibleElement');
+
+// MyClass.php
+public function myIsVisibleElement($objElement, $blnIsVisible)
+{
+    if ($objElement instanceof ContentElement)
+    {
+        // Check if this content element can be shown
+        if ($this->myElementCanBeShownInFrontend($objElement))
+        {
+            return true;
+        }
+    }
+
+    // Otherwise we don't want to change the visibility state
+    return $blnIsVisible;
+}
+```
+
+
 ### listComments
 
 The "listComments" hook is triggered when comments are listed in the back end.
