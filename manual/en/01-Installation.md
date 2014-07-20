@@ -315,6 +315,22 @@ from the rule. The ISP-specific settings are described in the [Contao
 forum][10]. If you are looking for hassle-free Contao hosting, check out the
 list of [Contao hosting partners][11].
 
+### Example Website for Contao 3.2/3.3 (Contao Official Demo & Music Accademy)
+
+Currently (V3.3.1) are no example Websites included in the download package.
+Both can be installed ("Contao Official Demo" & "Music Academy")
+in a new Contao installation as an extension.
+
+Note: Currently, only the Music Accademy is installable for Contao 3.3 & 3.2. 
+A "Contao Official Demo" for Contao 3.2 is in the pipeline (Community Project).
+
+1. Create a fresh Contao 3.3 installation with admin account
+2. Log in as admin in the backend
+3. Add an extension [official_demo] [12] or [music_academy] [13]
+4. Log off from the backend as admin
+5. Run the install tool again (/contao/install.php)
+6. Install the desired front end template
+
 
 [1]: https://contao.org/en/download.html
 [2]: http://www.winscp.com/
@@ -327,3 +343,5 @@ list of [Contao hosting partners][11].
 [9]: https://github.com/contao/check
 [10]: https://community.contao.org/en/
 [11]: https://contao.org/en/partners.html?search=services&for=partner_hosting
+[12]: https://contao.org/en/extension-list/view/official_demo.en.html
+[13]: https://contao.org/en/extension-list/view/music_academy.en.html
