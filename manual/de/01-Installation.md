@@ -331,6 +331,21 @@ Ausnahme von der Regel. Die Provider-spezifische Einstellungen finden Sie im
 [Contao-Forum][10]. Sorgenfreies Contao-Hosting erhalten Sie bei den [Contao
 Hosting-Partnern][11].
 
+### Beispiel-Website für Contao (Music-Accademy)
+
+Momentan sind weder die neue "Contao Official Demo" noch die alte "Music Academy" im Contao-Downloadpaket enthalten, aber beide können in einer Contao-Installation als Erweiterung installiert werden.
+
+**Achtung:** Zur Zeit ist **nur die Music-Accademy** für diese Contao Version installierbar.
+Eine Contao-Official-Demo für diese Version ist in Planung [siehe Contao-Forum][11].
+
+Vorgehen bei Demo Installation:
+
+1. Eine frische Contao Installation mit Admin-Account erstellen 
+2. Als Admin im Backend anmelden 
+3. Erweiterung [music_academy][12] hinzufügen
+4. Als Admin vom Backend abmelden 
+5. Installtool aufrufen
+6. Frontend-Template installieren
 
 [1]: https://contao.org/de/download.html
 [2]: http://www.winscp.com
@@ -343,3 +358,5 @@ Hosting-Partnern][11].
 [9]: https://github.com/contao/check
 [10]: https://community.contao.org/de/forumdisplay.php?67-Erfahrungen-mit-Webhostern
 [11]: https://contao.org/de/partners.html?search=services&for=partner_hosting
+[12]: https://community.contao.org/de/showthread.php?32316-Music-Academy-2-0-Contao-Offical-Demo-(COD)/page4&p=330207&viewfull=1#post330207
+[13]: https://contao.org/de/extension-list/view/official_demo.de.html
