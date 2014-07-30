@@ -58,9 +58,23 @@ aktualisieren"-Schaltfläche.
 
 Ein Template ist eine vorkonfigurierte Webseite, die eine beispielhafte
 Seitenstruktur und verschiedene Stylesheets zur Formatierung der Contao
-Core-Module und -Inhaltselemente enthält. Das Standardtemplate heißt "Music
-Academy". Um es zu importieren, wählen Sie den Eintrag `example_website.sql` aus
-dem Drop-Down-Menü und klicken Sie auf die "Template importieren"-Schaltfläche.
+Core-Module und -Inhaltselemente enthält. 
+
+Seit Version 3.2.11 ist die Beispiel-Webseite nicht mehr im Downloadpaket enthalten.
+Abhängig von der eingesetzten Version kann die neue [*Contao Official Demo*][12] 
+oder die alte [*Music Academy*][13] als Erweiterung installiert werden.
+Aufschluss über Kompatibilität gibt das Erweiterungsverzeichnis.
+
+Vorgehen zur Installation der Demo:
+
+1. Eine frische Contao Installation mit Admin-Account erstellen 
+2. Als Admin im Backend anmelden 
+3. Passende Erweiterung [über das Extension Repository][14] hinzufügen
+4. Als Admin vom Backend abmelden 
+5. Installtool erneut aufrufen
+
+Um ein Template zu importieren, wählen Sie den Eintrag aus dem Drop-Down-Menü
+und klicken Sie auf die "Template importieren"-Schaltfläche.
 
 **Beim Import eines Templates werden bestehende Daten überschrieben!**
 
@@ -343,3 +357,6 @@ Hosting-Partnern][11].
 [9]: https://github.com/contao/check
 [10]: https://community.contao.org/de/forumdisplay.php?67-Erfahrungen-mit-Webhostern
 [11]: https://contao.org/de/partners.html?search=services&for=partner_hosting
+[12]: https://contao.org/de/extension-list/view/official_demo.de.html
+[13]: https://contao.org/de/extension-list/view/music_academy.de.html
+[14]: https://contao.org/de/manual/3.2/system-administration.html#erweiterungen
