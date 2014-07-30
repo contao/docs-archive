@@ -54,13 +54,27 @@ database. Confirm the changes and click the "Update database" button.
 
 #### Importing a template
 
-A template is a preconfigured website that includes an example site structure,
-several style sheets to format the Contao core modules and content elements.
-The default template is called "Music Academy". To import it, choose the
-`music_academy.sql` option from the drop-down menu an click the "Import
-template" button.
+A template is a predetermined website with an exemplary
+Page structure and different style-sheets to format the Contao
+Core modules and content elements.
 
-**Existing data will be overridden during the template import!**
+Since version 3.2.11, the sample web-page is no longer included in the download package.
+Depending on the version used, the new [* Contao Official Demo *] [12]
+or the old [* Music Academy *] [13] will be installed as an extension.
+Information on compatibility you will get in the extension repository.
+
+How to install the demo:
+
+1. Create a new Contao installation with admin account
+2. Log in as admin in the back-end
+3. Install matching extension [from the extension repository] [14]
+4. Log-in to the back-end as admin
+5. Open the install tool again
+
+To import a template, select the entry from the drop-down menu
+and click the "Import template" button.
+
+** When importing a template, existing data will be replaced! **
 
 
 #### Creating an admin user
@@ -327,3 +341,6 @@ list of [Contao hosting partners][11].
 [9]: https://github.com/contao/check
 [10]: https://community.contao.org/en/
 [11]: https://contao.org/en/partners.html?search=services&for=partner_hosting
+[12]: https://contao.org/en/extension-list/view/official_demo.en.html
+[13]: https://contao.org/en/extension-list/view/music_academy.en.html
+[14]: https://contao.org/en/manual/3.2/system-administration.html#extension-catalog
