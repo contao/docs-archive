@@ -359,4 +359,4 @@ Hosting-Partnern][11].
 [11]: https://contao.org/de/partners.html?search=services&for=partner_hosting
 [12]: https://contao.org/de/extension-list/view/official_demo.de.html
 [13]: https://contao.org/de/extension-list/view/music_academy.de.html
-[14]: https://contao.org/de/manual/3.2/system-administration.html#erweiterungen
+[14]: https://contao.org/de/manual/3.3/system-administration.html#erweiterungen
