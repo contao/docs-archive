@@ -88,9 +88,9 @@ Backend-Anmeldung weiter. Wenn Sie die Beispielwebseite importiert haben, könne
 Sie sich dort als Benutzer "k.jones" mit dem Passwort "kevinjones" anmelden.
 
 
-#### Contao Demo installieren
+### Contao Demo installieren
 
-Siehe "[**Vorgehen zur Installation der Demo**][15]" im Abschnitt "Ein Template importieren"
+Siehe *Vorgehen zur Installation der Demo* im Abschnitt [*Ein Template importieren*][15]
 
 
 ### Suchmaschinenfreundliche URLs verwenden
