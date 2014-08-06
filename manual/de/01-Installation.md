@@ -88,6 +88,11 @@ Backend-Anmeldung weiter. Wenn Sie die Beispielwebseite importiert haben, könne
 Sie sich dort als Benutzer "k.jones" mit dem Passwort "kevinjones" anmelden.
 
 
+### Contao Demo installieren
+
+Siehe *Vorgehen zur Installation der Demo* im Abschnitt [*Ein Template importieren*][15]
+
+
 ### Suchmaschinenfreundliche URLs verwenden
 
 Wenn Sie einen Apache-Webserver haben und mod_rewrite verwenden dürfen, können
@@ -360,3 +365,4 @@ Hosting-Partnern][11].
 [12]: https://contao.org/de/extension-list/view/official_demo.de.html
 [13]: https://contao.org/de/extension-list/view/music_academy.de.html
 [14]: https://contao.org/de/manual/3.3/system-administration.html#erweiterungen
+[15]: https://github.com/contao/docs/blob/3.3/manual/de/01-Installation.md#ein-template-importieren
