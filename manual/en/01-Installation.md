@@ -63,7 +63,7 @@ Depending on the version used, the new [* Contao Official Demo *] [12]
 or the old [* Music Academy *] [13] will be installed as an extension.
 Information on compatibility you will get in the extension repository.
 
-How to install the demo:
+**How to install the demo:**
 
 1. Create a new Contao installation with admin account
 2. Log in as admin in the back-end
@@ -74,7 +74,7 @@ How to install the demo:
 To import a template, select the entry from the drop-down menu
 and click the "Import template" button.
 
-** When importing a template, existing data will be replaced! **
+**When importing a template, existing data will be replaced!**
 
 
 #### Creating an admin user
