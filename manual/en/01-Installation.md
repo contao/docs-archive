@@ -54,13 +54,27 @@ database. Confirm the changes and click the "Update database" button.
 
 #### Importing a template
 
-A template is a preconfigured website that includes an example site structure,
-several style sheets to format the Contao core modules and content elements.
-The default template is called "Music Academy". To import it, choose the
-`music_academy.sql` option from the drop-down menu an click the "Import
-template" button.
+A template is a predetermined website with an exemplary
+page structure and different style-sheets to format the Contao
+core modules and content elements.
 
-**Existing data will be overridden during the template import!**
+Since version 3.2.11, the sample web-page is no longer included in the download package.
+Depending on the version used, the new [*Contao Official Demo*][12]
+or the old [*Music Academy*][13] can be installed as an extension.
+Information on compatibility is availabale in the extension repository.
+
+**How to install the demo:**
+
+1. Create a new Contao installation with admin account
+2. Log in as admin to the back end
+3. Install matching extension [using the extension repository][14]
+4. Log out of the back end
+5. Open the install tool again
+
+To import a template, select the entry from the drop-down menu
+and click the "Import template" button.
+
+**When importing a template, existing data will be replaced!**
 
 
 #### Creating an admin user
@@ -70,6 +84,11 @@ the Contao back end. After you have created the account, the installation
 process is completed. The link in the lower right corner will take you to the
 administration area. If you have imported the example website, you can login as
 user "k.jones" with the password "kevinjones".
+
+
+### Installing the Contao Demo
+
+See *How to install the demo* in the section [*Importing a template*][15]
 
 
 ### Using search engine friendly URLs
@@ -327,3 +346,7 @@ list of [Contao hosting partners][11].
 [9]: https://github.com/contao/check
 [10]: https://community.contao.org/en/
 [11]: https://contao.org/en/partners.html?search=services&for=partner_hosting
+[12]: https://contao.org/en/extension-list/view/official_demo.en.html
+[13]: https://contao.org/en/extension-list/view/music_academy.en.html
+[14]: https://contao.org/en/manual/3.2/system-administration.html#extension-catalog
+[15]: https://contao.org/en/manual/3.2/system-administration.html#importing-a-template
