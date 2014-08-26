@@ -29,6 +29,8 @@ $objArticleModel = \ArticleModel::findByIdOrAlias('contact');
 $objArticleModel = \ArticleModel::findOneBy('alias','contact');
 // alternativ
 $objArticleModel = \ArticleModel::findOneByAlias('contact');
+// lazyload
+$objArticleModel = \ArticleModel::findByPk(5, ['relation'=>'loadLazy']);
 ```
 
 Die oben verwendeten Methoden sind durch die `\Contao\Model` Klasse 
