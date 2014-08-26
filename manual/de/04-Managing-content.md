@@ -1245,7 +1245,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt:
-      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br>
+      <code>{{image::58ca4a90-2d30-11e4-8c21-0800200c9a66?width=200&amp;height=150}}</code>.<br>
       <strong>width</strong>: Breite des Vorschaubildes,<br>
       <strong>height</strong>: Höhe des Vorschaubildes,<br>
       <strong>alt</strong>: Alternativer Text,<br>
