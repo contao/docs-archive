@@ -59,13 +59,29 @@ de données".
 
 #### Importer un modèle
 
-Un modèle est un site internet pré-configuré qui comprend un exemple de structure
-du site, plusieurs feuilles de style pour formater les modules de base de Contao 
-et des éléments de contenu. Le modèle par défaut est appelé "Music Academy". 
-Pour l'importer, choisissez l'option `music_academy.sql` dans le menu déroulant 
+Un modèle est un site internet pré-configuré qui comprend un exemple de
+structure de site et plusieurs feuilles de style pour formater les modules de
+base de Contao ainsi que les éléments de contenu.
+
+A partir de la version 3.2.11, le site internet de démonstration n'est plus
+inclus dans le package de téléchargement. Selon la version utilisée, la
+nouvelle et [*officielle démonstration de Contao*][12] ou l'ancienne
+[*Music Academy*][13] peuvent être installées en tant qu'extension.
+Les informations concernant la compatibilité sont disponibles dans le
+référentiel d'extensions.
+
+**Comment installer le modèle de démonstration :**
+
+1. Créer une nouvelle installation de Contao avec un compte administrateur
+2. S'identifier en tant qu'administrateur dans le back office
+3. Installer l'extension correspondante [en utilisant le référentiel d'extensions][14]
+4. Se déconnecter du back office
+5. Ouvrir de nouveau l'outil d'installation
+
+Pour importer un modèle, sélectionnez l'entrée dans le menu déroulant
 et cliquez sur le bouton "Importer un modèle".
 
-**Les données existantes seront remplacées lors de l'importation du modèle !**
+**Les données existantes seront remplacées lors de l'importation d'un modèle !**
 
 
 #### Création d'un utilisateur administrateur
@@ -76,6 +92,12 @@ compte, le processus d'installation est terminé. Le lien dans le coin inférieu
 droit vous amènera vers le panneau d'administration. Si vous avez importé le site 
 internet d'exemple, vous pouvez vous connecter en tant qu'utilisateur "k.jones" 
 avec le mot de passe "kevinjones".
+
+
+### Installation du modèle de démonstration de Contao
+
+Voir *Comment installer le modèle de démonstration* dans la section
+[*Importer un modèle*][15]
 
 
 ### Utiliser des URLs conviviales pour les moteurs de recherche
@@ -360,3 +382,7 @@ partenaires de Contao][11].
 [9]: https://github.com/contao/check
 [10]: https://community.contao.org/en/
 [11]: https://contao.org/en/partners.html?search=services&for=partner_hosting
+[12]: https://contao.org/en/extension-list/view/official_demo.en.html
+[13]: https://contao.org/en/extension-list/view/music_academy.en.html
+[14]: 05-System-administration.md#catalogue-dextensions
+[15]: 01-Installation.md#importer-un-modele
