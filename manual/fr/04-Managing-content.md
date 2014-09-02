@@ -1315,12 +1315,12 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
   premier deux-points est doublé.</td>
 </tr>
 <tr>
-  <td><code>{{version::*}}</code></td>
+  <td><code>{{version}}</code></td>
   <td>Cette balise sera remplacée par la version actuelle de Contao (par exemple 
   2.11.2).</td>
 </tr>
 <tr>
-  <td><code>{{request_token::*}}</code></td>
+  <td><code>{{request_token}}</code></td>
   <td>Cette balise sera remplacée par la demande de jeton de la session en cours.
   </td>
 </tr>
