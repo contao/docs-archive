@@ -1143,13 +1143,8 @@ d'environnement comme le nom de la page ou la chaîne de requête.
   <td>Cette balise sera remplacée par l'URL statique du répertoire files.</td>
 </tr>
 <tr>
-  <td><code>{{env::script_url}}</code></td>
-  <td>Cette balise sera remplacée par l'URL statique du répertoire scripts.
-  </td>
-</tr>
-<tr>
-  <td><code>{{env::plugins_url}}</code></td>
-  <td>Cette balise sera remplacée par l'URL statique du répertoire plugins.
+  <td><code>{{env::assets_url}}</code></td>
+  <td>Cette balise sera remplacée par l'URL statique du répertoire assets.
   </td>
 </tr>
 </table>
