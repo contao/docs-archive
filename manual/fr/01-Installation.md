@@ -97,7 +97,7 @@ avec le mot de passe "kevinjones".
 ### Installation du modèle de démonstration de Contao
 
 Voir *Comment installer le modèle de démonstration* dans la section
-[*Importer un modèle*][15]
+*Importer un modèle*
 
 
 ### Utiliser des URLs conviviales pour les moteurs de recherche
@@ -385,4 +385,3 @@ partenaires de Contao][11].
 [12]: https://contao.org/en/extension-list/view/official_demo.en.html
 [13]: https://contao.org/en/extension-list/view/music_academy.en.html
 [14]: 05-System-administration.md#catalogue-dextensions
-[15]: 01-Installation.md#importer-un-modele
