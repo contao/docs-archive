@@ -771,6 +771,39 @@ public function myImportUser($strUsername, $strPassword, $strTable)
 ```
 
 
+### isVisibleElement
+
+Le hook "isVisibleElement" est déclenché lors de la vérification si un élément
+doit être visible dans le front office ou non. Un "élément" dans ce cas signifie
+soit un article, soit un module de front office ou soit un élément de contenu.
+A la différence des trois autres hooks "getArticle", "getFrontendModule" et
+"getContentElement", on peut prévenir la création du balisage complet. Le hook
+passe le modèle de l'instance et l'état de visibilité courant en arguments et
+attend le nouvel état de visibilité comme valeur de retour. Il est disponible à
+partir de la version 3.2.RC1.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['isVisibleElement'][] = array('MyClass', 'myIsVisibleElement');
+
+// MyClass.php
+public function myIsVisibleElement($objElement, $blnIsVisible)
+{
+    if ($objElement instanceof ContentElement)
+    {
+        // Vérifiez si cet élément de contenu peut être affiché
+        if ($this->myElementCanBeShownInFrontend($objElement))
+        {
+            return true;
+        }
+    }
+
+    // Sinon, nous ne voulons pas changer l'état de visibilité
+    return $blnIsVisible;
+}
+```
+
+
 ### listComments
 
 Le hook "listComments" est déclenché lorsque des commentaires sont listés dans 
