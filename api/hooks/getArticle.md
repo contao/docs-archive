@@ -17,7 +17,7 @@ The `getArticle` allows you to override the configuration of an article prior to
 <?php
 
 // config.php
-$GLOBALS['TL_HOOKS']['validateFormField'][] = array('MyClass', 'myGetArticle');
+$GLOBALS['TL_HOOKS']['getArticle'][] = array('MyClass', 'myGetArticle');
 
 // MyClass.php
 public function myGetArticle(Database_Result $objRow)
