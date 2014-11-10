@@ -364,9 +364,9 @@ public function myAddLogEntry($strText, $strFunction, $strAction)
 
 ### checkCredentials
 
-Der "checkCredentials"-Hook wird bei der Eingabe eines falschenPassworts bei der
-Anmeldung ausgeführt. Er übergibt den Benutzernamenund das Passwort sowie das
-Benutzer-Objekt als Argument und erwartet einen boolschenRückgabewert.
+Der "checkCredentials"-Hook wird bei der Eingabe eines falschen Passworts bei der
+Anmeldung ausgeführt. Er übergibt den Benutzernamen und das Passwort sowie das
+Benutzer-Objekt als Argument und erwartet einen boolschen Rückgabewert.
 Hinzugefügt in Version 2.6.0.
 
 ``` {.php}
