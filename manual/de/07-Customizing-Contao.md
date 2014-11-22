@@ -8,7 +8,7 @@ Ablauf der Contao Core-Engine beeinflussen, ohne dabei deren Dateien ändern zu
 müssen.
 
 
-##Internen Cache umgehen 
+## Internen Cache umgehen 
 
 Vor der Anpassung von Contao oder der Entwicklung von Erweiterungen sollte 
 unbedingt der interne Cache deaktiviert bzw. umgangen werden.
@@ -928,6 +928,25 @@ $GLOBALS['TL_HOOKS']['postUpload'][] = array('MyClass', 'myPostUpload');
 
 // MyClass.php
 public function myPostUpload($arrFiles)
+{
+    // Beliebiger Code
+}
+```
+
+
+### prepareFormData
+
+Der `prepareFormData`-Hook wird beim Absenden eines Formulars ausgeführt. 
+Er übergibt die Formulardaten, die Feldbezeichnungen und das Formular-Objekt. 
+Damit lassen sich die Daten ändern oder erweitern, bevor Aktionen wie 
+z.B. E-Mail Versand oder in der Datenbank speichern ausgeführt wird.
+
+```{.php}
+// config.php
+$GLOBALS['TL_HOOKS']['prepareFormData'][] = array('MyClass', 'myPrepareFormData');
+
+// MyClass.php
+public function myPrepareFormData(&$arrSubmitted, $arrLabels, $objForm)
 {
     // Beliebiger Code
 }
