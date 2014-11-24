@@ -439,6 +439,36 @@ public function myCompileDefinition($arrRow)
 ```
 
 
+### compileFormFields
+
+The "compileFormFields"-Hook hook is triggered before a form field is loaded. 
+It passes the FormFieldModel object, the form ID and the form object as 
+arguments and expects the FormFieldModel object as return value. 
+With this Hook form fields can be adjusted dynamically before display.
+It is available from version ?.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'compileFormFields');
+
+// MyClass.php
+public function compileFormFields($arrFields, $formId, $this)
+{
+    if ($formId =='my_form_id') 
+    {
+        $formPid = $formObj->id;
+	$objFields = \FormFieldModel::findPublishedByPid($formPid);
+	while ($objFields->next()) {
+		if($objFields->name =='my_form_field_1'){
+        		// Do something
+        	}
+	}
+    }
+    return $arrFields;
+}
+```
+
+
 ### createDefinition
 
 The "createDefinition" hook is triggered when a format definition of a style
