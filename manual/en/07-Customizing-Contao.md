@@ -442,10 +442,10 @@ public function myCompileDefinition($arrRow)
 ### compileFormFields
 
 The "compileFormFields"-Hook hook is triggered before a form field is loaded. 
-It passes the FormFieldModel object, the form ID and the form object as 
-arguments and expects the FormFieldModel object as return value. 
+It passes an array of FormFieldModel objects, the form ID and the form object as 
+arguments and expects the array of FormFieldModel objects as return value. 
 With this Hook form fields can be adjusted dynamically before display.
-It is available from version ?.
+It is available from version 3.2.
 
 ``` {.php}
 // config.php
@@ -454,16 +454,15 @@ $GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'compileFormField
 // MyClass.php
 public function compileFormFields($arrFields, $formId, $this)
 {
-    if ($formId =='my_form_id') 
+    if ($formId == 'my_form_id') 
     {
-        $formPid = $formObj->id;
-	$objFields = \FormFieldModel::findPublishedByPid($formPid);
-	while ($objFields->next()) {
+        foreach ($arrFields AS $objFields) {
 		if($objFields->name =='my_form_field_1'){
-        		// Do something
+			// Do something
         	}
 	}
     }
+    
     return $arrFields;
 }
 ```
