@@ -442,15 +442,17 @@ Hinzugefügt in Version 3.2.
 
 ``` {.php}
 // config.php
-$GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'compileFormFields');
+$GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'myCompileFormFields');
 
 // MyClass.php
-public function compileFormFields($arrFields, $formId, $this)
+public function myCompileFormFields($arrFields, $formId, $this)
 {
     if ($formId == 'my_form_id') 
     {
-        foreach ($arrFields AS $objFields) {
-		if ($objFields->name == 'my_form_field_1') {
+        foreach ($arrFields AS $objFields) 
+        {
+		if ($objFields->name == 'my_form_field_1') 
+		{
 			// Beliebiger Code
         	}
 	}
