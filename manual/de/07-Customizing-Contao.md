@@ -450,7 +450,7 @@ public function compileFormFields($arrFields, $formId, $this)
     if ($formId == 'my_form_id') 
     {
         foreach ($arrFields AS $objFields) {
-		if($objFields->name =='my_form_field_1'){
+		if ($objFields->name == 'my_form_field_1') {
 			// Beliebiger Code
         	}
 	}
