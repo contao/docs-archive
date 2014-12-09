@@ -730,8 +730,8 @@ public function myImportUser($strUsername, $strPassword, $strTable)
 
 ### isVisibleElement
 
-Der "isVisibleElement"-Hook wird beim Überprüfen ob ein Element im Frontend sichtbar
-sein soll oder nicht ausgeführt. Ein "Element" bedeutet an dieser Stelle entweder ein
+Der "isVisibleElement"-Hook wird beim Überprüfen, ob ein Element im Frontend sichtbar
+sein soll oder nicht, ausgeführt. Ein "Element" bedeutet an dieser Stelle entweder ein
 Artikel, ein Frontend-Modul oder ein Inhaltselement. Im Gegensatz zu den drei anderen
 Hooks "getArticle", "getFrontendModule" und "getContentElement" kann hier das Generieren
 des gesamten Markups verhindert werden. Der Hook übergibt das Model des Elements sowie
