@@ -87,15 +87,15 @@ Klammern werden bereits von Contao entfernt und müssen daher nicht mehr
 entfernt werden. Im Code-Beispiel wurde zusätzlich noch eine Ausgabe
 erzeugt, wenn der Parameter "bar" nicht angegeben wurde.
 
-Damit Contao 3 nun die Klasse findet, muss nun im Backend der Autoload
+Damit Contao 3 die Klasse findet, muss nun im Backend der Autoload
 Generator für dieses Modul aufgerufen werden, um die autoload.php im config
 Verzeichnis zu generieren.
 
 
 ## Code-Beispiel mit Namespace
 
-Ist die Klasse innerhalb eines Namespaces, ändert sich der Syntax ein wenig.
-Ansonsten gelten die selben bereits genannten Hinweise.
+Ist die Klasse innerhalb eines Namespaces, ändert sich die Syntax ein wenig.
+Ansonsten gelten die selben, bereits genannten Hinweise.
 
 ``` {.php}
  // Datei /system/modules/myinserttag/config/config.php
