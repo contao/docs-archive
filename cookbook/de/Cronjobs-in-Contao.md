@@ -2,7 +2,7 @@
 
 Die `cron.php` im Verzeichnis `system/cron` jeder Contao-Installation wird beim
 Aufruf einer Frontend-Seite ausgeführt. Entsprechend funktionieren diese Cronjobs
-standardmässig nur, wenn die Webseite auch besucht wird. Erweiterungen können
+standardmäßig nur, wenn die Webseite auch besucht wird. Erweiterungen können
 über folgende [Hooks][1] periodische Aufgaben ausführen:
 
 ```{.php}
@@ -16,9 +16,9 @@ $GLOBALS['TL_CRON']['minutely']
 
 ## Cronjobs auf dem Server ausführen
 
-Um die Zuverlässigkeit der Cronjobs zu verbessern, sollten diese wenn immer
-möglich direkt über den Server ausgeführt werden. Jobs werden sonst nur
-ausgeführt wenn die Webseite auch besucht wird. Sollte Ihr Server entsprechende
+Um die Zuverlässigkeit der Cronjobs zu verbessern, sollten diese, wenn immer
+möglich, direkt über den Server ausgeführt werden. Jobs werden sonst nur
+ausgeführt, wenn die Webseite auch besucht wird. Sollte Ihr Server entsprechende
 Möglichkeiten bieten, können Sie die `cron.php` in der Crontab (oder
 entsprechender Konfiguration) einrichten.
 
@@ -32,8 +32,8 @@ folgende Konfiguration, das Script entscheidet dann selber was zu tun ist.
 
 Zu beachten ist dabei auch, dass die Cronjobs nicht gleichzeitig arbeiten,
 und das Script selber entscheidet welche Jobs als nächstes bearbeitet werden.
-Eine sinnvolle Konfiguration falls keine minütlichen Aufgaben anstehen könnte
-folgendermassen aussehen:
+Eine sinnvolle Konfiguration, falls keine minütlichen Aufgaben anstehen, könnte
+folgendermaßen aussehen:
 
 ```
 # 22 Minuten nach jeder vollen Stunde (für hourly-Jobs)
@@ -49,7 +49,7 @@ folgendermassen aussehen:
 4 0 1 * *  wget -O /dev/null -q http://example.com/system/cron/cron.php
 ```
 
-*Prüfen Sie ausserdem dass auf Ihrem Server [wget][2] verfügbar ist und der
+*Prüfen Sie außerdem, dass auf Ihrem Server [wget][2] verfügbar ist und der
 Pfad stimmt!*
 
 
@@ -58,7 +58,7 @@ Pfad stimmt!*
 Anstatt den "Umweg" über [wget][2] zu machen, könnte die PHP ja auch direkt
 (via CLI) aufgerufen werden. Dies hat aber je nach Konfiguration Nachteile.
 Sollte beispielsweise in der Root-Seite keine Domain eingetragen sein, werden
-beim Versand von Newslettern keine absoluten URLs generiert und die Email ist
+beim Versand von Newslettern keine absoluten URLs generiert und die E-Mail ist
 entsprechend unbrauchbar.
 
 
@@ -66,7 +66,7 @@ entsprechend unbrauchbar.
 
 Im `fe_page.html5` bzw. `fe_page.xhtml` Template wird die Datei
 [`assets/contao/js/scheduler.js`][3] eingebunden, die (entweder per jQuery
-oder MooTools) eine Textdatei abgefragt, welche den Zeitstempel der
+oder MooTools) eine Textdatei abgefragt, die den Zeitstempel der
 letzten Ausführung enthält.
 
 ```{.js}
@@ -85,7 +85,7 @@ new Request({
 Abhängig von den vorhandenen Jobs (siehe [`Frontend::getCronTimeout`][4]) wird
 falls nötig ein zweiter Ajax-Request auf die `cron.php` ausgeführt. 
 Diese prüft zuerst nochmals anhand der Tabelle `tl_cron`, ob Jobs ausgeführt
-werden sollen und welcher der vier Ausführungsintervallen als nächstes an
+werden sollen und welches der vier Ausführungsintervalle als nächstes an
 der Reihe ist. 
 
 ```{.php}
@@ -99,7 +99,7 @@ $arrCurrent = array
 );
 ```
 
-Pro Aufruf der `cron.php` wird maximal einer der vier Intervalle ausgeführt.
+Pro Aufruf der `cron.php` wird maximal eines der vier Intervalle ausgeführt.
 
 
 ### Zu beachten gilt
