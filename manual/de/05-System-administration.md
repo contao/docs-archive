@@ -1,8 +1,8 @@
 # Systemadministration
 
-Die folgenden Kapitel erklären, wie man Contao administriert. Nebender
-Installation und Aktualisierung des Systems ist der Administratorauch für das
-Anlegen von Benutzern und Gruppen, dieErweiterungsverwaltung und die Wartung der
+Die folgenden Kapitel erklären, wie man Contao administriert. Neben der
+Installation und Aktualisierung des Systems ist der Administrator auch für das
+Anlegen von Benutzern und Gruppen, die Erweiterungsverwaltung und die Wartung der
 Applikation zuständig.
 
 
@@ -10,10 +10,10 @@ Applikation zuständig.
 
 Contao unterscheidet zwischen Backend-Benutzern ("Benutzer"), die sich am
 Administrationsbereich anmelden können, und Frontend-Benutzern
-("Mitglieder"),die sich auf der Webseite anmelden können. Im Gegensatz
-zuAdministratoren, die standardmäßig alle Seiten und Elemente
-bearbeitendürfen ("allow all"), können reguläre Benutzer nur auf
-dieRessourcen zugreifen, die explizit in ihrem Profil oder dem Profileiner der
+("Mitglieder"), die sich auf der Webseite anmelden können. Im Gegensatz
+zu Administratoren, die standardmäßig alle Seiten und Elemente
+bearbeiten dürfen ("allow all"), können reguläre Benutzer nur auf
+die Ressourcen zugreifen, die explizit in ihrem Profil oder dem Profil einer der
 Gruppen, denen sie angehören, freigeschaltet wurden ("deny all").
 
 
@@ -36,7 +36,7 @@ bearbeiten kann!
 
 ![](images/seitenstruktur-hlewis.jpg?raw=true)
 
-Eine Seite sehen zu können beinhaltet noch nicht das Recht, sie zu bearbeiten.
+Eine Seite sehen zu können, beinhaltet noch nicht das Recht, sie zu bearbeiten.
 Erinnern Sie sich, dass [Zugriffsrechte][1] in der Seitenstruktur vergeben
 werden, daher muss eine Seite sowohl im Benutzerprofil gemountet, als auch in
 der Seitenstruktur freigeschaltet werden.
