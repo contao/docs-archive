@@ -2,7 +2,7 @@
 
 Die `cron.php` im Root-Ordner jeder Contao-Installation wird beim Aufruf einer
 Frontend-Seite ausgeführt. Entsprechend funktionieren diese Cronjobs
-standardmässig nur, wenn die Webseite auch besucht wird. Erweiterungen können
+standardmäßig nur, wenn die Webseite auch besucht wird. Erweiterungen können
 über folgende [Hooks][1] periodische Aufgaben ausführen:
 
 ```{.php}
@@ -17,16 +17,16 @@ Der kleinstmögliche Interval bei Contao 2.11 ist stündlich.
 
 ## Cronjobs auf dem Server ausführen
 
-Um die Zuverlässigkeit der Cronjobs zu verbessern, sollten diese wenn immer
-möglich direkt über den Server ausgeführt werden. Jobs werden sonst nur
-ausgeführt wenn die Webseite auch besucht wird. Sollte Ihr Server entsprechende
+Um die Zuverlässigkeit der Cronjobs zu verbessern, sollten diese, wenn immer
+möglich, direkt über den Server ausgeführt werden. Jobs werden sonst nur
+ausgeführt, wenn die Webseite auch besucht wird. Sollte Ihr Server entsprechende
 Möglichkeiten bieten, können Sie die `cron.php` in der Crontab (oder
 entsprechender Konfiguration) einrichten.
 
 Führen Sie die Datei maximal alle fünf Minuten aus. Zu beachten ist dabei auch,
 dass die Cronjobs nicht gleichzeitig arbeiten, und das Script selber entscheidet
 welche Jobs als nächstes bearbeitet werden. Eine sinnvolle Konfiguration könnte
-folgendermassen aussehen:
+folgendermaßen aussehen:
 
 ```
 # 22 Minuten nach jeder vollen Stunde (für hourly-Jobs)
@@ -43,7 +43,7 @@ folgendermassen aussehen:
 ```
 
 Durch den Abstand von sechs Minuten wird eine Überschneidung verhindert.
-*Prüfen Sie ausserdem dass auf Ihrem Server [wget][2] verfügbar ist und der
+*Prüfen Sie außerdem, dass auf Ihrem Server [wget][2] verfügbar ist und der
 Pfad stimmt!*
 
 
@@ -52,7 +52,7 @@ Pfad stimmt!*
 Anstatt den "Umweg" über [wget][2] zu machen, könnte die PHP ja auch direkt
 (via CLI) aufgerufen werden. Dies hat aber je nach Konfiguration Nachteile.
 Sollte beispielsweise in der Root-Seite keine Domain eingetragen sein, werden
-beim Versand von Newslettern keine absoluten URLs generiert und die Email ist
+beim Versand von Newslettern keine absoluten URLs generiert und die E-Mail ist
 entsprechend unbrauchbar.
 
 
@@ -60,7 +60,7 @@ entsprechend unbrauchbar.
 
 Im `fe_page.html5` bzw. `fe_page.xhtml` Template ist folgender Javascript-Code
 zuständig für den Aufruf der `cron.php`. Dabei wird zuerst eine Textdatei
-abgefragt, welche den Zeitstempel der letzten Ausführung enthält.
+abgefragt, die den Zeitstempel der letzten Ausführung enthält.
 
 ```{.js}
 new Request({
@@ -88,7 +88,7 @@ $GLOBALS['TL_CONFIG']['cron_daily']
 $GLOBALS['TL_CONFIG']['cron_hourly']
 ```
 
-Pro Aufruf der `cron.php` wird maximal einer der vier Intervalle ausgeführt.
+Pro Aufruf der `cron.php` wird maximal eines der vier Intervalle ausgeführt.
 Danach wird die `localconfig.php` aktualisiert und der Prozess beendet.
 
 
