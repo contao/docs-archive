@@ -1312,12 +1312,12 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>addslashes</code></td>
-    <td>stellt bestimmten Zeichen eines Strings ein "\" voran</td>
+    <td>Stellt bestimmten Zeichen eines Strings ein "\" voran.</td>
     <td><a target="_blank" href="http://php.net/addslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>stripslashes</code></td>
-    <td>entfernt das "\" vor bestimmten Zeichen eines Strings</td>
+    <td>Entfernt das "\" vor bestimmten Zeichen eines Strings.</td>
     <td><a target="_blank" href="http://php.net/stripslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1337,7 +1337,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>nl2br</code></td>
-    <td>fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein</td>
+    <td>Fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein.</td>
     <td><a target="_blank" href="http://php.net/nl2br">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1432,7 +1432,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>base64_encode</code></td>
-    <td>enkodiert einen Text mittels des 
+    <td>Enkodiert einen Text mittels des 
     <a href="https://de.wikipedia.org/wiki/Base64" 
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_encode">PHP-Funktion</a>
@@ -1440,7 +1440,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>base64_decode</code></td>
-    <td>dekodiert einen Text mittels des 
+    <td>Dekodiert einen Text mittels des 
     <a href="https://de.wikipedia.org/wiki/Base64" 
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_decode">PHP-Funktion</a>
