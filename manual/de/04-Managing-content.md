@@ -11,7 +11,7 @@ Modulen angelegt werden.
 ## Artikel
 
 Artikel sind Container für Inhaltselemente. Das Gruppieren zusammengehöriger
-Inhaltselement macht es einfach, sie alle auf einmal zu verschieben, zu
+Inhaltselemente macht es einfach, sie alle auf einmal zu verschieben, zu
 veröffentlichen, zu kopieren oder zu exportieren, anstatt jedes einzelne
 Element zu bearbeiten. Jeder Artikel ist mit einer bestimmten Seite und einem
 Layoutbereich assoziiert und hat daher eine feste Position innerhalb der
@@ -22,8 +22,8 @@ Seitenstruktur und auf der Webseite.
 
 Inhaltselemente sind ein einfacher und intuitiver Weg, um Inhalte zuerstellen.
 Anstatt nur den Rich Text Editor zu verwenden, bietet Contao für jeden
-Inhaltstyp wie z.B. Texte, Listen, Tabellen,Hyperlinks, Bilder oder Downloads
-ein eigenes Element. Nachfolgendfinden Sie eine Übersicht über die im
+Inhaltstyp wie z.B. Texte, Listen, Tabellen, Hyperlinks, Bilder oder Downloads
+ein eigenes Element. Nachfolgend finden Sie eine Übersicht über die im
 Contao-Core enthaltenen Inhaltselemente.
 
 <table>
@@ -144,8 +144,8 @@ einer bestimmten Mitgliedergruppe sehen können.
 
 Flash-Inhalte sind spezielle Inhalte, die nicht als Artikel auf der Webseite
 ausgegeben, sondern mittels `loadVars()` in einen dynamischen Flash-Film geladen
-werden. Fügen Sie folgendesSkript in Ihren Flash-Film ein, um die Kommunikation
-mit Contao zuermöglichen:
+werden. Fügen Sie folgendes Skript in Ihren Flash-Film ein, um die Kommunikation
+mit Contao zu ermöglichen:
 
 ``` {.as}
 TextField.prototype._loadArticle = function(flashID) {
@@ -222,7 +222,7 @@ werden.
 
 ### Frontend-Module
 
-Mit den Frontend-Modulen der News/Blog-Erweiterung können Nachrichtenauf der
+Mit den Frontend-Modulen der News/Blog-Erweiterung können Nachrichten auf der
 Webseite dargestellt werden. Module können im Backend unter "Layout" -> "Module"
 konfiguriert werden und müssen anschließend in einem Artikel oder Seitenlayout
 eingebunden werden.
@@ -282,16 +282,16 @@ Atom-Feed exportiert werden.
 
 ### Kalender
 
-Kalender werden zur Gruppierung und/oder Kategorisierung von Terminenverwendet.
-Jeder Kalender kann sich auf eine bestimmte Sprache oder einbestimmtes Thema
-beziehen und die Termine können als RSS- oderAtom-Feed exportiert werden.
+Kalender werden zur Gruppierung und/oder Kategorisierung von Terminen verwendet.
+Jeder Kalender kann sich auf eine bestimmte Sprache oder ein bestimmtes Thema
+beziehen und die Termine können als RSS- oder Atom-Feed exportiert werden.
 
 ![](images/kalender-feed.jpg?raw=true)
 
 
 ### Frontend-Module
 
-Mit den Frontend-Modulen der Kalender-Erweiterung können Termine bzw. Eventsauf
+Mit den Frontend-Modulen der Kalender-Erweiterung können Termine bzw. Events auf
 der Webseite dargestellt werden. Module können im Backend unter "Layout" ->
 "Module" konfiguriert werden und müssen anschließend in einem Artikel oder
 Seitenlayout eingebunden werden.
@@ -343,7 +343,7 @@ auch nicht angezeigt.
 ## Newsletter
 
 Die Newsletter-Erweiterung ermöglicht das Versenden von Newslettern, die
-Verwaltung von Abonnements sowie die optionale Ausgabe versendeter Nachrichten
+Verwaltung von Abonnements, sowie die optionale Ausgabe versendeter Nachrichten
 im Frontend. Im Gegensatz zu Artikeln, die mit einer bestimmten Seite assoziiert
 sind, werden Newsletter in Verteilern organisiert und können so einfach
 gruppiert oder kategorisiert werden.
@@ -353,7 +353,7 @@ gruppiert oder kategorisiert werden.
 
 Newsletter-Abonnements werden normalerweise automatisch über die entsprechenden
 Frontend-Module verwaltet, ohne dass Sie in den Prozess eingreifen müssten. Aus
-Datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
+datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
 [Double Opt-In][5] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
 gespeichert.
 
@@ -628,7 +628,7 @@ stellt ein Inhaltselement zur Verfügung:
 
 ## Kommentare
 
-Kommentare sind eine weiter Form von Inhalt welcher übers das Backend
+Kommentare sind eine weitere Form von Inhalt, welcher über das Backend
 verwaltet werden kann. Kommentare können in Kalendern und News-Archiven
 aktiviert werden.
 
@@ -698,7 +698,7 @@ Contao versteht folgende Tags:
 </tr>
 <tr>
   <td>[img][/img]</td>
-  <td>Ersetzen den Tag durch ein Bild (Bild-Pfad zwischen den Tags).</td>
+  <td>Ersetzen das Tag durch ein Bild (Bild-Pfad zwischen den Tags).</td>
 </tr>
 <tr>
   <td>[code][/code]</td>
@@ -727,11 +727,11 @@ Contao versteht folgende Tags:
 </tr>
 <tr>
   <td>[email][/email]</td>
-  <td>Die enthaltene E-Mail Adresse wird als Link dargestellt.</td>
+  <td>Die enthaltene E-Mail-Adresse wird als Link dargestellt.</td>
 </tr>
 <tr>
   <td>[email=name@example.com][/email]</td>
-  <td>Der enthaltene Text wird mit der E-Mail Adresse verknüpft.</td>
+  <td>Der enthaltene Text wird mit der E-Mail-Adresse verknüpft.</td>
 </tr>
 </table>
 
@@ -1160,7 +1160,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Acronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet
+  <td>Akronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet
       Mail Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
       title="Multipurpose Internet Mail Extensions">MIME</acronym></code>.</td>
 </tr>
