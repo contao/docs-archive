@@ -1298,52 +1298,52 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>uncached</code></td>
-    <td>erhält das Tag beim Schreiben der Cache-Datei</td>
+    <td>Erhält das Tag beim Schreiben der Cache-Datei.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>refresh</code></td>
-    <td>erstellt die Ausgabe bei jeder Anfrage neu</td>
+    <td>Erstellt die Ausgabe bei jeder Anfrage neu.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>addslashes</code></td>
-    <td>stellt bestimmten Zeichen eines Strings ein "\" voran</td>
+    <td>Stellt bestimmten Zeichen eines Strings ein "\" voran.</td>
     <td><a target="_blank" href="http://php.net/addslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>stripslashes</code></td>
-    <td>entfernt das "\" vor bestimmten Zeichen eines Strings</td>
+    <td>Entfernt das "\" vor bestimmten Zeichen eines Strings.</td>
     <td><a target="_blank" href="http://php.net/stripslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>standardize</code></td>
-    <td>standardisiert die Ausgabe (z.B. das Alias bei der Seitenstruktur)</td>
+    <td>Standardisiert die Ausgabe (z.B. das Alias bei der Seitenstruktur).</td>
     <td></td>
 </tr>
 <tr>
     <td><code>ampersand</code></td>
-    <td>wandelt Und-Zeichen in Entities um</td>
+    <td>Wandelt Und-Zeichen in Entities um.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>specialchars</code></td>
-    <td>wandelt Sonderzeichen in Entities um</td>
+    <td>Wandelt Sonderzeichen in Entities um.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>nl2br</code></td>
-    <td>fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein</td>
+    <td>Fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein.</td>
     <td><a target="_blank" href="http://php.net/nl2br">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>nl2br_pre</code></td>
-    <td>erhält die Zeilenumbrüche innerhalb von <code>&lt;pre&gt;</code>-Tags</td>
+    <td>Erhält die Zeilenumbrüche innerhalb von <code>&lt;pre&gt;</code>-Tags.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>strtolower</code></td>
-    <td>wandelt die Ausgabe in Kleinbuchstaben um</td>
+    <td>Wandelt die Ausgabe in Kleinbuchstaben um.</td>
     <td><a target="_blank" href="http://php.net/strtolower">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1353,7 +1353,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>strtoupper</code></td>
-    <td>wandelt die Ausgabe in Großbuchstaben um</td>
+    <td>Wandelt die Ausgabe in Großbuchstaben um.</td>
     <td><a target="_blank" href="http://php.net/strtoupper">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1363,72 +1363,72 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>ucfirst</code></td>
-    <td>wandelt das erste Zeichen in einen Großbuchstaben um</td>
+    <td>Wandelt das erste Zeichen in einen Großbuchstaben um.</td>
     <td><a target="_blank" href="http://php.net/ucfirst">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>lcfirst</code></td>
-    <td>wandelt das erste Zeichen in einen Kleinbuchstaben um</td>
+    <td>Wandelt das erste Zeichen in einen Kleinbuchstaben um.</td>
     <td><a target="_blank" href="http://php.net/lcfirst">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>ucwords</code></td>
-    <td>wandelt das erste Zeichen jedes Wortes in einen Großbuchstaben um</td>
+    <td>Wandelt das erste Zeichen jedes Wortes in einen Großbuchstaben um.</td>
     <td><a target="_blank" href="http://php.net/ucwords">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>trim</code></td>
-    <td>entfernt Leerzeichen vom Anfang und Ende der Ausgabe</td>
+    <td>Entfernt Leerzeichen vom Anfang und Ende der Ausgabe.</td>
     <td><a target="_blank" href="http://php.net/trim">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>rtrim</code></td>
-    <td>entfernt Leerzeichen vom Anfang der Ausgabe</td>
+    <td>Entfernt Leerzeichen vom Anfang der Ausgabe.</td>
     <td><a target="_blank" href="http://php.net/rtrim">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>ltrim</code></td>
-    <td>entfernt Leerzeichen vom Ende der Ausgabe</td>
+    <td>Entfernt Leerzeichen vom Ende der Ausgabe.</td>
     <td><a target="_blank" href="http://php.net/ltrim">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>utf8_romanize</code></td>
-    <td>romanisiert die Ausgabe</td>
+    <td>Romanisiert die Ausgabe.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>strrev</code></td>
-    <td>dreht die Ausgabe um</td>
+    <td>Dreht die Ausgabe um.</td>
     <td><a target="_blank" href="http://php.net/strrev">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>encodeEmail</code></td>
-    <td>kodiert E-Mail-Adressen in der Ausgabe</td>
+    <td>Kodiert E-Mail-Adressen in der Ausgabe.</td>
     <td>siehe <code>String::encodeEmail</code></td>
 </tr>
 <tr>
     <td><code>decodeEntities</code></td>
-    <td>dekodiert Entities in der Ausgabe</td>
+    <td>Dekodiert Entities in der Ausgabe.</td>
     <td>siehe <code>String::decodeEntities()</code></td>
 </tr>
 <tr>
     <td><code>number_format</code></td>
-    <td>formatiert eine Zahl (keine Dezimalstellen)</td>
+    <td>Formatiert eine Zahl (keine Dezimalstellen).</td>
     <td>siehe <code>System::getFormattedNumber()</code></td>
 </tr>
 <tr>
     <td><code>currency_format</code></td>
-    <td>formatiert eine Währung (zwei Dezimalstellen)</td>
+    <td>Formatiert eine Währung (zwei Dezimalstellen).</td>
     <td>siehe <code>System::getFormattedNumber()</code></td>
 </tr>
 <tr>
     <td><code>readable_size</code></td>
-    <td>wandelt die Ausgabe in ein menschenlesbares Format um</td>
+    <td>Wandelt die Ausgabe in ein menschenlesbares Format um.</td>
     <td>siehe <code>System::getReadableSize()</code></td>
 </tr>
 <tr>
     <td><code>base64_encode</code></td>
-    <td>enkodiert einen Text mittels des 
+    <td>Enkodiert einen Text mittels des 
     <a href="https://de.wikipedia.org/wiki/Base64" 
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_encode">PHP-Funktion</a>
@@ -1436,7 +1436,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>base64_decode</code></td>
-    <td>dekodiert einen Text mittels des 
+    <td>Dekodiert einen Text mittels des 
     <a href="https://de.wikipedia.org/wiki/Base64" 
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_decode">PHP-Funktion</a>
