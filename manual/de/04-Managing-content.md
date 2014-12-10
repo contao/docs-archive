@@ -392,7 +392,7 @@ Ihrer Contao Installation abgelegt. In diesem Beispiel: ```share/events.xml```.
 ## Newsletter
 
 Die Newsletter-Erweiterung ermöglicht das Versenden von Newslettern, die
-Verwaltung von Abonnements sowie die optionale Ausgabe versendeter Nachrichten
+Verwaltung von Abonnements, sowie die optionale Ausgabe versendeter Nachrichten
 im Frontend. Im Gegensatz zu Artikeln, die mit einer bestimmten Seite assoziiert
 sind, werden Newsletter in Verteilern organisiert und können so einfach
 gruppiert oder kategorisiert werden.
@@ -1200,7 +1200,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{email_open::*}}</code></td>
   <td>Dieses Tag wird mit einem verschlüsselten Link zu einer E-Mail-Adresse
-      ersetzt. Allerdings wird das schliessende <code>&lt;/a&gt;</code> nicht
+      ersetzt. Allerdings wird das schließende <code>&lt;/a&gt;</code> nicht
       angefügt.</td>
 </tr>
 <tr>
@@ -1308,12 +1308,12 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>addslashes</code></td>
-    <td>Stellt bestimmten Zeichen eines Strings ein "\" voran</td>
+    <td>stellt bestimmten Zeichen eines Strings ein "\" voran</td>
     <td><a target="_blank" href="http://php.net/addslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>stripslashes</code></td>
-    <td>Entfernt das "\" vor bestimmten Zeichen eines Strings</td>
+    <td>entfernt das "\" vor bestimmten Zeichen eines Strings</td>
     <td><a target="_blank" href="http://php.net/stripslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1333,7 +1333,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>nl2br</code></td>
-    <td>Fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein</td>
+    <td>fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein</td>
     <td><a target="_blank" href="http://php.net/nl2br">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1428,7 +1428,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>base64_encode</code></td>
-    <td>Enkodiert einen Text mittels des 
+    <td>enkodiert einen Text mittels des 
     <a href="https://de.wikipedia.org/wiki/Base64" 
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_encode">PHP-Funktion</a>
@@ -1436,7 +1436,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>base64_decode</code></td>
-    <td>Dekodiert einen Text mittels des 
+    <td>dekodiert einen Text mittels des 
     <a href="https://de.wikipedia.org/wiki/Base64" 
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_decode">PHP-Funktion</a>
