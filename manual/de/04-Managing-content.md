@@ -397,7 +397,7 @@ Ihrer Contao Installation abgelegt. In diesem Beispiel: ```share/events.xml```.
 ## Newsletter
 
 Die Newsletter-Erweiterung ermöglicht das Versenden von Newslettern, die
-Verwaltung von Abonnements sowie die optionale Ausgabe versendeter Nachrichten
+Verwaltung von Abonnements, sowie die optionale Ausgabe versendeter Nachrichten
 im Frontend. Im Gegensatz zu Artikeln, die mit einer bestimmten Seite assoziiert
 sind, werden Newsletter in Verteilern organisiert und können so einfach
 gruppiert oder kategorisiert werden.
@@ -799,11 +799,11 @@ Contao versteht folgende Tags:
 
 ## Markdown
 
-Markdown ist eine einfache Auszeichnungssprache die es erlaubt, Text mittels
+Markdown ist eine einfache Auszeichnungssprache, die es erlaubt, Text mittels
 einfachem Syntax zu formatieren. Markdown hat den Vorteil, einfach lesbar
 zu sein und automatisch in HTML konvertiert werden zu können.
 
-Nachfolgend einige Beispiele für den Markdown-Syntax:
+Nachfolgend einige Beispiele für die Markdown-Syntax:
 
 ### Syntax
 
@@ -884,7 +884,7 @@ Durch zwei oder mehr Leerzeichen am Ende einer Zeile wird ein Umbruch erzeugt:
 
 #### Links
 
-Es gibt zwei Möglichkeiten für links: **inline** und **als Referenz**.
+Es gibt zwei Möglichkeiten für Links: **inline** und **als Referenz**.
 
 Ein Inline-Link sieht wie folgt aus:
 
@@ -911,7 +911,7 @@ Ein Inline-Bild sieht wie folgt aus:
 
     ![Alt text](/pfad/zum/bild.jpg "Optionaler Titel")
 
-Ein Bild im Referenz-Stil wird durch folgenden Syntax erreicht:
+Ein Bild im Referenz-Stil wird durch folgende Syntax erreicht:
 
     ![Alternativer Text][id]
 
@@ -924,7 +924,7 @@ Die Referenz kann an beliebiger Stelle im Dokument platziert werden.
 
 ##### Unsortierte Listen
 
-Unsortierte Listen verwenden Sternzeichen oder Trennstrich:
+Unsortierte Listen verwenden Sternzeichen oder Trennstriche:
 
     * Listeneintrag  
     * Listeneintrag  
@@ -954,14 +954,14 @@ Webseite unter folgendem [Link][8].
 
 ### Erweiterter Syntax
 
-Nicht alle HTML-Element wie Beispielsweise Tabellen oder Fussnoten können
+Nicht alle HTML-Element wie beispielsweise Tabellen oder Fußnoten können
 mit normalem Markdown beschrieben werden. Aus diesem Grund gibt es ein
-Projekt für "Markdown Extra" um den Syntax zu erweitern.
+Projekt für "Markdown Extra" um die Syntax zu erweitern.
 
-Nachfolgend einige Beispiel für den erweiterten Syntax:
+Nachfolgend einige Beispiele für die erweiterte Syntax:
 
 
-#### Tables
+#### Tabellen
 
 Eine Tabelle kann wie folgt erstellt werden:
 
@@ -982,15 +982,15 @@ Linksbündig     | Zentriert        | Rechtsbündig
 ```
 
 
-#### Fussnoten
+#### Fußnoten
 
-Fussnoten werden wie folgt erstellt:
+Fußnoten werden wie folgt erstellt:
 
-    Dies ist ein Text mit Fussnote.[^1]
+    Dies ist ein Text mit Fußnote.[^1]
 
-    [^1]: Und dies ist die Fussnote.
+    [^1]: Und dies ist die Fußnote.
 
-Die Fussnoten-Definition kann an beliebiger Stelle im Dokument platziert werden.
+Die Fußnoten-Definition kann an beliebiger Stelle im Dokument platziert werden.
 
 
 #### Weitere Informationen
@@ -1519,12 +1519,12 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>addslashes</code></td>
-    <td>Stellt bestimmten Zeichen eines Strings ein "\" voran.</td>
+    <td>stellt bestimmten Zeichen eines Strings ein "\" voran</td>
     <td><a target="_blank" href="http://php.net/addslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>stripslashes</code></td>
-    <td>Entfernt das "\" vor bestimmten Zeichen eines Strings.</td>
+    <td>entfernt das "\" vor bestimmten Zeichen eines Strings</td>
     <td><a target="_blank" href="http://php.net/stripslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1544,7 +1544,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>nl2br</code></td>
-    <td>Fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein.</td>
+    <td>fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein</td>
     <td><a target="_blank" href="http://php.net/nl2br">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1639,7 +1639,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>base64_encode</code></td>
-    <td>Enkodiert einen Text mittels des 
+    <td>enkodiert einen Text mittels des 
     <a href="https://de.wikipedia.org/wiki/Base64" 
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_encode">PHP-Funktion</a>
@@ -1647,7 +1647,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>base64_decode</code></td>
-    <td>Dekodiert einen Text mittels des 
+    <td>dekodiert einen Text mittels des 
     <a href="https://de.wikipedia.org/wiki/Base64" 
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_decode">PHP-Funktion</a>
