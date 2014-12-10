@@ -11,7 +11,7 @@ Modulen angelegt werden.
 ## Artikel
 
 Artikel sind Container für Inhaltselemente. Das Gruppieren zusammengehöriger
-Inhaltselement macht es einfach, sie alle auf einmal zu verschieben, zu
+Inhaltselemente macht es einfach, sie alle auf einmal zu verschieben, zu
 veröffentlichen, zu kopieren oder zu exportieren, anstatt jedes einzelne
 Element zu bearbeiten. Jeder Artikel ist mit einer bestimmten Seite und einem
 Layoutbereich assoziiert und hat daher eine feste Position innerhalb der
@@ -22,8 +22,8 @@ Seitenstruktur und auf der Webseite.
 
 Inhaltselemente sind ein einfacher und intuitiver Weg, um Inhalte zuerstellen.
 Anstatt nur den Rich Text Editor zu verwenden, bietet Contao für jeden
-Inhaltstyp wie z.B. Texte, Listen, Tabellen,Hyperlinks, Bilder oder Downloads
-ein eigenes Element. Nachfolgendfinden Sie eine Übersicht über die im
+Inhaltstyp wie z.B. Texte, Listen, Tabellen, Hyperlinks, Bilder oder Downloads
+ein eigenes Element. Nachfolgend finden Sie eine Übersicht über die im
 Contao-Core enthaltenen Inhaltselemente.
 
 <table>
@@ -179,8 +179,8 @@ einer bestimmten Mitgliedergruppe sehen können.
 
 Flash-Inhalte sind spezielle Inhalte, die nicht als Artikel auf der Webseite
 ausgegeben, sondern mittels `loadVars()` in einen dynamischen Flash-Film geladen
-werden. Fügen Sie folgendesSkript in Ihren Flash-Film ein, um die Kommunikation
-mit Contao zuermöglichen:
+werden. Fügen Sie folgendes Skript in Ihren Flash-Film ein, um die Kommunikation
+mit Contao zu ermöglichen:
 
 ``` {.as}
 TextField.prototype._loadArticle = function(flashID) {
@@ -254,7 +254,7 @@ Thema beziehen.
 
 ### Frontend-Module
 
-Mit den Frontend-Modulen der News/Blog-Erweiterung können Nachrichtenauf der
+Mit den Frontend-Modulen der News/Blog-Erweiterung können Nachrichten auf der
 Webseite dargestellt werden. Module können im Backend unter "Layout" -> "Module"
 konfiguriert werden und müssen anschließend in einem Artikel oder Seitenlayout
 eingebunden werden.
@@ -314,14 +314,14 @@ Atom-Feed exportiert werden.
 
 ### Kalender
 
-Kalender werden zur Gruppierung und/oder Kategorisierung von Terminenverwendet.
-Jeder Kalender kann sich auf eine bestimmte Sprache oder einbestimmtes Thema
+Kalender werden zur Gruppierung und/oder Kategorisierung von Terminen verwendet.
+Jeder Kalender kann sich auf eine bestimmte Sprache oder ein bestimmtes Thema
 beziehen.
 
 
 ### Frontend-Module
 
-Mit den Frontend-Modulen der Kalender-Erweiterung können Termine bzw. Eventsauf
+Mit den Frontend-Modulen der Kalender-Erweiterung können Termine bzw. Events auf
 der Webseite dargestellt werden. Module können im Backend unter "Layout" ->
 "Module" konfiguriert werden und müssen anschließend in einem Artikel oder
 Seitenlayout eingebunden werden.
@@ -397,7 +397,7 @@ Ihrer Contao Installation abgelegt. In diesem Beispiel: ```share/events.xml```.
 ## Newsletter
 
 Die Newsletter-Erweiterung ermöglicht das Versenden von Newslettern, die
-Verwaltung von Abonnements sowie die optionale Ausgabe versendeter Nachrichten
+Verwaltung von Abonnements, sowie die optionale Ausgabe versendeter Nachrichten
 im Frontend. Im Gegensatz zu Artikeln, die mit einer bestimmten Seite assoziiert
 sind, werden Newsletter in Verteilern organisiert und können so einfach
 gruppiert oder kategorisiert werden.
@@ -407,7 +407,7 @@ gruppiert oder kategorisiert werden.
 
 Newsletter-Abonnements werden normalerweise automatisch über die entsprechenden
 Frontend-Module verwaltet, ohne dass Sie in den Prozess eingreifen müssten. Aus
-Datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
+datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
 [Double Opt-In][2] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
 gespeichert.
 
@@ -689,7 +689,7 @@ stellt ein Inhaltselement zur Verfügung:
 
 ## Kommentare
 
-Kommentare sind eine weiter Form von Inhalt welcher übers das Backend
+Kommentare sind eine weitere Form von Inhalt, welcher über das Backend
 verwaltet werden kann. Kommentare können in Kalendern und News-Archiven
 aktiviert werden.
 
@@ -759,7 +759,7 @@ Contao versteht folgende Tags:
 </tr>
 <tr>
   <td>[img][/img]</td>
-  <td>Ersetzen den Tag durch ein Bild (Bild-Pfad zwischen den Tags).</td>
+  <td>Ersetzen das Tag durch ein Bild (Bild-Pfad zwischen den Tags).</td>
 </tr>
 <tr>
   <td>[code][/code]</td>
@@ -788,22 +788,22 @@ Contao versteht folgende Tags:
 </tr>
 <tr>
   <td>[email][/email]</td>
-  <td>Die enthaltene E-Mail Adresse wird als Link dargestellt.</td>
+  <td>Die enthaltene E-Mail-Adresse wird als Link dargestellt.</td>
 </tr>
 <tr>
   <td>[email=name@example.com][/email]</td>
-  <td>Der enthaltene Text wird mit der E-Mail Adresse verknüpft.</td>
+  <td>Der enthaltene Text wird mit der E-Mail-Adresse verknüpft.</td>
 </tr>
 </table>
 
 
 ## Markdown
 
-Markdown ist eine einfache Auszeichnungssprache die es erlaubt, Text mittels
+Markdown ist eine einfache Auszeichnungssprache, die es erlaubt, Text mittels
 einfachem Syntax zu formatieren. Markdown hat den Vorteil, einfach lesbar
 zu sein und automatisch in HTML konvertiert werden zu können.
 
-Nachfolgend einige Beispiele für den Markdown-Syntax:
+Nachfolgend einige Beispiele für die Markdown-Syntax:
 
 ### Syntax
 
@@ -884,7 +884,7 @@ Durch zwei oder mehr Leerzeichen am Ende einer Zeile wird ein Umbruch erzeugt:
 
 #### Links
 
-Es gibt zwei Möglichkeiten für links: **inline** und **als Referenz**.
+Es gibt zwei Möglichkeiten für Links: **inline** und **als Referenz**.
 
 Ein Inline-Link sieht wie folgt aus:
 
@@ -911,7 +911,7 @@ Ein Inline-Bild sieht wie folgt aus:
 
     ![Alt text](/pfad/zum/bild.jpg "Optionaler Titel")
 
-Ein Bild im Referenz-Stil wird durch folgenden Syntax erreicht:
+Ein Bild im Referenz-Stil wird durch folgende Syntax erreicht:
 
     ![Alternativer Text][id]
 
@@ -924,7 +924,7 @@ Die Referenz kann an beliebiger Stelle im Dokument platziert werden.
 
 ##### Unsortierte Listen
 
-Unsortierte Listen verwenden Sternzeichen oder Trennstrich:
+Unsortierte Listen verwenden Sternzeichen oder Trennstriche:
 
     * Listeneintrag  
     * Listeneintrag  
@@ -954,14 +954,14 @@ Webseite unter folgendem [Link][8].
 
 ### Erweiterter Syntax
 
-Nicht alle HTML-Element wie Beispielsweise Tabellen oder Fussnoten können
+Nicht alle HTML-Element wie beispielsweise Tabellen oder Fußnoten können
 mit normalem Markdown beschrieben werden. Aus diesem Grund gibt es ein
-Projekt für "Markdown Extra" um den Syntax zu erweitern.
+Projekt für "Markdown Extra" um die Syntax zu erweitern.
 
-Nachfolgend einige Beispiel für den erweiterten Syntax:
+Nachfolgend einige Beispiele für die erweiterte Syntax:
 
 
-#### Tables
+#### Tabellen
 
 Eine Tabelle kann wie folgt erstellt werden:
 
@@ -982,15 +982,15 @@ Linksbündig     | Zentriert        | Rechtsbündig
 ```
 
 
-#### Fussnoten
+#### Fußnoten
 
-Fussnoten werden wie folgt erstellt:
+Fußnoten werden wie folgt erstellt:
 
-    Dies ist ein Text mit Fussnote.[^1]
+    Dies ist ein Text mit Fußnote.[^1]
 
-    [^1]: Und dies ist die Fussnote.
+    [^1]: Und dies ist die Fußnote.
 
-Die Fussnoten-Definition kann an beliebiger Stelle im Dokument platziert werden.
+Die Fußnoten-Definition kann an beliebiger Stelle im Dokument platziert werden.
 
 
 #### Weitere Informationen
@@ -1407,7 +1407,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{email_open::*}}</code></td>
   <td>Dieses Tag wird mit einem verschlüsselten Link zu einer E-Mail-Adresse
-      ersetzt. Allerdings wird das schliessende <code>&lt;/a&gt;</code> nicht
+      ersetzt. Allerdings wird das schließende <code>&lt;/a&gt;</code> nicht
       angefügt.</td>
 </tr>
 <tr>
@@ -1428,7 +1428,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Acronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet
+  <td>Akronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet
       Mail Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
       title="Multipurpose Internet Mail Extensions">MIME</acronym></code>.</td>
 </tr>
@@ -1479,12 +1479,12 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{toggle_view}}</code></td>
-  <td>Dieser Tag wird mit einem Link ersetzt, welcher zwischen Mobile- und
+  <td>Dieses Tag wird mit einem Link ersetzt, welcher zwischen Mobile- und
       Desktop-Layout wechselt.</td>
 </tr>
 <tr>
   <td><code>{{br}}</code></td>
-  <td>Dieser Tag wird mit einem HTML &lt;br&gt; Element (Zeilenumbruch) ersetzt.</td>
+  <td>Dieses Tag wird mit einem HTML &lt;br&gt; Element (Zeilenumbruch) ersetzt.</td>
 </tr>
 </table>
 
@@ -1519,12 +1519,12 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>addslashes</code></td>
-    <td>Stellt bestimmten Zeichen eines Strings ein "\" voran</td>
+    <td>stellt bestimmten Zeichen eines Strings ein "\" voran</td>
     <td><a target="_blank" href="http://php.net/addslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>stripslashes</code></td>
-    <td>Entfernt das "\" vor bestimmten Zeichen eines Strings</td>
+    <td>entfernt das "\" vor bestimmten Zeichen eines Strings</td>
     <td><a target="_blank" href="http://php.net/stripslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1544,7 +1544,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>nl2br</code></td>
-    <td>Fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein</td>
+    <td>fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein</td>
     <td><a target="_blank" href="http://php.net/nl2br">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1639,7 +1639,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>base64_encode</code></td>
-    <td>Enkodiert einen Text mittels des 
+    <td>enkodiert einen Text mittels des 
     <a href="https://de.wikipedia.org/wiki/Base64" 
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_encode">PHP-Funktion</a>
@@ -1647,7 +1647,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>base64_decode</code></td>
-    <td>Dekodiert einen Text mittels des 
+    <td>dekodiert einen Text mittels des 
     <a href="https://de.wikipedia.org/wiki/Base64" 
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_decode">PHP-Funktion</a>
