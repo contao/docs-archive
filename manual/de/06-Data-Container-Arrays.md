@@ -84,7 +84,7 @@ beim Löschen von Elterndatensätzen passiert.
 <tr>
   <td>notCreatable</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Verbietet das erstellen von neuen Datensätzen (kopieren bleibt erlaubt).</td>
+  <td>Verbietet das Erstellen von neuen Datensätzen (kopieren bleibt erlaubt).</td>
 </tr>
 <tr>
   <td>switchToEdit</td>
