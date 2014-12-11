@@ -392,7 +392,7 @@ Ihrer Contao Installation abgelegt. In diesem Beispiel: ```share/events.xml```.
 ## Newsletter
 
 Die Newsletter-Erweiterung ermöglicht das Versenden von Newslettern, die
-Verwaltung von Abonnements, sowie die optionale Ausgabe versendeter Nachrichten
+Verwaltung von Abonnements sowie die optionale Ausgabe versendeter Nachrichten
 im Frontend. Im Gegensatz zu Artikeln, die mit einer bestimmten Seite assoziiert
 sind, werden Newsletter in Verteilern organisiert und können so einfach
 gruppiert oder kategorisiert werden.
