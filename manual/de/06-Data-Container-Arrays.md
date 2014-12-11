@@ -608,7 +608,7 @@ Ausdrucks geprüft werden.
     <table>
         <tr>
           <td><b>alias</b></td>
-          <td>prüft auf ein gültiges Alias</td>
+          <td>Prüft auf ein gültiges Alias.</td>
         </tr>
         <tr>
           <td><b>alnum</b></td>
@@ -651,7 +651,7 @@ Ausdrucks geprüft werden.
         </tr>
         <tr>
           <td><b>folderalias</b></td>
-          <td>prüft auf ein gültiges Ordner-URL Alias</td>
+          <td>Prüft auf ein gültiges Ordner-URL Alias.</td>
         </tr>
         <tr>
           <td><b>phone</b></td>
@@ -885,7 +885,7 @@ Ausdrucks geprüft werden.
 ### Relationen
 
 Relationen definieren, ob und wie Feldwerte mit einer weiteren
-Tabelle zusammen hängen. Die referenzierte Tabelle wird im `foreignKey`
+Tabelle zusammenhängen. Die referenzierte Tabelle wird im `foreignKey`
 Schlüssel definiert. Relationen ermöglichen den Model-Klassen,
 referenzierte Datensätze effizient und entwicklerfreundlich
 zu laden (siehe `Model::getRelated()`).
@@ -913,9 +913,9 @@ zu laden (siehe `Model::getRelated()`).
   <td>load</td>
   <td>Ladeverhalten<br> (<code>string</code>)</td>
   <td>
-      <b>lazy</b> Lädt referenzierte Datensätze erst wenn erforderlich
-         (Standard, spart RAM)<br>
-      <b>eager</b> Lädt referenzierte Datensätze automatisch (spart DB-Abfragen)
+      <b>lazy</b> lädt referenzierte Datensätze erst wenn erforderlich
+         (Standard, spart RAM).<br>
+      <b>eager</b> lädt referenzierte Datensätze automatisch (spart DB-Abfragen).
   </td>
 </tr>
 </table>
