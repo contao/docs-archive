@@ -17,7 +17,7 @@ Ein Data Container Array ist in 6 Sektionen unterteilt. Die erste Sektion
 speichert globale Informationen wie z.B. Relationen zu anderen Tabellen. Die
 zweite und dritte Sektion legt fest, wie Datensätze aufgelistet werden und
 welche Aktionen ein Benutzer ausführen kann. Die vierte Sektion definiert
-verschiedene Gruppen von Eingabefelder (Paletten) und die letzten beiden
+verschiedene Gruppen von Eingabefeldern (Paletten) und die letzten beiden
 Sektionen beschreiben die Eingabefelder im Detail.
 
 
@@ -152,7 +152,7 @@ beim Löschen von Elterndatensätzen passiert.
 ### Datensätze auflisten
 
 Das Auflistungsarray legt fest, wie Datensätze aufgelistet werden. Die Contao
-Core-Engine unterstützt drei [Ansichen][1]: den "List View", den "Parent View"
+Core-Engine unterstützt drei [Ansichten][1]: den "List View", den "Parent View"
 und den "Tree View". Sie können verschiedene Filter- und Sortieroptionen setzen
 und eigene Bezeichnungen einfügen.
 
@@ -196,7 +196,7 @@ und eigene Bezeichnungen einfügen.
 </tr>
 <tr>
   <td>panelLayout</td>
-  <td>Paneellayout (<code>string</code>)</td>
+  <td>Panellayout (<code>string</code>)</td>
   <td><b>search</b> zeigt das Suchfeld an<br>
       <b>sort</b> zeigt das Sortiermenü an<br>
       <b>filter</b> zeigt die Filtermenüs an<br>
@@ -468,14 +468,14 @@ kann.
       <b>checkbox</b> Checkbox<br>
       <b>radio</b> Radio-Button<br>
       <b>radioTable</b> Tabelle mit Bildern und Radio-Buttons<br>
-      <b>imageSize</b> 2 Textfelder mit Drop Down-Menü zur Auswahl<br>
+      <b>imageSize</b> 2 Textfelder mit Drop-Down-Menü zur Auswahl<br>
       <b>inputUnit</b> Textfeld mit Drop-Down-Menü zur Auswahl der Einheit<br>
       <b>trbl</b> Vier Textfelder mit Drop-Down-Menü zur Auswahl der Einheit<br>
       <b>chmod</b> CHMOD-Tabelle<br>
       <b>pageTree</b> Seitenbaum<br>
       <b>fileTree</b> Dateibaum<br>
       <b>tableWizard</b> Tabellenassistent<br>
-      <b>timePeriod</b> Textfeld mit Drop Down-Menü zur Auswahl<br>
+      <b>timePeriod</b> Textfeld mit Drop-Down-Menü zur Auswahl<br>
       <b>listWizard</b> Listenassistent<br>
       <b>optionWizard</b> Optionsassistent<br>
       <b>moduleWizard</b> Modulassistent<br>
@@ -489,14 +489,14 @@ kann.
 <tr>
   <td>options_callback</td>
   <td>Callback-Funktion (<code>array</code>)</td>
-  <td>Kann verwendet werden, um die Optionen eines Drow-Down- oder
+  <td>Kann verwendet werden, um die Optionen eines Drop-Down- oder
       Radio-Button-Menüs mit Hilfe einer individuellen Funktion zu laden.</td>
 </tr>
 <tr>
   <td>foreignKey</td>
   <td>tabelle.feld (<code>string</code>)</td>
   <td>Lädt die Optionen eines Drop-Down- oder Radio-Button-Menüs aus einer
-      Tabelle. Verwendet die ID als Schlüssel und das angegebenen Feld als
+      Tabelle. Verwendet die ID als Schlüssel und das angegebene Feld als
       Wert.</td>
 </tr>
 <tr>
@@ -612,42 +612,42 @@ Ausdrucks geprüft werden.
         </tr>
         <tr>
           <td><b>alnum</b></td>
-          <td>erlaubt nur alphanumerische Zeichen (inklusive Punkt [.] 
-          Minus [-], Unterstrich [_] und Leerschlag [ ])</td>
+          <td>Erlaubt nur alphanumerische Zeichen (inklusive Punkt [.] 
+          Minus [-], Unterstrich [_] und Leerschlag [ ]).</td>
         </tr>
         <tr>
           <td><b>alpha</b></td>
-          <td>erlaubt nur alphabetische Zeichen (inklusive Punkt [.] 
-          Minus [-] und Leerschlag [ ])</td>
+          <td>Erlaubt nur alphabetische Zeichen (inklusive Punkt [.] 
+          Minus [-] und Leerschlag [ ]).</td>
         </tr>
         <tr>
           <td><b>date</b></td>
-          <td>prüft auf ein gültiges Datum</td>
+          <td>Prüft auf ein gültiges Datum.</td>
         </tr>
         <tr>
           <td><b>datim</b></td>
-          <td>prüft auf ein gültiges Datum mit Uhrzeit</td>
+          <td>Prüft auf ein gültiges Datum mit Uhrzeit.</td>
         </tr>
         <tr>
           <td><b>digit</b></td>
-          <td>erlaubt nur numerische Zeichen (inklusive Punkt [.] und Minus [-])</td>
+          <td>Erlaubt nur numerische Zeichen (inklusive Punkt [.] und Minus [-]).</td>
         </tr>
         <tr>
           <td><b>email</b></td>
-          <td>prüft auf eine gültige E-Mail-Adresse</td>
+          <td>Prüft auf eine gültige E-Mail-Adresse.</td>
         </tr>
         <tr>
           <td><b>emails</b></td>
-          <td>prüft auf eine Liste von gültigen E-Mail-Adressen</td>
+          <td>Prüft auf eine Liste von gültigen E-Mail-Adressen.</td>
         </tr>
         <tr>
           <td><b>extnd</b></td>
-          <td>erlaubt alles außer <code>#&amp;()/&lt;=&gt;</code></td>
+          <td>Erlaubt alles außer <code>#&amp;()/&lt;=&gt;</code>.</td>
         </tr>
         <tr>
           <td><b>friendly</b></td>
-          <td>prüft auf eine gültige E-Mail-Adresse im "friendly name
-      format"</td>
+          <td>Prüft auf eine gültige E-Mail-Adresse im "friendly name
+      format".</td>
         </tr>
         <tr>
           <td><b>folderalias</b></td>
@@ -655,20 +655,20 @@ Ausdrucks geprüft werden.
         </tr>
         <tr>
           <td><b>phone</b></td>
-          <td>prüft auf eine gültige Telefonnummer (Zahlen, Leerschlag [ ], 
-          Plus [+], Minus [-], Klammern [()] und Schrägstrich [/])</td>
+          <td>Prüft auf eine gültige Telefonnummer (Zahlen, Leerschlag [ ], 
+          Plus [+], Minus [-], Klammern [()] und Schrägstrich [/]).</td>
         </tr>
         <tr>
           <td><b>prcnt</b></td>
-          <td>erlaubt Zahlen zwischen 0 und 100</td>
+          <td>Erlaubt Zahlen zwischen 0 und 100.</td>
         </tr>
         <tr>
           <td><b>url</b></td>
-          <td>prüft auf eine gültige URL</td>
+          <td>Prüft auf eine gültige URL.</td>
         </tr>
         <tr>
           <td><b>time</b></td>
-          <td>prüft auf eine gültige Uhrzeit</td>
+          <td>Prüft auf eine gültige Uhrzeit.</td>
         </tr>
     </table>
   </td>
@@ -1012,7 +1012,7 @@ der Contao Core-Engine angepasst werden.
   <td>onload_callback</td>
   <td>Wird bei der Initialisierung des DataContainer-Objekts ausgeführt.
       Ermöglicht z.B. das Prüfen von Zugriffsrechten oder die dynamische
-      Änderung des Data Container Array zur Laufzeit.</td>
+      Änderung des Data Container Arrays zur Laufzeit.</td>
 </tr>
 <tr>
   <td>onsubmit_callback</td>
@@ -1046,7 +1046,7 @@ der Contao Core-Engine angepasst werden.
 <tr>
   <td>paste_button_callback</td>
   <td>Ermöglicht individuelle Einfüge-Schaltflächen und wird z.B. in der
-      Seitenstruktur verwenden, um die Icons abhängig von den Benutzerrechten zu
+      Seitenstruktur verwendet, um die Icons abhängig von den Benutzerrechten zu
       deaktivieren (erfordert eine zusätzliche Prüfung mittels
       load_callback).</td>
 </tr>
@@ -1076,7 +1076,7 @@ der Contao Core-Engine angepasst werden.
 <tr>
   <td>button_callback</td>
   <td>Ermöglicht individuelle Navigationssymbole und wird z.B. in der
-      Seitenstruktur verwenden, um Icons abhängig von den Benutzerrechten zu
+      Seitenstruktur verwendet, um Icons abhängig von den Benutzerrechten zu
       deaktivieren (erfordert eine zusätzliche Prüfung mittels
       load_callback).</td>
 </tr>
