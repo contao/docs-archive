@@ -37,7 +37,7 @@ Nachrichten oder Stylesheets und Formatdefinitionen.
 
 Der "Tree View" listet Datensätze auf, die in einer hierarchischen Struktur
 organisiert sind. Contao unterstützt sowohl hierarchische Beziehungen innerhalb
-einer Tabelle (z.B. Seitenstruktur)  als auch Kindtabellen, die sich auf
+einer Tabelle (z.B. Seitenstruktur) als auch Kindtabellen, die sich auf
 hierarchische Elterntabellen beziehen (z.B. Artikel und Seiten).
 
 ![](images/tree-view-de.jpg?raw=true)
@@ -99,8 +99,8 @@ Datensatzes. Sobald es mehr als eine Version gibt, erscheint oberhalb des
 Formulars ein Drop-Down-Menü, mit dem Sie zu einer früheren Versionen zurück
 gehen können.
 
-Durch Klick auf das Icon rechts des Drop-Down-Menü werden die Unterschiede
-zwischen der aktuelle und der gewählten Version angezeigt.
+Durch Klick auf das Icon rechts des Drop-Down-Menüs werden die Unterschiede
+zwischen der aktuellen und der gewählten Version angezeigt.
 
 ![](images/versionierung.jpg?raw=true)
 
@@ -109,7 +109,7 @@ zwischen der aktuelle und der gewählten Version angezeigt.
 
 Die Möglichkeit, mehrere Datensätze auf einmal zu bearbeiten, hebt Contao klar
 von den Mitbewerbern ab. Wechseln Sie den Bearbeitungsmodus durch Anklicken der
-"Mehrere bearbeiten"-Schaltfläche und wählen Sie dann die zu berabeitenden
+"Mehrere bearbeiten"-Schaltfläche und wählen Sie dann die zu bearbeitenden
 Datensätze und Felder aus.
 
 ![](images/mehrere-datensaetze-auswaehlen.jpg?raw=true)

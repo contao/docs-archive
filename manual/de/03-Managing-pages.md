@@ -63,17 +63,17 @@ berücksichtigt werden.
 ![](images/theme-einstellungen.jpg?raw=true)
 
 
-### Theme-Export und Import
+### Theme-Export und -Import
 
 Um ein Theme zu exportieren, klicken Sie einfach auf die Export-Schaltfläche
 und speichern Sie die .cto-Datei auf Ihrem lokalen Computer. Obwohl .cto eine
 proprietäre Dateiendung für Contao-Themes ist, handelt es sich dabei
 eigentlich um ZIP-Archive, die Sie mit jedem Programm entpacken können, das
 .zip-Dateien unterstützt. Um ein Theme zu reimportieren, übertragen Sie die
-.cto-Datei auf Ihren Webserver, öffenen Sie den Theme-Manager im Contao-Backend
+.cto-Datei auf Ihren Webserver, öffnen Sie den Theme-Manager im Contao-Backend
 und klicken Sie auf "Theme importieren". Sie können mehrere Themes auf einmal
 importieren. Nachdem der Import abgeschlossen ist, können Sie das Seitenlayout
-des neuen Theme in der Seitenstruktur zuweisen.
+des neuen Themes in der Seitenstruktur zuweisen.
 
 
 ## Stylesheets
@@ -188,7 +188,7 @@ werden.
 <tr>
   <td>Passwort vergessen</td>
   <td>mod_password</td>
-  <td>Erzeugt ein Formular Passwort-Anforderung.</td>
+  <td>Erzeugt ein Formular zur Passwort-Anforderung.</td>
 </tr>
 <tr>
   <td>Konto schließen</td>
@@ -223,7 +223,7 @@ werden.
 <tr>
   <td>Eventleser</td>
   <td>mod_eventreader</td>
-  <td>Stellt einen einzelnen Event dar.</td>
+  <td>Stellt ein einzelnes Event dar.</td>
 </tr>
 <tr>
   <td>Eventliste</td>
@@ -334,7 +334,7 @@ Frontend-Module in welcher Spalte angezeigt werden. Sie ermöglichen zudem das
 Einbinden von Stylesheets und RSS- bzw. Atom-Feeds sowie das Einfügen einer
 Google Analytics ID oder beliebigem JavaScript-Code, der für die Steuerung
 interaktiver Elemente und Plugins benötigt wird. Das Contao CSS-Framework teilt
-das Browserfenster automatisch in mehrere Layoutbreiche auf.
+das Browserfenster automatisch in mehrere Layoutbereiche auf.
 
 ![](images/front-end-structure.jpg?raw=true)
 
@@ -383,7 +383,7 @@ Seitenstruktur markiert. Contao unterstützt folgende 6 Seitentypen:
 </tr>
 <tr>
   <td>403 Zugriff verweigert</td>
-  <td>Beim Aufruf einer geschützte Seite ohne Zugriffsrechte wird stattdessen
+  <td>Beim Aufruf einer geschützten Seite ohne Zugriffsrechte wird stattdessen
       die 403-Fehlerseite geladen. Diese Seite muss <b>direkt unterhalb</b>
       des Startpunktes einer Webseite angelegt werden.</td>
 </tr>
@@ -476,13 +476,13 @@ gibt es drei Zugriffsebenen:
 
 * Zugriff als Besitzer einer Seite
 * Zugriff als Mitglied der Gruppe einer Seite
-* Zugriff als unpriviligierter Benutzer
+* Zugriff als unprivilegierter Benutzer
 
 
 Für jede Zugriffsebene können gesonderte Rechte vergeben werden.
 Standardmäßig darf der Besitzer einer Seite sowohl die Seite selbst, als auch
 die damit verbundenen Artikel bearbeiten. Ein Mitglied der Gruppe einer Seite
-darf hingegen nur die Artikel bearbeiten und ein unpriviligierter Benutzer hat
+darf hingegen nur die Artikel bearbeiten und ein unprivilegierter Benutzer hat
 überhaupt keine Schreibrechte.
 
 ![](images/benutzerrechte.jpg?raw=true)

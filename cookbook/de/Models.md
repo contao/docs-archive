@@ -4,10 +4,10 @@ Ein *Model* repräsentiert einen Datensatz aus einer Tabelle (Entität). Models
 bieten einen Objekt-orientierten Zugriff auf Tabellen und ersetzen damit SQL-
 Statements  weitgehend. Darüber hinaus bieten sie viele weitere Vorteile.
 Mehrere Models werden durch eine *Collection* referenziert, dies entspricht 
-einer SQL-Abfrage die mehr als eine Ergebniszeile liefert.
-Contao 3 bietet - wenn dem Model eine DCA-Struktur zugeordnet ist - ausserdem
+einer SQL-Abfrage, die mehr als eine Ergebniszeile liefert.
+Contao 3 bietet - wenn dem Model eine DCA-Struktur zugeordnet ist - außerdem
 die Möglichkeit, referenzierte Datensätze automatisch zu laden. Beispielsweise
-der Author (`UserModel`) eines Artikels (`ArticleModel`).
+den Author (`UserModel`) eines Artikels (`ArticleModel`).
 
 
 ## Das Model Objekt
@@ -40,7 +40,7 @@ zusätzlichen Parametern, siehe [Methode find()](#methode-findarrdata).
 
 ### Virtuelle Methoden
 
-Die oben verwendete `findOneByAlias()` ist eine virtuelle Methode um auf das
+Die oben verwendete `findOneByAlias()` ist eine virtuelle Methode, um auf das
 *alias* Feld zu referenzieren. Diese Methoden stehen automatisch über Magic-
 Methoden für alle Felder der Tabelle zur Verfügung. Best practice ist es aber,
 `findOneBy($column, $value)` zu nutzen.
@@ -96,7 +96,7 @@ Die Methode akzeptiert ein Array mit folgenden Werten:
 			Als String, z.B. <code>alias</code><br>
 			Als Array, z.B. <code>array('tl_article.alias=?')</code><br>
 			<br>
-			Wird ein String übergeben, konvertiert Contao dies automatisch zu
+			Wird ein String übergeben, konvertiert Contao diesen automatisch zu
 			einem entsprechenden Array und ergänzt Tabelle und Operator.
 			Beim Array sollte darauf geachtet werden, dass auch die Tabelle
 			angegeben wird, da bei referenzierten Datensätzen sonst ggf.
@@ -127,7 +127,7 @@ Die Methode akzeptiert ein Array mit folgenden Werten:
 	<tr>
 		<td>eager</td>
 		<td>boolean</td>
-		<td>Versucht referenzierten Datensätze durch einen OUTER JOIN zu
+		<td>Versucht referenzierte Datensätze durch einen OUTER JOIN zu
 		laden.</td>
 	</tr>
 	<tr>
@@ -141,14 +141,14 @@ Die Methode akzeptiert ein Array mit folgenden Werten:
 
 ### Getter & Setter
 
-Um auf den Wert einer Spalte der Entität zuzugreifen benutzt Contao die 
+Um auf den Wert einer Spalte der Entität zuzugreifen, benutzt Contao die 
 *Magic-Methods* `__get($key)` und `__set($key, $value)`. Diese werden von 
 PHP immer dann aufgerufen, wenn der Zugriff auf ein nicht existierendes 
 Klassen-Attribut erfolgt. Contao gibt dann die Werte des Datensatzes zurück, 
 bzw. setzt diese.
 
 **ACHTUNG:** Es können beliebige Spalten im Model gesetzt werden, gespeichert
-werden nur Attribute für die eine Spalte in der Datenbank-Tabelle vorhanden ist.
+werden nur Attribute, für die eine Spalte in der Datenbank-Tabelle vorhanden ist.
 
 ``` {.php}
 // Titel des Artikels ausgeben
@@ -196,7 +196,7 @@ $objArticelModel->setRow(array
 ```
 **ACHTUNG:** Bei Verwendung von `setRow` werden die Model-Daten direkt
 überschrieben und die Felder nicht als "zu speichern" markiert! Dies
-ist nur sinnvoll um ein Model aus einem bestehenden Datensatz zu erzeugen.
+ist nur sinnvoll, um ein Model aus einem bestehenden Datensatz zu erzeugen.
 
 
 #### Die Methode `save()`
@@ -226,7 +226,7 @@ Gibt die Anzahl aller Datensätze der Tabelle zurück.
 ### preSave / preFind / postFind
 
 Die Methoden `preSave`, `preFind`, `postFind` können von einer Kindklasse
-überschrieben werden um zusätzliche Logik  an den entsprechenden Stellen
+überschrieben werden, um zusätzliche Logik  an den entsprechenden Stellen
 einzufügen.
 
 
@@ -288,7 +288,7 @@ while($objArticles->next()) {
 
 ```
 
-**HINWEIS:** Es wird empfohlen die *foreach*-Variante zu verwenden, da dessen
+**HINWEIS:** Es wird empfohlen, die *foreach*-Variante zu verwenden, da deren
 Position nicht vom internen Zähler der *Collection* abhängig ist.
 
 
@@ -394,7 +394,7 @@ $GLOBALS['TL_MODELS']['tl_my_table'] = 'Vendor\Models\MyTable';
 	<tr>
 		<td>type</td>
 		<td>hasOne</td>
-		<td>Referenz auf ein Kinddatensatz (z.B. Artikel hat einen Autor)</td>
+		<td>Referenz auf einen Kinddatensatz (z.B. Artikel hat einen Autor)</td>
 	</tr>
 	<tr>
 		<td>type</td>

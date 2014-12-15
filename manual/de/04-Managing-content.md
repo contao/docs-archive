@@ -11,7 +11,7 @@ Modulen angelegt werden.
 ## Artikel
 
 Artikel sind Container für Inhaltselemente. Das Gruppieren zusammengehöriger
-Inhaltselement macht es einfach, sie alle auf einmal zu verschieben, zu
+Inhaltselemente macht es einfach, sie alle auf einmal zu verschieben, zu
 veröffentlichen, zu kopieren oder zu exportieren, anstatt jedes einzelne
 Element zu bearbeiten. Jeder Artikel ist mit einer bestimmten Seite und einem
 Layoutbereich assoziiert und hat daher eine feste Position innerhalb der
@@ -22,8 +22,8 @@ Seitenstruktur und auf der Webseite.
 
 Inhaltselemente sind ein einfacher und intuitiver Weg, um Inhalte zuerstellen.
 Anstatt nur den Rich Text Editor zu verwenden, bietet Contao für jeden
-Inhaltstyp wie z.B. Texte, Listen, Tabellen,Hyperlinks, Bilder oder Downloads
-ein eigenes Element. Nachfolgendfinden Sie eine Übersicht über die im
+Inhaltstyp wie z.B. Texte, Listen, Tabellen, Hyperlinks, Bilder oder Downloads
+ein eigenes Element. Nachfolgend finden Sie eine Übersicht über die im
 Contao-Core enthaltenen Inhaltselemente.
 
 <table>
@@ -179,8 +179,8 @@ einer bestimmten Mitgliedergruppe sehen können.
 
 Flash-Inhalte sind spezielle Inhalte, die nicht als Artikel auf der Webseite
 ausgegeben, sondern mittels `loadVars()` in einen dynamischen Flash-Film geladen
-werden. Fügen Sie folgendesSkript in Ihren Flash-Film ein, um die Kommunikation
-mit Contao zuermöglichen:
+werden. Fügen Sie folgendes Skript in Ihren Flash-Film ein, um die Kommunikation
+mit Contao zu ermöglichen:
 
 ``` {.as}
 TextField.prototype._loadArticle = function(flashID) {
@@ -254,7 +254,7 @@ Thema beziehen.
 
 ### Frontend-Module
 
-Mit den Frontend-Modulen der News/Blog-Erweiterung können Nachrichtenauf der
+Mit den Frontend-Modulen der News/Blog-Erweiterung können Nachrichten auf der
 Webseite dargestellt werden. Module können im Backend unter "Layout" -> "Module"
 konfiguriert werden und müssen anschließend in einem Artikel oder Seitenlayout
 eingebunden werden.
@@ -314,14 +314,14 @@ Atom-Feed exportiert werden.
 
 ### Kalender
 
-Kalender werden zur Gruppierung und/oder Kategorisierung von Terminenverwendet.
-Jeder Kalender kann sich auf eine bestimmte Sprache oder einbestimmtes Thema
+Kalender werden zur Gruppierung und/oder Kategorisierung von Terminen verwendet.
+Jeder Kalender kann sich auf eine bestimmte Sprache oder ein bestimmtes Thema
 beziehen.
 
 
 ### Frontend-Module
 
-Mit den Frontend-Modulen der Kalender-Erweiterung können Termine bzw. Eventsauf
+Mit den Frontend-Modulen der Kalender-Erweiterung können Termine bzw. Events auf
 der Webseite dargestellt werden. Module können im Backend unter "Layout" ->
 "Module" konfiguriert werden und müssen anschließend in einem Artikel oder
 Seitenlayout eingebunden werden.
@@ -407,7 +407,7 @@ gruppiert oder kategorisiert werden.
 
 Newsletter-Abonnements werden normalerweise automatisch über die entsprechenden
 Frontend-Module verwaltet, ohne dass Sie in den Prozess eingreifen müssten. Aus
-Datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
+datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
 [Double Opt-In][2] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
 gespeichert.
 
@@ -689,7 +689,7 @@ stellt ein Inhaltselement zur Verfügung:
 
 ## Kommentare
 
-Kommentare sind eine weiter Form von Inhalt welcher übers das Backend
+Kommentare sind eine weitere Form von Inhalt, welcher über das Backend
 verwaltet werden kann. Kommentare können in Kalendern und News-Archiven
 aktiviert werden.
 
@@ -759,7 +759,7 @@ Contao versteht folgende Tags:
 </tr>
 <tr>
   <td>[img][/img]</td>
-  <td>Ersetzen den Tag durch ein Bild (Bild-Pfad zwischen den Tags).</td>
+  <td>Ersetzen das Tag durch ein Bild (Bild-Pfad zwischen den Tags).</td>
 </tr>
 <tr>
   <td>[code][/code]</td>
@@ -788,22 +788,22 @@ Contao versteht folgende Tags:
 </tr>
 <tr>
   <td>[email][/email]</td>
-  <td>Die enthaltene E-Mail Adresse wird als Link dargestellt.</td>
+  <td>Die enthaltene E-Mail-Adresse wird als Link dargestellt.</td>
 </tr>
 <tr>
   <td>[email=name@example.com][/email]</td>
-  <td>Der enthaltene Text wird mit der E-Mail Adresse verknüpft.</td>
+  <td>Der enthaltene Text wird mit der E-Mail-Adresse verknüpft.</td>
 </tr>
 </table>
 
 
 ## Markdown
 
-Markdown ist eine einfache Auszeichnungssprache die es erlaubt, Text mittels
+Markdown ist eine einfache Auszeichnungssprache, die es erlaubt, Text mittels
 einfachem Syntax zu formatieren. Markdown hat den Vorteil, einfach lesbar
 zu sein und automatisch in HTML konvertiert werden zu können.
 
-Nachfolgend einige Beispiele für den Markdown-Syntax:
+Nachfolgend einige Beispiele für die Markdown-Syntax:
 
 ### Syntax
 
@@ -884,7 +884,7 @@ Durch zwei oder mehr Leerzeichen am Ende einer Zeile wird ein Umbruch erzeugt:
 
 #### Links
 
-Es gibt zwei Möglichkeiten für links: **inline** und **als Referenz**.
+Es gibt zwei Möglichkeiten für Links: **inline** und **als Referenz**.
 
 Ein Inline-Link sieht wie folgt aus:
 
@@ -911,7 +911,7 @@ Ein Inline-Bild sieht wie folgt aus:
 
     ![Alt text](/pfad/zum/bild.jpg "Optionaler Titel")
 
-Ein Bild im Referenz-Stil wird durch folgenden Syntax erreicht:
+Ein Bild im Referenz-Stil wird durch folgende Syntax erreicht:
 
     ![Alternativer Text][id]
 
@@ -924,7 +924,7 @@ Die Referenz kann an beliebiger Stelle im Dokument platziert werden.
 
 ##### Unsortierte Listen
 
-Unsortierte Listen verwenden Sternzeichen oder Trennstrich:
+Unsortierte Listen verwenden Sternzeichen oder Trennstriche:
 
     * Listeneintrag  
     * Listeneintrag  
@@ -954,14 +954,14 @@ Webseite unter folgendem [Link][8].
 
 ### Erweiterter Syntax
 
-Nicht alle HTML-Element wie Beispielsweise Tabellen oder Fussnoten können
+Nicht alle HTML-Element wie beispielsweise Tabellen oder Fußnoten können
 mit normalem Markdown beschrieben werden. Aus diesem Grund gibt es ein
-Projekt für "Markdown Extra" um den Syntax zu erweitern.
+Projekt für "Markdown Extra" um die Syntax zu erweitern.
 
-Nachfolgend einige Beispiel für den erweiterten Syntax:
+Nachfolgend einige Beispiele für die erweiterte Syntax:
 
 
-#### Tables
+#### Tabellen
 
 Eine Tabelle kann wie folgt erstellt werden:
 
@@ -982,15 +982,15 @@ Linksbündig     | Zentriert        | Rechtsbündig
 ```
 
 
-#### Fussnoten
+#### Fußnoten
 
-Fussnoten werden wie folgt erstellt:
+Fußnoten werden wie folgt erstellt:
 
-    Dies ist ein Text mit Fussnote.[^1]
+    Dies ist ein Text mit Fußnote.[^1]
 
-    [^1]: Und dies ist die Fussnote.
+    [^1]: Und dies ist die Fußnote.
 
-Die Fussnoten-Definition kann an beliebiger Stelle im Dokument platziert werden.
+Die Fußnoten-Definition kann an beliebiger Stelle im Dokument platziert werden.
 
 
 #### Weitere Informationen
@@ -1407,7 +1407,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{email_open::*}}</code></td>
   <td>Dieses Tag wird mit einem verschlüsselten Link zu einer E-Mail-Adresse
-      ersetzt. Allerdings wird das schliessende <code>&lt;/a&gt;</code> nicht
+      ersetzt. Allerdings wird das schließende <code>&lt;/a&gt;</code> nicht
       angefügt.</td>
 </tr>
 <tr>
@@ -1428,7 +1428,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Acronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet
+  <td>Akronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet
       Mail Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
       title="Multipurpose Internet Mail Extensions">MIME</acronym></code>.</td>
 </tr>
@@ -1479,12 +1479,12 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{toggle_view}}</code></td>
-  <td>Dieser Tag wird mit einem Link ersetzt, welcher zwischen Mobile- und
+  <td>Dieses Tag wird mit einem Link ersetzt, welcher zwischen Mobile- und
       Desktop-Layout wechselt.</td>
 </tr>
 <tr>
   <td><code>{{br}}</code></td>
-  <td>Dieser Tag wird mit einem HTML &lt;br&gt; Element (Zeilenumbruch) ersetzt.</td>
+  <td>Dieses Tag wird mit einem HTML &lt;br&gt; Element (Zeilenumbruch) ersetzt.</td>
 </tr>
 </table>
 
@@ -1509,52 +1509,52 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>uncached</code></td>
-    <td>erhält das Tag beim Schreiben der Cache-Datei</td>
+    <td>Erhält das Tag beim Schreiben der Cache-Datei.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>refresh</code></td>
-    <td>erstellt die Ausgabe bei jeder Anfrage neu</td>
+    <td>Erstellt die Ausgabe bei jeder Anfrage neu.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>addslashes</code></td>
-    <td>Stellt bestimmten Zeichen eines Strings ein "\" voran</td>
+    <td>Stellt bestimmten Zeichen eines Strings ein "\" voran.</td>
     <td><a target="_blank" href="http://php.net/addslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>stripslashes</code></td>
-    <td>Entfernt das "\" vor bestimmten Zeichen eines Strings</td>
+    <td>Entfernt das "\" vor bestimmten Zeichen eines Strings.</td>
     <td><a target="_blank" href="http://php.net/stripslashes">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>standardize</code></td>
-    <td>standardisiert die Ausgabe (z.B. das Alias bei der Seitenstruktur)</td>
+    <td>Standardisiert die Ausgabe (z.B. das Alias bei der Seitenstruktur).</td>
     <td></td>
 </tr>
 <tr>
     <td><code>ampersand</code></td>
-    <td>wandelt Und-Zeichen in Entities um</td>
+    <td>Wandelt Und-Zeichen in Entities um.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>specialchars</code></td>
-    <td>wandelt Sonderzeichen in Entities um</td>
+    <td>Wandelt Sonderzeichen in Entities um.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>nl2br</code></td>
-    <td>Fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein</td>
+    <td>Fügt vor allen Zeilenumbrüchen eines Strings HTML-Zeilenumbrüche ein.</td>
     <td><a target="_blank" href="http://php.net/nl2br">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>nl2br_pre</code></td>
-    <td>erhält die Zeilenumbrüche innerhalb von <code>&lt;pre&gt;</code>-Tags</td>
+    <td>Erhält die Zeilenumbrüche innerhalb von <code>&lt;pre&gt;</code>-Tags.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>strtolower</code></td>
-    <td>wandelt die Ausgabe in Kleinbuchstaben um</td>
+    <td>Wandelt die Ausgabe in Kleinbuchstaben um.</td>
     <td><a target="_blank" href="http://php.net/strtolower">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1564,7 +1564,7 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>strtoupper</code></td>
-    <td>wandelt die Ausgabe in Großbuchstaben um</td>
+    <td>Wandelt die Ausgabe in Großbuchstaben um.</td>
     <td><a target="_blank" href="http://php.net/strtoupper">PHP-Funktion</a></td>
 </tr>
 <tr>
@@ -1574,67 +1574,67 @@ Verfügbare Flags:
 </tr>
 <tr>
     <td><code>ucfirst</code></td>
-    <td>wandelt das erste Zeichen in einen Großbuchstaben um</td>
+    <td>Wandelt das erste Zeichen in einen Großbuchstaben um.</td>
     <td><a target="_blank" href="http://php.net/ucfirst">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>lcfirst</code></td>
-    <td>wandelt das erste Zeichen in einen Kleinbuchstaben um</td>
+    <td>Wandelt das erste Zeichen in einen Kleinbuchstaben um.</td>
     <td><a target="_blank" href="http://php.net/lcfirst">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>ucwords</code></td>
-    <td>wandelt das erste Zeichen jedes Wortes in einen Großbuchstaben um</td>
+    <td>Wandelt das erste Zeichen jedes Wortes in einen Großbuchstaben um.</td>
     <td><a target="_blank" href="http://php.net/ucwords">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>trim</code></td>
-    <td>entfernt Leerzeichen vom Anfang und Ende der Ausgabe</td>
+    <td>Entfernt Leerzeichen vom Anfang und Ende der Ausgabe.</td>
     <td><a target="_blank" href="http://php.net/trim">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>rtrim</code></td>
-    <td>entfernt Leerzeichen vom Anfang der Ausgabe</td>
+    <td>Entfernt Leerzeichen vom Anfang der Ausgabe.</td>
     <td><a target="_blank" href="http://php.net/rtrim">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>ltrim</code></td>
-    <td>entfernt Leerzeichen vom Ende der Ausgabe</td>
+    <td>Entfernt Leerzeichen vom Ende der Ausgabe.</td>
     <td><a target="_blank" href="http://php.net/ltrim">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>utf8_romanize</code></td>
-    <td>romanisiert die Ausgabe</td>
+    <td>Romanisiert die Ausgabe.</td>
     <td></td>
 </tr>
 <tr>
     <td><code>strrev</code></td>
-    <td>dreht die Ausgabe um</td>
+    <td>Dreht die Ausgabe um.</td>
     <td><a target="_blank" href="http://php.net/strrev">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>encodeEmail</code></td>
-    <td>kodiert E-Mail-Adressen in der Ausgabe</td>
+    <td>Kodiert E-Mail-Adressen in der Ausgabe.</td>
     <td>siehe <code>String::encodeEmail</code></td>
 </tr>
 <tr>
     <td><code>decodeEntities</code></td>
-    <td>dekodiert Entities in der Ausgabe</td>
+    <td>Dekodiert Entities in der Ausgabe.</td>
     <td>siehe <code>String::decodeEntities()</code></td>
 </tr>
 <tr>
     <td><code>number_format</code></td>
-    <td>formatiert eine Zahl (keine Dezimalstellen)</td>
+    <td>Formatiert eine Zahl (keine Dezimalstellen).</td>
     <td>siehe <code>System::getFormattedNumber()</code></td>
 </tr>
 <tr>
     <td><code>currency_format</code></td>
-    <td>formatiert eine Währung (zwei Dezimalstellen)</td>
+    <td>Formatiert eine Währung (zwei Dezimalstellen).</td>
     <td>siehe <code>System::getFormattedNumber()</code></td>
 </tr>
 <tr>
     <td><code>readable_size</code></td>
-    <td>wandelt die Ausgabe in ein menschenlesbares Format um</td>
+    <td>Wandelt die Ausgabe in ein menschenlesbares Format um.</td>
     <td>siehe <code>System::getReadableSize()</code></td>
 </tr>
 <tr>
