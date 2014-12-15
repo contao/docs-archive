@@ -9,7 +9,7 @@ welche Dinge dabei zu beachten sind.
 Contao bietet die Möglichkeit, mittels so genannter Inserttags (Platzhalter)
 beim Laden der Webseite bestimmte Inhalte zu ersetzen. Ist der Seiten Cache
 eingeschaltet, werden eigene Inserttags ersetzt vor der Abspeicherung der
-Seite im Cache.  Es ist jedoch möglich, daß der Inserttag Platzhalter selbst
+Seite im Cache.  Es ist jedoch möglich, dass der Inserttag Platzhalter selbst
 im Cache  gespeichert wird und dieser dann erst direkt vor Auslieferung an den
 Browser ersetzt wird mittels einem Präfix "cache_".   
 Beides wird im Code-Beispiel erläutert.
@@ -18,16 +18,16 @@ Beides wird im Code-Beispiel erläutert.
 ## Eigene Inserttags erstellen  
 
 Um Inserttags nutzen zu können und demzufolge auch eigene anzubieten, gibt es
-in Contao einen Hook "replaceInsertTags ". Um einen eigenen Inserttag zu
-erstellen muss man den Ablauf kennen:
+in Contao einen Hook "replaceInsertTags ". Um ein eigenes Inserttag zu
+erstellen, muss man den Ablauf kennen:
 
 1. Contao parst den Seiteninhalt und stößt dabei auf ein Inserttag
-2. Contao versucht diesen Inserttag mit den Core-Möglichkeiten zu ersetzen
-3. Wenn Contao den Inserttag nicht kennt, wird es an den Hook
+2. Contao versucht dieses Inserttag mit den Core-Möglichkeiten zu ersetzen
+3. Wenn Contao das Inserttag nicht kennt, wird es an den Hook
     "replaceInsertTags" weitergereicht.
 
 Dieser Hook erhält das unbekannte Inserttag als Parameter. Der Entwickler
-muss nun prüfen ob er das unbekannte Inserttag ersetzen möchte. Wenn ja, gibt
+muss nun prüfen, ob er das unbekannte Inserttag ersetzen möchte. Wenn ja, gibt
 er einen beliebigen Content zurück. Wenn der Entwickler nichts mit dem
 unbekannten Inserttag anfangen kann, so muss `false` zurück gegeben werden.
 Wird das nicht getan, ist die gesamte Hook Kette unterbrochen, nachfolgende
@@ -37,7 +37,7 @@ aufgerufen!
 
 ## Code-Beispiel
 
-In diesem Code-Beispiel soll der Inserttag {{foo::bar}} ersetzt werden durch
+In diesem Code-Beispiel soll das Inserttag {{foo::bar}} ersetzt werden durch
 das Modul "myinserttag". Als erstes muss der Hook registriert werden.
 
 ``` {.php}
@@ -50,7 +50,7 @@ $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MyClass', 'myReplaceInsertT
 Nach der Registrierung im Hook muss eine Klasse erstellt werden, welche die
 Methode zur Ersetzung beinhaltet. Dabei muss der Name der Klasse und der
 Methode identisch sein wie bei der Hook Registration. Außerdem muss der Name
-der Datei (ohne Endung) identisch sein wie der Name der Klasse.
+der Datei (ohne Endung) identisch sein mit dem Name der Klasse.
 
 ``` {.php}
 // Datei /system/modules/myinserttag/MyClass.php
@@ -81,21 +81,21 @@ class MyClass extends Frontend
 }
 ```
 
-Wenn man einen zweigeteilten Inserttag verwendet, splittet man den Tag mittels
-`explode` anhand des Gültigkeitsbereichsoperator  `::`. Die geschweiften
+Wenn man ein zweigeteiltes Inserttag verwendet, splittet man das Tag mittels
+`explode` anhand des Gültigkeitsbereichsoperators  `::`. Die geschweiften
 Klammern werden bereits von Contao entfernt und müssen daher nicht mehr
 entfernt werden. Im Code-Beispiel wurde zusätzlich noch eine Ausgabe
 erzeugt, wenn der Parameter "bar" nicht angegeben wurde.
 
-Damit Contao 3 nun die Klasse findet, muss nun im Backend der Autoload
+Damit Contao 3 die Klasse findet, muss nun im Backend der Autoload
 Generator für dieses Modul aufgerufen werden, um die autoload.php im config
 Verzeichnis zu generieren.
 
 
 ## Code-Beispiel mit Namespace
 
-Ist die Klasse innerhalb eines Namespaces, ändert sich der Syntax ein wenig.
-Ansonsten gelten die selben bereits genannten Hinweise.
+Ist die Klasse innerhalb eines Namespaces, ändert sich die Syntax ein wenig.
+Ansonsten gelten die selben, bereits genannten Hinweise.
 
 ``` {.php}
  // Datei /system/modules/myinserttag/config/config.php
