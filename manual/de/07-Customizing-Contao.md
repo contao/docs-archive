@@ -8,7 +8,7 @@ Ablauf der Contao Core-Engine beeinflussen, ohne dabei deren Dateien ändern zu
 müssen.
 
 
-##Internen Cache umgehen 
+## Internen Cache umgehen 
 
 Vor der Anpassung von Contao oder der Entwicklung von Erweiterungen sollte 
 unbedingt der interne Cache deaktiviert bzw. umgangen werden.
@@ -27,7 +27,7 @@ Cache gerade bei größeren Projekten um einiges langsamer reagiert.
 Die Contao-Konfiguration ist in drei Bestandteile aufgeteilt: die
 Systemkonfiguration, die DCA-Konfiguration und die Sprachkonfiguration. Das
 globale Konfigurationsarray wird zur Laufzeit aus denjenigen Bestandteilen
-zusammengesetzt, die für die Ausgabe einer Seiten gebraucht werden. Um Zeit und
+zusammengesetzt, die für die Ausgabe einer Seite gebraucht werden. Um Zeit und
 Arbeitsspeicher zu sparen, werden nicht benötigte Konfigurationsdateien dabei
 übersprungen.
 
@@ -319,7 +319,7 @@ public function myAddComment($intId, $arrSet)
 
 Der "addCustomRegexp"-Hook wird beim Antreffen eines unbekannten regulären
 Ausdrucks ausgeführt. Er übergibt den Namen des Ausdrucks, den aktuellen Wert
-und das Widget-Objekt als Argument und erwartet einen boolschen Rückgabewert.
+und das Widget-Objekt als Argument und erwartet einen booleschen Rückgabewert.
 Hinzugefügt in Version 2.6.2.
 
 ``` {.php}
@@ -366,7 +366,7 @@ public function myAddLogEntry($strText, $strFunction, $strAction)
 
 Der "checkCredentials"-Hook wird bei der Eingabe eines falschen Passworts bei der
 Anmeldung ausgeführt. Er übergibt den Benutzernamen und das Passwort sowie das
-Benutzer-Objekt als Argument und erwartet einen boolschen Rückgabewert.
+Benutzer-Objekt als Argument und erwartet einen booleschen Rückgabewert.
 Hinzugefügt in Version 2.6.0.
 
 ``` {.php}
@@ -498,7 +498,7 @@ public function myExecutePreActions($strAction)
 ### executePostActions
 
 Der "executePostActions"-Hook wird bei unbekannten Ajax-Anfragen ausgegeben, die
-eine DCA-Objekt benötigen. Er übergibt den Namen der Aktion und das
+ein DCA-Objekt benötigen. Er übergibt den Namen der Aktion und das
 DataContainer-Objekt als Argument und erwartet keinen Rückgabewert. Hinzugefügt
 in Version 2.6.1.
 
@@ -704,7 +704,7 @@ public function myInitializeSystem()
 
 Der "importUser"-Hook wird beim Antreffen eines unbekannten Benutzernamens
 ausgeführt. Er übergibt den Benutzernamen, das Passwort und den Tabellennamen
-als Argument und erwartet einen boolschen Rückgabewert. Hinzugefügt in Version
+als Argument und erwartet einen booleschen Rückgabewert. Hinzugefügt in Version
 2.7.RC1.
 
 ``` {.php}
@@ -1002,10 +1002,29 @@ public function myPostUpload($arrFiles)
 ```
 
 
+### prepareFormData
+
+Der `prepareFormData`-Hook wird beim Absenden eines Formulars ausgeführt. 
+Er übergibt die Formulardaten, die Feldbezeichnungen und das Formular-Objekt. 
+Damit lassen sich die Daten ändern oder erweitern, bevor Aktionen wie 
+z.B. E-Mail Versand oder in der Datenbank speichern ausgeführt wird.
+
+```{.php}
+// config.php
+$GLOBALS['TL_HOOKS']['prepareFormData'][] = array('MyClass', 'myPrepareFormData');
+
+// MyClass.php
+public function myPrepareFormData(&$arrSubmitted, $arrLabels, $objForm)
+{
+    // Beliebiger Code
+}
+```
+
+
 ### printArticleAsPdf
 
-Der "printArticleAsPdf"-Hook wird beim der Ausgabe eines Artikels im PDF-Format
-ausgeführt. Er übergibt den Artikeltext und das Artikelobjekt  als Argument
+Der "printArticleAsPdf"-Hook wird bei der Ausgabe eines Artikels im PDF-Format
+ausgeführt. Er übergibt den Artikeltext und das Artikelobjekt als Argument
 und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.8.RC1.
 
 ``` {.php}
@@ -1105,7 +1124,7 @@ public function myReplaceInsertTags($strTag)
 Der "reviseTable"-Hook wird beim Bereinigen verwaister Datensätze einer Tabelle
 ausgeführt. Er übergibt den Namen der Tabelle, die IDs aller neu angelegten
 Datensätze, den Namen der Elterntabelle und die Namen aller Kindtabellen als
-Argument und erwartet einen boolschen Rückgabewert. Geben Sie `true` zurück,
+Argument und erwartet einen booleschen Rückgabewert. Geben Sie `true` zurück,
 um die Seite neu zu laden. Hinzugefügt in Version 2.6.4.
 
 ``` {.php}

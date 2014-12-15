@@ -1,7 +1,7 @@
 # Die Toggle-Funktion in eigenen Erweiterungen nutzen
 
-Die Toggle-Funktion wird in Contao in der Regel durch ein grüne Auge 
-symbolisiert und dient dem schnellen ein- und ausblenden von Datensätzen 
+Die Toggle-Funktion wird in Contao in der Regel durch ein grünes Auge 
+symbolisiert und dient dem schnellen Ein- und Ausblenden von Datensätzen 
 über die Listenansicht.
 
 Es sind vier Schritte nötig: 
@@ -33,7 +33,7 @@ $GLOBALS['TL_DCA']['tl_example']['fields']['published'] = array
 *`tl_example` ist durch den Namen der Tabelle zu ersetzen!*
 
 
-## 2. Einfügen einer Aktion in den DCA
+## 2. Einfügen einer Aktion in das DCA
 ```{.php}
 $GLOBALS['TL_DCA']['tl_example']['list']['operations']['toggle'] = array
 (
