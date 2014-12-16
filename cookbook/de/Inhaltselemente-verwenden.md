@@ -65,6 +65,14 @@ Alles was du machen musst, sind die folgenden drei Schritte:
         'icon'                => 'edit.gif'
     ),
     ```
+4. Hinzufügen von `tl_content` Table zu den erlaubten Tabellen
+
+    ``` {.php}
+    // system/modules/news/config/config.php
+    $GLOBALS['BE_MOD']['content']['news'] = array (
+    	'tables' 		=> array('tl_news','tl_content')
+    )
+    ```
 
 Das war's. Du kannst jetzt Inhaltselemente in deinem eigenen DCA nutzen.
 
