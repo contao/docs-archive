@@ -869,6 +869,28 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
 ```
 
 
+### parseTemplate
+
+The `parseTemplate` hook is called before the parsing process of a template. 
+It receives a `Template` instance (can be `FrontendTemplate` or 
+`BackendTemplate`) as the only parameter and does not expect any 
+return value. Added in version 2.10.0.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['parseTemplate'][] = array('MyClass', 'myParseTemplate');
+
+// MyClass.php
+public function myParseTemplate($objTemplate)
+{
+    if ($objTemplate->getName() == 'mod_html')
+    {
+        // Modify object
+    }
+}
+```
+
+
 ### postDownload
 
 The "postDownload" hook is triggered after a file has been downloaded with the
