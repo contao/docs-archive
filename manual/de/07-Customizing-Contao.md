@@ -858,6 +858,26 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
 }
 ```
 
+### parseTemplate
+
+Der "parseTemplate"-Hook wird vor der Verarbeitung eines Templates ausgeführt. 
+Er übergibt die `Template`-Instanz als Argument (kann `FrontendTemplate` und 
+`BackendTemplate` sein) und erwartet keinen Rückgabewert. 
+Hinzugefügt in Version 2.10.0.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['parseTemplate'][] = array('MyClass', 'myParseTemplate');
+
+// MyClass.php
+public function myParseTemplate($objTemplate)
+{
+    if ($objTemplate->getName() == 'mod_html')
+    {
+        // Objekt modifizieren
+    }
+}
+```
 
 ### postDownload
 
