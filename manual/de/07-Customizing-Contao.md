@@ -860,9 +860,9 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
 
 ### parseTemplate
 
-Der "parseTemplate"-Hook wird vor der Verarbeitung eines
-Frontend-Templates ausgeführt. Er übergibt die Template Instanz als
-Argument  (kann beides sein, FrontendTemplate und BackendTemplate) und erwartet keinen Rückgabewert.
+Der "parseTemplate"-Hook wird vor der Verarbeitung eines Templates ausgeführt. 
+Er übergibt die `Template`-Instanz als Argument (kann `FrontendTemplate` und 
+`BackendTemplate` sein) und erwartet keinen Rückgabewert. 
 Hinzugefügt in Version 2.10.0.
 
 ``` {.php}
