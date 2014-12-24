@@ -432,6 +432,37 @@ public function myCompileDefinition($arrRow)
 ```
 
 
+### compileFormFields
+
+Der "compileFormFields"-Hook wird vor der Ausgabe eines Formulars ausgeführt. 
+Er übergibt ein Array mit FormFieldModel-Objekten, die Form-Id und das Formular-Objekt als 
+Argument und erwartet das Array mit FormFieldModel-Objekten als Rückgabewert. Hier können 
+Formularfelder dynamisch angepasst werden, bevor sie ausgegeben werden. 
+Hinzugefügt in Version 3.2.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'myCompileFormFields');
+
+// MyClass.php
+public function myCompileFormFields($arrFields, $formId, $this)
+{
+    if ($formId == 'my_form_id') 
+    {
+        foreach ($arrFields AS $objFields) 
+        {
+		if ($objFields->name == 'my_form_field_1') 
+		{
+			// Beliebiger Code
+        	}
+	}
+    }
+    
+    return $arrFields;
+}
+```
+
+
 ### createDefinition
 
 Der "createDefinition"-Hook wird beim Import einer Formatdefinition eines
