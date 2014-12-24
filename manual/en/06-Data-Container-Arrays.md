@@ -284,7 +284,8 @@ order and you can add custom labels.
 <tr>
   <td>fields</td>
   <td>Fields (<code>array</code>)</td>
-  <td>One or more fields that will be shown in the list.</td>
+  <td>One or more fields that will be shown in the list (e.g.
+      <code>array('title', 'user_id:tl_user.name')</code>).</td>
 </tr>
 <tr>
   <td>format</td>

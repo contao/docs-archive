@@ -248,8 +248,7 @@ Das Live Update umfasst folgende Funktionen:
 99% aller Live Update-Probleme sind auf unzureichende Datei-Zugriffsrechte
 zurück zu führen. Contao benötigt Schreibrechte, um Dateien und Ordner zu
 verwalten, daher sollten Sie als erstes Ihre Serverkonfiguration prüfen und
-sicherstellen, dass der Safe Mode Hack **so wie in diesem Handbuch beschrieben**
-konfiguriert ist!
+sicherstellen, dass der Safe Mode Hack **so wie in diesem Handbuch beschrieben** konfiguriert ist!
 
 
 #### Support erhalten
