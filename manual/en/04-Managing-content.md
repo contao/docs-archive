@@ -1443,8 +1443,9 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
-  <td>This tag will be replaced with the thumbnail of an image:
-      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br>
+  <td>This tag will be replaced with the thumbnail of an image (replace * 
+  with the database ID, UUID or a file system path): 
+      <code>{{image::58ca4a90-2d30-11e4-8c21-0800200c9a66?width=200&amp;height=150}}</code>.<br>
       <strong>width</strong>: Thumbnail width,<br>
       <strong>height</strong>: Thumbnail height,<br>
       <strong>alt</strong>: Alternative text,<br>
@@ -1643,6 +1644,18 @@ Available flags:
     target="_blank">Base64 algorithm</a>.</td>
     <td><a target="_blank" 
     href="http://php.net/base64_decode">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>urlencode</code></td>
+    <td>URL-encodes strings.</td>
+    <td><a target="_blank" 
+    href="http://php.net/urlencode">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>rawurlencode</code></td>
+    <td>URL-encode according to RFC 3986.</td>
+    <td><a target="_blank" 
+    href="http://php.net/rawurlencode">PHP function</a></td>
 </tr>
 </table>
 

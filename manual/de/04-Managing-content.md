@@ -1451,8 +1451,9 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
-  <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt:
-      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br>
+  <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt (wobei * 
+  eine Datenbank ID, eine UUID oder ein Pfad aus dem Dateisystem sein kann): 
+<code>{{image::58ca4a90-2d30-11e4-8c21-0800200c9a66?width=200&amp;height=150}}</code>.<br>
       <strong>width</strong>: Breite des Vorschaubildes,<br>
       <strong>height</strong>: Höhe des Vorschaubildes,<br>
       <strong>alt</strong>: Alternativer Text,<br>
@@ -1652,6 +1653,18 @@ Verfügbare Flags:
     target="_blank">Base64-Verfahrens</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_decode">PHP-Funktion</a>
     </td>
+</tr>
+<tr>
+    <td><code>urlencode</code></td>
+    <td>URL-kodiert einen String.</td>
+    <td><a target="_blank" 
+    href="http://php.net/urlencode">PHP-Funktion</a></td>
+</tr>
+<tr>
+    <td><code>rawurlencode</code></td>
+    <td>URL-Kodierung nach RFC 3986.</td>
+    <td><a target="_blank" 
+    href="http://php.net/rawurlencode">PHP-Funktion</a></td>
 </tr>
 </table>
 
