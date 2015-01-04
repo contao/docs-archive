@@ -1007,6 +1007,28 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
 ```
 
 
+### parseTemplate
+
+Le hook "parseTemplate" est déclenché avant le processus d'analyse d'un modèle.
+Il reçoit une instance `Template` (qui peut être `FrontendTemplate` ou 
+`BackendTemplate`) en argument et n'attend pas de valeur de retour. Il est
+disponible à partir de la version 2.10.0.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['parseTemplate'][] = array('MyClass', 'myParseTemplate');
+
+// MyClass.php
+public function myParseTemplate($objTemplate)
+{
+    if ($objTemplate->getName() == 'mod_html')
+    {
+        // Modifier l'objet
+    }
+}
+```
+
+
 ### postDownload
 
 Le hook "postDownload" est déclenché après qu'un fichier ait été téléchargé 
