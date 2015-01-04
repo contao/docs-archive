@@ -1294,9 +1294,10 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
-  <td>Cette balise sera remplacée par une vignette d'image : 
-      <code>{{image::files/image.jpg?width=200&amp;height=150}}</code>.<br />
-      <strong>width</strong>: Largeur de la vignette,<br />
+  <td>Cette balise sera remplacée par une vignette d'image (remplacer * 
+  avec l'ID de base de données, UUID ou un chemin de fichier système) :
+      <code>{{image::58ca4a90-2d30-11e4-8c21-0800200c9a66?width=200&amp;height=150}}</code>.
+      <br /><strong>width</strong>: Largeur de la vignette,<br />
       <strong>height</strong>: Hauteur de la vignette,<br />
       <strong>alt</strong>: Texte alternatif,<br />
       <strong>class</strong>: Classe CSS,<br />
