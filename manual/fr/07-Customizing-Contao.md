@@ -464,6 +464,37 @@ public function myCompileDefinition($arrRow)
 ```
 
 
+### compileFormFields
+
+Le hook "compileFormFields" est déclenché avant qu'un champ de formulaire soit
+chargé. Il passe un tableau d'objets FormFieldModel ainsi que l'ID et l'objet
+du formulaire en arguments et attend le tableau d'objets FormFieldModel comme
+valeur de retour. Avec ce hook, les champs de formulaire peuvent être ajustés
+dynamiquement avant l'affichage. Il est disponible à partir de la version 3.2.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'myCompileFormFields');
+
+// MyClass.php
+public function myCompileFormFields($arrFields, $formId, $this)
+{
+    if ($formId == 'my_form_id') 
+    {
+        foreach ($arrFields AS $objFields) 
+        {
+		if($objFields->name == 'my_form_field_1') 
+		{
+			// Faire quelque chose
+        	}
+	}
+    }
+    
+    return $arrFields;
+}
+```
+
+
 ### createDefinition
 
 Le hook "createDefinition" est déclenché quand une définition de formatage 
