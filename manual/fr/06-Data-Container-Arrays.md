@@ -285,7 +285,8 @@ filtres ou un ordre de tri par défaut et ajouter des libellés personnalisés.
 <tr>
   <td>fields</td>
   <td>Champs (<code>array</code>)</td>
-  <td>Un ou plusieurs champs qui seront affichés dans la liste.</td>
+  <td>Un ou plusieurs champs qui seront affichés dans la liste. (par exemple
+      <code>array('title', 'user_id:tl_user.name')</code>).</td>
 </tr>
 <tr>
   <td>format</td>
