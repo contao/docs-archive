@@ -968,7 +968,7 @@ The "prepareFormData" hook is triggered after a form has been submitted.
 It passes the form data array, the form labels array and the form object as
 arguments and does not expect a return value. This way the data can be 
 changed or extended, prior to execution of actions like email distribution 
-or data storage. It is available from version 2.4.4.
+or data storage. It is available from version 3.0.0.
 
 ``` {.php}
 // config.php

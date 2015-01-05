@@ -959,7 +959,8 @@ public function myPostUpload($arrFiles)
 Der `prepareFormData`-Hook wird beim Absenden eines Formulars ausgeführt. 
 Er übergibt die Formulardaten, die Feldbezeichnungen und das Formular-Objekt. 
 Damit lassen sich die Daten ändern oder erweitern, bevor Aktionen wie 
-z.B. E-Mail Versand oder in der Datenbank speichern ausgeführt wird.
+z.B. E-Mail Versand oder in der Datenbank speichern ausgeführt wird. 
+Hinzugefügt in Version 3.0.0.
 
 ```{.php}
 // config.php
