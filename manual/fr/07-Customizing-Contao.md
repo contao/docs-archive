@@ -1103,6 +1103,27 @@ public function myPostUpload($arrFiles)
 ```
 
 
+### prepareFormData
+
+Le hook "prepareFormData" est déclenché après qu'un formulaire a été soumis.
+Il passe le tableau des données, le tableau des labels et l'objet du formulaire
+comme arguments et n'attend pas de valeur de retour. De cette façon, les données
+peuvent être modifiées ou étendues, avant l'exécution des actions comme l'envoi
+de messagerie ou le stockage de données. Il est disponible à partir de la
+version 3.0.0.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['prepareFormData'][] = array('MyClass', 'myPrepareFormData');
+
+// MyClass.php
+public function myPrepareFormData(&$arrSubmitted, $arrLabels, $objForm)
+{
+    // Faire quelque chose
+}
+```
+
+
 ### printArticleAsPdf
 
 Le hook "printArticleAsPdf" est déclenché lorsqu'un article est exporté au 
