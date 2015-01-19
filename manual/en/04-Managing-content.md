@@ -802,7 +802,7 @@ each update.
 
 Create a new folder and add one or more templates you want to edit. Subsequently, 
 do not forget to attach the folder to the theme as explained in the paragraph 
-[Theme components][4].
+[Theme components][8].
 
 A template can be a part of the structure of a module, a content element, a form, 
 etc. and that is why they are prefixed. They can be easily grouped, ordered and 
