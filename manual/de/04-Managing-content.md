@@ -797,6 +797,33 @@ Contao versteht folgende Tags:
 </table>
 
 
+## Templates
+
+Ein Template enthält meist HTML und PHP code. Es wird zur Ausgabe von Inhalten 
+eines Moduls oder Inhaltelements etc. verwendet. Beispielsweise gibt das 
+Template `news_full.html5` eine vollständige Nachricht aus, während das Template 
+`news_short.html5` nur einen Teil davon anzeigt.
+
+Templates befinden sich direkt in den dazugehören Modulen. Das `news_full.html5` 
+Template befindet sich beispielsweise in `system/modules/news/templates/news`.
+
+Falls diese Datei direkt in diesem Ordner bearbeitet wird, **gehen die Änderungen** 
+bei einem nächsten Update von Contao **verloren**. Um dies zu vermeiden, 
+Templates können im Backend bearbeitet werden. Dabei wird die Datei kopiert um 
+Änderungen während einem Update nicht zu verlieren.
+
+![](https://raw.github.com/contao/docs/3.1/manual/de/images/templates.jpg)
+
+Unter dem Menüpunkt *Templates* können die Dateien bearbeitet und in Ordnern 
+abgelegt werden. Ordner müssen wie unter [Theme-Bestandteile][8] beschrieben 
+einem Theme zugewiesen sein.
+
+Ein Template gehört zu einem Modul, einem Inhaltselement, einem Formular oder 
+anderen Komponenten. Sie werden zur einfacheren Erkennung deshalb meist mit 
+einem Präfix versehen. Beispielsweise deutet `j_` auf jQuery oder `nl_` auf 
+ein Newsletter-Template.
+
+
 ## Markdown
 
 Markdown ist eine einfache Auszeichnungssprache, die es erlaubt, Text mittels
@@ -949,7 +976,7 @@ Sortierte Listen verwenden Zahlen:
 #### Weitere Informationen
 
 Für eine komplette Dokumentation zu Markdown, besuchen Sie die offizielle
-Webseite unter folgendem [Link][8].
+Webseite unter folgendem [Link][9].
 
 
 ### Erweiterter Syntax
@@ -996,7 +1023,7 @@ Die Fußnoten-Definition kann an beliebiger Stelle im Dokument platziert werden.
 #### Weitere Informationen
 
 Für eine komplette Dokumentation zu Markdown Extra, besuchen Sie die
-offizielle Webseite unter folgendem [Link][9].
+offizielle Webseite unter folgendem [Link][10].
 
 
 ## Inserttags
@@ -1673,5 +1700,6 @@ Verfügbare Flags:
 [2]: http://de.wikipedia.org/wiki/Opt-in
 [3]: 04-Managing-content.md#inserttags
 [7]: http://de.wikipedia.org/wiki/BBCode
-[8]: http://daringfireball.net/projects/markdown/syntax
-[9]: http://michelf.ca/projects/php-markdown/extra
+[8]: 03-Managing-pages.md#theme-bestandteile
+[9]: http://daringfireball.net/projects/markdown/syntax
+[10]: http://michelf.ca/projects/php-markdown/extra

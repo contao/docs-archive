@@ -787,6 +787,34 @@ parameter).</td>
 </table>
 
 
+## Templates
+
+A template is mainly composed of HTML and PHP code. It is used to structure a 
+piece of content of a module or a content element, etc. For example, the 
+template `news_full.html5` displays the full content of a news item whereas the 
+template `news_short.html5` displays only a portion of this content.
+
+The templates are located in their own modules. For example, `news_full.html5` 
+is located under `system/modules/news/templates/news`.
+
+If you edit this file directly in this folder, it will be overwritten the next 
+time you will update Contao and **you will lose** all your changes. To avoid 
+this, Contao allows you to modify the templates directly from the back end. In 
+this case, the file is duplicated and your changes will be preserved during 
+each update.
+
+![](https://raw.github.com/contao/docs/3.1/manual/en/images/templates.jpg)
+
+Create a new folder and add one or more templates you want to edit. Subsequently, 
+do not forget to attach the folder to the theme as explained in the paragraph 
+[Theme components][4].
+
+A template can be a part of the structure of a module, a content element, a form, 
+etc. and that is why they are prefixed. They can be easily grouped, ordered and 
+recognized. For example: the prefix `j_` means "jQuery" and `nl_` means 
+"newsletter".
+
+
 ## Markdown
 
 Markdown is a lightweight markup language that allows you to format text with
@@ -938,7 +966,7 @@ Ordered lists use numbers:
 #### Further information
 
 For a complete documentation about Markdown, please refer to the official
-website by following this [link][8].
+website by following this [link][9].
 
 
 ### Extended syntax
@@ -985,7 +1013,7 @@ The footnote definition can be added anywhere in the document.
 #### Further information
 
 For a complete documentation about Markdown Extra, please refer to the official
-website by following this [link][9].
+website by following this [link][10].
 
 
 ## Insert tags
@@ -1664,5 +1692,6 @@ Available flags:
 [2]: http://en.wikipedia.org/wiki/Opt_in_e-mail
 [3]: 04-Managing-content.md#insert-tags
 [7]: http://en.wikipedia.org/wiki/BBCode
-[8]: http://daringfireball.net/projects/markdown/syntax
-[9]: http://michelf.ca/projects/php-markdown/extra
+[8]: 03-Managing-pages.md#theme-components
+[9]: http://daringfireball.net/projects/markdown/syntax
+[10]: http://michelf.ca/projects/php-markdown/extra
