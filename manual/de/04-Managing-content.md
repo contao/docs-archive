@@ -1084,6 +1084,10 @@ ausgegeben werden.
 </tr>
 <tr>
   <td><code>{{page::rootTitle}}</code></td>
+  <td>Dieses Tag wird mit dem Namen der Webseite ersetzt.</td>
+</tr>
+<tr>
+  <td><code>{{page::rootPageTitle}}</code></td>
   <td>Dieses Tag wird mit dem Titel der Webseite ersetzt.</td>
 </tr>
 </table>

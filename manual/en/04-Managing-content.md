@@ -1079,6 +1079,10 @@ The following Insert Tags allow you to display any property of the current page.
 </tr>
 <tr>
   <td><code>{{page::rootTitle}}</code></td>
+  <td>This tag will be replaced with the name of the website.</td>
+</tr>
+<tr>
+  <td><code>{{page::rootPageTitle}}</code></td>
   <td>This tag will be replaced with the title of the website.</td>
 </tr>
 </table>
