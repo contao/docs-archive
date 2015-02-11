@@ -1201,7 +1201,9 @@ le répertoire "templates".
   <td>Cette balise sera remplacée par le contenu d'un fichier se trouvant dans 
   le dossier "templates" (remplacez * par le nom du fichier). Vous pouvez aussi 
   fournir des arguments : <code>{{file::file.php?arg1=val&amp;arg2=val}}</code>.
-  </td>
+  Vous pouvez également récupérer le chemin d'un fichier à partir de la base de
+  données avec son UUID :
+  <code>{{file::6939a448-9b30-11e4-bcba-079af1e9baea}}</code>.</td>
 </tr>
 </table>
 
