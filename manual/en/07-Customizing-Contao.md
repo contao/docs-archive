@@ -171,14 +171,14 @@ Contao will not save the value and show an error message instead.
 ## Customizing TinyMCE
 
 This page explains how to customize the Rich Text Editor and save the changes so
-they will not be overriden on the next Contao update. Note that Contao does not
+they will not be overridden on the next Contao update. Note that Contao does not
 include all TinyMCE plugins by default, so if you want to use a certain plugin
 that is not part of the Contao distribution, download it from the [TinyMCE
 project website][4] and move it into the `plugins/tinyMCE/plugins` folder.
 
 ![](images/rich-text-editor.jpg?raw=true)
 
-To image above shows the default Rich Text Editor configuration file
+The image above shows the default Rich Text Editor configuration file
 `system/config/tinyMCE.php`. To create a custom configuration file, simply copy
 it and rename it e.g. to `tinyCustom.php`. Then apply your changes and save the
 new file. The last step is to adjust the [data container configuration][5] in
