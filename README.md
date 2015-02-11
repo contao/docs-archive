@@ -13,12 +13,12 @@ Documentation of Contao APIs (Hooks, Callbacks, Core classes) (not yet used).
 
 ## Cookbook
 
-Practical information and tipps (not yet used).
+Practical information and tipps (see the [cookbook online][1]).
 
 
 ## Manual
 
-Official manual for users and developers (see [contao.org][1]).
+Official manual for users and developers (see the [manual online][2]).
 
 
 ## Playground
@@ -26,4 +26,5 @@ Official manual for users and developers (see [contao.org][1]).
 Space for testing new projects.
 
 
-[1]: https://contao.org/en/manual.html
+[1]: https://contao.org/en/cookbook.html
+[2]: https://contao.org/en/manual.html
