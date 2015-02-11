@@ -87,7 +87,7 @@ Die Methode akzeptiert ein Array mit folgenden Werten:
 		<th>Schlüssel</th>
 		<th>Typ</th>
 		<th>Beschreibung</th>
-	<tr>
+	</tr>
 	<tr>
 		<td>column</td>
 		<td>mixed</td>
