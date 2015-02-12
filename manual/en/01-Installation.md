@@ -202,6 +202,16 @@ it and enter your password, then scroll down to the database section and confirm
 the changes.
 
 
+### Purge the internal cache
+
+Finally you should also rebuild the internal cache (for DCA and language files). 
+In the backend go to "Maintenance" and check "Purge the internal cache" in 
+the "Purge data" section. Confirm the action by clicking on "Purge data".
+
+You will now receive a message in the header asking to rebuild the internal 
+cache. Click on "Build the cache" to cache the internal files.
+
+
 ## Live Update Service
 
 The Contao Live Update Service is a commercial Contao add-on provided by [iNet
