@@ -13,12 +13,12 @@ Documentation of Contao APIs (Hooks, Callbacks, Core classes) (not yet used).
 
 ## Cookbook
 
-Practical information and tipps (see the [cookbook online][1]).
+Practical information and tipps (see the [cookbook on contao.org][1]).
 
 
 ## Manual
 
-Official manual for users and developers (see the [manual online][2]).
+Official manual for users and developers (see the [manual on contao.org][2]).
 
 
 ## Playground
