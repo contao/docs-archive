@@ -1390,7 +1390,9 @@ modules or files from the "templates" directory.
   <td><code>{{file::*}}</code></td>
   <td>This tag will be replaced with the content of a file from the "templates"
       directory (replace * with the file name). You can also provide arguments:
-      <code>{{file::file.php?arg1=val&amp;arg2=val}}</code>.</td>
+      <code>{{file::file.php?arg1=val&amp;arg2=val}}</code>.
+      You can also retrieve the path of a file from the database with its UUID:
+      <code>{{file::6939a448-9b30-11e4-bcba-079af1e9baea}}</code>.</td>
 </tr>
 </table>
 
