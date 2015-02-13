@@ -222,6 +222,18 @@ puis faites défiler la page vers le bas jusqu'à la section base de données et
 confirmez les modifications.
 
 
+### Purger le cache interne
+
+Finalement, vous devez également reconstruire le cache interne (pour les DCA et
+les fichiers de langue). Dans le back office, allez à "Maintenance du système"
+et cochez "Purger le cache interne" dans la section "Nettoyer les données".
+Confirmez l'action en cliquant sur "Nettoyer les données".
+
+Vous recevrez un message dans l'en-tête demandant de reconstruire le cache
+interne. Cliquez sur "Construire le cache" pour mettre en cache les fichiers
+internes.
+
+
 ## Live Update Service
 
 Le "Contao Live Update Service" est un service commercial proposé par [iNet 

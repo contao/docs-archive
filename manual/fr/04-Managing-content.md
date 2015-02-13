@@ -1098,6 +1098,10 @@ propriété de la page courante.
 </tr>
 <tr>
   <td><code>{{page::rootTitle}}</code></td>
+  <td>Cette balise sera remplacée par le nom du site internet.</td>
+</tr>
+<tr>
+  <td><code>{{page::rootPageTitle}}</code></td>
   <td>Cette balise sera remplacée par le titre du site internet.</td>
 </tr>
 </table>
