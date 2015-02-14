@@ -743,11 +743,11 @@ this, Contao allows you to modify the templates directly from the back end. In
 this case, the file is duplicated and your changes will be preserved during 
 each update.
 
-![](https://raw.github.com/contao/docs/3.1/manual/en/images/templates.jpg)
+![](images/templates.jpg?raw=true)
 
 Create a new folder and add one or more templates you want to edit. Subsequently, 
 do not forget to attach the folder to the theme as explained in the paragraph 
-[Theme components][4].
+[Theme components][8].
 
 A template can be a part of the structure of a module, a content element, a form, 
 etc. and that is why they are prefixed. They can be easily grouped, ordered and 
