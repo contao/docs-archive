@@ -1018,7 +1018,7 @@ website by following this [link][10].
 
 ## Insert tags
 
-Insert Tags are wildcards that are replaced with dynamic content when a page is
+Insert tags are wildcards that are replaced with dynamic content when a page is
 printed to the screen. They e.g. allow you to show the current date, address a
 front end user by his name or include a file. Insert tags can be used almost
 anywhere in Contao, even on cached pages.
@@ -1026,12 +1026,12 @@ anywhere in Contao, even on cached pages.
 
 ### Link elements
 
-The following Insert Tags allow you to link to another page or article using its
+The following insert tags allow you to link to another page or article using its
 ID or alias.
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Insert tag</th>
   <th>Description</th>
 </tr>
 <tr>
@@ -1154,12 +1154,12 @@ ID or alias.
 
 ### User properties
 
-The following Insert Tags allow you to display any property of the currently
+The following insert tags allow you to display any property of the currently
 logged in user.
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Insert tag</th>
   <th>Description</th>
 </tr>
 <tr>
@@ -1232,11 +1232,11 @@ logged in user.
 
 ### Page properties
 
-The following Insert Tags allow you to display any property of the current page.
+The following insert tags allow you to display any property of the current page.
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Insert tag</th>
   <th>Description</th>
 </tr>
 <tr>
@@ -1296,12 +1296,12 @@ The following Insert Tags allow you to display any property of the current page.
 
 ### Environment variables
 
-The following Insert Tags allow you to display environment variables like the
+The following insert tags allow you to display environment variables like the
 page name or the request string.
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Insert tag</th>
   <th>Description</th>
 </tr>
 <tr>
@@ -1343,12 +1343,12 @@ page name or the request string.
 
 ### Include elements
 
-The following Insert Tags allow you to include various resources like articles,
+The following insert tags allow you to include various resources like articles,
 modules or files from the "templates" directory.
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Insert tag</th>
   <th>Description</th>
 </tr>
 <tr>
@@ -1399,12 +1399,12 @@ modules or files from the "templates" directory.
 
 ### Miscellaneous
 
-The following Insert Tags allow you to perform miscellaneous tasks like adding
+The following insert tags allow you to perform miscellaneous tasks like adding
 the current date or including lightbox images.
 
 <table>
 <tr>
-  <th>Insert Tag</th>
+  <th>Insert tag</th>
   <th>Description</th>
 </tr>
 <tr>
