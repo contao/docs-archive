@@ -820,8 +820,8 @@ recognized. For example: the prefix `j_` means "jQuery" and `nl_` means
 The inheritance allow you to create a template based on a second template. This
 means that a template (child) inherits the content of a second template (parent).
 
-In order that the content of a template (parent) may be modified or completed
-in the template (child), it must be surrounded by an element named `block`.
+In order that the content of a parent template may be modified or completed
+in the child template, it must be surrounded by an element named `block`.
 
 A block is built as follows:
 
@@ -833,8 +833,8 @@ A block is built as follows:
 <?php $this->endblock(); ?>
 ```
 
-The example below shows a template (parent) with a block surrounding the
-content of the tag `head`.
+The example below shows a parent template with a block surrounding the
+content of the `head` tag.
 
 Template: `fe_page.html5`
 
@@ -853,8 +853,8 @@ Template: `fe_page.html5`
 </html>
 ```
 
-In the template (child) `fe_custom.html5`, we would add a style sheet in the `head`
-tag in addition to the inherited content of the template (parent) `fe_page.html5`.
+In the child template `fe_custom.html5`, a style sheet is added in the `head`
+tag in addition to the inherited content of the parent template `fe_page.html5`.
 
 Template: `fe_custom.html5`
 
@@ -869,7 +869,7 @@ Template: `fe_custom.html5`
 
 * The `extend()` function specifies the template name whose it inherits the
 content.
-* The `parent()` function allows to complete a block without deleting the
+* The `parent()` function allows to complete a block without replacing the
 inherited content.
 
 The output of the `fe_custom.html5` template will be:
