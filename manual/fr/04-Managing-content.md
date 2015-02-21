@@ -1496,17 +1496,31 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>base64_encode</code></td>
-    <td>Encode un texte en utilisant l'<a href="http://fr.wikipedia.org/wiki/
-    Base64" target="_blank">algorithme base64</a>.</td>
+    <td>Encode un texte en utilisant
+    l'<a href="http://fr.wikipedia.org/wiki/Base64"
+    target="_blank">algorithme base64</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_encode">Fonction PHP
     </a></td>
 </tr>
 <tr>
     <td><code>base64_decode</code></td>
-    <td>Décode un texte en utilisant l'<a href="http://fr.wikipedia.org/wiki/
-    Base64" target="_blank">algorithme base64</a>.</td>
+    <td>Décode un texte en utilisant
+    l'<a href="http://fr.wikipedia.org/wiki/Base64"
+    target="_blank">algorithme base64</a>.</td>
     <td><a target="_blank" href="http://php.net/base64_decode">Fonction PHP
     </a></td>
+</tr>
+<tr>
+    <td><code>urlencode</code></td>
+    <td>Encode une chaîne en URL.</td>
+    <td><a target="_blank" 
+    href="http://php.net/urlencode">Fonction PHP</a></td>
+</tr>
+<tr>
+    <td><code>rawurlencode</code></td>
+    <td>Encode une chaîne en URL, selon la RFC 3986.</td>
+    <td><a target="_blank" 
+    href="http://php.net/rawurlencode">Fonction PHP</a></td>
 </tr>
 </table>
 

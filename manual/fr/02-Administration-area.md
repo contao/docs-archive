@@ -10,7 +10,7 @@ compte sera bloqué durant 5 minutes.
 ## Liste d'enregistrements
 
 Contao supporte trois vues: une simple liste ("vue en liste"), une liste qui est 
-regroupée par sa table parente («vue parente») et une liste hiérarchique ("vue 
+regroupée par sa table parente ("vue parente") et une liste hiérarchique ("vue 
 arborescente"). Ces trois vues peuvent être utilisées pour lister des 
 enregistrements de n'importe quelle table ou de tables liées entre elles.
 

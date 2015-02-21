@@ -33,8 +33,7 @@ ouvrez le fichier `system/config/localconfig.php` dans un éditeur de texte,
 trouvez la ligne ci-dessous et définissez-là à `0`.
 
 ``` {.php}
-$GLOBALS['TL_CONFIG']['installCount'] = 0; // Ceci enlèvera le verrouillage 
-automatique
+$GLOBALS['TL_CONFIG']['installCount'] = 0; // Ceci enlèvera le verrouillage automatique
 ```
 
 
@@ -109,7 +108,7 @@ de réécriture par défaut est stocké dans le fichier `.htaccess.default` situ
 dans le répertoire de Contao. Renommez ce fichier en `.htaccess` afin que le 
 serveur Apache puisse le traiter, puis connectez-vous au back office et accédez 
 à la configuration du système. Sélectionnez "Ré-écrire les URLs" dans la section 
-"Configuration du front office" et enregistrez vos modifications. Maintenant 
+"Configuration du front office" et enregistrez vos modifications. Maintenant, 
 Contao génère des URLs statiques comme `home.html` au lieu de `index.php?id=12`.
 
 
@@ -358,8 +357,8 @@ Internet Explorer (à partir de la version 8).
 
 ### Contao Check
 
-Télécharger le "Contao Check" afin de savoir si votre serveur répond aux 
-exigences du système de Contao. Le script va vérifier si vous pouvez utiliser le 
+Télécharger "Contao Check" afin de savoir si votre serveur répond aux exigences
+du système de Contao. Le script va vérifier si vous pouvez utiliser le 
 référentiel d'extensions ainsi que le "Live Update" et si vous devez utiliser le 
 "Safe Mode Hack" ou non. Selon la configuration de votre système, vous pouvez 
 mettre en place une nouvelle installation de Contao avec l'installateur web ou 
@@ -370,7 +369,7 @@ valider une installation existante.
 Extrayez le fichier Zip, téléversez le dossier `check` dans votre répertoire 
 d'installation de Contao et ouvrez-le dans un navigateur Web.
 
-[Télécharger le Contao Check][8] | [Ouvrir le projet sur GitHub][9]
+[Télécharger Contao Check][8] | [Ouvrir le projet sur GitHub][9]
 
 
 ### Paramètres FAI spécifiques
