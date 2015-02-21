@@ -287,7 +287,7 @@ fonctionnalités personnalisées au cœur de Contao.
 
 ### activateAccount
 
-Le hook "activateAccount" est déclenché lorsqu'un nouveau compte en front 
+Le hook `activateAccount` est déclenché lorsqu'un nouveau compte en front 
 office est activé. Il passe l'objet User en argument et n'attend pas de 
 valeur de retour. Il est disponible à partir de la version 2.4.3.
 
@@ -306,7 +306,7 @@ public function myActivateAccount(Database_Result $objUser)
 
 ### activateRecipient
 
-Le hook "activateRecipient" est déclenché lorsqu'un nouveau destinataire d'une 
+Le hook `activateRecipient` est déclenché lorsqu'un nouveau destinataire d'une 
 newsletter est ajouté. Il passe l'adresse e-mail, les ID du destinataire et de 
 la liste de diffusion en arguments et n'attend pas de valeur de retour. Il est 
 disponible à partir de la version 2.8.RC1.
@@ -326,7 +326,7 @@ public function myActivateRecipient($strEmail, $arrRecipients, $arrChannels)
 
 ### addComment
 
-Le hook "addComment" est déclenché lorsqu'un commentaire est ajouté. Il passe 
+Le hook `addComment` est déclenché lorsqu'un commentaire est ajouté. Il passe 
 l'ID de l'enregistrement et le tableau de données en arguments et n'attend pas 
 de valeur de retour. Il est disponible à partir de la version 2.8.2.
 
@@ -344,7 +344,7 @@ public function myAddComment($intId, $arrSet)
 
 ### addCustomRegexp
 
-Le hook "addCustomRegexp" est déclenché lorsqu'une expression régulière inconnue 
+Le hook `addCustomRegexp` est déclenché lorsqu'une expression régulière inconnue 
 est trouvée. Il passe le nom de l'expression régulière, la valeur courante et 
 l'objet Widget en arguments et attend une valeur de retour de type booléen. Il 
 est disponible à partir de la version 2.6.2.
@@ -374,7 +374,7 @@ public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
 
 ### addLogEntry
 
-Le hook "addLogEntry" est déclenché lorsqu'une nouvelle entrée est ajoutée au 
+Le hook `addLogEntry` est déclenché lorsqu'une nouvelle entrée est ajoutée au 
 journal (log). Il passe le message, la fonction et l'action en arguments et 
 n'attend pas de valeur de retour. Il est disponible à partir de la version 
 2.8.RC1.
@@ -393,7 +393,7 @@ public function myAddLogEntry($strText, $strFunction, $strAction)
 
 ### checkCredentials
 
-Le hook "checkCredentials" est déclenché lorsqu'une tentative d'identification 
+Le hook `checkCredentials` est déclenché lorsqu'une tentative d'identification 
 échoue à cause d'un mot de passe incorrect. Il passe le nom de l'utilisateur, 
 le mot de passe et l'objet User en arguments et attend une valeur de 
 retour de type booléen. Il est disponible à partir de la version 2.6.0.
@@ -419,7 +419,7 @@ public function myCheckCredentials($strUsername, $strPassword, User $objUser)
 
 ### closeAccount
 
-Le hook "closeAccount" est déclenché lorsqu'un utilisateur clôture son compte. 
+Le hook `closeAccount` est déclenché lorsqu'un utilisateur clôture son compte. 
 Il passe l'ID de l'utilisateur, le mode opérationnel et le module en arguments 
 et n'attend pas de valeur de retour. Il est disponible à partir de la version 
 2.8.0.
@@ -441,7 +441,7 @@ public function myCloseAccount($intId, $strMode, $objModule)
 
 ### compileDefinition
 
-Le hook "compileDefinition" est déclenché quand une définition de formatage 
+Le hook `compileDefinition` est déclenché quand une définition de formatage 
 d'une feuille de style est écrite. Il passe le tableau de configuration en 
 argument et attend une chaîne de caractères comme valeur de retour. Il est 
 disponible à partir de la version 2.9.4.
@@ -466,7 +466,7 @@ public function myCompileDefinition($arrRow)
 
 ### compileFormFields
 
-Le hook "compileFormFields" est déclenché avant qu'un champ de formulaire soit
+Le hook `compileFormFields` est déclenché avant qu'un champ de formulaire soit
 chargé. Il passe un tableau d'objets FormFieldModel ainsi que l'ID et l'objet
 du formulaire en arguments et attend le tableau d'objets FormFieldModel comme
 valeur de retour. Avec ce hook, les champs de formulaire peuvent être ajustés
@@ -497,10 +497,10 @@ public function myCompileFormFields($arrFields, $formId, $this)
 
 ### createDefinition
 
-Le hook "createDefinition" est déclenché quand une définition de formatage 
+Le hook `createDefinition` est déclenché quand une définition de formatage 
 d'une feuille de style est importée. Il passe la clé et la valeur, la définition 
 de formatage d'origine et le tableau de données en arguments et attend un 
-tableau ou "false" comme valeur de retour. Il est disponible à partir de la 
+tableau ou `false` comme valeur de retour. Il est disponible à partir de la 
 version 2.9.4.
 
 ``` {.php}
@@ -523,7 +523,7 @@ public function myCreateDefinition($strKey, $strValue, $strDefinition, $arrSet)
 
 ### createNewUser
 
-Le hook "createNewUser" est déclenché lorsqu'un nouvel utilisateur front office 
+Le hook `createNewUser` est déclenché lorsqu'un nouvel utilisateur front office 
 s'enregistre sur le site internet. Il passe le nouvel utilisateur et le tableau 
 de données en arguments et n'attend pas de valeur de retour. Il est disponible à 
 partir de la version 2.2.0.
@@ -542,7 +542,7 @@ public function myCreateNewUser($intId, $arrData)
 
 ### executePreActions
 
-Le hook "executePreActions" est déclenché par les requêtes Ajax qui ne 
+Le hook `executePreActions` est déclenché par les requêtes Ajax qui ne 
 nécessitent pas un objet DCA. Il passe le nom de l'action en argument et n'attend 
 pas de valeur de retour. Il est disponible à partir de la version 2.6.1.
 
@@ -563,7 +563,7 @@ public function myExecutePreActions($strAction)
 
 ### executePostActions
 
-Le hook "executePostActions" est déclenché par les requêtes Ajax qui nécessitent 
+Le hook `executePostActions` est déclenché par les requêtes Ajax qui nécessitent 
 un objet DCA. Il passe le nom de l'action et l'objet DataContainer en arguments 
 et n'attend pas de valeur de retour. Il est disponible à partir de la 
 version 2.6.1.
@@ -585,7 +585,7 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 
 ### generateBreadcrumb
 
-Le hook "generateBreadcrumb" permet de modifier la navigation fil d'Ariane. Il 
+Le hook `generateBreadcrumb` permet de modifier la navigation fil d'Ariane. Il 
 passe les éléments de navigation et le module front office en arguments et 
 attend des éléments comme valeur de retour. Il est disponible à partir de la 
 version 2.10.0.
@@ -604,7 +604,7 @@ public function myGenerateBreadcrumb($arrItems, \Module $objModule)
 
 ### generateFrontendUrl
 
-Le hook "generateFrontendUrl" est déclenché lors de la re-création d'une URL 
+Le hook `generateFrontendUrl` est déclenché lors de la re-création d'une URL 
 de front office. Il passe l'objet Page, la chaîne de paramètres et l'URL par 
 défaut en arguments et attend une chaîne de caractères comme valeur de retour. 
 Il est disponible à partir de la version 2.5.8.
@@ -623,7 +623,7 @@ public function myGenerateFrontendUrl($arrRow, $strParams, $strUrl)
 
 ### generatePage
 
-Le hook "generatePage" est déclenché avant la compilation du modèle de 
+Le hook `generatePage` est déclenché avant la compilation du modèle de 
 présentation principale ("fe_page"). Il passe l'objet Page, l'objet Model 
 et une référence qui lui est propre en arguments et n'attend pas de valeur 
 de retour. Il est disponible à partir de la version 2.8.RC1.
@@ -643,7 +643,7 @@ public function myGeneratePage(\PageModel $objPage, \LayoutModel $objLayout, \Pa
 
 ### getAllEvents
 
-Le hook "getAllEvents" vous permet de modifier les jeux de résultats produits 
+Le hook `getAllEvents` vous permet de modifier les jeux de résultats produits 
 par les modules calendrier et événements. Il passe le jeu de résultats courant, 
 les ID des éléments parents et l'heure de début et de fin en arguments et 
 attend un jeu de résultats (tableau) comme valeur de retour. Il est disponible 
@@ -664,7 +664,7 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Mo
 
 ### getContentElement
 
-Le hook "getContentElement" est déclenché lorsqu'un élément de contenu est 
+Le hook `getContentElement` est déclenché lorsqu'un élément de contenu est 
 rendu. Il passe l'objet Database et une chaîne-tampon (buffer string) en 
 arguments et attend une chaîne-tampon comme valeur de retour. Il est disponible 
 à partir de la version 2.9.0.
@@ -683,7 +683,7 @@ public function myGetContentElement(Database_Result $objElement, $strBuffer)
 
 ### getImage
 
-Le hook "getImage" est déclenché quand une vignette est générée et vous permet 
+Le hook `getImage` est déclenché quand une vignette est générée et vous permet 
 d'ajouter une routine personnalisée. Il passe le chemin d'accès, la largeur et 
 la hauteur, la mode, le nom du cache et l'objet File en arguments et attend 
 un chemin d'accès comme valeur de retour. Il est disponible à partir de la 
@@ -703,7 +703,7 @@ public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFi
 
 ### getPageIdFromUrl
 
-Le hook "getPageIdFromUrl" est déclenché lors de l'évaluation des parties d'une 
+Le hook `getPageIdFromUrl` est déclenché lors de l'évaluation des parties d'une 
 URL. Il passe les fragments d'URL en argument et attend un tableau de fragments 
 d'une URL en valeur de retour. Il est disponible depuis la version 2.5.4.
 
@@ -721,7 +721,7 @@ public function myGetPageIdFromUrl($arrFragments)
 
 ### getPageLayout
 
-Le hook "getPageLayout" est exécutée avant d'initialiser le modèle front office. 
+Le hook `getPageLayout` est exécutée avant d'initialiser le modèle front office. 
 Il passe le modèle de la page, l'objet Model et une référence à l'objet Page en 
 arguments et n'attend pas de valeur de retour. Il est disponible à partir de la 
 version 3.1.0.
@@ -740,7 +740,7 @@ public function mygetPageLayout(\PageModel $objPage, \LayoutModel $objLayout, \P
 
 ### getSearchablePages
 
-Le hook "getSearchablePages" est déclenché lors de la reconstruction de l'index 
+Le hook `getSearchablePages` est déclenché lors de la reconstruction de l'index 
 de recherche. Il passe le tableau des pages et l'ID de la page racine en 
 arguments et attend un tableau d'URLs absolues (!) comme valeur de retour. Il 
 est disponible à partir de la version 2.2.0.
@@ -759,7 +759,7 @@ public function myGetSearchablePages($arrPages, $intRoot)
 
 ### initializeSystem
 
-Le hook "initializeSystem" est déclenché lorsque le système est initialisé. Il 
+Le hook `initializeSystem` est déclenché lorsque le système est initialisé. Il 
 est disponible à partir de la version 3.1.RC1.
 
 ``` {.php}
@@ -776,7 +776,7 @@ public function myInitializeSystem()
 
 ### importUser
 
-Le hook "importUser" est déclenché lorsqu'un nom d'utilisateur ne peut être 
+Le hook `importUser` est déclenché lorsqu'un nom d'utilisateur ne peut être 
 trouvé dans la base de données. Il passe le nom d'utilisateur, le mot de passe 
 et le nom de la table en arguments et attend une valeur de retour de type 
 booléen. Il est disponible à partir de la version 2.7.RC1.
@@ -804,11 +804,11 @@ public function myImportUser($strUsername, $strPassword, $strTable)
 
 ### isVisibleElement
 
-Le hook "isVisibleElement" est déclenché lors de la vérification si un élément
+Le hook `isVisibleElement` est déclenché lors de la vérification si un élément
 doit être visible dans le front office ou non. Un "élément" dans ce cas signifie
 soit un article, soit un module de front office ou soit un élément de contenu.
-A la différence des trois autres hooks "getArticle", "getFrontendModule" et
-"getContentElement", on peut prévenir la création du balisage complet. Le hook
+A la différence des trois autres hooks `getArticle`, `getFrontendModule` et
+`getContentElement`, on peut prévenir la création du balisage complet. Le hook
 passe le modèle de l'instance et l'état de visibilité courant en arguments et
 attend le nouvel état de visibilité comme valeur de retour. Il est disponible à
 partir de la version 3.2.RC1.
@@ -837,7 +837,7 @@ public function myIsVisibleElement($objElement, $blnIsVisible)
 
 ### listComments
 
-Le hook "listComments" est déclenché lorsque des commentaires sont listés dans 
+Le hook `listComments` est déclenché lorsque des commentaires sont listés dans 
 le back office. Il passe l'enregistrement courant en argument et attend une 
 chaîne de caractères comme valeur de retour. Il est disponible à partir de la 
 version 2.8.RC2.
@@ -856,7 +856,7 @@ public function myListComments($arrRow)
 
 ### loadFormField
 
-Le hook "loadFormField" est déclenché lorsqu'un champ de formulaire est chargé. 
+Le hook `loadFormField` est déclenché lorsqu'un champ de formulaire est chargé. 
 Il passe l'objet Widget, l'ID et les données du formulaire en arguments et 
 attend un objet Widget comme valeur de retour. Il est disponible à partir de 
 la version 2.5.0.
@@ -876,7 +876,7 @@ public function myLoadFormField(Widget $objWidget, $strForm, $arrForm)
 
 ### loadDataContainer
 
-Le hook "loadDataContainer" est déclenché lorsqu'un fichier DCA est chargé. Il 
+Le hook `loadDataContainer` est déclenché lorsqu'un fichier DCA est chargé. Il 
 passe le nom de fichier en argument et n'attend pas de valeur de retour. Il est 
 disponible à partir de la version 2.8.2.
 
@@ -895,7 +895,7 @@ public function myLoadDataContainer($strName)
 
 ### loadLanguageFile
 
-Le hook "loadLanguageFile" est déclenché au chargement d'un fichier de langues. 
+Le hook `loadLanguageFile` est déclenché au chargement d'un fichier de langues. 
 Il passe le nom du fichier et la langue en arguments et n'attend pas de valeur 
 de retour. Il est disponible à partir de la version 2.8.RC1.
 
@@ -913,7 +913,7 @@ public function myLoadLanguageFile($strName, $strLanguage)
 
 ### outputBackendTemplate
 
-Le hook "outputBackendTemplate" est déclenché lors de l'affichage à l'écran 
+Le hook `outputBackendTemplate` est déclenché lors de l'affichage à l'écran 
 d'un modèle du back office. Il passe le contenu et le nom du modèle en 
 arguments et attend le contenu du modèle comme valeur de retour. Il est 
 disponible à partir de la version 2.6.0.
@@ -937,7 +937,7 @@ public function myOutputBackendTemplate($strContent, $strTemplate)
 
 ### outputFrontendTemplate
 
-Le hook "outputFrontendTemplate" est déclenché lors de l'affichage à l'écran 
+Le hook `outputFrontendTemplate` est déclenché lors de l'affichage à l'écran 
 d'un modèle du front office. Il passe le contenu et le nom du modèle en 
 arguments et attend le contenu du modèle comme valeur de retour. Il est 
 disponible à partir de la version 2.6.0.
@@ -961,7 +961,7 @@ public function myOutputFrontendTemplate($strContent, $strTemplate)
 
 ### parseBackendTemplate
 
-Le hook "parseBackendTemplate" est déclenché lorsqu'un modèle de back office 
+Le hook `parseBackendTemplate` est déclenché lorsqu'un modèle de back office 
 est analysé ("parsé"). Il passe le contenu et le nom du modèle en arguments 
 et attend le contenu du modèle comme valeur de retour. Il est disponible à 
 partir de la version 2.6.0.
@@ -985,7 +985,7 @@ public function myParseBackendTemplate($strContent, $strTemplate)
 
 ### parseFrontendTemplate
 
-Le hook "parseFrontendTemplate" est déclenché lors de l'analyse ("parsing") 
+Le hook `parseFrontendTemplate` est déclenché lors de l'analyse ("parsing") 
 d'un modèle de front office. Il passe le contenu et le nom du modèle en 
 arguments et attend le contenu du modèle comme valeur de retour. Il est 
 disponible à partir de la version 2.6.0.
@@ -1009,7 +1009,7 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
 
 ### parseTemplate
 
-Le hook "parseTemplate" est déclenché avant le processus d'analyse d'un modèle.
+Le hook `parseTemplate` est déclenché avant le processus d'analyse d'un modèle.
 Il reçoit une instance `Template` (qui peut être `FrontendTemplate` ou 
 `BackendTemplate`) en argument et n'attend pas de valeur de retour. Il est
 disponible à partir de la version 2.10.0.
@@ -1031,7 +1031,7 @@ public function myParseTemplate($objTemplate)
 
 ### postDownload
 
-Le hook "postDownload" est déclenché après qu'un fichier ait été téléchargé 
+Le hook `postDownload` est déclenché après qu'un fichier ait été téléchargé 
 avec l'élément téléchargement(s). Il passe le nom du fichier en argument et 
 n'attend pas de valeur de retour. Il est disponible à partir de la version 
 2.4.6.
@@ -1050,7 +1050,7 @@ public function myPostDownload($strFile)
 
 ### postLogin
 
-Le hook "postLogin" est déclenché après qu'un membre front office ou un 
+Le hook `postLogin` est déclenché après qu'un membre front office ou un 
 utilisateur back office se soit identifié. Il passe l'objet User en 
 argument et n'attend pas de valeur de retour.
 
@@ -1068,7 +1068,7 @@ public function myPostLogin(User $objUser)
 
 ### postLogout
 
-Le hook "postLogout" est déclenché après qu'un membre front office ou un 
+Le hook `postLogout` est déclenché après qu'un membre front office ou un 
 utilisateur back office se soit déconnecté. Il passe l'objet User 
 en argument et n'attend pas de valeur de retour.
 
@@ -1086,7 +1086,7 @@ public function myPostLogout(User $objUser)
 
 ### postUpload
 
-Le hook "postUpload" est déclenché après qu'un utilisateur ait envoyé un 
+Le hook `postUpload` est déclenché après qu'un utilisateur ait envoyé un 
 ou plusieurs fichiers dans le back office. Il passe un tableau de noms de 
 fichiers en argument et n'attend pas de valeur de retour. Il est disponible 
 à partir de la version 2.6.4.
@@ -1105,7 +1105,7 @@ public function myPostUpload($arrFiles)
 
 ### prepareFormData
 
-Le hook "prepareFormData" est déclenché après qu'un formulaire a été soumis.
+Le hook `prepareFormData` est déclenché après qu'un formulaire a été soumis.
 Il passe le tableau des données, le tableau des labels et l'objet du formulaire
 comme arguments et n'attend pas de valeur de retour. De cette façon, les données
 peuvent être modifiées ou étendues, avant l'exécution des actions comme l'envoi
@@ -1126,7 +1126,7 @@ public function myPrepareFormData(&$arrSubmitted, $arrLabels, $objForm)
 
 ### printArticleAsPdf
 
-Le hook "printArticleAsPdf" est déclenché lorsqu'un article est exporté au 
+Le hook `printArticleAsPdf` est déclenché lorsqu'un article est exporté au 
 format PDF. Il passe le texte de l'article et l'objet Article en arguments 
 et n'attend pas de valeur de retour. Il est disponible à partir de la version 
 2.8.RC1.
@@ -1146,9 +1146,9 @@ public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 
 ### processFormData
 
-Le hook "processFormData" est déclenché après la soumission d'un formulaire. 
-Il passe le tableau des données du formulaire, le [tableau conteneur de données]
-[1] et le tableau de fichiers en arguments et n'attend pas de valeur de retour. 
+Le hook `processFormData` est déclenché après la soumission d'un formulaire. 
+Il passe le tableau des données du formulaire, le [tableau conteneur de données][1]
+et le tableau de fichiers en arguments et n'attend pas de valeur de retour. 
 Il est disponible à partir de la version 2.4.4.
 
 ``` {.php}
@@ -1165,7 +1165,7 @@ public function myProcessFormData($arrPost, $arrForm, $arrFiles)
 
 ### removeOldFeeds
 
-Le hook "removeOldFeeds" est déclenché lors de la suppression des vieux fichiers 
+Le hook `removeOldFeeds` est déclenché lors de la suppression des vieux fichiers 
 XML du répertoire de Contao. Il ne passe pas d'arguments et attend un tableau de 
 noms de fichiers à conserver comme valeur de retour. Il est disponible à partir 
 de la version 2.5.8.
@@ -1184,7 +1184,7 @@ public function myRemoveOldFeeds()
 
 ### removeRecipient
 
-Le hook "removeRecipient" est déclenché à la suppression d'un destinataire de 
+Le hook `removeRecipient` est déclenché à la suppression d'un destinataire de 
 newsletter. Il passe l'adresse e-mail et les ID de la liste de diffusion en 
 arguments et n'attend pas de valeur de retour. Il est disponible à partir de 
 la version 2.8.RC1.
@@ -1203,9 +1203,9 @@ public function myRemoveRecipient($strEmail, $arrChannels)
 
 ### replaceInsertTags
 
-Le hook "replaceInsertTags" est déclenché lorsqu'une balise d'insertion 
+Le hook `replaceInsertTags` est déclenché lorsqu'une balise d'insertion 
 inconnue est trouvée. Il passe la balise d'insertion en argument et attend la 
-valeur de remplacement ou "false" comme valeur de retour. Il est disponible 
+valeur de remplacement ou `false` comme valeur de retour. Il est disponible 
 à partir de la version 2.6.0.
 
 ``` {.php}
@@ -1227,11 +1227,11 @@ public function myReplaceInsertTags($strTag)
 
 ### reviseTable
 
-Le hook "reviseTable" est déclenché lorsque Contao supprime d'une table des 
+Le hook `reviseTable` est déclenché lorsque Contao supprime d'une table des 
 enregistrements orphelins. Il passe le nom de la table courante, les ID de 
 tous les nouveaux enregistrements, le nom de la table parente, et les noms 
 de toutes les tables enfants en arguments et attend un booléen comme valeur 
-de retour (le retour de la valeur "true" provoque le rechargement de la page 
+de retour (le retour de la valeur `true` provoque le rechargement de la page 
 courante). Il est disponible à partir de la version 2.6.4.
 
 ``` {.php}
@@ -1248,7 +1248,7 @@ public function myReviseTable($table, $new_records, $parent_table, $child_tables
 
 ### setNewPassword
 
-Le hook "setNewPassword" est déclenché après la saisie d'un nouveau mot de 
+Le hook `setNewPassword` est déclenché après la saisie d'un nouveau mot de 
 passe. Il passe l'objet User et le mot de passe crypté en arguments 
 et n'attend pas de valeur de retour. Il est disponible à partir de la 
 version 2.2.3.
@@ -1267,7 +1267,7 @@ public function mySetNewPassword($objUser, $strPassword)
 
 ### validateFormField
 
-Le hook "validateFormField" est déclenché à la soumission d'un champ de 
+Le hook `validateFormField` est déclenché à la soumission d'un champ de 
 formulaire. Il passe l'objet Widget et l'ID du formulaire en arguments et 
 attend un objet Widget comme valeur de retour. Il est disponible à partir de 
 la version 2.5.0.
