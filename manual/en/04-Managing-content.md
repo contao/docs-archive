@@ -898,8 +898,8 @@ function.
 <?php $this->insert('template_name'); ?>
 ```
 
-The `insert()` function also accepts the assignment of variables such as
-second parameter.
+The `insert()` function also accepts the assignment of variables as second 
+parameter.
 
 ``` {.php}
 <?php $this->insert('template_name', array('key'=>'value')); ?>
@@ -914,8 +914,7 @@ Template `image.html5`:
 
 ``` {.html}
 <img src="<?php echo $this->src; ?>" alt="<?php echo $this->alt; ?>" />
-<?php $this->insert('copyright_image', array('name'=>'Donna Evans', 'license'=>'Creative Commons')); ?>
-
+<?php $this->insert('image-copyright', array('name'=>'Donna Evans', 'license'=>'Creative Commons')); ?>
 ```
 
 The template `image-copyright.html5` contains a `small` tag that will be inserted
