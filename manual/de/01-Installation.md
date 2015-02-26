@@ -364,11 +364,11 @@ Hosting-Partnern][11].
 
 
 [1]: https://contao.org/de/download.html
-[2]: http://www.winscp.com
+[2]: http://www.winscp.net
 [3]: http://de.wikipedia.org/wiki/Diff
 [4]: http://www.inetrobots.com
-[5]: http://www.inetrobots.com/shop/product_info.php?info=p12_Live-Update-ID.html
-[6]: http://www.inetrobots.com/kontakt.html
+[5]: https://update.contao.org/
+[6]: https://update.contao.org/de/support.html
 [7]: https://contao.org/de/support.html
 [8]: https://github.com/contao/check/zipball/master
 [9]: https://github.com/contao/check
