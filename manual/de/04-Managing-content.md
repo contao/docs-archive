@@ -390,8 +390,8 @@ bzw. der News ausgegeben werden soll.
 
 ### XML Dateien
 
-Die XML Dateien werden automatisch generiert und im ```share``` Verzeichnis
-Ihrer Contao Installation abgelegt. In diesem Beispiel: ```share/events.xml```.
+Die XML Dateien werden automatisch generiert und im `share` Verzeichnis
+Ihrer Contao Installation abgelegt. In diesem Beispiel: `share/events.xml`.
 
 
 ## Newsletter
@@ -847,7 +847,7 @@ Ein Block ist wie folgt aufgebaut:
 Das folgende Beispiel zeigt ein Template bei welchem der `head`-Tag als eigener 
 Block definiert wurde.
 
-Template: `fe_page.html5`
+Template `fe_page.html5`:
 
 ``` {.html}
 <!DOCTYPE html>
@@ -867,7 +867,7 @@ Template: `fe_page.html5`
 Im Kindtemplate `fe_custom.html` wird zusätzlich zum bisherigen Inhalt 
 noch ein CSS style sheet in das übergeordnete Template eingefügt.
 
-Template: `fe_custom.html5`
+Template `fe_custom.html5`:
 
 ``` {.html}
 <?php $this->extend('fe_page'); ?>
@@ -1038,7 +1038,7 @@ Ein Inline-Link sieht wie folgt aus:
 
     [Contao](https://contao.org/de)
 
-oder optional auch mit einem Titel
+oder optional auch mit einem Titel:
 
     [Contao](https://contao.org/de "Offizielle Contao-Webseite")
 
