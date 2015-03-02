@@ -381,8 +381,8 @@ only the teasers or full articles of each event or news.
 
 ### XML files
 
-The XML files are generated automatically in the ```share``` directory of your
-Contao installation. In this example : ```share/events.xml```.
+The XML files are generated automatically in the `share` directory of your
+Contao installation. In this example : `share/events.xml`.
 
 
 ## Newsletters
@@ -836,7 +836,7 @@ A block is built as follows:
 The example below shows a parent template with a block surrounding the
 content of the `head` tag.
 
-Template: `fe_page.html5`
+Template `fe_page.html5`:
 
 ``` {.html}
 <!DOCTYPE html>
@@ -856,7 +856,7 @@ Template: `fe_page.html5`
 In the child template `fe_custom.html5`, a style sheet is added in the `head`
 tag in addition to the inherited content of the parent template `fe_page.html5`.
 
-Template: `fe_custom.html5`
+Template `fe_custom.html5`:
 
 ``` {.html}
 <?php $this->extend('fe_page'); ?>
@@ -1027,7 +1027,7 @@ An inline link is structured as follows:
 
     [Contao](https://contao.org/en)
 
-or with an optional title
+or with an optional title:
 
     [Contao](https://contao.org/en "Contao's official website")
 
@@ -1109,7 +1109,7 @@ Content Cell | Content Cell  | Content Cell
 Content Cell | Content Cell  | Content Cell  
 ```
 
-You can add alignements by adding colons:
+You can create alignements by adding colons:
 
 ```
 First Header | Second Header | Third Header  
