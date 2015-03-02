@@ -279,7 +279,7 @@ Si vous rencontrez des problèmes pour activer votre ID Live Update ou pour
 recevoir l'archive de mise à jour, veuillez s'il vous plaît contacter le 
 [support de iNet Robots][6]. Si vous rencontrez des problèmes pour configurer 
 le "Safe Mode Hack" ou pour utiliser Contao, choisissez s'il vous plaît une 
-option de support sur ​​la [page de support][7].
+option de support sur la [page de support][7].
 
 
 ## Déplacer une installation
@@ -345,11 +345,10 @@ activer PHP 5.
 ### Configurations du système requises de Contao
 
 Contao requiert un serveur web comme Apache ou IIS avec PHP et le support de 
-MySQL. La version minimum de PHP est 5.3.2 et la version minimale de MySQL est 
-4.1, cependant, nous vous recommandons d'utiliser MySQL 5 pour une meilleure 
-performance. Vous avez également besoin des extensions PHP "GDlib" 
-(redimensionnement d'image), "DOM" (fichiers XML) et "SOAP" (référentiel 
-d'extensions) et éventuellement "mbstring" (gestion des caractères multi-octets) 
+MySQL. La version minimum de PHP est 5.3.7 et la version minimale de MySQL est 
+5.0.3. Vous avez également besoin des extensions PHP "GDlib" (redimensionnement
+d'image), "DOM" (fichiers XML), "SOAP" (référentiel d'extensions), "Phar"
+(Live Update) et éventuellement "mbstring" (gestion des caractères multi-octets) 
 ainsi que "mcrypt" (cryptage des données). Contao a été testé avec succès avec 
 tous les principaux navigateurs comme Firefox (à partir de la version 2) ou 
 Internet Explorer (à partir de la version 8).
