@@ -396,8 +396,8 @@ complets de chaque événement ou actualité.
 
 ### Fichiers XML
 
-Les fichiers XML sont générés automatiquement dans le répertoire ```share``` 
-de votre installation de Contao. Dans cet exemple : ```share/events.xml```.
+Les fichiers XML sont générés automatiquement dans le répertoire `share` 
+de votre installation de Contao. Dans cet exemple : `share/events.xml`.
 
 
 ## Bulletins d'information
@@ -427,9 +427,9 @@ dans Contao à partir d'un fichier CSV.
 
 Dans la mesure où vous envoyez des bulletins d'information à des membres 
 inscrits, vous pouvez personnaliser ces bulletins avec des "Simple Tokens". 
-Les "Simple Tokens" fonctionnent d'une manière similaire à celle des [balises 
-d'insertion][3] et peuvent être utilisés aussi bien dans la version HTML que 
-dans la version texte de votre bulletin d'information.
+Les "Simple Tokens" fonctionnent d'une manière similaire à celle des
+[balises d'insertion][3] et peuvent être utilisés aussi bien dans la version
+HTML que dans la version texte de votre bulletin d'information.
 
 ```
 Cher ##firstname## ##lastname##,
@@ -823,6 +823,358 @@ Contao prend en charge les balises suivantes :
   que paramètre).</td>
 </tr>
 </table>
+
+
+## Modèles
+
+Un modèle est principalement composé de codes HTML et PHP. Il est utilisé pour 
+structurer une partie du contenu d'un module ou d'un élément de contenu, etc.
+Par exemple, le modèle `news_full.html5` affiche le contenu complet d'une
+actualité alors que le modèle `news_short.html5` affiche seulement une partie
+de ce contenu.
+
+Les modèles se trouvent dans leurs propres modules. Par exemple,
+`news_full.html5` se trouve sous `system/modules/news/templates/news`.
+
+Si vous modifiez ce fichier directement dans ce dossier, il sera remplacé la
+prochaine fois que vous mettrez à jour Contao et **vous perdrez** toutes vos
+modifications. Pour éviter cela, Contao vous permet de modifier les modèles
+directement à partir du back office. Dans ce cas, le fichier est dupliqué et vos
+modifications seront conservées lors de chaque mise à jour.
+
+![](images/modeles.jpg?raw=true)
+
+Créez un nouveau dossier et ajoutez-y un ou plusieurs modèles que vous souhaitez
+modifier. Par la suite, n'oubliez pas de joindre le dossier au thème comme
+expliqué dans le paragraphe [Composants d'un thème][8].
+
+Un modèle peut être une partie de la structure d'un module, d'un élément de
+contenu, d'un formulaire, etc. et c'est pourquoi ils sont préfixés. Ils peuvent
+être facilement groupés, classés et reconnus. Par exemple : le préfixe `j_`
+signifie "jQuery" et `nl_` signifie "newsletter".
+
+
+### Héritage de modèles
+
+L'héritage vous permet de créer un modèle basé sur un second modèle. Cela
+signifie qu'un modèle (enfant) hérite du contenu d'un second modèle (parent).
+
+Afin que le contenu d'un modèle parent puisse être modifié ou complété
+dans le modèle enfant, il doit être entouré d'un élément nommé `block`.
+
+Un bloc est construit de la manière suivante :
+
+``` {.php}
+<?php $this->block('nom_du_bloc'); ?>
+
+  // Contenu du bloc
+
+<?php $this->endblock(); ?>
+```
+
+L'exemple ci-dessous montre un modèle parent avec un bloc entourant le
+contenu de la balise `head`.
+
+Modèle `fe_page.html5` :
+
+``` {.html}
+<!DOCTYPE html>
+<html>
+<head>
+  <?php $this->block('head'); ?>
+    <title><?php echo $this->title; ?></title>
+    <link rel="stylesheet" href="style.css">
+  <?php $this->endblock(); ?>
+</head>
+<body>
+  ...
+</body>
+</html>
+```
+
+Dans le modèle enfant `fe_custom.html5`, une feuille de style est ajoutée dans
+la balise `head` en plus du contenu hérité du modèle parent `fe_page.html5`.
+
+Modèle `fe_custom.html5` :
+
+``` {.html}
+<?php $this->extend('fe_page'); ?>
+
+<?php $this->block('head'); ?>
+  <?php $this->parent(); ?>
+  <link rel="stylesheet" href="style_2.css">
+<?php $this->endblock(); ?>
+```
+
+* La fonction `extend()` spécifie le nom du modèle dont il hérite le
+contenu.
+* La fonction `parent()` permet de compléter un bloc sans remplacer le contenu
+hérité.
+
+Le résultat en sortie du modèle `fe_custom.html5` sera :
+
+``` {.html}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A title</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+  ...
+</body>
+</html>
+```
+
+
+### Insertion de modèles
+
+Un modèle peut être inséré dans un autre modèle grâce à la fonction
+`insert()`.
+
+``` {.php}
+<?php $this->insert('nom_du_modele'); ?>
+```
+
+La fonction `insert()` accepte également l'assignation de variables comme
+second paramètre :
+
+``` {.php}
+<?php $this->insert('nom_du_modele', array('key'=>'value')); ?>
+```
+
+Dans l'exemple ci-dessous, nous aimerions insérer le modèle
+`image-copyright.html5` dans le modèle `image.html5`.
+
+Le modèle `image.html5` contient une balise `img` et la fonction `insert()`.
+
+Modèle `image.html5` :
+
+``` {.html}
+<img src="<?php echo $this->src; ?>" alt="<?php echo $this->alt; ?>" />
+<?php $this->insert('image-copyright', array('name'=>'Donna Evans', 'license'=>'Creative Commons')); ?>
+```
+
+Le modèle `image-copyright.html5` contient une balise `small` qui sera insérée
+en-dessous de la balise `img` dans le modèle `image.html5`. Les variables `name`
+et `license` seront remplacées par les valeurs déterminées dans la fonction
+`insert()`.
+
+Modèle `image-copyright.html5` :
+
+``` {.html}
+<small>Photographie par <?php echo $this->name; ?>, sous licence <?php echo $this->license; ?></small>
+```
+
+Le résultat en sortie du modèle `image.html5` sera :
+
+``` {.html}
+<img src="files/images/maison.jpg" alt="Une petite maison en Angleterre" />
+<small>Photographie par Donna Evans, sous licence Creative Commons</small>
+```
+
+
+## Markdown
+
+Markdown est un langage de balisage léger qui vous permet de formater du texte
+avec une syntaxe simple. Il a l'avantage d'être facile à lire et à écrire et il
+peut être automatiquement converti au format HTML.
+
+Vous trouverez quelques exemples de cette syntaxe ci-dessous :
+
+### Syntaxe
+
+#### Paragraphes
+
+Les paragraphes sont séparés par des sauts de ligne :
+
+    Premier paragraphe
+
+    Second paragraphe 
+
+
+#### Titres
+
+Il existe six niveaux de titres :
+
+    # Titre 1
+    ## Titre 2
+    ### Titre 3
+    #### Titre 4
+    ##### Titre 5
+    ###### Titre 6
+
+
+#### Strong
+
+Pour donner de l'importance à un texte :
+
+    **strong**
+    __strong__
+
+Il sera converti en HTML avec le code suivant : `<strong>strong</strong>`
+
+
+#### Emphase
+
+Pour marquer un texte sur lequel on veut insister :
+
+    *emphasize*
+    _emphasize_
+
+Il sera converti en HTML avec le code suivant : `<em>emphasize</em>`
+
+
+#### Code
+
+Pour marquer un morceau de code informatique :
+
+    `monospaced font`
+
+Il sera converti en HTML avec le code suivant : `<code>monospaced font</code>`
+
+
+##### Bloc de code
+
+Pour un bloc de code, ajoutez quatre espaces devant chaque ligne.
+
+        monospaced font ...
+        ... sur plusieurs lignes
+
+
+#### Bloc de citation
+
+Les blocs de citation peuvent être créés avec un chevron droit placé au début
+de la ligne.
+
+    > Ceci est un bloc de citation.
+
+
+#### Sauts de ligne
+
+Ajouter deux ou plusieurs espaces à la fin d'une ligne :
+
+    Contao est un système de gestion de contenu  
+    Open Source accessibles.
+
+
+#### Liens
+
+Il y a deux syntaxes pour les liens : **incorporé** et **par référence**.
+
+Un lien incorporé est structuré comme suit :
+
+    [Contao](https://contao.org/en)
+
+ou avec un titre optionnel :
+
+    [Contao](https://contao.org/en "Site officiel de Contao")
+
+Un lien par référence est structuré comme suit :
+
+    [Site officiel de Contao][1]
+    
+    [1]:https://contao.org/en
+
+La référence peut être ajoutée n'importe où dans le document.
+
+
+#### Images
+
+Il y a également deux syntaxes pour les images comme pour les liens.
+
+Une image incorporée est structurée comme suit :
+
+    ![Alt texte](/chemin/vers/img.jpg "Titre facultatif")
+
+Une image par référence est structurée comme suit :
+
+    ![Alt texte][id]
+
+    [id]: /chemin/vers/img.jpg "Titre facultatif"
+
+La référence peut être ajoutée n'importe où dans le document.
+
+
+#### Listes
+
+##### Listes non ordonnées
+
+Les listes non ordonnées utilisent des astérisques ou des traits d'union :
+
+    * Élément de liste  
+    * Élément de liste  
+        * Un élément de liste imbriqué
+        * Un élément de liste imbriqué
+    * Élément de liste
+
+    - Élément de liste  
+    - Élément de liste  
+    - Élément de liste
+
+
+##### Listes ordonnées
+
+Les listes ordonnées utilisent des numéros :
+
+    1. Élément de liste  
+    2. Élément de liste  
+    3. Élément de liste
+
+
+#### Compléments d'information
+
+Pour une documentation complète concernant Markdown, veuillez s'il vous
+plaît, vous référer au site officiel en suivant ce [lien][9](en Anglais).
+
+
+### Syntaxe étendue
+
+Il n'est pas possible de décrire tous les éléments avec Markdown tels que des
+tableaux ou des notes de bas de page par exemple. C'est pourquoi, il existe
+un projet appelé "Markdown Extra" qui complète le langage de base.
+
+Vous trouverez quelques exemples de cette syntaxe étendue ci-dessous :
+
+
+#### Tableaux
+
+Un tableau peut être créé comme ceci :
+
+```
+Premier en-tête       | Deuxième en-tête      | Troisième en-tête  
+--------------------- | --------------------- | ---------------------  
+Contenu de la cellule | Contenu de la cellule | Contenu de la cellule  
+Contenu de la cellule | Contenu de la cellule | Contenu de la cellule  
+```
+
+Vous pouvez créer des alignements en ajoutant des deux-points :
+
+```
+Premier en-tête | Deuxième en-tête | Troisième en-tête  
+:-------------- | :--------------: | ----------------:  
+Gauche          | Centrer          | Droite  
+Gauche          | Centrer          | Droite  
+```
+
+
+#### Notes de bas de page
+
+Les notes de bas de page peuvent être créées comme ceci :
+
+    Voici du texte avec une note de bas de page.[^1]
+
+    [^1]: Et voilà la note de bas de page.
+
+La référence de la note de bas de page peut être ajoutée n'importe où
+dans le document.
+
+
+#### Compléments d'information
+
+Pour une documentation complète concernant Markdown Extra, veuillez s'il
+vous plaît, vous référer au site officiel en suivant ce [lien][10].
 
 
 ## Balises d'insertion
@@ -1510,18 +1862,6 @@ Drapeaux disponibles :
     <td><a target="_blank" href="http://php.net/base64_decode">Fonction PHP
     </a></td>
 </tr>
-<tr>
-    <td><code>urlencode</code></td>
-    <td>Encode une chaîne en URL.</td>
-    <td><a target="_blank" 
-    href="http://php.net/urlencode">Fonction PHP</a></td>
-</tr>
-<tr>
-    <td><code>rawurlencode</code></td>
-    <td>Encode une chaîne en URL, selon la RFC 3986.</td>
-    <td><a target="_blank" 
-    href="http://php.net/rawurlencode">Fonction PHP</a></td>
-</tr>
 </table>
 
 
@@ -1529,3 +1869,6 @@ Drapeaux disponibles :
 [2]: http://fr.wikipedia.org/wiki/Opt_in
 [3]: 04-Managing-content.md#balises-dinsertion
 [7]: http://fr.wikipedia.org/wiki/Bbcode
+[8]: 03-Managing-pages.md#composants-dun-th%C3%A8me
+[9]: http://daringfireball.net/projects/markdown/syntax
+[10]: https://michelf.ca/projets/php-markdown/extra/
