@@ -1510,18 +1510,6 @@ Drapeaux disponibles :
     <td><a target="_blank" href="http://php.net/base64_decode">Fonction PHP
     </a></td>
 </tr>
-<tr>
-    <td><code>urlencode</code></td>
-    <td>Encode une chaîne en URL.</td>
-    <td><a target="_blank" 
-    href="http://php.net/urlencode">Fonction PHP</a></td>
-</tr>
-<tr>
-    <td><code>rawurlencode</code></td>
-    <td>Encode une chaîne en URL, selon la RFC 3986.</td>
-    <td><a target="_blank" 
-    href="http://php.net/rawurlencode">Fonction PHP</a></td>
-</tr>
 </table>
 
 
