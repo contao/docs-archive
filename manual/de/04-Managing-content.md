@@ -1462,22 +1462,6 @@ Verfügbare Flags:
     <td>Wandelt die Ausgabe in ein menschenlesbares Format um.</td>
     <td>siehe <code>System::getReadableSize()</code></td>
 </tr>
-<tr>
-    <td><code>base64_encode</code></td>
-    <td>Enkodiert einen Text mittels des 
-    <a href="https://de.wikipedia.org/wiki/Base64" 
-    target="_blank">Base64-Verfahrens</a>.</td>
-    <td><a target="_blank" href="http://php.net/base64_encode">PHP-Funktion</a>
-    </td>
-</tr>
-<tr>
-    <td><code>base64_decode</code></td>
-    <td>Dekodiert einen Text mittels des 
-    <a href="https://de.wikipedia.org/wiki/Base64" 
-    target="_blank">Base64-Verfahrens</a>.</td>
-    <td><a target="_blank" href="http://php.net/base64_decode">PHP-Funktion</a>
-    </td>
-</tr>
 </table>
 
 
