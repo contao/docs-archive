@@ -25,9 +25,7 @@ that are using it.
 
 ## Themes
 
-Although the theme manager is a new feature in version 2.9, it is actually just
-an enhanced interface to something that has been part of Contao ever since. A
-website design typically consists of style sheets, front end modules, page
+A website design typically consists of style sheets, front end modules, page
 layouts, files and templates, which you can manage in the Contao back end. The
 theme manager does not change this approach at all, it just adds an option to
 export and import those resources.
