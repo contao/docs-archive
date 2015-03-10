@@ -279,7 +279,7 @@ Si vous rencontrez des problèmes pour activer votre ID Live Update ou pour
 recevoir l'archive de mise à jour, veuillez s'il vous plaît contacter le 
 [support de iNet Robots][6]. Si vous rencontrez des problèmes pour configurer 
 le "Safe Mode Hack" ou pour utiliser Contao, choisissez s'il vous plaît une 
-option de support sur ​​la [page de support][7].
+option de support sur la [page de support][7].
 
 
 ## Déplacer une installation
