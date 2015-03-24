@@ -768,6 +768,7 @@ anywhere in Contao, even on cached pages.
 The following Insert Tags allow you to link to another page or article using its
 ID or alias.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert Tag</th>
@@ -1229,6 +1230,8 @@ the current date or including lightbox images.
       session.</td>
 </tr>
 </table>
+
+{% endraw %}
 
 
 [1]: https://contao.org/en/extension-list.html
