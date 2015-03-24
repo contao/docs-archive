@@ -1149,6 +1149,7 @@ anywhere in Contao, even on cached pages.
 The following Insert Tags allow you to link to another page or article using its
 ID or alias.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert Tag</th>
