@@ -832,6 +832,7 @@ ein Benutzer mit seinem Namen angesprochen werden. Inserttags können fast
 Mit den folgenden Inserttags können Seiten und Artikel anhand ihrer ID oder
 ihres Alias verlinkt werden.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert-Tag</th>
