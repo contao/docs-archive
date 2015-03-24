@@ -832,6 +832,7 @@ ein Benutzer mit seinem Namen angesprochen werden. Inserttags können fast
 Mit den folgenden Inserttags können Seiten und Artikel anhand ihrer ID oder
 ihres Alias verlinkt werden.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert-Tag</th>
@@ -1297,6 +1298,8 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
       Desktop-Layout wechselt.</td>
 </tr>
 </table>
+
+{% endraw %}
 
 
 [1]: https://contao.org/de/extension-list.html
