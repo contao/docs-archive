@@ -839,6 +839,7 @@ utilisées presque partout dans Contao, même dans les pages en cache.
 Les balises d'insertion suivantes vous permettent de faire un lien vers une 
 autre page ou vers un article en utilisant son ID ou son alias.
 
+{% raw %}
 <table>
 <tr>
   <th>Balise d'insertion</th>
