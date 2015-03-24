@@ -1,0 +1,26 @@
+language: node_js
+
+env:
+  global:
+    - secure: "WvexIfR2nvMn77kHv4PVTiXBC9U8YkpcCbPPHr3/HWWU29t9dxerOgfNIfO0LgPYhV2yb9NJ8sLBW6/8Vs/DS8gSVnsn/IBwQXDwwcgymzkNYampq59do/56FxwFzvSk0DqJbNkmNjLzzJsdTR5mK6weN0fT50h76eUkGuLoZKM="
+    - secure: "cua8Ei2rrCZBjv/7sXRcizHS3UBOQ6v1OrzOTlWuwGN7jpQQS+W/gbMnsteBh4SLnXziVzsefrcy+z4iyMnGViyXZ0InfZ82BEe/Tuu2zY8lCPMvGomNv0OUXYzMBTbf/QPNe7GezoatIrL/4Qu8/GHuOYA/I39ZDxU1iDVn9tc="
+
+sudo: required
+
+install:
+  - sudo apt-get install sshpass
+  - npm install gitbook-cli -g
+  - npm install gitbook-plugin-richquotes
+
+script:
+  - gitbook build ./manual
+  - gitbook build ./cookbook
+
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "2.11" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/2.11/
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.0" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/3.0/
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.1" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/3.1/
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.2" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/3.2/
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.3" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/3.3/
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.4" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/3.4/
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./cookbook/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/cookbook/
