@@ -1,5 +1,6 @@
-# Résumé
+## Résumé
 
+* [Introduction](README.md)
 * [Installation](01-Installation.md)
 * [Panneau d'administration](02-Administration-area.md)
 * [Gestion des pages](03-Managing-pages.md)
