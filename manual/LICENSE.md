@@ -12,5 +12,4 @@ We are not claiming exclusive usage rights, therefore you are free to use your
 contributed content (e.g. texts or images) in any other project as well.
 
 
-[1]: https://docs.contao.org/
-[2]: http://creativecommons.org/licenses/by-nc-sa/3.0/
+[1]: http://creativecommons.org/licenses/by-nc-sa/3.0/
