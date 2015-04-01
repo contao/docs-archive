@@ -144,7 +144,7 @@ the website but loaded into a dynamic Flash movie using "loadVars()". To allow
 communication between Contao and Flash, you have to add the following function
 to the root frame of your movie:
 
-``` {.as}
+```as
 TextField.prototype._loadArticle = function(flashID) {
   tf = this;
 
@@ -174,7 +174,7 @@ myTextBox._loadArticle("myArticle");
 The following ActionScript allows you to import a style sheet to format a
 dynamic text field:
 
-``` {.as}
+```as
 TextField.prototype._addCSS = function(style_sheet) {
   tf= this;
   tf.styleSheet = null;

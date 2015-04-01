@@ -24,7 +24,7 @@ can use the [GitHub flavored syntax][2].
 
 To highlight code snippets, please specify the language as follows:
 
-    ``` {.php}
+    ```php
     // The code goes here
     ```
 

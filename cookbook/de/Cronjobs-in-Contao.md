@@ -5,7 +5,7 @@ Frontend-Seite ausgeführt. Entsprechend funktionieren diese Cronjobs
 standardmäßig nur, wenn die Webseite auch besucht wird. Erweiterungen können
 über folgende [Hooks][1] periodische Aufgaben ausführen:
 
-```{.php}
+```php
 $GLOBALS['TL_CRON']['monthly']
 $GLOBALS['TL_CRON']['weekly']
 $GLOBALS['TL_CRON']['daily']
@@ -62,7 +62,7 @@ Im `fe_page.html5` bzw. `fe_page.xhtml` Template ist folgender Javascript-Code
 zuständig für den Aufruf der `cron.php`. Dabei wird zuerst eine Textdatei
 abgefragt, die den Zeitstempel der letzten Ausführung enthält.
 
-```{.js}
+```js
 new Request({
   url:'system/html/cron.txt',
   onComplete: function(txt) {
@@ -81,7 +81,7 @@ Danach wird geprüft, welcher der vier Ausführungsintervallen als nächstes
 an der Reihe ist. Die entsprechenden Informationen stehen in der
 `localconfig.php`.
 
-```{.php}
+```php
 $GLOBALS['TL_CONFIG']['cron_monthly']
 $GLOBALS['TL_CONFIG']['cron_weekly']
 $GLOBALS['TL_CONFIG']['cron_daily']

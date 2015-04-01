@@ -14,7 +14,7 @@ ausgeführt. Dies geschieht in der Reihenfolge, in welcher die Elemente
 hinzugefügt wurden. Registrieren mehrere Erweiterungen Aktionen auf den
 Hook, so ist dies die Reihenfolge, in der die Module geladen wurden.
 
-``` {.php}
+```php
 // Beispiel aus /system/modules/comments/classes/Comments.php
 // HOOK: add custom logic
 if (isset($GLOBALS['TL_HOOKS']['addComment']) && is_array($GLOBALS['TL_HOOKS']['addComment']))
@@ -31,11 +31,11 @@ Bei der Ausführung werden der Methode Parameter übergeben. Die Signatur der
 Methode muss dann bei der Benutzung des Hooks mit dieser Definition
 übereinstimmen.
 
-``` {.php}
+```php
 $this->$callback[0]->$callback[1]($objComment->id, $arrSet, $this);
 ```
 
-``` {.php}
+```php
 class MyEmailCommentClass
 {
 
@@ -62,7 +62,7 @@ E-Mail verschickt. Hierzu registrieren wir in der config.php unseres Moduls
 den Hook `addComment` mit unserer Methode, um Contao mitzuteilen, dass wir
 diese dann ausführen möchten.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['addComment'][] = array('MyEmailCommentClass', 'sendEmailWithComment');
 

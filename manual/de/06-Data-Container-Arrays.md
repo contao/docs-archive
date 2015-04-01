@@ -877,7 +877,7 @@ Gruppe, die aus- und eingeklappt werden kann.
 
 Das obige Beispiel wird durch folgenden Code definiert:
 
-``` {.php}
+```php
 {title_legend},headline,alias,author;{date_legend},date,time;{teaser_legend:hide},subheadline,teaser
 ```
 

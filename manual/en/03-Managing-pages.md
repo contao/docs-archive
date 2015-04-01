@@ -84,7 +84,7 @@ particular Internet Explorer version, in case you need to fix one of its
 numerous bugs. Pay attention to the order of the format definitions, because
 later commands override earlier ones.
 
-``` {.css}
+```css
 /* Set the general value first */
 .mod_search {
     margin:24px;
