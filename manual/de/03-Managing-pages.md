@@ -94,7 +94,7 @@ darin enthaltenen Fehler gesondert beheben müssen. Achten Sie dabei auf die
 Reihenfolge der Formatdefinitionen, da frühere Anweisungen von späteren
 überschrieben werden können.
 
-``` {.css}
+```css
 /* Zuerst den generellen Abstand setzen */
 .mod_search {
     margin:24px;

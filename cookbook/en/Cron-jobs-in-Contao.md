@@ -5,7 +5,7 @@ every time a front end page is accessed. Respectively, these cron jobs only work
 if your website has visitors. Extensions can use hooks to register for periodical
 tasks:
 
-```{.php}
+```php
 $GLOBALS['TL_CRON']['monthly']
 $GLOBALS['TL_CRON']['weekly']
 $GLOBALS['TL_CRON']['daily']
@@ -59,7 +59,7 @@ Your `fe_page.html5` or `fe_page.xhtml` template contains the following
 javascript code which is responsible for executing the `cron.php`. First of all,
 a text file is retrieved that contains the timestamp of the last execution.
 
-```{.js}
+```js
 new Request({
   url:'system/html/cron.txt',
   onComplete: function(txt) {
@@ -76,7 +76,7 @@ Using the `tl_lock` table, it verifies again that at least five minutes have
 passed since the last execution. If that's the case, it will trigger the jobs
 of the next upcoming interval. This information is stored in the `localconfig.php`.
 
-```{.php}
+```php
 $GLOBALS['TL_CONFIG']['cron_monthly']
 $GLOBALS['TL_CONFIG']['cron_weekly']
 $GLOBALS['TL_CONFIG']['cron_daily']
