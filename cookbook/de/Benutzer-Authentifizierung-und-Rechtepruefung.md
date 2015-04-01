@@ -9,7 +9,7 @@ Rechte eines Benutzers in einer eigenen Erweiterung prüfen kann.
 Grundsätzlich nimmt Contao die Benutzerauthentifizierung automatisch vor. Der
 Code für das Backend befindet sich in der Datei `contao/main.php`:
 
-``` {.php}
+```php
 public function __construct()
 {
     $this->import('BackendUser', 'User');
@@ -25,7 +25,7 @@ public function __construct()
 Das Benutzer-Objekt lässt sich in der eigenen Erweiterung auf zwei Arten
 aufrufen:
 
-``` {.php}
+```php
 $objUser = BackendUser::getInstance();
 echo $objUser->username;
 
@@ -43,7 +43,7 @@ Benutzer gibt.
 
 Einen Administrator erkennt man am `isAdmin`-Flag:
 
-``` {.php}
+```php
 if ($objUser->isAdmin) {
     // alles ist erlaubt
 }
@@ -56,7 +56,7 @@ Ein normaler Benutzer gehört in der Regel einer oder mehreren Benutzergruppen
 an, deren Zugehörigkeit über die Methode `isMemberOf()` geprüft werden kann:
 
 
-``` {.php}
+```php
 if ($objUser->isMemberOf(3)) {
     // der Benutzer gehört der Gruppe mit der ID 3 an
 }
@@ -65,7 +65,7 @@ if ($objUser->isMemberOf(3)) {
 Ein Array der IDs aller Benutzergruppen, denen ein Benutzer angehört, lässt sich
 über das Feld `groups` abfragen:
 
-``` {.php}
+```php
 print_r($objUser->groups);
 ```
 
@@ -84,7 +84,7 @@ zuständig sind:
 Mit der Methode `hasAccess()` lässt sich beispielsweise prüfen, ob ein Benutzer
 Zugriff auf ein Backend-Modul hat:
 
-``` {.php}
+```php
 if ($objUser->hasAccess('news', 'modules')) {
     // der Benutzer darf auf das News-Modul zugreifen
 }
@@ -93,7 +93,7 @@ if ($objUser->hasAccess('news', 'modules')) {
 Es lässt sich auch prüfen, ob der Zugriff auf ein bestimmtes News-Archiv erlaubt
 ist:
 
-``` {.php}
+```php
 if ($objUser->hasAccess(2, 'news')) {
     // der Benutzer darf auf das News-Archiv mit der ID 2 zugreifen
 }
@@ -101,7 +101,7 @@ if ($objUser->hasAccess(2, 'news')) {
 
 Oder ob der Benutzer das Recht hat, neue News-Feeds anzulegen:
 
-``` {.php}
+```php
 if ($objUser->hasAccess('create', 'newsfeedp')) {
     // der Benutzer hat das Recht, neue News-Feeds anzulegen
 }
@@ -109,7 +109,7 @@ if ($objUser->hasAccess('create', 'newsfeedp')) {
 
 Ebenfalls lassen sich die Page- und Filemounts des Benutzers prüfen:
 
-``` {.php}
+```php
 if ($objUser->hasAccess(11, 'pagemounts')) {
     // der Benutzer darf auf die Seite mit der ID 11 zugreifen
 }
@@ -118,7 +118,7 @@ if ($objUser->hasAccess(11, 'pagemounts')) {
 Schlussendlich lässt sich auch der Zugriff auf jedes einzelne Feld jeder Tabelle
 mit der Methode `hasAccess()` prüfen:
 
-``` {.php}
+```php
 if ($objUser->hasAccess('tl_faq::published', 'alexf')) {
     // der Benutzer darf auf das Feld "published" der Tabelle "tl_faq" zugreifen
 }
@@ -135,7 +135,7 @@ gespeichert ist. Zum Beispiel fragt "modules" das Feld `tl_user.modules` bzw.
 Mit der Methode `isAllowed()` lässt sich prüfen, welche Rechte der Benutzer auf
 einer bestimmten Seite hat (Zugriffsrechte).
 
-``` {.php}
+```php
 $objPage = PageModel::findByPk(6);
 
 if ($objUser->isAllowed(1, $objPage->row())) {
@@ -175,7 +175,7 @@ nicht davon ausgehen, dass es immer ein authentifiziertes Mitglied gibt.
 Das Benutzer-Objekt lässt sich in der eigenen Erweiterung auf zwei Arten
 aufrufen:
 
-``` {.php}
+```php
 $objUser = FrontendUser::getInstance();
 echo $objUser->username;
 
@@ -186,7 +186,7 @@ echo $this->User->username;
 
 Den Login-Status kann man über die Konstante `FE_USER_LOGGED_IN` abfragen:
 
-``` {.php}
+```php
 if (FE_USER_LOGGED_IN === true) {
     $objUser = FrontendUser::getInstance();
     // es gibt einen authentifizierten Frontend-Benutzer
@@ -202,7 +202,7 @@ Im Frontend erfolgt die Zugriffsprüfung auf Basis der Gruppenzugehörigkeit, di
 sich über die Methode `isMemberOf()` abrufen lässt:
 
 
-``` {.php}
+```php
 if ($objUser->isMemberOf(3)) {
     // der Benutzer gehört der Gruppe mit der ID 3 an
 }
@@ -211,6 +211,6 @@ if ($objUser->isMemberOf(3)) {
 Ein Array der IDs aller Mitgliedergruppen, denen ein Mitglied angehört, lässt
 sich über das Feld `groups` abfragen:
 
-``` {.php}
+```php
 print_r($objUser->groups);
 ```

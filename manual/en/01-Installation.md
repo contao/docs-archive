@@ -17,7 +17,7 @@ folder is most likely called `htdocs`, `httpdocs`, `html` or `public_html`.
 If you have SSH access, you can download and extract the archive with the
 following commands:
 
-``` {.bash}
+```bash
 curl -L http://download.contao.org | tar -xzp
 ```
 
@@ -30,7 +30,7 @@ force attacks and will be locked if a wrong password has been entered three
 times in a row. To remove the lock, open file `system/config/localconfig.php` in
 a text editor, find the following line and set it to `0`.
 
-``` {.php}
+```php
 $GLOBALS['TL_CONFIG']['installCount'] = 0; // This will remove the automatic lock
 ```
 

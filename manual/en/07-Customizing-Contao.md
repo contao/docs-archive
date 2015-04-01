@@ -38,7 +38,7 @@ update. Most parameters can be set in the back end in the settings module and
 will be written to the local configuration file automatically, so you hardly
 ever need to edit it manually.
 
-``` {.php}
+```php
 // Disable the extension creator
 unset($GLOBALS['BE_MOD']['devtools']['extension']);
 
@@ -60,7 +60,7 @@ container configuration is stored in the `dca` folders of the various Contao
 modules. Apply your changes to the `system/config/dcaconfig.php` file so they
 will not be overridden on the next update.
 
-``` {.php}
+```php
 // Make company a mandatory field in the members table
 $GLOBALS['TL_DCA']['tl_member']['fields']['company']['eval']['mandatory'] =
 true;
@@ -88,7 +88,7 @@ Contao modules. Each language is identified by its [ISO-639-1 language code][2].
 Apply your changes to the `system/config/langconfig.php` file so they will not
 be overridden on the next update.
 
-``` {.php}
+```php
 // Change a label for all languages
 $GLOBALS['TL_LANG']['MSC']['goBack'] = '«';
 
@@ -127,7 +127,7 @@ configuration for the database in the DCA under `sql`. The SQL details are not
 sent to the database but they are used to calculate the difference between the 
 Contao specifications and the actual database tables.
 
-``` {.php}
+```php
 // Modify the palette
 $GLOBALS['TL_DCA']['tl_member']['palettes']['default'] = str_replace
 (
@@ -159,7 +159,7 @@ After adding or modifying a field in the DCA you should visit the
 Create the file `languages/en/tl_member.php` in your module folder and add the
 English labels for the new field:
 
-``` {.php}
+```php
 $GLOBALS['TL_LANG']['tl_member']['customer_number'] = array
 (
     'Customer number',
@@ -189,7 +189,7 @@ new file. The last step is to adjust the [data container configuration][5] in
 the `system/config/dcaconfig.php` file and tell Contao to which fields the
 custom file shall be applied.
 
-``` {.php}
+```php
 // Use the custom RTE configuration for text elements
 $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] =
 'tinyCustom';
@@ -217,7 +217,7 @@ extend the original class and simply override it. To do so, create a new
 `xcustom/ModuleMyNavigation.php` file and define the custom class
 `ModuleMyNavigation`:
 
-``` {.php}
+```php
 // xcustom/ModuleMyNavigation.php
 class ModuleMyNavigation extends ModuleNavigation
 {
@@ -244,7 +244,7 @@ system configuration, which allows you to easily replace them with your own
 versions. The names of the module classes are stored in the global `FE_MOD`
 array.
 
-``` {.php}
+```php
 // xcustom/config/config.php
 $GLOBALS['FE_MOD']['navigationMenu']['navigation'] = 'ModuleMyNavigation';
 ```
@@ -269,7 +269,7 @@ The "activateAccount" hook is triggered when a new front end account is
 activated. It passes the user object as argument and does not expect a return
 value. It is available from version 2.4.3.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['activateAccount'][] = array('MyClass',
 'myActivateAccount');
@@ -289,7 +289,7 @@ added. It passes the e-mail address, the recipient IDs and the channel IDs as
 argument and does not expect a return value. It is available from version
 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['activateRecipient'][] = array('MyClass',
 'myActivateRecipient');
@@ -308,7 +308,7 @@ The "addComment" hook is triggered when a comment is added. It passes the ID of
 the record and the data array as arguments and does not expect a return value.
 It is available from version 2.8.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['addComment'][] = array('MyClass', 'myAddComment');
 
@@ -327,7 +327,7 @@ found. It passes the name of the regexp, the current value and the widget object
 as arguments and expects a boolean return value. It is available from version
 2.6.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['addCustomRegexp'][] = array('MyClass',
 'myAddCustomRegexp');
@@ -356,7 +356,7 @@ The "addLogEntry" hook is triggered when a new log entry is added. It passes the
 message, the function and the action as arguments and does not expect a return
 value. It is available from version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['addLogEntry'][] = array('MyClass', 'myAddLogEntry');
 
@@ -375,7 +375,7 @@ wrong password. It passes the username and password as well as the user object
 as arguments and expects a boolean return value. It is available from version
 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['checkCredentials'][] = array('MyClass',
 'myCheckCredentials');
@@ -400,7 +400,7 @@ The "closeAccount" hook is triggered when a user closes his account. It passes
 the user ID, the operation mode and the module as arguments and does not expect
 a return value. It is available from version 2.8.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['closeAccount'][] = array('MyClass', 'myCloseAccount');
 
@@ -421,7 +421,7 @@ The "compileDefinition" hook is triggered when a format definition of a style
 sheet is written. It passes the configuration array as argument and expects a
 string as return value. It is available from version 2.9.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['compileDefinition'][] = array('MyClass',
 'myCompileDefinition');
@@ -477,7 +477,7 @@ sheet is imported. It passes the key and value, the original format definition
 and the data array as arguments and expects an array or "false" as return value.
 It is available from version 2.9.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['createDefinition'][] = array('MyClass',
 'myCreateDefinition');
@@ -501,7 +501,7 @@ The "createNewUser" hook is triggered when a new front end user registers on the
 website. It passes the ID of the new user and the data array as arguments and
 does not expect a return value. It is available from version 2.2.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['createNewUser'][] = array('MyClass', 'myCreateNewUser');
 
@@ -519,7 +519,7 @@ The "executePreActions" hook is triggered on Ajax requests that do not require a
 DCA object. It passes the name of the action as argument and does not expect a
 return value. It is available from version 2.6.1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['executePreActions'][] = array('MyClass', 'myExecutePreActions');
 
@@ -541,7 +541,7 @@ object. It passes the name of the action and the data container object as
 arguments and does not expect a return value. It is available from version
 2.6.1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['executePostActions'][] = array('MyClass', 'myExecutePostActions');
 
@@ -562,7 +562,7 @@ The "generateBreadcrumb" hook allows to modify the breadcrumb navigation.
 It passes the navigation items and the frontend module as arguments and expects
 the items as return value. It is available from version 2.10.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['generateBreadcrumb'][] = array('MyClass', 'myGenerateBreadcrumb');
 
@@ -580,7 +580,7 @@ The "generateFrontendUrl" hook is triggered when a front end URL is recreated.
 It passes the page object, the parameter string and the default URL as arguments
 and expects a string as return value. It is available from version 2.5.8.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['generateFrontendUrl'][] = array('MyClass', 'myGenerateFrontendUrl');
 
@@ -599,7 +599,7 @@ compiled. It passes the page object, the layout object and a self-reference as
 arguments and does not expect a return value. It is available from version
 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['generatePage'][] = array('MyClass', 'myGeneratePage');
 
@@ -618,7 +618,7 @@ event modules. It passes the current result set, the IDs of the parent items and
 the start and end time as arguments and expects a result set (array) as return
 value. It is available from version 2.6.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getAllEvents'][] = array('MyClass', 'myGetAllEvents');
 
@@ -637,7 +637,7 @@ The "getContentElement" hook is triggered when a content element is rendered. It
 passes the database object and the buffer string as arguments and expects a
 buffer string as return value. It is available from version 2.9.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getContentElement'][] = array('MyClass', 'myGetContentElement');
 
@@ -656,7 +656,7 @@ add a custom routine. It passes the path, the width and height, the mode, the
 cache name and the file object as arguments and expects a path as return value.
 It is available from version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getImage'][] = array('MyClass', 'myGetImage');
 
@@ -674,7 +674,7 @@ The "getPageIdFromUrl" hook is triggered when the URL fragments are evaluated.
 It passes the array of URL fragments as argument and expects an array of URL
 fragments as return value. It is available from version 2.5.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getPageIdFromUrl'][] = array('MyClass', 'myGetPageIdFromUrl');
 
@@ -711,7 +711,7 @@ It passes the array of pages and the ID of the root page as arguments and
 expects an array of absolute URLs (!) as return value. It is available from
 version 2.2.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getSearchablePages'][] = array('MyClass', 'myGetSearchablePages');
 
@@ -746,7 +746,7 @@ The "importUser" hook is triggered when a username cannot be found in the
 database. It passes the username, the password and the table name as arguments
 and expects a boolean return value. It is available from version 2.7.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['importUser'][] = array('MyClass', 'myImportUser');
 
@@ -805,7 +805,7 @@ The "listComments" hook is triggered when comments are listed in the back end.
 It passes the current record as argument and expects a string as return value.
 It is available from version 2.8.RC2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['listComments'][] = array('MyClass', 'myListComments');
 
@@ -823,7 +823,7 @@ The "loadFormField" hook is triggered when a form field is loaded. It passes the
 widget object, the form ID and the form data as arguments and expects a widget
 object as return value. It is available from version 2.5.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['loadFormField'][] = array('MyClass', 'myLoadFormField');
 
@@ -842,7 +842,7 @@ The "loadDataContainer" hook is triggered when a DCA file is loaded. It passes
 the file name as argument and does not expect a return value. It is available
 from version 2.8.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('MyClass', 'myLoadDataContainer');
 
@@ -860,7 +860,7 @@ The "loadLanguageFile" hook is triggered when a language file is loaded. It
 passes the file name and the language as arguments and does not expect a return
 value. It is available from version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['loadLanguageFile'][] = array('MyClass', 'myLoadLanguageFile');
 
@@ -879,7 +879,7 @@ printed to the screen. It passes the template content and the template name as
 arguments and expects the template content as return value. It is available from
 version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('MyClass', 'myOutputBackendTemplate');
 
@@ -903,7 +903,7 @@ printed to the screen. It passes the template content and the template name as
 arguments and expects the template content as return value. It is available from
 version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['outputFrontendTemplate'][] = array('MyClass', 'myOutputFrontendTemplate');
 
@@ -926,7 +926,7 @@ The "parseBackendTemplate" hook is triggered when a back end template is parsed.
 It passes the template content and the template name as arguments and expects
 the template content as return value. It is available from version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['parseBackendTemplate'][] = array('MyClass', 'myParseBackendTemplate');
 
@@ -950,7 +950,7 @@ parsed. It passes the template content and the template name as arguments and
 expects the template content as return value. It is available from version
 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['parseFrontendTemplate'][] = array('MyClass', 'myParseFrontendTemplate');
 
@@ -974,7 +974,7 @@ It receives a `Template` instance (can be `FrontendTemplate` or
 `BackendTemplate`) as the only parameter and does not expect any 
 return value. Added in version 2.10.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['parseTemplate'][] = array('MyClass', 'myParseTemplate');
 
@@ -995,7 +995,7 @@ The "postDownload" hook is triggered after a file has been downloaded with the
 download(s) element. It passes the file name as argument and does not expect a
 return value. It is available from version 2.4.6.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postDownload'][] = array('MyClass', 'myPostDownload');
 
@@ -1013,7 +1013,7 @@ The "postLogin" hook is triggered after a front end member or back end user
 has logged in. It passes the user object as argument and does not expect
 a return value.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postLogin'][] = array('MyClass', 'myPostLogin');
 
@@ -1031,7 +1031,7 @@ The "postLogout" hook is triggered after a front end member or back end user
 has logged out. It passes the user object as argument and does not expect
 a return value.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postLogout'][] = array('MyClass', 'myPostLogout');
 
@@ -1049,7 +1049,7 @@ The "postUpload" hook is triggered after a user has uploaded one or more file in
 the back end. It passes an array of filenames as argument and does not expect a
 return value. It is available from version 2.6.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postUpload'][] = array('MyClass', 'myPostUpload');
 
@@ -1086,7 +1086,7 @@ The "printArticleAsPdf" hook is triggered when an article is exported as PDF. It
 passes the article text and the article object as arguments and does not expect
 a return value. It is available from version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['printArticleAsPdf'][] = array('MyClass', 'myPrintArticleAsPdf');
 
@@ -1106,7 +1106,7 @@ passes the form data array, the [Data Container Array][1] and the files array as
 arguments and does not expect a return value. It is available from version
 2.4.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['processFormData'][] = array('MyClass', 'myProcessFormData');
 
@@ -1124,7 +1124,7 @@ The "removeOldFeeds" hook is triggered when old XML files are being removed from
 the Contao directory. It does not pass an argument and expects an array of file
 names to preserve as return value. It is available from version 2.5.8.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['removeOldFeeds'][] = array('MyClass', 'myRemoveOldFeeds');
 
@@ -1142,7 +1142,7 @@ The "removeRecipient" hook is triggered when a newsletter recipient is removed.
 It passes the e-mail address and the channel IDs as argument and does not expect
 a return value. It is available from version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['removeRecipient'][] = array('MyClass', 'myRemoveRecipient');
 
@@ -1160,7 +1160,7 @@ The "replaceInsertTags" hook is triggered when an unknown insert tag is found.
 It passes the insert tag as argument and expects the replacement value or
 "false" as return value. It is available from version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MyClass', 'myReplaceInsertTags');
 
@@ -1185,7 +1185,7 @@ name of the parent table and the names of all child tables as arguments and does
 expect a boolean return value (returning "true" will cause the current page to
 be reloaded). It is available from version 2.6.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['reviseTable'][] = array('MyClass', 'myReviseTable');
 
@@ -1203,7 +1203,7 @@ The "setNewPassword" hook is triggered after a new password has been set. It
 passes the user object and the encrypted password as arguments and does not
 expect a return value. It is available from version 2.2.3.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['setNewPassword'][] = array('MyClass', 'mySetNewPassword');
 
@@ -1221,7 +1221,7 @@ The "validateFormField" hook is triggered when a form field is submitted. It
 passes the widget object and the form ID as arguments and expects a widget
 object as return value. It is available from version 2.5.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['validateFormField'][] = array('MyClass', 'myValidateFormField');
 

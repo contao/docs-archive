@@ -177,7 +177,7 @@ ausgegeben, sondern mittels `loadVars()` in einen dynamischen Flash-Film geladen
 werden. Fügen Sie folgendes Skript in Ihren Flash-Film ein, um die Kommunikation
 mit Contao zu ermöglichen:
 
-``` {.as}
+```as
 TextField.prototype._loadArticle = function(flashID) {
   tf = this;
 
@@ -207,7 +207,7 @@ myTextBox._loadArticle("myArticle");
 Das folgende ActionScript erlaubt das Importieren eines Stylesheets zur
 Formatierung des Textfeldes:
 
-``` {.as}
+```as
 TextField.prototype._addCSS = function(style_sheet) {
   tf= this;
   tf.styleSheet = null;
