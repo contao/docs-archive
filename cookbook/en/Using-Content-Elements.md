@@ -12,7 +12,7 @@ All you need to do are the following three steps:
 
 1. Define `tl_content` as a child table of your current DCA
 
-    ``` {.php}
+    ```php
     // system/modules/news/dca/tl_news.php
     
     /**
@@ -29,7 +29,7 @@ All you need to do are the following three steps:
 
 2. Dynamically set the parent table in the DCA of `tl_content`
 
-    ``` {.php}
+    ```php
     // system/modules/news/dca/tl_content.php
     
     /**
@@ -45,7 +45,7 @@ All you need to do are the following three steps:
 
     Instead of
 
-    ``` {.php}
+    ```php
     // system/modules/news/dca/tl_news.php
     'edit' => array
     (
@@ -57,7 +57,7 @@ All you need to do are the following three steps:
 
     you should now use
 
-    ``` {.php}
+    ```php
     // system/modules/news/dca/tl_news.php
     'edit' => array
     (
@@ -75,7 +75,7 @@ That's it. You can now use content elements within your own DCA.
 For your convenience, Contao ships with a helper method within the
 `ContentModel` so you can easily fetch all your related content elements:
 
-``` {.php}
+```php
 $strContent = '';
 
 $objElements = \ContentModel::findPublishedByPidAndTable($objNews->id, 'tl_news');

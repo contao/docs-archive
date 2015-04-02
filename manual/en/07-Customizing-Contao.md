@@ -447,7 +447,7 @@ arguments and expects the array of FormFieldModel objects as return value.
 With this Hook form fields can be adjusted dynamically before display.
 It is available from version 3.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'myCompileFormFields');
 
@@ -692,7 +692,7 @@ The "getPageLayout" hook is executed before initializing the frontend template.
 It passes the page model, the layout object and a reference to the page object
 and does not expect a return value. It is available from version 3.1.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getPageLayout'][] = array('MyClass', 'mygetPageLayout');
 
@@ -728,7 +728,7 @@ public function myGetSearchablePages($arrPages, $intRoot)
 The "initializeSystem" hook is triggered when the system is initialized. It is
 available from version 3.1.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['initializeSystem'][] = array('MyClass', 'myInitializeSystem');
 
@@ -777,7 +777,7 @@ generating the complete markup. The hook passes the model of the instance and th
 current visibility state as arguments and expects the new visibility state as return
 value. Available from version 3.2.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['isVisibleElement'][] = array('MyClass', 'myIsVisibleElement');
 
@@ -1068,7 +1068,7 @@ arguments and does not expect a return value. This way the data can be
 changed or extended, prior to execution of actions like email distribution 
 or data storage. It is available from version 3.0.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['prepareFormData'][] = array('MyClass', 'myPrepareFormData');
 

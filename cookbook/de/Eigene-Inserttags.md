@@ -97,14 +97,14 @@ Verzeichnis zu generieren.
 Ist die Klasse innerhalb eines Namespaces, ändert sich die Syntax ein wenig.
 Ansonsten gelten die selben, bereits genannten Hinweise.
 
-``` {.php}
+```php
  // Datei /system/modules/myinserttag/config/config.php
  
  // Registrieren im Hooks replaceInsertTags
  $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MyModule\MyClass', 'myReplaceInsertTags');
 ```
 
-``` {.php}
+```php
 // Datei /system/modules/myinserttag/MyClass.php
  
 /**

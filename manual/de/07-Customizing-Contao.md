@@ -440,7 +440,7 @@ Argument und erwartet das Array mit FormFieldModel-Objekten als Rückgabewert. H
 Formularfelder dynamisch angepasst werden, bevor sie ausgegeben werden. 
 Hinzugefügt in Version 3.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'myCompileFormFields');
 
@@ -684,7 +684,7 @@ ausgeführt. Er übergibt das Seitenobjekt, das Layoutobjekt und eine
 Eigenreferenz als Argument und erwartet keinen Rückgabewert. Hinzugefügt in
 Version 3.1.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getPageLayout'][] = array('MyClass', 'mygetPageLayout');
 
@@ -719,7 +719,7 @@ public function myGetSearchablePages($arrPages, $intRoot)
 Der "initializeSystem"-Hook wird bei der Initialisierung des Systems ausgeführt.
 Hinzugefügt in Version 3.1.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['initializeSystem'][] = array('MyClass', 'myInitializeSystem');
 
@@ -769,7 +769,7 @@ des gesamten Markups verhindert werden. Der Hook übergibt das Model des Element
 den aktuellen Sichtbarkeitsstatus als Argumente und erwartet den neuen Sichtbarkeitsstatus
 als Rückgabewert. Hinzugefügt in Version 3.2.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['isVisibleElement'][] = array('MyClass', 'myIsVisibleElement');
 
@@ -1061,7 +1061,7 @@ Damit lassen sich die Daten ändern oder erweitern, bevor Aktionen wie
 z.B. E-Mail Versand oder in der Datenbank speichern ausgeführt wird. 
 Hinzugefügt in Version 3.0.0.
 
-```{.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['prepareFormData'][] = array('MyClass', 'myPrepareFormData');
 

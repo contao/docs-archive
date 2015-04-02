@@ -184,7 +184,7 @@ utilisant "loadVars()". Pour permettre la communication entre Contao et Flash,
 vous devez ajouter la fonction suivante au frame principal de votre film :
 
 
-``` {.as}
+```as
 TextField.prototype._loadArticle = function(flashID) {
   tf = this;
 
@@ -215,7 +215,7 @@ Le code ActionScript suivant vous permet d'importer une feuille de style
 pour formater un champ de texte dynamique :
 
 
-``` {.as}
+```as
 TextField.prototype._addCSS = function(style_sheet) {
   tf= this;
   tf.styleSheet = null;

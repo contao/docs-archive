@@ -19,7 +19,7 @@ und eine entsprechende Konfiguration im DCA angelegt werden. Seit
 Contao 3 wird keine `database.sql` mehr benötigt. Die SQL-Definitionen
 werden direkt im DCA implementiert.
 
-```{.php}
+```php
 $GLOBALS['TL_DCA']['tl_example']['fields']['published'] = array
 (
     'label'               => &$GLOBALS['TL_LANG']['tl_example']['published'],
@@ -34,7 +34,7 @@ $GLOBALS['TL_DCA']['tl_example']['fields']['published'] = array
 
 
 ## 2. Einfügen einer Aktion in das DCA
-```{.php}
+```php
 $GLOBALS['TL_DCA']['tl_example']['list']['operations']['toggle'] = array
 (
     'label'               => &$GLOBALS['TL_LANG']['tl_example']['toggle'],
@@ -54,7 +54,7 @@ erstellt werden, die das Icon anhand des Status setzt. Hierfür wird eine
 eigene Klasse angelegt. Wenn bereits eine Klasse mit anderen Callbacks
 o.ä. vorhanden ist, können die Methoden auch dort eingefügt werden.
 
-```{.php}
+```php
 class tl_example
 {
     /**
@@ -102,7 +102,7 @@ In der Methode `toggleIcon` wird die Methode `toggleVisibility` aufgerufen,
 wenn ein entsprechender URL-Parameter vorhanden ist. Dies funktioniert sowohl
 per Ajax als auch als Javascript-Fallback-Link.
 
-```{.php}
+```php
 /**
  * Toggle the visibility of an element
  * @param integer

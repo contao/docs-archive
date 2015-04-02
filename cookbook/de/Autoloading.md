@@ -48,7 +48,7 @@ die Erweiterung abhängig ist. Die Erweiterungen werden dann in der
 entsprechenden Reihenfolge geladen. Es können beliebig viele 
 `requires` angegeben werden.
  
-``` {.ini}
+```ini
 requires[] = "core"
 ```
 
@@ -58,7 +58,7 @@ Die Schlüssel `register_namespaces`, `register_classes` und
 `register_templates` bestimmen, ob der Autoload Generator diese Bereiche
 beim Generieren der `autoload.php` berücksichtigen soll.
 
-``` {.ini}
+```ini
 register_namespaces = true
 register_classes    = true
 register_templates  = true
@@ -71,7 +71,7 @@ Die Schlüssel `register_namespaces`, `register_classes` und
 bestimmen, ob der Autoload Generator diese Bereiche
 beim Generieren der `autoload.php` berücksichtigen soll.
 
-``` {.ini}
+```ini
 [vendor/*]
 register_namespaces = false
 register_classes    = false
@@ -91,7 +91,7 @@ Mit der statischen Methode `addNamespaces` werden zusätzliche Namespaces
 registriert. Nutzt man z.B. eine Klasse `VendorExample\ClassXY.php`
 im Projekt, registriert man hier den Namespace `VendorExample`.
 
-``` {.php}
+```php
 ClassLoader::addNamespaces(array
 (
     'VendorExample'
@@ -104,7 +104,7 @@ Um die Klasse `VendorExample\ClassXY.php` aus dem Verzeichnis
 `system/modules/vendor_example/modules` zu nutzen, muss diese mittels
 der statischen Methode `addClasses` registriert werden.
 
-``` {.php}
+```php
 ClassLoader::addClasses(array
 (
    'VendorExample\ClassXY' => 'system/modules/vendor_example/modules/ClassXY.php' 
@@ -117,7 +117,7 @@ Um ein Template `template.html5` bzw. `template.xhtml` aus dem Verzeichnis
 `system/modules/vendor_example/templates/modules` zu nutzen, muss dieses
 mittels der statischen Methode `addFiles` registriert werden.
 
-``` {.php}
+```php
 TemplateLoader::addFiles(array
 (
     'mod_example' => 'system/modules/vendor_example/templates/modules'

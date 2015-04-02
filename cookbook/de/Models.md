@@ -19,7 +19,7 @@ den Author (`UserModel`) eines Artikels (`ArticleModel`).
 Folgend wird eine Instanz von `ArticleModel` erstellt, welche eine bestimmte 
 Entität der Tabelle `tl_article` referenziert.
 
-```{.php}
+```php
 // ArticleModel mit den Daten der Entität id=5 erstellen
 $objArticleModel = \ArticleModel::findByPk(5);
  
@@ -52,7 +52,7 @@ Contao besitzt seit Version 3.2 eine *Model-Registry*. Das bedeutet, dass immer
 dieselbe Instanz eines Models zurückgegeben wird, sofern der Primärschlüssel 
 übereinstimmt. 
 
-```{.php}
+```php
 $objArticle = \ArticleModel::findByPk(1);
 $objArticle2 = \ArticleModel::findByPk(1);
 
@@ -67,7 +67,7 @@ Das ist besonders wichtig, wenn Änderungen im Model vorgenommen werden.
 Sollen Änderungen nur lokal verfügbar sein, muss eine Kopie der Instanz 
 erzeugt werden:
 
-```{.php}
+```php
 $objArticle = \ArticleModel::findByPk(1);
 echo $objArticle->title; // Home
 
@@ -150,7 +150,7 @@ bzw. setzt diese.
 **ACHTUNG:** Es können beliebige Spalten im Model gesetzt werden, gespeichert
 werden nur Attribute, für die eine Spalte in der Datenbank-Tabelle vorhanden ist.
 
-``` {.php}
+```php
 // Titel des Artikels ausgeben
 echo $objArticleModel->title;
 // Ausgabe: Mein Artikel
@@ -170,7 +170,7 @@ $objArticleModel->save();
 #### Die Methode `row()` 
 
 Gibt alle Werte des Datensatzes als assoziatives Array zurück.
-```{.php} 
+```php 
 print_r($objArticelModel->row());
 // Array (
 //           [id] => 12,
@@ -184,7 +184,7 @@ print_r($objArticelModel->row());
 #### Die Methode `setRow(array $values)`
 
 Setzt alle Werte des Datensatzes anhand des übergebenen assoziativen Arrays
-```{.php} 
+```php 
 $objArticelModel->setRow(array
 (
   'id' => 12,
@@ -212,7 +212,7 @@ Gibt die Anzahl zutreffender Datensätze zurück. Die möglichen Werte für
 `$varColumn` und `$varValue` entsprechen dabei den entsprechenden Optionen
 der `find()`-Methode.
 
-```{.php}
+```php
 echo ArticelModel::countBy('pid', 2);
 // 2
 ```
@@ -237,7 +237,7 @@ einzufügen.
 Eine `Collection` Instanz wird durch `Model::findBy()` (bzw. `Model::findAll()`
 usw.) instanziiert.
 
-```{.php}
+```php
 // Finde alle Artikel WHERE pid=2
 $objArticles = \ArticleModel::findByPid(2);
 // alternativ
@@ -265,7 +265,7 @@ $objArticles = \ArticleModel::findBy(
 ist der Rückgabewert von `findBy()` bzw. `findAll()` gleich `null`!
 Es ist **kein** *Collection* Objekt!
 
-```{.php}
+```php
 // Fetch all published Articles
 $objArticles = \ArticleModel::findBy('published', '1');
 
@@ -298,7 +298,7 @@ Ein Contao *Model* kann auf referenzierte Datensätze zugreifen. Damit Contao
 diese Referenzen auflösen kann, muss dem *Model* ein *DCA* zugeordnet sein,
 welches normalerweise identisch mit dem Namen der Tabelle ist.
 
-```{.php}
+```php
 class ArticleModel extends \Model
 {
 	/**
@@ -310,7 +310,7 @@ class ArticleModel extends \Model
 ```
 
 Im *DCA* wird die Relation anhand von `foreignKey` und `relation` definiert:
-```{.php}
+```php
 $GLOBALS['TL_DCA']['tl_article'] = array
 (
 ...
@@ -349,7 +349,7 @@ tl_form_field => \FormFieldModel
 Folgt die Implementierung nicht dieser Konvention oder befindet sich die 
 Model-Klasse nicht im globalen Namenspace, muss die entsprechende Klasse 
 konfiguriert werden:
-```{.php}
+```php
 $GLOBALS['TL_MODELS']['tl_my_table'] = 'Vendor\Models\MyTable';
 ```
 

@@ -43,7 +43,7 @@ peuvent être configurés dans le module Configuration du back office et seront
 rarement besoin de le modifier manuellement. 
 
 
-``` {.php}
+```php
 // Désactive le créateur d'extension
 unset($GLOBALS['BE_MOD']['devtools']['extension']);
 
@@ -66,7 +66,7 @@ est enregistrée dans les dossiers `dca` des divers modules de Contao. Faites vo
 modifications dans le fichier `system/config/dcaconfig.php` afin qu'elles ne 
 soient pas écrasées à la prochaine mise à jour. 
 
-``` {.php}
+```php
 // Rend obligatoire le champ company dans la table des membres
 $GLOBALS['TL_DCA']['tl_member']['fields']['company']['eval']['mandatory'] =
 true;
@@ -97,7 +97,7 @@ ISO-639-1][2]. Appliquez vos modifications dans le fichier
 `system/config/langconfig.php` afin qu'elles ne soient pas écrasées à la 
 prochaine mise à jour. 
 
-``` {.php}
+```php
 // Modifie un libellé pour toutes les langues
 $GLOBALS['TL_LANG']['MSC']['goBack'] = '«';
 
@@ -140,7 +140,7 @@ tableau conteneur de données sous `sql`. Les détails SQL ne sont pas envoyés 
 la base de données, mais sont utilisés pour calculer la différence entre les 
 spécifications de Contao et les tables existantes.
 
-``` {.php}
+```php
 // Modification de la palette
 $GLOBALS['TL_DCA']['tl_member']['palettes']['default'] = str_replace
 (
@@ -173,7 +173,7 @@ mettre à jour les tables de votre base de données.
 Créez le fichier `languages/en/tl_member.php` dans le répertoire de votre 
 module, et ajoutez-y les libellés anglais pour votre nouveau champ :
 
-``` {.php}
+```php
 $GLOBALS['TL_LANG']['tl_member']['customer_number'] = array
 (
     'Customer number',
@@ -207,7 +207,7 @@ fichier. Il reste encore à adapter la [configuration du conteneur de données][
 dans le fichier `system/config/dcaconfig.php` et indiquer à Contao à quels 
 champs le fichier personnalisé de configuration s'applique. 
 
-``` {.php}
+```php
 // Utilisation d'une configuration personnalisée de l'éditeur de texte riche 
 pour les éléments textes
 $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] =
@@ -238,7 +238,7 @@ supplantant. Pour ce faire, créez un nouveau fichier
 `xcustom/ModuleMyNavigation.php` et définissez la classe personnalisée 
 `ModuleMyNavigation` :
 
-``` {.php}
+```php
 // xcustom/ModuleMyNavigation.php
 class ModuleMyNavigation extends ModuleNavigation
 {
@@ -265,7 +265,7 @@ dynamiquement dans la configuration du système de Contao, ce qui vous permet de
 les remplacer facilement par vos propres versions. Les noms des classes de 
 modules sont enregistrés dans le tableau global `FE_MOD`. 
 
-``` {.php}
+```php
 // xcustom/config/config.php
 $GLOBALS['FE_MOD']['navigationMenu']['navigation'] = 'ModuleMyNavigation';
 ```
@@ -291,7 +291,7 @@ Le hook `activateAccount` est déclenché lorsqu'un nouveau compte en front
 office est activé. Il passe l'objet User en argument et n'attend pas de 
 valeur de retour. Il est disponible à partir de la version 2.4.3.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['activateAccount'][] = array('MyClass',
 'myActivateAccount');
@@ -311,7 +311,7 @@ newsletter est ajouté. Il passe l'adresse e-mail, les ID du destinataire et de
 la liste de diffusion en arguments et n'attend pas de valeur de retour. Il est 
 disponible à partir de la version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['activateRecipient'][] = array('MyClass',
 'myActivateRecipient');
@@ -330,7 +330,7 @@ Le hook `addComment` est déclenché lorsqu'un commentaire est ajouté. Il passe
 l'ID de l'enregistrement et le tableau de données en arguments et n'attend pas 
 de valeur de retour. Il est disponible à partir de la version 2.8.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['addComment'][] = array('MyClass', 'myAddComment');
 
@@ -349,7 +349,7 @@ est trouvée. Il passe le nom de l'expression régulière, la valeur courante et
 l'objet Widget en arguments et attend une valeur de retour de type booléen. Il 
 est disponible à partir de la version 2.6.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['addCustomRegexp'][] = array('MyClass',
 'myAddCustomRegexp');
@@ -379,7 +379,7 @@ journal (log). Il passe le message, la fonction et l'action en arguments et
 n'attend pas de valeur de retour. Il est disponible à partir de la version 
 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['addLogEntry'][] = array('MyClass', 'myAddLogEntry');
 
@@ -398,7 +398,7 @@ Le hook `checkCredentials` est déclenché lorsqu'une tentative d'identification
 le mot de passe et l'objet User en arguments et attend une valeur de 
 retour de type booléen. Il est disponible à partir de la version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['checkCredentials'][] = array('MyClass',
 'myCheckCredentials');
@@ -424,7 +424,7 @@ Il passe l'ID de l'utilisateur, le mode opérationnel et le module en arguments
 et n'attend pas de valeur de retour. Il est disponible à partir de la version 
 2.8.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['closeAccount'][] = array('MyClass', 'myCloseAccount');
 
@@ -446,7 +446,7 @@ d'une feuille de style est écrite. Il passe le tableau de configuration en
 argument et attend une chaîne de caractères comme valeur de retour. Il est 
 disponible à partir de la version 2.9.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['compileDefinition'][] = array('MyClass',
 'myCompileDefinition');
@@ -472,7 +472,7 @@ du formulaire en arguments et attend le tableau d'objets FormFieldModel comme
 valeur de retour. Avec ce hook, les champs de formulaire peuvent être ajustés
 dynamiquement avant l'affichage. Il est disponible à partir de la version 3.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'myCompileFormFields');
 
@@ -503,7 +503,7 @@ de formatage d'origine et le tableau de données en arguments et attend un
 tableau ou `false` comme valeur de retour. Il est disponible à partir de la 
 version 2.9.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['createDefinition'][] = array('MyClass',
 'myCreateDefinition');
@@ -528,7 +528,7 @@ s'enregistre sur le site internet. Il passe le nouvel utilisateur et le tableau
 de données en arguments et n'attend pas de valeur de retour. Il est disponible à 
 partir de la version 2.2.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['createNewUser'][] = array('MyClass', 'myCreateNewUser');
 
@@ -546,7 +546,7 @@ Le hook `executePreActions` est déclenché par les requêtes Ajax qui ne
 nécessitent pas un objet DCA. Il passe le nom de l'action en argument et n'attend 
 pas de valeur de retour. Il est disponible à partir de la version 2.6.1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['executePreActions'][] = array('MyClass', 'myExecutePreActions');
 
@@ -568,7 +568,7 @@ un objet DCA. Il passe le nom de l'action et l'objet DataContainer en arguments
 et n'attend pas de valeur de retour. Il est disponible à partir de la 
 version 2.6.1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['executePostActions'][] = array('MyClass', 'myExecutePostActions');
 
@@ -590,7 +590,7 @@ passe les éléments de navigation et le module front office en arguments et
 attend des éléments comme valeur de retour. Il est disponible à partir de la 
 version 2.10.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['generateBreadcrumb'][] = array('MyClass', 'myGenerateBreadcrumb');
 
@@ -609,7 +609,7 @@ de front office. Il passe l'objet Page, la chaîne de paramètres et l'URL par
 défaut en arguments et attend une chaîne de caractères comme valeur de retour. 
 Il est disponible à partir de la version 2.5.8.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['generateFrontendUrl'][] = array('MyClass', 'myGenerateFrontendUrl');
 
@@ -629,7 +629,7 @@ et une référence qui lui est propre en arguments et n'attend pas de valeur
 de retour. Il est disponible à partir de la version 2.8.RC1.
 
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['generatePage'][] = array('MyClass', 'myGeneratePage');
 
@@ -649,7 +649,7 @@ les ID des éléments parents et l'heure de début et de fin en arguments et
 attend un jeu de résultats (tableau) comme valeur de retour. Il est disponible 
 à partir de la version 2.6.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getAllEvents'][] = array('MyClass', 'myGetAllEvents');
 
@@ -669,7 +669,7 @@ rendu. Il passe l'objet Database et une chaîne-tampon (buffer string) en
 arguments et attend une chaîne-tampon comme valeur de retour. Il est disponible 
 à partir de la version 2.9.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getContentElement'][] = array('MyClass', 'myGetContentElement');
 
@@ -689,7 +689,7 @@ la hauteur, la mode, le nom du cache et l'objet File en arguments et attend
 un chemin d'accès comme valeur de retour. Il est disponible à partir de la 
 version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getImage'][] = array('MyClass', 'myGetImage');
 
@@ -707,7 +707,7 @@ Le hook `getPageIdFromUrl` est déclenché lors de l'évaluation des parties d'u
 URL. Il passe les fragments d'URL en argument et attend un tableau de fragments 
 d'une URL en valeur de retour. Il est disponible depuis la version 2.5.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getPageIdFromUrl'][] = array('MyClass', 'myGetPageIdFromUrl');
 
@@ -726,7 +726,7 @@ Il passe le modèle de la page, l'objet Model et une référence à l'objet Page
 arguments et n'attend pas de valeur de retour. Il est disponible à partir de la 
 version 3.1.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getPageLayout'][] = array('MyClass', 'mygetPageLayout');
 
@@ -745,7 +745,7 @@ de recherche. Il passe le tableau des pages et l'ID de la page racine en
 arguments et attend un tableau d'URLs absolues (!) comme valeur de retour. Il 
 est disponible à partir de la version 2.2.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getSearchablePages'][] = array('MyClass', 'myGetSearchablePages');
 
@@ -762,7 +762,7 @@ public function myGetSearchablePages($arrPages, $intRoot)
 Le hook `initializeSystem` est déclenché lorsque le système est initialisé. Il 
 est disponible à partir de la version 3.1.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['initializeSystem'][] = array('MyClass', 'myInitializeSystem');
 
@@ -781,7 +781,7 @@ trouvé dans la base de données. Il passe le nom d'utilisateur, le mot de passe
 et le nom de la table en arguments et attend une valeur de retour de type 
 booléen. Il est disponible à partir de la version 2.7.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['importUser'][] = array('MyClass', 'myImportUser');
 
@@ -813,7 +813,7 @@ passe le modèle de l'instance et l'état de visibilité courant en arguments et
 attend le nouvel état de visibilité comme valeur de retour. Il est disponible à
 partir de la version 3.2.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['isVisibleElement'][] = array('MyClass', 'myIsVisibleElement');
 
@@ -842,7 +842,7 @@ le back office. Il passe l'enregistrement courant en argument et attend une
 chaîne de caractères comme valeur de retour. Il est disponible à partir de la 
 version 2.8.RC2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['listComments'][] = array('MyClass', 'myListComments');
 
@@ -861,7 +861,7 @@ Il passe l'objet Widget, l'ID et les données du formulaire en arguments et
 attend un objet Widget comme valeur de retour. Il est disponible à partir de 
 la version 2.5.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['loadFormField'][] = array('MyClass', 'myLoadFormField');
 
@@ -881,7 +881,7 @@ passe le nom de fichier en argument et n'attend pas de valeur de retour. Il est
 disponible à partir de la version 2.8.2.
 
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('MyClass', 'myLoadDataContainer');
 
@@ -899,7 +899,7 @@ Le hook `loadLanguageFile` est déclenché au chargement d'un fichier de langues
 Il passe le nom du fichier et la langue en arguments et n'attend pas de valeur 
 de retour. Il est disponible à partir de la version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['loadLanguageFile'][] = array('MyClass', 'myLoadLanguageFile');
 
@@ -918,7 +918,7 @@ d'un modèle du back office. Il passe le contenu et le nom du modèle en
 arguments et attend le contenu du modèle comme valeur de retour. Il est 
 disponible à partir de la version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('MyClass', 'myOutputBackendTemplate');
 
@@ -942,7 +942,7 @@ d'un modèle du front office. Il passe le contenu et le nom du modèle en
 arguments et attend le contenu du modèle comme valeur de retour. Il est 
 disponible à partir de la version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['outputFrontendTemplate'][] = array('MyClass', 'myOutputFrontendTemplate');
 
@@ -966,7 +966,7 @@ est analysé ("parsé"). Il passe le contenu et le nom du modèle en arguments
 et attend le contenu du modèle comme valeur de retour. Il est disponible à 
 partir de la version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['parseBackendTemplate'][] = array('MyClass', 'myParseBackendTemplate');
 
@@ -990,7 +990,7 @@ d'un modèle de front office. Il passe le contenu et le nom du modèle en
 arguments et attend le contenu du modèle comme valeur de retour. Il est 
 disponible à partir de la version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['parseFrontendTemplate'][] = array('MyClass', 'myParseFrontendTemplate');
 
@@ -1014,7 +1014,7 @@ Il reçoit une instance `Template` (qui peut être `FrontendTemplate` ou
 `BackendTemplate`) en argument et n'attend pas de valeur de retour. Il est
 disponible à partir de la version 2.10.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['parseTemplate'][] = array('MyClass', 'myParseTemplate');
 
@@ -1036,7 +1036,7 @@ avec l'élément téléchargement(s). Il passe le nom du fichier en argument et
 n'attend pas de valeur de retour. Il est disponible à partir de la version 
 2.4.6.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postDownload'][] = array('MyClass', 'myPostDownload');
 
@@ -1054,7 +1054,7 @@ Le hook `postLogin` est déclenché après qu'un membre front office ou un
 utilisateur back office se soit identifié. Il passe l'objet User en 
 argument et n'attend pas de valeur de retour.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postLogin'][] = array('MyClass', 'myPostLogin');
 
@@ -1072,7 +1072,7 @@ Le hook `postLogout` est déclenché après qu'un membre front office ou un
 utilisateur back office se soit déconnecté. Il passe l'objet User 
 en argument et n'attend pas de valeur de retour.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postLogout'][] = array('MyClass', 'myPostLogout');
 
@@ -1091,7 +1091,7 @@ ou plusieurs fichiers dans le back office. Il passe un tableau de noms de
 fichiers en argument et n'attend pas de valeur de retour. Il est disponible 
 à partir de la version 2.6.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postUpload'][] = array('MyClass', 'myPostUpload');
 
@@ -1112,7 +1112,7 @@ peuvent être modifiées ou étendues, avant l'exécution des actions comme l'en
 de messagerie ou le stockage de données. Il est disponible à partir de la
 version 3.0.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['prepareFormData'][] = array('MyClass', 'myPrepareFormData');
 
@@ -1131,7 +1131,7 @@ format PDF. Il passe le texte de l'article et l'objet Article en arguments
 et n'attend pas de valeur de retour. Il est disponible à partir de la version 
 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['printArticleAsPdf'][] = array('MyClass', 'myPrintArticleAsPdf');
 
@@ -1151,7 +1151,7 @@ Il passe le tableau des données du formulaire, le [tableau conteneur de donnée
 et le tableau de fichiers en arguments et n'attend pas de valeur de retour. 
 Il est disponible à partir de la version 2.4.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['processFormData'][] = array('MyClass', 'myProcessFormData');
 
@@ -1170,7 +1170,7 @@ XML du répertoire de Contao. Il ne passe pas d'arguments et attend un tableau d
 noms de fichiers à conserver comme valeur de retour. Il est disponible à partir 
 de la version 2.5.8.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['removeOldFeeds'][] = array('MyClass', 'myRemoveOldFeeds');
 
@@ -1189,7 +1189,7 @@ newsletter. Il passe l'adresse e-mail et les ID de la liste de diffusion en
 arguments et n'attend pas de valeur de retour. Il est disponible à partir de 
 la version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['removeRecipient'][] = array('MyClass', 'myRemoveRecipient');
 
@@ -1208,7 +1208,7 @@ inconnue est trouvée. Il passe la balise d'insertion en argument et attend la
 valeur de remplacement ou `false` comme valeur de retour. Il est disponible 
 à partir de la version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MyClass', 'myReplaceInsertTags');
 
@@ -1234,7 +1234,7 @@ de toutes les tables enfants en arguments et attend un booléen comme valeur
 de retour (le retour de la valeur `true` provoque le rechargement de la page 
 courante). Il est disponible à partir de la version 2.6.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['reviseTable'][] = array('MyClass', 'myReviseTable');
 
@@ -1253,7 +1253,7 @@ passe. Il passe l'objet User et le mot de passe crypté en arguments
 et n'attend pas de valeur de retour. Il est disponible à partir de la 
 version 2.2.3.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['setNewPassword'][] = array('MyClass', 'mySetNewPassword');
 
@@ -1272,7 +1272,7 @@ formulaire. Il passe l'objet Widget et l'ID du formulaire en arguments et
 attend un objet Widget comme valeur de retour. Il est disponible à partir de 
 la version 2.5.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['validateFormField'][] = array('MyClass', 'myValidateFormField');
 
