@@ -17,7 +17,7 @@ wahrscheinlich `htdocs`, `httpdocs`, `html` oder `public_html`.
 Wenn Sie SSH-Zugriff auf den Server haben, können Sie alternativ folgende
 Befehle verwenden:
 
-``` {.bash}
+```bash
 curl -L http://download.contao.org | tar -xzp
 ```
 
@@ -31,7 +31,7 @@ dreimal hintereinander ein falsches Passwort eingegeben wurde. Um diese Sperre
 aufzuheben, öffnen Sie die Datei `system/config/localconfig.php` in einem
 Texteditor, finden Sie die folgende Zeile und setzen Sie sie auf `0`.
 
-``` {.php}
+```php
 $GLOBALS['TL_CONFIG']['installCount'] = 0; // Hebt die automatische Sperre auf
 ```
 

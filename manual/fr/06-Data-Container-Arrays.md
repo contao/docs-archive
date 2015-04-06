@@ -996,14 +996,14 @@ déroulé ou enroulé.
 
 L'exemple ci-dessus se définit par le code suivant :
 
-``` {.php}
+```php
 {title_legend},headline,alias,author;{date_legend},date,time;{teaser_legend:hide},subheadline,teaser
 ```
 
 Les éléments de substitution `title_legend` et `date_legend` seront remplacés 
 par leur libellé correspondant dans le tableau "TL_LANG". 
 
-``` {.php}
+```php
 $GLOBALS['TL_LANG']['tl_news']['title_legend'] = 'Title and author';
 $GLOBALS['TL_LANG']['tl_news']['date_legend']  = 'Date and time';
 ```

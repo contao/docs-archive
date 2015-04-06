@@ -956,14 +956,14 @@ be expanded and collapsed.
 
 The above example is defined by the following code:
 
-``` {.php}
+```php
 {title_legend},headline,alias,author;{date_legend},date,time;{teaser_legend:hide},subheadline,teaser
 ```
 
 The `title_legend` and `date_legend` placeholders will be replaced with the
 corresponding labels from the "TL_LANG" array.
 
-``` {.php}
+```php
 $GLOBALS['TL_LANG']['tl_news']['title_legend'] = 'Title and author';
 $GLOBALS['TL_LANG']['tl_news']['date_legend']  = 'Date and time';
 ```

@@ -40,7 +40,7 @@ aufgerufen!
 In diesem Code-Beispiel soll das Inserttag {{foo::bar}} ersetzt werden durch
 das Modul "myinserttag". Als erstes muss der Hook registriert werden.
 
-``` {.php}
+```php
 // Datei /system/modules/myinserttag/config/config.php
  
 // Registrieren im Hooks replaceInsertTags
@@ -52,7 +52,7 @@ Methode zur Ersetzung beinhaltet. Dabei muss der Name der Klasse und der
 Methode identisch sein wie bei der Hook Registration. Außerdem muss der Name
 der Datei (ohne Endung) identisch sein mit dem Name der Klasse.
 
-``` {.php}
+```php
 // Datei /system/modules/myinserttag/MyClass.php
  
 class MyClass extends Frontend
@@ -97,14 +97,14 @@ Verzeichnis zu generieren.
 Ist die Klasse innerhalb eines Namespaces, ändert sich die Syntax ein wenig.
 Ansonsten gelten die selben, bereits genannten Hinweise.
 
-``` {.php}
+```php
  // Datei /system/modules/myinserttag/config/config.php
  
  // Registrieren im Hooks replaceInsertTags
  $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MyModule\MyClass', 'myReplaceInsertTags');
 ```
 
-``` {.php}
+```php
 // Datei /system/modules/myinserttag/MyClass.php
  
 /**

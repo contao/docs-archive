@@ -12,7 +12,7 @@ Alles was du machen musst, sind die folgenden drei Schritte:
 
 1. Definiere `tl_content` als Kindtabelle deines aktuellen DCA's
 
-    ``` {.php}
+    ```php
     // system/modules/news/dca/tl_news.php
 
     /**
@@ -29,7 +29,7 @@ Alles was du machen musst, sind die folgenden drei Schritte:
 
 2. Setze die Elterntabelle von `tl_content` dynamisch
 
-    ``` {.php}
+    ```php
     // system/modules/news/dca/tl_content.php
     
     /**
@@ -45,7 +45,7 @@ Alles was du machen musst, sind die folgenden drei Schritte:
 
     Anstelle von
 
-    ``` {.php}
+    ```php
     'edit' => array
     (
         'label'               => &$GLOBALS['TL_LANG']['tl_news']['edit'],
@@ -56,7 +56,7 @@ Alles was du machen musst, sind die folgenden drei Schritte:
 
     solltest du Folgendes nutzen:
 
-    ``` {.php}
+    ```php
     // system/modules/news/dca/tl_news.php
     'edit' => array
     (
@@ -67,7 +67,7 @@ Alles was du machen musst, sind die folgenden drei Schritte:
     ```
 4. Füge `tl_content` zu den erlaubten Tabellen hinzu
 
-    ``` {.php}
+    ```php
     // system/modules/news/config/config.php
     $GLOBALS['BE_MOD']['content']['news'] = array
     (
@@ -83,7 +83,7 @@ Das war's. Du kannst jetzt Inhaltselemente in deinem eigenen DCA nutzen.
 Das `ContentModel` kommt mit einer Hilfsmethode, welche das einfache Laden von
 Inhaltselementen ermöglicht:
 
-``` {.php}
+```php
 $strContent = '';
 
 $objElements = \ContentModel::findPublishedByPidAndTable($objNews->id, 'tl_news');

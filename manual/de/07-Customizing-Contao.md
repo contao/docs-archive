@@ -41,7 +41,7 @@ in den Backend-Einstellungen gesetzt und automatisch in die lokale
 Konfigurationsdatei geschrieben, so dass Sie diese in der Regel nicht manuell
 bearbeiten müssen.
 
-``` {.php}
+```php
 // Den Extension Creator abschalten
 unset($GLOBALS['BE_MOD']['devtools']['extension']);
 
@@ -63,7 +63,7 @@ Tabellen-Metadaten. Die Data Container-Konfiguration ist in den `dca`-Ordnern
 der verschiedenen Contao-Module hinterlegt und kann in der Datei
 `system/config/dcaconfig.php` updatesicher angepasst werden.
 
-``` {.php}
+```php
 // Firma zu einem Pflichtfeld in der Mitgliedertabelle machen
 $GLOBALS['TL_DCA']['tl_member']['fields']['company']['eval']['mandatory'] =
 true;
@@ -90,7 +90,7 @@ verschiedenen Contao-Module hinterlegt. Jede Sprache wird anhand ihres
 [ISO-639-1 Sprachcodes][2] identifiziert. Änderungen können updatesicher in
 der Datei `system/config/langconfig.php` gespeichert werden.
 
-``` {.php}
+```php
 // Eine Bezeichnung in allen Sprachen ändern
 $GLOBALS['TL_LANG']['MSC']['goBack'] = '«';
 
@@ -126,7 +126,7 @@ die Metadaten des neuen Feldes ein.
 Seit Contao 3 werden außerdem auch die dazugehörigen Felder sowie deren 
 Konfiguration für die Datenbank unter `sql` direkt mit angegeben. 
 
-``` {.php}
+```php
 // Anpassung der Palette
 $GLOBALS['TL_DCA']['tl_member']['palettes']['default'] = str_replace
 (
@@ -158,7 +158,7 @@ aktualisieren. Dazu verwenden Sie das [Contao-Installtool][3].
 Erstellen Sie die Datei `languages/de/tl_member.php` in Ihrem Modulordner und
 legen Sie die deutschen Bezeichnungen an:
 
-``` {.php}
+```php
 $GLOBALS['TL_LANG']['tl_member']['customer_number'] = array
 (
     'Kundennummer',
@@ -189,7 +189,7 @@ speichern Sie die neue Datei als `tinyCustom.php`. Passen Sie dann noch die
 [DCA-Konfiguration][5] in der Datei `system/config/dcaconfig.php` an, damit
 Contao zukünftig die neue Konfigurationsdatei lädt.
 
-``` {.php}
+```php
 // Die eigene RTE-Konfiguration für Text-Elemente verwenden
 $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyCustom';
 ```
@@ -215,7 +215,7 @@ muss, empfiehlt es sich, die Originalklasse zu erweitern und einfach zu
 überschreiben. Definieren Sie dazu die Klasse `ModuleMyNavigation` in der Datei
 `xcustom/ModuleMyNavigation.php`:
 
-``` {.php}
+```php
 // xcustom/ModuleMyNavigation.php
 class ModuleMyNavigation extends ModuleNavigation
 {
@@ -241,7 +241,7 @@ Inhaltselement- und Modulklassen können dynamisch in der Contao-Konfiguration
 zugeordnet und so einfach durch eigene Versionen ersetzt werden. Die Namen der
 Modulklassen werden im globalen Array `FE_MOD` gespeichert.
 
-``` {.php}
+```php
 // xcustom/config/config.php
 $GLOBALS['FE_MOD']['navigationMenu']['navigation'] = 'ModuleMyNavigation';
 ```
@@ -266,7 +266,7 @@ Der "activateAccount"-Hook wird bei der Aktivierung eines neuen Mitgliederkontos
 ausgeführt. Er übergibt das Benutzer-Objekt als Argument und erwartet keinen
 Rückgabewert. Hinzugefügt in Version 2.4.3.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['activateAccount'][] = array('MyClass', 'myActivateAccount');
 
@@ -285,7 +285,7 @@ Newsletter-Abonnenten ausgeführt. Er übergibt die E-Mail-Adresse, die IDs der
 Empfänger und die IDs der Verteiler als Argument und erwartet keinen
 Rückgabewert. Hinzugefügt in Version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['activateRecipient'][] = array('MyClass', 'myActivateRecipient');
 
@@ -303,7 +303,7 @@ Der "addComment"-Hook wird beim Hinzufügen eines Kommentars ausgeführt. Er
 übergibt die ID des Datensatzes und das Datenarray als Argument und erwartet
 keinen Rückgabewert. Hinzugefügt in Version 2.8.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['addComment'][] = array('MyClass', 'myAddComment');
 
@@ -322,7 +322,7 @@ Ausdrucks ausgeführt. Er übergibt den Namen des Ausdrucks, den aktuellen Wert
 und das Widget-Objekt als Argument und erwartet einen booleschen Rückgabewert.
 Hinzugefügt in Version 2.6.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['addCustomRegexp'][] = array('MyClass', 'myAddCustomRegexp');
 
@@ -350,7 +350,7 @@ Der "addLogEntry"-Hook wird beim Anlegen eines Log-Eintrags ausgeführt. Er
 übergibt den Log-Text, die Funktion und die Aktion als Argument und erwartet
 keinen Rückgabewert. Hinzugefügt in Version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['addLogEntry'][] = array('MyClass', 'myAddLogEntry');
 
@@ -369,7 +369,7 @@ Anmeldung ausgeführt. Er übergibt den Benutzernamen und das Passwort sowie das
 Benutzer-Objekt als Argument und erwartet einen booleschen Rückgabewert.
 Hinzugefügt in Version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['checkCredentials'][] = array('MyClass', 'myCheckCredentials');
 
@@ -394,7 +394,7 @@ ausgeführt. Er übergibt die ID des Benutzers, den Betriebsmodus und das
 Modul-Objekt als Argument und erwartet keinen Rückgabewert. Hinzugefügt in
 Version 2.8.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['closeAccount'][] = array('MyClass', 'myCloseAccount');
 
@@ -415,7 +415,7 @@ Der "compileDefinition"-Hook wird bei der Erstellung einer Formatdefinition in
 einem Stylesheet ausgeführt. Er übergibt das Konfigurationsarray als Argument
 und erwartet einen String als Rückgabewert. Hinzugefügt in Version 2.9.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['compileDefinition'][] = array('MyClass', 'myCompileDefinition');
 
@@ -440,7 +440,7 @@ Argument und erwartet das Array mit FormFieldModel-Objekten als Rückgabewert. H
 Formularfelder dynamisch angepasst werden, bevor sie ausgegeben werden. 
 Hinzugefügt in Version 3.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'myCompileFormFields');
 
@@ -470,7 +470,7 @@ Stylesheets ausgeführt. Er übergibt Schlüssel und Wert, die originale
 Formatdefinition sowie das Daten-Array als Argument und erwartet ein Array oder
 `false` als Rückgabewert. Hinzugefügt in Version 2.9.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['createDefinition'][] = array('MyClass', 'myCreateDefinition');
 
@@ -493,7 +493,7 @@ Der "createNewUser"-Hook wird bei der Registrierung eines neuen Mitglieds
 ausgeführt. Er übergibt die ID des neuen Benutzers und das Datenarray als
 Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.2.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['createNewUser'][] = array('MyClass', 'myCreateNewUser');
 
@@ -511,7 +511,7 @@ Der "executePreActions"-Hook wird bei unbekannten Ajax-Anfragen ausgeführt, die
 keine DCA-Objekt benötigen. Er übergibt den Namen der Aktion als Argument und
 erwartet keinen Rückgabewert. Hinzugefügt in Version 2.6.1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['executePreActions'][] = array('MyClass', 'myExecutePreActions');
 
@@ -533,7 +533,7 @@ ein DCA-Objekt benötigen. Er übergibt den Namen der Aktion und das
 DataContainer-Objekt als Argument und erwartet keinen Rückgabewert. Hinzugefügt
 in Version 2.6.1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['executePostActions'][] = array('MyClass', 'myExecutePostActions');
 
@@ -554,7 +554,7 @@ Der "generateBreadcrumb"-Hook ermöglicht das Modifizieren der Pfadnavigation.
 Er übergibt das Navigations-Array und das Modul-Objekt als Argument und erwartet
 ein Array als Rückgabewert. Hinzugefügt in Version 2.10.0
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['generateBreadcrumb'][] = array('MyClass', 'myGenerateBreadcrumb');
 
@@ -572,7 +572,7 @@ Der "generateFrontendUrl"-Hook wird bei der Erstellung einer Frontend-URL
 ausgeführt. Er übergibt die originale URL als Argument und erwartet eine
 Zeichenkette als Rückgabewert. Hinzugefügt in Version 2.5.8.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['generateFrontendUrl'][] = array('MyClass', 'myGenerateFrontendUrl');
 
@@ -590,7 +590,7 @@ Der "generatePage"-Hook wird vor der Erstellung des Seitenlayouts ausgeführt.
 Er übergibt das Seitenobjekt, das Layoutobjekt und eine Eigenreferenz als
 Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['generatePage'][] = array('MyClass', 'myGeneratePage');
 
@@ -609,7 +609,7 @@ und Eventmodulen. Er übergibt das originale Datenarray, die IDs der
 Elternelemente sowie die Start- und Endzeit als Argument und erwartet ein
 Datenarray als Rückgabewert. Hinzugefügt in Version 2.6.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getAllEvents'][] = array('MyClass', 'myGetAllEvents');
 
@@ -628,7 +628,7 @@ Der "getContentElement"-Hook wird beim Rendern von Inhaltselementen ausgeführt.
 Er übergibt das Datenbankobjekt und den Ausgabe-String als Argument und
 erwartet einen Ausgabe-String als Rückgabewert. Hinzugefügt in Version 2.9.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getContentElement'][] = array('MyClass', 'myGetContentElement');
 
@@ -647,7 +647,7 @@ ermöglicht das Hinzufügen einer eigenen Routine. Er übergibt den Pfad, die
 Breite und Höhe, den Modus, den Cache-Namen und das Dateiobjekt als Argument
 und erwartet einen Pfad als Rückgabewert. Hinzugefügt in Version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getImage'][] = array('MyClass', 'myGetImage');
 
@@ -665,7 +665,7 @@ Der "getPageIdFromUrl"-Hook wird beim Auswerten der URL-Fragmente ausgeführt.
 Er übergibt das Fragment-Array als Argument und erwartet ein Datenarray als
 Rückgabewert. Hinzugefügt in Version 2.5.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getPageIdFromUrl'][] = array('MyClass', 'myGetPageIdFromUrl');
 
@@ -684,7 +684,7 @@ ausgeführt. Er übergibt das Seitenobjekt, das Layoutobjekt und eine
 Eigenreferenz als Argument und erwartet keinen Rückgabewert. Hinzugefügt in
 Version 3.1.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getPageLayout'][] = array('MyClass', 'mygetPageLayout');
 
@@ -702,7 +702,7 @@ Der "getSearchablePages"-Hook wird beim Aufbau des Suchindex ausgeführt. Er
 übergibt das URL-Array und die ID der Wurzelseite als Argument und erwartet ein
 Array mit absoluten URLs (!) als Rückgabewert. Hinzugefügt in Version 2.2.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['getSearchablePages'][] = array('MyClass', 'myGetSearchablePages');
 
@@ -719,7 +719,7 @@ public function myGetSearchablePages($arrPages, $intRoot)
 Der "initializeSystem"-Hook wird bei der Initialisierung des Systems ausgeführt.
 Hinzugefügt in Version 3.1.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['initializeSystem'][] = array('MyClass', 'myInitializeSystem');
 
@@ -738,7 +738,7 @@ ausgeführt. Er übergibt den Benutzernamen, das Passwort und den Tabellennamen
 als Argument und erwartet einen booleschen Rückgabewert. Hinzugefügt in Version
 2.7.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['importUser'][] = array('MyClass', 'myImportUser');
 
@@ -769,7 +769,7 @@ des gesamten Markups verhindert werden. Der Hook übergibt das Model des Element
 den aktuellen Sichtbarkeitsstatus als Argumente und erwartet den neuen Sichtbarkeitsstatus
 als Rückgabewert. Hinzugefügt in Version 3.2.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['isVisibleElement'][] = array('MyClass', 'myIsVisibleElement');
 
@@ -797,7 +797,7 @@ Der "listComments"-Hook wird bei der Darstellung von Kommentaren im Backend
 ausgeführt. Er übergibt den aktuellen Datensatz als Argument und erwartet
 einen String als Rückgabewert. Hinzugefügt in Version 2.8.RC2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['listComments'][] = array('MyClass', 'myListComments');
 
@@ -815,7 +815,7 @@ Der "loadFormField"-Hook wird beim Laden eines Formularfeldes ausgeführt. Er
 übergibt das Widget-Objekt, die ID und die Metadaten des Formulars als Argument
 und erwartet ein Widget-Objekt als Rückgabewert. Hinzugefügt in Version 2.5.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['loadFormField'][] = array('MyClass', 'myLoadFormField');
 
@@ -834,7 +834,7 @@ Der "loadDataContainer"-Hook wird beim Laden eines Data Containers ausgeführt.
 Er übergibt den Namen der DCA-Datei als Argument und erwartet keinen
 Rückgabewert. Hinzugefügt in Version 2.8.2.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('MyClass', 'myLoadDataContainer');
 
@@ -852,7 +852,7 @@ Der "loadLanguageFile"-Hook wird beim Laden einer Sprachdatei ausgeführt. Er
 übergibt den Namen der Sprachdatei und die Sprache als Argument und erwartet
 keinen Rückgabewert. Hinzugefügt in Version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['loadLanguageFile'][] = array('MyClass',
 'myLoadLanguageFile');
@@ -872,7 +872,7 @@ auf dem Bildschirm ausgeführt. Er übergibt Inhalt und Name des Templates als
 Argument und erwartet den geänderten Template-Inhalt als Rückgabewert.
 Hinzugefügt in Version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('MyClass', 'myOutputBackendTemplate');
 
@@ -896,7 +896,7 @@ auf dem Bildschirm ausgeführt. Er übergibt Inhalt und Name des Templates als
 Argument und erwartet den geänderten Template-Inhalt als Rückgabewert.
 Hinzugefügt in Version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['outputFrontendTemplate'][] = array('MyClass', 'myOutputFrontendTemplate');
 
@@ -920,7 +920,7 @@ Backend-Templates ausgeführt. Er übergibt Inhalt und Name des Templates als
 Argument und erwartet den geänderten Template-Inhalt als Rückgabewert.
 Hinzugefügt in Version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['parseBackendTemplate'][] = array('MyClass', 'myParseBackendTemplate');
 
@@ -944,7 +944,7 @@ Frontend-Templates ausgeführt. Er übergibt Inhalt und Name des Templates als
 Argument und erwartet den geänderten Template-Inhalt als Rückgabewert.
 Hinzugefügt in Version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['parseFrontendTemplate'][] = array('MyClass', 'myParseFrontendTemplate');
 
@@ -967,7 +967,7 @@ Er übergibt die `Template`-Instanz als Argument (kann `FrontendTemplate` und
 `BackendTemplate` sein) und erwartet keinen Rückgabewert. 
 Hinzugefügt in Version 2.10.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['parseTemplate'][] = array('MyClass', 'myParseTemplate');
 
@@ -987,7 +987,7 @@ Der "postDownload"-Hook wird nach dem Herunterladen einer Datei mit Hilfe des
 Download(s)-Elements ausgeführt. Er übergibt den Dateinamen als Argument und
 erwartet keinen Rückgabewert. Hinzugefügt in Version 2.4.6.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postDownload'][] = array('MyClass', 'myPostDownload');
 
@@ -1005,7 +1005,7 @@ Der "postLogin"-Hook wird nach der Anmeldung eines Frontend-Mitglieds oder
 Backend-Benutzers ausgeführt. Er übergibt das Benutzerobjekt als Argument
 und erwartet keinen Rückgabewert.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postLogin'][] = array('MyClass', 'myPostLogin');
 
@@ -1023,7 +1023,7 @@ Der "postLogout"-Hook wird nach der Abmeldung eines Frontend-Mitglieds oder
 Backend-Benutzers ausgeführt. Er übergibt das Benutzerobjekt als Argument
 und erwartet keinen Rückgabewert.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postLogout'][] = array('MyClass', 'myPostLogout');
 
@@ -1041,7 +1041,7 @@ Der "postUpload"-Hook wird nach dem Hochladen einer oder mehrerer Dateien in der
 Contao-Dateiverwaltung ausgeführt. Er übergibt ein Array mit Dateinamen als
 Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.6.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['postUpload'][] = array('MyClass', 'myPostUpload');
 
@@ -1061,7 +1061,7 @@ Damit lassen sich die Daten ändern oder erweitern, bevor Aktionen wie
 z.B. E-Mail Versand oder in der Datenbank speichern ausgeführt wird. 
 Hinzugefügt in Version 3.0.0.
 
-```{.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['prepareFormData'][] = array('MyClass', 'myPrepareFormData');
 
@@ -1079,7 +1079,7 @@ Der "printArticleAsPdf"-Hook wird bei der Ausgabe eines Artikels im PDF-Format
 ausgeführt. Er übergibt den Artikeltext und das Artikelobjekt als Argument
 und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['printArticleAsPdf'][] = array('MyClass', 'myPrintArticleAsPdf');
 
@@ -1098,7 +1098,7 @@ Der "processFormData"-Hook wird nach dem Abschicken eines Formulars ausgeführt.
 Er übergibt das Datenarray, das [Data Container Array][1] und das Dateiarray
 als Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.4.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['processFormData'][] = array('MyClass', 'myProcessFormData');
 
@@ -1117,7 +1117,7 @@ Contao-Verzeichnis ausgeführt. Er übergibt nichts als Argument und erwartet
 ein Array mit zu erhaltenden Dateien als Rückgabewert. Hinzugefügt in Version
 2.5.8.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['removeOldFeeds'][] = array('MyClass', 'myRemoveOldFeeds');
 
@@ -1136,7 +1136,7 @@ Der "removeRecipient"-Hook wird bei der Kündigung eines Newsletter-Abonnements
 Verteiler als Argument und erwartet keinen Rückgabewert. Hinzugefügt in
 Version 2.8.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['removeRecipient'][] = array('MyClass', 'myRemoveRecipient');
 
@@ -1154,7 +1154,7 @@ Der "replaceInsertTags"-Hook wird beim Antreffen eines unbekannten Insert-Tags
 ausgeführt. Er übergibt das Insert-Tag als Argument und erwartet die Ersetzung
 oder `false` als Rückgabewert. Hinzugefügt in Version 2.6.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MyClass', 'myReplaceInsertTags');
 
@@ -1179,7 +1179,7 @@ Datensätze, den Namen der Elterntabelle und die Namen aller Kindtabellen als
 Argument und erwartet einen booleschen Rückgabewert. Geben Sie `true` zurück,
 um die Seite neu zu laden. Hinzugefügt in Version 2.6.4.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['reviseTable'][] = array('MyClass', 'myReviseTable');
 
@@ -1197,7 +1197,7 @@ Der "setNewPassword"-Hook wird nach dem Abspeichern eines neuen Passworts
 ausgeführt. Er übergibt das Benutzerobjekt und das verschlüsselte Passwort
 als Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.2.3.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['setNewPassword'][] = array('MyClass', 'mySetNewPassword');
 
@@ -1216,7 +1216,7 @@ ausgeführt. Er übergibt das Widget-Objekt und die ID des Formulars als
 Argument und erwartet ein Widget-Objekt als Rückgabewert. Hinzugefügt in
 Version 2.5.0.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['validateFormField'][] = array('MyClass', 'myValidateFormField');
 

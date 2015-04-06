@@ -94,7 +94,7 @@ et/ou par une version particulière d'Internet Explorer, dans le cas où vous av
 besoin de fixer un de ses nombreux bogues. Faites attention à l'ordre des 
 définitions de formatage, car celles qui suivent, remplacent les précédentes.
 
-``` {.css}
+```css
 /* Définir la valeur générale d'abord */
 .mod_search {
     margin:24px;

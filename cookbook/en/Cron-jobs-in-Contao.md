@@ -5,7 +5,7 @@ triggered every time a front end page is accessed. Respectively, these cron jobs
 only work if your website has visitors. Extensions can use hooks to register
 for periodical tasks:
 
-```{.php}
+```php
 $GLOBALS['TL_CRON']['monthly']
 $GLOBALS['TL_CRON']['weekly']
 $GLOBALS['TL_CRON']['daily']
@@ -65,7 +65,7 @@ In your `fe_page.html5` or `fe_page.xhtml` template, a tiny bit of javascript
 is included which retrieves a text file (either using jQuery or MooTools)
 that contains the timestamp of the last execution.
 
-```{.js}
+```js
 // (shortened) MooTools version
 new Request({
   url:"system/cron/cron.txt",
@@ -82,7 +82,7 @@ second ajax request to the `cron.php` is triggered. Using the `tl_cron` table
 it verifies again that there are jobs to run and executes the jobs
 of the next upcoming interval.
 
-```{.php}
+```php
 $arrCurrent = array
 (
     'monthly'  => date('Ym'),

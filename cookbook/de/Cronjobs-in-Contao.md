@@ -5,7 +5,7 @@ Aufruf einer Frontend-Seite ausgeführt. Entsprechend funktionieren diese Cronjo
 standardmäßig nur, wenn die Webseite auch besucht wird. Erweiterungen können
 über folgende [Hooks][1] periodische Aufgaben ausführen:
 
-```{.php}
+```php
 $GLOBALS['TL_CRON']['monthly']
 $GLOBALS['TL_CRON']['weekly']
 $GLOBALS['TL_CRON']['daily']
@@ -68,7 +68,7 @@ Im `fe_page.html5` bzw. `fe_page.xhtml` Template wird ein kleines Stück
 Javascript eingebunden, welches (entweder per jQuery oder MooTools) eine
 Textdatei abfragt, die den Zeitstempel der letzten Ausführung enthält.
 
-```{.js}
+```js
 // (gekürzte) MooTools-Variante
 new Request({
   url:"system/cron/cron.txt",
@@ -86,7 +86,7 @@ Diese prüft zuerst nochmals anhand der Tabelle `tl_cron`, ob Jobs ausgeführt
 werden sollen und welches der vier Ausführungsintervalle als nächstes an
 der Reihe ist. 
 
-```{.php}
+```php
 $arrCurrent = array
 (
     'monthly'  => date('Ym'),
