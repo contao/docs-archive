@@ -1459,6 +1459,7 @@ Available flags:
     <td>see <code>System::getReadableSize()</code></td>
 </tr>
 </table>
+{% endraw %}
 
 
 [1]: https://contao.org/en/extension-list.html
