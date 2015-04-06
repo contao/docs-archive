@@ -864,7 +864,7 @@ dans le modèle enfant, il doit être entouré d'un élément nommé `block`.
 
 Un bloc est construit de la manière suivante :
 
-``` {.php}
+```php
 <?php $this->block('nom_du_bloc'); ?>
 
   // Contenu du bloc
@@ -877,7 +877,7 @@ contenu de la balise `head`.
 
 Modèle `fe_page.html5` :
 
-``` {.html}
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -897,7 +897,7 @@ la balise `head` en plus du contenu hérité du modèle parent `fe_page.html5`.
 
 Modèle `fe_custom.html5` :
 
-``` {.html}
+```html
 <?php $this->extend('fe_page'); ?>
 
 <?php $this->block('head'); ?>
@@ -913,7 +913,7 @@ hérité.
 
 Le résultat en sortie du modèle `fe_custom.html5` sera :
 
-``` {.html}
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -933,14 +933,14 @@ Le résultat en sortie du modèle `fe_custom.html5` sera :
 Un modèle peut être inséré dans un autre modèle grâce à la fonction
 `insert()`.
 
-``` {.php}
+```php
 <?php $this->insert('nom_du_modele'); ?>
 ```
 
 La fonction `insert()` accepte également l'assignation de variables comme
 second paramètre :
 
-``` {.php}
+```php
 <?php $this->insert('nom_du_modele', array('key'=>'value')); ?>
 ```
 
@@ -951,7 +951,7 @@ Le modèle `image.html5` contient une balise `img` et la fonction `insert()`.
 
 Modèle `image.html5` :
 
-``` {.html}
+```html
 <img src="<?php echo $this->src; ?>" alt="<?php echo $this->alt; ?>" />
 <?php $this->insert('image-copyright', array('name'=>'Donna Evans', 'license'=>'Creative Commons')); ?>
 ```
@@ -963,13 +963,13 @@ et `license` seront remplacées par les valeurs déterminées dans la fonction
 
 Modèle `image-copyright.html5` :
 
-``` {.html}
+```html
 <small>Photographie par <?php echo $this->name; ?>, sous licence <?php echo $this->license; ?></small>
 ```
 
 Le résultat en sortie du modèle `image.html5` sera :
 
-``` {.html}
+```html
 <img src="files/images/maison.jpg" alt="Une petite maison en Angleterre" />
 <small>Photographie par Donna Evans, sous licence Creative Commons</small>
 ```

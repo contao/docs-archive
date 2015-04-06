@@ -836,7 +836,7 @@ Inhalt innerhalb eines `block`-Elements befinden.
 
 Ein Block ist wie folgt aufgebaut:
 
-``` {.php}
+```php
 <?php $this->block('name_des_blocks'); ?>
 
   // Block-Inhalt
@@ -849,7 +849,7 @@ Block definiert wurde.
 
 Template `fe_page.html5`:
 
-``` {.html}
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -869,7 +869,7 @@ noch ein CSS style sheet in das übergeordnete Template eingefügt.
 
 Template `fe_custom.html5`:
 
-``` {.html}
+```html
 <?php $this->extend('fe_page'); ?>
 
 <?php $this->block('head'); ?>
@@ -883,7 +883,7 @@ Template `fe_custom.html5`:
 
 Die Ausgabe des `fe_custom.html5` Template sieht danach so aus:
 
-``` {.html}
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -903,14 +903,14 @@ Die Ausgabe des `fe_custom.html5` Template sieht danach so aus:
 Mit Hilfe der `insert()`-Funktion kann ein Template in ein anderes Template
 einfügt werden.
 
-``` {.php}
+```php
 <?php $this->insert('template_name'); ?>
 ```
 
 Die `insert()`-Funktion akzeptiert ausserdem auch die Übergabe von zusätzlichen 
 Variablen als zweiten Parameter.
 
-``` {.php}
+```php
 <?php $this->insert('template_name', array('key'=>'value')); ?>
 ```
 
@@ -922,7 +922,7 @@ Das Template `image.html5` enthält lediglich einen `img`-Tag und die
 
 Template `image.html5`:
 
-``` {.html}
+```html
 <img src="<?php echo $this->src; ?>" alt="<?php echo $this->alt; ?>" />
 <?php $this->insert('image-copyright', array('name'=>'Donna Evans', 'license'=>'Creative Commons')); ?>
 ```
@@ -933,13 +933,13 @@ und `license` werden durch die Parameter der `insert()`-Funktion ersetzt.
 
 Template `image-copyright.html5`:
 
-``` {.html}
+```html
 <small>Fotografiert von <?php echo $this->name; ?>, lizenziert als <?php echo $this->license; ?></small>
 ```
 
 Die Ausgabe des `image.html5` sieht danach folgendermassen aus:
 
-``` {.html}
+```html
 <img src="files/images/house.jpg" alt="Ein kleines Haus in England" />
 <small>Fotografiert von Donna Evans, lizenziert als Creative Commons</small>
 ```

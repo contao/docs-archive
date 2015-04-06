@@ -825,7 +825,7 @@ in the child template, it must be surrounded by an element named `block`.
 
 A block is built as follows:
 
-``` {.php}
+```php
 <?php $this->block('name_of_the_block'); ?>
 
   // Block content
@@ -838,7 +838,7 @@ content of the `head` tag.
 
 Template `fe_page.html5`:
 
-``` {.html}
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -858,7 +858,7 @@ tag in addition to the inherited content of the parent template `fe_page.html5`.
 
 Template `fe_custom.html5`:
 
-``` {.html}
+```html
 <?php $this->extend('fe_page'); ?>
 
 <?php $this->block('head'); ?>
@@ -874,7 +874,7 @@ inherited content.
 
 The output of the `fe_custom.html5` template will be:
 
-``` {.html}
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -894,14 +894,14 @@ The output of the `fe_custom.html5` template will be:
 A template can be inserted into another template thanks to the `insert()`
 function.
 
-``` {.php}
+```php
 <?php $this->insert('template_name'); ?>
 ```
 
 The `insert()` function also accepts the assignment of variables as second 
 parameter.
 
-``` {.php}
+```php
 <?php $this->insert('template_name', array('key'=>'value')); ?>
 ```
 
@@ -912,7 +912,7 @@ The template `image.html5` contains an `img` tag and the `insert()` function.
 
 Template `image.html5`:
 
-``` {.html}
+```html
 <img src="<?php echo $this->src; ?>" alt="<?php echo $this->alt; ?>" />
 <?php $this->insert('image-copyright', array('name'=>'Donna Evans', 'license'=>'Creative Commons')); ?>
 ```
@@ -923,13 +923,13 @@ below the `img` tag in the template `image.html5`. The variables `name` and
 
 Template `image-copyright.html5`:
 
-``` {.html}
+```html
 <small>Photograph by <?php echo $this->name; ?>, licensed under <?php echo $this->license; ?></small>
 ```
 
 The output of the `image.html5` template will be:
 
-``` {.html}
+```html
 <img src="files/images/house.jpg" alt="A small house in England" />
 <small>Photograph by Donna Evans, licensed under Creative Commons</small>
 ```
