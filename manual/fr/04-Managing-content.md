@@ -1860,6 +1860,7 @@ Drapeaux disponibles :
     href="http://php.net/rawurlencode">Fonction PHP</a></td>
 </tr>
 </table>
+{% endraw %}
 
 
 [1]: https://contao.org/en/extension-list.html

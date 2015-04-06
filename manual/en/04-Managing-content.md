@@ -1797,6 +1797,7 @@ Available flags:
     href="http://php.net/rawurlencode">PHP function</a></td>
 </tr>
 </table>
+{% endraw %}
 
 
 [1]: https://contao.org/en/extension-list.html
