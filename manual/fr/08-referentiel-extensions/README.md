@@ -14,7 +14,7 @@ où vous pouvez entrer les détails de l'extension. La boîte jaune au-dessus
 contient des informations importantes sur les conventions de nommage, que 
 vous devriez lire attentivement.
 
-![](../en/images/add-extension.jpg?raw=true)
+![](images/add-extension.jpg?raw=true)
 
 Les catégories suivantes sont actuellement disponibles :
 
@@ -65,7 +65,7 @@ Chaque nouvelle version d'une extension sera enregistrée comme une release
 séparée. Ouvrez les gestionnaire de releases grâce à l'icône de navigation 
 correspondante et cliquez sur le bouton "Add release".
 
-![](../en/images/add-release.jpg?raw=true)
+![](images/add-release.jpg?raw=true)
 
 Les numéros de versions dans le référentiel d'extensions sont formés de trois 
 blocs de chiffres qui indiquent s'il s'agit d'une version majeure, mineure ou 
@@ -105,9 +105,9 @@ pouvez téléverser des fichiers individuellement ou des archives .zip complète
 Assurez-vous de choisir le bon répertoire cible, afin que les chemins d'accès 
 soient corrects à l'issue de l'envoi.
 
-![](../en/images/add-files.jpg?raw=true)
+![](images/add-files.jpg?raw=true)
 
-![](../en/images/edit-files.jpg?raw=true)
+![](images/edit-files.jpg?raw=true)
 
 
 ## Ajout de fichiers à partir d'un référentiel GitHub
@@ -122,12 +122,12 @@ Vous pouvez également spécifier le nom du répertoire racine de votre référe
 Dans ce cas, les fichiers et les répertoires en dehors de ce répertoire racine 
 seront ignorés lors de l'importation.
 
-![](../en/images/github-import.jpg?raw=true)
+![](images/github-import.jpg?raw=true)
 
 Si vous sélectionnez un tag, ses fichiers seront téléchargés automatiquement 
 et seront alors disponibles comme lors d'un téléversement manuel.
 
-![](../en/images/github-import-tag.jpg?raw=true)
+![](images/github-import-tag.jpg?raw=true)
 
 
 ## Ajouter des traductions
@@ -139,9 +139,9 @@ car les utilisateurs de back office ne voient généralement, dans le gestionnai
 d'extensions, que les extensions disponibles dans leur propre langue ou en 
 anglais (langue par défaut).
 
-![](../en/images/add-translation.jpg?raw=true)
+![](images/add-translation.jpg?raw=true)
 
-![](../en/images/edit-translation.jpg?raw=true)
+![](images/edit-translation.jpg?raw=true)
 
 Les traductions complétées peuvent être publiées en cliquant sur l'icône de 
 navigation correspondante.
@@ -157,7 +157,7 @@ enregistrées dans le référentiel d'extensions, de telle sorte que les modules
 nécessaires soient automatiquement installés lorsque vous installez une 
 extension particulière.
 
-![](../en/images/add-dependency.jpg?raw=true)
+![](images/add-dependency.jpg?raw=true)
 
 Choisissez d'abord l'extension que vous souhaitez ajouter en tant que dépendance 
 et confirmez votre choix en cliquant sur le bouton "Continue". Puis sélectionnez 

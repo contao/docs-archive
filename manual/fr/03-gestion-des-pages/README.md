@@ -342,7 +342,7 @@ CSS de Contao divise automatiquement la fenêtre du navigateur en plusieurs
 sections et affiche les modules qui ont été assignés à ces sections les uns à 
 la suite des autres.
 
-![](../en/images/front-end-structure.jpg?raw=true)
+![](images/front-end-structure.jpg?raw=true)
 
 ![](images/modules-front-office.jpg?raw=true)
 

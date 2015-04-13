@@ -118,7 +118,7 @@ En essayant d'installer Contao avec l'outil d'installation, vous pourriez voir
 un avertissement que le fichier de configuration local n'est pas accessible en 
 écriture.
 
-![](../en/images/localconfig-not-writable.jpg?raw=true)
+![](images/localconfig-not-writable.jpg?raw=true)
 
 
 ### Problèmes d'autorisation de fichiers
@@ -201,7 +201,7 @@ FTP, ouvrez WinSCP et connectez-vous au serveur. Sauvegardez les fichiers
 mentionnés ci-dessus, puis accédez au répertoire de Contao et cliquez sur le 
 bouton "Synchroniser les fichiers".
 
-![](../en/images/synchronization-options.jpg?raw=true)
+![](images/synchronization-options.jpg?raw=true)
 
 Contrôlez les options attentivement et assurez-vous de choisir "Preview changes" 
 pour que vous puissiez contrôler quels fichiers seront mis à jour. Ensuite 
@@ -209,7 +209,7 @@ confirmez chaque fichier dans la fenêtre d'aperçu et contrôlez spécialement 
 fichiers qui vont être effacés ! Cliquez sur OK pour démarrer le processus de 
 synchronisation. 
 
-![](../en/images/synchronization-confirmation.jpg?raw=true)
+![](images/synchronization-confirmation.jpg?raw=true)
 
 
 ### Mise à jour de la base de données
@@ -255,12 +255,12 @@ de Contao
 
 ### Sélection d'une version
 
-![](../en/images/live-update-1.jpg?raw=true)
+![](images/live-update-1.jpg?raw=true)
 
 
 ### Différences entre les modèles
 
-![](../en/images/live-update-2.jpg?raw=true)
+![](images/live-update-2.jpg?raw=true)
 
 
 ### Résolution de problèmes
@@ -308,7 +308,7 @@ menu supérieur. Il est important d'ajuster les paramètres d'exportation
 conformément à la capture d'écran ci-dessous afin de restreindre les problèmes 
 de compatibilité de versions de MySQL.
 
-![](../en/images/sql-export.jpg?raw=true)
+![](images/sql-export.jpg?raw=true)
 
 
 ### Importation de la base de données
@@ -321,7 +321,7 @@ base de données vide et cliquez sur l'onglet "Importer" dans le menu supérieur
 Puis télécharger la sauvegarde SQL de votre base de données locale et lancez 
 l'importation.
 
-![](../en/images/sql-import.jpg?raw=true)
+![](images/sql-import.jpg?raw=true)
 
 
 ### Ajustement de la configuration de la base de données
