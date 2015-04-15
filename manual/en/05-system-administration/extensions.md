@@ -55,4 +55,4 @@ database with the [Contao install tool][3].
 
 
 [2]: https://contao.org/en/extension-list.html
-[3]: 01-Installation.md#the-contao-install-tool
+[3]: 01-installation/installing-contao.md#the-contao-install-tool

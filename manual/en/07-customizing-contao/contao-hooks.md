@@ -981,5 +981,5 @@ public function myValidateFormField(Widget $objWidget, $intId)
 ```
 
 
-[1]: 06-Data-Container-Arrays.md
-[6]: 06-Data-Container-Arrays.md#callbacks
+[1]: 06-data-container-arrays/README.md
+[6]: 06-data-container-arrays/callbacks.md#callbacks

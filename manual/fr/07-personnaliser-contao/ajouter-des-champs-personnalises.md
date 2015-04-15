@@ -68,5 +68,5 @@ contient un caractère non numérique, Contao refusera d'enregistrer la valeur
 et affichera un message d'erreur à la place. 
 
 
-[1]: 06-Data-Container-Arrays.md
-[3]: 01-Installation.md#loutil-dinstallation-de-contao
+[1]: 06-tableaux-conteneurs-de-donnees/README.md
+[3]: 01-installation/installer-contao.md#loutil-dinstallation-de-contao

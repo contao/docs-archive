@@ -72,4 +72,4 @@ voir des pages protégées ou accéder à des téléchargements protégés qui n
 pas disponibles pour les invités.
 
 
-[1]: 03-Managing-pages.md#controle-dacces
+[1]: 03-gestion-des-pages/modules.md#controle-dacces

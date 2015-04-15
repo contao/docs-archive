@@ -30,5 +30,5 @@ If the order was reversed, the general value would override the IE-specific
 margin.
 
 
-[3]: 03-Managing-pages.md#modules
-[5]: 04-Managing-content.md#articles
+[3]: 03-managing-pages/modules.md#modules
+[5]: 04-managing-content/articles.md#articles

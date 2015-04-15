@@ -128,4 +128,4 @@ Newsletterleser, würde der Beitrag auch nicht angezeigt.
 
 
 [2]: http://de.wikipedia.org/wiki/Opt-in
-[3]: 04-Managing-content.md#inserttags
+[3]: 04-inhalte-verwalten/inserttags.md#inserttags

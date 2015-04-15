@@ -25,4 +25,4 @@ einem Präfix versehen. Beispielsweise deutet `j_` auf jQuery oder `nl_` auf
 ein Newsletter-Template.
 
 
-[8]: 03-Managing-pages.md#theme-bestandteile
+[8]: 03-seiten-verwalten/themes.md#theme-bestandteile

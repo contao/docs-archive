@@ -64,4 +64,4 @@ to see protected pages or access protected downloads that are not available to
 guests.
 
 
-[1]: 03-Managing-pages.md#access-control
+[1]: 03-managing-pages/modules.md#access-control

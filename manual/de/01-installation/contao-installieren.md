@@ -103,4 +103,4 @@ speichern Sie Ihre Änderungen. Contao generiert jetzt statische URLs wie z.B.
 [2]: http://www.winscp.net
 [12]: https://contao.org/de/extension-list/view/official_demo.de.html
 [13]: https://contao.org/de/extension-list/view/music_academy.de.html
-[14]: https://contao.org/de/manual/3.2/system-administration.html#erweiterungen
+[14]: 05-systemadministration/erweiterungen.html#erweiterungskatalog

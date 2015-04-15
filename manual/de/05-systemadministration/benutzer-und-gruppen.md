@@ -66,4 +66,4 @@ Konfiguration können registrierte Mitglieder geschützte Seiten oder Downloads
 aufrufen, die für Gäste nicht erreichbar sind.
 
 
-[1]: 03-Managing-pages.md#zugriffsschutz
+[1]: 03-seiten-verwalten/module.md#zugriffsschutz

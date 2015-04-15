@@ -947,4 +947,4 @@ zu laden (siehe `Model::getRelated()`).
 </table>
 
 
-[1]: 02-Administration-area.md#datens%C3%A4tze-auflisten
+[1]: 02-administrationsbereich/datensaetze-auflisten.md#datens%C3%A4tze-auflisten

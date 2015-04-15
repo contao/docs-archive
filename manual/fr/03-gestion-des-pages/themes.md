@@ -49,6 +49,6 @@ page du nouveau thème dans la structure de site.
 
 
 [1]: https://contao.org/en/contao-themes-and-templates.html
-[2]: 03-Managing-pages.md#feuilles-de-style
-[3]: 03-Managing-pages.md#modules
-[4]: 03-Managing-pages.md#présentations-de-page
+[2]: 03-gestion-des-pages/feuilles-de-style.md#feuilles-de-style
+[3]: 03-gestion-des-pages/modules.md#modules
+[4]: 03-gestion-des-pages/presentations-de-page.md#presentations-de-page

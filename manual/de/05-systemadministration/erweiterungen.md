@@ -61,4 +61,4 @@ entferntes Contao-Verzeichnis. Abschließend prüfen Sie die Datenbank mit dem
 
 
 [2]: https://contao.org/de/extension-list.html
-[3]: 01-Installation.md#das-contao-installtool
+[3]: 01-installation/contao-installieren.md#das-contao-installtool
