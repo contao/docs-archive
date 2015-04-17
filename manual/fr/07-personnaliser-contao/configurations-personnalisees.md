@@ -19,7 +19,7 @@ peuvent être configurés dans le module Configuration du back office et seront
 rarement besoin de le modifier manuellement. 
 
 
-``` {.php}
+```php
 // Désactive le créateur d'extension
 unset($GLOBALS['BE_MOD']['devtools']['extension']);
 
@@ -42,7 +42,7 @@ est enregistrée dans les dossiers `dca` des divers modules de Contao. Faites vo
 modifications dans le fichier `system/config/dcaconfig.php` afin qu'elles ne 
 soient pas écrasées à la prochaine mise à jour. 
 
-``` {.php}
+```php
 // Rend obligatoire le champ company dans la table des membres
 $GLOBALS['TL_DCA']['tl_member']['fields']['company']['eval']['mandatory'] =
 true;
@@ -73,7 +73,7 @@ ISO-639-1][2]. Appliquez vos modifications dans le fichier
 `system/config/langconfig.php` afin qu'elles ne soient pas écrasées à la 
 prochaine mise à jour. 
 
-``` {.php}
+```php
 // Modifie un libellé pour toutes les langues
 $GLOBALS['TL_LANG']['MSC']['goBack'] = '«';
 

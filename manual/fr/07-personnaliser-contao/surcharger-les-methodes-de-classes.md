@@ -21,7 +21,7 @@ supplantant. Pour ce faire, créez un nouveau fichier
 `xcustom/ModuleMyNavigation.php` et définissez la classe personnalisée 
 `ModuleMyNavigation` :
 
-``` {.php}
+```php
 // xcustom/ModuleMyNavigation.php
 class ModuleMyNavigation extends ModuleNavigation
 {
@@ -48,7 +48,7 @@ dynamiquement dans la configuration du système de Contao, ce qui vous permet de
 les remplacer facilement par vos propres versions. Les noms des classes de 
 modules sont enregistrés dans le tableau global `FE_MOD`. 
 
-``` {.php}
+```php
 // xcustom/config/config.php
 $GLOBALS['FE_MOD']['navigationMenu']['navigation'] = 'ModuleMyNavigation';
 ```

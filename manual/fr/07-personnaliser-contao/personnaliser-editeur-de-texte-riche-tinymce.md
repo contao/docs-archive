@@ -18,7 +18,7 @@ fichier. Il reste encore à adapter la [configuration du conteneur de données][
 dans le fichier `system/config/dcaconfig.php` et indiquer à Contao à quels 
 champs le fichier personnalisé de configuration s'applique. 
 
-``` {.php}
+```php
 // Utilisation d'une configuration personnalisée de l'éditeur de texte riche 
 pour les éléments textes
 $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] =

@@ -10,7 +10,7 @@ probablement nommé `htdocs`, `httpdocs`, `html` ou `public_html`.
 Si vous avez un accès SSH, vous pouvez télécharger et extraire l'archive avec 
 les commandes suivantes:
 
-``` {.bash}
+```bash
 curl -L http://download.contao.org | tar -xzp
 ```
 
@@ -24,7 +24,7 @@ un mauvais mot de passe a été inséré trois fois de suite. Pour enlever le ve
 ouvrez le fichier `system/config/localconfig.php` dans un éditeur de texte, 
 trouvez la ligne ci-dessous et définissez-là à `0`.
 
-``` {.php}
+```php
 $GLOBALS['TL_CONFIG']['installCount'] = 0; // Ceci enlèvera le verrouillage automatique
 ```
 

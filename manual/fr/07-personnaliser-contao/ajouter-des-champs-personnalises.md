@@ -21,7 +21,7 @@ tableau conteneur de données sous `sql`. Les détails SQL ne sont pas envoyés 
 la base de données, mais sont utilisés pour calculer la différence entre les 
 spécifications de Contao et les tables existantes.
 
-``` {.php}
+```php
 // Modification de la palette
 $GLOBALS['TL_DCA']['tl_member']['palettes']['default'] = str_replace
 (
@@ -54,7 +54,7 @@ mettre à jour les tables de votre base de données.
 Créez le fichier `languages/en/tl_member.php` dans le répertoire de votre 
 module, et ajoutez-y les libellés anglais pour votre nouveau champ :
 
-``` {.php}
+```php
 $GLOBALS['TL_LANG']['tl_member']['customer_number'] = array
 (
     'Customer number',
