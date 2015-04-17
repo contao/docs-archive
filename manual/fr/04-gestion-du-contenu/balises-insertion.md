@@ -669,3 +669,4 @@ Drapeaux disponibles :
     <td>see <code>System::getReadableSize()</code></td>
 </tr>
 </table>
+{% endraw %}
