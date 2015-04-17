@@ -51,7 +51,7 @@ sur le site internet. L'extension commentaires comprend un élément de contenu 
 ### BBCode
 
 Vous pouvez permettre aux utilisateurs du front office d'utiliser
-le [langage de balisage BBCode][7].
+le [langage de balisage BBCode][1].
 
 Contao prend en charge les balises suivantes :
 
@@ -113,4 +113,4 @@ Contao prend en charge les balises suivantes :
 </table>
 
 
-[7]: http://fr.wikipedia.org/wiki/Bbcode
+[1]: http://fr.wikipedia.org/wiki/Bbcode

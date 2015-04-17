@@ -33,7 +33,7 @@ valider une installation existante.
 Extrayez le fichier Zip, téléversez le dossier `check` dans votre répertoire 
 d'installation de Contao et ouvrez-le dans un navigateur Web.
 
-[Télécharger Contao Check][8] | [Ouvrir le projet sur GitHub][9]
+[Télécharger Contao Check][1] | [Ouvrir le projet sur GitHub][2]
 
 
 ### Paramètres FAI spécifiques
@@ -41,12 +41,12 @@ d'installation de Contao et ouvrez-le dans un navigateur Web.
 Il y a quelques grands fournisseurs d'accès à internet qui requièrent un peu de 
 configurations supplémentaires afin que Contao puisse fonctionner. Heureusement, 
 ils ne sont que l'exception qui confirme la règle. Les paramètres FAI 
-spécifiques sont décrites dans le [forum de Contao][10]. Si vous cherchez un 
+spécifiques sont décrites dans le [forum de Contao][3]. Si vous cherchez un 
 hébergement sans tracas pour Contao, consultez la liste des [hébergements 
-partenaires de Contao][11].
+partenaires de Contao][4].
 
 
-[8]: https://github.com/contao/check/zipball/master
-[9]: https://github.com/contao/check
-[10]: https://community.contao.org/en/
-[11]: https://contao.org/en/partners.html?search=services&for=partner_hosting
+[1]: https://github.com/contao/check/zipball/master
+[2]: https://github.com/contao/check
+[3]: https://community.contao.org/en/
+[4]: https://contao.org/en/partners.html?search=services&for=partner_hosting

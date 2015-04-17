@@ -1,6 +1,6 @@
 ## Contao-Hooks
 
-Hooks funktionieren ähnlich wie die [Callback-Funktionen][6] des Data Container
+Hooks funktionieren ähnlich wie die [Callback-Funktionen][1] des Data Container
 Arrays. Sie können eine oder mehrere Funktionen für ein bestimmtes Ereignis
 registrieren, die dann bei dessen Eintreten ausgeführt werden. Dadurch lässt
 sich der Core um eigene Funktionalität erweitern.
@@ -841,7 +841,7 @@ public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 ### processFormData
 
 Der "processFormData"-Hook wird nach dem Abschicken eines Formulars ausgeführt.
-Er übergibt das Datenarray, das [Data Container Array][1] und das Dateiarray
+Er übergibt das Datenarray, das [Data Container Array][2] und das Dateiarray
 als Argument und erwartet keinen Rückgabewert. Hinzugefügt in Version 2.4.4.
 
 ```php
@@ -979,5 +979,5 @@ public function myValidateFormField(Widget $objWidget, $intId)
 ```
 
 
-[1]: 06-data-container-arrays/README.md
-[6]: 06-data-container-arrays/callbacks.md#callbacks
+[1]: 06-data-container-arrays/callbacks.md#callbacks
+[2]: 06-data-container-arrays/README.md

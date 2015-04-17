@@ -1,6 +1,6 @@
 ## Contao hooks
 
-Les hooks fonctionnent de la même manière que les [fonctions callback][6] du 
+Les hooks fonctionnent de la même manière que les [fonctions callback][1] du 
 tableau conteneur de données (DCA). Vous pouvez enregistrer une ou plusieurs 
 fonctions pour un événement donné, et lorsque l'événement est déclenché, les 
 fonctions callback sont exécutées. Les hooks vous permettent d'ajouter des 
@@ -869,7 +869,7 @@ public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 ### processFormData
 
 Le hook `processFormData` est déclenché après la soumission d'un formulaire. 
-Il passe le tableau des données du formulaire, le [tableau conteneur de données][1]
+Il passe le tableau des données du formulaire, le [tableau conteneur de données][2]
 et le tableau de fichiers en arguments et n'attend pas de valeur de retour. 
 Il est disponible à partir de la version 2.4.4.
 
@@ -1011,5 +1011,5 @@ public function myValidateFormField(Widget $objWidget, $intId)
 ```
 
 
-[1]: 06-tableaux-conteneurs-de-donnees/README.md
-[6]: 06-tableaux-conteneurs-de-donnees/callbacks.md#callbacks
+[1]: 06-tableaux-conteneurs-de-donnees/callbacks.md#callbacks
+[2]: 06-tableaux-conteneurs-de-donnees/README.md

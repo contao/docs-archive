@@ -12,7 +12,7 @@ gruppiert oder kategorisiert werden.
 Newsletter-Abonnements werden normalerweise automatisch über die entsprechenden
 Frontend-Module verwaltet, ohne dass Sie in den Prozess eingreifen müssten. Aus
 datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
-[Double Opt-In][2] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
+[Double Opt-In][1] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
 gespeichert.
 
 ![](images/newsletter-abonnenten.jpg?raw=true)
@@ -25,7 +25,7 @@ CSV-Datei in Contao importieren.
 
 Insofern Sie Newsletter an registrierte Mitglieder verschicken, können Sie
 diese mit Hilfe der sogenannten "Simple Tokens" personalisieren. Simple Tokens
-funktionieren ähnlich wie [Inserttags][3] und können sowohl im HTML- als auch
+funktionieren ähnlich wie [Inserttags][2] und können sowohl im HTML- als auch
 im Text-Inhalt eines Newsletters verwendet werden.
 
 ```
@@ -127,5 +127,5 @@ gäbe es die Seite "newsletters" nicht oder enthielte sie nicht das Modul
 Newsletterleser, würde der Beitrag auch nicht angezeigt.
 
 
-[2]: http://de.wikipedia.org/wiki/Opt-in
-[3]: 04-inhalte-verwalten/inserttags.md#inserttags
+[1]: http://de.wikipedia.org/wiki/Opt-in
+[2]: 04-inhalte-verwalten/inserttags.md#inserttags

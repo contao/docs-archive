@@ -18,7 +18,7 @@ each update.
 
 Create a new folder and add one or more templates you want to edit. Subsequently, 
 do not forget to attach the folder to the theme as explained in the paragraph 
-[Theme components][8].
+[Theme components][1].
 
 A template can be a part of the structure of a module, a content element, a form, 
 etc. and that is why they are prefixed. They can be easily grouped, ordered and 
@@ -26,4 +26,4 @@ recognized. For example: the prefix `j_` means "jQuery" and `nl_` means
 "newsletter".
 
 
-[8]: 03-managing-pages/themes.md#theme-components
+[1]: 03-managing-pages/themes.md#theme-components

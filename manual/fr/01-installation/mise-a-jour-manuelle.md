@@ -36,7 +36,7 @@ vous pourriez finir par perdre des données !
 ### Synchronisation de fichiers
 
 Pour synchroniser une installation de Contao, vous pouvez soit utiliser 
-l'[utilitaire Unix diff][3] ou un logiciel FTP. Les utilitaires Unix sont 
+l'[utilitaire Unix diff][1] ou un logiciel FTP. Les utilitaires Unix sont 
 généralement utilisés par les administrateurs de serveurs uniquement et, par 
 conséquent, ils ne seront pas expliqués ici. Pour synchroniser des fichiers via 
 FTP, ouvrez WinSCP et connectez-vous au serveur. Sauvegardez les fichiers 
@@ -75,4 +75,4 @@ interne. Cliquez sur "Construire le cache" pour mettre en cache les fichiers
 internes.
 
 
-[3]: http://fr.wikipedia.org/wiki/Diff
+[1]: http://fr.wikipedia.org/wiki/Diff

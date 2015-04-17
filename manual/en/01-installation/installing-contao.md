@@ -51,15 +51,15 @@ page structure and different style-sheets to format the Contao
 core modules and content elements.
 
 Since version 3.2.11, the sample web-page is no longer included in the download package.
-Depending on the version used, the new [*Contao Official Demo*][12] 
-or the old [*Music Academy*][13] can be installed as an extension.
+Depending on the version used, the new [*Contao Official Demo*][3] 
+or the old [*Music Academy*][4] can be installed as an extension.
 Information on compatibility is available in the extension repository.
 
 **How to install the demo:**
 
 1. Create a new Contao installation with admin account
 2. Log in as admin to the back end
-3. Install the matching extension [using the extension repository][14]
+3. Install the matching extension [using the extension repository][5]
 4. Log out of the back end
 5. Open the install tool again
 
@@ -97,6 +97,6 @@ save your changes. Now Contao generates static URLs like `home.html` instead of
 
 [1]: https://contao.org/en/download.html
 [2]: http://www.winscp.net/
-[12]: https://contao.org/en/extension-list/view/official_demo.en.html
-[13]: https://contao.org/en/extension-list/view/music_academy.en.html
-[14]: 05-system-administration/extensions.md#extension-catalog
+[3]: https://contao.org/en/extension-list/view/official_demo.en.html
+[4]: https://contao.org/en/extension-list/view/music_academy.en.html
+[5]: 05-system-administration/extensions.md#extension-catalog

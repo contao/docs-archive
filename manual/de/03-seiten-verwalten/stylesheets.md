@@ -4,8 +4,8 @@ Barrierefreie Webseiten sollten immer mit CSS formatiert werden, daher enthält
 Contao ein "Stylesheets"-Modul, mit dem Sie Formatdefinitionen bequem im Backend
 verwalten können. Um die verschiedenen Contao-Elemente und -Module in einem
 Stylesheet zu referenzieren, müssen Sie deren Klassennamen kennen.
-[Inhaltselement-Klassen][6] beginnen mit "ce_" (z.B. "ce_text") und
-[Modul-Klassen][4] mit "mod_" (z.B. "mod_search"). Falls Sie sich nicht sicher
+[Inhaltselement-Klassen][1] beginnen mit "ce_" (z.B. "ce_text") und
+[Modul-Klassen][2] mit "mod_" (z.B. "mod_search"). Falls Sie sich nicht sicher
 sind, sehen Sie einfach im Quelltext der Webseite nach.
 
 ![](images/stylesheet.jpg?raw=true)
@@ -32,5 +32,5 @@ Wäre die Reihenfolge umgekehrt, würde der allgemeine Abstand den
 IE-spezifischen Wert überschreiben.
 
 
-[4]: 03-seiten-verwalten/module.md#module
-[6]: 04-inhalte-verwalten/artikel.md#artikel
+[1]: 04-inhalte-verwalten/artikel.md#artikel
+[2]: 03-seiten-verwalten/module.md#module

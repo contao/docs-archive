@@ -1,6 +1,6 @@
 ## Contao hooks
 
-Hooks work similar to the [callback functions][6] of the Data Container Array.
+Hooks work similar to the [callback functions][1] of the Data Container Array.
 You can register one or more functions for a certain event and when the event is
 triggered, the callback functions are executed. Hooks allow you to add custom
 functionality to the core.
@@ -845,7 +845,7 @@ public function myPrintArticleAsPdf($strArticle, Database_Result $objArticle)
 ### processFormData
 
 The "processFormData" hook is triggered after a form has been submitted. It
-passes the form data array, the [Data Container Array][1] and the files array as
+passes the form data array, the [Data Container Array][2] and the files array as
 arguments and does not expect a return value. It is available from version
 2.4.4.
 
@@ -981,5 +981,5 @@ public function myValidateFormField(Widget $objWidget, $intId)
 ```
 
 
-[1]: 06-data-container-arrays/README.md
-[6]: 06-data-container-arrays/callbacks.md#callbacks
+[1]: 06-data-container-arrays/callbacks.md#callbacks
+[2]: 06-data-container-arrays/README.md

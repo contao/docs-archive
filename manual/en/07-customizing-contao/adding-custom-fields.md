@@ -42,7 +42,7 @@ If you do not understand the code above, you might want to read the chapter on
 [Data Container Arrays][1].
 
 After adding or modifying a field in the DCA you should visit the 
-[Contao install tool][3] in order to update your database tables.
+[Contao install tool][2] in order to update your database tables.
 
 
 ### Adding a translation
@@ -64,4 +64,4 @@ Contao will not save the value and show an error message instead.
 
 
 [1]: 06-data-container-arrays/README.md
-[3]: 01-installation/installing-contao.md#the-contao-install-tool
+[2]: 01-installation/installing-contao.md#the-contao-install-tool

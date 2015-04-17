@@ -53,15 +53,15 @@ Seitenstruktur und verschiedene Stylesheets zur Formatierung der Contao
 Core-Module und -Inhaltselemente enthält. 
 
 Seit Version 3.2.11 ist die Beispiel-Webseite nicht mehr im Downloadpaket enthalten.
-Abhängig von der eingesetzten Version kann die neue [*Contao Official Demo*][12] 
-oder die alte [*Music Academy*][13] als Erweiterung installiert werden.
+Abhängig von der eingesetzten Version kann die neue [*Contao Official Demo*][3] 
+oder die alte [*Music Academy*][4] als Erweiterung installiert werden.
 Aufschluss über Kompatibilität gibt das Erweiterungsverzeichnis.
 
 Vorgehen zur Installation der Demo:
 
 1. Eine frische Contao Installation mit Admin-Account erstellen 
 2. Als Admin im Backend anmelden 
-3. Passende Erweiterung [über das Extension Repository][14] hinzufügen
+3. Passende Erweiterung [über das Extension Repository][5] hinzufügen
 4. Als Admin vom Backend abmelden 
 5. Installtool erneut aufrufen
 
@@ -101,6 +101,6 @@ speichern Sie Ihre Änderungen. Contao generiert jetzt statische URLs wie z.B.
 
 [1]: https://contao.org/de/download.html
 [2]: http://www.winscp.net
-[12]: https://contao.org/de/extension-list/view/official_demo.de.html
-[13]: https://contao.org/de/extension-list/view/music_academy.de.html
-[14]: 05-systemadministration/erweiterungen.html#erweiterungskatalog
+[3]: https://contao.org/de/extension-list/view/official_demo.de.html
+[4]: https://contao.org/de/extension-list/view/music_academy.de.html
+[5]: 05-systemadministration/erweiterungen.html#erweiterungskatalog

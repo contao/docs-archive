@@ -12,7 +12,7 @@ permet de facilement les regrouper ou de les catégoriser.
 Les inscriptions à un bulletin d'information sont traitées par les modules front 
 office créés à cet effet, donc vous n'avez pas à gérer les destinataires 
 manuellement. Pour des raisons de protection des données privées, Contao utilise 
-l'inscription par [Double Opt In][2] et ne stocke que l'adresse e-mail de 
+l'inscription par [Double Opt In][1] et ne stocke que l'adresse e-mail de 
 l'abonné.
 
 ![](images/destinataires-newsletter.jpg?raw=true)
@@ -26,7 +26,7 @@ dans Contao à partir d'un fichier CSV.
 Dans la mesure où vous envoyez des bulletins d'information à des membres 
 inscrits, vous pouvez personnaliser ces bulletins avec des "Simple Tokens". 
 Les "Simple Tokens" fonctionnent d'une manière similaire à celle des [balises 
-d'insertion][3] et peuvent être utilisés aussi bien dans la version HTML que 
+d'insertion][2] et peuvent être utilisés aussi bien dans la version HTML que 
 dans la version texte de votre bulletin d'information.
 
 ```
@@ -135,5 +135,5 @@ module lecteur de bulletins d'information, alors le bulletin d'information ne
 serait pas affiché. 
 
 
-[2]: http://fr.wikipedia.org/wiki/Opt_in
-[3]: 04-gestion-du-contenu/balises-insertion.md#balises-dinsertion
+[1]: http://fr.wikipedia.org/wiki/Opt_in
+[2]: 04-gestion-du-contenu/balises-insertion.md#balises-dinsertion

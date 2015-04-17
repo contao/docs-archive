@@ -19,7 +19,7 @@ modifications seront conservées lors de chaque mise à jour.
 
 Créez un nouveau dossier et ajoutez-y un ou plusieurs modèles que vous souhaitez
 modifier. Par la suite, n'oubliez pas de joindre le dossier au thème comme
-expliqué dans le paragraphe [Composants d'un thème][8].
+expliqué dans le paragraphe [Composants d'un thème][1].
 
 Un modèle peut être une partie de la structure d'un module, d'un élément de
 contenu, d'un formulaire, etc. et c'est pourquoi ils sont préfixés. Ils peuvent
@@ -27,4 +27,4 @@ contenu, d'un formulaire, etc. et c'est pourquoi ils sont préfixés. Ils peuven
 signifie "jQuery" et `nl_` signifie "newsletter".
 
 
-[8]: 03-gestion-des-pages/themes.md#composants-dun-th%C3%A8me
+[1]: 03-gestion-des-pages/themes.md#composants-dun-th%C3%A8me

@@ -3,8 +3,8 @@
 Accessible websites should always be styled using CSS, that is why Contao
 includes a "style sheets" module which allows you to manage format definitions
 in the back end. To reference the various Contao elements, you need to know
-their class names. [Content element classes][5] start with "ce\_"
-(e.g. "ce_text") and [module classes][3] with "mod\_" (e.g. "mod_search"). If
+their class names. [Content element classes][1] start with "ce\_"
+(e.g. "ce_text") and [module classes][2] with "mod\_" (e.g. "mod_search"). If
 you are not sure, simply look into the page source.
 
 ![](images/style-sheet.jpg?raw=true)
@@ -30,5 +30,5 @@ If the order was reversed, the general value would override the IE-specific
 margin.
 
 
-[3]: 03-managing-pages/modules.md#modules
-[5]: 04-managing-content/articles.md#articles
+[1]: 04-managing-content/articles.md#articles
+[2]: 03-managing-pages/modules.md#modules

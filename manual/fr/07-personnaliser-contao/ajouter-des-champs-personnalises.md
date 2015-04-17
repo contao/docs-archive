@@ -45,7 +45,7 @@ Si vous ne comprenez pas le code ci-dessus, il peut être utile de relire le
 chapitre sur les [tableaux conteneurs de données][1].
 
 Après l'ajout ou la modification d'un champ dans le tableau conteneur de 
-données, vous devriez utiliser l'[outil d'installation de Contao][3] afin de 
+données, vous devriez utiliser l'[outil d'installation de Contao][2] afin de 
 mettre à jour les tables de votre base de données.
 
 
@@ -69,4 +69,4 @@ et affichera un message d'erreur à la place.
 
 
 [1]: 06-tableaux-conteneurs-de-donnees/README.md
-[3]: 01-installation/installer-contao.md#loutil-dinstallation-de-contao
+[2]: 01-installation/installer-contao.md#loutil-dinstallation-de-contao

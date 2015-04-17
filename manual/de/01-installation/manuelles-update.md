@@ -22,7 +22,7 @@ sowie die hochgeladenen Dateien.
 Die Dateien einer Contao-Installation zu ersetzen ist relativ simpel. Übertragen
 Sie einfach das Contao-Archiv auf Ihren Server oder entpacken Sie es auf Ihrem
 lokalen Rechner und kopieren Sie die Dateien anschließend mit einem FTP-Programm
-(wir empfehlen [WinSCP][2]). Danach stellen Sie die Dateien aus dem Backup
+(wir empfehlen [WinSCP][1]). Danach stellen Sie die Dateien aus dem Backup
 wieder her und entfernen eventuelle Überbleibsel vorheriger Contao-Versionen.
 
 **Achtung:** Wenn Sie Third-Party-Erweiterungen installiert haben, müssen Sie
@@ -34,7 +34,7 @@ installiert werden, was bei einigen Erweiterungen zu Datenverlust führen kann!
 ### Dateien synchronisieren
 
 Um eine Contao-Installation zu synchronisieren, können Sie entweder das [Unix
-Diff-Programm][3] oder einen FTP-Client verwenden. Unix-Utilities werden
+Diff-Programm][2] oder einen FTP-Client verwenden. Unix-Utilities werden
 normalerweise nur von Serveradministratoren verwendet, daher werden sie hier
 nicht erklärt. Um Dateien per FTP zu synchronisieren, öffnen Sie WinSCP und
 verbinden Sie sich mit dem Server. Erstellen Sie ein Backup der oben genannten
@@ -72,5 +72,5 @@ noch nicht aufgebaut wurde. Erstellen Sie den internen Cache in dem Sie in der
 Kopfzeile "Den Cache aufbauen" anklicken.
 
 
-[2]: http://www.winscp.net
-[3]: http://de.wikipedia.org/wiki/Diff
+[1]: http://www.winscp.net
+[2]: http://de.wikipedia.org/wiki/Diff
