@@ -6,7 +6,7 @@ callback functions are being executed. Callbacks allow you to customize the
 program flow of the Contao core engine.
 
 
-#### Global callbacks
+### Global callbacks
 
 <table>
 <tr>
@@ -40,7 +40,7 @@ program flow of the Contao core engine.
 </table>
 
 
-#### Listing callbacks
+### Listing callbacks
 
 <table>
 <tr>
@@ -69,7 +69,7 @@ program flow of the Contao core engine.
 </table>
 
 
-#### Operations callbacks
+### Operations callbacks
 
 <table>
 <tr>
@@ -85,7 +85,7 @@ program flow of the Contao core engine.
 </table>
 
 
-#### Field callbacks
+### Field callbacks
 
 <table>
 <tr>

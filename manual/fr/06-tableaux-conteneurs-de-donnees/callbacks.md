@@ -7,7 +7,7 @@ callbacks vous permettent de personnaliser le cours de l'exécution du cœur
 de Contao.
 
 
-#### Callbacks globaux
+### Callbacks globaux
 
 <table>
 <tr>
@@ -44,7 +44,7 @@ de Contao.
 </table>
 
 
-#### Callbacks de listing
+### Callbacks de listing
 
 <table>
 <tr>
@@ -77,7 +77,7 @@ de Contao.
 </table>
 
 
-#### Callbacks d'opérations
+### Callbacks d'opérations
 
 <table>
 <tr>
@@ -94,7 +94,7 @@ de Contao.
 </table>
 
 
-#### Callbacks de champs
+### Callbacks de champs
 
 <table>
 <tr>

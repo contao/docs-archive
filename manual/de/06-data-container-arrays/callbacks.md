@@ -6,7 +6,7 @@ Eintreten ausgeführt werden. Mit Hilfe von Callbacks kann der Programmablauf
 der Contao Core-Engine angepasst werden.
 
 
-#### Globale Callbacks
+### Globale Callbacks
 
 <table>
 <tr>
@@ -41,7 +41,7 @@ der Contao Core-Engine angepasst werden.
 </table>
 
 
-#### Auflistungscallbacks
+### Auflistungscallbacks
 
 <table>
 <tr>
@@ -71,7 +71,7 @@ der Contao Core-Engine angepasst werden.
 </table>
 
 
-#### Aktionscallbacks
+### Aktionscallbacks
 
 <table>
 <tr>
@@ -88,7 +88,7 @@ der Contao Core-Engine angepasst werden.
 </table>
 
 
-#### Feldcallbacks
+### Feldcallbacks
 
 <table>
 <tr>
