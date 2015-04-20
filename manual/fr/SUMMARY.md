@@ -1,4 +1,4 @@
-## Résumé
+## Table des matières
 
 * [Introduction](README.md)
 * [Installation](01-installation/README.md)
