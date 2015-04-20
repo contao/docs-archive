@@ -61,4 +61,4 @@ la base de données avec l'[outil d'installation de Contao][2].
 
 
 [1]: https://contao.org/en/extension-list.html
-[2]: 01-installation/installer-contao.md#loutil-dinstallation-de-contao
+[2]: ../01-installation/installer-contao.md#l-outil-d-installation-de-contao

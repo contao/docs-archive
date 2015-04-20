@@ -1011,5 +1011,5 @@ public function myValidateFormField(Widget $objWidget, $intId)
 ```
 
 
-[1]: 06-tableaux-conteneurs-de-donnees/callbacks.md#callbacks
-[2]: 06-tableaux-conteneurs-de-donnees/README.md
+[1]: ../06-tableaux-conteneurs-de-donnees/callbacks.md#callbacks
+[2]: ../06-tableaux-conteneurs-de-donnees/README.md

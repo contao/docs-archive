@@ -108,4 +108,4 @@ Contao génère des URLs statiques comme `home.html` au lieu de `index.php?id=12
 [2]: http://www.winscp.net/
 [3]: https://contao.org/en/extension-list/view/official_demo.en.html
 [4]: https://contao.org/en/extension-list/view/music_academy.en.html
-[5]: 05-administration-du-systeme/extensions.md#catalogue-dextensions
+[5]: ../05-administration-du-systeme/extensions.md#catalogue-d-extensions

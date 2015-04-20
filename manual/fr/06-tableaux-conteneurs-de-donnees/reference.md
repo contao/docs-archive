@@ -959,4 +959,4 @@ données référencées de manière efficace et conviviale pour le développeur.
 </table>
 
 
-[1]: 02-panneau-administration/liste-enregistrements.md#liste-denregistrements
+[1]: ../02-panneau-administration/liste-enregistrements.md#liste-d-enregistrements

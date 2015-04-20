@@ -27,4 +27,4 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] =
 
 
 [1]: http://tinymce.moxiecode.com
-[2]: 07-personnaliser-contao/configurations-personnalisees.md#personnaliser-la-configuration-du-conteneur-de-donnees
+[2]: ../07-personnaliser-contao/configurations-personnalisees.md#personnaliser-la-configuration-du-conteneur-de-donnees
