@@ -48,7 +48,7 @@ includes one content element:
 
 ### BBCode
 
-You can allow the front end users to use the [BBCode markup language][7].
+You can allow the front end users to use the [BBCode markup language][1].
 
 Contao supports the following tags:
 
@@ -110,4 +110,4 @@ parameter).</td>
 </table>
 
 
-[7]: http://en.wikipedia.org/wiki/BBCode
+[1]: http://en.wikipedia.org/wiki/BBCode

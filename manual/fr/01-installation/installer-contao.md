@@ -56,8 +56,8 @@ base de Contao ainsi que les éléments de contenu.
 
 A partir de la version 3.2.11, le site internet de démonstration n'est plus
 inclus dans le package de téléchargement. Selon la version utilisée, la
-nouvelle et [*officielle démonstration de Contao*][12] ou l'ancienne
-[*Music Academy*][13] peuvent être installées en tant qu'extension.
+nouvelle et [*officielle démonstration de Contao*][3] ou l'ancienne
+[*Music Academy*][4] peuvent être installées en tant qu'extension.
 Les informations concernant la compatibilité sont disponibles dans le
 référentiel d'extensions.
 
@@ -65,7 +65,7 @@ référentiel d'extensions.
 
 1. Créer une nouvelle installation de Contao avec un compte administrateur
 2. S'identifier en tant qu'administrateur dans le back office
-3. Installer l'extension correspondante [en utilisant le référentiel d'extensions][14]
+3. Installer l'extension correspondante [en utilisant le référentiel d'extensions][5]
 4. Se déconnecter du back office
 5. Ouvrir de nouveau l'outil d'installation
 
@@ -106,6 +106,6 @@ Contao génère des URLs statiques comme `home.html` au lieu de `index.php?id=12
 
 [1]: https://contao.org/en/download.html
 [2]: http://www.winscp.net/
-[12]: https://contao.org/en/extension-list/view/official_demo.en.html
-[13]: https://contao.org/en/extension-list/view/music_academy.en.html
-[14]: 05-administration-du-systeme/extensions.md#catalogue-dextensions
+[3]: https://contao.org/en/extension-list/view/official_demo.en.html
+[4]: https://contao.org/en/extension-list/view/music_academy.en.html
+[5]: ../05-administration-du-systeme/extensions.md#catalogue-d-extensions

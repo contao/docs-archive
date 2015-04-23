@@ -16,7 +16,7 @@ Templates können im Backend bearbeitet werden. Dabei wird die Datei kopiert um
 ![](images/templates.jpg?raw=true)
 
 Unter dem Menüpunkt *Templates* können die Dateien bearbeitet und in Ordnern 
-abgelegt werden. Ordner müssen wie unter [Theme-Bestandteile][8] beschrieben 
+abgelegt werden. Ordner müssen wie unter [Theme-Bestandteile][1] beschrieben 
 einem Theme zugewiesen sein.
 
 Ein Template gehört zu einem Modul, einem Inhaltselement, einem Formular oder 
@@ -25,4 +25,4 @@ einem Präfix versehen. Beispielsweise deutet `j_` auf jQuery oder `nl_` auf
 ein Newsletter-Template.
 
 
-[8]: 03-seiten-verwalten/themes.md#theme-bestandteile
+[1]: 03-seiten-verwalten/themes.md#theme-bestandteile

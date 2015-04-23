@@ -31,7 +31,7 @@ Installation prüfen.
 Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
 `check` in Ihr Contao-Verzeichnis und öffnen Sie ihn in einem Browser.
 
-[Den Contao-Check herunterladen][8] | [Zum Projekt auf GitHub][9]
+[Den Contao-Check herunterladen][1] | [Zum Projekt auf GitHub][2]
 
 
 ### Provider-spezifische Einstellungen
@@ -39,11 +39,11 @@ Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
 Es gibt ein paar wenige große Internet Service Provider, die spezielle
 Einstellungen für den Betrieb von Contao erfordern. Zum Glück sind sie nur die
 Ausnahme von der Regel. Die Provider-spezifische Einstellungen finden Sie im
-[Contao-Forum][10]. Sorgenfreies Contao-Hosting erhalten Sie bei den
-[Contao Hosting-Partnern][11].
+[Contao-Forum][3]. Sorgenfreies Contao-Hosting erhalten Sie bei den
+[Contao Hosting-Partnern][4].
 
 
-[8]: https://github.com/contao/check/zipball/master
-[9]: https://github.com/contao/check
-[10]: https://community.contao.org/de/forumdisplay.php?67-Erfahrungen-mit-Webhostern
-[11]: https://contao.org/de/partners.html?search=services&for=partner_hosting
+[1]: https://github.com/contao/check/zipball/master
+[2]: https://github.com/contao/check
+[3]: https://community.contao.org/de/forumdisplay.php?67-Erfahrungen-mit-Webhostern
+[4]: https://contao.org/de/partners.html?search=services&for=partner_hosting

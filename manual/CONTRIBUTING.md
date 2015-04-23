@@ -3,7 +3,7 @@
 To contribute, please clone the Git repository to your local computer, checkout
 the correct branch and edit the `*.md` files. The source files are written in
 Markdown and converted into HTML using the GitHub markdown parser, therefore you
-can use the [GitHub flavored syntax][2].
+can use the [GitHub flavored syntax][1].
 
 
 ## General rules
@@ -41,7 +41,7 @@ Internal links are links that point to another markup file in the same
 subdirectory as the file you are editing. Please use the file name and anchor
 to create internal links:
 
-    [1]: 03-Managing-pages.md#stylesheets
+    [1]: 03-managing-pages/style-sheets.md#style-sheets
 
 If you are unsure about formatting, just take a look at the existing files.
 
@@ -49,3 +49,6 @@ If you are unsure about formatting, just take a look at the existing files.
 ## Tools / Helpers
 
 Online Markdown Editor: http://jbt.github.io/markdown-editor
+
+
+[1]: https://help.github.com/articles/github-flavored-markdown

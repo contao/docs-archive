@@ -10,7 +10,7 @@ easily group or categorize them.
 
 Newsletter subscriptions are normally handled by the respective front end
 modules, so you do not have to manage recipients manually. For data privacy
-reasons, Contao requires [Double Opt-In][2] subscriptions and stores only the
+reasons, Contao requires [Double Opt-In][1] subscriptions and stores only the
 e-mail address of the subscriber.
 
 ![](images/newsletter-recipients.jpg?raw=true)
@@ -23,7 +23,7 @@ from a CSV file.
 
 Insofar as you are sending newsletters to registered members, you can
 personalize them with so called "Simple Tokens". Simple tokens are similar to
-[insert tags][3] and can be used in both the HTML and the text content of a
+[insert tags][2] and can be used in both the HTML and the text content of a
 newsletter.
 
 ```
@@ -124,5 +124,5 @@ The above URL requests the newsletter "james-wilson-returns" via the page
 module, the newsletter would not be displayed.
 
 
-[2]: http://en.wikipedia.org/wiki/Opt_in_e-mail
-[3]: 04-managing-content/insert-tags.md#insert-tags
+[1]: http://en.wikipedia.org/wiki/Opt_in_e-mail
+[2]: 04-managing-content/insert-tags.md#insert-tags

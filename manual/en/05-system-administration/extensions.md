@@ -49,10 +49,10 @@ cannot be restored!
 
 In case the PHP SOAP extension is not available on your server, you can also
 install Contao extensions manually. Find the respective module in the [extension
-list][2] and download the .zip archive of the latest release. Then unzip the
+list][1] and download the .zip archive of the latest release. Then unzip the
 files and copy them to your local or remote Contao directory. Finally, check the
-database with the [Contao install tool][3].
+database with the [Contao install tool][2].
 
 
-[2]: https://contao.org/en/extension-list.html
-[3]: 01-installation/installing-contao.md#the-contao-install-tool
+[1]: https://contao.org/en/extension-list.html
+[2]: 01-installation/installing-contao.md#the-contao-install-tool

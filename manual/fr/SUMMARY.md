@@ -27,6 +27,7 @@
     * [Bulletins d'information](04-gestion-du-contenu/bulletins-information.md)
     * [Formulaires](04-gestion-du-contenu/formulaires.md)
     * [Commentaires](04-gestion-du-contenu/commentaires.md)
+    * [Modèles](04-gestion-du-contenu/modeles.md)
     * [Balises d'insertion](04-gestion-du-contenu/balises-insertion.md)
 * [Administration du système](05-administration-du-systeme/README.md)
     * [Utilisateurs et groupes d'utilisateurs](05-administration-du-systeme/utilisateurs-et-groupes-utilisateurs.md)

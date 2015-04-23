@@ -93,5 +93,5 @@ incluses dans un module personnalisé, ce qui est recommandé lorsqu'il y en
 a beaucoup. 
 
 
-[1]: 06-tableaux-conteneurs-de-donnees/README.md
+[1]: ../06-tableaux-conteneurs-de-donnees/README.md
 [2]: http://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1

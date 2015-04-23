@@ -54,11 +54,11 @@ gemacht werden kann!
 
 Falls die PHP SOAP-Erweiterung auf Ihrem Server nicht verfügbar ist, können
 Sie Extensions auch manuell installieren. Finden Sie das entsprechende Modul in
-der [Erweiterungsliste][2] und laden Sie das .zip-Archiv des aktuellen Release
+der [Erweiterungsliste][1] und laden Sie das .zip-Archiv des aktuellen Release
 herunter. Entpacken Sie die Dateien und kopieren Sie sie in Ihr lokales oder
 entferntes Contao-Verzeichnis. Abschließend prüfen Sie die Datenbank mit dem
-[Contao-Installtool][3].
+[Contao-Installtool][2].
 
 
-[2]: https://contao.org/de/extension-list.html
-[3]: 01-installation/contao-installieren.md#das-contao-installtool
+[1]: https://contao.org/de/extension-list.html
+[2]: 01-installation/contao-installieren.md#das-contao-installtool

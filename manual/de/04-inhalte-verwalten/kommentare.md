@@ -48,7 +48,7 @@ stellt ein Inhaltselement zur Verfügung:
 
 ### BBCode
 
-Der Besucher kann ausserdem die [BBCode Sprache][7] verwenden.
+Der Besucher kann ausserdem die [BBCode Sprache][1] verwenden.
 Contao versteht folgende Tags:
 
 <table>
@@ -108,4 +108,4 @@ Contao versteht folgende Tags:
 </table>
 
 
-[7]: http://de.wikipedia.org/wiki/BBCode
+[1]: http://de.wikipedia.org/wiki/BBCode

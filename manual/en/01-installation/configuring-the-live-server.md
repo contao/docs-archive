@@ -30,7 +30,7 @@ installation with the web installer or validate an existing installation.
 Extract the Zip file, upload the `check` folder to your Contao installation
 directory and open it in a web browser.
 
-[Download the Contao Check][8] | [Open the GitHub project][9]
+[Download the Contao Check][1] | [Open the GitHub project][2]
 
 
 ### ISP-specific settings
@@ -38,11 +38,11 @@ directory and open it in a web browser.
 There are a few major Internet Service Providers that require a little extra
 configuration to get Contao to work. Fortunately, they are just the exception
 from the rule. The ISP-specific settings are described in the [Contao
-forum][10]. If you are looking for hassle-free Contao hosting, check out the
-list of [Contao hosting partners][11].
+forum][3]. If you are looking for hassle-free Contao hosting, check out the
+list of [Contao hosting partners][4].
 
 
-[8]: https://github.com/contao/check/zipball/master
-[9]: https://github.com/contao/check
-[10]: https://community.contao.org/en/
-[11]: https://contao.org/en/partners.html?search=services&for=partner_hosting
+[1]: https://github.com/contao/check/zipball/master
+[2]: https://github.com/contao/check
+[3]: https://community.contao.org/en/
+[4]: https://contao.org/en/partners.html?search=services&for=partner_hosting

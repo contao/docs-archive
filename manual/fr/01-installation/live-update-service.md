@@ -1,13 +1,13 @@
 ## Live Update Service
 
 Le "Contao Live Update Service" est un service commercial proposé par [iNet 
-Robots][4], la compagnie du fondateur de Contao et développeur principal, Leo 
+Robots][1], la compagnie du fondateur de Contao et développeur principal, Leo 
 Feyer. Il vous permet de mettre à jour votre installation en quelques clics à 
 partir du panneau d'administration, sans avoir à télécharger une archive de 
 Contao ou en utilisant un logiciel FTP pour remplacer ou synchroniser des 
 fichiers.
 
-[S'inscrire pour obtenir un ID Live Update][5]
+[S'inscrire pour obtenir un ID Live Update][2]
 
 Le Live Update comprend les fonctionnalités suivantes:
 
@@ -42,12 +42,12 @@ d'emploi** !
 
 Si vous rencontrez des problèmes pour activer votre ID Live Update ou pour 
 recevoir l'archive de mise à jour, veuillez s'il vous plaît contacter le 
-[support de iNet Robots][6]. Si vous rencontrez des problèmes pour configurer 
+[support de iNet Robots][3]. Si vous rencontrez des problèmes pour configurer 
 le "Safe Mode Hack" ou pour utiliser Contao, choisissez s'il vous plaît une 
-option de support sur la [page de support][7].
+option de support sur la [page de support][4].
 
 
-[4]: http://www.inetrobots.com
-[5]: https://update.contao.org/
-[6]: https://update.contao.org/en/support.html
-[7]: https://contao.org/en/support.html
+[1]: http://www.inetrobots.com
+[2]: https://update.contao.org/
+[3]: https://update.contao.org/en/support.html
+[4]: https://contao.org/en/support.html

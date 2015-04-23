@@ -39,7 +39,7 @@ Falls Sie den obigen Code nicht verstehen, lesen Sie den Abschnitt über [Data
 Container Arrays][1].
 
 Nachdem Sie die Datei abgespeichert haben, müssen Sie die Datenbank 
-aktualisieren. Dazu verwenden Sie das [Contao-Installtool][3].
+aktualisieren. Dazu verwenden Sie das [Contao-Installtool][2].
 
 
 ### Eine Übersetzung hinzufügen
@@ -62,4 +62,4 @@ entsprechende Fehlermeldung aus.
 
 
 [1]: 06-data-container-arrays/README.md
-[3]: 01-installation/contao-installieren.md#das-contao-installtool
+[2]: 01-installation/contao-installieren.md#das-contao-installtool
