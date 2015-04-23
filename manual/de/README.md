@@ -6,4 +6,4 @@ Version ist unter [docs.contao.org](https://docs.contao.org/) erhältlich.
 
 {% include "SUMMARY.md" %}
 
-{% include "../LICENSE.md" %}
+{% include "../../LICENSE.md" %}

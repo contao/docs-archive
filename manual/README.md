@@ -5,9 +5,9 @@ This is the official manual for users and developers used on [docs.contao.org](h
 
 ## Contributing
 
-Please read our [contributing guidelines](CONTRIBUTING.md).
+Please read our [contributing guidelines](../CONTRIBUTING.md).
 
 
 ## Licensing
 
-Please read our [license information](LICENSE.md).
+Please read our [license information](../LICENSE.md).
