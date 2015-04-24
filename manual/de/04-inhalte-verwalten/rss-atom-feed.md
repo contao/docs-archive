@@ -18,5 +18,5 @@ bzw. der News ausgegeben werden soll.
 
 ### XML Dateien
 
-Die XML Dateien werden automatisch generiert und im ```share``` Verzeichnis
-Ihrer Contao Installation abgelegt. In diesem Beispiel: ```share/events.xml```.
+Die XML Dateien werden automatisch generiert und im `share` Verzeichnis
+Ihrer Contao Installation abgelegt. In diesem Beispiel: `share/events.xml`.
