@@ -1,4 +1,4 @@
-## Inhalte
+## Inhaltsverzeichnis
 
 * [Einleitung](README.md)
 * [Installation](01-installation/README.md)
