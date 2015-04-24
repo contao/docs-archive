@@ -125,4 +125,4 @@ module, the newsletter would not be displayed.
 
 
 [1]: http://en.wikipedia.org/wiki/Opt_in_e-mail
-[2]: 04-managing-content/insert-tags.md#insert-tags
+[2]: ../04-managing-content/insert-tags.md#insert-tags

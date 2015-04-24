@@ -72,4 +72,4 @@ voir des pages protégées ou accéder à des téléchargements protégés qui n
 pas disponibles pour les invités.
 
 
-[1]: ../03-gestion-des-pages/modules.md#controle-d-acces
+[1]: ../03-gestion-des-pages/modules.md#contr%C3%B4le-d-acc%C3%A8s

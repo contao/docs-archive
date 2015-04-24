@@ -27,4 +27,4 @@ contenu, d'un formulaire, etc. et c'est pourquoi ils sont préfixés. Ils peuven
 signifie "jQuery" et `nl_` signifie "newsletter".
 
 
-[1]: ../03-gestion-des-pages/themes.md#composants-dun-th%C3%A8me
+[1]: ../03-gestion-des-pages/themes.md#composants-d-un-th%C3%A8me

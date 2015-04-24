@@ -99,4 +99,4 @@ save your changes. Now Contao generates static URLs like `home.html` instead of
 [2]: http://www.winscp.net/
 [3]: https://contao.org/en/extension-list/view/official_demo.en.html
 [4]: https://contao.org/en/extension-list/view/music_academy.en.html
-[5]: 05-system-administration/extensions.md#extension-catalog
+[5]: ../05-system-administration/extensions.md#extension-catalog

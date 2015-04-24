@@ -61,5 +61,5 @@ nicht-numerische Zeichen, gibt Contao beim Abschicken des Formulars eine
 entsprechende Fehlermeldung aus.
 
 
-[1]: 06-data-container-arrays/README.md
-[2]: 01-installation/contao-installieren.md#das-contao-installtool
+[1]: ../06-data-container-arrays/README.md
+[2]: ../01-installation/contao-installieren.md#das-contao-installtool

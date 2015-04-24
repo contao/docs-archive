@@ -31,5 +31,5 @@ Si l'ordre est inversé, la valeur générale l'emporterait sur la marge spécif
 à Internet Explorer.
 
 
-[1]: 04-gestion-du-contenu/articles.md#articles
-[2]: 03-gestion-des-pages/modules.md#modules
+[1]: ../04-gestion-du-contenu/articles.md#articles
+[2]: ../03-gestion-des-pages/modules.md#modules

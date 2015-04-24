@@ -22,4 +22,4 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyCustom'
 
 
 [1]: http://tinymce.moxiecode.com
-[2]: 07-contao-anpassen/konfiguration-anpassen.md#die-dca-konfiguration-anpassen
+[2]: ../07-contao-anpassen/konfiguration-anpassen.md#die-dca-konfiguration-anpassen

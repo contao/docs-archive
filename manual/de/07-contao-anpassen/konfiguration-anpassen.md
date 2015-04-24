@@ -85,5 +85,5 @@ Auch Sprachanpassungen können in einem eigenen Modul gekapselt werden, was ab
 einer bestimmten Anzahl empfohlen ist.
 
 
-[1]: 06-data-container-arrays/README.md
+[1]: ../06-data-container-arrays/README.md
 [2]: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
