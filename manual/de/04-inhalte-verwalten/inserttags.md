@@ -263,6 +263,10 @@ ausgegeben werden.
   <td>Dieses Tag wird mit dem Titel der übergeordneten Hauptseite ersetzt.</td>
 </tr>
 <tr>
+  <td><code>{{page::rootAlias}}</code></td>
+  <td>Dieses Tag wird mit dem Alias der Webseite ersetzt.</td>
+</tr>
+<tr>
   <td><code>{{page::rootTitle}}</code></td>
   <td>Dieses Tag wird mit dem Namen der Webseite ersetzt.</td>
 </tr>
