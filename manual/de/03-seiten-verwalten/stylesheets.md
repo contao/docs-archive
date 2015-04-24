@@ -32,5 +32,5 @@ Wäre die Reihenfolge umgekehrt, würde der allgemeine Abstand den
 IE-spezifischen Wert überschreiben.
 
 
-[1]: 04-inhalte-verwalten/artikel.md#artikel
-[2]: 03-seiten-verwalten/module.md#module
+[1]: ../04-inhalte-verwalten/artikel.md#artikel
+[2]: ../03-seiten-verwalten/module.md#module

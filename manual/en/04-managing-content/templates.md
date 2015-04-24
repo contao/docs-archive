@@ -26,4 +26,4 @@ recognized. For example: the prefix `j_` means "jQuery" and `nl_` means
 "newsletter".
 
 
-[1]: 03-managing-pages/themes.md#theme-components
+[1]: ../03-managing-pages/themes.md#theme-components

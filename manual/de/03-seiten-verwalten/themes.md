@@ -51,6 +51,6 @@ des neuen Themes in der Seitenstruktur zuweisen.
 
 [1]: http://www.youtube.com/watch?v=6z744hsR8I0
 [2]: https://contao.org/de/contao-themes-and-templates.html
-[3]: 03-seiten-verwalten/stylesheets.md#stylesheets
-[4]: 03-seiten-verwalten/module.md#module
-[5]: 03-seiten-verwalten/seitenlayouts.md#seitenlayouts
+[3]: ../03-seiten-verwalten/stylesheets.md#stylesheets
+[4]: ../03-seiten-verwalten/module.md#module
+[5]: ../03-seiten-verwalten/seitenlayouts.md#seitenlayouts
