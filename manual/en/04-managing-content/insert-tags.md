@@ -24,10 +24,9 @@ ID or alias.
 </tr>
 <tr>
   <td><code>{{link::back}}</code></td>
-  <td>This tag will be replaced with a link that points to the last visited page.
-      It can also be used with "link_open", "link_url" and "link_title". These must
-      be written as follows: `{{link_open::back}}Your personalized text{{link_close}}`,
-      `{{link_url::back}}` and `{{link_title::back}}`.</td>
+  <td>This tag will be replaced with a link that points to the last visited page.      
+      It can also be used as `{{link_open::back}}`, `{{link_url::back}}` or
+      `{{link_title::back}}` (see below).</td>
 </tr>
 <tr>
   <td><code>{{link::login}}</code></td>
