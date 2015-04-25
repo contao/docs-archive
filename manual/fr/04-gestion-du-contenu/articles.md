@@ -56,6 +56,12 @@ aperçu des éléments de contenu de base de Contao :
   imprime sur l'écran.</td>
 </tr>
 <tr>
+  <td>Markdown</td>
+  <td>ce_markdown</td>
+  <td>Génère du code HTML à partir d'un texte formaté avec la syntaxe
+  Markdown.</td>
+</tr>
+<tr>
   <td>Accordéon (élément seul)</td>
   <td>ce_accordion</td>
   <td>Génère un seul élément accordéon (avec <a href="http://mootools.net">
