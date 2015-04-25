@@ -52,6 +52,11 @@ an overview of the Contao core content elements:
   <td>Highlights code snippets and prints them to the screen.</td>
 </tr>
 <tr>
+  <td>Markdown</td>
+  <td>ce_markdown</td>
+  <td>Generates HTML code from a markdown text.</td>
+</tr>
+<tr>
   <td>Accordion (single element)</td>
   <td>ce_accordion</td>
   <td>Generates a single accordion element (with <a href="http://mootools.net">MooTools</a>).</td>
