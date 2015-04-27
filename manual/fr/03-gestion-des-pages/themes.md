@@ -1,12 +1,10 @@
 ## Thèmes
 
-Bien que le gestionnaire de thèmes est une nouvelle fonctionnalité de la version 
-2.9, il est en fait juste une interface améliorée pour quelque chose qui faisait 
-déjà partie de Contao. Une design de site internet se compose généralement de 
-feuilles de style, de modules front office, de présentations de page, de 
-fichiers et de modèles que vous pouvez gérer dans le back office de Contao. Le 
-gestionnaire de thème ne change pas cette approche du tout, il ajoute juste une 
-option pour exporter et importer ces ressources.
+Une design de site internet se compose généralement de feuilles de style, de
+modules front office, de présentations de page, de fichiers et de modèles que
+vous pouvez gérer dans le back office de Contao. Le gestionnaire de thème ne
+change pas cette approche du tout, il ajoute juste une option pour exporter et
+importer ces ressources.
 
 
 ### Thèmes par opposition aux modèles du front office

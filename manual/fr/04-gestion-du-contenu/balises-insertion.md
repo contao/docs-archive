@@ -26,8 +26,9 @@ autre page ou vers un article en utilisant son ID ou son alias.
 <tr>
   <td><code>{{link::back}}</code></td>
   <td>Cette balise sera remplacée par un lien qui pointe vers la dernière page
-  visitée. Elle peut aussi être utilisée comme `{{link_open::back}}`,
-  `{{link_url::back}}` ou `{{link_title::back}}` (voir ci-dessous).</td>
+  visitée. Elle peut aussi être utilisée comme <code>{{link_open::back}}</code>,
+  <code>{{link_url::back}}</code> ou <code>{{link_title::back}}</code>
+  (voir ci-dessous).</td>
 </tr>
 <tr>
   <td><code>{{link::login}}</code></td>
@@ -576,8 +577,8 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>nl2br_pre</code></td>
-    <td>Identique à nl2br, mais conserve les retours à la ligne dans la balise 
-    <code>&lt;pre&gt;</code></td>
+    <td>Identique à <code>nl2br</code>, mais conserve les retours à la ligne
+    dans la balise <code>&lt;pre&gt;</code></td>
     <td></td>
 </tr>
 <tr>
@@ -646,28 +647,28 @@ Drapeaux disponibles :
 <tr>
     <td><code>encodeEmail</code></td>
     <td>Encode les adresses e-mail dans la sortie</td>
-    <td>see <code>String::encodeEmail</code></td>
+    <td>Voir <code>String::encodeEmail</code></td>
 </tr>
 <tr>
     <td><code>decodeEntities</code></td>
     <td>Décode les entités de caractère HTML dans la sortie</td>
-    <td>see <code>String::decodeEntities()</code></td>
+    <td>Voir <code>String::decodeEntities()</code></td>
 </tr>
 <tr>
     <td><code>number_format</code></td>
     <td>Formate un numéro (sans décimale)</td>
-    <td>see <code>System::getFormattedNumber()</code></td>
+    <td>Voir <code>System::getFormattedNumber()</code></td>
 </tr>
 <tr>
     <td><code>currency_format</code></td>
     <td>Formate une devise (deux décimales)</td>
-    <td>see <code>System::getFormattedNumber()</code></td>
+    <td>Voir <code>System::getFormattedNumber()</code></td>
 </tr>
 <tr>
     <td><code>readable_size</code></td>
     <td>Convertit des tailles de fichiers dans un format lisible par 
     un humain</td>
-    <td>see <code>System::getReadableSize()</code></td>
+    <td>Voir <code>System::getReadableSize()</code></td>
 </tr>
 <tr>
     <td><code>urlencode</code></td>
