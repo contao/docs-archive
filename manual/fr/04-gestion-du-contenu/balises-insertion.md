@@ -576,8 +576,8 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>nl2br_pre</code></td>
-    <td>Identique à nl2br, mais conserve les retours à la ligne dans la balise 
-    <code>&lt;pre&gt;</code></td>
+    <td>Identique à <code>nl2br</code>, mais conserve les retours à la ligne
+    dans la balise <code>&lt;pre&gt;</code></td>
     <td></td>
 </tr>
 <tr>

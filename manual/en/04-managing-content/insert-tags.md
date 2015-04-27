@@ -559,7 +559,8 @@ Available flags:
 </tr>
 <tr>
     <td><code>nl2br_pre</code></td>
-    <td>Same as nl2br, but keeps line breaks in <code>&lt;pre&gt;</code> tags</td>
+    <td>Same as <code>nl2br</code>, but keeps line breaks in
+    <code>&lt;pre&gt;</code> tags</td>
     <td></td>
 </tr>
 <tr>
