@@ -1,12 +1,10 @@
 ## Themes
 
-Obwohl der Theme-Manager eine neue Funktion der Version 2.9 ist, handelt es sich
-dabei eigentlich nur um ein erweitertes Interface für etwas, das es in Contao
-schon immer gegeben hat. Das Design einer Webseite besteht normalerweise aus
-Stylesheets, Frontendmodulen, Seitenlayouts, Dateien und Templates, die Sie im
-Contao-Backend verwalten können. Der Theme-Manager ändert diesen Ansatz nicht,
-er fügt lediglich eine Möglichkeit hinzu, die Ressourcen zu exportieren und
-wieder zu importieren ([Video-Einführung ansehen][1]).
+Das Design einer Webseite besteht normalerweise aus Stylesheets, Frontendmodulen,
+Seitenlayouts, Dateien und Templates, die Sie im Contao-Backend verwalten können.
+Der Theme-Manager ändert diesen Ansatz nicht, er fügt lediglich eine Möglichkeit
+hinzu, die Ressourcen zu exportieren und wieder zu importieren
+([Video-Einführung ansehen][1]).
 
 
 ### Themes versus Frontend-Templates
