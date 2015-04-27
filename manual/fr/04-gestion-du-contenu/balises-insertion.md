@@ -646,28 +646,28 @@ Drapeaux disponibles :
 <tr>
     <td><code>encodeEmail</code></td>
     <td>Encode les adresses e-mail dans la sortie</td>
-    <td>see <code>String::encodeEmail</code></td>
+    <td>Voir <code>String::encodeEmail</code></td>
 </tr>
 <tr>
     <td><code>decodeEntities</code></td>
     <td>Décode les entités de caractère HTML dans la sortie</td>
-    <td>see <code>String::decodeEntities()</code></td>
+    <td>Voir <code>String::decodeEntities()</code></td>
 </tr>
 <tr>
     <td><code>number_format</code></td>
     <td>Formate un numéro (sans décimale)</td>
-    <td>see <code>System::getFormattedNumber()</code></td>
+    <td>Voir <code>System::getFormattedNumber()</code></td>
 </tr>
 <tr>
     <td><code>currency_format</code></td>
     <td>Formate une devise (deux décimales)</td>
-    <td>see <code>System::getFormattedNumber()</code></td>
+    <td>Voir <code>System::getFormattedNumber()</code></td>
 </tr>
 <tr>
     <td><code>readable_size</code></td>
     <td>Convertit des tailles de fichiers dans un format lisible par 
     un humain</td>
-    <td>see <code>System::getReadableSize()</code></td>
+    <td>Voir <code>System::getReadableSize()</code></td>
 </tr>
 </table>
 {% endraw %}
