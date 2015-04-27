@@ -36,8 +36,7 @@ aufgerufen!
 
 
 ## Code-Beispiel
-
-In diesem Code-Beispiel soll das Inserttag {{foo::bar}} ersetzt werden durch
+In diesem Code-Beispiel soll das Inserttag {% raw %}{{foo::bar}}{% endraw %} ersetzt werden durch
 das Modul "myinserttag". Als erstes muss der Hook registriert werden.
 
 ```php
