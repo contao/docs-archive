@@ -26,8 +26,9 @@ autre page ou vers un article en utilisant son ID ou son alias.
 <tr>
   <td><code>{{link::back}}</code></td>
   <td>Cette balise sera remplacée par un lien qui pointe vers la dernière page
-  visitée. Elle peut aussi être utilisée comme `{{link_open::back}}`,
-  `{{link_url::back}}` ou `{{link_title::back}}` (voir ci-dessous).</td>
+  visitée. Elle peut aussi être utilisée comme <code>{{link_open::back}}</code>,
+  <code>{{link_url::back}}</code> ou <code>{{link_title::back}}</code>
+  (voir ci-dessous).</td>
 </tr>
 <tr>
   <td><code>{{link::login}}</code></td>
