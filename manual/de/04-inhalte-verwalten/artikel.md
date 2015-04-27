@@ -54,6 +54,11 @@ Contao-Core enthaltenen Inhaltselemente.
   <td>Gibt formatierten Programmcode auf dem Bildschirm aus.</td>
 </tr>
 <tr>
+  <td>Markdown</td>
+  <td>ce_markdown</td>
+  <td>Erzeugt HTML-Code aus einem Markdown-Text.</td>
+</tr>
+<tr>
   <td>Akkordeon (Einzelelement)</td>
   <td>ce_accordion</td>
   <td>Erzeugt ein einzelnes Akkordeon-Element (Mit <a href="http://mootools.net">MooTools</a>).</td>

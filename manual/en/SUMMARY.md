@@ -28,6 +28,7 @@
     * [Forms](04-managing-content/forms.md)
     * [Comments](04-managing-content/comments.md)
     * [Templates](04-managing-content/templates.md)
+    * [Markdown](04-managing-content/markdown.md)
     * [Insert tags](04-managing-content/insert-tags.md)
 * [System administration](05-system-administration/README.md)
     * [Users and groups](05-system-administration/users-and-groups.md)

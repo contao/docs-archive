@@ -647,5 +647,17 @@ Available flags:
     <td>Convert file sizes to human readable format</td>
     <td>see <code>System::getReadableSize()</code></td>
 </tr>
+<tr>
+    <td><code>urlencode</code></td>
+    <td>URL-encodes strings.</td>
+    <td><a target="_blank" 
+    href="http://php.net/urlencode">PHP function</a></td>
+</tr>
+<tr>
+    <td><code>rawurlencode</code></td>
+    <td>URL-encode according to RFC 3986.</td>
+    <td><a target="_blank" 
+    href="http://php.net/rawurlencode">PHP function</a></td>
+</tr>
 </table>
 {% endraw %}

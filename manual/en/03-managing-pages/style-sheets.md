@@ -3,9 +3,10 @@
 Accessible websites should always be styled using CSS, that is why Contao
 includes a "style sheets" module which allows you to manage format definitions
 in the back end. To reference the various Contao elements, you need to know
-their class names. [Content element classes][1] start with "ce_"
-(e.g. "ce_text") and [module classes][2] with "mod_" (e.g. "mod_search"). If
-you are not sure, simply look into the page source.
+their class names. [Content element classes][1] start with {% raw %}"ce_"
+(e.g. "ce_text"){% endraw %} and [module classes][2] with {% raw %}"mod_"
+(e.g. "mod_search").{% endraw %} If you are not sure, simply look into the
+page source.
 
 ![](images/style-sheet.jpg?raw=true)
 
