@@ -25,7 +25,8 @@ ihres Alias verlinkt werden.
 <tr>
   <td><code>{{link::back}}</code></td>
   <td>Dieses Tag wird mit einem Link zur der zuletzt besuchte Seite ersetzt. Kann auch als
-      `{{link_open::back}}`, `{{link_url::back}}` und `{{link_title::back}}` verwendet werden.
+      <code>{{link_open::back}}</code>, <code>{{link_url::back}}</code> und
+      <code>{{link_title::back}}</code> verwendet werden.
   </td>
 </tr>
 <tr>
