@@ -11,3 +11,7 @@
 * English
     * [Cron jobs in Contao (Poor-Man-Cron)](en/Cron-jobs-in-Contao.md)
     * [Using content elements](en/Using-Content-Elements.md)
+    * Create a custom Contao module
+        * [Part 1](en/custom-module/part1.md)
+        * [Part 2](en/custom-module/part2.md)
+        * [Part 3](en/custom-module/part3.md)
