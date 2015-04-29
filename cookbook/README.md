@@ -1,13 +1,9 @@
 # Contao Cookbook
 
-This is the official cookbook for users and developers used on [docs.contao.org](https://docs.contao.org/).
+This is the official cookbook for users and developers. You can always find 
+the latest version on [docs.contao.org](https://docs.contao.org/).
 
 
-## Contributing
+{% include "SUMMARY.md" %}
 
-Please read our [contributing guidelines](../CONTRIBUTING.md).
-
-
-## Licensing
-
-Please read our [license information](../LICENSE.md).
+{% include "../LICENSE.md" %}

@@ -1,6 +1,6 @@
 # Summary
 
-* [Deutsch](de/README.md)
+* Deutsch
     * [Benutzer-Authentifizierung und Rechteprüfung](de/Benutzer-Authentifizierung-und-Rechtepruefung.md)
     * [Cron jobs in Contao (Poor-Man-Cron)](en/Cron-jobs-in-Contao.md)
     * [Eigene Inserttags entwickeln](de/Eigene-Inserttags.md)
@@ -8,6 +8,6 @@
     * [Inhaltselemente verwenden](de/Inhaltselemente-verwenden.md)
     * [Models](de/Models.md)
     * [Die Toggle-Funktion in eigenen Erweiterungen nutzen](de/Toggle-Funktion-in-eigenen-Erweiterungen.md)
-* [English](en/README.md)
+* English
     * [Cron jobs in Contao (Poor-Man-Cron)](en/Cron-jobs-in-Contao.md)
     * [Using content elements](en/Using-Content-Elements.md)
