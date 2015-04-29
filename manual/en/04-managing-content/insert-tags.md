@@ -135,6 +135,7 @@ ID or alias.
       title="{{faq_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### User properties
@@ -142,6 +143,7 @@ ID or alias.
 The following Insert Tags allow you to display any property of the currently
 logged in user.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert Tag</th>
@@ -213,12 +215,14 @@ logged in user.
       user.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Page properties
 
 The following Insert Tags allow you to display any property of the current page.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert Tag</th>
@@ -277,6 +281,7 @@ The following Insert Tags allow you to display any property of the current page.
   <td>This tag will be replaced with the title of the website.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Environment variables
@@ -284,6 +289,7 @@ The following Insert Tags allow you to display any property of the current page.
 The following Insert Tags allow you to display environment variables like the
 page name or the request string.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert Tag</th>
@@ -324,6 +330,7 @@ page name or the request string.
       directory.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Include elements
@@ -331,6 +338,7 @@ page name or the request string.
 The following Insert Tags allow you to include various resources like articles,
 modules or files from the "templates" directory.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert Tag</th>
@@ -380,6 +388,7 @@ modules or files from the "templates" directory.
       <code>{{file::6939a448-9b30-11e4-bcba-079af1e9baea}}</code>.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Miscellaneous
@@ -387,6 +396,7 @@ modules or files from the "templates" directory.
 The following Insert Tags allow you to perform miscellaneous tasks like adding
 the current date or including lightbox images.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert Tag</th>
@@ -497,6 +507,7 @@ the current date or including lightbox images.
   <td>This tag will be replaced with the HTML &lt;br&gt; tag (line break).</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Insert tag flags
@@ -511,6 +522,7 @@ passed to specific PHP methods. Multiple flags can be applied:
 
 Available flags:
 
+{% raw %}
 <table>
 <tr>
     <th>Flag</th>

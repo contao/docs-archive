@@ -135,6 +135,7 @@ ihres Alias verlinkt werden.
       title="{{faq_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Benutzereigenschaften
@@ -142,6 +143,7 @@ ihres Alias verlinkt werden.
 Mit den folgenden Inserttags können Eigenschaften des angemeldeten Benutzers
 ausgebeben werden.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert-Tag</th>
@@ -208,6 +210,7 @@ ausgebeben werden.
       ersetzt.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Seiteneigenschaften
@@ -215,6 +218,7 @@ ausgebeben werden.
 Mit den folgenden Inserttags können Seiteneigenschaften wie z.B. der Seitenname
 ausgegeben werden.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert-Tag</th>
@@ -273,6 +277,7 @@ ausgegeben werden.
   <td>Dieses Tag wird mit dem Titel der Webseite ersetzt.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Umgebungsvariablen
@@ -280,6 +285,7 @@ ausgegeben werden.
 Mit den folgenden Inserttags können Umgebungsvariablen wie z.B. der Seitenname
 oder der Request-String ausgegeben werden.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert-Tag</th>
@@ -319,6 +325,7 @@ oder der Request-String ausgegeben werden.
   <td>Dieses Tag wird mit der statischen URL des Assets-Verzeichnis ersetzt.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Include-Elemente
@@ -326,6 +333,7 @@ oder der Request-String ausgegeben werden.
 Mit den folgenden Inserttags können Ressourcen wie z.B. Artikel, Module oder
 Dateien aus dem "templates"-Verzeichnis eingebunden werden.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert-Tag</th>
@@ -373,6 +381,7 @@ Dateien aus dem "templates"-Verzeichnis eingebunden werden.
       können Sie Argumente übergeben: <code>{{file::file.php?arg1=val}}</code></td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Verschiedenes
@@ -380,6 +389,7 @@ Dateien aus dem "templates"-Verzeichnis eingebunden werden.
 Mit den folgenden Inserttags können Sie verschiedene Aufgaben erledigen und
 z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 
+{% raw %}
 <table>
 <tr>
   <th>Insert-Tag</th>
@@ -494,6 +504,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td>Dieses Tag wird mit einem HTML &lt;br&gt; Element (Zeilenumbruch) ersetzt.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Inserttag-Flags
@@ -509,6 +520,7 @@ miteinander kombiniert werden:
 
 Verfügbare Flags:
 
+{% raw %}
 <table>
 <tr>
     <th>Flag</th>

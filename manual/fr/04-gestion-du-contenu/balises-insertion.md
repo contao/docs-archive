@@ -136,6 +136,7 @@ autre page ou vers un article en utilisant son ID ou son alias.
       title="{{faq_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Propriétés de l'utilisateur
@@ -143,6 +144,7 @@ autre page ou vers un article en utilisant son ID ou son alias.
 Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle 
 propriété du membre actuellement connecté. 
 
+{% raw %}
 <table>
 <tr>
   <th>Balise d'insertion</th>
@@ -213,6 +215,7 @@ propriété du membre actuellement connecté.
   actuellement connecté.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Propriétés de page
@@ -220,6 +223,7 @@ propriété du membre actuellement connecté.
 Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle 
 propriété de la page courante. 
 
+{% raw %}
 <table>
 <tr>
   <th>Balise d'insertion</th>
@@ -281,6 +285,7 @@ propriété de la page courante.
   <td>Cette balise sera remplacée par le titre du site internet.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Variables d'environnement
@@ -288,6 +293,7 @@ propriété de la page courante.
 Les balises d'insertion suivantes vous permettent d'afficher les variables 
 d'environnement comme le nom de la page ou la chaîne de requête. 
 
+{% raw %}
 <table>
 <tr>
   <th>Balise d'insertion</th>
@@ -328,6 +334,7 @@ d'environnement comme le nom de la page ou la chaîne de requête.
   </td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Éléments inclus
@@ -336,6 +343,7 @@ Les balises d'insertion suivantes vous permettent d'inclure différentes
 ressources comme des articles, des modules ou des fichiers qui se trouvent dans 
 le répertoire "templates". 
 
+{% raw %}
 <table>
 <tr>
   <th>Balise d'insertion</th>
@@ -386,6 +394,7 @@ le répertoire "templates".
   <code>{{file::6939a448-9b30-11e4-bcba-079af1e9baea}}</code>.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Divers
@@ -393,6 +402,7 @@ le répertoire "templates".
 Les balises d'insertion suivantes vous permettent d'effectuer différentes 
 tâches comme ajouter la date courante ou ajouter des images lightbox.
 
+{% raw %}
 <table>
 <tr>
   <th>Balise d'insertion</th>
@@ -508,6 +518,7 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
   celui d'un ordinateur de bureau.</td>
 </tr>
 </table>
+{% endraw %}
 
 
 ### Drapeaux des balises d'insertion
@@ -523,6 +534,7 @@ méthodes PHP spécifiques. Plusieurs drapeaux peuvent être appliqués :
 
 Drapeaux disponibles :
 
+{% raw %}
 <table>
 <tr>
     <th>Drapeau</th>
