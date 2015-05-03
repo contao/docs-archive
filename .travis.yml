@@ -9,12 +9,17 @@ sudo: required
 
 install:
   - sudo apt-get install sshpass
+  - sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
+  - npm install ebook-convert
   - npm install gitbook-cli -g
-  - npm install gitbook-plugin-richquotes
+  - gitbook install ./manual
+  - gitbook install ./cookbook
 
 script:
   - gitbook build ./manual
+  - gitbook pdf   ./manual   manual.pdf
   - gitbook build ./cookbook
+  - gitbook pdf   ./cookbook cookbook.pdf
 
 after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "2.11" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/2.11/
