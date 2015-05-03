@@ -22,10 +22,9 @@ script:
   - gitbook pdf   ./cookbook cookbook.pdf
 
 after_success:
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "2.11" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/2.11/
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.0" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/3.0/
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.1" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/3.1/
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.2" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/3.2/
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.3" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/3.3/
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.2" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual.pdf $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/contao-manual-3.2.pdf
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.4" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/3.4/
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.4" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./manual.pdf $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/contao-manual-3.4.pdf
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./cookbook/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/cookbook/
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && sshpass -p $SCP_PASSWORD scp -o StrictHostKeyChecking=no -r ./cookbook/cookbook.pdf $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/contao-cookbook.pdf
