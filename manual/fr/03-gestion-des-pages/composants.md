@@ -6,7 +6,7 @@ mentionné précédemment, la structure de site est l'élément central de votre
 site. Les visiteurs de votre site internet demandent toujours des pages et non 
 des articles comme dans un CMS basé sur des nœuds.
 
-![](images/composants.jpg?raw=true)
+![](images/composants.jpg)
 
 Le diagramme montre que les articles et les présentations de page sont les deux 
 éléments les plus importantes d'une page. Alors que les articles stockent le 

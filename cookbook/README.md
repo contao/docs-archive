@@ -37,7 +37,7 @@ GitHub syntax.
 Links to images should be relative to the current document. To make them work on
 GitHub, please add `raw=true` as a parameter:
 
-    ![](images/synchronization-options.jpg?raw=true)
+    ![](images/synchronization-options.jpg)
 
 
 ### Internal links

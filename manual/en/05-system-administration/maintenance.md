@@ -14,7 +14,7 @@ website or decrease the page loading time. You can purge this data manually e.g.
 to remove old thumbnails from the image cache or to recreate the XML sitemap
 files after you have modified the site structure.
 
-![](images/purge-data.jpg?raw=true)
+![](images/purge-data.jpg)
 
 
 ### Rebuilding the search index
@@ -26,4 +26,4 @@ large number of pages, it is more convenient to update them all at once instead
 of opening them one by one in the browser. In this case you can rebuild the
 search index manually.
 
-![](images/rebuild-the-search-index.jpg?raw=true)
+![](images/rebuild-the-search-index.jpg)

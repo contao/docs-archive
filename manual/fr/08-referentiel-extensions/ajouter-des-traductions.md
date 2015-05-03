@@ -7,9 +7,9 @@ car les utilisateurs de back office ne voient généralement, dans le gestionnai
 d'extensions, que les extensions disponibles dans leur propre langue ou en 
 anglais (langue par défaut).
 
-![](images/add-translation.jpg?raw=true)
+![](images/add-translation.jpg)
 
-![](images/edit-translation.jpg?raw=true)
+![](images/edit-translation.jpg)
 
 Les traductions complétées peuvent être publiées en cliquant sur l'icône de 
 navigation correspondante.

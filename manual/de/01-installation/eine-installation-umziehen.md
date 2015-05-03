@@ -22,7 +22,7 @@ oberen Menü. Um Kompatibilitätsprobleme zwischen verschiedenen MySQL-Versionen
 zu minimieren, ist es wichtig, die Einstellungen für den Export gemäß des
 folgenden Screenshots anzupassen:
 
-![](images/sql-export.jpg?raw=true)
+![](images/sql-export.jpg)
 
 
 ### Datenbank importieren
@@ -34,7 +34,7 @@ leere Datenbank aus und klicken Sie auf die "Import"-Schaltfläche im oberen
 Menü. Laden Sie dann den SQL-Dump der lokalen Datenbank hoch und starten Sie den
 Import.
 
-![](images/sql-import.jpg?raw=true)
+![](images/sql-import.jpg)
 
 
 ### Datenbank-Konfiguration anpassen

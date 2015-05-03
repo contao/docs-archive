@@ -9,9 +9,9 @@ You can also specify the root folder name of your repository. In this case, the
 files and folders outside of this root folder will be ignored during
 the import.
 
-![](images/github-import.jpg?raw=true)
+![](images/github-import.jpg)
 
 If you select a tag, its files will be downloaded automatically and are then
 available just like after a manual upload.
 
-![](images/github-import-tag.jpg?raw=true)
+![](images/github-import-tag.jpg)

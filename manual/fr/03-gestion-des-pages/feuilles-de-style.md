@@ -9,7 +9,7 @@ différents éléments de Contao, vous devez connaître leurs noms de classe. Le
 (par exemple "mod_search"). Si vous n'êtes pas sûr, il suffit de
 regarder dans le code source de la page.
 
-![](images/feuille-de-style.jpg?raw=true)
+![](images/feuille-de-style.jpg)
 
 Chaque feuille de style peut être limitée par un ou plusieurs types de média 
 et/ou par une version particulière d'Internet Explorer, dans le cas où vous avez 

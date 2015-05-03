@@ -41,7 +41,7 @@ verbinden Sie sich mit dem Server. Erstellen Sie ein Backup der oben genannten
 Dateien und navigieren Sie dann zum Contao-Verzeichnis und klicken Sie auf die
 "Dateien synchronisieren"-Schaltfläche.
 
-![](images/synchronization-options.jpg?raw=true)
+![](images/synchronization-options.jpg)
 
 Treffen Sie Ihre Auswahl wie in der Abbildung und wählen Sie unbedingt die
 Option "Änderungsvorschau" aus, damit Sie die zu aktualisierenden Dateien noch
@@ -49,7 +49,7 @@ einmal prüfen können. Bestätigen Sie danach die Einstellungen im Vorschaufens
 und achten Sie besonders auf die zu löschenden Ressourcen! Klicken Sie "OK", um
 den Synchronisationsvorgang zu starten.
 
-![](images/synchronization-confirmation.jpg?raw=true)
+![](images/synchronization-confirmation.jpg)
 
 
 ### Die Datenbank aktualisieren

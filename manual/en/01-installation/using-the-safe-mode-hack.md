@@ -3,7 +3,7 @@
 While trying to install Contao with the install tool, you might have seen a
 warning that the local configuration file is not writable.
 
-![](images/localconfig-not-writable.jpg?raw=true)
+![](images/localconfig-not-writable.jpg)
 
 
 ### File permission issues

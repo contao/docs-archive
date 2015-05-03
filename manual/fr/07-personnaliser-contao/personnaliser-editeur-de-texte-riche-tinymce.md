@@ -8,7 +8,7 @@ partie de la distribution de Contao, il vous faut donc le télécharger à parti
 du [site du projet TinyMCE][1], et le mettre dans le répertoire 
 `assets/tinymce/plugins`. 
 
-![](images/rich-text-editor.jpg?raw=true)
+![](images/rich-text-editor.jpg)
 
 L'image ci-dessus montre le fichier de configuration de l'éditeur de texte 
 riche `system/config/tinyMCE.php`. Pour créer un fichier de configuration 

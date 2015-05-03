@@ -155,7 +155,7 @@ an overview of the Contao core content elements:
 Each content element can be protected so only guests or members of a particular
 group can see it on the website.
 
-![](images/protected-element.jpg?raw=true)
+![](images/protected-element.jpg)
 
 
 ### Flash content

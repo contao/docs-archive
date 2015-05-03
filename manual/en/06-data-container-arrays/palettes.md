@@ -14,7 +14,7 @@ semicolon (;) or a comma (,). Whereas the comma is just used to separate the
 field names, the semicolon indicates the beginning of a new fieldset, which can
 be expanded and collapsed.
 
-![](images/palettes.jpg?raw=true)
+![](images/palettes.jpg)
 
 The above example is defined by the following code:
 

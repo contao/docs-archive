@@ -14,7 +14,7 @@ Datensätze oder früherer Versionen verwendet werden. Sie können diese Daten
 manuell bereinigen, um z.B. alte Vorschaubilder zu entfernen oder die
 XML-Sitemaps nach einer Änderung an der Seitenstruktur zu aktualisieren.
 
-![](images/daten-bereinigen.jpg?raw=true)
+![](images/daten-bereinigen.jpg)
 
 
 ### Suchindex neu aufbauen
@@ -25,4 +25,4 @@ normalerweise keine Gedanken machen. Wenn Sie allerdings viele Seiten auf einmal
 aktualisiert haben, ist es bequemer, den Suchindex manuell neu aufzubauen, als
 alle geänderten Seiten einzeln im Browser aufzurufen.
 
-![](images/suchindex-neu-aufbauen.jpg?raw=true)
+![](images/suchindex-neu-aufbauen.jpg)

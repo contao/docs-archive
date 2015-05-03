@@ -25,7 +25,7 @@ Repository and the Live Update and whether you have to use the Safe Mode Hack or
 not. Depending on your system configuration, you can set up a new Contao
 installation with the web installer or validate an existing installation.
 
-![](images/contao-check.jpg?raw=true)
+![](images/contao-check.jpg)
 
 Extract the Zip file, upload the `check` folder to your Contao installation
 directory and open it in a web browser.

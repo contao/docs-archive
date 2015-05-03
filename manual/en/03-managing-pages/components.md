@@ -5,7 +5,7 @@ other is the key to learning Contao. As mentioned before, the site structure is
 the central element of your website. Visitors of your website always request
 pages and not articles like in a node-based CMS.
 
-![](images/components.jpg?raw=true)
+![](images/components.jpg)
 
 The diagram shows that articles and layouts are the two most important page
 elements. Whereas articles store the content of a page, the page layout defines

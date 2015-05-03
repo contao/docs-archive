@@ -8,7 +8,7 @@ their class names. [Content element classes][1] start with "ce\_"
 (e.g. "mod\_search"). If you are not sure, simply look into the
 page source.
 
-![](images/style-sheet.jpg?raw=true)
+![](images/style-sheet.jpg)
 
 Every style sheet can be limited to one or more media types and/or to a
 particular Internet Explorer version, in case you need to fix one of its

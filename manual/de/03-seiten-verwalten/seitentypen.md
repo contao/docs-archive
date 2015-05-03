@@ -133,4 +133,4 @@ die damit verbundenen Artikel bearbeiten. Ein Mitglied der Gruppe einer Seite
 darf hingegen nur die Artikel bearbeiten und ein unprivilegierter Benutzer hat
 überhaupt keine Schreibrechte.
 
-![](images/benutzerrechte.jpg?raw=true)
+![](images/benutzerrechte.jpg)

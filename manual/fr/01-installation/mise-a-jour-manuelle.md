@@ -43,7 +43,7 @@ FTP, ouvrez WinSCP et connectez-vous au serveur. Sauvegardez les fichiers
 mentionnés ci-dessus, puis accédez au répertoire de Contao et cliquez sur le 
 bouton "Synchroniser les fichiers".
 
-![](images/synchronization-options.jpg?raw=true)
+![](images/synchronization-options.jpg)
 
 Contrôlez les options attentivement et assurez-vous de choisir "Preview changes" 
 pour que vous puissiez contrôler quels fichiers seront mis à jour. Ensuite 
@@ -51,7 +51,7 @@ confirmez chaque fichier dans la fenêtre d'aperçu et contrôlez spécialement 
 fichiers qui vont être effacés ! Cliquez sur OK pour démarrer le processus de 
 synchronisation. 
 
-![](images/synchronization-confirmation.jpg?raw=true)
+![](images/synchronization-confirmation.jpg)
 
 
 ### Mise à jour de la base de données

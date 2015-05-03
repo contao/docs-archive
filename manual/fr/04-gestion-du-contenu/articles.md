@@ -162,7 +162,7 @@ Chaque élément de contenu peut être protégé de sorte que seuls les invités
 ou les membres d'un groupe en particulier puissent le voir sur le site 
 internet.
 
-![](images/element-protege.jpg?raw=true)
+![](images/element-protege.jpg)
 
 
 ### Contenu Flash

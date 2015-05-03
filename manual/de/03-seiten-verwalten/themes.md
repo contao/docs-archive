@@ -16,7 +16,7 @@ und Gruppen enthält. Ein Theme enthält dagegen nur das eigentliche Design der
 Webseite und kann deswegen importiert werden, ohne dass bestehende Daten
 verloren gehen.
 
-![](images/themes-verwalten.jpg?raw=true)
+![](images/themes-verwalten.jpg)
 
 
 ### Theme-Bestandteile
@@ -31,7 +31,7 @@ nicht automatisch mit dem Theme verlinkt und müssen deswegen in den
 Theme-Einstellungen hinzugefügt werden, damit sie beim Theme-Export
 berücksichtigt werden.
 
-![](images/theme-einstellungen.jpg?raw=true)
+![](images/theme-einstellungen.jpg)
 
 
 ### Theme-Export und -Import

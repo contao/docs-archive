@@ -21,7 +21,7 @@ you want to export and click the "Export" tab in the top menu. It is important
 to adjust the export settings according to the screenshot below to minimize
 MySQL version compatibility problems.
 
-![](images/sql-export.jpg?raw=true)
+![](images/sql-export.jpg)
 
 
 ### Importing the database
@@ -32,7 +32,7 @@ administration panel (e.g. "Plesk" or "cPanel") to create new databases. Select
 the empty database and click the "Import" tab in the top menu. Then upload the
 SQL dump of your local database and start the import.
 
-![](images/sql-import.jpg?raw=true)
+![](images/sql-import.jpg)
 
 
 ### Adjusting the database configuration

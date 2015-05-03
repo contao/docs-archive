@@ -4,7 +4,7 @@ First of all, please note that you have to be logged in to create new tickets.
 [Registration on GitHub][1] is free. Then log into your account and click "New
 Issue" in the main navigation.
 
-![](images/new-issue.jpg?raw=true)
+![](images/new-issue.jpg)
 
 Always describe possible problems in detail and let us know how to reproduce
 them in the online demo or in our development environment. If a problem occurs
