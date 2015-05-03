@@ -515,14 +515,15 @@ the current date or including lightbox images.
 Using flags, insert tags can be further processed. For example, the value can be
 passed to specific PHP methods. Multiple flags can be applied:
 
+{% raw %}
 ```
 {{ua::browser|uncached}}
 {{page::title|decodeEntities|strtoupper}}
 ```
+{% endraw %}
 
 Available flags:
 
-{% raw %}
 <table>
 <tr>
     <th>Flag</th>
@@ -674,4 +675,3 @@ Available flags:
     href="http://php.net/rawurlencode">PHP function</a></td>
 </tr>
 </table>
-{% endraw %}
