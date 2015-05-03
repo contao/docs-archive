@@ -13,7 +13,7 @@ bei einem nächsten Update von Contao **verloren**. Um dies zu vermeiden,
 Templates können im Backend bearbeitet werden. Dabei wird die Datei kopiert um 
 Änderungen während einem Update nicht zu verlieren.
 
-![](images/templates.jpg?raw=true)
+![](images/templates.jpg)
 
 Unter dem Menüpunkt *Templates* können die Dateien bearbeitet und in Ordnern 
 abgelegt werden. Ordner müssen wie unter [Theme-Bestandteile][1] beschrieben 

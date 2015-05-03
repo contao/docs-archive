@@ -4,7 +4,7 @@ Tout d'abord, veuillez noter que vous devez être connecté pour créer de nouve
 tickets. L'[inscription sur GitHub][1] est gratuite. Ensuite, connectez-vous à 
 votre compte et cliquez sur "New Issue" dans le menu principal.
 
-![](images/new-issue.jpg?raw=true)
+![](images/new-issue.jpg)
 
 Toujours décrire les éventuels problèmes en détail et faites-nous savoir comment 
 les reproduire à partir de la démonstration en ligne ou dans notre environnement 

@@ -5,7 +5,7 @@ Chaque nouvelle version d'une extension sera enregistrée comme une release
 séparée. Ouvrez les gestionnaire de releases grâce à l'icône de navigation 
 correspondante et cliquez sur le bouton "Add release".
 
-![](images/add-release.jpg?raw=true)
+![](images/add-release.jpg)
 
 Les numéros de versions dans le référentiel d'extensions sont formés de trois 
 blocs de chiffres qui indiquent s'il s'agit d'une version majeure, mineure ou 

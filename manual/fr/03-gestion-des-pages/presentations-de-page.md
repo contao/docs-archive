@@ -10,9 +10,9 @@ CSS de Contao divise automatiquement la fenêtre du navigateur en plusieurs
 sections et affiche les modules qui ont été assignés à ces sections les uns à 
 la suite des autres.
 
-![](images/front-end-structure.jpg?raw=true)
+![](images/front-end-structure.jpg)
 
-![](images/modules-front-office.jpg?raw=true)
+![](images/modules-front-office.jpg)
 
 Cela implique que lorsque vous allez créer une présentation de page, vous devriez 
 déjà avoir créé toutes les feuilles de style et les modules front office que vous 

@@ -3,7 +3,7 @@
 Eventuell haben Sie beim Aufruf des Contao-Installtools die Mitteilung erhalten,
 dass die lokale Konfigurationsdatei nicht beschreibbar ist.
 
-![](images/localconfig-not-writable.jpg?raw=true)
+![](images/localconfig-not-writable.jpg)
 
 
 ### Dateizugriffsrechte

@@ -24,7 +24,7 @@ menu supérieur. Il est important d'ajuster les paramètres d'exportation
 conformément à la capture d'écran ci-dessous afin de restreindre les problèmes 
 de compatibilité de versions de MySQL.
 
-![](images/sql-export.jpg?raw=true)
+![](images/sql-export.jpg)
 
 
 ### Importation de la base de données
@@ -37,7 +37,7 @@ base de données vide et cliquez sur l'onglet "Importer" dans le menu supérieur
 Puis télécharger la sauvegarde SQL de votre base de données locale et lancez 
 l'importation.
 
-![](images/sql-import.jpg?raw=true)
+![](images/sql-import.jpg)
 
 
 ### Ajustement de la configuration de la base de données

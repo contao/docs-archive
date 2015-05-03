@@ -5,7 +5,7 @@ extension" button. You will be redirected to a form where you can enter the
 extension details. The yellow box above contains important information about
 naming conventions, which you should read carefully.
 
-![](images/add-extension.jpg?raw=true)
+![](images/add-extension.jpg)
 
 The following categories are currently available:
 

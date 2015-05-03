@@ -18,12 +18,12 @@ Das Live Update umfasst folgende Funktionen:
 
 ### Versionsauswahl
 
-![](images/live-update-1.jpg?raw=true)
+![](images/live-update-1.jpg)
 
 
 ### Template-Unterschiede
 
-![](images/live-update-2.jpg?raw=true)
+![](images/live-update-2.jpg)
 
 
 ### Fehlersuche

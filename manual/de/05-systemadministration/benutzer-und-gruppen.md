@@ -26,7 +26,7 @@ davon sehen, denn nur die "Courses"-Seite wurde in in der "Editors"-Gruppe
 gemountet. Beachten Sie außerdem, dass Helen Lewis nur eine der drei Seiten
 bearbeiten kann!
 
-![](images/seitenstruktur-hlewis.jpg?raw=true)
+![](images/seitenstruktur-hlewis.jpg)
 
 Eine Seite sehen zu können, beinhaltet noch nicht das Recht, sie zu bearbeiten.
 Erinnern Sie sich, dass [Zugriffsrechte][1] in der Seitenstruktur vergeben
@@ -41,7 +41,7 @@ sehen kann. Der nachfolgende Screenshot zeigt den Dateimanager aus Sicht von
 Helen Lewis, die im Gegensatz zum Administrator nur auf den `campus`-Ordner
 zugreifen darf.
 
-![](images/dateiverwaltung-hlewis.jpg?raw=true)
+![](images/dateiverwaltung-hlewis.jpg)
 
 
 #### Erlaubte Felder
@@ -53,7 +53,7 @@ wäre das Formular zum Anlegen eines Beitrags solange leer, bis der
 Administrator in den Gruppenrechten eines oder mehrere Felder der Tabelle
 `tl_news` freigeschaltet hat.
 
-![](images/erlaubte-felder.jpg?raw=true)
+![](images/erlaubte-felder.jpg)
 
 
 ### Mitglieder

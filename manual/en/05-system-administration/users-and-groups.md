@@ -25,7 +25,7 @@ only the "Courses" page has been mounted in the settings of the "Editors" group.
 Note that although Helen Lewis is allowed to see three pages, she can only edit
 one of them!
 
-![](images/site-structure-hlewis.jpg?raw=true)
+![](images/site-structure-hlewis.jpg)
 
 Being able to see a page does not include the right to edit it (or its
 articles). Remember that [page permissions][1] are set in the site structure, so
@@ -40,7 +40,7 @@ Below is a screenshot of the file manager in the view of Helen Lewis. She is
 only allowed to see the "campus" folder, whereas administrators can see the
 whole files directory (`files`).
 
-![](images/file-manager-hlewis.jpg?raw=true)
+![](images/file-manager-hlewis.jpg)
 
 
 #### Allowed fields
@@ -51,7 +51,7 @@ Even if they are e.g. allowed to access the news module, the form to create a
 new entry will be empty until the administrator enables one or more fields of
 the `tl_news` table in the group settings.
 
-![](images/allowed-fields.jpg?raw=true)
+![](images/allowed-fields.jpg)
 
 
 ### Members

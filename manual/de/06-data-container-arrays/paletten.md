@@ -15,7 +15,7 @@ Eine Palette ist eine Reihung mehrerer Feldnamen, die durch einen Strichpunkt
 Feldnamen verwendet wird, markiert der Strichpunkt den Beginn einer neuen
 Gruppe, die aus- und eingeklappt werden kann.
 
-![](images/paletten.jpg?raw=true)
+![](images/paletten.jpg)
 
 Das obige Beispiel wird durch folgenden Code definiert:
 

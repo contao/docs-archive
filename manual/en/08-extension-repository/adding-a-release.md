@@ -4,7 +4,7 @@ After you have created the extension, you can add a first release. Every new
 version of the extension will be stored as separate release. Open the release
 manager with the respective navigation icon and click the "Add release" button.
 
-![](images/add-release.jpg?raw=true)
+![](images/add-release.jpg)
 
 Version numbers in the Extension Repository consist of three numeric blocks that
 indicate the major, minor and maintenance version (e.g. `1.0.0`) as well as a

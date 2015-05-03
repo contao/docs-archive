@@ -5,6 +5,6 @@ the "Add/update files" button. You can upload single files or complete .zip
 archives. Make sure to choose the correct target directory so the file paths are
 correct after the upload.
 
-![](images/add-files.jpg?raw=true)
+![](images/add-files.jpg)
 
-![](images/edit-files.jpg?raw=true)
+![](images/edit-files.jpg)

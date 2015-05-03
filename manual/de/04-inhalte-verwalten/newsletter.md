@@ -15,7 +15,7 @@ datenschutzrechtlichen Gründen muss das Abonnieren eines Verteilers mittels
 [Double Opt-In][1] erfolgen und es wird nur die E-Mail-Adresse des Abonnements
 gespeichert.
 
-![](images/newsletter-abonnenten.jpg?raw=true)
+![](images/newsletter-abonnenten.jpg)
 
 Falls Sie bereits einen Verteiler haben, können Sie die Abonnenten aus einer
 CSV-Datei in Contao importieren.
@@ -73,7 +73,7 @@ indem der Versendungsprozess in mehreren Teilschritten mit einer bestimmten
 Wartezeit dazwischen erfolgt und so die Anzahl der E-Mails pro Minute
 kontrolliert werden kann.
 
-![](images/newsletter-versenden.jpg?raw=true)
+![](images/newsletter-versenden.jpg)
 
 
 ### Frontend-Module

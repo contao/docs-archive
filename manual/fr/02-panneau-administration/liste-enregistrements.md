@@ -12,7 +12,7 @@ La "vue en liste" répertorie les enregistrements d'une table unique dans un
 ordre particulier. Les résultats sont généralement regroupés par leur première 
 lettre.
 
-![](images/vue-liste.jpg?raw=true)
+![](images/vue-liste.jpg)
 
 
 ### Vue parente
@@ -23,7 +23,7 @@ parent-enfant sont beaucoup utilisées dans Contao. Par exemple, pour les
 articles et les éléments de contenu, les archives d'actualités et les actualités 
 ou les feuilles de style et les définitions de formatage.
 
-![](images/vue-parente.jpg?raw=true)
+![](images/vue-parente.jpg)
 
 
 ### Vue arborescente
@@ -35,7 +35,7 @@ table (par exemple, la structure de site) ainsi que des tables enfants qui se
 rapportent aux tables hiérarchiques parentes (par exemple, les articles et les 
 pages).
 
-![](images/vue-arborescente.jpg?raw=true)
+![](images/vue-arborescente.jpg)
 
 
 ### Tri et filtrage des données
@@ -49,4 +49,4 @@ qui prend même en charge les expressions régulières. Afin de réduire le temp
 chargement de la page au minimum, Contao affiche seulement trente 
 enregistrements à la fois.
 
-![](images/trier-et-filtrer.jpg?raw=true)
+![](images/trier-et-filtrer.jpg)

@@ -20,12 +20,12 @@ de Contao
 
 ### Sélection d'une version
 
-![](images/live-update-1.jpg?raw=true)
+![](images/live-update-1.jpg)
 
 
 ### Différences entre les modèles
 
-![](images/live-update-2.jpg?raw=true)
+![](images/live-update-2.jpg)
 
 
 ### Résolution de problèmes

@@ -15,7 +15,7 @@ modifications. Pour éviter cela, Contao vous permet de modifier les modèles
 directement à partir du back office. Dans ce cas, le fichier est dupliqué et vos
 modifications seront conservées lors de chaque mise à jour.
 
-![](images/modeles.jpg?raw=true)
+![](images/modeles.jpg)
 
 Créez un nouveau dossier et ajoutez-y un ou plusieurs modèles que vous souhaitez
 modifier. Par la suite, n'oubliez pas de joindre le dossier au thème comme

@@ -7,7 +7,7 @@ Wechseln Sie mit Hilfe des entsprechenden Navigationssymbols in die
 Freigabenverwaltung und klicken Sie auf die Schaltfläche "Freigabe
 hinzufügen".
 
-![](images/freigabe-hinzufuegen.jpg?raw=true)
+![](images/freigabe-hinzufuegen.jpg)
 
 Versionsnummern im Extension Repository bestehen immer aus drei Zahlenblöcken,
 die die Major-, Minor- und Maintenance-Version kennzeichnen (z.B. "1.0.0"),

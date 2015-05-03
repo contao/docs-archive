@@ -14,7 +14,7 @@ example site structure, articles, content elements and even users and groups. A
 theme, in contrast, contains only the actual website design and can therefore be
 imported without losing any existing data.
 
-![](images/theme-manager.jpg?raw=true)
+![](images/theme-manager.jpg)
 
 
 ### Theme components
@@ -27,7 +27,7 @@ directory and optional custom templates from the templates directory. However,
 those resources are not automatically linked with the theme and therefore have
 to be added in the theme configuration to be included in the theme export.
 
-![](images/theme-settings.jpg?raw=true)
+![](images/theme-settings.jpg)
 
 
 ### Theme export and import

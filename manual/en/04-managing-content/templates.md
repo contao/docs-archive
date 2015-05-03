@@ -14,7 +14,7 @@ this, Contao allows you to modify the templates directly from the back end. In
 this case, the file is duplicated and your changes will be preserved during 
 each update.
 
-![](images/templates.jpg?raw=true)
+![](images/templates.jpg)
 
 Create a new folder and add one or more templates you want to edit. Subsequently, 
 do not forget to attach the folder to the theme as explained in the paragraph 

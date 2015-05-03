@@ -16,7 +16,7 @@ manuellement par exemple pour supprimer les anciennes vignettes à partir du
 cache d'images ou pour recréer les fichiers XML du plan du site après que vous 
 ayez modifié la structure de site.
 
-![](images/nettoyer-donnees.jpg?raw=true)
+![](images/nettoyer-donnees.jpg)
 
 
 ### Reconstruire l'index de recherche
@@ -29,4 +29,4 @@ pages, il est plus commode de les mettre à jour toutes à la fois au lieu de le
 ouvrir une par une dans le navigateur. Dans ce cas, vous pouvez reconstruire 
 l'index de recherche manuellement.
 
-![](images/recreer-recherche-index.jpg?raw=true)
+![](images/recreer-recherche-index.jpg)

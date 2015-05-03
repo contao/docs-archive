@@ -162,7 +162,7 @@ Contao-Core enthaltenen Inhaltselemente.
 Jedes Inhaltselement kann geschützt werden, so dass es nur Gäste oder Benutzer
 einer bestimmten Mitgliedergruppe sehen können.
 
-![](images/geschuetztes-element.jpg?raw=true)
+![](images/geschuetztes-element.jpg)
 
 
 ### Flash-Inhalte

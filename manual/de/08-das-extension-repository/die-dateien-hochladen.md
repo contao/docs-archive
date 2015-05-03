@@ -6,6 +6,6 @@ hinzufügen/aktualisieren". Sie können nun einzelne Dateien oder ganze
 Zip-Archive auf den Server übertragen. Achten Sie dabei darauf, das richtige
 Zielverzeichnis auszuwählen, damit die Pfade nach dem Upload stimmen.
 
-![](images/dateien-hinzufuegen.jpg?raw=true)
+![](images/dateien-hinzufuegen.jpg)
 
-![](images/dateien-bearbeiten.jpg?raw=true)
+![](images/dateien-bearbeiten.jpg)

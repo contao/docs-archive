@@ -210,4 +210,4 @@ feeds and many more. To create a module, log into the back end and choose
 Each front end module can be protected so only guests or members of a particular
 group can see it on the website.
 
-![](images/protected-module.jpg?raw=true)
+![](images/protected-module.jpg)
