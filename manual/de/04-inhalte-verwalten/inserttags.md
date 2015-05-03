@@ -513,14 +513,15 @@ Mittels Flags können Sie Insert-Tags weiter verarbeiten. Der Wert kann damit
 z.B. einer PHP-Funktion übergeben werden. Beliebig viele Flags können
 miteinander kombiniert werden:
 
+{% raw %}
 ```
 {{ua::browser|uncached}}
 {{page::title|decodeEntities|strtoupper}}
 ```
+{% endraw %}
 
 Verfügbare Flags:
 
-{% raw %}
 <table>
 <tr>
     <th>Flag</th>
@@ -658,4 +659,3 @@ Verfügbare Flags:
     <td>siehe <code>System::getReadableSize()</code></td>
 </tr>
 </table>
-{% endraw %}
