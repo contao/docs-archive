@@ -1,11 +1,23 @@
 {
   "gitbook": "2.x.x",
-  "plugins": ["richquotes"],
+  "plugins": [
+      "richquotes",
+      "edit-link",
+      "anchors",
+      "disqus"
+  ],
   "links": {
     "sidebar": {
       "Contao Homepage": "https://contao.org",
       "Contao Documentation": "https://docs.contao.org"
     }
   },
-  "pluginsConfig": {}
+  "pluginsConfig": {
+      "edit-link": {
+          "base": "https://github.com/contao/docs/edit/3.2/manual"
+      },
+      "disqus": {
+          "shortName": "contaodocs"
+      }
+  }
 }

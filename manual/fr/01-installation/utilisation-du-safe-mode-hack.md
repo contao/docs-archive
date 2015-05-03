@@ -4,7 +4,7 @@ En essayant d'installer Contao avec l'outil d'installation, vous pourriez voir
 un avertissement que le fichier de configuration local n'est pas accessible en 
 écriture.
 
-![](images/localconfig-not-writable.jpg?raw=true)
+![](images/localconfig-not-writable.jpg)
 
 
 ### Problèmes d'autorisation de fichiers

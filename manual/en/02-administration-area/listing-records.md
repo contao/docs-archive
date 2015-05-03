@@ -11,7 +11,7 @@ related tables.
 The "list view" lists the records of a single table in a particular order. The
 results are usually grouped by their first letter.
 
-![](images/list-view.jpg?raw=true)
+![](images/list-view.jpg)
 
 
 ### Parent view
@@ -21,7 +21,7 @@ particular record of a parent table. Parent-child relations are used a lot in
 Contao, e.g. for articles and content elements, news archives and news articles
 or style sheets and format definitions.
 
-![](images/parent-view.jpg?raw=true)
+![](images/parent-view.jpg)
 
 
 ### Tree view
@@ -31,7 +31,7 @@ are organized in a hierarchical structure. Contao supports listing single
 hierarchical tables (e.g. the site structure) as well as child tables that
 relate to hierarchical parent tables (e.g. articles and pages).
 
-![](images/tree-view.jpg?raw=true)
+![](images/tree-view.jpg)
 
 
 ### Sorting and filtering data
@@ -43,4 +43,4 @@ listings additionally offer a full text search that even supports regular
 expressions. To keep the page loading time down to a minimum, Contao only shows
 30 records at a time.
 
-![](images/sorting-and-filtering.jpg?raw=true)
+![](images/sorting-and-filtering.jpg)

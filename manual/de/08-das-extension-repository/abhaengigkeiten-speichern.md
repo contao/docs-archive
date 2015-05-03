@@ -8,7 +8,7 @@ Abhängigkeiten können im Extension Repository gespeichert werden, so dass bei
 der Installation einer Erweiterung automatisch alle für deren Betrieb
 benötigten Module ebenfalls installiert werden.
 
-![](images/abhaengigkeit-hinzufuegen.jpg?raw=true)
+![](images/abhaengigkeit-hinzufuegen.jpg)
 
 Wählen Sie als Erstes die Erweiterung aus, die Sie als Abhängigkeit
 hinzufügen möchten, und bestätigen Sie Ihre Auswahl mit "Weiter". Im

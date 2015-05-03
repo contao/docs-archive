@@ -15,7 +15,7 @@ manuellement. Pour des raisons de protection des données privées, Contao utili
 l'inscription par [Double Opt In][1] et ne stocke que l'adresse e-mail de 
 l'abonné.
 
-![](images/destinataires-newsletter.jpg?raw=true)
+![](images/destinataires-newsletter.jpg)
 
 Au cas où vous auriez déjà une liste de destinataires, vous pouvez l'importer 
 dans Contao à partir d'un fichier CSV.
@@ -77,7 +77,7 @@ le processus d'envoi en plusieurs cycles pour éviter le dépassement du temps
 d'exécution du script et en ajoutant une pause entre chaque cycle pour 
 contrôler le nombre d'e-mails par minute.
 
-![](images/envoyer-newsletters.jpg?raw=true)
+![](images/envoyer-newsletters.jpg)
 
 
 ### Modules front office

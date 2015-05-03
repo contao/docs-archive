@@ -14,18 +14,18 @@ install extensions at the push of a button. Use the filter and sorting options
 to find a particular extension and click the info icon or extension title to
 open the details page and install the module.
 
-![](images/extension-list.jpg?raw=true)
+![](images/extension-list.jpg)
 
 The details page contains a description of the extension and important
 information regarding system requirements, versions and dependencies from other
 modules. Click the "Install" button to download and install the extension.
 
-![](images/extension-details.jpg?raw=true)
+![](images/extension-details.jpg)
 
 Contao will automatically download and install the extension and update the
 database if necessary.
 
-![](images/extension-install.jpg?raw=true)
+![](images/extension-install.jpg)
 
 
 ### Extension manager
@@ -35,14 +35,14 @@ automatically checks for updates and notifies you if a new version is available.
 Many extensions also include links to an online manual and/or forum thread where
 you can get support.
 
-![](images/extension-manager.jpg?raw=true)
+![](images/extension-manager.jpg)
 
 To uninstall an extension, simply click the uninstall icon and follow the
 instructions. The extension manager will remove all files and folders and update
 the database if necessary. Note that this action cannot be undone and the tables
 cannot be restored!
 
-![](images/extension-uninstall.jpg?raw=true)
+![](images/extension-uninstall.jpg)
 
 
 ### Manual installation

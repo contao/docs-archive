@@ -16,7 +16,7 @@ d'éléments de contenu et même d'utilisateurs et de groupes d'utilisateurs. Un
 thème, en revanche, ne contient que le design du site internet et peut donc être 
 importé sans risque de perdre toutes les données existantes.
 
-![](images/gestionnaire-theme.jpg?raw=true)
+![](images/gestionnaire-theme.jpg)
 
 
 ### Composants d'un thème
@@ -30,7 +30,7 @@ personnalisés en option à partir du répertoire des modèles. Toutefois, ces
 ressources ne sont pas automatiquement liées avec le thème et doivent donc être 
 ajoutées dans la configuration du thème pour y être inclues dans l'exportation.
 
-![](images/parametres-theme.jpg?raw=true)
+![](images/parametres-theme.jpg)
 
 
 ### Exportation et importation d'un thème

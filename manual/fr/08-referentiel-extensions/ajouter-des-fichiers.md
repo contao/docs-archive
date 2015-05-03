@@ -6,6 +6,6 @@ pouvez téléverser des fichiers individuellement ou des archives .zip complète
 Assurez-vous de choisir le bon répertoire cible, afin que les chemins d'accès 
 soient corrects à l'issue de l'envoi.
 
-![](images/add-files.jpg?raw=true)
+![](images/add-files.jpg)
 
-![](images/edit-files.jpg?raw=true)
+![](images/edit-files.jpg)

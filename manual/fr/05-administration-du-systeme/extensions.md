@@ -16,19 +16,19 @@ Utilisez les options de filtrage et de tri pour trouver une extension
 particulière et cliquez sur l'icône d'information ou le titre de l'extension 
 pour ouvrir la page de détails et installer le module.
 
-![](images/liste-extension.jpg?raw=true)
+![](images/liste-extension.jpg)
 
 La page de détails contient une description de l'extension et des informations 
 importantes concernant les configurations du système requises ainsi que les 
 versions et les dépendances d'autres modules. Cliquez sur le bouton "Installer" 
 pour télécharger et installer l'extension.
 
-![](images/details-extension.jpg?raw=true)
+![](images/details-extension.jpg)
 
 Contao téléchargera et installera automatiquement l'extension et mettra à jour 
 la base de données si nécessaire.
 
-![](images/installer-extension.jpg?raw=true)
+![](images/installer-extension.jpg)
 
 
 ### Gestionnaire d'extensions
@@ -39,7 +39,7 @@ vous avertit si une nouvelle version est disponible. De nombreuses extensions
 incluent également des liens vers un manuel en ligne et/ou un fil de discussion 
 dans un forum où vous pouvez obtenir de l'aide.
 
-![](images/gestionnaire-extension.jpg?raw=true)
+![](images/gestionnaire-extension.jpg)
 
 Pour désinstaller une extension, cliquez simplement sur l'icône de 
 désinstallation et suivez les instructions. Le gestionnaire d'extensions va 
@@ -47,7 +47,7 @@ supprimer tous les fichiers et répertoires et mettre à jour la base de donnée
 si nécessaire. Notez que cette action ne peut pas être annulée et les tables ne 
 peuvent pas être restaurées !
 
-![](images/desinstaller-extension.jpg?raw=true)
+![](images/desinstaller-extension.jpg)
 
 
 ### Installation manuelle

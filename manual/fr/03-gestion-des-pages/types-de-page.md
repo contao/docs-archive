@@ -136,4 +136,4 @@ page, tandis qu'un utilisateur d'un groupe qui possède une page est autorisé �
 éditer les articles seulement. Les utilisateurs sans privilège n'ont aucun droits 
 en écriture.
 
-![](images/droits-acces.jpg?raw=true)
+![](images/droits-acces.jpg)

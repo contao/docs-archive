@@ -5,7 +5,7 @@ unbedingt der interne Cache deaktiviert bzw. umgangen werden.
 Dazu navigieren Sie im Backend zu "System"->"Einstellungen" und setzten einen 
 Haken unter "Globale Einstellungen" bei "Internen Cache umgehen".
 
-![](images/internen-cache-umgehen.jpg?raw=true)
+![](images/internen-cache-umgehen.jpg)
 
 Sobald die Seite jedoch in den produktiven Betrieb geht, sollte unbedingt der 
 Haken bei "Internen Cache umgehen" entfernt werden, da das System ohne den 

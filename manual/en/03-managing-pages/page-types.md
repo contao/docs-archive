@@ -132,4 +132,4 @@ allowed to edit the page itself as well as its articles, whereas a user of the
 group that owns a page is only allowed to edit articles. Unprivileged users have
 no writing permissions at all.
 
-![](images/access-rights.jpg?raw=true)
+![](images/access-rights.jpg)

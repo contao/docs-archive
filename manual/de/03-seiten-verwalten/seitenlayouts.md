@@ -8,9 +8,9 @@ Google Analytics ID oder beliebigem JavaScript-Code, der für die Steuerung
 interaktiver Elemente und Plugins benötigt wird. Das Contao CSS-Framework teilt
 das Browserfenster automatisch in mehrere Layoutbereiche auf.
 
-![](images/front-end-structure.jpg?raw=true)
+![](images/front-end-structure.jpg)
 
-![](images/frontend-module.jpg?raw=true)
+![](images/frontend-module.jpg)
 
 Das impliziert, dass Sie zum Zeitpunkt der Erstellung eines Seitenlayouts
 bereits die benötigten Stylesheets und Frondend-Module angelegt haben müssen.

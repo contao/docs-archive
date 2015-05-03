@@ -28,7 +28,7 @@ référentiel d'extensions ainsi que le "Live Update" et si vous devez utiliser 
 mettre en place une nouvelle installation de Contao avec l'installateur web ou 
 valider une installation existante.
 
-![](images/contao-check-fr.jpg?raw=true)
+![](images/contao-check-fr.jpg)
 
 Extrayez le fichier Zip, téléversez le dossier `check` dans votre répertoire 
 d'installation de Contao et ouvrez-le dans un navigateur Web.

@@ -6,7 +6,7 @@ où vous pouvez entrer les détails de l'extension. La boîte jaune au-dessus
 contient des informations importantes sur les conventions de nommage, que 
 vous devriez lire attentivement.
 
-![](images/add-extension.jpg?raw=true)
+![](images/add-extension.jpg)
 
 Les catégories suivantes sont actuellement disponibles :
 

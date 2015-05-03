@@ -14,7 +14,7 @@ sont accessibles en utilisant les icônes de navigation.
 La "vue en liste", étant la plus simple, ne propose que quatre actions de base : 
 éditer, dupliquer, supprimer et afficher les détails.
 
-![](images/vue-liste-icones.jpg?raw=true)
+![](images/vue-liste-icones.jpg)
 
 
 ### Icônes de la vue parente
@@ -24,7 +24,7 @@ l'ordre des enregistrements. L'ordre peut être modifié par glisser-déposer. P
 ce faire, cliquez simplement sur l'icône de navigation "Glisser-déposer" et 
 faites-le glisser vers sa nouvelle position.
 
-![](images/vue-parente-icones.jpg?raw=true)
+![](images/vue-parente-icones.jpg)
 
 
 ### Icônes de la vue arborescente
@@ -35,7 +35,7 @@ prend en charge la duplication d'un enregistrement avec tous ses
 sous-enregistrements ainsi que la fonction "coller après" ou "coller dedans" un 
 autre enregistrement, vous pouvez donc créer une structure imbriquée.
 
-![](images/vue-arborescente-icones.jpg?raw=true)
+![](images/vue-arborescente-icones.jpg)
 
 
 ### Restaurer les versions précédentes
@@ -49,7 +49,7 @@ du formulaire. Choisissez simplement une version et cliquez sur le bouton
 L'icône située à droite du bouton "Restaurer" vous permet de voir les 
 différences entre deux versions.
 
-![](images/version.jpg?raw=true)
+![](images/version.jpg)
 
 
 ### Édition de plusieurs enregistrements
@@ -60,8 +60,8 @@ Cliquez sur le bouton "Édition multiple" afin de changer le mode d'édition, pu
 sélectionnez un ou plusieurs enregistrements et choisissez les champs que vous 
 souhaitez modifier.
 
-![](images/selectionner-multiple-enregistrements.jpg?raw=true)
+![](images/selectionner-multiple-enregistrements.jpg)
 
-![](images/selectionner-champs-a-editer.jpg?raw=true)
+![](images/selectionner-champs-a-editer.jpg)
 
-![](images/editer-multiple-enregistrements.jpg?raw=true)
+![](images/editer-multiple-enregistrements.jpg)

@@ -211,4 +211,4 @@ werden.
 Jedes Frontend-Modul kann geschützt werden, so dass es nur Gäste oder Benutzer
 einer bestimmten Mitgliedergruppe sehen können.
 
-![](images/geschuetztes-modul.jpg?raw=true)
+![](images/geschuetztes-modul.jpg)

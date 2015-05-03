@@ -7,9 +7,9 @@ immer auch eine englische Übersetzung anzulegen, da die Benutzer im Backend
 grundsätzlich nur die Erweiterungen sehen, die in ihrer jeweiligen Sprache oder
 in Englisch verfügbar sind.
 
-![](images/uebersetzung-hinzufuegen.jpg?raw=true)
+![](images/uebersetzung-hinzufuegen.jpg)
 
-![](images/uebersetzung-bearbeiten.jpg?raw=true)
+![](images/uebersetzung-bearbeiten.jpg)
 
 Fertige Übersetzungen können Sie mit einem Klick auf das entsprechende
 Navigationssymbol veröffentlichen.

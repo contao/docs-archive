@@ -215,4 +215,4 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 Chaque module front office peut être protégé de sorte que seuls les invités ou 
 les membres d'un groupe en particulier puissent le voir sur le site internet.
 
-![](images/module-protege.jpg?raw=true)
+![](images/module-protege.jpg)

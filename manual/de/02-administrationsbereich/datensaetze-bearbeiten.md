@@ -12,7 +12,7 @@ dieser Funktionen sind über die Navigationssymbole aufrufbar.
 Der "List View" als einfachste Ansicht bietet nur die vier grundlegenden
 Befehle: bearbeiten, duplizieren, löschen und Info.
 
-![](images/list-view-icons-de.jpg?raw=true)
+![](images/list-view-icons-de.jpg)
 
 
 ### Icons im Parent View
@@ -22,7 +22,7 @@ Datensätze zu kontrollieren. Die Reihenfolge kann auch mittels Drag & Drop
 geändert werden. Dazu einfach auf das "Drag & Drop" Icon klicken und
 an die neue Position bewegen.
 
-![](images/parent-view-icons-de.jpg?raw=true)
+![](images/parent-view-icons-de.jpg)
 
 
 ### Icons im Tree View
@@ -32,7 +32,7 @@ abbilden zu können. Neben dem Kopieren eines einzelnen Datensatzes können auch
 ganze Teilbäume dupliziert und entweder in einen oder nach einem anderen
 Datensatz eingefügt werden.
 
-![](images/tree-view-icons-de.jpg?raw=true)
+![](images/tree-view-icons-de.jpg)
 
 
 ### Frühere Versionen wiederherstellen
@@ -45,7 +45,7 @@ gehen können.
 Durch Klick auf das Icon rechts des Drop-Down-Menüs werden die Unterschiede
 zwischen der aktuellen und der gewählten Version angezeigt.
 
-![](images/versionierung.jpg?raw=true)
+![](images/versionierung.jpg)
 
 
 ### Mehrere Datensätze bearbeiten
@@ -55,8 +55,8 @@ von den Mitbewerbern ab. Wechseln Sie den Bearbeitungsmodus durch Anklicken der
 "Mehrere bearbeiten"-Schaltfläche und wählen Sie dann die zu bearbeitenden
 Datensätze und Felder aus.
 
-![](images/mehrere-datensaetze-auswaehlen.jpg?raw=true)
+![](images/mehrere-datensaetze-auswaehlen.jpg)
 
-![](images/zu-bearbeitende-felder-auswaehlen.jpg?raw=true)
+![](images/zu-bearbeitende-felder-auswaehlen.jpg)
 
-![](images/mehrere-datensaetze-bearbeiten.jpg?raw=true)
+![](images/mehrere-datensaetze-bearbeiten.jpg)

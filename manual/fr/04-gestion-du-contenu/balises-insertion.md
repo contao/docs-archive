@@ -527,14 +527,15 @@ En utilisant des drapeaux, les balises d'insertion peuvent être traitées de
 manière plus approfondie. Par exemple, la valeur peut être transmise aux 
 méthodes PHP spécifiques. Plusieurs drapeaux peuvent être appliqués :
 
+{% raw %}
 ```
 {{ua::browser|uncached}}  
 {{page::title|decodeEntities|strtoupper}}
 ```
+{% endraw %}
 
 Drapeaux disponibles :
 
-{% raw %}
 <table>
 <tr>
     <th>Drapeau</th>
@@ -695,4 +696,3 @@ Drapeaux disponibles :
     href="http://php.net/rawurlencode">Fonction PHP</a></td>
 </tr>
 </table>
-{% endraw %}

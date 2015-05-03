@@ -8,7 +8,7 @@ enregistrées dans le référentiel d'extensions, de telle sorte que les modules
 nécessaires soient automatiquement installés lorsque vous installez une 
 extension particulière.
 
-![](images/add-dependency.jpg?raw=true)
+![](images/add-dependency.jpg)
 
 Choisissez d'abord l'extension que vous souhaitez ajouter en tant que dépendance 
 et confirmez votre choix en cliquant sur le bouton "Continue". Puis sélectionnez 

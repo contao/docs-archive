@@ -6,7 +6,7 @@ die Seitenstruktur das zentrale Element der Webseite. Besucher rufen
 grundsätzlich immer Seiten auf und niemals einzelne Artikel, wie es in einem
 Node-basierten Content Management System der Fall ist.
 
-![](images/komponenten.jpg?raw=true)
+![](images/komponenten.jpg)
 
 Das Diagramm verdeutlicht, dass Artikel und Layouts die beiden wichtigsten
 Komponenten einer Seite sind. Während Artikel die Inhalte einer Seite

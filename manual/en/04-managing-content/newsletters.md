@@ -13,7 +13,7 @@ modules, so you do not have to manage recipients manually. For data privacy
 reasons, Contao requires [Double Opt-In][1] subscriptions and stores only the
 e-mail address of the subscriber.
 
-![](images/newsletter-recipients.jpg?raw=true)
+![](images/newsletter-recipients.jpg)
 
 In case you already have a list of recipients, you can import them into Contao
 from a CSV file.
@@ -71,7 +71,7 @@ minute. Contao tries to work around both problems by splitting the sending
 process into several cycles to prevent script timeouts and adding a custom
 waiting time between each cycle to control the number of e-mails per minute.
 
-![](images/sending-newsletters.jpg?raw=true)
+![](images/sending-newsletters.jpg)
 
 
 ### Front end modules

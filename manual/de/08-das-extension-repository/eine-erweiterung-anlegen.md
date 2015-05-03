@@ -6,7 +6,7 @@ gelangen nun zu einem Formular, in das Sie die Daten der Erweiterung eingeben
 können. Der Kasten oberhalb des Formulars enthält wichtige Hinweise zur
 Namensgebung, die Sie unbedingt berücksichtigen sollten.
 
-![](images/erweiterung-hinzufuegen.jpg?raw=true)
+![](images/erweiterung-hinzufuegen.jpg)
 
 Folgende Kategorien sind momentan verfügbar:
 

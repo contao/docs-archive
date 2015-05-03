@@ -29,7 +29,7 @@ que seul l'accès à la page "Courses" a été autorisé dans les paramètres du
 groupe "Editors". Notez que même si Helen Lewis est autorisée à voir trois 
 pages, elle ne peut modifier que l'une d'elles !
 
-![](images/site-structure-hlewis-fr.jpg?raw=true)
+![](images/site-structure-hlewis-fr.jpg)
 
 Être capable de voir une page n'inclut pas le droit de la modifier (ou de 
 modifier ses articles). Rappelez-vous que [les permissions d'une page][1] sont 
@@ -46,7 +46,7 @@ ci-dessous montre le gestionnaire de fichiers tel qu'il est perçu par Helen Lew
 Elle n'est autorisée de voir que le répertoire "campus", alors que les 
 administrateurs peuvent voir le répertoire complet des fichiers (`files`).
 
-![](images/gestionnaire-fichiers-hlewis.jpg?raw=true)
+![](images/gestionnaire-fichiers-hlewis.jpg)
 
 
 #### Champs autorisés
@@ -58,7 +58,7 @@ module d'actualités, le formulaire pour créer une nouvelle entrée sera vide
 jusqu'à ce que l'administrateur sélectionne un ou plusieurs champs de la table 
 `tl_news` dans les paramètres du groupe.
 
-![](images/champs-autorises.jpg?raw=true)
+![](images/champs-autorises.jpg)
 
 
 ### Membres

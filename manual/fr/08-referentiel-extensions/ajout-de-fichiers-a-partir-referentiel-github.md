@@ -10,9 +10,9 @@ Vous pouvez également spécifier le nom du répertoire racine de votre référe
 Dans ce cas, les fichiers et les répertoires en dehors de ce répertoire racine 
 seront ignorés lors de l'importation.
 
-![](images/github-import.jpg?raw=true)
+![](images/github-import.jpg)
 
 Si vous sélectionnez un tag, ses fichiers seront téléchargés automatiquement 
 et seront alors disponibles comme lors d'un téléversement manuel.
 
-![](images/github-import-tag.jpg?raw=true)
+![](images/github-import-tag.jpg)

@@ -3,7 +3,7 @@
 Diese Funktion ist für News Archive und Kalender verfügbar.
 Hier ein Beispiel der Kalender-Liste.
 
-![](images/rss-kalender.jpg?raw=true)
+![](images/rss-kalender.jpg)
 
 
 ### Einstellungen
@@ -13,7 +13,7 @@ ausgegeben werden. Genau gleich funktioniert es bei News Archiven. Hier kann
 auch gewählt werden, ob nur der Teaser oder der komplette Artikel des Events
 bzw. der News ausgegeben werden soll.
 
-![](images/rss-bearbeiten.jpg?raw=true)
+![](images/rss-bearbeiten.jpg)
 
 
 ### XML Dateien

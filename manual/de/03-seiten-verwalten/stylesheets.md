@@ -8,7 +8,7 @@ Stylesheet zu referenzieren, müssen Sie deren Klassennamen kennen.
 und [Modul-Klassen][2] mit "mod__" (z.B. "mod_search"). Falls
 Sie sich nicht sicher sind, sehen Sie einfach im Quelltext der Webseite nach.
 
-![](images/stylesheet.jpg?raw=true)
+![](images/stylesheet.jpg)
 
 Jedes Stylesheet kann auf einen oder mehrere Medientypen und/oder eine bestimmte
 Version des Internet Explorers beschränkt werden, falls Sie einen der vielen

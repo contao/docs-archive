@@ -18,19 +18,19 @@ durchsuchen und Erweiterungen auf Knopfdruck installieren. Nutzen Sie die
 Filter- und Sortieroptionen zum Auffinden eines Moduls und klicken Sie auf
 dessen Namen, um die Beschreibung zu lesen oder es zu installieren.
 
-![](images/erweiterungsliste.jpg?raw=true)
+![](images/erweiterungsliste.jpg)
 
 Die Detailseite enthält die Beschreibung der Erweiterung sowie wichtige
 Informationen zu Systemvoraussetzungen, Versionen und Abhängigkeiten von
 anderen Modulen. Klicken Sie auf die "Installieren"-Schaltfläche, um die
 Erweiterung herunterzuladen und zu installieren.
 
-![](images/erweiterungsdetails.jpg?raw=true)
+![](images/erweiterungsdetails.jpg)
 
 Contao lädt die Erweiterung automatisch herunter, kopiert die Dateien und
 aktualisiert wenn nötig die Datenbank.
 
-![](images/erweiterung-installieren.jpg?raw=true)
+![](images/erweiterung-installieren.jpg)
 
 
 ### Erweiterungsverwaltung
@@ -40,14 +40,14 @@ deinstalliert werden. Es wird automatisch auf Updates geprüft und auf neue
 Versionen hingewiesen. Viele Erweiterungen enthalten außerdem einen
 Support-Link zur Dokumentation und/oder zum Forum.
 
-![](images/erweiterungsverwaltung.jpg?raw=true)
+![](images/erweiterungsverwaltung.jpg)
 
 Um eine Erweiterung zu deinstallieren, klicken Sie auf das entsprechende Icon
 und folgen Sie den Anweisungen. Es werden alle Dateien entfernt und falls nötig
 die Datenbank aktualisiert. Beachten Sie, dass diese Aktion nicht rückgängig
 gemacht werden kann!
 
-![](images/erweiterung-deinstallieren.jpg?raw=true)
+![](images/erweiterung-deinstallieren.jpg)
 
 
 ### Manuelle Installation

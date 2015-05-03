@@ -8,9 +8,9 @@ that is required to control interactive elements and plugins. The Contao CSS
 framework automatically divides the browser window into several layout sections
 and shows the modules that have been assigned to them one below the other.
 
-![](images/front-end-structure.jpg?raw=true)
+![](images/front-end-structure.jpg)
 
-![](images/front-end-modules.jpg?raw=true)
+![](images/front-end-modules.jpg)
 
 That implies that by the time you create a page layout, you have to have created
 all style sheets and front end modules that you want to include in it. Therefore
