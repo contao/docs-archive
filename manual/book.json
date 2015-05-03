@@ -3,7 +3,8 @@
   "plugins": [
       "richquotes",
       "edit-link",
-      "anchors"
+      "anchors",
+      "disqus"
   ],
   "links": {
     "sidebar": {
@@ -14,6 +15,9 @@
   "pluginsConfig": {
       "edit-link": {
           "base": "https://github.com/contao/docs/edit/3.2/manual"
+      },
+      "disqus": {
+          "shortName": "contaodocs"
       }
   }
 }
