@@ -1,7 +1,9 @@
 {
     "gitbook": "2.x.x",
     "plugins": [
-        "richquotes"
+        "richquotes",
+        "edit-link",
+        "anchors"
     ],
     "links": {
         "sidebar": {
