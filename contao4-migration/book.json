@@ -11,5 +11,10 @@
             "Contao Documentation": "https://docs.contao.org"
         }
     },
-    "pluginsConfig": {}
+
+    "pluginsConfig": {
+        "edit-link": {
+            "base": "https://github.com/contao/docs/edit/master/contao4-migration"
+        }
+    }
 }
