@@ -1,4 +1,4 @@
-# Summary
+## Table of contents
 
 * Deutsch
     * [Benutzer-Authentifizierung und Rechteprüfung](de/Benutzer-Authentifizierung-und-Rechtepruefung.md)

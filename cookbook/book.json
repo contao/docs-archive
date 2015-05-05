@@ -1,8 +1,7 @@
 {
     "gitbook": "2.x.x",
     "plugins": [
-        "richquotes",
-        "multipart"
+        "richquotes"
     ],
     "links": {
         "sidebar": {
