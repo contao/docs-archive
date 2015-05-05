@@ -1,0 +1,13 @@
+{
+    "gitbook": "2.x.x",
+    "plugins": [
+        "richquotes"
+    ],
+    "links": {
+        "sidebar": {
+            "Contao Homepage": "https://contao.org",
+            "Contao Documentation": "https://docs.contao.org"
+        }
+    },
+    "pluginsConfig": {}
+}
