@@ -3,7 +3,8 @@
     "plugins": [
         "richquotes",
         "edit-link",
-        "anchors"
+        "anchors",
+        "piwik"
     ],
     "links": {
         "sidebar": {
@@ -15,6 +16,10 @@
     "pluginsConfig": {
         "edit-link": {
             "base": "https://github.com/contao/docs/edit/master/contao4-migration"
+        },
+        "piwik": {
+            "URL": "association.contao.org/piwik/",
+            "siteId": 3
         }
     }
 }
