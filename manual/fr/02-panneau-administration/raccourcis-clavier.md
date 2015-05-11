@@ -1,9 +1,9 @@
 ## Raccourcis clavier
 
-Afin d'accélérer le flux de travail lorsque vous travaillez avec Contao, il 
-existe plusieurs raccourcis associés au back office qui vous permettent 
-d'exécuter certaines commandes. Vous pouvez par exemple déclencher le bouton 
-"Enregistrer" à la fin d'un formulaire en cliquant avec votre souris ou en 
+Afin d'accélérer le flux de travail lorsque vous travaillez avec Contao, il
+existe plusieurs raccourcis associés au back office qui vous permettent
+d'exécuter certaines commandes. Vous pouvez par exemple déclencher le bouton
+"Enregistrer" à la fin d'un formulaire en cliquant avec votre souris ou en
 utilisant le raccourci clavier `[Alt]+[s]`.
 
 
@@ -76,15 +76,15 @@ utilisant le raccourci clavier `[Alt]+[s]`.
 <tr>
   <td><code>[Alt]+[g]</code></td>
   <td>Sauvegarder et retour</td>
-  <td>Sauvegarde le formulaire courant et redirige vers la page parente, par 
-  exemple, à partir d'un élément de contenu vers la vue arborescente des 
+  <td>Sauvegarde le formulaire courant et redirige vers la page parente, par
+  exemple, à partir d'un élément de contenu vers la vue arborescente des
   articles.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[e]</code></td>
   <td>Sauvegarder et éditer</td>
-  <td>Sauvegarde le formulaire courant et redirige vers la vue des 
-  enregistrements enfants. Par exemple, lors de la création de feuilles de 
+  <td>Sauvegarde le formulaire courant et redirige vers la vue des
+  enregistrements enfants. Par exemple, lors de la création de feuilles de
   style.</td>
 </tr>
 <tr>
@@ -106,31 +106,37 @@ utilisant le raccourci clavier `[Alt]+[s]`.
 <tr>
   <td><code>[Alt]+[d]</code></td>
   <td>Suppression multiple</td>
-  <td>Supprime tous les enregistrements sélectionnés en mode d'édition 
+  <td>Supprime tous les enregistrements sélectionnés en mode d'édition
   multiple.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[x]</code></td>
   <td>Coupe multiple</td>
-  <td>Déplace tous les enregistrements sélectionnés en mode d'édition 
+  <td>Déplace tous les enregistrements sélectionnés en mode d'édition
   multiple.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[c]</code></td>
   <td><b>C</b>opie multiple</td>
-  <td>Duplique tous les enregistrements sélectionnés en mode d'édition 
+  <td>Duplique tous les enregistrements sélectionnés en mode d'édition
   multiple.</td>
 </tr>
 <tr>
   <td><code>[Alt]+[v]</code></td>
   <td>Remplacement multiple</td>
-  <td>Remplace tous les enregistrements sélectionnés en mode d'édition 
+  <td>Remplace tous les enregistrements sélectionnés en mode d'édition
   multiple.</td>
+</tr>
+<tr>
+  <td><code>[Shift]</code></td>
+  <td>Sélectionner plusieurs cases à cocher</td>
+  <td>Sélectionne plusieurs cases à cocher en maintenant enfoncée la touche shift
+  (Maj) en mode d'édition multiple.</td>
 </tr>
 </table>
 
-Les raccourcis clavier ci-dessus ne fonctionnent que sous Windows sous cette 
-forme. Les utilisateurs de Mac doivent utiliser `[Ctrl]+[⌥ Opt]` au lieu de la 
-touche `[Alt]` avec le raccourci clavier. En outre, Firefox sur Windows fait 
-exception à la norme : vous devez appuyer sur le raccourci clavier 
+Les raccourcis clavier ci-dessus ne fonctionnent que sous Windows sous cette
+forme. Les utilisateurs de Mac doivent utiliser `[Ctrl]+[⌥ Opt]` au lieu de la
+touche `[Alt]` avec le raccourci clavier. En outre, Firefox sur Windows fait
+exception à la norme : vous devez appuyer sur le raccourci clavier
 `[Alt]+[Shift]`.
