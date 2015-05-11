@@ -492,8 +492,8 @@ the current date or including lightbox images.
       <strong>alt</strong>: Alternative text,<br>
       <strong>class</strong>: CSS class,<br>
       <strong>rel</strong>: rel-attribute (e.g. "lightbox"),<br>
-      <strong>mode</strong>: Mode ("proportional", "crop" or "box").
-      <strong>size</strong>: An image size ID (See Themes -&gt; Image sizes).
+      <strong>mode</strong>: Mode ("proportional", "crop" or "box"),<br>
+      <strong>size</strong>: An image size ID (See Themes -&gt; Image sizes),<br>
       <strong>template</strong>: The template where the <code>picture</code> tag is built.</td>
 </tr>
 <tr>
