@@ -24,7 +24,7 @@ ID or alias.
 </tr>
 <tr>
   <td><code>{{link::back}}</code></td>
-  <td>This tag will be replaced with a link that points to the last visited page.      
+  <td>This tag will be replaced with a link that points to the last visited page.
       It can also be used as <code>{{link_open::back}}</code>,
       <code>{{link_url::back}}</code> or <code>{{link_title::back}}</code>
       (see below).</td>
@@ -472,8 +472,8 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
-  <td>This tag will be replaced with the thumbnail of an image (replace * 
-  with the database ID, UUID or a file system path): 
+  <td>This tag will be replaced with the thumbnail of an image (replace *
+  with the database ID, UUID or a file system path):
       <code>{{image::58ca4a90-2d30-11e4-8c21-0800200c9a66?width=200&amp;height=150}}</code>.<br>
       <strong>width</strong>: Thumbnail width,<br>
       <strong>height</strong>: Thumbnail height,<br>
@@ -481,6 +481,20 @@ the current date or including lightbox images.
       <strong>class</strong>: CSS class,<br>
       <strong>rel</strong>: rel-attribute (e.g. "lightbox"),<br>
       <strong>mode</strong>: Mode ("proportional", "crop" or "box").</td>
+</tr>
+<tr>
+  <td><code>{{picture::*}}</code></td>
+  <td>This tag will be replaced with an image surrounded by a <code>picture</code> tag if the
+  <code>size</code> parameter is a valid ID. (replace * with the database ID, UUID or a file system path):
+      <code>{{picture::58ca4a90-2d30-11e4-8c21-0800200c9a66?size=1&amp;template=picture_default}}</code>.<br>
+      <strong>width</strong>: Thumbnail width,<br>
+      <strong>height</strong>: Thumbnail height,<br>
+      <strong>alt</strong>: Alternative text,<br>
+      <strong>class</strong>: CSS class,<br>
+      <strong>rel</strong>: rel-attribute (e.g. "lightbox"),<br>
+      <strong>mode</strong>: Mode ("proportional", "crop" or "box").
+      <strong>size</strong>: An image size ID (See Themes -&gt; Image sizes).
+      <strong>template</strong>: The template where the <code>picture</code> tag is built.</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
@@ -665,13 +679,13 @@ Available flags:
 <tr>
     <td><code>urlencode</code></td>
     <td>URL-encodes strings.</td>
-    <td><a target="_blank" 
+    <td><a target="_blank"
     href="http://php.net/urlencode">PHP function</a></td>
 </tr>
 <tr>
     <td><code>rawurlencode</code></td>
     <td>URL-encode according to RFC 3986.</td>
-    <td><a target="_blank" 
+    <td><a target="_blank"
     href="http://php.net/rawurlencode">PHP function</a></td>
 </tr>
 </table>
