@@ -73,6 +73,11 @@ feeds and many more. To create a module, log into the back end and choose
   <td>Generates a user registration form.</td>
 </tr>
 <tr>
+  <td>Change password</td>
+  <td>mod_changePassword</td>
+  <td>Generates a form to change the password.</td>
+</tr>
+<tr>
   <td>Lost password</td>
   <td>mod_password</td>
   <td>Generates a form to request a new password.</td>
