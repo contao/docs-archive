@@ -127,6 +127,11 @@ Tastaturkürzel `[Alt]+[s]` ansteuern.
   <td>Überschreibt alle ausgewählten Datensätze im Modus »mehrere
       bearbeiten«.</td>
 </tr>
+<tr>
+  <td><code>[Shift]</code></td>
+  <td>Mehrere Checkboxen auswählen</td>
+  <td>Wählt mehrere Checkboxen aus wenn die Shift-Taste gedrückt wird.</td>
+</tr>
 </table>
 
 Die beschriebenen Tastaturkürzel funktionieren in dieser Form nur unter
