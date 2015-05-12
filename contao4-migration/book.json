@@ -12,10 +12,14 @@
             "Contao Documentation": "https://docs.contao.org"
         }
     },
-
     "pluginsConfig": {
         "edit-link": {
-            "base": "https://github.com/contao/docs/edit/master/contao4-migration"
+            "base": "https://github.com/contao/docs/edit/master/contao4-migration",
+            "label": {
+                "en": "Edit This Page",
+                "de": "Seite bearbeiten",
+                "fr": "Modifier cette page"
+            }
         },
         "piwik": {
             "URL": "association.contao.org/piwik/",
