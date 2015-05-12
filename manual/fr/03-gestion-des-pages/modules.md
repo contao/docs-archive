@@ -1,10 +1,10 @@
 ## Modules
 
-Les modules front office vous permettent d'ajouter presque n'importe quel type 
-de fonctionnalités à votre site internet. Le cœur de Contao comprend des 
-modules pour générer différents menus de navigation, gérer l'enregistrement et 
-l'authentification d'un membre, rechercher sur le site, l'importation de flux 
-RSS et bien plus encore. Pour créer un module, connectez-vous au back office et 
+Les modules front office vous permettent d'ajouter presque n'importe quel type
+de fonctionnalités à votre site internet. Le cœur de Contao comprend des
+modules pour générer différents menus de navigation, gérer l'enregistrement et
+l'authentification d'un membre, rechercher sur le site, l'importation de flux
+RSS et bien plus encore. Pour créer un module, connectez-vous au back office et
 choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 
 <table>
@@ -31,7 +31,7 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 <tr>
   <td>Navigation rapide</td>
   <td>mod_quicknav</td>
-  <td>Génère un menu de type liste déroulante à partir de la structure de 
+  <td>Génère un menu de type liste déroulante à partir de la structure de
   site.</td>
 </tr>
 <tr>
@@ -67,13 +67,18 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 <tr>
   <td>Données personnelles</td>
   <td>mod_personalData</td>
-  <td>Génère un formulaire permettant de modifier les données personnelles 
+  <td>Génère un formulaire permettant de modifier les données personnelles
   d'un membre.</td>
 </tr>
 <tr>
   <td>Formulaire d'inscription</td>
   <td>mod_registration</td>
   <td>Crée un formulaire d'inscription.</td>
+</tr>
+<tr>
+  <td>Changer le mot de passe</td>
+  <td>mod_changePassword</td>
+  <td>Génère un formulaire pour changer le mot de passe.</td>
 </tr>
 <tr>
   <td>Mot de passe perdu</td>
@@ -128,13 +133,13 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 <tr>
   <td>S'abonner</td>
   <td>mod_subscribe</td>
-  <td>Génère un formulaire pour s'abonner à une ou plusieurs listes de 
+  <td>Génère un formulaire pour s'abonner à une ou plusieurs listes de
   diffusion.</td>
 </tr>
 <tr>
   <td>Se désabonner</td>
   <td>mod_unsubscribe</td>
-  <td>Génère un formulaire pour se désabonner à une ou plusieurs listes de 
+  <td>Génère un formulaire pour se désabonner à une ou plusieurs listes de
   diffusion.</td>
 </tr>
 <tr>
@@ -212,7 +217,7 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 
 ### Contrôle d'accès
 
-Chaque module front office peut être protégé de sorte que seuls les invités ou 
+Chaque module front office peut être protégé de sorte que seuls les invités ou
 les membres d'un groupe en particulier puissent le voir sur le site internet.
 
 ![](images/module-protege.jpg)
