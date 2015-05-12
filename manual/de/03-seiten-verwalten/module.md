@@ -74,6 +74,11 @@ werden.
   <td>Erzeugt ein Formular zur Benutzerregistrierung.</td>
 </tr>
 <tr>
+  <td>Passwort ändern</td>
+  <td>mod_changePassword</td>
+  <td>Erzeugt ein Formular zur Passwort-Änderung.</td>
+</tr>
+<tr>
   <td>Passwort vergessen</td>
   <td>mod_password</td>
   <td>Erzeugt ein Formular zur Passwort-Anforderung.</td>

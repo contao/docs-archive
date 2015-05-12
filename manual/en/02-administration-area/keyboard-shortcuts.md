@@ -118,6 +118,12 @@ creating style sheets.</td>
   <td>Override multiple</td>
   <td>Overrides all selected records in "edit multiple" mode.</td>
 </tr>
+<tr>
+  <td><code>[Shift]</code></td>
+  <td>Select several check boxes</td>
+  <td>Selects several check boxes by holding down the shift key in "edit
+  multiple" mode.</td>
+</tr>
 </table>
 
 The keyboard shortcuts above only work on Windows in this form. Mac users have
