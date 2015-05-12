@@ -15,7 +15,12 @@
   },
   "pluginsConfig": {
       "edit-link": {
-          "base": "https://github.com/contao/docs/edit/3.2/manual"
+          "base": "https://github.com/contao/docs/edit/3.2/manual",
+          "label": {
+              "en": "Edit This Page",
+              "de": "Seite bearbeiten",
+              "fr": "Modifier cette page"
+          }
       },
       "disqus": {
           "shortName": "contaodocs"
