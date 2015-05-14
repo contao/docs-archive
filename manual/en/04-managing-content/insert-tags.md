@@ -484,8 +484,9 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{picture::*}}</code></td>
-  <td>This tag will be replaced with an image surrounded by a <code>picture</code> tag if the
-  <code>size</code> parameter is a valid ID. (replace * with the database ID, UUID or a file system path):
+  <td>This tag will be replaced with an image and various image sources depending on your image size
+     preferences and if the <code>size</code> parameter is a valid ID (replace * with the database ID, UUID
+     or a file system path):
       <code>{{picture::58ca4a90-2d30-11e4-8c21-0800200c9a66?size=1&amp;template=picture_default}}</code>.<br>
       <strong>width</strong>: Thumbnail width,<br>
       <strong>height</strong>: Thumbnail height,<br>
@@ -494,7 +495,7 @@ the current date or including lightbox images.
       <strong>rel</strong>: rel-attribute (e.g. "lightbox"),<br>
       <strong>mode</strong>: Mode ("proportional", "crop" or "box"),<br>
       <strong>size</strong>: An image size ID (See Themes -&gt; Image sizes),<br>
-      <strong>template</strong>: The template where the <code>picture</code> tag is built.</td>
+      <strong>template</strong>: The default template (picture_default).</td>
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
