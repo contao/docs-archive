@@ -12,6 +12,9 @@
             "Contao Documentation": "https://docs.contao.org"
         }
     },
+    "pdf": {
+        "toc": false
+    },
     "pluginsConfig": {
         "edit-link": {
             "base": "https://github.com/contao/docs/edit/master/cookbook",
