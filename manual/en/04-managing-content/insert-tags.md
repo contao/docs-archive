@@ -494,7 +494,7 @@ the current date or including lightbox images.
       <strong>CACHE</strong>: tl_page,<br>
       <strong>XPL</strong>: explain,<br>
       <strong>XPT</strong>: exception<br>
-      Example: <code>{{label::CNT:au}}</code> displays "Australia" or
+      Examples: <code>{{label::CNT:au}}</code> displays "Australia" or
       <code>{{label::tl_article:title:0}}</code> displays "Title".
       Note that only the first colon is a double colon.</td>
 </tr>
