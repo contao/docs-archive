@@ -489,13 +489,13 @@ the current date or including lightbox images.
       a language file name or one of the following acronyms/abbreviations:<br>
       <strong>CNT</strong>: countries,<br>
       <strong>LNG</strong>: languages,<br>
-      <strong>MOD or FMD</strong>: modules,<br>
+      <strong>MOD</strong> or <strong>FMD</strong>: modules,<br>
       <strong>FFL</strong>: tl_form_field,<br>
       <strong>CACHE</strong>: tl_page,<br>
       <strong>XPL</strong>: explain,<br>
-      <strong>XPT</strong>: exception<br>
-      Examples: <code>{{label::CNT:au}}</code> displays "Australia" or
-      <code>{{label::tl_article:title:0}}</code> displays "Title".
+      <strong>XPT</strong>: exception.<br>
+      Examples: <code>{{label::CNT:au}}</code> displays "Australia" and
+      <code>{{label::tl_article:title:0}}</code> displays "Title".<br>
       Note that only the first colon is a double colon.</td>
 </tr>
 <tr>
