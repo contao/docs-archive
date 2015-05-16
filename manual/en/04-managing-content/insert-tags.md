@@ -24,7 +24,7 @@ ID or alias.
 </tr>
 <tr>
   <td><code>{{link::back}}</code></td>
-  <td>This tag will be replaced with a link that points to the last visited page.      
+  <td>This tag will be replaced with a link that points to the last visited page.
       It can also be used as <code>{{link_open::back}}</code>,
       <code>{{link_url::back}}</code> or <code>{{link_title::back}}</code>
       (see below).</td>
@@ -440,7 +440,8 @@ the current date or including lightbox images.
   <td><code>{{lang::*}}</code></td>
   <td>This tag can be used to mark foreign words within a text: <code>{{lang::fr}}Au
       revoir{{lang}}</code>. It will be replaced with <code>&lt;span lang="fr"
-      xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
+      &gt;Au revoir&lt;/span&gt;</code> and adds the `xml:lang="fr"` attribute if the
+      doctype is XHTML.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
@@ -472,8 +473,8 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
-  <td>This tag will be replaced with the thumbnail of an image (replace * 
-  with the database ID, UUID or a file system path): 
+  <td>This tag will be replaced with the thumbnail of an image (replace *
+      with the database ID, UUID or a file system path):
       <code>{{image::58ca4a90-2d30-11e4-8c21-0800200c9a66?width=200&amp;height=150}}</code>.<br>
       <strong>width</strong>: Thumbnail width,<br>
       <strong>height</strong>: Thumbnail height,<br>
@@ -484,14 +485,23 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>This tag will be replaced with a translated label: <code>{{label::CNT:au}}</code>
-      or <code>{{label::tl_article:title:0}}</code>. Note that only the first
-      colon is a double colon.</td>
+  <td>This tag will be replaced with a translated label. The first parameter is
+      a language file name or one of the following acronyms/abbreviations:<br>
+      <strong>CNT</strong>: countries,<br>
+      <strong>LNG</strong>: languages,<br>
+      <strong>MOD or FMD</strong>: modules,<br>
+      <strong>FFL</strong>: tl_form_field,<br>
+      <strong>CACHE</strong>: tl_page,<br>
+      <strong>XPL</strong>: explain,<br>
+      <strong>XPT</strong>: exception<br>
+      Example: <code>{{label::CNT:au}}</code> displays "Australia" or
+      <code>{{label::tl_article:title:0}}</code> displays "Title".
+      Note that only the first colon is a double colon.</td>
 </tr>
 <tr>
   <td><code>{{version}}</code></td>
   <td>This tag will be replaced with the current Contao version (e.g.
-      2.11.2).</td>
+      3.2.7).</td>
 </tr>
 <tr>
   <td><code>{{request_token}}</code></td>
