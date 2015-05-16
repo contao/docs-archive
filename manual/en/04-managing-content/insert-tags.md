@@ -24,7 +24,7 @@ ID or alias.
 </tr>
 <tr>
   <td><code>{{link::back}}</code></td>
-  <td>This tag will be replaced with a link that points to the last visited page.      
+  <td>This tag will be replaced with a link that points to the last visited page.
       It can also be used as <code>{{link_open::back}}</code>,
       <code>{{link_url::back}}</code> or <code>{{link_title::back}}</code>
       (see below).</td>
@@ -95,6 +95,11 @@ ID or alias.
       title="{{news_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
+  <td><code>{{news_feed::*}}</code></td>
+  <td>This tag will be replaced with the URL of a news feed (replace * with the
+      news feed ID).</td>
+</tr>
+<tr>
   <td><code>{{event::*}}</code></td>
   <td>This tag will be replaced with a link to an event (replace * with the
       event ID or alias).</td>
@@ -113,6 +118,11 @@ ID or alias.
   <td><code>{{event_title::*}}</code></td>
   <td>This tag will be replaced with the title of an event: <code>&lt;a
       title="{{event_title::12}}">Click here&lt;/a&gt;</code>.</td>
+</tr>
+<tr>
+  <td><code>{{calendar_feed::*}}</code></td>
+  <td>This tag will be replaced with the URL of a calendar feed (replace * with the
+      calendar feed ID).</td>
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
@@ -472,8 +482,8 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
-  <td>This tag will be replaced with the thumbnail of an image (replace * 
-  with the database ID, UUID or a file system path): 
+  <td>This tag will be replaced with the thumbnail of an image (replace *
+  with the database ID, UUID or a file system path):
       <code>{{image::58ca4a90-2d30-11e4-8c21-0800200c9a66?width=200&amp;height=150}}</code>.<br>
       <strong>width</strong>: Thumbnail width,<br>
       <strong>height</strong>: Thumbnail height,<br>
