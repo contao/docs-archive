@@ -95,6 +95,11 @@ ihres Alias verlinkt werden.
       title="{{news_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
+  <td><code>{{news_feed::*}}</code></td>
+  <td>Dieser Tag wird mit der URL zu einem News-Feed ersetzen (ersetzen Sie * mit
+      der ID).</td>
+</tr>
+<tr>
   <td><code>{{event::*}}</code></td>
   <td>Dieses Tag wird mit einem Link zu einem Event ersetzt (ersetzen Sie * mit
       der ID oder dem Alias).</td>
@@ -113,6 +118,11 @@ ihres Alias verlinkt werden.
   <td><code>{{event_title::*}}</code></td>
   <td>Dieses Tag wird mit dem Titel eines Events ersetzt: <code>&lt;a
       title="{{event_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
+</tr>
+<tr>
+  <td><code>{{calendar_feed::*}}</code></td>
+  <td>Dieser Tag wird mit der URL zu einem Kalender-Feed ersetzen (ersetzen Sie * mit
+      der ID).</td>
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
