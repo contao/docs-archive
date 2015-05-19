@@ -486,7 +486,7 @@ the current date or including lightbox images.
 <tr>
   <td><code>{{label::*}}</code></td>
   <td>This tag will be replaced with a translated label. The first parameter is
-      a language file name or an acronym such as e.g. <code>CNT</code> (countries) or
+      a language file name or an acronym such as <code>CNT</code> (countries) or
       <code>LNG</code> (languages). Examples: <code>{{label::CNT:au}}</code> displays
       "Australia" and <code>{{label::tl_article:title:0}}</code> displays "Title".<br>
       Note that only the first colon is a double colon.</td>
