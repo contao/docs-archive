@@ -13,9 +13,9 @@ of the `news` extension.
 Create the file `dca/tl_member.php` in your module folder and add the meta data
 for the new field so Contao knows how to handle it.
 
-Since Contao 3 you can also specify directly the corresponding fields and their 
-configuration for the database in the DCA under `sql`. The SQL details are not 
-sent to the database but they are used to calculate the difference between the 
+Since Contao 3 you can also specify directly the corresponding fields and their
+configuration for the database in the DCA under `sql`. The SQL details are not
+sent to the database but they are used to calculate the difference between the
 Contao specifications and the actual database tables.
 
 ```php
@@ -41,7 +41,7 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 If you do not understand the code above, you might want to read the chapter on
 [Data Container Arrays][1].
 
-After adding or modifying a field in the DCA you should visit the 
+After adding or modifying a field in the DCA you should visit the
 [Contao install tool][2] in order to update your database tables.
 
 

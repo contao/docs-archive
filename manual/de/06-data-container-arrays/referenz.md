@@ -144,12 +144,12 @@ beim Löschen von Elterndatensätzen passiert.
 <tr>
   <td>sql</td>
   <td>Tabellen-Konfiguration (<code>array</code>)</td>
-  <td>Bestimmt die Konfigurartion der Datenbank-Tabelle, z.B. 
+  <td>Bestimmt die Konfigurartion der Datenbank-Tabelle, z.B.
   <code>'keys' => array
-  		(
-				'id' => 'primary',
-				'pid' => 'index'
-			)</code></td>
+      (
+        'id' => 'primary',
+        'pid' => 'index'
+      )</code></td>
 </tr>
 </table>
 
@@ -206,7 +206,7 @@ und eigene Bezeichnungen einfügen.
       <b>sort</b> zeigt das Sortiermenü an<br>
       <b>filter</b> zeigt die Filtermenüs an<br>
       <b>limit</b> zeigt das Limitmenü an. Trennen Sie die Menüs mit Komma
-      (= Abstand) oder Strichpunkt (= neue Zeile), also z.B. 
+      (= Abstand) oder Strichpunkt (= neue Zeile), also z.B.
       <code>sort,filter;search,limit</code>.</td>
 </tr>
 <tr>
@@ -618,12 +618,12 @@ Ausdrucks geprüft werden.
         </tr>
         <tr>
           <td><b>alnum</b></td>
-          <td>Erlaubt nur alphanumerische Zeichen (inklusive Punkt [.] 
+          <td>Erlaubt nur alphanumerische Zeichen (inklusive Punkt [.]
           Minus [-], Unterstrich [_] und Leerschlag [ ]).</td>
         </tr>
         <tr>
           <td><b>alpha</b></td>
-          <td>Erlaubt nur alphabetische Zeichen (inklusive Punkt [.] 
+          <td>Erlaubt nur alphabetische Zeichen (inklusive Punkt [.]
           Minus [-] und Leerschlag [ ]).</td>
         </tr>
         <tr>
@@ -669,7 +669,7 @@ Ausdrucks geprüft werden.
         </tr>
         <tr>
           <td><b>phone</b></td>
-          <td>Prüft auf eine gültige Telefonnummer (Zahlen, Leerschlag [ ], 
+          <td>Prüft auf eine gültige Telefonnummer (Zahlen, Leerschlag [ ],
           Plus [+], Minus [-], Klammern [()] und Schrägstrich [/]).</td>
         </tr>
         <tr>
@@ -825,7 +825,7 @@ Ausdrucks geprüft werden.
 <tr>
   <td>chosen</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Auswahlmenüs mittels 
+  <td>Auswahlmenüs mittels
       <a href="http://harvesthq.github.io/chosen/" target="_blank">Chosen</a>
       erweitern.</td>
 </tr>

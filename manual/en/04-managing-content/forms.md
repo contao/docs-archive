@@ -122,9 +122,9 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 
 ### Front end module
 
-The front end module is used to display forms on the website. They can be 
-configured with the "Modules" module in the back end and have to be added to an 
-article or page layout to actually show up on the website. The form generator 
+The front end module is used to display forms on the website. They can be
+configured with the "Modules" module in the back end and have to be added to an
+article or page layout to actually show up on the website. The form generator
 extension includes one front end module:
 
 <table>
@@ -143,9 +143,9 @@ extension includes one front end module:
 
 ### Content element
 
-The content element is used to display forms on the website. They can be 
-configured with the "Form" content element in the back end and have to be 
-added to an article to actually show up on the website. The form generator 
+The content element is used to display forms on the website. They can be
+configured with the "Form" content element in the back end and have to be
+added to an article to actually show up on the website. The form generator
 extension includes one content element:
 
 <table>
