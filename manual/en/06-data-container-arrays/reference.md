@@ -588,6 +588,16 @@ Each field can be validated against a regular expression.
   <td>Minimum number of characters that have to be entered.</td>
 </tr>
 <tr>
+  <td>maxval</td>
+  <td>Maximum value (<code>integer</code>)</td>
+  <td>Maximum number value to be checked (upper bound).</td>
+</tr>
+<tr>
+  <td>minval</td>
+  <td>Minimum value (<code>integer</code>)</td>
+  <td>Minimum number value to be checked (lower bound).</td>
+</tr>
+<tr>
   <td>fallback</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>If true the field can only be assigned once per table.</td>
@@ -651,6 +661,10 @@ Each field can be validated against a regular expression.
         <tr>
           <td><b>locale</b></td>
           <td>expects a valid locale (e.g. "de-CH")</td>
+        </tr>
+        <tr>
+          <td><b>natural</b></td>
+          <td>allows non-negative natural numbers (including 0)</td>
         </tr>
         <tr>
           <td><b>phone</b></td>

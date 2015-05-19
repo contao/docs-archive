@@ -602,6 +602,16 @@ Ausdrucks geprüft werden.
       werden müssen.</td>
 </tr>
 <tr>
+  <td>maxval</td>
+  <td>Maximaler Wert (<code>integer</code>)</td>
+  <td>Höchste erlaubte Zahl (bei nummerischen Feldern).</td>
+</tr>
+<tr>
+  <td>minval</td>
+  <td>Minimaler Wert (<code>integer</code>)</td>
+  <td>Minimal erlaubte Zahl (bei nummerischen Feldern).</td>
+</tr>
+<tr>
   <td>fallback</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Legt fest, dass das Feld nur ein einziges Mal pro Tabelle ausgewählt
@@ -637,6 +647,10 @@ Ausdrucks geprüft werden.
         <tr>
           <td><b>digit</b></td>
           <td>Erlaubt nur numerische Zeichen (inklusive Punkt [.] und Minus [-]).</td>
+        </tr>
+        <tr>
+          <td><b>natural</b></td>
+          <td>Erlaubt nur nicht-negative Zahlen (inklusive 0).</td>
         </tr>
         <tr>
           <td><b>email</b></td>
