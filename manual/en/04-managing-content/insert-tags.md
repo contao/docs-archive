@@ -95,6 +95,11 @@ ID or alias.
       title="{{news_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
+  <td><code>{{news_feed::*}}</code></td>
+  <td>This tag will be replaced with the URL of a news feed (replace * with the
+      news feed ID).</td>
+</tr>
+<tr>
   <td><code>{{event::*}}</code></td>
   <td>This tag will be replaced with a link to an event (replace * with the
       event ID or alias).</td>
@@ -113,6 +118,11 @@ ID or alias.
   <td><code>{{event_title::*}}</code></td>
   <td>This tag will be replaced with the title of an event: <code>&lt;a
       title="{{event_title::12}}">Click here&lt;/a&gt;</code>.</td>
+</tr>
+<tr>
+  <td><code>{{calendar_feed::*}}</code></td>
+  <td>This tag will be replaced with the URL of a calendar feed (replace * with the
+      calendar feed ID).</td>
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
