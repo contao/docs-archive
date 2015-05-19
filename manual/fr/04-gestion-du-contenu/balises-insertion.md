@@ -96,6 +96,11 @@ autre page ou vers un article en utilisant son ID ou son alias.
       title="{{news_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
+  <td><code>{{news_feed::*}}</code></td>
+  <td>Cette balise sera remplacée par l'URL d'un flux d'un événement
+  (remplacez * par un ID du flux d'un événement).</td>
+</tr>
+<tr>
   <td><code>{{event::*}}</code></td>
   <td>Cette balise sera remplacée par un lien vers un événement (remplacez *
   par un ID ou un alias d'événement).</td>
@@ -114,6 +119,11 @@ autre page ou vers un article en utilisant son ID ou son alias.
   <td><code>{{event_title::*}}</code></td>
   <td>Cette balise sera remplacée par le titre d'un événement : <code>&lt;a
       title="{{event_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
+</tr>
+<tr>
+  <td><code>{{calendar_feed::*}}</code></td>
+  <td>Cette balise sera remplacée par l'URL d'un flux d'un calendrier
+  (remplacez * par un ID du flux d'un calendrier).</td>
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
