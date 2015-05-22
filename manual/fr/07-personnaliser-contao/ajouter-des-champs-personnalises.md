@@ -1,24 +1,24 @@
 ## Ajouter des champs personnalisés
 
-Imaginons que vous souhaitiez ajouter un numéro de client à la table des 
-membres. L'ajout d'un champ personnalisé à une table de Contao nécessite de 
-modifier plus d'un fichier, il est donc préférable d'ajouter un module 
-personnalisé dans le répertoire `system/modules`. Gardez en mémoire que les 
-modules sont chargés en suivant l'ordre alphabétique, n'appelez donc pas votre 
-extension `custom` si vous souhaitez redéfinir les configurations de 
+Imaginons que vous souhaitiez ajouter un numéro de client à la table des
+membres. L'ajout d'un champ personnalisé à une table de Contao nécessite de
+modifier plus d'un fichier, il est donc préférable d'ajouter un module
+personnalisé dans le répertoire `system/modules`. Gardez en mémoire que les
+modules sont chargés en suivant l'ordre alphabétique, n'appelez donc pas votre
+extension `custom` si vous souhaitez redéfinir les configurations de
 l'extension `news`.
 
 
 ### Étendre le DCA (tableau conteneur de données)
 
-Créez le fichier `dca/tl_member.php` dans le répertoire de votre module et 
-ajoutez-y les métadonnées pour le nouveau champ, afin que Contao sache comment 
+Créez le fichier `dca/tl_member.php` dans le répertoire de votre module et
+ajoutez-y les métadonnées pour le nouveau champ, afin que Contao sache comment
 le gérer.
 
-À partir de la version 3 de Contao, vous pouvez également spécifier directement 
-les champs correspondants et leur configuration pour la base de données dans le 
-tableau conteneur de données sous `sql`. Les détails SQL ne sont pas envoyés à 
-la base de données, mais sont utilisés pour calculer la différence entre les 
+À partir de la version 3 de Contao, vous pouvez également spécifier directement
+les champs correspondants et leur configuration pour la base de données dans le
+tableau conteneur de données sous `sql`. Les détails SQL ne sont pas envoyés à
+la base de données, mais sont utilisés pour calculer la différence entre les
 spécifications de Contao et les tables existantes.
 
 ```php
@@ -41,17 +41,17 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 );
 ```
 
-Si vous ne comprenez pas le code ci-dessus, il peut être utile de relire le 
+Si vous ne comprenez pas le code ci-dessus, il peut être utile de relire le
 chapitre sur les [tableaux conteneurs de données][1].
 
-Après l'ajout ou la modification d'un champ dans le tableau conteneur de 
-données, vous devriez utiliser l'[outil d'installation de Contao][2] afin de 
+Après l'ajout ou la modification d'un champ dans le tableau conteneur de
+données, vous devriez utiliser l'[outil d'installation de Contao][2] afin de
 mettre à jour les tables de votre base de données.
 
 
 ### Ajouter une traduction
 
-Créez le fichier `languages/en/tl_member.php` dans le répertoire de votre 
+Créez le fichier `languages/en/tl_member.php` dans le répertoire de votre
 module, et ajoutez-y les libellés anglais pour votre nouveau champ :
 
 ```php
@@ -62,10 +62,10 @@ $GLOBALS['TL_LANG']['tl_member']['customer_number'] = array
 );
 ```
 
-Dans le module membres, vous pouvez désormais saisir un numéro de client qui 
-peut contenir jusqu'à 8 caractères numériques. Si le champ n'est pas saisi, ou 
-contient un caractère non numérique, Contao refusera d'enregistrer la valeur 
-et affichera un message d'erreur à la place. 
+Dans le module membres, vous pouvez désormais saisir un numéro de client qui
+peut contenir jusqu'à 8 caractères numériques. Si le champ n'est pas saisi, ou
+contient un caractère non numérique, Contao refusera d'enregistrer la valeur
+et affichera un message d'erreur à la place.
 
 
 [1]: ../06-tableaux-conteneurs-de-donnees/README.md

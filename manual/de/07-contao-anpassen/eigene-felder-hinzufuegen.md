@@ -12,8 +12,8 @@ die `news`-Erweiterung anpassen wollen.
 
 Legen Sie die Datei `dca/tl_member.php` in Ihrem Modulordner an und fügen Sie
 die Metadaten des neuen Feldes ein.
-Seit Contao 3 werden außerdem auch die dazugehörigen Felder sowie deren 
-Konfiguration für die Datenbank unter `sql` direkt mit angegeben. 
+Seit Contao 3 werden außerdem auch die dazugehörigen Felder sowie deren
+Konfiguration für die Datenbank unter `sql` direkt mit angegeben.
 
 ```php
 // Anpassung der Palette
@@ -38,7 +38,7 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 Falls Sie den obigen Code nicht verstehen, lesen Sie den Abschnitt über [Data
 Container Arrays][1].
 
-Nachdem Sie die Datei abgespeichert haben, müssen Sie die Datenbank 
+Nachdem Sie die Datei abgespeichert haben, müssen Sie die Datenbank
 aktualisieren. Dazu verwenden Sie das [Contao-Installtool][2].
 
 

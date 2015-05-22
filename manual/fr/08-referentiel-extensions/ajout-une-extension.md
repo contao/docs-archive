@@ -1,9 +1,9 @@
 ## Ajout d'une extension
 
-Pour ajouter une nouvelle extension, suivez le lien "Manage extensions" et 
-cliquez sur le bouton "Add extension". Vous serez redirigé vers un formulaire 
-où vous pouvez entrer les détails de l'extension. La boîte jaune au-dessus 
-contient des informations importantes sur les conventions de nommage, que 
+Pour ajouter une nouvelle extension, suivez le lien "Manage extensions" et
+cliquez sur le bouton "Add extension". Vous serez redirigé vers un formulaire
+où vous pouvez entrer les détails de l'extension. La boîte jaune au-dessus
+contient des informations importantes sur les conventions de nommage, que
 vous devriez lire attentivement.
 
 ![](images/add-extension.jpg)
