@@ -9,8 +9,8 @@ enable PHP 5.
 ### Contao system requirements
 
 Contao requires a webserver like Apache or IIS with PHP and MySQL support. The
-minimum PHP version is 5.3.7 and the minimum MySQL version is 5.0.3. 
-You also need the PHP extensions "GDlib" (image resizing), "DOM" (XML files), 
+minimum PHP version is 5.3.7 and the minimum MySQL version is 5.0.3.
+You also need the PHP extensions "GDlib" (image resizing), "DOM" (XML files),
 "SOAP" (Extension Repository), "Phar" (Live Update) and optionally "mbstring"
 (multi-byte character handling) as well as "mcrypt" (data encryption).
 Contao has been tested successfully with all major browsers like Firefox

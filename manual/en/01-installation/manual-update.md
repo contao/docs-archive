@@ -59,11 +59,11 @@ the changes.
 
 ### Purge the internal cache
 
-Finally you should also rebuild the internal cache (for DCA and language files). 
-In the backend go to "Maintenance" and check "Purge the internal cache" in 
+Finally you should also rebuild the internal cache (for DCA and language files).
+In the backend go to "Maintenance" and check "Purge the internal cache" in
 the "Purge data" section. Confirm the action by clicking on "Purge data".
 
-You will now receive a message in the header asking to rebuild the internal 
+You will now receive a message in the header asking to rebuild the internal
 cache. Click on "Build the cache" to cache the internal files.
 
 

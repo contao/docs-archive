@@ -50,19 +50,19 @@ aktualisieren"-Schaltfläche.
 
 Ein Template ist eine vorkonfigurierte Webseite, die eine beispielhafte
 Seitenstruktur und verschiedene Stylesheets zur Formatierung der Contao
-Core-Module und -Inhaltselemente enthält. 
+Core-Module und -Inhaltselemente enthält.
 
 Seit Version 3.2.11 ist die Beispiel-Webseite nicht mehr im Downloadpaket enthalten.
-Abhängig von der eingesetzten Version kann die neue [*Contao Official Demo*][3] 
+Abhängig von der eingesetzten Version kann die neue [*Contao Official Demo*][3]
 oder die alte [*Music Academy*][4] als Erweiterung installiert werden.
 Aufschluss über Kompatibilität gibt das Erweiterungsverzeichnis.
 
 Vorgehen zur Installation der Demo:
 
-1. Eine frische Contao Installation mit Admin-Account erstellen 
-2. Als Admin im Backend anmelden 
+1. Eine frische Contao Installation mit Admin-Account erstellen
+2. Als Admin im Backend anmelden
 3. Passende Erweiterung [über das Extension Repository][5] hinzufügen
-4. Als Admin vom Backend abmelden 
+4. Als Admin vom Backend abmelden
 5. Installtool erneut aufrufen
 
 Um ein Template zu importieren, wählen Sie den Eintrag aus dem Drop-Down-Menü

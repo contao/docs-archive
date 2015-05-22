@@ -144,10 +144,10 @@ edited or deleted.
   <td>Table configuration (<code>array</code>)</td>
   <td>Describes table configuration, e.g.
   <code>'keys' => array
-  		(
-				'id' => 'primary',
-				'pid' => 'index'
-			)</code></td>
+      (
+        'id' => 'primary',
+        'pid' => 'index'
+      )</code></td>
 </tr>
 </table>
 
@@ -204,7 +204,7 @@ order and you can add custom labels.
       <b>sort</b> show the sort records menu<br>
       <b>filter</b> show the filter records menu<br>
       <b>limit</b> show the limit records menu.<br>
-      <br>Separate options with comma (= space) and semicolon (= new line) 
+      <br>Separate options with comma (= space) and semicolon (= new line)
       like <code>sort,filter;search,limit</code>.</td>
 </tr>
 <tr>
@@ -613,12 +613,12 @@ Each field can be validated against a regular expression.
         </tr>
         <tr>
           <td><b>alnum</b></td>
-          <td>allows alphanumeric characters only (including full stop [.] 
+          <td>allows alphanumeric characters only (including full stop [.]
           minus [-], underscore [_] and space [ ])</td>
         </tr>
         <tr>
           <td><b>alpha</b></td>
-          <td>allows alphabetic characters only (including full stop [.] 
+          <td>allows alphabetic characters only (including full stop [.]
           minus [-] and space [ ])</td>
         </tr>
         <tr>
@@ -631,7 +631,7 @@ Each field can be validated against a regular expression.
         </tr>
         <tr>
           <td><b>digit</b></td>
-          <td>allows numeric characters only (including full stop [.] and 
+          <td>allows numeric characters only (including full stop [.] and
           minus [-])</td>
         </tr>
         <tr>
@@ -668,7 +668,7 @@ Each field can be validated against a regular expression.
         </tr>
         <tr>
           <td><b>phone</b></td>
-          <td>expects a valid phone number (numeric characters, space [ ], 
+          <td>expects a valid phone number (numeric characters, space [ ],
           plus [+], minus [-], parentheses [()] and slash [/])</td>
         </tr>
         <tr>
@@ -902,8 +902,8 @@ Each field can be validated against a regular expression.
 
 ### Relations
 
-Relations describe, how database fields are related to other tables. 
-Define the referenced table in the `foreignKey` key. Relations provide 
+Relations describe, how database fields are related to other tables.
+Define the referenced table in the `foreignKey` key. Relations provide
 model classes to load referenced data sets efficiently and developer friendly.
 (see `Model::getRelated()`).
 

@@ -184,9 +184,9 @@ public function myCompileDefinition($arrRow)
 
 ### compileFormFields
 
-The "compileFormFields" hook is triggered before a form field is loaded. 
-It passes an array of FormFieldModel objects, the form ID and the form object as 
-arguments and expects the array of FormFieldModel objects as return value. 
+The "compileFormFields" hook is triggered before a form field is loaded.
+It passes an array of FormFieldModel objects, the form ID and the form object as
+arguments and expects the array of FormFieldModel objects as return value.
 With this Hook form fields can be adjusted dynamically before display.
 It is available from version 3.2.
 
@@ -197,17 +197,17 @@ $GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'myCompileFormFie
 // MyClass.php
 public function myCompileFormFields($arrFields, $formId, $this)
 {
-    if ($formId == 'my_form_id') 
+    if ($formId == 'my_form_id')
     {
-        foreach ($arrFields AS $objFields) 
+        foreach ($arrFields AS $objFields)
         {
-		if($objFields->name == 'my_form_field_1') 
-		{
-			// Do something
-        	}
-	}
+    if($objFields->name == 'my_form_field_1')
+    {
+      // Do something
+          }
+  }
     }
-    
+
     return $arrFields;
 }
 ```
@@ -312,7 +312,7 @@ $GLOBALS['TL_HOOKS']['generateBreadcrumb'][] = array('MyClass', 'myGenerateBread
 // MyClass.php
 public function myGenerateBreadcrumb($arrItems, \Module $objModule)
 {
-	return $arrItems;
+  return $arrItems;
 }
 ```
 
@@ -712,9 +712,9 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
 
 ### parseTemplate
 
-The `parseTemplate` hook is called before the parsing process of a template. 
-It receives a `Template` instance (can be `FrontendTemplate` or 
-`BackendTemplate`) as the only parameter and does not expect any 
+The `parseTemplate` hook is called before the parsing process of a template.
+It receives a `Template` instance (can be `FrontendTemplate` or
+`BackendTemplate`) as the only parameter and does not expect any
 return value. Added in version 2.10.0.
 
 ```php
@@ -805,10 +805,10 @@ public function myPostUpload($arrFiles)
 
 ### prepareFormData
 
-The "prepareFormData" hook is triggered after a form has been submitted. 
+The "prepareFormData" hook is triggered after a form has been submitted.
 It passes the form data array, the form labels array and the form object as
-arguments and does not expect a return value. This way the data can be 
-changed or extended, prior to execution of actions like email distribution 
+arguments and does not expect a return value. This way the data can be
+changed or extended, prior to execution of actions like email distribution
 or data storage. It is available from version 3.0.0.
 
 ```php

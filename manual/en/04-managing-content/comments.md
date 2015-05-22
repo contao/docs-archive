@@ -1,14 +1,14 @@
 ## Comments
 
-Comments are another form of content that you can manage from the back end. 
+Comments are another form of content that you can manage from the back end.
 Comments must be enabled in the calendar and news archive preferences.
 
 
 ### Front end module
 
-The front end module is used to display comments on the website. They can be 
-configured with the "Modules" module in the back end and have to be added to an 
-article or page layout to actually show up on the website. The comments 
+The front end module is used to display comments on the website. They can be
+configured with the "Modules" module in the back end and have to be added to an
+article or page layout to actually show up on the website. The comments
 extension includes one front end module:
 
 <table>
@@ -27,9 +27,9 @@ extension includes one front end module:
 
 ### Content element
 
-The content element is used to display comments on the website. They can be 
-configured with the "Comments" content element in the back end and have to be 
-added to an article to actually show up on the website. The comments extension 
+The content element is used to display comments on the website. They can be
+configured with the "Comments" content element in the back end and have to be
+added to an article to actually show up on the website. The comments extension
 includes one content element:
 
 <table>
@@ -87,7 +87,7 @@ Contao supports the following tags:
 </tr>
 <tr>
   <td>[quote=John]Hello[/quote]</td>
-  <td>Replaces the tag with a quoted text and the author name (e.g. John wrote: 
+  <td>Replaces the tag with a quoted text and the author name (e.g. John wrote:
 Hello).</td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ Hello).</td>
 </tr>
 <tr>
   <td>[email=name@example.com][/email]</td>
-  <td>Replaces the tag with a mailto link (insert the e-mail address as the 
+  <td>Replaces the tag with a mailto link (insert the e-mail address as the
 parameter).</td>
 </tr>
 </table>

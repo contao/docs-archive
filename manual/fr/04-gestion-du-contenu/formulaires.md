@@ -1,10 +1,10 @@
 ## Formulaires
 
-Le générateur de formulaire intégré peut être utilisé pour créer des 
-formulaires interactifs qui sont envoyées via e-mail ou stockés dans la base 
-de données de Contao. Les fichiers téléversés peuvent être envoyés en tant 
-que pièces jointes par e-mail ou stockés dans le répertoire des fichiers de 
-Contao. Le générateur de formulaire prend en charge quatre formats de données 
+Le générateur de formulaire intégré peut être utilisé pour créer des
+formulaires interactifs qui sont envoyées via e-mail ou stockés dans la base
+de données de Contao. Les fichiers téléversés peuvent être envoyés en tant
+que pièces jointes par e-mail ou stockés dans le répertoire des fichiers de
+Contao. Le générateur de formulaire prend en charge quatre formats de données
 différents :
 
 <table>
@@ -14,23 +14,23 @@ différents :
 </tr>
 <tr>
   <td>Raw data</td>
-  <td>Les données du formulaire sont envoyées comme du simple texte avec une 
+  <td>Les données du formulaire sont envoyées comme du simple texte avec une
   nouvelle ligne pour chaque champ.</td>
 </tr>
 <tr>
   <td>XML file</td>
-  <td>Les données du formulaire sont envoyées en pièce jointe sous la forme 
+  <td>Les données du formulaire sont envoyées en pièce jointe sous la forme
   d'un fichier XML.</td>
 </tr>
 <tr>
   <td>CSV file</td>
-  <td>Les données du formulaire sont envoyées en pièce jointe sous la forme 
+  <td>Les données du formulaire sont envoyées en pièce jointe sous la forme
   d'un fichier CSV.</td>
 </tr>
 <tr>
   <td>E-mail</td>
-  <td>Tous les champs sont ignorés à part email, subject, message et cc (copie 
-  carbone) et les données sont envoyées comme si l'e-mail avait été envoyé 
+  <td>Tous les champs sont ignorés à part email, subject, message et cc (copie
+  carbone) et les données sont envoyées comme si l'e-mail avait été envoyé
   depuis un client de messagerie. Les envois de fichiers sont autorisés.</td>
 </tr>
 </table>
@@ -38,10 +38,10 @@ différents :
 
 ### Les champs du formulaire
 
-Semblable aux éléments de contenu, Contao propose un élément séparé pour chaque 
-type de champ de formulaire tels que les champs de textes, les champs de mots 
-de passe, les menus déroulants, les téléchargements de fichiers, les champs 
-cachés ou boutons de soumission. Voici un aperçu des champs disponibles de 
+Semblable aux éléments de contenu, Contao propose un élément séparé pour chaque
+type de champ de formulaire tels que les champs de textes, les champs de mots
+de passe, les menus déroulants, les téléchargements de fichiers, les champs
+cachés ou boutons de soumission. Voici un aperçu des champs disponibles de
 Contao :
 
 <table>
@@ -68,7 +68,7 @@ Contao :
 <tr>
   <td>Fieldset</td>
   <td>-</td>
-  <td>Un conteneur pour les champs avec une légende en option (uniquement 
+  <td>Un conteneur pour les champs avec une légende en option (uniquement
   disponible pour les formulaires sans tableau).</td>
 </tr>
 <tr>
@@ -79,13 +79,13 @@ Contao :
 <tr>
   <td>Champ mot de passe</td>
   <td>password</td>
-  <td>Champ d'une ligne pour la saisie d'un mot de passe. Contao ajoute 
+  <td>Champ d'une ligne pour la saisie d'un mot de passe. Contao ajoute
   automatiquement un champ de confirmation.</td>
 </tr>
 <tr>
   <td>Zone de texte</td>
   <td>textarea</td>
-  <td>Champ comportant plusieurs lignes pour la saisie d'un texte moyen ou 
+  <td>Champ comportant plusieurs lignes pour la saisie d'un texte moyen ou
   long.</td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@ Contao :
 <tr>
   <td>Question de sécurité</td>
   <td>captcha</td>
-  <td>Question simple d'arithmétique pour vérifier que le formulaire est bien 
+  <td>Question simple d'arithmétique pour vérifier que le formulaire est bien
   soumis par un individu (CAPTCHA).</td>
 </tr>
 <tr>
@@ -129,9 +129,9 @@ Contao :
 
 ### Module front office
 
-Le module front office est utilisé pour afficher des formulaires sur le 
-site internet. Il peut être configuré avec le module "Modules" dans le 
-back office et doit être ajouté à un article ou à une présentation de 
+Le module front office est utilisé pour afficher des formulaires sur le
+site internet. Il peut être configuré avec le module "Modules" dans le
+back office et doit être ajouté à un article ou à une présentation de
 page pour pouvoir apparaître sur le site internet. L'extension générateur
 de formulaire comprend un module front office :
 
@@ -151,9 +151,9 @@ de formulaire comprend un module front office :
 
 ### Élément de contenu
 
-L'élément de contenu est utilisé pour afficher des formulaires sur le site 
+L'élément de contenu est utilisé pour afficher des formulaires sur le site
 internet. Il peut être configuré avec l'élément de contenu "Formulaire"
-dans le back office et doit être ajouté à un article pour pouvoir apparaître 
+dans le back office et doit être ajouté à un article pour pouvoir apparaître
 sur le site internet. L'extension générateur de formulaire comprend un élément
 de contenu :
 

@@ -51,7 +51,7 @@ page structure and different style-sheets to format the Contao
 core modules and content elements.
 
 Since version 3.2.11, the sample web-page is no longer included in the download package.
-Depending on the version used, the new [*Contao Official Demo*][3] 
+Depending on the version used, the new [*Contao Official Demo*][3]
 or the old [*Music Academy*][4] can be installed as an extension.
 Information on compatibility is available in the extension repository.
 
