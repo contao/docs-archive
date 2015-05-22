@@ -276,6 +276,11 @@ order and you can add custom labels.
       <code>array('title', 'user_id:tl_user.name')</code>).</td>
 </tr>
 <tr>
+  <td>showColumns</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>If true Contao will generate a table header with named columns.</td>
+</tr>
+<tr>
   <td>format</td>
   <td>Format string (<code>string</code>)</td>
   <td>HTML string used to format the fields that will be shown (e.g.
