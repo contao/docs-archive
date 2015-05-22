@@ -1,6 +1,6 @@
 ## Modèles
 
-Un modèle est principalement composé de codes HTML et PHP. Il est utilisé pour 
+Un modèle est principalement composé de codes HTML et PHP. Il est utilisé pour
 structurer une partie du contenu d'un module ou d'un élément de contenu, etc.
 Par exemple, le modèle `news_full.html5` affiche le contenu complet d'une
 actualité alors que le modèle `news_short.html5` affiche seulement une partie

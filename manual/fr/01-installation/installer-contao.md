@@ -1,13 +1,13 @@
 ## Installer Contao
 
-Premièrement, veuillez télécharger la [dernière archive de Contao][1] et 
-l'extraire sur votre ordinateur. Déplacez les fichiers dans le répertoire 
-`htdocs` de votre installation locale (par exemple XAMPP) ou les téléverser sur 
-votre serveur avec un logiciel FTP (nous vous recommandons d'utiliser 
-[WinSCP][2]). Selon la configuration de votre serveur, le dossier public est 
+Premièrement, veuillez télécharger la [dernière archive de Contao][1] et
+l'extraire sur votre ordinateur. Déplacez les fichiers dans le répertoire
+`htdocs` de votre installation locale (par exemple XAMPP) ou les téléverser sur
+votre serveur avec un logiciel FTP (nous vous recommandons d'utiliser
+[WinSCP][2]). Selon la configuration de votre serveur, le dossier public est
 probablement nommé `htdocs`, `httpdocs`, `html` ou `public_html`.
 
-Si vous avez un accès SSH, vous pouvez télécharger et extraire l'archive avec 
+Si vous avez un accès SSH, vous pouvez télécharger et extraire l'archive avec
 les commandes suivantes:
 
 ```bash
@@ -17,11 +17,11 @@ curl -L http://download.contao.org | tar -xzp
 
 ### L'outil d'installation de Contao
 
-Pour ouvrir l'outil d'installation de Contao, il suffit d'ajouter 
-`/contao/install.php` à l'URL de votre installation de Contao. Notez que l'outil 
+Pour ouvrir l'outil d'installation de Contao, il suffit d'ajouter
+`/contao/install.php` à l'URL de votre installation de Contao. Notez que l'outil
 d'installation est protégé contre les attaques par force brute et sera bloqué si
 un mauvais mot de passe a été inséré trois fois de suite. Pour enlever le verrou,
-ouvrez le fichier `system/config/localconfig.php` dans un éditeur de texte, 
+ouvrez le fichier `system/config/localconfig.php` dans un éditeur de texte,
 trouvez la ligne ci-dessous et définissez-là à `0`.
 
 ```php
@@ -41,10 +41,10 @@ le jeu de caractères par défaut de Contao `UTF-8` s'écrit `UTF8` dans MySQL !
 
 Lorsque que vous êtes connecté à la base de données, Contao vérifie
 automatiquement ses tables et affiche une liste de changements recommandés dans
-le cas où ils ne seraient pas à jour. Assurez-vous de lire attentivement ces 
-recommandations, car Contao ne connaît que ses propres tables et tentera de 
-supprimer celles d'autres applications en partage avec la base de données. 
-Confirmez les modifications et cliquez sur le bouton "Mettre à jour la base 
+le cas où ils ne seraient pas à jour. Assurez-vous de lire attentivement ces
+recommandations, car Contao ne connaît que ses propres tables et tentera de
+supprimer celles d'autres applications en partage avec la base de données.
+Confirmez les modifications et cliquez sur le bouton "Mettre à jour la base
 de données".
 
 
@@ -79,9 +79,9 @@ et cliquez sur le bouton "Importer un modèle".
 
 Si vous n'avez pas importé un modèle, vous devez créer un utilisateur
 administrateur pour se connecter au back office de Contao. Après avoir créé le
-compte, le processus d'installation est terminé. Le lien dans le coin inférieur 
-droit vous amènera vers le panneau d'administration. Si vous avez importé le site 
-internet d'exemple, vous pouvez vous connecter en tant qu'utilisateur "k.jones" 
+compte, le processus d'installation est terminé. Le lien dans le coin inférieur
+droit vous amènera vers le panneau d'administration. Si vous avez importé le site
+internet d'exemple, vous pouvez vous connecter en tant qu'utilisateur "k.jones"
 avec le mot de passe "kevinjones".
 
 
@@ -93,14 +93,14 @@ Voir *Comment installer le modèle de démonstration* dans la section
 
 ### Utiliser des URLs conviviales pour les moteurs de recherche
 
-Si vous utilisez un serveur Apache et êtes autorisé à utiliser mod_rewrite, vous 
-pouvez faire en sorte que Contao génère des URLs conviviales pour les moteurs de 
-recherche qui ressemblent à des documents HTML statiques. Un ensemble de règles 
-de réécriture par défaut est stocké dans le fichier `.htaccess.default` situé 
-dans le répertoire de Contao. Renommez ce fichier en `.htaccess` afin que le 
-serveur Apache puisse le traiter, puis connectez-vous au back office et accédez 
-à la configuration du système. Sélectionnez "Ré-écrire les URLs" dans la section 
-"Configuration du front office" et enregistrez vos modifications. Maintenant, 
+Si vous utilisez un serveur Apache et êtes autorisé à utiliser mod_rewrite, vous
+pouvez faire en sorte que Contao génère des URLs conviviales pour les moteurs de
+recherche qui ressemblent à des documents HTML statiques. Un ensemble de règles
+de réécriture par défaut est stocké dans le fichier `.htaccess.default` situé
+dans le répertoire de Contao. Renommez ce fichier en `.htaccess` afin que le
+serveur Apache puisse le traiter, puis connectez-vous au back office et accédez
+à la configuration du système. Sélectionnez "Ré-écrire les URLs" dans la section
+"Configuration du front office" et enregistrez vos modifications. Maintenant,
 Contao génère des URLs statiques comme `home.html` au lieu de `index.php?id=12`.
 
 

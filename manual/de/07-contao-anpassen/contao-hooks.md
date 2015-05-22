@@ -180,10 +180,10 @@ public function myCompileDefinition($arrRow)
 
 ### compileFormFields
 
-Der "compileFormFields"-Hook wird vor der Ausgabe eines Formulars ausgeführt. 
-Er übergibt ein Array mit FormFieldModel-Objekten, die Form-Id und das Formular-Objekt als 
-Argument und erwartet das Array mit FormFieldModel-Objekten als Rückgabewert. Hier können 
-Formularfelder dynamisch angepasst werden, bevor sie ausgegeben werden. 
+Der "compileFormFields"-Hook wird vor der Ausgabe eines Formulars ausgeführt.
+Er übergibt ein Array mit FormFieldModel-Objekten, die Form-Id und das Formular-Objekt als
+Argument und erwartet das Array mit FormFieldModel-Objekten als Rückgabewert. Hier können
+Formularfelder dynamisch angepasst werden, bevor sie ausgegeben werden.
 Hinzugefügt in Version 3.2.
 
 ```php
@@ -193,17 +193,17 @@ $GLOBALS['TL_HOOKS']['compileFormFields'][] = array('MyClass', 'myCompileFormFie
 // MyClass.php
 public function myCompileFormFields($arrFields, $formId, $this)
 {
-    if ($formId == 'my_form_id') 
+    if ($formId == 'my_form_id')
     {
-        foreach ($arrFields AS $objFields) 
+        foreach ($arrFields AS $objFields)
         {
-		if ($objFields->name == 'my_form_field_1') 
-		{
-			// Beliebiger Code
-        	}
-	}
+    if ($objFields->name == 'my_form_field_1')
+    {
+      // Beliebiger Code
+          }
+  }
     }
-    
+
     return $arrFields;
 }
 ```
@@ -307,7 +307,7 @@ $GLOBALS['TL_HOOKS']['generateBreadcrumb'][] = array('MyClass', 'myGenerateBread
 // MyClass.php
 public function myGenerateBreadcrumb($arrItems, \Module $objModule)
 {
-	return $arrItems;
+  return $arrItems;
 }
 ```
 
@@ -708,9 +708,9 @@ public function myParseFrontendTemplate($strContent, $strTemplate)
 
 ### parseTemplate
 
-Der "parseTemplate"-Hook wird vor der Verarbeitung eines Templates ausgeführt. 
-Er übergibt die `Template`-Instanz als Argument (kann `FrontendTemplate` und 
-`BackendTemplate` sein) und erwartet keinen Rückgabewert. 
+Der "parseTemplate"-Hook wird vor der Verarbeitung eines Templates ausgeführt.
+Er übergibt die `Template`-Instanz als Argument (kann `FrontendTemplate` und
+`BackendTemplate` sein) und erwartet keinen Rückgabewert.
 Hinzugefügt in Version 2.10.0.
 
 ```php
@@ -801,10 +801,10 @@ public function myPostUpload($arrFiles)
 
 ### prepareFormData
 
-Der `prepareFormData`-Hook wird beim Absenden eines Formulars ausgeführt. 
-Er übergibt die Formulardaten, die Feldbezeichnungen und das Formular-Objekt. 
-Damit lassen sich die Daten ändern oder erweitern, bevor Aktionen wie 
-z.B. E-Mail Versand oder in der Datenbank speichern ausgeführt wird. 
+Der `prepareFormData`-Hook wird beim Absenden eines Formulars ausgeführt.
+Er übergibt die Formulardaten, die Feldbezeichnungen und das Formular-Objekt.
+Damit lassen sich die Daten ändern oder erweitern, bevor Aktionen wie
+z.B. E-Mail Versand oder in der Datenbank speichern ausgeführt wird.
 Hinzugefügt in Version 3.0.0.
 
 ```php

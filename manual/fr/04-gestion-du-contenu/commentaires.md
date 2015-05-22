@@ -7,10 +7,10 @@ calendriers et des archives d'actualités.
 
 ### Module front office
 
-Le module front office est utilisé pour afficher des commentaires sur le 
-site internet. Il peut être configuré avec le module "Modules" dans le 
-back office et doit être ajouté à un article ou à une présentation de 
-page pour pouvoir apparaître sur le site internet. L'extension commentaires 
+Le module front office est utilisé pour afficher des commentaires sur le
+site internet. Il peut être configuré avec le module "Modules" dans le
+back office et doit être ajouté à un article ou à une présentation de
+page pour pouvoir apparaître sur le site internet. L'extension commentaires
 comprend un module front office :
 
 <table>
@@ -29,9 +29,9 @@ comprend un module front office :
 
 ### Élément de contenu
 
-L'élément de contenu est utilisé pour afficher des commentaires sur le site 
+L'élément de contenu est utilisé pour afficher des commentaires sur le site
 internet. Il peut être configuré avec l'élément de contenu "Commentaires"
-dans le back office et doit être ajouté à un article pour pouvoir apparaître 
+dans le back office et doit être ajouté à un article pour pouvoir apparaître
 sur le site internet. L'extension commentaires comprend un élément de contenu :
 
 <table>

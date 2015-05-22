@@ -1,21 +1,21 @@
 ## Référence
 
-Un tableau conteneur de données est divisé en six sections. La première section 
-contient les configurations générales de la table, comme les relations avec 
-d'autres tables. Les deuxième et troisième sections déterminent la manière dont 
-les enregistrements sont listés, et quelles opérations un utilisateur est en 
-droit d'exécuter. La quatrième section définit différents groupes de champs de 
-formulaires, appelés "palettes", et les deux dernières sections décrivent les 
+Un tableau conteneur de données est divisé en six sections. La première section
+contient les configurations générales de la table, comme les relations avec
+d'autres tables. Les deuxième et troisième sections déterminent la manière dont
+les enregistrements sont listés, et quelles opérations un utilisateur est en
+droit d'exécuter. La quatrième section définit différents groupes de champs de
+formulaires, appelés "palettes", et les deux dernières sections décrivent les
 champs en détail.
 
 
 ### Configuration de la table
 
-La configuration de la table décrit la table elle-même, par exemple quel type 
-de conteneurs de données est utilisé pour stocker les données ou comment elle 
-est en relation avec d'autres tables. Vous pouvez également activer le suivi 
-des versions ou définir ce qui arrive aux enregistrements enfants lorsque les 
-données sont éditées ou supprimées. 
+La configuration de la table décrit la table elle-même, par exemple quel type
+de conteneurs de données est utilisé pour stocker les données ou comment elle
+est en relation avec d'autres tables. Vous pouvez également activer le suivi
+des versions ou définir ce qui arrive aux enregistrements enfants lorsque les
+données sont éditées ou supprimées.
 
 <table>
 <tr>
@@ -26,7 +26,7 @@ données sont éditées ou supprimées.
 <tr>
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Le libellé utilisé dans l'arborescence des pages ou des fichiers, et 
+  <td>Le libellé utilisé dans l'arborescence des pages ou des fichiers, et
   inclut typiquement une référence au tableau de langues.</td>
 </tr>
 <tr>
@@ -42,13 +42,13 @@ données sont éditées ou supprimées.
 <tr>
   <td>dataContainer</td>
   <td>Conteneur de données (<code>string</code>)</td>
-  <td>Table (table de la base de données), File (fichier de configuration 
+  <td>Table (table de la base de données), File (fichier de configuration
   local) ou Folder (gestionnaire de fichiers).</td>
 </tr>
 <tr>
   <td>closed</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, vous ne pouvez plus rajouter d'enregistrement dans cette 
+  <td>Si true, vous ne pouvez plus rajouter d'enregistrement dans cette
   table.</td>
 </tr>
 <tr>
@@ -65,71 +65,71 @@ données sont éditées ou supprimées.
 <tr>
   <td>switchToEdit</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Active le bouton "Sauvegarder et éditer" lorsqu'un nouvel 
+  <td>Active le bouton "Sauvegarder et éditer" lorsqu'un nouvel
   enregistrement est ajouté (mode de tri 4 uniquement).</td>
 </tr>
 <tr>
   <td>enableVersioning</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, Contao enregistre l'ancienne version de l'enregistrement 
+  <td>Si true, Contao enregistre l'ancienne version de l'enregistrement
   lorsqu'une nouvelle version est créée.</td>
 </tr>
 <tr>
   <td>doNotCopyRecords</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, Contao ne dupliquera pas les enregistrements de la table 
+  <td>Si true, Contao ne dupliquera pas les enregistrements de la table
   courante lorsqu'un enregistrement de sa table parente est dupliqué.</td>
 </tr>
 <tr>
   <td>doNotDeleteRecords</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, Contao n'effacera pas les enregistrements de la table 
+  <td>Si true, Contao n'effacera pas les enregistrements de la table
   courante lorsqu'un enregistrement de sa table parente est effacé.</td>
 </tr>
 <tr>
   <td>onload_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée lorsqu'un DataContainer est 
+  <td>Appelle une fonction personnalisée lorsqu'un DataContainer est
   initialisé, et passe l'objet DataContainer en argument.</td>
 </tr>
 <tr>
   <td>onsubmit_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée après la mise à jour d'un 
+  <td>Appelle une fonction personnalisée après la mise à jour d'un
   enregistrement, et passe l'objet DataContainer en argument.</td>
 </tr>
 <tr>
   <td>ondelete_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée après la suppression d'un 
+  <td>Appelle une fonction personnalisée après la suppression d'un
   enregistrement, et passe l'objet DataContainer en argument.</td>
 </tr>
 <tr>
   <td>oncut_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée lorsqu'un enregistrement est déplacé, 
-  et passe l'objet DataContainer en argument. Ajoutée à partir de la version 
+  <td>Appelle une fonction personnalisée lorsqu'un enregistrement est déplacé,
+  et passe l'objet DataContainer en argument. Ajoutée à partir de la version
   2.8.2 de Contao.</td>
 </tr>
 <tr>
   <td>oncopy_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée lorsqu'un enregistrement est dupliqué, 
-  et passe l'objet DataContainer en argument. Ajoutée à partir de la version 
+  <td>Appelle une fonction personnalisée lorsqu'un enregistrement est dupliqué,
+  et passe l'objet DataContainer en argument. Ajoutée à partir de la version
   2.8.2 de Contao.</td>
 </tr>
 <tr>
   <td>onversion_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée lorsqu'une nouvelle version d'un 
-  enregistrement est créée et passe la table, l'ID d'insertion et l'objet 
+  <td>Appelle une fonction personnalisée lorsqu'une nouvelle version d'un
+  enregistrement est créée et passe la table, l'ID d'insertion et l'objet
   DataContainer en arguments.</td>
 </tr>
 <tr>
   <td>onrestore_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
   <td>Appelle une fonction personnalisée lorsqu'une version d'un enregistrement
-  est restaurée et passe l'ID d'insertion, la table, le tableau de données et 
+  est restaurée et passe l'ID d'insertion, la table, le tableau de données et
   la version en arguments.</td>
 </tr>
 <tr>
@@ -137,19 +137,19 @@ données sont éditées ou supprimées.
   <td>Configuration de la table (<code>array</code>)</td>
   <td>Décrit la configuration de la table, par exemple
   <code>'keys' => array
-  		(
-				'id' => 'primary',
-				'pid' => 'index'
-			)</code></td>
+      (
+        'id' => 'primary',
+        'pid' => 'index'
+      )</code></td>
 </tr>
 </table>
 
 
 ### Liste des enregistrements
 
-Le tableau "list" définit comment les enregistrements sont listés. Contao fournit 
-trois [vues][1] différentes : la vue en liste, la vue parente et la vue 
-arborescente. Vous pouvez configurer différentes options de tri, tels que des 
+Le tableau "list" définit comment les enregistrements sont listés. Contao fournit
+trois [vues][1] différentes : la vue en liste, la vue parente et la vue
+arborescente. Vous pouvez configurer différentes options de tri, tels que des
 filtres ou un ordre de tri par défaut et ajouter des libellés personnalisés.
 
 
@@ -168,11 +168,11 @@ filtres ou un ordre de tri par défaut et ajouter des libellés personnalisés.
       <b>1</b> Les enregistrements sont triés selon un champ déterminé<br>
       <b>2</b> Les enregistrements sont triés selon un champ sélectionnable<br>
       <b>3</b> Les enregistrements sont triés par la table parente<br>
-      <b>4</b> Affiche les enregistrements enfants d'une table parente (voir le 
+      <b>4</b> Affiche les enregistrements enfants d'une table parente (voir le
       module feuilles de style)<br>
-      <b>5</b> Les enregistrements sont présentés en arborescence (voir la 
+      <b>5</b> Les enregistrements sont présentés en arborescence (voir la
       structure de site)<br>
-      <b>6</b> Affiche les enregistrements enfants dans une structure en 
+      <b>6</b> Affiche les enregistrements enfants dans une structure en
       arborescence (voir le module articles)</td>
 </tr>
 <tr>
@@ -199,8 +199,8 @@ filtres ou un ordre de tri par défaut et ajouter des libellés personnalisés.
       <b>filter</b> affiche le menu de filtrage des enregistrements<br>
       <b>limit</b> affiche le menu de limitation du nombre des enregistrements
       <br>
-      <br>Les options doivent être séparées par des virgules (= espace) et des 
-      points-virgules (= nouvelle ligne) comme 
+      <br>Les options doivent être séparées par des virgules (= espace) et des
+      points-virgules (= nouvelle ligne) comme
       <code>sort,filter;search,limit</code>.</td>
 </tr>
 <tr>
@@ -211,45 +211,45 @@ filtres ou un ordre de tri par défaut et ajouter des libellés personnalisés.
 <tr>
   <td>headerFields</td>
   <td>Champs d'en-tête (<code>array</code>)</td>
-  <td>Un ou plusieurs champs affichés dans l'élément en-tête (mode de tri 4 
+  <td>Un ou plusieurs champs affichés dans l'élément en-tête (mode de tri 4
   uniquement).</td>
 </tr>
 <tr>
   <td>icon</td>
   <td>Icône d'arborescence (<code>string</code>)</td>
-  <td>Chemin de l'icône qui sera affichée au dessus de l'arborescence (mode de 
+  <td>Chemin de l'icône qui sera affichée au dessus de l'arborescence (mode de
   tri 5 et 6 uniquement).</td>
 </tr>
 <tr>
   <td>root</td>
   <td>Nœuds racines (<code>array</code>)</td>
-  <td>ID des enregistrements racines (pages autorisées). En général, cette 
+  <td>ID des enregistrements racines (pages autorisées). En général, cette
   valeur se gère toute seule.</td>
 </tr>
 <tr>
   <td>filter</td>
   <td>Filtre de requête (<code>array</code>)</td>
-  <td>Vous permet d'ajouter des filtres personnalisés sous forme de tableaux, 
+  <td>Vous permet d'ajouter des filtres personnalisés sous forme de tableaux,
   par exemple <code>array('status=?', 'active')</code>.</td>
 </tr>
 <tr>
   <td>disableGrouping</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Vous permet de désactiver les en-têtes de groupe dans les vues en liste 
+  <td>Vous permet de désactiver les en-têtes de groupe dans les vues en liste
   et dans les vues parentes. </td>
 </tr>
 <tr>
   <td>paste_button_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Cette fonction sera appelée au lieu d'afficher les boutons de collage 
+  <td>Cette fonction sera appelée au lieu d'afficher les boutons de collage
   par défaut. A spécifier en tant que <code>array('Class', 'Method')</code>.
   </td>
 </tr>
 <tr>
   <td>child_record_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Cette fonction sera appelée pour restituer les éléments enfants (mode 
-  de tri 4 uniquement). A spécifier en tant que 
+  <td>Cette fonction sera appelée pour restituer les éléments enfants (mode
+  de tri 4 uniquement). A spécifier en tant que
   <code>array('Class', 'Method')</code>.</td>
 </tr>
 <tr>
@@ -277,7 +277,7 @@ filtres ou un ordre de tri par défaut et ajouter des libellés personnalisés.
 <tr>
   <td>format</td>
   <td>Chaîne de formatage (<code>string</code>)</td>
-  <td>Une chaîne de caractères HTML utilisée pour formater les champs qui 
+  <td>Une chaîne de caractères HTML utilisée pour formater les champs qui
   seront affichés (par exemple <code><strong>%s</strong></code>).</td>
 </tr>
 <tr>
@@ -288,13 +288,13 @@ filtres ou un ordre de tri par défaut et ajouter des libellés personnalisés.
 <tr>
   <td>group_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée plutôt que la fonction par défaut pour 
+  <td>Appelle une fonction personnalisée plutôt que la fonction par défaut pour
   l'en-tête de groupe.</td>
 </tr>
 <tr>
   <td>label_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée plutôt que la fonction libellé par 
+  <td>Appelle une fonction personnalisée plutôt que la fonction libellé par
   défaut.</td>
 </tr>
 </table>
@@ -302,11 +302,11 @@ filtres ou un ordre de tri par défaut et ajouter des libellés personnalisés.
 
 ### Opérations
 
-Le tableau des opérations est divisé en deux sections : les opérations globales, 
-qui concernent tous les enregistrements à la fois (par exemple, modification de 
-plusieurs enregistrements), et les opérations unitaires, qui concernent qu'un 
-enregistrement spécifique (par exemple, modification ou suppression d'un 
-enregistrement). 
+Le tableau des opérations est divisé en deux sections : les opérations globales,
+qui concernent tous les enregistrements à la fois (par exemple, modification de
+plusieurs enregistrements), et les opérations unitaires, qui concernent qu'un
+enregistrement spécifique (par exemple, modification ou suppression d'un
+enregistrement).
 
 
 #### Opérations globales
@@ -326,7 +326,7 @@ enregistrement).
 <tr>
   <td>href</td>
   <td>Fragment d'URL (<code>string</code>)</td>
-  <td>Un fragment d'URL ajouté à la chaîne de l'URI lors du clic sur un bouton 
+  <td>Un fragment d'URL ajouté à la chaîne de l'URI lors du clic sur un bouton
   (par exemple, <code>act=editAll</code>).</td>
 </tr>
 <tr>
@@ -337,13 +337,13 @@ enregistrement).
 <tr>
   <td>attributes</td>
   <td>Attributs supplémentaires (<code>string</code>)</td>
-  <td>Attributs supplémentaires comme un gestionnaire d'événements ou de 
+  <td>Attributs supplémentaires comme un gestionnaire d'événements ou de
   définitions de style.</td>
 </tr>
 <tr>
   <td>button_callback</td>
   <td>Callback function (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée à la place de la fonction de bouton 
+  <td>Appelle une fonction personnalisée à la place de la fonction de bouton
   par défaut. A spécifier en tant que <code>array('Class', 'Method')</code>.
   </td>
 </tr>
@@ -361,13 +361,13 @@ enregistrement).
 <tr>
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Intitulé du bouton. Typiquement une référence au tableau global de 
+  <td>Intitulé du bouton. Typiquement une référence au tableau global de
   langues.</td>
 </tr>
 <tr>
   <td>href</td>
   <td>Fragment d'URL (<code>string</code>)</td>
-  <td>Fragment d'URL ajouté à la chaîne de l'URI lors du clic sur le bouton 
+  <td>Fragment d'URL ajouté à la chaîne de l'URI lors du clic sur le bouton
   (par exemple, <code>act=edit</code>).</td>
 </tr>
 <tr>
@@ -378,13 +378,13 @@ enregistrement).
 <tr>
   <td>attributes</td>
   <td>Attributs supplémentaires (<code>string</code>)</td>
-  <td>Attributs supplémentaires comme un gestionnaire d'événements ou de 
+  <td>Attributs supplémentaires comme un gestionnaire d'événements ou de
   définitions de style.</td>
 </tr>
 <tr>
   <td>button_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée à la place de la fonction de bouton 
+  <td>Appelle une fonction personnalisée à la place de la fonction de bouton
   par défaut. A spécifier en tant que <code>array('Class', 'Method')</code>.
   </td>
 </tr>
@@ -393,10 +393,10 @@ enregistrement).
 
 ### Champs
 
-Le tableau des champs définit les colonnes d'une table. En fonction de ces 
-paramétrages, Contao détermine quel type de champs de formulaire à charger, 
-si un utilisateur est autorisé ou non à accéder à certain champ et si 
-un champ peut être utilisé comme critère de tri ou de filtre. 
+Le tableau des champs définit les colonnes d'une table. En fonction de ces
+paramétrages, Contao détermine quel type de champs de formulaire à charger,
+si un utilisateur est autorisé ou non à accéder à certain champ et si
+un champ peut être utilisé comme critère de tri ou de filtre.
 
 <table>
 <tr>
@@ -407,7 +407,7 @@ un champ peut être utilisé comme critère de tri ou de filtre.
 <tr>
   <td>label</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Intitulé du champ. Typiquement, une référence au tableau global de 
+  <td>Intitulé du champ. Typiquement, une référence au tableau global de
   langues.</td>
 </tr>
 <tr>
@@ -419,25 +419,25 @@ un champ peut être utilisé comme critère de tri ou de filtre.
 <tr>
   <td>exclude</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, le champ sera exclu pour les non-administrateurs. Il peut être 
+  <td>Si true, le champ sera exclu pour les non-administrateurs. Il peut être
   activé dans le module groupes d'utilisateurs (champs exclus acceptés).</td>
 </tr>
 <tr>
   <td>search</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, le champ sera inclus dans le menu de recherche (voir "tri des 
+  <td>Si true, le champ sera inclus dans le menu de recherche (voir "tri des
   enregistrements" -> "panelLayout").</td>
 </tr>
 <tr>
   <td>sorting</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, le champ sera inclus dans le menu de tri (voir "tri des 
+  <td>Si true, le champ sera inclus dans le menu de tri (voir "tri des
   enregistrements" -> "panelLayout").</td>
 </tr>
 <tr>
   <td>filter</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, le champ sera inclus dans le menu de filtrage (voir "tri des 
+  <td>Si true, le champ sera inclus dans le menu de filtrage (voir "tri des
   enregistrements" -> "panelLayout").</td>
 </tr>
 <tr>
@@ -459,7 +459,7 @@ un champ peut être utilisé comme critère de tri ou de filtre.
 <tr>
   <td>length</td>
   <td>Longueur du critère de tri (<code>integer</code>)</td>
-  <td>Permet de spécifier le nombre de caractères utilisés pour les groupes 
+  <td>Permet de spécifier le nombre de caractères utilisés pour les groupes
   de tri (flags 3 et 4).</td>
 </tr>
 <tr>
@@ -474,7 +474,7 @@ un champ peut être utilisé comme critère de tri ou de filtre.
       <b>radioTable</b> Tableau avec images et boutons radio<br>
       <b>imageSize</b> Deux champs de texte avec un menu déroulant<br>
       <b>inputUnit</b> Champ texte avec un petit menu déroulant d'éléments<br>
-      <b>trbl</b> Quatre champs textes avec un petit menu déroulant 
+      <b>trbl</b> Quatre champs textes avec un petit menu déroulant
       d'éléments<br>
       <b>chmod</b> Tableau CHMOD<br>
       <b>pageTree</b> Arborescence des pages<br>
@@ -494,31 +494,31 @@ un champ peut être utilisé comme critère de tri ou de filtre.
 <tr>
   <td>options_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Fonction callback retournant un tableau d'options. A spécifier en tant 
+  <td>Fonction callback retournant un tableau d'options. A spécifier en tant
   que <code>array('Class', 'Method')</code>.</td>
 </tr>
 <tr>
   <td>foreignKey</td>
   <td>Table.champ (<code>string</code>)</td>
-  <td>Récupère les options depuis une table de la base de données. Renvoie l'ID 
+  <td>Récupère les options depuis une table de la base de données. Renvoie l'ID
   comme clé et le champ spécifié comme valeur.</td>
 </tr>
 <tr>
   <td>reference</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Tableau contenant les intitulés des options. Typiquement, une référence au 
+  <td>Tableau contenant les intitulés des options. Typiquement, une référence au
   tableau global de langues.</td>
 </tr>
 <tr>
   <td>explanation</td>
   <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Tableau contenant les descriptions. Typiquement, une référence au tableau 
+  <td>Tableau contenant les descriptions. Typiquement, une référence au tableau
   global de langues.</td>
 </tr>
 <tr>
   <td>input_field_callback</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Exécute une fonction personnalisée à la saisie du champ, à la place de la 
+  <td>Exécute une fonction personnalisée à la saisie du champ, à la place de la
   routine par défaut, et passe l'objet DataContainer et le libellé en arguments.
   </td>
 </tr>
@@ -530,14 +530,14 @@ un champ peut être utilisé comme critère de tri ou de filtre.
 <tr>
   <td>wizard</td>
   <td>Fonction callback (<code>array</code>)</td>
-  <td>Appelle une fonction personnalisée et ajoute sa valeur de retour dans 
+  <td>Appelle une fonction personnalisée et ajoute sa valeur de retour dans
   le champ de saisie.
   A spécifier en tant que <code>array('Class', 'Method')</code>.</td>
 </tr>
 <tr>
   <td>sql</td>
   <td>Définition d'un champ de base de données (<code>string</code>)</td>
-  <td>Décrit le type de données et sa configuration de base de données, 
+  <td>Décrit le type de données et sa configuration de base de données,
   par exemple <code>varchar(255) NOT NULL default ''</code></td>
 </tr>
 <tr>
@@ -549,18 +549,18 @@ un champ peut être utilisé comme critère de tri ou de filtre.
 <tr>
   <td>load_callback</td>
   <td>Fonctions callback (<code>array</code>)</td>
-  <td>Ces fonctions seront appelées au chargement du champ. Spécifiez chaque 
-  fonction de callback en tant que <code>array('Class', 'Method')</code>. Passe 
-  la valeur du champ et le conteneur de données en arguments. Attend la valeur 
+  <td>Ces fonctions seront appelées au chargement du champ. Spécifiez chaque
+  fonction de callback en tant que <code>array('Class', 'Method')</code>. Passe
+  la valeur du champ et le conteneur de données en arguments. Attend la valeur
   du champ comme valeur de retour.</td>
 </tr>
 <tr>
   <td>save_callback</td>
   <td>Fonctions callback (<code>array</code>)</td>
-  <td>Ces fonctions seront appelées à la sauvegarde du champ. Spécifiez chaque 
-  fonction de callback en tant que <code>array('Class', 'Method')</code>. Passe 
-  la valeur du champ et le conteneur de données en arguments. Attend la valeur 
-  du champ comme valeur de retour. Renvoie une exception pour afficher un 
+  <td>Ces fonctions seront appelées à la sauvegarde du champ. Spécifiez chaque
+  fonction de callback en tant que <code>array('Class', 'Method')</code>. Passe
+  la valeur du champ et le conteneur de données en arguments. Attend la valeur
+  du champ comme valeur de retour. Renvoie une exception pour afficher un
   message d'erreur.</td>
 </tr>
 </table>
@@ -568,11 +568,11 @@ un champ peut être utilisé comme critère de tri ou de filtre.
 
 ### Évaluation
 
-Le tableau d'évaluation configure en détail un champ particulier. Vous pouvez, 
-par exemple, créer des champs obligatoires, ajouter un sélecteur de dates ou 
-définir le nombre de lignes et de colonnes d'un bloc de texte (textarea). Vous 
-pouvez aussi modifier l'apparence d'un champ ou activer l'encryptage des 
-données. Chaque champ peut être validé par une expression régulière. 
+Le tableau d'évaluation configure en détail un champ particulier. Vous pouvez,
+par exemple, créer des champs obligatoires, ajouter un sélecteur de dates ou
+définir le nombre de lignes et de colonnes d'un bloc de texte (textarea). Vous
+pouvez aussi modifier l'apparence d'un champ ou activer l'encryptage des
+données. Chaque champ peut être validé par une expression régulière.
 
 <table>
 <tr>
@@ -602,6 +602,16 @@ données. Chaque champ peut être validé par une expression régulière.
   <td>Nombre minimum de caractères qui doivent être saisis.</td>
 </tr>
 <tr>
+  <td>maxval</td>
+  <td>Valeur maximale (<code>integer</code>)</td>
+  <td>La valeur maximale qui doit être vérifiée (borne supérieure).</td>
+</tr>
+<tr>
+  <td>minval</td>
+  <td>Valeur minimale (<code>integer</code>)</td>
+  <td>La valeur minimale qui doit être vérifiée (borne inférieure).</td>
+</tr>
+<tr>
   <td>fallback</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Si true, le champ ne peut être assigné qu'une fois par table.</td>
@@ -622,7 +632,7 @@ données. Chaque champ peut être validé par une expression régulière.
         </tr>
         <tr>
           <td><b>alpha</b></td>
-          <td>n'autorise que des caractères alphabétiques (y compris le point 
+          <td>n'autorise que des caractères alphabétiques (y compris le point
           [.], le trait d’union [-] et l'espace [ ])</td>
         </tr>
         <tr>
@@ -635,7 +645,7 @@ données. Chaque champ peut être validé par une expression régulière.
         </tr>
         <tr>
           <td><b>digit</b></td>
-          <td>n'autorise que des caractères numériques (y compris le point [.] 
+          <td>n'autorise que des caractères numériques (y compris le point [.]
           et le trait d’union [-])</td>
         </tr>
         <tr>
@@ -656,7 +666,7 @@ données. Chaque champ peut être validé par une expression régulière.
         </tr>
         <tr>
           <td><b>friendly</b></td>
-          <td>exige une adresse e-mail valide au format "nom convivial" 
+          <td>exige une adresse e-mail valide au format "nom convivial"
           (friendly name format)</td>
         </tr>
         <tr>
@@ -668,9 +678,13 @@ données. Chaque champ peut être validé par une expression régulière.
           <td>exige une "locale" valide (par exemple "fr-CH")</td>
         </tr>
         <tr>
+          <td><b>natural</b></td>
+          <td>autorise les entiers naturels (0 y compris)</td>
+        </tr
+        <tr>
           <td><b>phone</b></td>
-          <td>exige un numéro de téléphone valide (caractères numériques, 
-          espace [ ], plus [+], trait d’union [-], parenthèses [()] et barre 
+          <td>exige un numéro de téléphone valide (caractères numériques,
+          espace [ ], plus [+], trait d’union [-], parenthèses [()] et barre
           oblique [/])</td>
         </tr>
         <tr>
@@ -701,14 +715,14 @@ données. Chaque champ peut être validé par une expression régulière.
 <tr>
   <td>multiple</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Autorise les valeurs multiples. S'applique aux champs textes, listes 
-  déroulantes, boutons radios et cases à cocher. Requis pour l'assistant de 
+  <td>Autorise les valeurs multiples. S'applique aux champs textes, listes
+  déroulantes, boutons radios et cases à cocher. Requis pour l'assistant de
   cases à cocher.</td>
 </tr>
 <tr>
   <td>size</td>
   <td>Taille (<code>integer</code>)</td>
-  <td>Taille d'une liste déroulante à choix multiples, ou nombre de champs de 
+  <td>Taille d'une liste déroulante à choix multiples, ou nombre de champs de
   saisie.</td>
 </tr>
 <tr>
@@ -726,7 +740,7 @@ données. Chaque champ peut être validé par une expression régulière.
 <tr>
   <td>submitOnChange</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, le formulaire sera soumis lorsque la valeur du champ est 
+  <td>Si true, le formulaire sera soumis lorsque la valeur du champ est
   modifiée.</td>
 </tr>
 <tr>
@@ -747,7 +761,7 @@ données. Chaque champ peut être validé par une expression régulière.
 <tr>
   <td>decodeEntities</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, les éléments HTML seront décodés. Notez que les éléments HTML 
+  <td>Si true, les éléments HTML seront décodés. Notez que les éléments HTML
   sont toujours décodés si allowHtml vaut true.</td>
 </tr>
 <tr>
@@ -758,13 +772,13 @@ données. Chaque champ peut être validé par une expression régulière.
 <tr>
   <td>alwaysSave</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, le champ sera toujours enregistré, même si sa valeur n'a pas 
+  <td>Si true, le champ sera toujours enregistré, même si sa valeur n'a pas
   changé. Cela peut être utile en conjonction d'un load_callback.</td>
 </tr>
 <tr>
   <td>spaceToUnderscore</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, tous les caractères d'espacement seront remplacés par un tiret 
+  <td>Si true, tous les caractères d'espacement seront remplacés par un tiret
   bas.</td>
 </tr>
 <tr>
@@ -781,34 +795,34 @@ données. Chaque champ peut être validé par une expression régulière.
 <tr>
   <td>trailingSlash</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, une barre oblique sera ajoutée à la fin de la valeur du champ. 
-  Si false, la barre oblique, si existante, qui termine la valeur du champ sera 
+  <td>Si true, une barre oblique sera ajoutée à la fin de la valeur du champ.
+  Si false, la barre oblique, si existante, qui termine la valeur du champ sera
   supprimée.</td>
 </tr>
 <tr>
   <td>files</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, les fichiers et les dossiers seront affichés. Si false, seuls 
-  les répertoires seront affichés. Ne s'applique qu'aux arborescences de 
+  <td>Si true, les fichiers et les dossiers seront affichés. Si false, seuls
+  les répertoires seront affichés. Ne s'applique qu'aux arborescences de
   fichiers.</td>
 </tr>
 <tr>
   <td>filesOnly</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Supprime les boutons radio ou les cases à cocher à côté des noms des 
+  <td>Supprime les boutons radio ou les cases à cocher à côté des noms des
   répertoires. Ne s'applique qu'aux arborescences de fichiers.</td>
 </tr>
 <tr>
   <td>extensions</td>
   <td>Extensions de fichiers (<code>string</code>)</td>
-  <td>N'autorise que certaines extensions dans l'arborescence de fichiers 
-  (liste séparée par des virgules). Ne s'applique qu'aux arborescences de 
+  <td>N'autorise que certaines extensions dans l'arborescence de fichiers
+  (liste séparée par des virgules). Ne s'applique qu'aux arborescences de
   fichiers.</td>
 </tr>
 <tr>
   <td>path</td>
   <td>Chemin (<code>string</code>)</td>
-  <td>Répertoire racine personnalisé pour l'arborescence de fichiers. Ne 
+  <td>Répertoire racine personnalisé pour l'arborescence de fichiers. Ne
   s'applique qu'aux arborescences de fichiers.</td>
 </tr>
 <tr>
@@ -821,7 +835,7 @@ données. Chaque champ peut être validé par une expression régulière.
 <tr>
   <td>includeBlankOption</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, une option vide sera ajoutée au tableau des options. Ne 
+  <td>Si true, une option vide sera ajoutée au tableau des options. Ne
   s'applique qu'aux listes déroulantes.</td>
 </tr>
 <tr>
@@ -855,7 +869,7 @@ données. Chaque champ peut être validé par une expression régulière.
 <tr>
   <td>feEditable</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, le champ courant peut être modifié dans le front office. Ne 
+  <td>Si true, le champ courant peut être modifié dans le front office. Ne
   s'applique qu'à la table <code>tl_member</code>.</td>
 </tr>
 <tr>
@@ -864,32 +878,32 @@ données. Chaque champ peut être validé par une expression régulière.
   <td><b>personal</b> données personnelles<br>
       <b>address</b> détails de l'adresse<br>
       <b>contact</b> détails de contact<br>
-      <b>login</b> détails d'identification (uniquement la table 
+      <b>login</b> détails d'identification (uniquement la table
       <code>tl_member</code>)<br>
       Vous pouvez également définir vos propres groupes.</td>
 </tr>
 <tr>
   <td>feViewable</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, le champ courant est affiché dans le module de listes des 
+  <td>Si true, le champ courant est affiché dans le module de listes des
   membres.</td>
 </tr>
 <tr>
   <td>doNotCopy</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, le champ courant ne sera pas dupliqué lorsque l'enregistrement 
+  <td>Si true, le champ courant ne sera pas dupliqué lorsque l'enregistrement
   est dupliqué.</td>
 </tr>
 <tr>
   <td>hideInput</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, la valeur du champ sera cachée (elle sera cependant visible dans 
+  <td>Si true, la valeur du champ sera cachée (elle sera cependant visible dans
   la source de la page !).</td>
 </tr>
 <tr>
   <td>doNotShow</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Si true, le champ courant ne sera pas affiché dans les modes "modifier 
+  <td>Si true, le champ courant ne sera pas affiché dans les modes "modifier
   tous" et "voir les détails".</td>
 </tr>
 <tr>
@@ -905,7 +919,7 @@ données. Chaque champ peut être validé par une expression régulière.
 <tr>
   <td>readonly</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Rend le champ en lecture seule (n'est pas supporté par tous les types de 
+  <td>Rend le champ en lecture seule (n'est pas supporté par tous les types de
   champs).</td>
 </tr>
 <tr>
@@ -920,10 +934,10 @@ données. Chaque champ peut être validé par une expression régulière.
 
 ### Relations
 
-Les relations décrivent, comment les champs de base de données sont liés à 
-d'autres tables. Définit la table référencée dans la clé `foreignKey`. Les 
-relations fournissent des classes de modèles pour charger des ensembles de 
-données référencées de manière efficace et conviviale pour le développeur. 
+Les relations décrivent, comment les champs de base de données sont liés à
+d'autres tables. Définit la table référencée dans la clé `foreignKey`. Les
+relations fournissent des classes de modèles pour charger des ensembles de
+données référencées de manière efficace et conviviale pour le développeur.
 (voir `Model::getRelated()`).
 
 <table>
@@ -941,7 +955,7 @@ données référencées de manière efficace et conviviale pour le développeur.
        (sérialisé)<br>
     <b>belongsTo</b> La valeur référence un ensemble de données parentes
        (z.B. <code>pid</code>)<br>
-    <b>belongsToMany</b> La valeur référence certains ensembles de données 
+    <b>belongsToMany</b> La valeur référence certains ensembles de données
     parentes (sérialisé)<br>
   </td>
 </tr>
@@ -949,10 +963,10 @@ données référencées de manière efficace et conviviale pour le développeur.
   <td>load</td>
   <td>Comportement au chargement<br> (<code>string</code>)</td>
   <td>
-      <b>lazy</b> Charge les enregistrements référencés uniquement lorsque 
+      <b>lazy</b> Charge les enregistrements référencés uniquement lorsque
       cela est nécessaire.
          (par défaut, économise de la RAM)<br>
-      <b>eager</b> Charge automatiquement les enregistrements référencés 
+      <b>eager</b> Charge automatiquement les enregistrements référencés
       (économise les appels à la base de données)
   </td>
 </tr>

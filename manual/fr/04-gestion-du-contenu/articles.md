@@ -1,20 +1,20 @@
 ## Articles
 
-Les articles sont des conteneurs pour les éléments de contenu. Regrouper les 
-éléments de contenu par article rend le travail plus facile pour déplacer, 
-publier, copier, éditer ou exporter ces éléments ensemble au lieu d'un par un. 
-Chaque article est associé à une page particulière et à une section particulière 
-de cette page, il a ainsi une position fixe dans la structure de site et sur le 
-site internet. Contao peut optionnellement n'afficher qu'une accroche d'article 
+Les articles sont des conteneurs pour les éléments de contenu. Regrouper les
+éléments de contenu par article rend le travail plus facile pour déplacer,
+publier, copier, éditer ou exporter ces éléments ensemble au lieu d'un par un.
+Chaque article est associé à une page particulière et à une section particulière
+de cette page, il a ainsi une position fixe dans la structure de site et sur le
+site internet. Contao peut optionnellement n'afficher qu'une accroche d'article
 avec un lien "En savoir plus...".
 
 
 ### Éléments de contenu
 
-Les éléments de contenu sont un moyen simple et intuitif pour créer du contenu. 
-Au lieu d'utiliser un éditeur de texte riche, Contao fournit un élément 
-distinct pour chaque type de contenu comme les textes, les listes, les 
-tableaux, les liens hypertextes, les images ou les téléchargements. Voici un 
+Les éléments de contenu sont un moyen simple et intuitif pour créer du contenu.
+Au lieu d'utiliser un éditeur de texte riche, Contao fournit un élément
+distinct pour chaque type de contenu comme les textes, les listes, les
+tableaux, les liens hypertextes, les images ou les téléchargements. Voici un
 aperçu des éléments de contenu de base de Contao :
 
 <table>
@@ -31,7 +31,7 @@ aperçu des éléments de contenu de base de Contao :
 <tr>
   <td>Texte</td>
   <td>ce_text</td>
-  <td>Génère un texte enrichi qui peut être formaté à l'aide de 
+  <td>Génère un texte enrichi qui peut être formaté à l'aide de
   <a href="http://www.tinymce.com">TinyMCE</a>.</td>
 </tr>
 <tr>
@@ -52,7 +52,7 @@ aperçu des éléments de contenu de base de Contao :
 <tr>
   <td>Code</td>
   <td>ce_code</td>
-  <td>Ajoute la coloration syntaxique sur des extraits de code et les 
+  <td>Ajoute la coloration syntaxique sur des extraits de code et les
   imprime sur l'écran.</td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ aperçu des éléments de contenu de base de Contao :
 <tr>
   <td>Galerie d'images</td>
   <td>ce_gallery</td>
-  <td>Génère une galerie d'images avec effet 
+  <td>Génère une galerie d'images avec effet
   <a href="http://www.digitalia.be/software/slimbox">lightbox</a>.</td>
 </tr>
 <tr>
@@ -164,8 +164,8 @@ aperçu des éléments de contenu de base de Contao :
 
 ### Contrôle d'accès
 
-Chaque élément de contenu peut être protégé de sorte que seuls les invités 
-ou les membres d'un groupe en particulier puissent le voir sur le site 
+Chaque élément de contenu peut être protégé de sorte que seuls les invités
+ou les membres d'un groupe en particulier puissent le voir sur le site
 internet.
 
 ![](images/element-protege.jpg)
@@ -173,9 +173,9 @@ internet.
 
 ### Contenu Flash
 
-Le contenu Flash est un type particulier de contenu qui n'est pas affiché dans 
-un article sur le site internet mais chargé dans un film Flash dynamique en 
-utilisant "loadVars()". Pour permettre la communication entre Contao et Flash, 
+Le contenu Flash est un type particulier de contenu qui n'est pas affiché dans
+un article sur le site internet mais chargé dans un film Flash dynamique en
+utilisant "loadVars()". Pour permettre la communication entre Contao et Flash,
 vous devez ajouter la fonction suivante au frame principal de votre film :
 
 
@@ -206,7 +206,7 @@ myTextBox._loadArticle("myArticle");
 
 #### Importer une feuille de style
 
-Le code ActionScript suivant vous permet d'importer une feuille de style 
+Le code ActionScript suivant vous permet d'importer une feuille de style
 pour formater un champ de texte dynamique :
 
 
@@ -230,5 +230,5 @@ TextField.prototype._addCSS = function(style_sheet) {
 myTextBox._addCSS("basic.css");
 ```
 
-Notez que Flash ne prend en charge qu'un petit sous-ensemble de balises HTML, 
+Notez que Flash ne prend en charge qu'un petit sous-ensemble de balises HTML,
 de sorte que certains de vos styles puissent ne pas s'afficher correctement.
