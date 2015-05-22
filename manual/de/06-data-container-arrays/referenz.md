@@ -280,6 +280,11 @@ und eigene Bezeichnungen einfügen.
       <code>array('title', 'user_id:tl_user.name')</code>).</td>
 </tr>
 <tr>
+  <td>showColumns</td>
+  <td>wahr/falsch (<code>boolean</code>)</td>
+  <td>Legt fest, ob Contao einen Tabellenkopf mit Spaltennamen ausgeben soll.</td>
+</tr>
+<tr>
   <td>format</td>
   <td>Format-String (<code>string</code>)</td>
   <td>HTML-Zeichenkette zur Formatierung der angezeigten Felder (z.B.
