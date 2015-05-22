@@ -51,6 +51,11 @@ autre page ou vers un article en utilisant son ID ou son alias.
   title="{{link_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
+  <td><code>{{link_name::*}}</code></td>
+  <td>Cette balise sera remplacée par le nom d'une page interne (remplacez * par
+  un ID ou un alias de page).</td>
+</tr>
+<tr>
   <td><code>{{link_close}}</code></td>
   <td>Cette balise sera remplacée par la balise de fermeture d'un lien vers une
   page interne : <code>{{link_open::12}}Cliquez ici{{link_close}}</code>.</td>
@@ -516,11 +521,6 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
   <td><code>{{toggle_view}}</code></td>
   <td>Ajoute le lien qui vous permet de basculer entre le modèle pour mobile et
   celui d'un ordinateur de bureau.</td>
-</tr>
-<tr>
-  <td><code>{{link_name::*}}</code></td>
-  <td>Cette balise sera remplacée par le nom d'une page (remplacez * par un ID
-  ou un alias de page).</td>
 </tr>
 </table>
 {% endraw %}
