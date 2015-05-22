@@ -680,7 +680,7 @@ données. Chaque champ peut être validé par une expression régulière.
         <tr>
           <td><b>natural</b></td>
           <td>autorise les entiers naturels (0 y compris)</td>
-        </tr
+        </tr>
         <tr>
           <td><b>phone</b></td>
           <td>exige un numéro de téléphone valide (caractères numériques,
