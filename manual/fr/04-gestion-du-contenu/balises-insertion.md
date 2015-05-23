@@ -51,6 +51,11 @@ autre page ou vers un article en utilisant son ID ou son alias.
   title="{{link_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
+  <td><code>{{link_name::*}}</code></td>
+  <td>Cette balise sera remplacée par le nom d'une page interne (remplacez * par
+  un ID ou un alias de page).</td>
+</tr>
+<tr>
   <td><code>{{link_close}}</code></td>
   <td>Cette balise sera remplacée par la balise de fermeture d'un lien vers une
   page interne : <code>{{link_open::12}}Cliquez ici{{link_close}}</code>.</td>
