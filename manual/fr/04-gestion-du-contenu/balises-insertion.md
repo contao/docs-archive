@@ -529,7 +529,8 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{br}}</code></td>
-  <td>Cette balise sera remplacée par la balise HTML &lt;br&gt; (saut de ligne).</td>
+  <td>Cette balise sera remplacée par la balise HTML <code>&lt;br&gt;</code>
+  (saut de ligne).</td>
 </tr>
 </table>
 {% endraw %}

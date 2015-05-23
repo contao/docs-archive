@@ -511,7 +511,8 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{br}}</code></td>
-  <td>Dieses Tag wird mit einem HTML &lt;br&gt; Element (Zeilenumbruch) ersetzt.</td>
+  <td>Dieses Tag wird mit einem HTML <code>&lt;br&gt;</code> Element
+  (Zeilenumbruch) ersetzt.</td>
 </tr>
 </table>
 {% endraw %}
