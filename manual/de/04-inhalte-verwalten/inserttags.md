@@ -455,8 +455,8 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{acronym::*}}</code></td>
   <td>Akronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet
-      Mail Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
-      title="Multipurpose Internet Mail Extensions">MIME</acronym></code>.</td>
+      Mail Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code>&lt;acronym
+      title="Multipurpose Internet Mail Extensions"&gt;MIME&lt;/acronym&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
