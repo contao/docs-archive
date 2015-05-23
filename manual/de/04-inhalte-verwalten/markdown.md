@@ -147,12 +147,6 @@ Sortierte Listen verwenden Zahlen:
     3. Listeneintrag
 
 
-#### Weitere Informationen
-
-Für eine komplette Dokumentation zu Markdown, besuchen Sie die offizielle
-Webseite unter folgendem [Link][1].
-
-
 ### Erweiterter Syntax
 
 Nicht alle HTML-Element wie beispielsweise Tabellen oder Fußnoten können
@@ -194,7 +188,10 @@ Fußnoten werden wie folgt erstellt:
 Die Fußnoten-Definition kann an beliebiger Stelle im Dokument platziert werden.
 
 
-#### Weitere Informationen
+### Weitere Informationen
+
+Für eine komplette Dokumentation zu Markdown, besuchen Sie die offizielle
+Webseite unter folgendem [Link][1].
 
 Für eine komplette Dokumentation zu Markdown Extra, besuchen Sie die
 offizielle Webseite unter folgendem [Link][2].

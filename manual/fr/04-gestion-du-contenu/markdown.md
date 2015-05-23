@@ -146,12 +146,6 @@ Les listes ordonnées utilisent des numéros :
     3. Élément de liste
 
 
-#### Compléments d'information
-
-Pour une documentation complète concernant Markdown, veuillez s'il vous
-plaît, vous référer au site officiel en suivant ce [lien][1](en Anglais).
-
-
 ### Syntaxe étendue
 
 Il n'est pas possible de décrire tous les éléments avec Markdown tels que des
@@ -194,7 +188,10 @@ La référence de la note de bas de page peut être ajoutée n'importe où
 dans le document.
 
 
-#### Compléments d'information
+### Compléments d'information
+
+Pour une documentation complète concernant Markdown, veuillez s'il vous
+plaît, vous référer au site officiel en suivant ce [lien][1](en Anglais).
 
 Pour une documentation complète concernant Markdown Extra, veuillez s'il
 vous plaît, vous référer au site officiel en suivant ce [lien][2].
