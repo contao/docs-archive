@@ -21,7 +21,7 @@ script:
   - html5validator --root manual/_book/ --ignore "Element “link” is missing required attribute “property”" "“IE=edge”" "gitbook/plugins"
   - gitbook pdf   ./manual   ./manual.pdf
   - gitbook build ./cookbook
-  - html5validator --root coobook/_book/ --ignore "Element “link” is missing required attribute “property”" "“IE=edge”" "gitbook/plugins"
+  - html5validator --root cookbook/_book/ --ignore "Element “link” is missing required attribute “property”" "“IE=edge”" "gitbook/plugins"
   - gitbook pdf   ./cookbook ./cookbook.pdf
 
 after_success:
