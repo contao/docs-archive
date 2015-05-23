@@ -438,10 +438,10 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{lang::*}}</code></td>
-  <td>This tag can be used to mark foreign words within a text: <code>{{lang::fr}}Au
-      revoir{{lang}}</code>. It will be replaced with <code>&lt;span lang="fr"
-      &gt;Au revoir&lt;/span&gt;</code> and adds the <code>xml:lang="fr"</code> attribute
-      if the doctype is XHTML.</td>
+  <td>This tag can be used to mark foreign words within a text:
+      <code>{{lang::fr}}Au revoir{{lang}}</code>. It will be replaced with
+      <code>&lt;span lang="fr"&gt;Au revoir&lt;/span&gt;</code> and adds the
+      <code>xml:lang="fr"</code> attribute if the doctype is XHTML.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
