@@ -50,6 +50,11 @@ ihres Alias verlinkt werden.
       title="{{link_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
+  <td><code>{{link_name::*}}</code></td>
+  <td>Dieses Tag wird mit dem Namen einer internen Seite ersetzt: 
+      <code>&lt;a&gt;{{link_name::12}}&lt;/a&gt;</code>.</td>
+</tr>
+<tr>
   <td><code>{{link_close}}</code></td>
   <td>Wird mit dem schließenden Tag eines Links zu einer internen Seite
       ersetzt: <code>{{link_open::12}}Hier klicken{{link_close}}</code>.</td>

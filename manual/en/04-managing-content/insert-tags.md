@@ -50,6 +50,11 @@ ID or alias.
       title="{{link_title::12}}">Click here&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
+  <td><code>{{link_name::*}}</code></td>
+  <td>This tag will be replaced with the name of an internal page (replace * with
+      the page ID or alias).</td>
+</tr>
+<tr>
   <td><code>{{link_close}}</code></td>
   <td>Will be replaced with the closing tag of a link to an internal page:
       <code>{{link_open::12}}Click here{{link_close}}</code>.</td>
