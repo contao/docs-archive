@@ -13,6 +13,7 @@ install:
   - npm install ebook-convert
   - npm install gitbook-cli -g
   - git clone https://github.com/aschempp/gitbook.git ./gitbook
+  - npm install ./gitbook
   - gitbook versions:link 2.0.2-aschempp ./gitbook
   - pip install html5validator
   - gitbook install ./manual
