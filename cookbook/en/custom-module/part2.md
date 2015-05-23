@@ -112,7 +112,7 @@ However, this button is available only when the sorting mode is 4.
 The list array is used to maintain the homepage of our module. Its purpose is to set up the user interface and provide a listing of records. It consists of four arrays that I will describe in a moment. Meanwhile I advise you to open the [manual](https://contao.org/en/manual/2.11/data-container-arrays.html) to make you see better what I am talking about.
 
 
-###Sorting
+###DCA Sorting
 
 Okay, so the first array is called sorting. As its name points out, it is used to define the settings for displaying our records. Put the following code into the file:
 
@@ -300,9 +300,6 @@ We set the title to true and its max length to 64, same as the field in a databa
 
 Okay, now it’s time to create the data container array for `tl\_cds` table. It will have a little different config, as it is a child of `tl\_cds\_category`. Note that Contao is not able to display child records by default, so we are going to use a `child_record_callback`.
 
-
-##DCA Config
-
 Open the `cd_collection/dca/tl\_cds.php` file and put the following content:
 
 ```php
@@ -323,9 +320,7 @@ $GLOBALS['TL_DCA']['tl_cds'] = array
 Above code is very simple. We define the database table as our data container, and `tl\_cds\_category` as a parent table.
 
 
-##DCA List
-
-###Sorting
+### Sorting
 
 Now, insert the code:
 
@@ -410,7 +405,7 @@ Global operations are the same as tl\_cds\_category’s. Operations have just on
 ```
 
 
-##DCA Palettes
+## Palettes
 
 It is time to organize our fields and group them into sections. Put the following code after the list array:
 
@@ -427,7 +422,7 @@ It is time to organize our fields and group them into sections. Put the followin
 Notice that the semicolons are used to seperate the fieldsets. Also, you might notice a new legend element **:hide.** It forces a group to be collapsed by default. Simple yet useful.
 
 
-##DCA Fields
+## Fields
 
 Time for the best part – defining fields :)
 
