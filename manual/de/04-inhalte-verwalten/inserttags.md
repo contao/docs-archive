@@ -467,8 +467,8 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
-  <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt (wobei * 
-  eine Datenbank ID, eine UUID oder ein Pfad aus dem Dateisystem sein kann): 
+  <td>Dieses Tag wird mit der Vorschauansicht eines Bildes ersetzt (wobei *
+  eine Datenbank ID, eine UUID oder ein Pfad aus dem Dateisystem sein kann):
 <code>{{image::58ca4a90-2d30-11e4-8c21-0800200c9a66?width=200&amp;height=150}}</code>.<br>
       <strong>width</strong>: Breite des Vorschaubildes,<br>
       <strong>height</strong>: Höhe des Vorschaubildes,<br>
@@ -486,7 +486,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{version}}</code></td>
-  <td>Dieses Tag wird mit der verwendeten Contao-Version (z.B. 2.11.2)
+  <td>Dieses Tag wird mit der verwendeten Contao-Version (z.B. 3.2.7)
       ersetzt.</td>
 </tr>
 <tr>

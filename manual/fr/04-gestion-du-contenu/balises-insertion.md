@@ -1,15 +1,15 @@
 ## Balises d'insertion
 
-Les balises d'insertion sont des jokers qui sont remplacés par du contenu 
-dynamique quand une page est affichée à l'écran. Elles vous permettent, par 
-exemple, d'afficher la date courante, l'adresse d'un membre en fonction de 
-son nom ou bien d'inclure un fichier. Les balises d'insertion peuvent être 
+Les balises d'insertion sont des jokers qui sont remplacés par du contenu
+dynamique quand une page est affichée à l'écran. Elles vous permettent, par
+exemple, d'afficher la date courante, l'adresse d'un membre en fonction de
+son nom ou bien d'inclure un fichier. Les balises d'insertion peuvent être
 utilisées presque partout dans Contao, même dans les pages en cache.
 
 
 ### Les éléments de lien
 
-Les balises d'insertion suivantes vous permettent de faire un lien vers une 
+Les balises d'insertion suivantes vous permettent de faire un lien vers une
 autre page ou vers un article en utilisant son ID ou son alias.
 
 {% raw %}
@@ -20,7 +20,7 @@ autre page ou vers un article en utilisant son ID ou son alias.
 </tr>
 <tr>
   <td><code>{{link::*}}</code></td>
-  <td>Cette balise sera remplacée par un lien vers une page interne (remplacez 
+  <td>Cette balise sera remplacée par un lien vers une page interne (remplacez
   * par un ID ou un alias de page).</td>
 </tr>
 <tr>
@@ -32,37 +32,37 @@ autre page ou vers un article en utilisant son ID ou son alias.
 </tr>
 <tr>
   <td><code>{{link::login}}</code></td>
-  <td>Cette balise sera remplacée par un lien vers la page de connexion du 
+  <td>Cette balise sera remplacée par un lien vers la page de connexion du
   membre actuellement connecté (s'il y en a un).</td>
 </tr>
 <tr>
   <td><code>{{link_open::*}}</code></td>
-  <td>Cette balise sera remplacée par la balise d'ouverture d'un lien vers une 
+  <td>Cette balise sera remplacée par la balise d'ouverture d'un lien vers une
   page interne : <code>{{link_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_url::*}}</code></td>
-  <td>Cette balise sera remplacée par l'URL d'une page interne : <code>&lt;a 
+  <td>Cette balise sera remplacée par l'URL d'une page interne : <code>&lt;a
   href="{{link_url::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_title::*}}</code></td>
-  <td>Cette balise sera remplacée par le titre d'une page interne : <code>&lt;a 
+  <td>Cette balise sera remplacée par le titre d'une page interne : <code>&lt;a
   title="{{link_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{link_close}}</code></td>
-  <td>Cette balise sera remplacée par la balise de fermeture d'un lien vers une 
+  <td>Cette balise sera remplacée par la balise de fermeture d'un lien vers une
   page interne : <code>{{link_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{article::*}}</code></td>
-  <td>Cette balise sera remplacée par un lien vers un article (remplacez * par 
+  <td>Cette balise sera remplacée par un lien vers un article (remplacez * par
   un ID ou un alias d'article).</td>
 </tr>
 <tr>
   <td><code>{{article_open::*}}</code></td>
-  <td>Cette balise sera remplacé par la balise d'ouverture du lien vers un 
+  <td>Cette balise sera remplacé par la balise d'ouverture du lien vers un
   article : <code>{{article_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
@@ -77,12 +77,12 @@ autre page ou vers un article en utilisant son ID ou son alias.
 </tr>
 <tr>
   <td><code>{{news::*}}</code></td>
-  <td>Cette balise sera remplacée par un lien vers une actualité (remplacez * 
+  <td>Cette balise sera remplacée par un lien vers une actualité (remplacez *
   par un ID ou un alias d'actualité).</td>
 </tr>
 <tr>
   <td><code>{{news_open::*}}</code></td>
-  <td>Cette balise sera remplacé par la balise d'ouverture du lien vers une 
+  <td>Cette balise sera remplacé par la balise d'ouverture du lien vers une
   actualité : <code>{{news_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
@@ -97,12 +97,12 @@ autre page ou vers un article en utilisant son ID ou son alias.
 </tr>
 <tr>
   <td><code>{{event::*}}</code></td>
-  <td>Cette balise sera remplacée par un lien vers un événement (remplacez * 
+  <td>Cette balise sera remplacée par un lien vers un événement (remplacez *
   par un ID ou un alias d'événement).</td>
 </tr>
 <tr>
   <td><code>{{event_open::*}}</code></td>
-  <td>Cette balise sera remplacé par la balise d'ouverture du lien vers un 
+  <td>Cette balise sera remplacé par la balise d'ouverture du lien vers un
   événement : <code>{{event_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
@@ -117,17 +117,17 @@ autre page ou vers un article en utilisant son ID ou son alias.
 </tr>
 <tr>
   <td><code>{{faq::*}}</code></td>
-  <td>Cette balise sera remplacée par un lien vers une question fréquemment 
+  <td>Cette balise sera remplacée par un lien vers une question fréquemment
   posée (remplacez * par un ID ou un alias de FAQ).</td>
 </tr>
 <tr>
   <td><code>{{faq_open::*}}</code></td>
-  <td>Cette balise sera remplacé par la balise d'ouverture du lien d'une 
+  <td>Cette balise sera remplacé par la balise d'ouverture du lien d'une
   question : <code>{{faq_open::12}}Cliquez ici{{link_close}}</code>.</td>
 </tr>
 <tr>
   <td><code>{{faq_url::*}}</code></td>
-  <td>Cette balise sera remplacée par l'URL d'une question : <code>&lt;a 
+  <td>Cette balise sera remplacée par l'URL d'une question : <code>&lt;a
   href="{{faq_url::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
@@ -141,8 +141,8 @@ autre page ou vers un article en utilisant son ID ou son alias.
 
 ### Propriétés de l'utilisateur
 
-Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle 
-propriété du membre actuellement connecté. 
+Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle
+propriété du membre actuellement connecté.
 
 {% raw %}
 <table>
@@ -152,57 +152,57 @@ propriété du membre actuellement connecté.
 </tr>
 <tr>
   <td><code>{{user::firstname}}</code></td>
-  <td>Cette balise sera remplacée par le prénom du membre actuellement 
+  <td>Cette balise sera remplacée par le prénom du membre actuellement
   connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::lastname}}</code></td>
-  <td>Cette balise sera remplacée par le nom de famille du membre actuellement 
+  <td>Cette balise sera remplacée par le nom de famille du membre actuellement
   connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::company}}</code></td>
-  <td>Cette balise sera remplacée par le nom de la société du membre 
+  <td>Cette balise sera remplacée par le nom de la société du membre
   actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::phone}}</code></td>
-  <td>Cette balise sera remplacée par le n° de téléphone du membre actuellement 
+  <td>Cette balise sera remplacée par le n° de téléphone du membre actuellement
   connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::mobile}}</code></td>
-  <td>Cette balise sera remplacée par le n° de téléphone portable du membre 
+  <td>Cette balise sera remplacée par le n° de téléphone portable du membre
   actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::fax}}</code></td>
-  <td>Cette balise sera remplacée par le n° de fax du membre actuellement 
+  <td>Cette balise sera remplacée par le n° de fax du membre actuellement
   connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::email}}</code></td>
-  <td>Cette balise sera remplacée par l'adresse e-mail du membre actuellement 
+  <td>Cette balise sera remplacée par l'adresse e-mail du membre actuellement
   connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::website}}</code></td>
-  <td>Cette balise sera remplacée par l'adresse du site internet du membre 
+  <td>Cette balise sera remplacée par l'adresse du site internet du membre
   actuellement connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::street}}</code></td>
-  <td>Cette balise sera remplacée par le nom de la rue du membre actuellement 
+  <td>Cette balise sera remplacée par le nom de la rue du membre actuellement
   connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::postal}}</code></td>
-  <td>Cette balise sera remplacée par le code postal du membre actuellement 
+  <td>Cette balise sera remplacée par le code postal du membre actuellement
   connecté.</td>
 </tr>
 <tr>
   <td><code>{{user::city}}</code></td>
-  <td>Cette balise sera remplacée par le nom de la ville du membre 
+  <td>Cette balise sera remplacée par le nom de la ville du membre
   actuellement connecté.</td>
 </tr>
 <tr>
@@ -211,7 +211,7 @@ propriété du membre actuellement connecté.
 </tr>
 <tr>
   <td><code>{{user::username}}</code></td>
-  <td>Cette balise sera remplacée par le nom d'utilisateur du membre 
+  <td>Cette balise sera remplacée par le nom d'utilisateur du membre
   actuellement connecté.</td>
 </tr>
 </table>
@@ -220,8 +220,8 @@ propriété du membre actuellement connecté.
 
 ### Propriétés de page
 
-Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle 
-propriété de la page courante. 
+Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle
+propriété de la page courante.
 
 {% raw %}
 <table>
@@ -290,8 +290,8 @@ propriété de la page courante.
 
 ### Variables d'environnement
 
-Les balises d'insertion suivantes vous permettent d'afficher les variables 
-d'environnement comme le nom de la page ou la chaîne de requête. 
+Les balises d'insertion suivantes vous permettent d'afficher les variables
+d'environnement comme le nom de la page ou la chaîne de requête.
 
 {% raw %}
 <table>
@@ -309,7 +309,7 @@ d'environnement comme le nom de la page ou la chaîne de requête.
 </tr>
 <tr>
   <td><code>{{env::path}}</code></td>
-  <td>Cette balise sera remplacée par la base de l'URL actuelle incluant 
+  <td>Cette balise sera remplacée par la base de l'URL actuelle incluant
   le chemin vers le dossier Contao.</td>
 </tr>
 <tr>
@@ -339,9 +339,9 @@ d'environnement comme le nom de la page ou la chaîne de requête.
 
 ### Éléments inclus
 
-Les balises d'insertion suivantes vous permettent d'inclure différentes 
-ressources comme des articles, des modules ou des fichiers qui se trouvent dans 
-le répertoire "templates". 
+Les balises d'insertion suivantes vous permettent d'inclure différentes
+ressources comme des articles, des modules ou des fichiers qui se trouvent dans
+le répertoire "templates".
 
 {% raw %}
 <table>
@@ -351,43 +351,43 @@ le répertoire "templates".
 </tr>
 <tr>
   <td><code>{{insert_article::*}}</code></td>
-  <td>Cette balise sera remplacée par l'article référencé (remplacez * par l'ID 
+  <td>Cette balise sera remplacée par l'article référencé (remplacez * par l'ID
   ou l'alias de l'article).</td>
 </tr>
 <tr>
   <td><code>{{insert_content::*}}</code></td>
-  <td>Cette balise sera remplacée par l'élément de contenu référencé (remplacez 
+  <td>Cette balise sera remplacée par l'élément de contenu référencé (remplacez
   * par l'ID de l'élément).</td>
 </tr>
 <tr>
   <td><code>{{insert_module::*}}</code></td>
-  <td>Cette balise sera remplacée par le module référencé (remplacez * par l'ID 
+  <td>Cette balise sera remplacée par le module référencé (remplacez * par l'ID
   du module).</td>
 </tr>
 <tr>
   <td><code>{{insert_form::*}}</code></td>
-  <td>Cette balise sera remplacée par le formulaire référencé (remplacez * par 
+  <td>Cette balise sera remplacée par le formulaire référencé (remplacez * par
   l'ID du formulaire).</td>
 </tr>
 <tr>
   <td><code>{{article_teaser::*}}</code></td>
-  <td>Cette balise sera remplacée par une accroche d'article (remplacez * par 
+  <td>Cette balise sera remplacée par une accroche d'article (remplacez * par
   l'ID de l'article).</td>
 </tr>
 <tr>
   <td><code>{{news_teaser::*}}</code></td>
-  <td>Cette balise sera remplacée par une accroche d'actualité (remplacez * par 
+  <td>Cette balise sera remplacée par une accroche d'actualité (remplacez * par
   l'ID de l'actualité).</td>
 </tr>
 <tr>
   <td><code>{{event_teaser::*}}</code></td>
-  <td>Cette balise sera remplacée par une accroche d'évènement (remplacez * par 
+  <td>Cette balise sera remplacée par une accroche d'évènement (remplacez * par
   l'ID de l'évènement).</td>
 </tr>
 <tr>
   <td><code>{{file::*}}</code></td>
-  <td>Cette balise sera remplacée par le contenu d'un fichier se trouvant dans 
-  le dossier "templates" (remplacez * par le nom du fichier). Vous pouvez aussi 
+  <td>Cette balise sera remplacée par le contenu d'un fichier se trouvant dans
+  le dossier "templates" (remplacez * par le nom du fichier). Vous pouvez aussi
   fournir des arguments : <code>{{file::file.php?arg1=val&amp;arg2=val}}</code>.
   Vous pouvez également récupérer le chemin d'un fichier à partir de la base de
   données avec son UUID :
@@ -399,7 +399,7 @@ le répertoire "templates".
 
 ### Divers
 
-Les balises d'insertion suivantes vous permettent d'effectuer différentes 
+Les balises d'insertion suivantes vous permettent d'effectuer différentes
 tâches comme ajouter la date courante ou ajouter des images lightbox.
 
 {% raw %}
@@ -410,33 +410,33 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{date}}</code></td>
-  <td>Cette balise sera remplacée par la date courante dans le format de date 
+  <td>Cette balise sera remplacée par la date courante dans le format de date
   global.</td>
 </tr>
 <tr>
   <td><code>{{date::*}}</code></td>
-  <td>Cette balise sera remplacée par la date courante dans un format de date 
+  <td>Cette balise sera remplacée par la date courante dans un format de date
   personnalisé.</td>
 </tr>
 <tr>
   <td><code>{{last_update}}</code></td>
-  <td>Cette balise sera remplacée par la date de la dernière mise à jour dans 
+  <td>Cette balise sera remplacée par la date de la dernière mise à jour dans
   le format de date global.</td>
 </tr>
 <tr>
   <td><code>{{last_update::*}}</code></td>
-  <td>Cette balise sera remplacée par la date de la dernière mise à jour dans 
+  <td>Cette balise sera remplacée par la date de la dernière mise à jour dans
   un format de date personnalisé.</td>
 </tr>
 <tr>
   <td><code>{{email::*}}</code></td>
-  <td>Cette balise sera remplacée un lien cliquable et encodé vers une adresse 
+  <td>Cette balise sera remplacée un lien cliquable et encodé vers une adresse
   e-mail.</td>
 </tr>
 <tr>
   <td><code>{{email_open::*}}</code></td>
-  <td>Cette balise sera remplacée par un lien cliquable et encodé vers une 
-  adresse e-mail. Toutefois, la balise de fermeture <code>&lt;/a&gt;</code> 
+  <td>Cette balise sera remplacée par un lien cliquable et encodé vers une
+  adresse e-mail. Toutefois, la balise de fermeture <code>&lt;/a&gt;</code>
   ne sera pas ajoutée.</td>
 </tr>
 <tr>
@@ -445,10 +445,10 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{lang::*}}</code></td>
-  <td>Cette balise peut être utilisée pour marquer les mots étrangers à 
-  l'intérieur d'un texte : <code>{{lang::en}}Goodbye{{lang}}</code> sera 
-  remplacé par <code>&lt;span lang="en" xml:lang="en"&gt;Goodbye&lt;/span&gt;
-  </code>.</td>
+  <td>Cette balise peut être utilisée pour marquer les mots étrangers à
+  l'intérieur d'un texte : <code>{{lang::en}}Goodbye{{lang}}</code> sera
+  remplacé par <code>&lt;span lang="en"&gt;Goodbye&lt;/span&gt;</code> et
+  ajoute l'attribut <code>xml:lang="en"</code> si le doctype est XHTML.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
@@ -458,35 +458,35 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{acronym::*}}</code></td>
-  <td>Marque les acronymes dans un texte : <code>{{acronym::Multipurpose 
+  <td>Marque les acronymes dans un texte : <code>{{acronym::Multipurpose
   Internet Mail Extensions}}MIME{{acronym}}</code> sera remplacé par <code>&lt;
   acronym title="Multipurpose Internet Mail Extensions"&gt;MIME&lt;/acronym&gt;
   </code>.</td>
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
-  <td>Propriétés de sortie de l'agent utilisateur : <code>{{ua::browser}}</code>. 
+  <td>Propriétés de sortie de l'agent utilisateur : <code>{{ua::browser}}</code>.
   Elle sera, par exemple, remplacée par "chrome".</td>
 </tr>
 <tr>
   <td><code>{{iflng::*}}</code></td>
-  <td>Cette balise sera complètement supprimée si la langue de la page ne 
-  correspond pas à la langue de la balise. Vous pouvez l'utiliser pour définir 
-  des labels spécifiques à une langue : 
+  <td>Cette balise sera complètement supprimée si la langue de la page ne
+  correspond pas à la langue de la balise. Vous pouvez l'utiliser pour définir
+  des labels spécifiques à une langue :
   <code>{{iflng::en}}Your name{{iflng}}{{iflng::de}}Ihr Name{{iflng}}</code>.
   </td>
 </tr>
 <tr>
   <td><code>{{ifnlng::*}}</code></td>
-  <td>Cette balise sera complètement supprimée si la langue de la page 
-  correspond à la langue de la balise. Vous pouvez l'utiliser pour définir des 
-  labels spécifiques à une langue : 
+  <td>Cette balise sera complètement supprimée si la langue de la page
+  correspond à la langue de la balise. Vous pouvez l'utiliser pour définir des
+  labels spécifiques à une langue :
   <code>{{ifnlng::de}}Your name{{ifnlng}}{{iflng::de}}Ihr Name{{iflng}}</code>.
   </td>
 </tr>
 <tr>
   <td><code>{{image::*}}</code></td>
-  <td>Cette balise sera remplacée par une vignette d'image (remplacer * 
+  <td>Cette balise sera remplacée par une vignette d'image (remplacer *
   avec l'ID de base de données, UUID ou un chemin de fichier système) :
       <code>{{image::58ca4a90-2d30-11e4-8c21-0800200c9a66?width=200&amp;height=150}}</code>.
       <br /><strong>width</strong>: Largeur de la vignette,<br />
@@ -498,14 +498,16 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>Cette balise sera remplacée par un libellé traduit : <code>{{label::CNT:
-  au}}</code> ou <code>{{label::tl_article:title:0}}</code>. Notez que seul le 
-  premier deux-points est doublé.</td>
+  <td>Cette balise sera remplacée par un libellé traduit. Le premier paramètre est un
+  nom de fichier de langue ou un acronyme tels que <code>CNT</code> (pays) ou
+  <code>LNG</code> (langues). Exemples: <code>{{label::CNT:au}}</code> affiche
+  "Australie" et <code>{{label::tl_article:title:0}}</code> affiche "Titre".<br>
+  Notez que seul le premier deux-points est doublé.</td>
 </tr>
 <tr>
   <td><code>{{version}}</code></td>
-  <td>Cette balise sera remplacée par la version actuelle de Contao (par exemple 
-  2.11.2).</td>
+  <td>Cette balise sera remplacée par la version actuelle de Contao (par exemple
+  3.2.7).</td>
 </tr>
 <tr>
   <td><code>{{request_token}}</code></td>
@@ -514,7 +516,7 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{toggle_view}}</code></td>
-  <td>Ajoute le lien qui vous permet de basculer entre le modèle pour mobile et 
+  <td>Ajoute le lien qui vous permet de basculer entre le modèle pour mobile et
   celui d'un ordinateur de bureau.</td>
 </tr>
 </table>
@@ -523,13 +525,13 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 
 ### Drapeaux des balises d'insertion
 
-En utilisant des drapeaux, les balises d'insertion peuvent être traitées de 
-manière plus approfondie. Par exemple, la valeur peut être transmise aux 
+En utilisant des drapeaux, les balises d'insertion peuvent être traitées de
+manière plus approfondie. Par exemple, la valeur peut être transmise aux
 méthodes PHP spécifiques. Plusieurs drapeaux peuvent être appliqués :
 
 {% raw %}
 ```
-{{ua::browser|uncached}}  
+{{ua::browser|uncached}}
 {{page::title|decodeEntities|strtoupper}}
 ```
 {% endraw %}
@@ -544,13 +546,13 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>uncached</code></td>
-    <td>Ne pas remplacer une balise d'insertion lorsque la page est mise en 
+    <td>Ne pas remplacer une balise d'insertion lorsque la page est mise en
     cache</td>
     <td></td>
 </tr>
 <tr>
     <td><code>refresh</code></td>
-    <td>Ne pas mettre en cache la balise d'insertion, même si elle est utilisée 
+    <td>Ne pas mettre en cache la balise d'insertion, même si elle est utilisée
     plusieurs fois sur la même page</td>
     <td></td>
 </tr>
@@ -568,7 +570,7 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>standardize</code></td>
-    <td>Normalise la sortie (par exemple pour un alias de page ou une classe 
+    <td>Normalise la sortie (par exemple pour un alias de page ou une classe
     CSS)</td>
     <td></td>
 </tr>
@@ -584,7 +586,7 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>nl2br</code></td>
-    <td>Insère des retours à la ligne HTML à chaque nouvelle ligne dans une 
+    <td>Insère des retours à la ligne HTML à chaque nouvelle ligne dans une
     chaîne</td>
     <td><a target="_blank" href="http://php.net/nl2br">Fonction PHP</a></td>
 </tr>
@@ -679,7 +681,7 @@ Drapeaux disponibles :
 </tr>
 <tr>
     <td><code>readable_size</code></td>
-    <td>Convertit des tailles de fichiers dans un format lisible par 
+    <td>Convertit des tailles de fichiers dans un format lisible par
     un humain</td>
     <td>Voir <code>System::getReadableSize()</code></td>
 </tr>
