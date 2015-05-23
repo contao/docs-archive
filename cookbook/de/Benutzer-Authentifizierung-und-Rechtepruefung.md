@@ -20,7 +20,7 @@ public function __construct()
 ```
 
 
-### Aufruf des Benutzer-Objektes
+### Aufruf des Benutzer-Objektes im Backend
 
 Das Benutzer-Objekt lässt sich in der eigenen Erweiterung auf zwei Arten
 aufrufen:
@@ -50,7 +50,7 @@ if ($objUser->isAdmin) {
 ```
 
 
-### Prüfung der Gruppenmitgliedschaft
+### Prüfung der Benutzergruppen
 
 Ein normaler Benutzer gehört in der Regel einer oder mehreren Benutzergruppen
 an, deren Zugehörigkeit über die Methode `isMemberOf()` geprüft werden kann:
@@ -170,7 +170,7 @@ Auch im Frontend erfolgt die Authentifizierung automatisch, allerdings kann man
 nicht davon ausgehen, dass es immer ein authentifiziertes Mitglied gibt.
 
 
-### Aufruf des Benutzer-Objektes
+### Aufruf des Benutzer-Objektes im Frontend
 
 Das Benutzer-Objekt lässt sich in der eigenen Erweiterung auf zwei Arten
 aufrufen:
@@ -196,7 +196,7 @@ if (FE_USER_LOGGED_IN === true) {
 ```
 
 
-### Prüfung der Gruppenmitgliedschaft
+### Prüfung der Mitgliedergruppen
 
 Im Frontend erfolgt die Zugriffsprüfung auf Basis der Gruppenzugehörigkeit, die
 sich über die Methode `isMemberOf()` abrufen lässt:

@@ -13,7 +13,7 @@ den Author (`UserModel`) eines Artikels (`ArticleModel`).
 ## Das Model Objekt
 
 
-### Instanziierung
+### Model-Instanziierung
 
 
 Folgend wird eine Instanz von `ArticleModel` erstellt, welche eine bestimmte 
@@ -232,7 +232,7 @@ einzufügen.
 
 ## Collection Objekt
 
-### Instanziierung
+### Collection-Instanziierung
 
 Eine `Collection` Instanz wird durch `Model::findBy()` (bzw. `Model::findAll()`
 usw.) instanziiert.
