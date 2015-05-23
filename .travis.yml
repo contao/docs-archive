@@ -1,4 +1,4 @@
-language: node_js
+language: python
 
 env:
   global:
@@ -12,13 +12,16 @@ install:
   - sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
   - npm install ebook-convert
   - npm install gitbook-cli -g
+  - pip install html5validator
   - gitbook install ./manual
   - gitbook install ./cookbook
 
 script:
   - gitbook build ./manual
+  - html5validator --root manual/_book/ --ignore "Element “link” is missing required attribute “property”" "“IE=edge”" "gitbook/plugins"
   - gitbook pdf   ./manual   ./manual.pdf
   - gitbook build ./cookbook
+  - html5validator --root coobook/_book/ --ignore "Element “link” is missing required attribute “property”" "“IE=edge”" "gitbook/plugins"
   - gitbook pdf   ./cookbook ./cookbook.pdf
 
 after_success:
