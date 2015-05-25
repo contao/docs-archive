@@ -453,9 +453,10 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{lang::*}}</code></td>
-  <td>This tag can be used to mark foreign words within a text: <code>{{lang::fr}}Au
-      revoir{{lang}}</code>. It will be replaced with <code>&lt;span lang="fr"
-      xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
+  <td>This tag can be used to mark foreign words within a text:
+      <code>{{lang::fr}}Au revoir{{lang}}</code>. It will be replaced with
+      <code>&lt;span lang="fr"&gt;Au revoir&lt;/span&gt;</code> and adds the
+      <code>xml:lang="fr"</code> attribute if the doctype is XHTML.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
@@ -488,7 +489,7 @@ the current date or including lightbox images.
 <tr>
   <td><code>{{image::*}}</code></td>
   <td>This tag will be replaced with the thumbnail of an image (replace *
-  with the database ID, UUID or a file system path):
+      with the database ID, UUID or a file system path):
       <code>{{image::58ca4a90-2d30-11e4-8c21-0800200c9a66?width=200&amp;height=150}}</code>.<br>
       <strong>width</strong>: Thumbnail width,<br>
       <strong>height</strong>: Thumbnail height,<br>
@@ -514,14 +515,16 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>This tag will be replaced with a translated label: <code>{{label::CNT:au}}</code>
-      or <code>{{label::tl_article:title:0}}</code>. Note that only the first
-      colon is a double colon.</td>
+  <td>This tag will be replaced with a translated label. The first parameter is
+      a language file name or an acronym such as <code>CNT</code> (countries) or
+      <code>LNG</code> (languages). Examples: <code>{{label::CNT:au}}</code> displays
+      "Australia" and <code>{{label::tl_article:title:0}}</code> displays "Title".<br>
+      Note that only the first colon is a double colon.</td>
 </tr>
 <tr>
   <td><code>{{version}}</code></td>
   <td>This tag will be replaced with the current Contao version (e.g.
-      2.11.2).</td>
+      3.2.7).</td>
 </tr>
 <tr>
   <td><code>{{request_token}}</code></td>
@@ -534,7 +537,8 @@ the current date or including lightbox images.
 </tr>
 <tr>
   <td><code>{{br}}</code></td>
-  <td>This tag will be replaced with the HTML &lt;br&gt; tag (line break).</td>
+  <td>This tag will be replaced with the HTML <code>&lt;br&gt;</code> tag
+  (line break).</td>
 </tr>
 </table>
 {% endraw %}

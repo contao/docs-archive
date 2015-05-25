@@ -449,7 +449,9 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td><code>{{lang::*}}</code></td>
   <td>Mit diesem Tag können fremdsprachige Wörter in einem Text markiert
       werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit
-      <code>&lt;span lang="fr" xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
+      <code>&lt;span lang="fr"&gt;Au revoir&lt;/span&gt;</code> und fügt
+      <code>xml:lang="fr"</code> hinzu falls das Seitenformat XHTML ist.
+  </td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
@@ -509,14 +511,17 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>Dieses Tag wird mit einer Übersetzung ersetzt: <code>{{label::CNT:au}}</code>
-      oder <code>{{label::tl_article:title:0}}</code>. Beachten Sie, dass
-      innerhalb des Pfads zur Bezeichnung nur einfache Doppelpunkte verwendet
-      werden.</td>
+  <td>Dieses Tag wird mit einer Übersetzung ersetzt. Der erste Parameter ist
+      der Name einer Sprachdatei oder einem Akronym (z.B. <code>CNT</code> für
+      Länder oder <code>LNG</code> für Sprachen). Beispiele:
+      <code>{{label::CNT:au}}</code> wird zu "Australien" und 
+      <code>{{label::tl_article:title:0}}</code> wird zu "Titel". 
+      Beachten Sie, dass innerhalb des Pfads zur Bezeichnung nur einfache
+      Doppelpunkte verwendet werden.</td>
 </tr>
 <tr>
   <td><code>{{version}}</code></td>
-  <td>Dieses Tag wird mit der verwendeten Contao-Version (z.B. 2.11.2)
+  <td>Dieses Tag wird mit der verwendeten Contao-Version (z.B. 3.2.7)
       ersetzt.</td>
 </tr>
 <tr>
@@ -531,7 +536,8 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{br}}</code></td>
-  <td>Dieses Tag wird mit einem HTML &lt;br&gt; Element (Zeilenumbruch) ersetzt.</td>
+  <td>Dieses Tag wird mit einem HTML <code>&lt;br&gt;</code> Element
+  (Zeilenumbruch) ersetzt.</td>
 </tr>
 </table>
 {% endraw %}
