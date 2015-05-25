@@ -281,8 +281,8 @@ und eigene Bezeichnungen einfügen.
 </tr>
 <tr>
   <td>showColumns</td>
-  <td>wahr/falsch (<code>boolean</code>)</td>
-  <td>Legt fest, ob Contao einen Tabellenkopf mit Spaltennamen ausgeben soll.</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Legt fest, ob Contao einen Tabellenkopf mit Spaltennamen ausgeben soll (vgl. Mitgliederliste im Backend)</td>
 </tr>
 <tr>
   <td>format</td>
