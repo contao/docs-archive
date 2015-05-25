@@ -457,8 +457,8 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
   <td><code>{{lang::*}}</code></td>
   <td>Cette balise peut être utilisée pour marquer les mots étrangers à
   l'intérieur d'un texte : <code>{{lang::en}}Goodbye{{lang}}</code> sera
-  remplacé par <code>&lt;span lang="en" xml:lang="en"&gt;Goodbye&lt;/span&gt;
-  </code>.</td>
+  remplacé par <code>&lt;span lang="en"&gt;Goodbye&lt;/span&gt;</code> et
+  ajoute l'attribut <code>xml:lang="en"</code> si le doctype est XHTML.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
@@ -508,14 +508,16 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>Cette balise sera remplacée par un libellé traduit : <code>{{label::CNT:
-  au}}</code> ou <code>{{label::tl_article:title:0}}</code>. Notez que seul le
-  premier deux-points est doublé.</td>
+  <td>Cette balise sera remplacée par un libellé traduit. Le premier paramètre est un
+  nom de fichier de langue ou un acronyme tels que <code>CNT</code> (pays) ou
+  <code>LNG</code> (langues). Exemples: <code>{{label::CNT:au}}</code> affiche
+  "Australie" et <code>{{label::tl_article:title:0}}</code> affiche "Titre".<br>
+  Notez que seul le premier deux-points est doublé.</td>
 </tr>
 <tr>
   <td><code>{{version}}</code></td>
   <td>Cette balise sera remplacée par la version actuelle de Contao (par exemple
-  2.11.2).</td>
+  3.2.7).</td>
 </tr>
 <tr>
   <td><code>{{request_token}}</code></td>

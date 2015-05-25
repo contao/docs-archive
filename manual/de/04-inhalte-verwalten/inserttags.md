@@ -496,7 +496,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{version}}</code></td>
-  <td>Dieses Tag wird mit der verwendeten Contao-Version (z.B. 2.11.2)
+  <td>Dieses Tag wird mit der verwendeten Contao-Version (z.B. 3.2.7)
       ersetzt.</td>
 </tr>
 <tr>
