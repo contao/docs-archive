@@ -278,7 +278,7 @@ order and you can add custom labels.
 <tr>
   <td>showColumns</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>If true Contao will generate a table header with column names (eg. backend member list)</td>
+  <td>If true Contao will generate a table header with column names (e.g. back end member list)</td>
 </tr>
 <tr>
   <td>format</td>

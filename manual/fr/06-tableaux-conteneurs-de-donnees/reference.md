@@ -275,6 +275,12 @@ filtres ou un ordre de tri par défaut et ajouter des libellés personnalisés.
       <code>array('title', 'user_id:tl_user.name')</code>).</td>
 </tr>
 <tr>
+  <td>showColumns</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Si true, un en-tête de tableau sera généré avec les noms de colonnes (par
+  exemple, la liste des membres dans le back office)</td>
+</tr>
+<tr>
   <td>format</td>
   <td>Chaîne de formatage (<code>string</code>)</td>
   <td>Une chaîne de caractères HTML utilisée pour formater les champs qui
