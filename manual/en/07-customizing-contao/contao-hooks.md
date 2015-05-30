@@ -374,7 +374,7 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Mo
 ```
 
 
-## getAttributesFromDca
+### getAttributesFromDca
 
 The "getAttributesFromDca" hook allows you to modify form field attributes. It passes the current 
 widget attributes and a DataContainer object as arguments and expects an array of arguments

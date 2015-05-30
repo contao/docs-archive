@@ -368,7 +368,7 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Mo
 ```
 
 
-## getAttributesFromDca
+### getAttributesFromDca
 
 Der "getAttributesFromDca"-Hook ermöglicht das Modifizieren der Formularfeldattribute. 
 Er übergibt die originalen Attribute als Array und das DataContainer-Objekt und erwartet
