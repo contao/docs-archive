@@ -368,6 +368,25 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Mo
 ```
 
 
+## getAttributesFromDca
+
+Der "getAttributesFromDca"-Hook ermöglicht das Modifizieren der Formularfeldattribute. 
+Er übergibt die originalen Attribute als Array und das DataContainer-Objekt und erwartet
+ein Array von Attributen als Rückgabewert. Hinzugefügt in Version 3.2.RC1.
+
+```php
+// config.php
+$GLOBALS['TL_HOOKS']['getAttributesFromDca'][] = array('MyClass', 'myGetAttributesFromDca');
+
+// MyClass.php
+public function myGetAttributesFromDca($arrAttributes, $objDca)
+{
+    // do something
+    return $arrAttributes;
+}
+```
+
+
 ### getContentElement
 
 Der "getContentElement"-Hook wird beim Rendern von Inhaltselementen ausgeführt.
