@@ -415,6 +415,25 @@ public function myCloseAccount($intId, $strMode, $objModule)
 ```
 
 
+### colorizeLogEntries
+The "colorizeLogEntries" hook is triggered when tl_log is rendered. You can use 
+custom log categories in your extension and use this hook to modify how the log 
+entry labels belonging to this category will be displayed. It passes an array 
+holding the current row data and the current label and expects a HTML string
+as return value. It is available from Version 3.3.RC1.
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['colorizeLogEntries'][] = array('MyClass', 'colorizeLogEntries');
+
+// MyClass.php
+public function colorizeLogEntries($row, $label)
+{
+    // Do something
+}
+```
+
+
 ### compileDefinition
 
 The "compileDefinition" hook is triggered when a format definition of a style
