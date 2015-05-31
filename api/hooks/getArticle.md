@@ -26,7 +26,7 @@ public function myGetArticle(Database_Result $objRow)
 	if ($objRow->grid == '4')
 	{
 		$arrCSS = deserialize($objRow->cssID, true);
-		$arrCSS[1] = trim($arrCSS[1] . ' grid4');
+		$arrCSS[1] = trim($arrCSS[1]) . ' grid4';
 		$objRow->cssID = serialize($arrCSS);
 	}
 }
