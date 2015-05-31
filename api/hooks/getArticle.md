@@ -26,6 +26,7 @@ public function myGetArticle(Database_Result $objRow)
 	if ($objRow->grid == '4')
 	{
 		$arrCSS = deserialize($objRow->cssID, true);
+		// use trim() to remove the leading space if $arrCSS[1] is empty
 		$arrCSS[1] = trim($arrCSS[1] . ' grid4');
 		$objRow->cssID = serialize($arrCSS);
 	}
