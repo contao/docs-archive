@@ -107,11 +107,26 @@ einfügt werden.
 <?php $this->insert('template_name'); ?>
 ```
 
-Die `insert()`-Funktion akzeptiert ausserdem auch die Übergabe von zusätzlichen 
-Variablen als zweiten Parameter.
+Die `insert()`-Funktion akzeptiert die Übergabe von Variablen als zweiten Parameter, welche sonst leer blieben.
+
+Beispiel 1:
 
 ```php
 <?php $this->insert('template_name', array('key'=>'value')); ?>
+```
+
+Beispiel 2:
+
+` $this->getData()` holt alle Variablen aus dem Elterntemplate
+```php
+<?php $this->insert('fe_page', $this->getData()); ?>
+```
+
+Beispiel 3:
+
+Oder man setzt explizit einzelne Variablen, die anderen Variablen bleiben dabei leer.
+```php
+<?php $this->insert('fe_page', array('right'=>'New right content', 'left'=>'New left content')); ?>
 ```
 
 Im folgenden Beispiel fügen wir den Inhalt des Templates `image-copyright.html5` 
