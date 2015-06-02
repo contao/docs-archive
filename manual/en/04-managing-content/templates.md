@@ -114,6 +114,9 @@ parameter.
 
 ```php
 <?php $this->insert('template_name', array('key'=>'value')); ?>
+
+// This passes all variables from the current template
+<?php $this->insert('template_name', $this->getData()); ?>
 ```
 
 In the example below, we would like to insert the template

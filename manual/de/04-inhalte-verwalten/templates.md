@@ -112,6 +112,9 @@ Variablen als zweiten Parameter.
 
 ```php
 <?php $this->insert('template_name', array('key'=>'value')); ?>
+
+// Übergibt alle Variablen aus dem aktuellen Template
+<?php $this->insert('template_name', $this->getData()); ?>
 ```
 
 Im folgenden Beispiel fügen wir den Inhalt des Templates `image-copyright.html5` 
