@@ -155,6 +155,29 @@ public function myCloseAccount($intId, $strMode, $objModule)
 ```
 
 
+### colorizeLogEntries
+
+Der "colorizeLogEntries"-Hook wird im Label-Callback eines tl_log-Eintrags ausgeführt. 
+Er übergibt den Log-Eintrag als Array und das Label als String und erwartet einen 
+HTML-String als Rückgabewert. Dieser Hook kann dafür genutzt werden, ein Label 
+für eigene Log-Kategorien zu generieren oder bestehend Labels zu modifizieren. 
+Hinzugefügt in Version 3.3.RC1.
+
+
+``` {.php}
+// config.php
+$GLOBALS['TL_HOOKS']['colorizeLogEntries'][] = array('MyClass', 'colorizeLogEntries');
+
+// MyClass.php
+public function colorizeLogEntries($row, $label)
+{
+    // Beliebiger Code ...
+    
+    return $label;
+}
+```
+
+
 ### compileDefinition
 
 Der "compileDefinition"-Hook wird bei der Erstellung einer Formatdefinition in
@@ -364,6 +387,25 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Mo
 {
     ksort($arrEvents);
     return $arrEvents;
+}
+```
+
+
+### getAttributesFromDca
+
+Der "getAttributesFromDca"-Hook ermöglicht das Modifizieren der Formularfeldattribute. 
+Er übergibt die originalen Attribute als Array und das DataContainer-Objekt und erwartet
+ein Array von Attributen als Rückgabewert. Hinzugefügt in Version 3.2.RC1.
+
+```php
+// config.php
+$GLOBALS['TL_HOOKS']['getAttributesFromDca'][] = array('MyClass', 'myGetAttributesFromDca');
+
+// MyClass.php
+public function myGetAttributesFromDca($arrAttributes, $objDca)
+{
+    // do something
+    return $arrAttributes;
 }
 ```
 
