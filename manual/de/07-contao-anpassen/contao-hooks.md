@@ -156,6 +156,7 @@ public function myCloseAccount($intId, $strMode, $objModule)
 
 
 ### colorizeLogEntries
+
 Der "colorizeLogEntries"-Hook wird im Label-Callback eines tl_log-Eintrags ausgeführt. 
 Er übergibt den Log-Eintrag als Array und das Label als String und erwartet einen 
 HTML-String als Rückgabewert. Dieser Hook kann dafür genutzt werden, ein Label 
@@ -171,6 +172,8 @@ $GLOBALS['TL_HOOKS']['colorizeLogEntries'][] = array('MyClass', 'colorizeLogEntr
 public function colorizeLogEntries($row, $label)
 {
     // Beliebiger Code ...
+    
+    return $label;
 }
 ```
 
