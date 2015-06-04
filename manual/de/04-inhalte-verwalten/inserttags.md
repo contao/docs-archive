@@ -393,7 +393,9 @@ Dateien aus dem "templates"-Verzeichnis eingebunden werden.
   <td><code>{{file::*}}</code></td>
   <td>Dieses Tag wird mit dem Inhalt einer .php- oder .tpl-Datei aus dem
       "templates"-Verzeichnis ersetzt (ersetzen Sie * mit dem Namen). Bei Bedarf
-      können Sie Argumente übergeben: <code>{{file::file.php?arg1=val}}</code></td>
+      können Sie Argumente übergeben: <code>{{file::file.php?arg1=val}}</code>.
+      Sie können damit auch den Pfad einer Datei abfragen aus der Datenbank mit dessen UUID:
+      <code>{{file::6939a448-9b30-11e4-bcba-079af1e9baea}}</code>.</td>
 </tr>
 </table>
 {% endraw %}
