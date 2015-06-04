@@ -2,7 +2,7 @@
 
 * Deutsch
     * [Benutzer-Authentifizierung und Rechteprüfung](de/Benutzer-Authentifizierung-und-Rechtepruefung.md)
-    * [Cron jobs in Contao (Poor-Man-Cron)](en/Cron-jobs-in-Contao.md)
+    * [Cronjobs in Contao (Poor-Man-Cron)](de/Cronjobs-in-Contao.md)
     * [Eigene Inserttags entwickeln](de/Eigene-Inserttags.md)
     * [Hooks in Contao](de/Hooks-in-Contao.md)
     * [Inhaltselemente verwenden](de/Inhaltselemente-verwenden.md)
