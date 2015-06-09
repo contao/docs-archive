@@ -1,10 +1,12 @@
-------------
-insertTagFlags
+# insertTagFlags #
 
-The `insertTagFlags` hook is triggered when unknown flags (filters) are passed to an insert tag.
-It passes the arguments listed belows and expects the replacement text as return value or false if the flag was not handled.
+The `insertTagFlags` hook is triggered when unknown flags (filters) are passed
+to an insert tag. It passes the arguments listed belows and expects the replacement
+text as return value or false if the flag was not handled.
+It is available from version 3.1.beta1.
 
-### Parameters ###
+
+## Parameters ##
 
 1. *boolean* `$flag`
 
@@ -37,7 +39,7 @@ It passes the arguments listed belows and expects the replacement text as return
     Number of elements in `$tags`
 
 
-### Example ###
+## Example ##
 
 If you use `{{date::D d. F Y|monthnamesAT|utf8_strtoupper}}` Contao knows how to handle
 the `date` insert tag and the `utf8_strtoupper` filter. The unknown `monthnamesAT`triggers the hook:
@@ -61,9 +63,15 @@ public function myInsertTagFlags($flag, $tag, $cachedValue, $flags, $blnCache, $
 }
 ```
 
+
+## More Information ##
+
+
 ### References ###
 
-- [system/modules/core/library/Contao/Controller.php](https://github.com/contao/core/blob/support/3.2/system/modules/core/library/Contao/Controller.php#L)
+- [system/modules/core/library/Contao/Controller.php](https://github.com/contao/core/blob/support/3.2/system/modules/core/library/Contao/Controller.php#L1778)
+- [system/modules/core/library/Contao/InsertTags.php](https://github.com/contao/core/blob/master/system/modules/core/library/Contao/InsertTags.php#L1205)
+
 
 ### See Also ###
 

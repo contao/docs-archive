@@ -22,7 +22,7 @@ Hooks work similar to the [callback functions](callbacks.md) of the Data Contain
 - [generateXmlFiles](hooks/generateXmlFiles.md)
 - [getAllEvents](hooks/getAllEvents.md)
 - [getArticle](hooks/getArticle.md)
-- [getAttributesFromDca](hooks/getAttributesFromDca)
+- [getAttributesFromDca](hooks/getAttributesFromDca.md)
 - [getCacheKey](hooks/getCacheKey.md)
 - [getCombinedFile](hooks/getCombinedFile.md)
 - [getContentElement](hooks/getContentElement.md)

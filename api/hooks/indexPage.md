@@ -1,10 +1,11 @@
-------------
-indexPage
+# indexPage #
 
-The `indexPage` hook is triggered when a a page's content is added to the serach index.
-It passes the content, the data and ... as arguments and expects no return value.
+The `indexPage` hook is triggered when a page's content is added to the search index.
+It passes the content, the data and ... as arguments and does not expect a return value.
+It is available from version 3.0.0.
 
-### Parameters ###
+
+## Parameters ##
 
 1. *string* `$strContent`
 
@@ -19,7 +20,7 @@ It passes the content, the data and ... as arguments and expects no return value
 	An array containing the data collected so far.
 
 
-### Example ###
+## Example ##
 
 ```php
 <?php
@@ -35,8 +36,10 @@ public function myIndexPage($strContent, $arrData, $arrSet)
 }
 ```
 
+
+## More Information ##
+
+
 ### References ###
 
 - [system/modules/core/library/Contao/Search.php](https://github.com/contao/core/blob/support/3.2/system/modules/core/library/Contao/Search.php#L131)
-
-### See Also ###
