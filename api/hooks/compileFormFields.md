@@ -1,15 +1,16 @@
-------------
-compileFormFields
+# compileFormFields #
 
 The `compileFormFields` hook is triggered when the fields of a form are compiled.
-It passes the form fields, the ID of the form and the form object as arguments and expects the modified form fields as return value.
+It passes the form fields, the ID of the form and the form object as arguments
+and expects the modified form fields as return value.
+It is available from version 3.2.RC1.
 
 
-### Parameters ###
+## Parameters ##
 
 1. *array* `$arrFields`
 
-	An array of FormField`s
+	An array of FormField's
 
 2. *int* `$intFormId`
 
@@ -21,7 +22,7 @@ It passes the form fields, the ID of the form and the form object as arguments a
 	The form module instance.
 
 
-### Example ###
+## Example ##
 
 ```php
 <?php
@@ -38,9 +39,9 @@ public function myCompileFormFields($arrFields, $intFormId, $objForm)
 }
 ```
 
+## More Information ##
+
+
 ### References ###
 
 - [system/modules/core/forms/Form.php](https://github.com/contao/core/blob/support/3.2/system/modules/core/forms/Form.php#L98)
-
-
-### See Also ###

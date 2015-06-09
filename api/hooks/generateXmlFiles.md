@@ -1,16 +1,16 @@
-------------
-generateXmlFiles
+# generateXmlFiles #
 
 The `generateXmlFiles` hook is triggered when the XML files are (re)generated
-e.g. by clicking "System -> Maintenance -> Recreate the XML files" in the backend.
-It has no parameters an no return value.
+e.g. by clicking "System -> Maintenance -> Recreate the XML files" in the back end.
+It has no parameters and does not expect a return value.
+It is available from version 3.0.beta1.
 
 
-### Parameters ###
+## Parameters ##
 
 The hook has no parameters
 
-### Example ###
+## Example ##
 
 ```php
 <?php
@@ -31,11 +31,9 @@ public function myGenerateXmlFiles()
 ```
 
 
+## More Information ##
+
+
 ### References ###
 
 - [system/modules/core/library/Contao/Automator.php](https://github.com/contao/core/blob/support/3.2/system/modules//core/library/Contao/Automator.php#L249)
-
-### See Also ###
-
-- [system/modules/calendar/config/config.php](https://github.com/contao/core/blob/3.3.20/system/modules/calendar/config/config.php#L53)
-- [system/modules/news/config/config.php](https://github.com/contao/core/blob/3.3.20/system/modules/news/config/config.php#L52)

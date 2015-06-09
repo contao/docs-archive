@@ -1,12 +1,13 @@
-------------
-getPageLayout
+# getPageLayout #
 
 The `getPageLayout` hook is triggered when a regular page is generated.
 It can be used to modify the page or layout object.
-It passes the page object, the layout object and the page module as arguments and expects no return value.
+It passes the page object, the layout object and the page module as arguments
+and does not expect a return value.
+It is available from version 3.1.beta1.
 
 
-### Parameters ###
+## Parameters ##
 
 1. *object* `$objPage`
 
@@ -18,10 +19,10 @@ It passes the page object, the layout object and the page module as arguments an
 
 3. *object* `$objFrontend`
 
-	 The page module module instance (`PageRegular` which extends `Forntend`).
+	 The page module module instance (`PageRegular` which extends `Frontend`).
 
 
-### Example ###
+## Example ##
 
 ```php
 <?php
@@ -37,8 +38,10 @@ public function myGetPageLayout($objPage, $objLayout, $objFrontend)
 }
 ```
 
+
+## More Information ##
+
+
 ### References ###
 
 - [system/modules/core/pages/PageRegular.php](https://github.com/contao/core/blob/support/3.2/system/modules/core/pages/PageRegular.php#L46)
-
-### See Also ###
