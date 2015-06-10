@@ -160,13 +160,13 @@ public function myCloseAccount($intId, $strMode, $objModule)
 
 ### colorizeLogEntries
 
-The "colorizeLogEntries" hook is triggered in the label callback for tl_log entries. 
+The "colorizeLogEntries" hook is triggered in the label callback for tl_log entries.
 It passes an array holding the current row data and the current label and expects a
-HTML string as return value. You can use it to generate custom labels for custom 
-log categories, but you may also modify existing labels. It is available from 
-Version 3.3.RC1.
+HTML string as return value. You can use it to generate custom labels for custom
+log categories, but you may also modify existing labels. It is available from
+version 3.3.RC1.
 
-``` {.php}
+```php
 // config.php
 $GLOBALS['TL_HOOKS']['colorizeLogEntries'][] = array('MyClass', 'colorizeLogEntries');
 
@@ -174,7 +174,7 @@ $GLOBALS['TL_HOOKS']['colorizeLogEntries'][] = array('MyClass', 'colorizeLogEntr
 public function colorizeLogEntries($row, $label)
 {
     // Do something
-    
+
     return $label;
 }
 ```
@@ -398,7 +398,7 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Mo
 
 ### getAttributesFromDca
 
-The "getAttributesFromDca" hook allows you to modify form field attributes. It passes the current 
+The "getAttributesFromDca" hook allows you to modify form field attributes. It passes the current
 widget attributes and a DataContainer object as arguments and expects an array of arguments
 as return value. It is available from version 3.2.RC1.
 
