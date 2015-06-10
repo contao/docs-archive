@@ -22,5 +22,4 @@
 * [Background information](background/README.md)
     * [API changes](background/upgrade.md)
     * [Deprecated features](background/deprecated.md)
-    * [Missing features](background/missing.md)
     * [Semantic Versioning](background/versioning.md)
