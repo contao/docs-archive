@@ -115,6 +115,9 @@ second paramètre :
 
 ```php
 <?php $this->insert('nom_du_modele', array('key'=>'value')); ?>
+
+// Ceci passe toutes les variables à partir du modèle courant
+<?php $this->insert('nom_du_modele', $this->getData()); ?>
 ```
 
 Dans l'exemple ci-dessous, nous aimerions insérer le modèle
