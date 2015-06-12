@@ -384,6 +384,27 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, Mo
 ```
 
 
+### getAttributesFromDca
+
+Le hook `getAttributesFromDca` vous permet de modifier les attributs de champs
+d'un formulaire. Il passe les attributs widget courants et un objet DataContainer
+en arguments et attend un tableau d'arguments comme valeur de retour. Il est
+disponible à partir de la version 3.2.RC1.
+
+```php
+// config.php
+$GLOBALS['TL_HOOKS']['getAttributesFromDca'][] = array('MyClass', 'myGetAttributesFromDca');
+
+// MyClass.php
+public function myGetAttributesFromDca($arrAttributes, $objDca)
+{
+    // Faire quelque chose
+
+    return $arrAttributes;
+}
+```
+
+
 ### getContentElement
 
 Le hook `getContentElement` est déclenché lorsqu'un élément de contenu est

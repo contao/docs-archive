@@ -409,10 +409,12 @@ $GLOBALS['TL_HOOKS']['getAttributesFromDca'][] = array('MyClass', 'myGetAttribut
 // MyClass.php
 public function myGetAttributesFromDca($arrAttributes, $objDca)
 {
-    // do something
+    // Do something
+
     return $arrAttributes;
 }
 ```
+
 
 ### getContentElement
 
