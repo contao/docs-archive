@@ -1,10 +1,10 @@
-loadFormField
--------------
+# loadFormField
+
 
 The `loadFormField` hook is triggered when a form field is loaded. It passes the widget object, the form ID and the form data as arguments and expects a widget object as return value. It is available from version 2.5.0.
 
 
-### Parameters ###
+## Parameters 
 
 1. *Widget* `$objWidget`
 
@@ -19,12 +19,12 @@ The `loadFormField` hook is triggered when a form field is loaded. It passes the
 	The form configuration, a tl_form record.
 
 
-### Return Values ###
+## Return Values 
 
 Return the `$objWidget` instance. You can override it's settings or even create your own widget instead.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -41,12 +41,14 @@ public function myLoadFormField(Widget $objWidget, $strForm, $arrForm)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L157)
 
 
-### See Also ###
+### See Also
 
 - [validateFormField](validateFormField.md) - triggered when a form field is submitted
-- [processFormData](processFormData.md) - triggered after a form has been submitted

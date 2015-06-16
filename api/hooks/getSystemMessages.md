@@ -1,15 +1,15 @@
-getSystemMessages
------------------
+# getSystemMessages
+
 
 The `getSystemMessages` hook allows to add additional messages to the backend home screen. It does not pass any parameters and expects a string as return value.
 
 
-### Return Values ###
+## Return Values 
 
 Return a string with the message(s) you want to add to the home screen (including HTML markup) or an empty string.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -33,12 +33,14 @@ public function myGetSystemMessages()
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [contao/main.php](https://github.com/contao/core/blob/2.11.7/contao/main.php#L137)
 
 
-### See Also ###
+### See Also
 
 - [getUserNavigation](getUserNavigation.md) – allows to manipulate the backend user navigation
-

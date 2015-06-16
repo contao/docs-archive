@@ -1,10 +1,10 @@
-getForm
--------
+# getForm
+
 
 The `getForm` allows to manipulate the generation of the forms.
 
 
-### Parameters ###
+## Parameters 
 
 1. *Database_Result* `$objRow`
 
@@ -16,12 +16,12 @@ The `getForm` allows to manipulate the generation of the forms.
 
 
 
-### Return Values ###
+## Return Values 
 
 Return `$strBuffer` or your custom modification.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -42,13 +42,15 @@ public function myGetForm(Database_Result $objRow, $strBuffer)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L561)
 
 
-### See Also ###
+### See Also
 
 - [getArticle](getArticle.md) – tiggered when an article is generated
 - [getFrontendModule](getFrontendModule.md) – triggered when a frontend module is generated
-- [getContentElement](getContentElement.md) – triggered when a content element is generated

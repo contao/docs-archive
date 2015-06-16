@@ -1,10 +1,10 @@
-loadLanguageFile
-----------------
+# loadLanguageFile
+
 
 The `loadLanguageFile` hook is triggered when a language file is loaded. It passes the file name and the language as arguments and does not expect a return value. It is available from version 2.8.RC1.
 
 
-### Parameters ###
+## Parameters 
 
 1. *string* `$strName`
 
@@ -15,7 +15,7 @@ The `loadLanguageFile` hook is triggered when a language file is loaded. It pass
 	The language, usually the same as `$GLOBALS['TL_LANGUAGE']` but the call to `Controller::loadLanguageFile` accepts a language parameter.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -31,11 +31,13 @@ public function myLoadLanguageFile($strName, $strLanguage)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/libraries/System.php](https://github.com/contao/core/blob/2.11.7/system/libraries/System.php#L427)
 
 
-### See Also ###
+### See Also
 
-- [loadDataContainer](loadDataContainer.md) - triggered when a DCA file is loaded

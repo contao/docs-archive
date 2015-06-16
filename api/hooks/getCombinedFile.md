@@ -1,10 +1,10 @@
-getCombinedFile
----------------
+# getCombinedFile
+
 
 The `getCombinedFile` hook is triggered when combining CSS or Javascript files. It passes the file content, a unique key for the temporary file and the mode and expects the content as return value.
 
 
-### Parameters ###
+## Parameters 
 
 1. *string* `$strContent`
 
@@ -19,12 +19,12 @@ The `getCombinedFile` hook is triggered when combining CSS or Javascript files. 
 	The combiner mode (constant), either `Combiner::CSS` or `Combiner::JS`
 
 
-### Return Values ###
+## Return Values 
 
 Return the file content after your modification.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -42,6 +42,8 @@ public function myGetCombinedFile($strContent, $strKey, $strMode)
 ```
 
 
-### References ###
+## More Information
 
-- [system/libraries/Combiner.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Combiner.php#L166)
+
+### References
+
