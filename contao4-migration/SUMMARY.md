@@ -1,5 +1,6 @@
 ## Table of contents
 
+* [Introduction](introduction.md)
 
 * Compatibility
     * Preparing Contao 3 extensions
