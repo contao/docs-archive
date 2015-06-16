@@ -1,10 +1,10 @@
-getContentElement
------------------
+# getContentElement
+
 
 The `getContentElement` hook is triggered when a content element is rendered. It passes the database object and the buffer string as arguments and expects a buffer string as return value. It is available from version 2.9.0.
 
 
-### Parameters ###
+## Parameters 
 
 1. *Database_Result* `$objElement`
 
@@ -15,12 +15,12 @@ The `getContentElement` hook is triggered when a content element is rendered. It
 	The output buffer of the generated content element.
 
 
-### Return Values ###
+## Return Values 
 
 You can modify the output buffer (e.g. add a wrapper div) or change the database result and re-generate the content element.
 
 
-### Examples ###
+## Examples 
 
 ```php
 <?php
@@ -36,14 +36,16 @@ public function myGetContentElement(Database_Result $objElement, $strBuffer)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L514)
 
 
-### See Also ###
+### See Also
 
 - [getArticle](getArticle.md) – tiggered when an article is generated
 - [getFrontendModule](getFrontendModule.md) – triggered when a frontend module is generated
 - [getForm](getForm.md) – triggered when a form is generated
-

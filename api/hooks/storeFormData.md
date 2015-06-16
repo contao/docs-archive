@@ -1,10 +1,10 @@
-storeFormData
--------------
+# storeFormData
+
 
 The `storeFormData` hook is triggered before a submitted form is stored to the database. It passes the result set and the form object and expects the result set as return value. Added in Contao 2.11.RC1
 
 
-### Parameters ###
+## Parameters 
 
 1. *array* `$arrSet`
 
@@ -15,12 +15,12 @@ The `storeFormData` hook is triggered before a submitted form is stored to the d
 	The form module instance.
 
 
-### Return Values ###
+## Return Values 
 
 Return `$arrSet` or an array of key => values that should be written to the database.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -44,14 +44,16 @@ public function myStoreFormData($arrSet, $objForm)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L438)
 
 
-### See Also ###
+### See Also
 
 - [processFormData](processFormData.md) – triggered after a form has been submitted
 - [getForm](getForm.md) – manipulate the generation of the forms
 - [loadFormField](loadFormField.md) – triggered when a form field is loaded
-- [validateFormField](validateFormField.md) – triggered when a form field is submitted
