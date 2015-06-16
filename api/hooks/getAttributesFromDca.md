@@ -1,12 +1,12 @@
-# getAttributesFromDca #
+# getAttributesFromDca
 
 The `getAttributesFromDca` hook is triggered when attributes of a Widget are
 extracted from a Data Container Array. It passes the attributes and the DCA object
-as arguments and expects the modified form attributes as return value.
-It is available from version 3.2.RC1.
+as arguments and expects the (modified) form attributes as return value.
+It is available from version 3.2.0-RC1.
 
 
-## Parameters ##
+## Parameters
 
 1. *array* `$arrAttributes`
 
@@ -14,10 +14,11 @@ It is available from version 3.2.RC1.
 
 2. *object* `$objDca`
 
-	An optional DataContainer object.
+	The DataContainer object. It can be `null` if no object was passed 
+	to the `Widget::getAttributesFromDca` method.
 
 
-## Example ##
+## Example
 
 ```php
 <?php
@@ -35,9 +36,9 @@ public function myGetAttributesFromDca($arrAttributes, $objDca)
 ```
 
 
-## More Information ##
+## More Information
 
 
-### References ###
+### References
 
 - [system/modules/core/library/Contao/Widget.php](https://github.com/contao/core/blob/support/3.2/system/modules/core/library/Contao/Widget.php#L1418)

@@ -1,14 +1,16 @@
-# insertTagFlags #
+# insertTagFlags
 
 The `insertTagFlags` hook is triggered when unknown flags (filters) are passed
 to an insert tag. It passes the arguments listed belows and expects the replacement
-text as return value or false if the flag was not handled.
-It is available from version 3.1.beta1.
+text as return value or `false` if the flag was not handled.
+It is available from version 3.1.0-beta1.
 
 
-## Parameters ##
+## Parameters
 
 1. *boolean* `$flag`
+
+    The name of the insert tag flag.
 
 2. *string* $cachedValue
 
@@ -39,7 +41,7 @@ It is available from version 3.1.beta1.
     Number of elements in `$tags`
 
 
-## Example ##
+## Example
 
 If you use `{{date::D d. F Y|monthnamesAT|utf8_strtoupper}}` Contao knows how to handle
 the `date` insert tag and the `utf8_strtoupper` filter. The unknown `monthnamesAT`triggers the hook:
@@ -53,7 +55,7 @@ $GLOBALS['TL_HOOKS']['insertTagFlags'][] = array('MyClass', 'myInsertTagFlags');
 // MyClass.php
 public function myInsertTagFlags($flag, $tag, $cachedValue, $flags, $blnCache, $tags, $arrCache, $_rit, $_cnt)
 {
-    if (in_array($flag, array('monthnamesAT'))) {
+    if ($flag === 'monthnamesAT') {
 
       return str_replace(array("Januar","Februar"), array("Jänner", "Feber"), $cachedValue);
 
@@ -64,15 +66,15 @@ public function myInsertTagFlags($flag, $tag, $cachedValue, $flags, $blnCache, $
 ```
 
 
-## More Information ##
+## More Information
 
 
-### References ###
+### References
 
-- [system/modules/core/library/Contao/Controller.php](https://github.com/contao/core/blob/support/3.2/system/modules/core/library/Contao/Controller.php#L1778)
-- [system/modules/core/library/Contao/InsertTags.php](https://github.com/contao/core/blob/master/system/modules/core/library/Contao/InsertTags.php#L1205)
+- [system/modules/core/library/Contao/Controller.php](https://github.com/contao/core/blob/support/3.2/system/modules/core/library/Contao/Controller.php#L1779)
+- [system/modules/core/library/Contao/InsertTags.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/InsertTags.php#L1205)
 
 
-### See Also ###
+### See Also
 
-- [replaceInsertTags.md](replaceInsertTags)
+- [replaceInsertTags.md](replaceInsertTags) - triggered when an unknown insert tag is found
