@@ -146,12 +146,6 @@ Ordered lists use numbers:
     3. List item
 
 
-#### Further information
-
-For a complete documentation about Markdown, please refer to the official
-website by following this [link][1].
-
-
 ### Extended syntax
 
 It is not possible to describe all items with Markdown such as tables or
@@ -193,7 +187,10 @@ Footnotes can be created like this:
 The footnote definition can be added anywhere in the document.
 
 
-#### Further information
+### Further information
+
+For a complete documentation about Markdown, please refer to the official
+website by following this [link][1].
 
 For a complete documentation about Markdown Extra, please refer to the official
 website by following this [link][2].

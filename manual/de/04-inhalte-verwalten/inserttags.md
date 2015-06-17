@@ -50,6 +50,11 @@ ihres Alias verlinkt werden.
       title="{{link_title::12}}"&gt;Hier klicken&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
+  <td><code>{{link_name::*}}</code></td>
+  <td>Dieses Tag wird mit dem Namen einer internen Seite ersetzt: 
+      <code>&lt;a&gt;{{link_name::12}}&lt;/a&gt;</code>.</td>
+</tr>
+<tr>
   <td><code>{{link_close}}</code></td>
   <td>Wird mit dem schließenden Tag eines Links zu einer internen Seite
       ersetzt: <code>{{link_open::12}}Hier klicken{{link_close}}</code>.</td>
@@ -386,9 +391,13 @@ Dateien aus dem "templates"-Verzeichnis eingebunden werden.
 </tr>
 <tr>
   <td><code>{{file::*}}</code></td>
-  <td>Dieses Tag wird mit dem Inhalt einer .php- oder .tpl-Datei aus dem
-      "templates"-Verzeichnis ersetzt (ersetzen Sie * mit dem Namen). Bei Bedarf
-      können Sie Argumente übergeben: <code>{{file::file.php?arg1=val}}</code></td>
+  <td>Dieses Tag wird mit dem Inhalt einer .php-, .tpl-, .xhtml- oder 
+      .html5-Datei aus dem "templates"-Verzeichnis ersetzt (ersetzen Sie * mit
+      dem Namen). Bei Bedarf können Sie Argumente übergeben: 
+      <code>{{file::file.php?arg1=val}}</code>.
+      Mittels UUID kann außerdem der Pfad einer Datei aus der Datenbank 
+      abgefragt werden:
+      <code>{{file::6939a448-9b30-11e4-bcba-079af1e9baea}}</code>.</td>
 </tr>
 </table>
 {% endraw %}
@@ -444,7 +453,9 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td><code>{{lang::*}}</code></td>
   <td>Mit diesem Tag können fremdsprachige Wörter in einem Text markiert
       werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit
-      <code>&lt;span lang="fr" xml:lang="fr"&gt;Au revoir&lt;/span&gt;</code>.</td>
+      <code>&lt;span lang="fr"&gt;Au revoir&lt;/span&gt;</code> und fügt
+      <code>xml:lang="fr"</code> hinzu falls das Seitenformat XHTML ist.
+  </td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
@@ -455,8 +466,8 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{acronym::*}}</code></td>
   <td>Akronyme in einem Text markieren: <code>{{acronym::Multipurpose Internet
-      Mail Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code><acronym
-      title="Multipurpose Internet Mail Extensions">MIME</acronym></code>.</td>
+      Mail Extensions}}MIME{{acronym}}</code>. Dies wird ersetzt mit <code>&lt;acronym
+      title="Multipurpose Internet Mail Extensions"&gt;MIME&lt;/acronym&gt;</code>.</td>
 </tr>
 <tr>
   <td><code>{{ua::*}}</code></td>
@@ -504,14 +515,17 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>Dieses Tag wird mit einer Übersetzung ersetzt: <code>{{label::CNT:au}}</code>
-      oder <code>{{label::tl_article:title:0}}</code>. Beachten Sie, dass
-      innerhalb des Pfads zur Bezeichnung nur einfache Doppelpunkte verwendet
-      werden.</td>
+  <td>Dieses Tag wird mit einer Übersetzung ersetzt. Der erste Parameter ist
+      der Name einer Sprachdatei oder einem Akronym (z.B. <code>CNT</code> für
+      Länder oder <code>LNG</code> für Sprachen). Beispiele:
+      <code>{{label::CNT:au}}</code> wird zu "Australien" und 
+      <code>{{label::tl_article:title:0}}</code> wird zu "Titel". 
+      Beachten Sie, dass innerhalb des Pfads zur Bezeichnung nur einfache
+      Doppelpunkte verwendet werden.</td>
 </tr>
 <tr>
   <td><code>{{version}}</code></td>
-  <td>Dieses Tag wird mit der verwendeten Contao-Version (z.B. 2.11.2)
+  <td>Dieses Tag wird mit der verwendeten Contao-Version (z.B. 3.2.7)
       ersetzt.</td>
 </tr>
 <tr>
@@ -526,7 +540,8 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 </tr>
 <tr>
   <td><code>{{br}}</code></td>
-  <td>Dieses Tag wird mit einem HTML &lt;br&gt; Element (Zeilenumbruch) ersetzt.</td>
+  <td>Dieses Tag wird mit einem HTML <code>&lt;br&gt;</code> Element
+  (Zeilenumbruch) ersetzt.</td>
 </tr>
 </table>
 {% endraw %}

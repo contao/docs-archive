@@ -1,4 +1,4 @@
-language: node_js
+language: python
 
 env:
   global:
@@ -12,14 +12,22 @@ install:
   - sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
   - npm install ebook-convert
   - npm install gitbook-cli -g
+  - git clone https://github.com/aschempp/gitbook.git ./gitbook
+  - cd gitbook
+  - npm install
+  - gitbook versions:link 2.0.2-aschempp ./
+  - cd ../
+  - pip install html5validator
   - gitbook install ./manual
   - gitbook install ./cookbook
   - gitbook install ./contao4-migration
 
 script:
   - gitbook build ./manual
+  - html5validator --root manual/_book/ --ignore "gitbook/plugins"
   - gitbook pdf   ./manual   ./manual.pdf
   - gitbook build ./cookbook
+  - html5validator --root cookbook/_book/ --ignore "gitbook/plugins"
   - gitbook pdf   ./cookbook ./cookbook.pdf
   - gitbook build ./contao4-migration
 

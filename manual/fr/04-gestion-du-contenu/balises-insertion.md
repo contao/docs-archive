@@ -51,6 +51,11 @@ autre page ou vers un article en utilisant son ID ou son alias.
   title="{{link_title::12}}">Cliquez ici&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
+  <td><code>{{link_name::*}}</code></td>
+  <td>Cette balise sera remplacée par le nom d'une page interne (remplacez * par
+  un ID ou un alias de page).</td>
+</tr>
+<tr>
   <td><code>{{link_close}}</code></td>
   <td>Cette balise sera remplacée par la balise de fermeture d'un lien vers une
   page interne : <code>{{link_open::12}}Cliquez ici{{link_close}}</code>.</td>
@@ -396,11 +401,11 @@ le répertoire "templates".
 </tr>
 <tr>
   <td><code>{{file::*}}</code></td>
-  <td>Cette balise sera remplacée par le contenu d'un fichier se trouvant dans
-  le dossier "templates" (remplacez * par le nom du fichier). Vous pouvez aussi
-  fournir des arguments : <code>{{file::file.php?arg1=val&amp;arg2=val}}</code>.
-  Vous pouvez également récupérer le chemin d'un fichier à partir de la base de
-  données avec son UUID :
+  <td>Cette balise sera remplacée par le contenu d'un fichier .php, .tpl, .xhtml
+  ou .html5 se trouvant dans le dossier "templates" (remplacez * par le nom du
+  fichier). Vous pouvez aussi fournir des arguments :
+  <code>{{file::file.php?arg1=val&amp;arg2=val}}</code>. Vous pouvez également
+  récupérer le chemin d'un fichier à partir de la base de données avec son UUID :
   <code>{{file::6939a448-9b30-11e4-bcba-079af1e9baea}}</code>.</td>
 </tr>
 </table>
@@ -457,8 +462,8 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
   <td><code>{{lang::*}}</code></td>
   <td>Cette balise peut être utilisée pour marquer les mots étrangers à
   l'intérieur d'un texte : <code>{{lang::en}}Goodbye{{lang}}</code> sera
-  remplacé par <code>&lt;span lang="en" xml:lang="en"&gt;Goodbye&lt;/span&gt;
-  </code>.</td>
+  remplacé par <code>&lt;span lang="en"&gt;Goodbye&lt;/span&gt;</code> et
+  ajoute l'attribut <code>xml:lang="en"</code> si le doctype est XHTML.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
@@ -523,14 +528,16 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{label::*}}</code></td>
-  <td>Cette balise sera remplacée par un libellé traduit : <code>{{label::CNT:
-  au}}</code> ou <code>{{label::tl_article:title:0}}</code>. Notez que seul le
-  premier deux-points est doublé.</td>
+  <td>Cette balise sera remplacée par un libellé traduit. Le premier paramètre est un
+  nom de fichier de langue ou un acronyme tels que <code>CNT</code> (pays) ou
+  <code>LNG</code> (langues). Exemples: <code>{{label::CNT:au}}</code> affiche
+  "Australie" et <code>{{label::tl_article:title:0}}</code> affiche "Titre".<br>
+  Notez que seul le premier deux-points est doublé.</td>
 </tr>
 <tr>
   <td><code>{{version}}</code></td>
   <td>Cette balise sera remplacée par la version actuelle de Contao (par exemple
-  2.11.2).</td>
+  3.2.7).</td>
 </tr>
 <tr>
   <td><code>{{request_token}}</code></td>
@@ -544,7 +551,8 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
 </tr>
 <tr>
   <td><code>{{br}}</code></td>
-  <td>Cette balise sera remplacée par la balise HTML &lt;br&gt; (saut de ligne).</td>
+  <td>Cette balise sera remplacée par la balise HTML <code>&lt;br&gt;</code>
+  (saut de ligne).</td>
 </tr>
 </table>
 {% endraw %}
