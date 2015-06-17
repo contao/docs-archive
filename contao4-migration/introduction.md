@@ -56,3 +56,9 @@ world of PHP code you can reuse in your bundles
 that could be interesting for anybody. Split your code into a library that can
 be reused by anybody and write an additional bundle providing glue code that
 integrates your library into Symfony and/or Contao!
+
+## Collection of websites worth reading
+
+
+* http://www.phptherightway.com/
+* https://github.com/ziadoz/awesome-php
