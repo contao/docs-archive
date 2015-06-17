@@ -39,7 +39,7 @@ public function myPrepareFormData(&$arrSubmitted, $arrLabels, $objForm)
 
 ### References ###
 
-- [system/modules/core/forms/Form.php](https://github.com/contao/core/blob/3.0/system/modules/core/forms/Form.php#L438)
+- [system/modules/core/forms/Form.php](https://github.com/contao/core/blob/3.0.0/system/modules/core/forms/Form.php#L257)
 
 
 ### See Also ###
