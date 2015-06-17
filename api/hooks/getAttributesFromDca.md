@@ -10,7 +10,7 @@ It is available from version 3.2.0.
 
 1. *array* `$arrAttributes`
 
-	An array of Attributes.
+	An array of attributes.
 
 2. *object* `$objDca`
 

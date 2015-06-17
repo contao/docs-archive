@@ -11,11 +11,11 @@ It is available from version 3.1.0.
 
 1. *object* `$objPage`
 
-	The Page.
+	The page.
 
 2. *object* `$objLayout`
 
-	The Layout of the page.
+	The layout of the page.
 
 3. *object* `$objFrontend`
 

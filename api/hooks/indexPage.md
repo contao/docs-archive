@@ -14,7 +14,7 @@ It is available from version 3.0.0.
 
 2. *array* `$arrData`
 
-	The data array
+	The data array.
 
 3. *array* `$arrSet`
 
