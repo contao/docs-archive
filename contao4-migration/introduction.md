@@ -13,7 +13,8 @@ but particularly in terms of the whole ecosystem:
 interoperability between different PHP projects and libraries.
 * The package manager [Composer](https://getcomposer.org/) has become the
 de-facto standard to define and load dependencies based on the standards the
-PHP FIG has defined (see PSR-0 and PSR-4).
+PHP FIG has defined (see [PSR-0](http://www.php-fig.org/psr/psr-0/) and
+[PSR-4](http://www.php-fig.org/psr/psr-4/)).
 * Continuous Integration has become easier thanks to Open Source-friendly
 services such as [Travis CI](https://travis-ci.org/),
 [Scruitinizer](https://scrutinizer-ci.com/) and many more!
