@@ -1,10 +1,13 @@
-prepareFormData
--------------
+# prepareFormData
 
-The `prepareFormData` hook is triggered after a form has been submitted, but before it is processed. It passes the form data array, the form labels array and the form object as arguments and does not expect a return value. This way the data can be changed or extended, prior to execution of actions like email distribution or data storage. It is available from version 3.0.0.
+The `prepareFormData` hook is triggered after a form has been submitted, but 
+before it is processed. It passes the form data array, the form labels array 
+and the form object as arguments and does not expect a return value. This way 
+the data can be changed or extended, prior to execution of actions like email 
+distribution or data storage. It is available from version 3.0.0.
 
 
-### Parameters ###
+## Parameters
 
 1. *array* `$arrSubmitted`
 
@@ -19,7 +22,7 @@ The `prepareFormData` hook is triggered after a form has been submitted, but bef
 	The form module instance.
 
 
-### Example ###
+## Example
 
 ```php
 <?php
@@ -37,12 +40,12 @@ public function myPrepareFormData(&$arrSubmitted, $arrLabels, $objForm)
 ```
 
 
-### References ###
+## References
 
 - [system/modules/core/forms/Form.php](https://github.com/contao/core/blob/3.0.0/system/modules/core/forms/Form.php#L257)
 
 
-### See Also ###
+### See Also
 
 - [storeFormData](storeFormData.md) – triggered after a form has been submitted
 - [processFormData](processFormData.md) – triggered after a form has been submitted
