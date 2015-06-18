@@ -3,7 +3,8 @@
 The `indexPage` hook is triggered when a page's content is added to the search index.
 It passes the content, the data and the data collected for indexing so far as arguments 
 and does not expect a return value.
-It is available from version 3.0.0.
+
+**Tag** It is available from version 3.0.0.
 
 
 ## Parameters
@@ -14,7 +15,11 @@ It is available from version 3.0.0.
 
 2. *array* `$arrData`
 
-	The data array.
+	The data array containing information about the page.
+	See the call in 
+	[`FrontendTemplate`](https://github.com/contao/core/blob/support/3.2/system/modules/core/classes/FrontendTemplate.php#L185-L196)
+	for details on the keys.
+
 
 3. *array* `$arrSet`
 

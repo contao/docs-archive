@@ -2,9 +2,10 @@
 
 The `getPageLayout` hook is triggered when a regular page is generated.
 It can be used to modify the page or layout object.
-It passes the page object, the layout object and the page module as arguments
+It passes the page object, the layout object and the page type instance as arguments
 and does not expect a return value.
-It is available from version 3.1.0.
+
+**Tag** It is available from version 3.1.0.
 
 
 ## Parameters
@@ -17,9 +18,9 @@ It is available from version 3.1.0.
 
 	The layout of the page.
 
-3. *object* `$objFrontend`
+3. *object* `$objPty`
 
-	 The page module module instance (`PageRegular` which extends `Frontend`).
+	 The page type instance (`PageRegular`).
 
 
 ## Example
@@ -31,7 +32,7 @@ It is available from version 3.1.0.
 $GLOBALS['TL_HOOKS']['getPageLayout'][] = array('MyClass', 'myGetPageLayout');
 
 // MyClass.php
-public function myGetPageLayout($objPage, $objLayout, $objFrontend)
+public function myGetPageLayout($objPage, $objLayout, $objPty)
 {
     // modify the page or layout object
 

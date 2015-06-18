@@ -3,24 +3,29 @@
 The `compileFormFields` hook is triggered when the fields of a form are compiled.
 It passes the form fields, the ID of the form and the form object as arguments
 and expects the modified form fields as return value.
-It is available from version 3.2.0.
+
+**Tag** It is available from version 3.2.0.
 
 
 ## Parameters
 
 1. *array* `$arrFields`
 
-	An array of FormField's
+	An array of `FormFieldModel` instances.
 
-2. *int* `$intFormId`
+2. *string* `$strFormId`
 
-	ID of the form containing the form field which is used for storing form related data in the session.
-	Don't confuse with `$objForm->id`.
+	Used in the `value` attribute of the hidden form field `FORM_SUBMIT`. Don't confuse with `$objForm->id`.
 
 3. *object* `$objForm`
 
-	The form module instance.
+	The form (an instance of `Contao\Form`).
 
+
+## Return Values 
+
+The return value should be the `$arrFields` array modified to your the needs.
+ 
 
 ## Example
 
