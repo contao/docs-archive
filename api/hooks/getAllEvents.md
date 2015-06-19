@@ -1,10 +1,10 @@
-getAllEvents
-------------
+# getAllEvents
+
 
 The `getAllEvents` hook allows you to modify the result sets of calendar and event modules. It passes the current result set, the IDs of the parent items and the start and end time as arguments and expects a result set (array) as return value. It is available from version 2.6.4.
 
 
-### Parameters ###
+## Parameters 
 
 1. *array* `$arrEvents`
 
@@ -27,12 +27,12 @@ The `getAllEvents` hook allows you to modify the result sets of calendar and eve
 	The active frontend module instance.
 
 
-### Return Values ###
+## Return Values 
 
 Return `$arrEvents` after you did your custom modifications.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -49,12 +49,15 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, $o
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/calendar/Events.php](https://github.com/contao/core/blob/2.11.7/system/modules/calendar/Events.php#L195)
 
 
-### See Also ###
+### See Also
 
 - [parseArticles](parseArticles.md) – triggered when parsing news articles
 

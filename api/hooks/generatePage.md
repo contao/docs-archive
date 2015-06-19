@@ -1,10 +1,10 @@
-generatePage
-------------
+# generatePage
+
 
 The `generatePage` hook is triggered before the main layout (fe_page) is compiled. It passes the page object, the layout object and a self-reference as arguments and does not expect a return value. It is available from version 2.8.RC1.
 
 
-### Parameters ###
+## Parameters 
 
 1. *Database_Result* `$objPage`
 
@@ -19,7 +19,7 @@ The `generatePage` hook is triggered before the main layout (fe_page) is compile
 	The current page type object.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -35,6 +35,9 @@ public function myGeneratePage(Database_Result $objPage, Database_Result $objLay
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/frontend/PageRegular.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/PageRegular.php#L110)

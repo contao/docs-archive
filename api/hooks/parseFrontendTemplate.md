@@ -1,10 +1,10 @@
-parseFrontendTemplate
----------------------
+# parseFrontendTemplate
+
 
 The `parseFrontendTemplate` hook is triggered when a front end template is parsed. It passes the template content and the template name as arguments and expects the template content as return value. It is available from version 2.6.0.
 
 
-### Parameters ###
+## Parameters 
 
 1. *string* `$strBuffer`
 
@@ -15,12 +15,12 @@ The `parseFrontendTemplate` hook is triggered when a front end template is parse
 	The template name (e.g. `nav_default`) without file extension.
 
 
-### Return Values ###
+## Return Values 
 
 Return the original `$strBuffer` or override the template with your custom modification.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -41,12 +41,15 @@ public function myParseFrontendTemplate($strBuffer, $strTemplate)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/frontend/FrontendTemplate.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/FrontendTemplate.php#L51)
 
 
-### See Also ###
+### See Also
 
 - [outputFrontendTemplate](outputFrontendTemplate.md) - triggered when a front end template is printed to the screen
 - [outputBackendTemplate](outputBackendTemplate.md) - triggered when a back end template is printed to the screen

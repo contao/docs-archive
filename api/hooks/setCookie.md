@@ -1,10 +1,10 @@
-setCookie
----------
+# setCookie
+
 
 The `setCookie` hook is triggered when sending a cookie to the browser. It passes a standard object with all cookie properties and expects the same as return value. Added in Contao 2.11.3.
 
 
-### Parameters ###
+## Parameters 
 
 1. *object* `$objCookie`
 
@@ -17,12 +17,12 @@ The `setCookie` hook is triggered when sending a cookie to the browser. It passe
 	- $objCookie->blnSecure		*– if the cookie should only be stored for https access*
 
 
-### Return Values ###
+## Return Values 
 
 Return `$objCookie` or a custom object with all properties.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -41,6 +41,9 @@ public function mySetCookie($objCookie)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/libraries/System.php](https://github.com/contao/core/blob/2.11.7/system/libraries/System.php#L720)

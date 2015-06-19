@@ -1,10 +1,10 @@
-parseArticles
--------------
+# parseArticles
+
 
 The `parseArticles` hook is triggered when parsing news articles. It passes the frontend template, the current article and the news module instance. It does not expect a return value.
 
 
-### Parameters ###
+## Parameters 
 
 1. *FrontendTemplate* `$objTemplate`
 
@@ -19,7 +19,7 @@ The `parseArticles` hook is triggered when parsing news articles. It passes the 
 	The news module instance (e.g. `ModuleNewsList`).
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -36,12 +36,15 @@ public function myParseArticles($objTemplate, $arrRow, $objModule)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/news/ModuleNews.php](https://github.com/contao/core/blob/2.11.7/system/modules/news/ModuleNews.php#L206)
 
 
-### See Also ###
+### See Also
 
 - [getAllEvents](getAllEvents.md) – allows you to modify the result sets of calendar and event modules
 

@@ -1,17 +1,17 @@
-getArticle
-----------
+# getArticle
+
 
 The `getArticle` allows you to override the configuration of an article prior to rendering. It does not expect a return value.
 
 
-### Parameters ###
+## Parameters 
 
 1. *Database_Result* `$objRow`
 
 	The database result from table `tl_article`.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -34,12 +34,15 @@ public function myGetArticle(Database_Result $objRow)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L432)
 
 
-### See Also ###
+### See Also
 
 - [getFrontendModule](getFrontendModule.md) – triggered when a frontend module is generated
 - [getContentElement](getContentElement.md) – triggered when a content element is generated

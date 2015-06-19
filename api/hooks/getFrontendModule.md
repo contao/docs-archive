@@ -1,10 +1,10 @@
-getFrontendModule
------------------
+# getFrontendModule
+
 
 The `getFrontendModule` hook allows to manipulate the generation of the frontend modules. Added in Contao 2.11.RC1.
 
 
-### Parameters ###
+## Parameters 
 
 1. *Database_Result* `$objRow`
 
@@ -16,12 +16,12 @@ The `getFrontendModule` hook allows to manipulate the generation of the frontend
 
 
 
-### Return Values ###
+## Return Values 
 
 Return `$strBuffer` or your custom modification.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -38,12 +38,15 @@ public function myGetFrontendModule($objRow, $strBuffer)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L361)
 
 
-### See Also ###
+### See Also
 
 - [getContentElement](getContentElement.md) – triggered when a content element is generated
 - [getArticle](getArticle.md) – tiggered when an article is generated
