@@ -1,10 +1,10 @@
-checkCredentials
-----------------
+# checkCredentials
+
 
 The `checkCredentials` hook is triggered when a login attempt fails due to a wrong password. It passes the username and password as well as the user object as arguments and expects a boolean return value. It is available from version 2.6.0.
 
 
-### Parameters ###
+## Parameters 
 
 1. *string* `$strUsername`
 
@@ -19,12 +19,12 @@ The `checkCredentials` hook is triggered when a login attempt fails due to a wro
 	User object model from database record with the given username.
 
 
-### Return Values ###
+## Return Values 
 
 Return `true` if you accept the username/password combination for login, or `false` otherwise.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -46,12 +46,15 @@ public function myCheckCredentials($strUsername, $strPassword, User $objUser)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/library/User.php](https://github.com/contao/core/blob/2.11.7/system/libraries/User.php#L261)
 
 
-### See Also ###
+### See Also
 
 - [importUser](importUser.md) - triggered when username cannot be found in the database
 - [postLogin](postLogin.md) - triggered after a user has logged in

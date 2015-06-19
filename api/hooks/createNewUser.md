@@ -1,10 +1,10 @@
-createNewUser
--------------
+# createNewUser
+
 
 The `createNewUser` hook is triggered when a new front end user registers on the website. It passes the ID of the new user and the data array as arguments and does not expect a return value. It is available from version 2.2.0.
 
 
-### Parameters ###
+## Parameters 
 
 1. *int* `$intId`
 
@@ -15,7 +15,7 @@ The `createNewUser` hook is triggered when a new front end user registers on the
 	All values which have been submitted on the registration form. Be aware that the user ID is not contained in this array (`$arrData['id']` is empty).
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -31,12 +31,15 @@ public function myCreateNewUser($intId, $arrData)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/registration/ModuleRegistration.php](https://github.com/contao/core/blob/2.11.7/system/modules/registration/ModuleRegistration.php#L451)
 
 
-### See Also ###
+### See Also
 
 - [activateAccount](activateAccount.md) – triggered when a new front end account is activated
 - [updatePersonalData](updatePersonalData.md) – triggered after a member has updated his personal data

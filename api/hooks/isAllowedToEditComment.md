@@ -1,10 +1,10 @@
-isAllowedToEditComment
-----------------------
+# isAllowedToEditComment
+
 
 The `isAllowedToEditComment` hook is triggered to determine permission on a comment from unknown source in the back end. It passes the comment parent ID and source table and expects a boolean return value.
 
 
-### Parameters ###
+## Parameters 
 
 1. *int* `$intParent`
 
@@ -15,12 +15,12 @@ The `isAllowedToEditComment` hook is triggered to determine permission on a comm
 	The parent table name.
 
 
-### Return Values ###
+## Return Values 
 
 If you return `true`, access to the comment is granted. Return `false` if access is prohibited or your function is not responsible for this comment.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -41,12 +41,15 @@ public function myIsAllowedToEditComment($intParent, $strSource)
 }
 ```
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/comments/dca/tl_comments.php](https://github.com/contao/core/blob/2.11.7/system/modules/comments/dca/tl_comments.php#L406)
 
 
-### See Also ###
+### See Also
 
 - [addComment](addComment.md) - triggered when a comment is added
 - [listComments](listComments.md) - triggered when comments are listed in the back end

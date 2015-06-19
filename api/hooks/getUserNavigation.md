@@ -1,10 +1,10 @@
-getUserNavigation
------------------
+# getUserNavigation
+
 
 The `getUserNavigation` hook allows to manipulate the backend user navigation. It passes the backend modules and a flag wether to show collapsed navigation items. Expects the array of modules as return parameter.
 
 
-### Parameters ###
+## Parameters 
 
 1. *array* `$arrModules`
 
@@ -15,12 +15,12 @@ The `getUserNavigation` hook allows to manipulate the backend user navigation. I
 	Wether to show all modules even if the group is collapsed.
 
 
-### Return Values ###
+## Return Values 
 
 Add your custom modules to the list and return the array of backend modules.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -44,11 +44,14 @@ public function myGetUserNavigation($arrModules, $blnShowAll)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/backend/BackendUser.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/BackendUser.php#L468)
 
 
-### See Also ###
+### See Also
 
 - [getSystemMessages](getSystemMessages.md) – allows to add additional messages to the backend home screen

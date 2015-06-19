@@ -1,17 +1,17 @@
-parseTemplate
--------------
+# parseTemplate
+
 
 The `parseTemplate` hook is triggered before parsing a template. It passes the template object and does not expect a return value.
 
 
-### Parameters ###
+## Parameters 
 
 1. *Template* `$objTemplate`
 
 	The frontend or backend template instance.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -30,12 +30,15 @@ public function myParseTemplate($objTemplate)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/libraries/Template.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Template.php#L235)
 
 
-### See Also ###
+### See Also
 
 - [parseBackendTemplate](parseBackendTemplate.md) – triggered when a back end template is parsed
 - [parseFrontendTemplate](parseFrontendTemplate.md) – triggered when a front end template is parsed

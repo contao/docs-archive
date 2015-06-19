@@ -1,10 +1,10 @@
-initializeSystem
-----------------
+# initializeSystem
+
 
 The `initializeSystem` hook is triggered right after the system initialization process is finished and before the request processing is started. It is available from version 3.1.0.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -20,6 +20,9 @@ public function myInitializeSystem()
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/initialize.php](https://github.com/contao/core/blob/3.1.0/system/initialize.php#L230)

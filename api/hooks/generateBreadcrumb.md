@@ -1,10 +1,10 @@
-generateBreadcrumb
-------------------
+# generateBreadcrumb
+
 
 The `generateBreadcrumb` hook is used to manipulate the breadcrumb navigation (from breadcrumb frontend module).
 
 
-### Parameters ###
+## Parameters 
 
 1. *array* `$arrItems`
 
@@ -15,12 +15,12 @@ The `generateBreadcrumb` hook is used to manipulate the breadcrumb navigation (f
 	The frontend module (ModuleBreadcrumb) instance.
 
 
-### Return Values ###
+## Return Values 
 
 Modify the list of breadcrumb items and return the items array.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -39,12 +39,15 @@ public function myGenerateBreadcrumb($arrItems, $objModule)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/frontend/ModuleBreadcrumb.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/ModuleBreadcrumb.php#L222)
 
 
-### See Also ###
+### See Also
 
 - [getUserNavigation](getUserNavigation.md) – modify the backend navigation
 
