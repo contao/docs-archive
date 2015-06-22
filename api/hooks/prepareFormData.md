@@ -15,11 +15,11 @@ distribution or data storage. It is available from version 3.0.0.
 
 2. *arrray* `$arrLabels`
 
-	The fields labels of the form.
+	The field labels of the form.
 
 3. *Form* `$objForm`
 
-	The form module instance.
+	The form instance.
 
 
 ## Example
@@ -35,12 +35,15 @@ public function myPrepareFormData(&$arrSubmitted, $arrLabels, $objForm)
 {
     // this calculates a deadline from a given timestamp
     // and stores it as deadline in $arrSubmitted 
-    $arrSubmitted['deadline'] = $strtotime('+1 hour', $arrSubmitted('tstamp'));
+    $arrSubmitted['deadline'] = strtotime('+1 hour', $arrSubmitted['tstamp']);
 }
 ```
 
 
-## References
+## More Information
+
+
+### References
 
 - [system/modules/core/forms/Form.php](https://github.com/contao/core/blob/3.0.0/system/modules/core/forms/Form.php#L257)
 
