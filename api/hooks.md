@@ -28,6 +28,7 @@ Hooks work similar to the [callback functions](callbacks.md) of the Data Contain
 - [getFrontendModule](hooks/getFrontendModule.md)
 - [getImage](hooks/getImage.md)
 - [getPageIdFromUrl](hooks/getPageIdFromUrl.md)
+- [getPageStatusIcon](hooks/getPageStatusIcon.md)
 - [getRootPageFromUrl](hooks/getRootPageFromUrl.md)
 - [getSearchablePages](hooks/getSearchablePages.md)
 - [getSystemMessages](hooks/getSystemMessages.md)
