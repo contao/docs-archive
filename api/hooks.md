@@ -10,6 +10,7 @@ Hooks work similar to the [callback functions](callbacks.md) of the Data Contain
 - [addLogEntry](hooks/addLogEntry.md)
 - [checkCredentials](hooks/checkCredentials.md)
 - [closeAccount](hooks/closeAccount.md)
+- [compileArticle](hooks/compileArticle.md)
 - [compileDefinition](hooks/compileDefinition.md)
 - [createDefinition](hooks/createDefinition.md)
 - [createNewUser](hooks/createNewUser.md)
