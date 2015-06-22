@@ -1,5 +1,6 @@
 {
   "gitbook": "2.x.x",
+  "title": "Manual for Contao 3.4",
   "plugins": [
       "richquotes",
       "edit-link",
