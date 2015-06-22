@@ -12,7 +12,7 @@ The `storeFormData` hook is triggered before a submitted form is stored to the d
 
 2. *Form* `$objForm`
 
-	The form module instance.
+	The form instance.
 
 
 ### Return Values ###
@@ -43,6 +43,8 @@ public function myStoreFormData($arrSet, $objForm)
 }
 ```
 
+
+## More Information ##
 
 ### References ###
 
