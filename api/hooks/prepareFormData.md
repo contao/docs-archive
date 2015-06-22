@@ -4,7 +4,8 @@ The `prepareFormData` hook is triggered after a form has been submitted, but
 before it is processed. It passes the form data array, the form labels array 
 and the form object as arguments and does not expect a return value. This way 
 the data can be changed or extended, prior to execution of actions like email 
-distribution or data storage. It is available from version 3.0.0.
+distribution or data storage.
+> **tag** It is available from version 3.0.0.
 
 
 ## Parameters
