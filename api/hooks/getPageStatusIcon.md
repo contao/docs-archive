@@ -3,7 +3,8 @@
 The `getPageStatusIcon` hook is triggered when the appropriate page status icon 
 is calculated. It passes the database result object and the file name of the 
 current icon as arguments and expects a file name as return value. 
-> **tag** It is available from version 3.5.0.
+
+> **Tag** It is available from version 3.5.0.
 
 
 ## Parameters
@@ -42,6 +43,6 @@ public function myGetPageStatusIcon(Database_Result $objPage, $image)
 ## More Information
 
 
-### References
+### Reference
 
 - [system/libraries/Controller.php](https://github.com/contao/core/blob/master/system/modules/core/library/Contao/Controller.php#L608)
