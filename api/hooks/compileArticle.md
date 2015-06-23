@@ -1,6 +1,6 @@
 # compileArticle
 
-The `compileArticle` hook is triggered after the article module has been compiled. It passes the template object, the module configuration, and the module object as arguments and expects no return value. It can be used e.g. to add additional data to the template.
+The `compileArticle` hook is triggered after the article module has been compiled. It passes the template object, the module configuration, and the module object as arguments and does not expect a return value. It can be used e.g. to add additional data to the template.
 > **tag** It is available from version 3.5.0.
 
 
@@ -8,7 +8,7 @@ The `compileArticle` hook is triggered after the article module has been compile
 
 1. *FrontendTemplate* `$objTemplate`
 
-    The current frontend template instance for the article module
+    The current front end template instance for the article module
 
 2. *array* `$arrData`
 
