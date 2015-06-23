@@ -1,10 +1,10 @@
-getSearchablePages
-------------------
+# getSearchablePages
+
 
 The `getSearchablePages` hook is triggered when the the search index is rebuilt. It passes the array of pages and the ID of the root page as arguments and expects an array of absolute URLs (!) as return value. It is available from version 2.2.0.
 
 
-### Parameters ###
+## Parameters 
 
 1. *array* `$arrPages`
 
@@ -23,12 +23,12 @@ The `getSearchablePages` hook is triggered when the the search index is rebuilt.
 	Language of the generated root page. This parameter is not always available.
 
 
-### Return Values ###
+## Return Values 
 
 Return the list of pages that should be indexed. Be aware that this simply means these URLs will be requested, and each page is responsible for it's indexing. By checking `$blnSitemap`, you can decide wether to include your pages in the XML sitemap or only for the search index.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -46,7 +46,10 @@ public function myGetSearchablePages($arrPages, $intRoot=null, $blnSitemap=false
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/backend/Automator.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/Automator.php#L119)
 - [system/modules/backend/RebuildIndex.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/RebuildIndex.php#L82)

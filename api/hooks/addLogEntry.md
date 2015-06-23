@@ -1,10 +1,10 @@
-addLogEntry
------------
+# addLogEntry
+
 
 The `addLogEntry` hook is triggered when a new log entry is added. It passes the message, the function and the action as arguments and does not expect a return value. It is available from version 2.8.RC1.
 
 
-### Parameters ###
+## Parameters 
 
 1. *string* `$strText`
 
@@ -28,7 +28,7 @@ The `addLogEntry` hook is triggered when a new log entry is added. It passes the
 	- TL_REPOSITORY
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -44,6 +44,9 @@ public function myAddLogEntry($strText, $strFunction, $strAction)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/libraries/System.php](https://github.com/contao/core/blob/2.11.7/system/libraries/System.php#L207)

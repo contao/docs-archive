@@ -1,10 +1,10 @@
-closeAccount
-------------
+# closeAccount
+
 
 The `closeAccount` hook is triggered when a user closes his account. It passes the user ID, the operation mode and the module as arguments and does not expect a return value. It is available from version 2.8.0.
 
 
-### Parameters ###
+## Parameters 
 
 1. *int* `$intId`
 
@@ -19,7 +19,7 @@ The `closeAccount` hook is triggered when a user closes his account. It passes t
 	The frontend module object. This allows you to retrieve all data from the current `tl_module` result set.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -37,12 +37,15 @@ public function myCloseAccount($intId, $strMode, $objModule)
 }
 ```
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/registration/ModuleCloseAccount.php](https://github.com/contao/core/blob/2.11.7/system/modules/registration/ModuleCloseAccount.php#L118)
 
 
-### See Also ###
+### See Also
 
 - [createNewUser](createNewUser.md) - triggered when a new front end user registers on the website
 - <span class="undocumented">updatePersonalData</span>

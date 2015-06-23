@@ -1,10 +1,10 @@
-outputFrontendTemplate
-----------------------
+# outputFrontendTemplate
+
 
 The `outputFrontendTemplate` hook is triggered when a front end template is printed to the screen. It passes the template content and the template name as arguments and expects the template content as return value. It is available from version 2.6.0.
 
 
-### Parameters ###
+## Parameters 
 
 1. *string* `$strBuffer`
 
@@ -15,12 +15,12 @@ The `outputFrontendTemplate` hook is triggered when a front end template is prin
 	The template name (e.g. `fe_page`) without file extension.
 
 
-### Return Values ###
+## Return Values 
 
 Return the original `$strBuffer` or override with your custom modification.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -41,12 +41,15 @@ public function myOutputFrontendTemplate($strBuffer, $strTemplate)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/modules/frontend/FrontendTemplate.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/FrontendTemplate.php#L122)
 
 
-### See Also ###
+### See Also
 
 - [parseFrontendTemplate](parseFrontendTemplate.md) - triggered when a front end template is parsed
 - [outputBackendTemplate](outputBackendTemplate.md) - triggered when a back end template is printed to the screen

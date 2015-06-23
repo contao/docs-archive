@@ -1,10 +1,10 @@
-getCountries
-------------
+# getCountries
+
 
 The `getCountries` hook allows to modify the system's list of countries. Added in Contao 2.11.RC1
 
 
-### Parameters ###
+## Parameters 
 
 1. *array* `$arrReturn`
 
@@ -15,12 +15,12 @@ The `getCountries` hook allows to modify the system's list of countries. Added i
 	The list of countries from system config file.
 
 
-### Return Values ###
+## Return Values 
 
 Return an array with additional countries you want to add.
 
 
-### Examples ###
+## Examples 
 
 1. Add custom countries to the options. They are added **before** the system countries.
 
@@ -61,11 +61,14 @@ Return an array with additional countries you want to add.
 	```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L835)
 
 
-### See Also ###
+### See Also
 
 - [loadLanguageFile](loadLanguageFile.md) – triggered when a language file is loaded

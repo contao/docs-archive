@@ -1,10 +1,10 @@
-addCustomRegexp
----------------
+# addCustomRegexp
+
 
 The `addCustomRegexp` hook is triggered when an unknown regular expression is found. It passes the name of the regexp, the current value and the widget object as arguments and expects a boolean return value. It is available from version 2.6.2.
 
 
-### Parameters ###
+## Parameters 
 
 1. *string* `$strRegexp`
 
@@ -20,7 +20,7 @@ The `addCustomRegexp` hook is triggered when an unknown regular expression is fo
 	Use the widget's properties to retrieve information about the field configuration.
 
 
-### Example ###
+## Example 
 
 ```php
 <?php
@@ -46,11 +46,14 @@ public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
 ```
 
 
-### References ###
+## More Information
+
+
+### References
 
 - [system/libraries/Widget.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Widget.php#L807)
 
 
-### See Also ###
+### See Also
 
 - [replaceInsertTags](replaceInsertTags.md) - triggered when an unknown insert tag is found
