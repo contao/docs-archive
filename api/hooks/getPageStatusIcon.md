@@ -1,10 +1,12 @@
-# getPageStatusIcon #
+# getPageStatusIcon
 
-The `getPageStatusIcon` hook is triggered when the appropriate page status icon is calculated. It passes the database result object and the filename of the current icon as arguments and expects a file name as return value. 
+The `getPageStatusIcon` hook is triggered when the appropriate page status icon 
+is calculated. It passes the database result object and the file name of the 
+current icon as arguments and expects a file name as return value. 
 > **tag** It is available from version 3.5.0.
 
 
-## Parameters ##
+## Parameters
 
 1. *Database_Result* `$objPage`
 
@@ -15,12 +17,13 @@ The `getPageStatusIcon` hook is triggered when the appropriate page status icon 
 	The file name of the default status icon calculated by Contao.
 
 
-## Return Value ##
+## Return Value
 
-You can specify a new image to be displayed in the back end by returning a filename.
+You must always return a file name, which can be either a custom file name or 
+the unchanged second parameter. 
 
 
-## Example ##
+## Example
 
 ```php
 <?php
@@ -36,9 +39,9 @@ public function myGetPageStatusIcon(Database_Result $objPage, $image)
 ```
 
 
-## More Information ##
+## More Information
 
 
-### References ###
+### References
 
 - [system/libraries/Controller.php](https://github.com/contao/core/blob/master/system/modules/core/library/Contao/Controller.php#L608)
