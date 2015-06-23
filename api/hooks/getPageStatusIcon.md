@@ -17,7 +17,7 @@ The `getPageStatusIcon` hook is triggered when the appropriate page status icon 
 
 ## Return Value ##
 
-You can specify a new image to be displayed in the backend by returning a filename.
+You can specify a new image to be displayed in the back end by returning a filename.
 
 
 ## Example ##
