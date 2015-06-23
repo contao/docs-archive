@@ -52,8 +52,8 @@ public function myPrepareFormData(&$arrSubmitted, $arrLabels, $objForm)
 
 ### See Also
 
-- [storeFormData](storeFormData.md) – triggered after a form has been submitted
-- [processFormData](processFormData.md) – triggered after a form has been submitted
+- [storeFormData](storeFormData.md) – triggered before a submitted form is stored in the database
+- [processFormData](processFormData.md) – triggered after a form has been processed
 - [getForm](getForm.md) – manipulate the generation of the forms
 - [loadFormField](loadFormField.md) – triggered when a form field is loaded
 - [validateFormField](validateFormField.md) – triggered when a form field is submitted
