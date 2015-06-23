@@ -4,7 +4,7 @@ The `compileArticle` hook is triggered after the article module has been compile
 > **tag** It is available from version 3.5.0.
 
 
-## Parameters ##
+## Parameters
 
 1. *FrontendTemplate* `$objTemplate`
 
@@ -19,7 +19,7 @@ The `compileArticle` hook is triggered after the article module has been compile
     The current module instance
 
 
-## Example ##
+## Example
 
 ```php
 <?php
@@ -35,9 +35,9 @@ public function myCompileArticle($objTemplate, $arrData, $objModule)
 ```
 
 
-## More Information ##
+## More Information
 
 
-### References ###
+### Reference
 
 - [system/modules/ModuleArticle.php](https://github.com/contao/core/blob/master/system/modules/core/modules/ModuleArticle.php#L267)
