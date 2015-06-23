@@ -1,67 +1,69 @@
 # getCountries
 
+The `getCountries` hook allows to modify the system's list of countries.
 
-The `getCountries` hook allows to modify the system's list of countries. Added in Contao 2.11.RC1
+> **Tag** Available from version 2.11.0-RC1.
 
 
-## Parameters 
+## Parameters
 
 1. *array* `$arrReturn`
 
-	Empty array that should be used to add custom entries.
+    Empty array that should be used to add custom entries.
 
 2. *array* `$arrCountries`
 
-	The list of countries from system config file.
+    The list of countries from the system config file.
 
 
-## Return Values 
+## Return Values
 
 Return an array with additional countries you want to add.
 
 
-## Examples 
+## Examples
 
 1. Add custom countries to the options. They are added **before** the system countries.
 
-	```php
-	<?php
+    ```php
+    <?php
 
-	// config.php
-	$GLOBALS['TL_HOOKS']['getCountries'][] = array('MyClass', 'myGetCountries');
+    // config.php
+    $GLOBALS['TL_HOOKS']['getCountries'][] = array('MyClass', 'myGetCountries');
 
-	// MyClass.php
-	public function myGetCountries($arrReturn, $arrCountries)
-	{
-		$arrReturn['oo'] = 'Moon';
+    // MyClass.php
+    public function myGetCountries($arrReturn, $arrCountries)
+    {
+        $arrReturn['oo'] = 'Moon';
 
-		return $arrReturn;
-	}
-	```
+        return $arrReturn;
+    }
+    ```
 
-2. Modify the list of countries. This is not really intended by the hook, but it can still be done by using a reference on the countries array.
+2. Modify the list of countries. This is not really intended by the hook, but it
+can still be done by using a reference on the countries array.
 
-	```php
-	<?php
+    ```php
+    <?php
 
-	// config.php
-	$GLOBALS['TL_HOOKS']['getCountries'][] = array('MyClass', 'myGetCountries');
+    // config.php
+    $GLOBALS['TL_HOOKS']['getCountries'][] = array('MyClass', 'myGetCountries');
 
-	// MyClass.php
-	public function myGetCountries($arrReturn, &$arrCountries)
-	{
-		// European Countries
-		$arrEU = array('de', 'at', 'nl', ...);
+    // MyClass.php
+    public function myGetCountries($arrReturn, &$arrCountries)
+    {
+        // European Countries
+        $arrEU = array('de', 'at', 'nl', ...);
 
-		// Remove all non-EU countries
-		$arrCountries = array_intersect_key($arrCountries, array_flip($arrEU));
+        // Remove all non-EU countries
+        $arrCountries = array_intersect_key($arrCountries, array_flip($arrEU));
 
-		return $arrReturn;
-	}
-	```
+        return $arrReturn;
+    }
+    ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -69,6 +71,6 @@ Return an array with additional countries you want to add.
 - [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L835)
 
 
-### See Also
+### See also
 
 - [loadLanguageFile](loadLanguageFile.md) – triggered when a language file is loaded

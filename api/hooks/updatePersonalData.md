@@ -1,27 +1,29 @@
 # updatePersonalData
 
+The `updatePersonalData` hook is triggered after a member has updated his
+personal data. It passes the front end user, the updated data and the front
+end module and does not expect a return value.
 
-The `updatePersonalData` hook is triggered after a member has updated his personal data. It passes the frontend user, the updated data and the frontend module and does not expect a return value.
+Be aware that the front end user object and the database has already been
+updated when this hook is triggered.
 
-Be aware that the frontend user object and the database has already been updated when this hook is triggered.
 
-
-## Parameters 
+## Parameters
 
 1. *FrontendUser* `$objUser`
 
-	The frontend user instance who changed his data.
+    The front end user instance who changed his data.
 
 2. *array* `$arrData`
 
-	The submitted form data.
+    The submitted form data.
 
 3. *Module* `$objModule`
 
-	The frontend module of type `ModulePersonalData`.
+    The front end module of type `ModulePersonalData`.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -31,12 +33,12 @@ $GLOBALS['TL_HOOKS']['updatePersonalData'][] = array('MyClass', 'myUpdatePersona
 // MyClass.php
 public function myUpdatePersonalData($objUser, $arrData, $objModule)
 {
-	// Do something
+    // Do something
 }
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -44,8 +46,7 @@ public function myUpdatePersonalData($objUser, $arrData, $objModule)
 - [system/modules/frontend/ModulePersonalData.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/ModulePersonalData.php#L254)
 
 
-### See Also
+### See also
 
 - [createNewUser](createNewUser.md) – triggered when a new front end user registers on the website
 - [activateAccount](activateAccount.md) - triggered when a new front end account is activated
-

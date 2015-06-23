@@ -26,7 +26,7 @@ Add a static URL to a script and return it.
 The script URL with provided part.
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::setStaticUrl`](setStaticUrl.md) – Set a static URL
 - [`Controller::generateFrontendUrl`](generateFrontendUrl.md) – Generate a front end URL

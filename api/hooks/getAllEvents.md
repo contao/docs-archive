@@ -1,38 +1,44 @@
 # getAllEvents
 
+The `getAllEvents` hook allows you to modify the result sets of calendar and
+event modules. It passes the current result set, the IDs of the parent items
+and the start and end time as arguments and expects a result set (array)
+as return value.
 
-The `getAllEvents` hook allows you to modify the result sets of calendar and event modules. It passes the current result set, the IDs of the parent items and the start and end time as arguments and expects a result set (array) as return value. It is available from version 2.6.4.
+> **Tag** Available from version 2.6.4.
 
 
-## Parameters 
+## Parameters
 
 1. *array* `$arrEvents`
 
-	Associative array of all events (grouped by date).
+    Associative array of all events (grouped by date).
 
 2. *array* `$arrCalendars`
 
-	The IDs of calendars enabled in the frontend module.
+    The IDs of calendars enabled in the front end module.
 
 3. *int* `$intStart`
 
-	The calendar period start date  (e.g. if the user selected "current month", it will contain the timestamp of 00:00:00 of the first day of the month).
+    The calendar period start date (e.g. if the user selected "current month",
+    it will contain the timestamp of 00:00:00 of the first day of the month).
 
 4. *int* `$intEnd`
 
-	The calendar period end date (e.g. if the user selected "current month", it will contain the timestamp of 23:59:59 of the last day of the month).
+    The calendar period end date (e.g. if the user selected "current month",
+    it will contain the timestamp of 23:59:59 of the last day of the month).
 
 5. *object* `$objModule`
 
-	The active frontend module instance.
+    The active front end module instance.
 
 
-## Return Values 
+## Return Values
 
 Return `$arrEvents` after you did your custom modifications.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -49,7 +55,7 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, $o
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -57,7 +63,6 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, $o
 - [system/modules/calendar/Events.php](https://github.com/contao/core/blob/2.11.7/system/modules/calendar/Events.php#L195)
 
 
-### See Also
+### See also
 
 - [parseArticles](parseArticles.md) – triggered when parsing news articles
-

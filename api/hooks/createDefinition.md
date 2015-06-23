@@ -1,10 +1,13 @@
 # createDefinition
 
+The `createDefinition` hook is triggered when a format definition of a style
+sheet is imported. It passes the key and value, the original format definition
+and the data array as arguments and expects an array or false as return value.
 
-The `createDefinition` hook is triggered when a format definition of a style sheet is imported. It passes the key and value, the original format definition and the data array as arguments and expects an array or false as return value. It is available from version 2.9.4.
+> **Tag** Available from version 2.9.4.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -25,7 +28,7 @@ public function myCreateDefinition($strKey, $strValue, $strDefinition, $arrSet)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -33,6 +36,6 @@ public function myCreateDefinition($strKey, $strValue, $strDefinition, $arrSet)
 - [system/modules/backend/StyleSheets.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/StyleSheets.php#L2074)
 
 
-### See Also
+### See also
 
 - [compileDefinition](compileDefinition.md) - triggered when a format definition of a style sheet is written

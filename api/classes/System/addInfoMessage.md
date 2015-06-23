@@ -21,7 +21,7 @@ Add an info message.
 	The message to be stored.
 
 
-### See Also ###
+### See also ###
 
 - [`System::addMessage`](addMessage.md) – Add a message
 - [`System::addConfirmationMessage`](addConfirmationMessage.md) – Add a confirmation message

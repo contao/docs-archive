@@ -1,26 +1,29 @@
 # addCustomRegexp
 
+The `addCustomRegexp` hook is triggered when an unknown regular expression is
+found. It passes the name of the regexp, the current value and the widget object
+as arguments and expects a boolean return value.
 
-The `addCustomRegexp` hook is triggered when an unknown regular expression is found. It passes the name of the regexp, the current value and the widget object as arguments and expects a boolean return value. It is available from version 2.6.2.
+> **Tag** Available from version 2.6.2.
 
 
-## Parameters 
+## Parameters
 
 1. *string* `$strRegexp`
 
-	The unknown regular expression string
+    The unknown regular expression string.
 
 2. *mixed* `$varValue`
 
-	The input value to be validated
+    The input value to be validated.
 
 3. *Widget* `$objWidget`
 
-	Form widget which is handling this input value.
-	Use the widget's properties to retrieve information about the field configuration.
+    Form widget which is handling this input value.
+    Use the widget's properties to retrieve information about the field configuration.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -46,7 +49,7 @@ public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -54,6 +57,6 @@ public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
 - [system/libraries/Widget.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Widget.php#L807)
 
 
-### See Also
+### See also
 
 - [replaceInsertTags](replaceInsertTags.md) - triggered when an unknown insert tag is found

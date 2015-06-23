@@ -1,17 +1,20 @@
 # postDownload
 
+The `postDownload` hook is triggered after a file has been downloaded with the
+download/downloads content element. It passes the file name as argument and does
+not expect a return value.
 
-The `postDownload` hook is triggered after a file has been downloaded with the download/downloads content element. It passes the file name as argument and does not expect a return value. It is available from version 2.4.6.
+> **Tag** Available from version 2.4.6.
 
 
-## Parameters 
+## Parameters
 
 1. *string* $strFile
 
-	The file which has been downloaded (relative path from TL_ROOT).
+    The file which has been downloaded (relative path from `TL_ROOT`).
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -27,7 +30,7 @@ public function myPostDownload($strFile)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -35,6 +38,6 @@ public function myPostDownload($strFile)
 - [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L2783)
 
 
-### See Also
+### See also
 
 - [postUpload](postUpload.md) - triggered after a user has uploaded one or more file in the back end

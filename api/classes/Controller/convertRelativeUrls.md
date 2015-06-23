@@ -47,7 +47,7 @@ A string with converted relative to absolute URLs.
 	> ```<a href="http://www.example.com/news.html">News</a>```
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::generateFrontendUrl`](generateFrontendUrl.md) – Generate a front end URL
 - [`Controller::redirectToFrontendPage`](redirectToFrontendPage.md) – Redirect to a front end page

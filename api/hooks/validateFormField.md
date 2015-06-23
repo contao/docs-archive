@@ -1,29 +1,32 @@
 # validateFormField
 
+The `validateFormField` hook is triggered when a form field is submitted. It
+passes the widget object and the form ID as arguments and expects a widget
+object as return value.
 
-The `validateFormField` hook is triggered when a form field is submitted. It passes the widget object and the form ID as arguments and expects a widget object as return value. It is available from version 2.5.0.
+> **Tag** Available from version 2.5.0.
 
 
-## Parameters 
+## Parameters
 
 1. *Widget* `$objWidget`
 
-	Object of the current frontend widget. Use it to access form field properties.
+    Object of the current front end widget. Use it to access form field properties.
 
 2. *int* `$intId`
 
-	ID of the tl\_form\_field record.
+    ID of the tl\_form\_field record.
 
 3. *array* $arrForm
 
-	Form configuration data from table `tl_form`.
+    Form configuration data from the `tl_form` table.
 
-## Return Value 
+## Return Value
 
 Return the `$objWidget` instance after modification or your custom widget.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -44,7 +47,7 @@ public function myValidateFormField(Widget $objWidget, $intId, $arrForm)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -52,7 +55,7 @@ public function myValidateFormField(Widget $objWidget, $intId, $arrForm)
 - [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L172)
 
 
-### See Also
+### See also
 
 - [loadFormField](loadFormField.md) - triggered when a form field is loaded
 - [processFormData](processFormData.md) - triggered after a form has been submitted

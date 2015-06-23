@@ -1,30 +1,35 @@
 # importUser
 
+The `importUser` hook is triggered when a username cannot be found in the
+database. It passes the username, the password and the table name as arguments
+and expects a boolean return value.
 
-The `importUser` hook is triggered when a username cannot be found in the database. It passes the username, the password and the table name as arguments and expects a boolean return value. It is available from version 2.7.RC1.
+> **Tag** Available from version 2.7.0-RC1.
 
 
-## Parameters 
+## Parameters
 
 1. *string* `$strUsername`
 
-	The unknown username.
+    The unknown username.
 
 2. *string* `$strPassword`
 
-	The password submitted in the login form,
+    The password submitted in the login form.
 
 3. *string* `$strTable`
 
-	The user model table, either `tl_member` (for frontend) or `tl_user` (for backend).
+    The user model table, either `tl_member` (for front end) or `tl_user`
+    (for back end).
 
 
-## Return Values 
+## Return Values
 
-A record must exist in the database for Contao to load a user. Return `true` if you added the user to the respective table, or `false` if not.
+A record must exist in the database for Contao to load a user. Return `true` if
+you added the user to the respective table, or `false` if not.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -49,7 +54,7 @@ public function myImportUser($strUsername, $strPassword, $strTable)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -57,7 +62,7 @@ public function myImportUser($strUsername, $strPassword, $strTable)
 - [system/libraries/User.php](https://github.com/contao/core/blob/2.11.7/system/libraries/User.php#L181)
 
 
-### See Also
+### See also
 
 - [checkCredentials](checkCredentials.md) - triggered when a login attempt fails due to a wrong password
 - [postLogin](postLogin.md) - triggered after a user has logged out

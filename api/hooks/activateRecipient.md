@@ -1,25 +1,28 @@
 # activateRecipient
 
+The `activateRecipient` hook is triggered when a new newsletter recipient is added.
+It passes the e-mail address, the recipient IDs and the channel IDs as argument
+and does not expect a return value.
 
-The `activateRecipient` hook is triggered when a new newsletter recipient is added. It passes the e-mail address, the recipient IDs and the channel IDs as argument and does not expect a return value. It is available from version 2.8.RC1.
+> **Tag** Available from version 2.8.0-RC1.
 
 
-## Parameters 
+## Parameters
 
 1. *string* `$strEmail`
 
-	the newsletter recipient's email address
+    The newsletter recipient's email address.
 
 2. *array* `$arrRecipients`
 
-	<span class="undocumented">please add a description for this parameter</span>
+    <span class="undocumented">please add a description for this parameter</span>
 
 3. *array* `$arrChannels`
 
-	<span class="undocumented">please add a description for this parameter</span>
+    <span class="undocumented">please add a description for this parameter</span>
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -35,7 +38,7 @@ public function myActivateRecipient($strEmail, $arrRecipients, $arrChannels)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -43,6 +46,6 @@ public function myActivateRecipient($strEmail, $arrRecipients, $arrChannels)
 - [system/modules/newsletter/ModuleSubscribe.php](https://github.com/contao/core/blob/2.11.7/system/modules/newsletter/ModuleSubscribe.php#L177)
 
 
-### See Also
+### See also
 
 - [removeRecipient](removeRecipient.md) - triggered when a newsletter recipient is removed

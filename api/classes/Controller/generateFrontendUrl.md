@@ -61,7 +61,7 @@ The URL of the provided page.
 	> news/items/example.html
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::convertRelativeUrls`](convertRelativeUrls.md) – Convert relative URLs to absolute
 - [`Controller::redirectToFrontendPage`](redirectToFrontendPage.md) – Redirect to a front end page

@@ -1,21 +1,24 @@
 # setNewPassword
 
+The `setNewPassword` hook is triggered after a new password has been set. It
+passes the user object and the encrypted password as arguments and does not
+expect a return value.
 
-The `setNewPassword` hook is triggered after a new password has been set. It passes the user object and the encrypted password as arguments and does not expect a return value. It is available from version 2.2.3.
+> **Tag** Available from version 2.2.3.
 
 
-## Parameters 
+## Parameters
 
 1. *object* `$objUser`
 
-	Current FrontendUser that changed her password.
+    Current FrontendUser that changed her password.
 
 2. *string* `$strPassword`
 
-	The new password (not encrypted!).
+    The new password (not encrypted!).
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -31,7 +34,7 @@ public function mySetNewPassword($objUser, $strPassword)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -41,7 +44,7 @@ public function mySetNewPassword($objUser, $strPassword)
 - [system/modules/backend/dca/tl_member.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/dca/tl_member.php#L424)
 
 
-### See Also
+### See also
 
 - [createNewUser](createNewUser.md) - triggered when a new front end user registers on the website
 - [activateAccount](activateAccount.md) - triggered when a new front end account is activated

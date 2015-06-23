@@ -21,7 +21,7 @@ Add a confirmation message.
 	The message to be stored.
 
 
-### See Also ###
+### See also ###
 
 - [`System::addMessage`](addMessage.md) – Add a message
 - [`System::addErrorMessage`](addErrorMessage.md) – Add an error message

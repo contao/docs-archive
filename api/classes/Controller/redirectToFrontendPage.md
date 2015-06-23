@@ -45,7 +45,7 @@ If the ```$blnReturn``` is set to true, it will return an URL of the given page.
 	```
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::generateFrontendUrl`](generateFrontendUrl.md) – Generate a front end URL
 - [`Controller::convertRelativeUrls`](convertRelativeUrls.md) – Convert relative URLs to absolute

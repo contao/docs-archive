@@ -1,24 +1,26 @@
 # sqlGetFromFile
 
+The `sqlGetFromFile` hook is triggered when parsing database.sql files. It passes
+the generated SQL definition and expects the same as return value.
 
-The `sqlGetFromFile` hook is triggered when parsing database.sql files. It passes the generated SQL definition and expects the same as return value. Added in Contao 2.11.RC2.
+> **Tag** Available from version 2.11.0-RC2.
 
 
 
-## Parameters 
+## Parameters
 
 1. *array* `$arrReturn`
 
-	The parsed SQL definition.
+    The parsed SQL definition.
 
 
 
-## Return Values 
+## Return Values
 
 Return `$arrReturn` after adding your custom definitions.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -29,14 +31,14 @@ $GLOBALS['TL_HOOKS']['sqlGetFromFile'][] = array('MyClass', 'mySqlGetFromFile');
 // MyClass.php
 public function mySqlGetFromFile($arrReturn)
 {
-	// Modify the result
+    // Modify the result
 
-	return $arrReturn;
+    return $arrReturn;
 }
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -44,7 +46,7 @@ public function mySqlGetFromFile($arrReturn)
 - [system/modules/backend/DbInstaller.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/DbInstaller.php#L417)
 
 
-### See Also
+### See also
 
 - [sqlCompileCommands](sqlCompileCommands.md) – triggered when compiling the database update commands.
 - [sqlGetFromDB](sqlGetFromDB.md) … triggered when parsing the current database definition

@@ -1,10 +1,13 @@
 # executePreActions
 
+The `executePreActions` hook is triggered on Ajax requests that do not require a
+DCA object. It passes the name of the action as argument and does not expect a
+return value.
 
-The `executePreActions` hook is triggered on Ajax requests that do not require a DCA object. It passes the name of the action as argument and does not expect a return value. It is available from version 2.6.1.
+> **Tag** Available from version 2.6.1.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -23,7 +26,7 @@ public function myExecutePreActions($strAction)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -31,6 +34,6 @@ public function myExecutePreActions($strAction)
 - [system/modules/backend/Ajax.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/Ajax.php#L196)
 
 
-### See Also
+### See also
 
 - [executePostActions](executePostActions.md) - triggered on Ajax request that require a DCA object

@@ -30,7 +30,7 @@ Return the IDs of all child records of a particular record.
 An array containing IDs of child records of the specified parent record.
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getChildRecords`](getChildRecords.md) – Get the child records
 

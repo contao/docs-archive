@@ -38,6 +38,6 @@ Return the IDs of all child records of a particular record.
 An array containing IDs of all child records.
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getParentRecords`](getParentRecords.md) – Get the parent records

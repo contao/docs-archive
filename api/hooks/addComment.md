@@ -1,21 +1,23 @@
 # addComment
 
+The `addComment` hook is triggered when a comment is added. It passes the ID of
+the record and the data array as arguments and does not expect a return value.
 
-The `addComment` hook is triggered when a comment is added. It passes the ID of the record and the data array as arguments and does not expect a return value. It is available from version 2.8.2.
+> **Tag** Available from version 2.8.2.
 
 
-## Parameters 
+## Parameters
 
 1. *int* `$intId`
 
-	ID of the new comment database record (Table `tl_comment`)
+    ID of the new comment database record (Table `tl_comment`).
 
 2. *array* `$arrSet`
 
-	Data of the new comment record (not including the ID).
+    Data of the new comment record (not including the ID).
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -38,7 +40,7 @@ public function myAddComment($intId, $arrSet, Comments $objComments)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -46,7 +48,7 @@ public function myAddComment($intId, $arrSet, Comments $objComments)
 - [system/modules/comments/Comments.php](https://github.com/contao/core/blob/2.11.7/system/modules/comments/Comments.php#L327)
 
 
-### See Also
+### See also
 
 - [listComment](listComments.md) - triggered when comments are listed in the back end
 - [isAllowedToEditComment](isAllowedToEditComment.md) - triggered to determine permission on a comment in the back end

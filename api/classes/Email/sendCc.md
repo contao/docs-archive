@@ -29,6 +29,6 @@ Get CC e-mail addresses from an array, string or unlimited number of arguments. 
 		Array ( [0] => admin@example.com, [1] => User <user@example.com> )
 
 
-### See Also ###
+### See also ###
 
 - [`Email::sendBcc`](sendBcc.md) – Send the recipients of blind carbon copy

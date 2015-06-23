@@ -37,7 +37,7 @@ The form as HTML string.
 	```
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getArticle`](getArticle.md) – Get an article front end module
 - [`Controller::getContentElement`](getContentElement.md) – Get a content element

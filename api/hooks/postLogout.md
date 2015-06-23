@@ -1,17 +1,19 @@
 # postLogout
 
+The `postLogout` hook is triggered after a user has logged out from the front
+end. It passes the user object as argument and does not expect a return value.
 
-The `postLogout` hook is triggered after a user has logged out from the front end. It passes the user object as argument and does not expect a return value. It is available from version 2.4.3.
+> **Tag** Available from version 2.4.3.
 
 
-## Parameters 
+## Parameters
 
 1. *FrontendUser* `$objUser`
 
-	The frontend user (object) which has been logged out
+    The front end user (object) which has been logged out.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -26,7 +28,7 @@ public function myPostLogout(FrontendUser $objUser)
 }
 ```
 
-## More Information
+## More information
 
 
 ### References
@@ -34,6 +36,6 @@ public function myPostLogout(FrontendUser $objUser)
 - [system/libraries/User.php](https://github.com/contao/core/blob/2.11.7/system/libraries/User.php#L444)
 
 
-### See Also
+### See also
 
-- [postLogin](postLogin.md) - triggered after a frontend user has logged in
+- [postLogin](postLogin.md) - triggered after a front end user has logged in

@@ -37,7 +37,7 @@ Add a message.
 		A raw message.
 
 
-### See Also ###
+### See also ###
 
 - [`System::addConfirmationMessage`](addConfirmationMessage.md) – Add a confirmation message
 - [`System::addErrorMessage`](addErrorMessage.md) – Add an error message

@@ -1,17 +1,19 @@
 # loadDataContainer
 
+The `loadDataContainer` hook is triggered when a DCA file is loaded. It passes
+the file name as argument and does not expect a return value.
 
-The `loadDataContainer` hook is triggered when a DCA file is loaded. It passes the file name as argument and does not expect a return value. It is available from version 2.8.2.
+> **Tag** Available from version 2.8.2.
 
 
-## Parameters 
+## Parameters
 
 1. *string* `$strName`
 
-	Name of the data container to be loaded (e.g. `tl_content`).
+    Name of the data container to be loaded (e.g. `tl_content`).
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -27,7 +29,7 @@ public function myLoadDataContainer($strName)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -35,6 +37,6 @@ public function myLoadDataContainer($strName)
 - [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L2825)
 
 
-### See Also
+### See also
 
 - [loadLanguageFile](loadLanguageFile.md) - triggered when a language file is loaded

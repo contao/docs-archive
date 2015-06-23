@@ -30,7 +30,7 @@ Return all messages as HTML.
 All messages as HTML string.
 
 
-### See Also ###
+### See also ###
 
 - [`System::addMessage`](addMessage.md) – Add a message
 - [`System::addConfirmationMessage`](addConfirmationMessage.md) – Add a confirmation message

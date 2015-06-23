@@ -1,21 +1,24 @@
 # removeRecipient
 
+The `removeRecipient` hook is triggered when a newsletter recipient is removed.
+It passes the email address and the channel IDs as argument and does not expect
+a return value.
 
-The `removeRecipient` hook is triggered when a newsletter recipient is removed. It passes the email address and the channel IDs as argument and does not expect a return value. It is available from version 2.8.RC1.
+> **Tag** Available from version 2.8.0-RC1.
 
 
-## Parameters 
+## Parameters
 
 1. *string* `$strEmail`
 
-	The recipient's email address which has been removed
+    The recipient's email address which has been removed.
 
 2. *array* `$arrChannels`
 
-	The channels from which the recipient has unsubscribed
+    The channels from which the recipient has unsubscribed.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -31,7 +34,7 @@ public function myRemoveRecipient($strEmail, $arrChannels)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -39,6 +42,6 @@ public function myRemoveRecipient($strEmail, $arrChannels)
 - [system/modules/newsletter/ModuleUnsubscribe.php](https://github.com/contao/core/blob/2.11.7/system/modules/newsletter/ModuleUnsubscribe.php#L197)
 
 
-### See Also
+### See also
 
 - [activateRecipient](activateRecipient.md) - triggered when a new newsletter recipient is added

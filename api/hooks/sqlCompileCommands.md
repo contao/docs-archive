@@ -1,22 +1,24 @@
 # sqlCompileCommands
 
+The `sqlCompileCommands` hook is triggered when compiling the database update
+commands. It passes the array of changes and expects the same as return value.
 
-The `sqlCompileCommands` hook is triggered when compiling the database update commands. It passes the array of changes and expects the same as return value. Added in Contao 2.11.RC2.
+> **Tag** Available from version 2.11.0-RC2.
 
 
-## Parameters 
+## Parameters
 
 1. *array* `$arrReturn`
 
-	Array of changes that should be applied to the database.
+    Array of changes that should be applied to the database.
 
 
-## Return Values 
+## Return Values
 
 Return the array of changes that should be applied to the database.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -27,14 +29,14 @@ $GLOBALS['TL_HOOKS']['sqlCompileCommands'][] = array('MyClass', 'mySqlCompileCom
 // MyClass.php
 public function mySqlCompileCommands($arrReturn)
 {
-	// Modify the result
+    // Modify the result
 
-	return $arrReturn;
+    return $arrReturn;
 }
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -42,7 +44,7 @@ public function mySqlCompileCommands($arrReturn)
 - [system/modules/backend/DbInstaller.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/DbInstaller.php#L226)
 
 
-### See Also
+### See also
 
 - [sqlGetFromDB](sqlGetFromDB.md) … triggered when parsing the current database definition
 - [sqlGetFromFile](sqlGetFromFile.md) – triggered when parsing database.sql files

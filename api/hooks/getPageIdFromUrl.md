@@ -1,22 +1,26 @@
 # getPageIdFromUrl
 
+The `getPageIdFromUrl` hook is triggered when the URL fragments are evaluated.
+It passes the array of URL fragments as argument and expects an array of URL
+fragments as return value.
 
-The `getPageIdFromUrl` hook is triggered when the URL fragments are evaluated. It passes the array of URL fragments as argument and expects an array of URL fragments as return value. It is available from version 2.5.4.
+> **Tag** Available from version 2.5.4.
 
 
-## Parameters 
+## Parameters
 
 1. *array* `$arrFragments`
 
-	The URL fragments (current url exploded by slash). Be aware that previous hook callbacks could have modified this data.
+    The URL fragments (current url exploded by slash). Be aware that previous hook
+    callbacks could have modified this data.
 
 
-## Return Values 
+## Return Values
 
 Return the (modified) array of URL fragments.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -32,7 +36,7 @@ public function myGetPageIdFromUrl($arrFragments)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -40,8 +44,7 @@ public function myGetPageIdFromUrl($arrFragments)
 - [system/modules/frontend/Frontend.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Frontend.php#L130)
 
 
-### See Also
+### See also
 
 - [getRootPageFromUrl](getRootPageFromUrl.md) – triggered when searching for the current root page
 - [getCacheKey](getCacheKey.md) – triggered when creating a page cache
-

@@ -25,7 +25,7 @@ Set a static URL constant and replace the protocol when requested via SSL.
 	The URL to be set as constant.
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::addStaticUrlTo`](addStaticUrlTo.md) – Add a static URL to script
 - [`Controller::generateFrontendUrl`](generateFrontendUrl.md) – Generate a front end URL

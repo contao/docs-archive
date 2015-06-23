@@ -50,7 +50,7 @@ Add an image to a template.
 	<?php endif; ?>
 	```
 
-### See Also ###
+### See also ###
 
 - [`Controller::getImage`](getImage.md) – Get an image
 - [`Controller::resizeImage`](resizeImage.md) – Resize or crop an image

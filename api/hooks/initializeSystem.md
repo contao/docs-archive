@@ -1,10 +1,12 @@
 # initializeSystem
 
+The `initializeSystem` hook is triggered right after the system initialization
+process is finished and before the request processing is started.
 
-The `initializeSystem` hook is triggered right after the system initialization process is finished and before the request processing is started. It is available from version 3.1.0.
+> **Tag** Available from version 3.1.0.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -20,7 +22,7 @@ public function myInitializeSystem()
 ```
 
 
-## More Information
+## More information
 
 
 ### References

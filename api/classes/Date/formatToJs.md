@@ -40,6 +40,6 @@ A valid JavaScript date format.
 	> %d-%m-%Y
 
 
-### See Also ###
+### See also ###
 
 - [`Date::getInputFormat`](getInputFormat.md) – Return an input format string for a particular date

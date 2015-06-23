@@ -38,6 +38,6 @@ The class name of the front end module, or an empty string if not found.
 	> ModuleNewsList
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::findContentElement`](findContentElement.md) – Find a content element

@@ -55,6 +55,6 @@ A full template path.
 	> /Applications/MAMP/htdocs/contao/system/modules/news/templates/mod_newslist.xhtml
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getTemplateGroup`](getTemplateGroup.md) – Get a group of templates

@@ -59,7 +59,7 @@ The full article as HTML string, or a teaser if ```$blnMultiMode``` is set to tr
 	```
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getContentElement`](getContentElement.md) – Get a content element
 - [`Controller::getForm`](getForm.md) – Get a form

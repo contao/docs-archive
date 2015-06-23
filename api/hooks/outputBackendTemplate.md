@@ -1,26 +1,29 @@
 # outputBackendTemplate
 
+The `outputBackendTemplate` hook is triggered when a back end template is printed
+to the screen. It passes the template content and the template name as arguments
+and expects the template content as return value.
 
-The `outputBackendTemplate` hook is triggered when a back end template is printed to the screen. It passes the template content and the template name as arguments and expects the template content as return value. It is available from version 2.6.0.
+> **Tag** Available from version 2.6.0.
 
 
-## Parameters 
+## Parameters
 
 1. *string* `$strBuffer`
 
-	Content of the rendered backend template.
+    Content of the rendered back end template.
 
 2. *string* `$strTemplate`
 
-	The template name (e.g. `be_main`) without file extension.
+    The template name (e.g. `be_main`) without file extension.
 
 
-## Return Values 
+## Return Values
 
 Return the original `$strBuffer` or return your custom modification.
 
 
-## Example 
+## Example
 
 ```php
 <?php
@@ -41,7 +44,7 @@ public function myOutputBackendTemplate($strBuffer, $strTemplate)
 ```
 
 
-## More Information
+## More information
 
 
 ### References
@@ -49,7 +52,7 @@ public function myOutputBackendTemplate($strBuffer, $strTemplate)
 - [system/modules/backend/BackendTemplate.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/BackendTemplate.php#L146)
 
 
-### See Also
+### See also
 
 - [outputFrontendTemplate](outputFrontendTemplate.md) - triggered when a front end template is printed to the screen
 - [parseBackendTemplate](parseBackendTemplate.md) - triggered when a back end template is parsed
