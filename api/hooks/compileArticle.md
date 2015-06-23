@@ -1,8 +1,11 @@
 # compileArticle
 
-The `compileArticle` hook is triggered after the article module has been compiled. It passes the template object, the module configuration, and the module object as arguments and does not expect a return value. It can be used e.g. to add additional data to the template.
+The `compileArticle` hook is triggered after the article module has been 
+compiled. It passes the template object, the module configuration, and the 
+module object as arguments and does not expect a return value. It can be used 
+e.g. to add additional data to the template.
 
-> **Tag** It is available from version 3.5.0.
+> **Tag** Available from version 3.5.0.
 
 
 ## Parameters
