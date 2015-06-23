@@ -35,7 +35,10 @@ $GLOBALS['TL_HOOKS']['myGetPageStatusIcon'][] = array('MyClass', 'myGetPageStatu
 // MyClass.php
 public function myGetPageStatusIcon(Database_Result $objPage, $image)
 {
-    return 'custom_icon.gif';
+    if ($objPage->type == 'my_page')
+    {
+        return 'path/to/custom_icon.gif';
+    }
 }
 ```
 
