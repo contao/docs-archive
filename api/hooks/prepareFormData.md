@@ -6,7 +6,7 @@ and the form object as arguments and does not expect a return value. This way
 the data can be changed or extended, prior to execution of actions like email 
 distribution or data storage.
 
-> **Tag** It is available from version 3.0.0.
+> **Tag** Available from version 3.0.0.
 
 
 ## Parameters
