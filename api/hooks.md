@@ -49,6 +49,7 @@ Hooks work similar to the [callback functions](callbacks.md) of the Data Contain
 - [postLogin](hooks/postLogin.md)
 - [postLogout](hooks/postLogout.md)
 - [postUpload](hooks/postUpload.md)
+- [prepareFormData](hooks/prepareFormData.md)
 - [printArticleAsPdf](hooks/printArticleAsPdf.md)
 - [processFormData](hooks/processFormData.md)
 - [removeOldFeeds](hooks/removeOldFeeds.md)

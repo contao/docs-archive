@@ -15,7 +15,7 @@ set as return value.
 
 2. *Form* `$objForm`
 
-    The form module instance.
+	The form instance.
 
 
 ## Return Values
