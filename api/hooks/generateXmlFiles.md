@@ -7,10 +7,6 @@ It has no parameters and does not expect a return value.
 **Tag** It is available from version 3.0.0.
 
 
-## Parameters
-
-The hook has no parameters
-
 ## Example
 
 ```php
