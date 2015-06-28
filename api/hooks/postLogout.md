@@ -33,9 +33,9 @@ public function myPostLogout(FrontendUser $objUser)
 
 ### References
 
-- [system/libraries/User.php](https://github.com/contao/core/blob/2.11.7/system/libraries/User.php#L444)
+- [system/modules/core/library/Contao/User.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/User.php#L637-L644)
 
 
 ### See also
 
-- [postLogin](postLogin.md) - triggered after a front end user has logged in
+- [postLogin](postLogin.md) - triggered after a front end user has logged in.

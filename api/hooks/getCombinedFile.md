@@ -39,7 +39,7 @@ public function myGetCombinedFile($strContent, $strKey, $strMode)
 {
     // Do something
 
-    return $strContent
+    return $strContent;
 }
 ```
 
@@ -49,4 +49,4 @@ public function myGetCombinedFile($strContent, $strKey, $strMode)
 
 ### References
 
-- [system/libraries/Combiner.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Combiner.php#L166)
+- [system/modules/core/library/Contao/Combiner.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Combiner.php#L267-L274)

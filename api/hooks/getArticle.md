@@ -39,11 +39,11 @@ public function myGetArticle(Database_Result $objRow)
 
 ### References
 
-- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L432)
+- [system/modules/core/library/Contao/Controller.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Controller.php#L400-L406)
 
 
 ### See also
 
-- [getFrontendModule](getFrontendModule.md) – triggered when a frontend module is generated
-- [getContentElement](getContentElement.md) – triggered when a content element is generated
-- [getForm](getForm.md) – triggered when a form is generated
+- [getFrontendModule](getFrontendModule.md) – triggered when a front end module is generated.
+- [getContentElement](getContentElement.md) – triggered when a content element is generated.
+- [getForm](getForm.md) – triggered when a form is generated.

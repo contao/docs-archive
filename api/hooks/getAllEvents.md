@@ -60,9 +60,9 @@ public function myGetAllEvents($arrEvents, $arrCalendars, $intStart, $intEnd, $o
 
 ### References
 
-- [system/modules/calendar/Events.php](https://github.com/contao/core/blob/2.11.7/system/modules/calendar/Events.php#L195)
+- [system/modules/calendar/classes/Events.php](https://github.com/contao/core/blob/3.5.0/system/modules/calendar/classes/Events.php#L177-L184)
 
 
 ### See also
 
-- [parseArticles](parseArticles.md) – triggered when parsing news articles
+- [parseArticles](parseArticles.md) – triggered when parsing news articles.

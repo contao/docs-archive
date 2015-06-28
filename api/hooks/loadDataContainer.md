@@ -34,9 +34,9 @@ public function myLoadDataContainer($strName)
 
 ### References
 
-- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L2825)
+- [system/modules/core/library/Contao/DcaLoader.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/DcaLoader.php#L92-L99)
 
 
 ### See also
 
-- [loadLanguageFile](loadLanguageFile.md) - triggered when a language file is loaded
+- [loadLanguageFile](loadLanguageFile.md) - triggered when a language file is loaded.

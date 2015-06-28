@@ -31,9 +31,9 @@ public function myGetRootPageFromUrl()
 
 ### References
 
-- [system/modules/frontend/Frontend.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Frontend.php#L179)
+- [system/modules/core/classes/Frontend.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/classes/Frontend.php#L297-L307)
 
 
 ### See also
 
-- [getPageIdFromUrl](getPageIdFromUrl.md) – triggered when the URL fragments are evaluated
+- [getPageIdFromUrl](getPageIdFromUrl.md) – triggered when the URL fragments are evaluated.

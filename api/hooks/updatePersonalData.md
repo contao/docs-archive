@@ -43,10 +43,10 @@ public function myUpdatePersonalData($objUser, $arrData, $objModule)
 
 ### References
 
-- [system/modules/frontend/ModulePersonalData.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/ModulePersonalData.php#L254)
+- [system/modules/core/modules/ModulePersonalData.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/modules/ModulePersonalData.php#L334-L341)
 
 
 ### See also
 
-- [createNewUser](createNewUser.md) – triggered when a new front end user registers on the website
-- [activateAccount](activateAccount.md) - triggered when a new front end account is activated
+- [createNewUser](createNewUser.md) – triggered when a new front end user registers on the website.
+- [activateAccount](activateAccount.md) - triggered when a new front end account is activated.

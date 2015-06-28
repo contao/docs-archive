@@ -44,10 +44,9 @@ public function myGenerateBreadcrumb($arrItems, $objModule)
 
 ### References
 
-- [system/modules/frontend/ModuleBreadcrumb.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/ModuleBreadcrumb.php#L222)
+- [system/modules/core/modules/ModuleBreadcrumb.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/modules/ModuleBreadcrumb.php#L209-L216)
 
 
 ### See also
 
-- [getUserNavigation](getUserNavigation.md) – modify the backend navigation
-
+- [getUserNavigation](getUserNavigation.md) – modify the back end navigation.

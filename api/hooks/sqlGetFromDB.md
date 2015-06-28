@@ -42,10 +42,10 @@ public function mySqlGetFromDB($arrReturn)
 
 ### References
 
-- [system/modules/backend/DbInstaller.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/DbInstaller.php#L418)
+- [system/modules/core/library/Contao/Database/Installer.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Database/Installer.php#L535-L542)
 
 
 ### See also
 
 - [sqlCompileCommands](sqlCompileCommands.md) – triggered when compiling the database update commands.
-- [sqlGetFromFile](sqlGetFromFile.md) – triggered when parsing database.sql files
+- [sqlGetFromFile](sqlGetFromFile.md) – triggered when parsing database.sql files.

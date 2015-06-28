@@ -45,11 +45,11 @@ public function myGetContentElement(Database_Result $objElement, $strBuffer)
 
 ### References
 
-- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L514)
+- [system/modules/core/library/Contao/Controller.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Controller.php#L479-L485)
 
 
 ### See also
 
-- [getArticle](getArticle.md) – tiggered when an article is generated
-- [getFrontendModule](getFrontendModule.md) – triggered when a front end module is generated
-- [getForm](getForm.md) – triggered when a form is generated
+- [getArticle](getArticle.md) – tiggered when an article is generated.
+- [getFrontendModule](getFrontendModule.md) – triggered when a front end module is generated.
+- [getForm](getForm.md) – triggered when a form is generated.

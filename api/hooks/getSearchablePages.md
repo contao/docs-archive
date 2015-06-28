@@ -59,5 +59,5 @@ public function myGetSearchablePages($arrPages, $intRoot=null, $blnSitemap=false
 
 ### References
 
-- [system/modules/backend/Automator.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/Automator.php#L119)
-- [system/modules/backend/RebuildIndex.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/RebuildIndex.php#L82)
+- [system/modules/core/library/Contao/Automator.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Automator.php#L405-L412)
+- [system/modules/core/classes/RebuildIndex.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/classes/RebuildIndex.php#L73-L80)

@@ -15,7 +15,7 @@ set as return value.
 
 2. *Form* `$objForm`
 
-	The form instance.
+    The form instance.
 
 
 ## Return Values
@@ -53,12 +53,12 @@ public function myStoreFormData($arrSet, $objForm)
 
 ### References
 
-- [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L438)
+- [system/modules/core/forms/Form.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/forms/Form.php#L483-L490)
 
 
 ### See also
 
-- [processFormData](processFormData.md) – triggered after a form has been submitted
-- [getForm](getForm.md) – manipulate the generation of the forms
-- [loadFormField](loadFormField.md) – triggered when a form field is loaded
-- [validateFormField](validateFormField.md) – triggered when a form field is submitted
+- [processFormData](processFormData.md) – triggered after a form has been submitted.
+- [getForm](getForm.md) – manipulate the generation of the forms.
+- [loadFormField](loadFormField.md) – triggered when a form field is loaded.
+- [validateFormField](validateFormField.md) – triggered when a form field is submitted.

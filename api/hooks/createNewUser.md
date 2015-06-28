@@ -40,11 +40,11 @@ public function myCreateNewUser($intId, $arrData)
 
 ### References
 
-- [system/modules/registration/ModuleRegistration.php](https://github.com/contao/core/blob/2.11.7/system/modules/registration/ModuleRegistration.php#L451)
+- [system/modules/core/modules/ModuleRegistration.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/modules/ModuleRegistration.php#L439-L446)
 
 
 ### See also
 
-- [activateAccount](activateAccount.md) – triggered when a new front end account is activated
-- [updatePersonalData](updatePersonalData.md) – triggered after a member has updated his personal data
-- [postLogin](postLogin.md) – triggered after a user has logged in
+- [activateAccount](activateAccount.md) – triggered when a new front end account is activated.
+- [updatePersonalData](updatePersonalData.md) – triggered after a member has updated his personal data.
+- [postLogin](postLogin.md) – triggered after a user has logged in.

@@ -54,9 +54,9 @@ public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
 
 ### References
 
-- [system/libraries/Widget.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Widget.php#L807)
+- [system/modules/core/library/Contao/Widget.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Widget.php#L1119-L1132)
 
 
 ### See also
 
-- [replaceInsertTags](replaceInsertTags.md) - triggered when an unknown insert tag is found
+- [replaceInsertTags](replaceInsertTags.md) - triggered when an unknown insert tag is found.

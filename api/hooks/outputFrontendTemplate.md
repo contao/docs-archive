@@ -49,11 +49,11 @@ public function myOutputFrontendTemplate($strBuffer, $strTemplate)
 
 ### References
 
-- [system/modules/frontend/FrontendTemplate.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/FrontendTemplate.php#L122)
+- [system/modules/core/classes/FrontendTemplate.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/classes/FrontendTemplate.php#L84-L91)
 
 
 ### See also
 
-- [parseFrontendTemplate](parseFrontendTemplate.md) - triggered when a front end template is parsed
-- [outputBackendTemplate](outputBackendTemplate.md) - triggered when a back end template is printed to the screen
-- [parseBackendTemplate](parseBackendTemplate.md) - triggered when a back end template is parsed
+- [parseFrontendTemplate](parseFrontendTemplate.md) - triggered when a front end template is parsed.
+- [outputBackendTemplate](outputBackendTemplate.md) - triggered when a back end template is printed to the screen.
+- [parseBackendTemplate](parseBackendTemplate.md) - triggered when a back end template is parsed.

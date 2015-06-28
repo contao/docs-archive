@@ -41,10 +41,10 @@ public function myGetPageIdFromUrl($arrFragments)
 
 ### References
 
-- [system/modules/frontend/Frontend.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Frontend.php#L130)
+- [system/modules/core/classes/Frontend.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/classes/Frontend.php#L236-L242)
 
 
 ### See also
 
-- [getRootPageFromUrl](getRootPageFromUrl.md) – triggered when searching for the current root page
-- [getCacheKey](getCacheKey.md) – triggered when creating a page cache
+- [getRootPageFromUrl](getRootPageFromUrl.md) – triggered when searching for the current root page.
+- [getCacheKey](getCacheKey.md) – triggered when creating a page cache.

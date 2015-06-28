@@ -35,9 +35,9 @@ public function myRemoveOldFeeds()
 
 ### References
 
-- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L3431)
+- [system/modules/core/library/Contao/Automator.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Automator.php#L297-L304)
 
 
 ### See also
 
-- [reviseTable](reviseTable.md) – triggered when Contao removes orphan records from a table
+- [reviseTable](reviseTable.md) – triggered when Contao removes orphan records from a table.

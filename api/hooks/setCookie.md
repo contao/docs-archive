@@ -49,4 +49,4 @@ public function mySetCookie($objCookie)
 
 ### References
 
-- [system/libraries/System.php](https://github.com/contao/core/blob/2.11.7/system/libraries/System.php#L720)
+- [system/modules/core/library/Contao/System.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/System.php#L566-L572)

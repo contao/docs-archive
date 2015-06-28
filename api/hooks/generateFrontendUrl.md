@@ -49,11 +49,11 @@ public function myGenerateFrontendUrl($arrRow, $strParams, $strUrl)
 
 ### References
 
-- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L2669)
+- [system/modules/core/library/Contao/Controller.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Controller.php#L1141-L1147)
 
 
 ### See also
 
-- [getPageIdFromUrl](getPageIdFromUrl.md) - triggered when the URL fragments are evaluated
-- <span class="undocumented">getRootPageFromUrl</span>
-- <span class="undocumented">generateBreadcrumb</span>
+- [getPageIdFromUrl](getPageIdFromUrl.md) - triggered when the URL fragments are evaluated.
+- [getRootPageFromUrl](getRootPageFromUrl.md)
+- [generateBreadcrumb](generateBreadcrumb.md)

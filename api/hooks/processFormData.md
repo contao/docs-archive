@@ -42,11 +42,11 @@ public function myProcessFormData($arrPost, $arrForm, $arrFiles)
 
 ### References
 
-- [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L461)
+- [system/modules/core/forms/Form.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/forms/Form.php#L514-L521)
 
 
 ### See also
 
-- [storeFormData](storeFormData.md) - triggered before a submitted form is stored to the database
-- [loadFormField](loadFormField.md) - triggered when a form field is loaded
-- [validateFormField](validateFormField.md) - triggered when a form field is submitted
+- [storeFormData](storeFormData.md) - triggered before a submitted form is stored to the database.
+- [loadFormField](loadFormField.md) - triggered when a form field is loaded.
+- [validateFormField](validateFormField.md) - triggered when a form field is submitted.

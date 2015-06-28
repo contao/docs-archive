@@ -1,6 +1,9 @@
 # Contao hooks
 
-Hooks work similar to the [callback functions](callbacks.md) of the Data Container Array. You can register one or more functions for a certain event and when the event is triggered, the callback functions are executed. Hooks allow you to add custom functionality to the core.
+Hooks work similar to the [callback functions](callbacks.md) of the Data Container
+Array. You can register one or more functions for a certain event and when the
+event is triggered, the callback functions are executed. Hooks allow you to add
+custom functionality to the core.
 
 
 - [activateAccount](hooks/activateAccount.md)
@@ -13,8 +16,8 @@ Hooks work similar to the [callback functions](callbacks.md) of the Data Contain
 - [compileDefinition](hooks/compileDefinition.md)
 - [createDefinition](hooks/createDefinition.md)
 - [createNewUser](hooks/createNewUser.md)
-- [executePreActions](hooks/executePreActions.md)
 - [executePostActions](hooks/executePostActions.md)
+- [executePreActions](hooks/executePreActions.md)
 - [generateBreadcrumb](hooks/generateBreadcrumb.md)
 - [generateFrontendUrl](hooks/generateFrontendUrl.md)
 - [generatePage](hooks/generatePage.md)
@@ -36,8 +39,8 @@ Hooks work similar to the [callback functions](callbacks.md) of the Data Contain
 - [initializeSystem](hooks/initializeSystem.md)
 - [isAllowedToEditComment](hooks/isAllowedToEditComment.md)
 - [listComments](hooks/listComments.md)
-- [loadFormField](hooks/loadFormField.md)
 - [loadDataContainer](hooks/loadDataContainer.md)
+- [loadFormField](hooks/loadFormField.md)
 - [loadLanguageFile](hooks/loadLanguageFile.md)
 - [outputBackendTemplate](hooks/outputBackendTemplate.md)
 - [outputFrontendTemplate](hooks/outputFrontendTemplate.md)
@@ -64,4 +67,3 @@ Hooks work similar to the [callback functions](callbacks.md) of the Data Contain
 - [storeFormData](hooks/storeFormData.md)
 - [updatePersonalData](hooks/updatePersonalData.md)
 - [validateFormField](hooks/validateFormField.md)
-

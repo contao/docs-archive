@@ -63,9 +63,9 @@ public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFi
 
 ### References
 
-- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L993)
+- [system/modules/core/library/Contao/Image.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Image.php#L477-L490)
 
 
 ### See also
 
-- [`Controller::getImage`](../api/Controller/getImage.md) – Resize an image
+- [`Controller::getImage`](../api/Controller/getImage.md) – Resize an image.

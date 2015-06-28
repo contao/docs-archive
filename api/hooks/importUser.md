@@ -59,11 +59,11 @@ public function myImportUser($strUsername, $strPassword, $strTable)
 
 ### References
 
-- [system/libraries/User.php](https://github.com/contao/core/blob/2.11.7/system/libraries/User.php#L181)
+- [system/modules/core/library/Contao/User.php](https://github.com/contao/core/blob/master/system/modules/core/library/Contao/User.php#L325-L338)
 
 
 ### See also
 
-- [checkCredentials](checkCredentials.md) - triggered when a login attempt fails due to a wrong password
-- [postLogin](postLogin.md) - triggered after a user has logged out
-- [postLogin](postLogin.md) - triggered after a user has logged in
+- [checkCredentials](checkCredentials.md) - triggered when a login attempt fails due to a wrong password.
+- [postLogin](postLogin.md) - triggered after a user has logged out.
+- [postLogin](postLogin.md) - triggered after a user has logged in.

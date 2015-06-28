@@ -39,12 +39,12 @@ public function mySetNewPassword($objUser, $strPassword)
 
 ### References
 
-- [system/modules/frontend/ModulePersonalData.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/ModulePersonalData.php#L224)
-- [system/modules/registration/ModulePassword.php](https://github.com/contao/core/blob/2.11.7/system/modules/registration/ModulePassword.php#L240)
-- [system/modules/backend/dca/tl_member.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/dca/tl_member.php#L424)
+- [system/modules/core/modules/ModulePassword.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/modules/ModulePassword.php#L233-L240)
+- [system/modules/core/modules/ModuleChangePassword.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/modules/ModuleChangePassword.php#L179-L186)
+- [system/modules/core/dca/tl_member.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/dca/tl_member.php#L551-L561)
 
 
 ### See also
 
-- [createNewUser](createNewUser.md) - triggered when a new front end user registers on the website
-- [activateAccount](activateAccount.md) - triggered when a new front end account is activated
+- [createNewUser](createNewUser.md) - triggered when a new front end user registers on the website.
+- [activateAccount](activateAccount.md) - triggered when a new front end account is activated.

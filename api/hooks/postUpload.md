@@ -36,9 +36,9 @@ public function myPostUpload($arrFiles)
 
 ### References
 
-- [system/drivers/DC_Folder.php](https://github.com/contao/core/blob/2.11.7/system/drivers/DC_Folder.php#L735)
+- [system/modules/core/drivers/DC_Folder.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/drivers/DC_Folder.php#L943-L957)
 
 
 ### See also
 
-- [postDownload](postDownload.md) - triggered after a file has been downloaded with the download/downloads content element
+- [postDownload](postDownload.md) - triggered after a file has been downloaded with the download/downloads content element.

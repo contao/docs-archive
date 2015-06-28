@@ -39,9 +39,9 @@ public function myGetSystemMessages()
 
 ### References
 
-- [contao/main.php](https://github.com/contao/core/blob/2.11.7/contao/main.php#L137)
+- [system/modules/core/controllers/BackendMain.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/controllers/BackendMain.php#L153-L172)
 
 
 ### See also
 
-- [getUserNavigation](getUserNavigation.md) – allows to manipulate the back end user navigation
+- [getUserNavigation](getUserNavigation.md) – allows to manipulate the back end user navigation.

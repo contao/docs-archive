@@ -35,10 +35,10 @@ public function myParseTemplate($objTemplate)
 
 ### References
 
-- [system/libraries/Template.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Template.php#L235)
+- [system/modules/core/library/Contao/Template.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Template.php#L241-L248)
 
 
 ### See also
 
-- [parseBackendTemplate](parseBackendTemplate.md) – triggered when a back end template is parsed
-- [parseFrontendTemplate](parseFrontendTemplate.md) – triggered when a front end template is parsed
+- [parseBackendTemplate](parseBackendTemplate.md) – triggered when a back end template is parsed.
+- [parseFrontendTemplate](parseFrontendTemplate.md) – triggered when a front end template is parsed.

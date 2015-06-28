@@ -31,9 +31,9 @@ public function myExecutePostActions($strAction, DataContainer $dc)
 
 ### References
 
-- [system/modules/backend/Ajax.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/Ajax.php#L345)
+- [system/modules/core/classes/Ajax.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/classes/Ajax.php#L421-L428)
 
 
 ### See also
 
-- [executePreActions](executePreActions.md) - triggered on Ajax request that do not require a DCA object
+- [executePreActions](executePreActions.md) - triggered on Ajax request that do not require a DCA object.

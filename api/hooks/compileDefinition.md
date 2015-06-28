@@ -40,9 +40,9 @@ public function myCompileDefinition($arrRow)
 
 ### References
 
-- [system/modules/backend/StyleSheets.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/StyleSheets.php#L1014)
+- [system/modules/core/classes/StyleSheets.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/classes/StyleSheets.php#L939-L951)
 
 
 ### See also
 
-- [createDefinition](createDefinition.md) - triggered when a format definition of a style sheet is imported
+- [createDefinition](createDefinition.md) - triggered when a format definition of a style sheet is imported.

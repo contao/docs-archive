@@ -15,7 +15,7 @@ object as return value.
 
 2. *int* `$intId`
 
-    ID of the tl\_form\_field record.
+    ID of the `tl_form_field` record.
 
 3. *array* $arrForm
 
@@ -52,10 +52,10 @@ public function myValidateFormField(Widget $objWidget, $intId, $arrForm)
 
 ### References
 
-- [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L172)
+- [system/modules/core/forms/Form.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/forms/Form.php#L201-L208)
 
 
 ### See also
 
-- [loadFormField](loadFormField.md) - triggered when a form field is loaded
-- [processFormData](processFormData.md) - triggered after a form has been submitted
+- [loadFormField](loadFormField.md) - triggered when a form field is loaded.
+- [processFormData](processFormData.md) - triggered after a form has been submitted.

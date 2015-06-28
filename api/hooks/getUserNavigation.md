@@ -34,10 +34,10 @@ public function myGetUserNavigation($arrModules, $blnShowAll)
     // Add custom navigation item to the Contao website
     $arrModules['system']['modules']['contao'] = array
     (
-        'label'		=> 'Contao Homepage',
+        'label'		=> 'Contao homepage',
         'title'		=> 'Visit the Contao CMS website',
         'class'		=> 'navigation contao',
-        'href'		=> 'http://www.contao.org/',
+        'href'		=> 'https://contao.org/en/',
     );
 
     return $arrModules;
@@ -50,9 +50,9 @@ public function myGetUserNavigation($arrModules, $blnShowAll)
 
 ### References
 
-- [system/modules/backend/BackendUser.php](https://github.com/contao/core/blob/2.11.7/system/modules/backend/BackendUser.php#L468)
+- [system/modules/core/classes/BackendUser.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/classes/BackendUser.php#L577-L584)
 
 
 ### See also
 
-- [getSystemMessages](getSystemMessages.md) – allows to add additional messages to the back end home screen
+- [getSystemMessages](getSystemMessages.md) – allows to add additional messages to the back end home screen.

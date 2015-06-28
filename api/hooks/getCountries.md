@@ -68,9 +68,9 @@ can still be done by using a reference on the countries array.
 
 ### References
 
-- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L835)
+- [system/modules/core/library/Contao/System.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/System.php#L403-L409)
 
 
 ### See also
 
-- [loadLanguageFile](loadLanguageFile.md) – triggered when a language file is loaded
+- [loadLanguageFile](loadLanguageFile.md) – triggered when a language file is loaded.

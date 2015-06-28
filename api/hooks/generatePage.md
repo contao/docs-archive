@@ -43,4 +43,4 @@ public function myGeneratePage(Database_Result $objPage, Database_Result $objLay
 
 ### References
 
-- [system/modules/frontend/PageRegular.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/PageRegular.php#L110)
+- [system/modules/core/pages/PageRegular.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/pages/PageRegular.php#L151-L158)

@@ -27,4 +27,4 @@ public function myInitializeSystem()
 
 ### References
 
-- [system/initialize.php](https://github.com/contao/core/blob/3.1.0/system/initialize.php#L230)
+- [system/initialize.php](https://github.com/contao/core/blob/3.5.0/system/initialize.php#L239-L245)

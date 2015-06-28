@@ -39,12 +39,12 @@ public function myActivateAccount(Database_Result $objUser, ModuleRegistration $
 
 ### References
 
-- [system/modules/registration/ModuleRegistration.php](https://github.com/contao/core/blob/2.11.7/system/modules/registration/ModuleRegistration.php#L496)
+- [system/modules/core/modules/ModuleRegistration.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/modules/ModuleRegistration.php#L499-L506)
 
 
 ### See also
 
-- [createNewUser](createNewUser.md) - triggered when a new front end user registers
-- [closeAccount](closeAccount.md) - triggered when a user closes his account
-- [postLogin](postLogin.md) - triggered after a user logged in
-- [postLogout](postLogout.md) - triggered after a user logged out
+- [createNewUser](createNewUser.md) - triggered when a new front end user registers.
+- [closeAccount](closeAccount.md) - triggered when a user closes his account.
+- [postLogin](postLogin.md) - triggered after a user logged in.
+- [postLogout](postLogout.md) - triggered after a user logged out.

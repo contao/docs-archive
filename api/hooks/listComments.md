@@ -46,10 +46,10 @@ public function myListComments($arrRow)
 
 ### References
 
-- [system/modules/comments/dca/tl_comments.php](https://github.com/contao/core/blob/2.11.7/system/modules/comments/dca/tl_comments.php#L488)
+- [system/modules/comments/dca/tl_comments.php](https://github.com/contao/core/blob/3.5.0/system/modules/comments/dca/tl_comments.php#L508-L520)
 
 
 ### See also
 
-- [addComment](addComment.md) - triggered when a comment is added
-- [isAllowedToEditComment](isAllowedToEditComment.md) - triggered to determine permission on a comment in the back end
+- [addComment](addComment.md) - triggered when a comment is added.
+- [isAllowedToEditComment](isAllowedToEditComment.md) - triggered to determine permission on a comment in the back end.

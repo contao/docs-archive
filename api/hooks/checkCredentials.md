@@ -54,11 +54,11 @@ public function myCheckCredentials($strUsername, $strPassword, User $objUser)
 
 ### References
 
-- [system/library/User.php](https://github.com/contao/core/blob/2.11.7/system/libraries/User.php#L261)
+- [system/modules/core/library/Contao/User.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/User.php#L405-L418)
 
 
 ### See also
 
-- [importUser](importUser.md) - triggered when username cannot be found in the database
-- [postLogin](postLogin.md) - triggered after a user has logged in
-- [postLogout](postLogout.md) - triggered after a user has logged out
+- [importUser](importUser.md) - triggered when username cannot be found in the database.
+- [postLogin](postLogin.md) - triggered after a user has logged in.
+- [postLogout](postLogout.md) - triggered after a user has logged out.

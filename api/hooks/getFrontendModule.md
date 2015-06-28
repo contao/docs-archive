@@ -10,11 +10,11 @@ modules.
 
 1. *Database_Result* `$objRow`
 
-    Database result of the frontend module.
+    Database result of the front end module.
 
 2. *string* `$strBuffer`
 
-    The generated frontend module buffer.
+    The generated front end module buffer.
 
 
 
@@ -45,12 +45,12 @@ public function myGetFrontendModule($objRow, $strBuffer)
 
 ### References
 
-- [system/libraries/Controller.php](https://github.com/contao/core/blob/2.11.7/system/libraries/Controller.php#L361)
+- [system/modules/core/library/Contao/Controller.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Controller.php#L316-L322)
 
 
 ### See also
 
-- [getContentElement](getContentElement.md) – triggered when a content element is generated
-- [getArticle](getArticle.md) – tiggered when an article is generated
-- [getForm](getForm.md) – triggered when a form is generated
+- [getContentElement](getContentElement.md) – triggered when a content element is generated.
+- [getArticle](getArticle.md) – tiggered when an article is generated.
+- [getForm](getForm.md) – triggered when a form is generated.
 

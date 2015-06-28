@@ -42,9 +42,9 @@ public function myParseArticles($objTemplate, $arrRow, $objModule)
 
 ### References
 
-- [system/modules/news/ModuleNews.php](https://github.com/contao/core/blob/2.11.7/system/modules/news/ModuleNews.php#L206)
+- [system/modules/news/modules/ModuleNews.php](https://github.com/contao/core/blob/3.5.0/system/modules/news/modules/ModuleNews.php#L202-L209)
 
 
 ### See also
 
-- [getAllEvents](getAllEvents.md) – allows you to modify the result sets of calendar and event modules
+- [getAllEvents](getAllEvents.md) – allows you to modify the result sets of calendar and event modules.

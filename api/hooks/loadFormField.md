@@ -50,10 +50,10 @@ public function myLoadFormField(Widget $objWidget, $strForm, $arrForm)
 
 ### References
 
-- [system/modules/frontend/Form.php](https://github.com/contao/core/blob/2.11.7/system/modules/frontend/Form.php#L157)
+- [system/modules/core/forms/Form.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/forms/Form.php#L186-L193)
 
 
 ### See also
 
-- [validateFormField](validateFormField.md) - triggered when a form field is submitted
-- [processFormData](processFormData.md) - triggered after a form has been submitted
+- [validateFormField](validateFormField.md) - triggered when a form field is submitted.
+- [processFormData](processFormData.md) - triggered after a form has been submitted.

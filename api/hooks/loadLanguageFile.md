@@ -40,9 +40,9 @@ public function myLoadLanguageFile($strName, $strLanguage)
 
 ### References
 
-- [system/libraries/System.php](https://github.com/contao/core/blob/2.11.7/system/libraries/System.php#L427)
+- [system/modules/core/library/Contao/System.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/System.php#L336-L342)
 
 
 ### See also
 
-- [loadDataContainer](loadDataContainer.md) - triggered when a DCA file is loaded
+- [loadDataContainer](loadDataContainer.md) - triggered when a DCA file is loaded.
