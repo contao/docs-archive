@@ -51,4 +51,4 @@ public function myGetPageStatusIcon(Database_Result $objPage, $image)
 
 ### Reference
 
-- [system/libraries/Controller.php](https://github.com/contao/core/blob/master/system/modules/core/library/Contao/Controller.php#L608)
+- [system/libraries/Controller.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Controller.php#L608)
