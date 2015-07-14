@@ -44,4 +44,4 @@ public function myCompileArticle($objTemplate, $arrData, $objModule)
 
 ### Reference
 
-- [system/modules/ModuleArticle.php](https://github.com/contao/core/blob/master/system/modules/core/modules/ModuleArticle.php#L267)
+- [system/modules/ModuleArticle.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/modules/ModuleArticle.php#L267)
