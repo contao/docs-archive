@@ -39,6 +39,9 @@ public function myGetPageStatusIcon(Database_Result $objPage, $image)
     {
         return 'path/to/custom_icon.gif';
     }
+
+    return $image;
+
 }
 ```
 
