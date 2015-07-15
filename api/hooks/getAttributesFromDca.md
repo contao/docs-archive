@@ -1,10 +1,10 @@
 # getAttributesFromDca
 
-The `getAttributesFromDca` hook is triggered when attributes of a Widget are
-extracted from a Data Container Array. It passes the attributes and the DCA object
-as arguments and expects the (modified) form attributes as return value.
+The `getAttributesFromDca` hook is triggered when attributes of a widget are
+extracted from a Data Container array. It passes the attributes and the DCA object
+as arguments and expects the (modified) widget attributes as return value.
 
-**Tag** It is available from version 3.2.0.
+> **Tag** It is available from version 3.2.0.
 
 
 ## Parameters
@@ -21,7 +21,7 @@ as arguments and expects the (modified) form attributes as return value.
 
 ## Return Values
 
-The return value should be the `$arrAttributes` array modified to your the needs.
+The return value should be the `$arrAttributes` array modified to your needs.
 
 
 ## Example

@@ -4,7 +4,7 @@ The `compileFormFields` hook is triggered when the fields of a form are compiled
 It passes the form fields, the ID of the form and the form object as arguments
 and expects the modified form fields as return value.
 
-**Tag** It is available from version 3.2.0.
+> **Tag** It is available from version 3.2.0.
 
 
 ## Parameters
@@ -24,7 +24,7 @@ and expects the modified form fields as return value.
 
 ## Return Values 
 
-The return value should be the `$arrFields` array modified to your the needs.
+The return value should be the `$arrFields` array modified to your needs.
  
 
 ## Example
