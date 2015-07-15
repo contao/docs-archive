@@ -4,7 +4,7 @@ The `indexPage` hook is triggered when a page's content is added to the search i
 It passes the content, the data and the data collected for indexing so far as arguments 
 and does not expect a return value.
 
-> **Tag** It is available from version 3.0.0.
+> **Tag** Available from version 3.0.0.
 
 
 ## Parameters
@@ -46,4 +46,7 @@ public function myIndexPage($strContent, $arrData, $arrSet)
 ### References
 
 - [system/modules/core/library/Contao/Search.php](https://github.com/contao/core/blob/support/3.2/system/modules/core/library/Contao/Search.php#L131)
-- [FrontendTemplate]: https://github.com/contao/core/blob/support/3.2/system/modules/core/classes/FrontendTemplate.php#L185-L196
+
+
+
+[FrontendTemplate]: https://github.com/contao/core/blob/support/3.2/system/modules/core/classes/FrontendTemplate.php#L185-L196
