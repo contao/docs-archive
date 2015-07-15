@@ -31,6 +31,7 @@ custom functionality to the core.
 - [getFrontendModule](hooks/getFrontendModule.md)
 - [getImage](hooks/getImage.md)
 - [getPageIdFromUrl](hooks/getPageIdFromUrl.md)
+- [getPageStatusIcon](hooks/getPageStatusIcon.md)
 - [getRootPageFromUrl](hooks/getRootPageFromUrl.md)
 - [getSearchablePages](hooks/getSearchablePages.md)
 - [getSystemMessages](hooks/getSystemMessages.md)
