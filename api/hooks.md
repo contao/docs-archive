@@ -13,6 +13,7 @@ custom functionality to the core.
 - [addLogEntry](hooks/addLogEntry.md)
 - [checkCredentials](hooks/checkCredentials.md)
 - [closeAccount](hooks/closeAccount.md)
+- [compileArticle](hooks/compileArticle.md)
 - [compileDefinition](hooks/compileDefinition.md)
 - [createDefinition](hooks/createDefinition.md)
 - [createNewUser](hooks/createNewUser.md)
