@@ -27,7 +27,8 @@
           }
       },
       "disqus": {
-          "shortName": "contaodocs"
+          "shortName": "contaodocs",
+          "useIdentifier": true
       },
       "piwik": {
           "URL": "association.contao.org/piwik/",
