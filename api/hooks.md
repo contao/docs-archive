@@ -71,6 +71,7 @@ custom functionality to the core.
 - [setNewPassword](hooks/setNewPassword.md)
 - [sqlCompileCommands](hooks/sqlCompileCommands.md)
 - [sqlGetFromDB](hooks/sqlGetFromDB.md)
+- [sqlGetFromDca](hooks/sqlGetFromDca.md)
 - [sqlGetFromFile](hooks/sqlGetFromFile.md)
 - [storeFormData](hooks/storeFormData.md)
 - [updatePersonalData](hooks/updatePersonalData.md)

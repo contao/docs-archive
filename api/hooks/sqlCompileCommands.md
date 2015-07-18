@@ -47,4 +47,5 @@ public function mySqlCompileCommands($arrReturn)
 ### See also
 
 - [sqlGetFromDB](sqlGetFromDB.md) … triggered when parsing the current database definition.
+- [sqlGetFromDca](sqlGetFromDca.md) … triggered when database definitions in DCA files are evaluated.
 - [sqlGetFromFile](sqlGetFromFile.md) – triggered when parsing database.sql files.
