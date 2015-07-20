@@ -3,13 +3,13 @@
 The `sqlGetFromDca` hook is triggered when sql definitions in DCA files are evaluated. It passes
 the generated SQL definition and expects the same as return value.
 
-> **Tag** Available from version 3.5.0-beta1.
+> **Tag** Available from version 3.2.0.
 
 
 
 ## Parameters
 
-1. *array* `$arrReturn`
+1. *array* `$arrSql`
 
     The parsed SQL definition.
 
@@ -17,7 +17,7 @@ the generated SQL definition and expects the same as return value.
 
 ## Return Values
 
-Return `$arrReturn` after adding your custom definitions.
+Return `$arrSql` after adding your custom definitions.
 
 
 ## Example
@@ -29,11 +29,11 @@ Return `$arrReturn` after adding your custom definitions.
 $GLOBALS['TL_HOOKS']['sqlGetFromDca'][] = array('MyClass', 'mySqlGetFromDca');
 
 // MyClass.php
-public function mySqlGetFromDca($arrReturn)
+public function mySqlGetFromDca($arrSql)
 {
-    // Modify the result
+    // Modify the array of SQL statements
 
-    return $arrReturn;
+    return $arrSql;
 }
 ```
 

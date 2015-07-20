@@ -9,7 +9,7 @@ the generated SQL definition and expects the same as return value.
 
 ## Parameters
 
-1. *array* `$arrReturn`
+1. *array* `$arrSql`
 
     The parsed SQL definition.
 
@@ -17,7 +17,7 @@ the generated SQL definition and expects the same as return value.
 
 ## Return Values
 
-Return `$arrReturn` after adding your custom definitions.
+Return `$arrSql` after adding your custom definitions.
 
 
 ## Example
@@ -29,11 +29,11 @@ Return `$arrReturn` after adding your custom definitions.
 $GLOBALS['TL_HOOKS']['sqlGetFromFile'][] = array('MyClass', 'mySqlGetFromFile');
 
 // MyClass.php
-public function mySqlGetFromFile($arrReturn)
+public function mySqlGetFromFile($arrSql)
 {
-    // Modify the result
+    // Modify the array of SQL statements
 
-    return $arrReturn;
+    return $arrSql;
 }
 ```
 

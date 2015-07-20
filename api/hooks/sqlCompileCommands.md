@@ -8,7 +8,7 @@ commands. It passes the array of changes and expects the same as return value.
 
 ## Parameters
 
-1. *array* `$arrReturn`
+1. *array* `$arrSql`
 
     Array of changes that should be applied to the database.
 
@@ -27,11 +27,11 @@ Return the array of changes that should be applied to the database.
 $GLOBALS['TL_HOOKS']['sqlCompileCommands'][] = array('MyClass', 'mySqlCompileCommands');
 
 // MyClass.php
-public function mySqlCompileCommands($arrReturn)
+public function mySqlCompileCommands($arrSql)
 {
-    // Modify the result
+    // Modify the array of SQL statements
 
-    return $arrReturn;
+    return $arrSql;
 }
 ```
 
