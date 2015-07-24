@@ -501,6 +501,30 @@ public function myGetSearchablePages($arrPages, $intRoot)
 }
 ```
 
+### getSystemMessages
+
+Der "getSystemMessages"-Hook erlaubt zusätzliche Informationen auf der "Welcome-Page" anzuzeigen. Es werden keine Parameter benötigt. Als Rückgabewert wird der Text inkl. HTML angegeben. Hinzugefügt in Version 2.11.0
+
+```php
+<?php
+
+// config.php
+$GLOBALS['TL_HOOKS']['getSystemMessages'][] = array('MyClass', 'myGetSystemMessages');
+
+// MyClass.php
+public function myGetSystemMessages()
+{
+    $this->import('BackendUser', 'User');
+
+    // Display a warning if the system admin's email is not set
+    if ($GLOBALS['TL_ADMIN_EMAIL'] == '')
+    {
+        return '<p class="tl_error">Please add your email address to system settings.';
+    }
+
+    return '';
+}
+```
 
 ### initializeSystem
 
