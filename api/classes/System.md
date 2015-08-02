@@ -7,7 +7,7 @@ Provide methods to manage system.
 
 ### Description ###
 
-**Definition:** `abstract class System extends System`
+**Definition:** `abstract class System`
 
 **Located in:** *system/libraries/System*
 
@@ -17,13 +17,9 @@ Provide methods to manage system.
 ### Methods ###
 
 - *protected* [`import`](System/import.md) – Import a library and make it accessible by its name or an optional key
-- *protected* [`log`](System/log.md) – Add a log entry
 - *protected* [`addToUrl`](System/addToUrl.md) – Add a request string to the current URI string
-- *protected* [`reload`](System/reload.md) – Reload the current page
-- *protected* [`redirect`](System/redirect.md) – Redirect to another page
 - *protected* [`getReferer`](System/getReferer.md) – Return the current referer URL and optionally encode ampersands
 - *protected* [`getIndexFreeRequest`](System/getIndexFreeRequest.md) – Return the request string or an empty string if the request string is "index.php" and optionally encode ampersands
-- *protected* [`loadLanguageFile`](System/loadLanguageFile.md) – Load a set of language files
 - *protected* [`parseDate`](System/parseDate.md) – Parse a date format string and translate textual representations
 - *protected* [`addErrorMessage`](System/addErrorMessage.md) – Add an error message
 - *protected* [`addConfirmationMessage`](System/addConfirmationMessage.md) – Add a confirmation message

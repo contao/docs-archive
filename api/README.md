@@ -1,29 +1,41 @@
-# Contao API
+# Contao API Reference
 
-The Contao API (Application Programming Interface) consist of several parts:
+Contao development has started back in 2005. Over the years, a lot of features
+were added to the framework.
 
-- [Callbacks](callbacks.md)
-- [Hooks](hooks.md)
-- [Classes](classes)
+> **Info** Be aware that this reference guide always describes the latest Contao version.
+> The differences are described in the respective sections of the reference guide.
+
+The Contao API (Application Programming Interface) Reference is split into different sections.
+
+ 1. #### [Data Configuration Array](dca/README.md)
+    The DCA is one of the most important features in Contao. The backend CRUD functinality
+    is described in a PHP array structure. The DCA is responsible for a unified look in
+    the backend, and one of the first points where you can customize the system.
+
+ 2. #### [Extending Contao](extensions/README.md)
+    This section describes how to add functionality like *content elements*,
+    *frontend modules* or custom *form fields* to the system. Another important
+     parts are *hooks*, Contao's own event system to extend core functionality.
+
+ 3. #### [Frontend Output](frontend/README.md)
+    Detailed information how to inject custom code to the frontend output, without
+    modifying the `fe_page` template.
+
+ 4. #### [Advanced Configuration](advanced/README.md)
+    In-depth list of configuration options for the advanced framework users.
+
+ 5. #### [Constants](constants/README.md)
+    Contao 3 uses a lot of PHP constants to represent state.
+
+ 6. #### [Functions and static methods](functions/README.md)
+    Descriptions of the available functions and static methods.
+
+ 7. #### [Classes and Singletons](classes/README.md)
+    A reference guide to the framework classes.
 
 
-## Contributing
 
-<TODO>
-
-
-## Licensing
-
-The Contao API documentation is licensed under a [Creative Commons Attribution
-3.0 License][1] license (CC BY-NC-SA 3.0). If you want to redistribute a modified
-or unmodified version of the manual, you can do so under the license terms.
-
-If you contribute to the API documentation, e.g. by creating pull requests, you
-grant us full usage rights of any content you create or upload. You also
-ensure that your content does not violate any third-party rights.
-
-We are not claiming exclusive usage rights, therefore you are free to use your
-contributed content (e.g. texts or images) in any other project as well.
+{% include "../LICENSE.md" %}
 
 
-[1]: http://creativecommons.org/licenses/by-nc-sa/3.0/

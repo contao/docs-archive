@@ -1,0 +1,29 @@
+{
+    "gitbook": "2.x.x",
+    "plugins": [
+        "richquotes",
+        "edit-link",
+        "anchors",
+        "piwik"
+    ],
+    "links": {
+        "sidebar": {
+            "Contao Homepage": "https://contao.org",
+            "Contao Documentation": "https://docs.contao.org"
+        }
+    },
+    "pluginsConfig": {
+        "edit-link": {
+            "base": "https://github.com/contao/docs/edit/master/api",
+            "label": {
+                "en": "Edit This Page",
+                "de": "Seite bearbeiten",
+                "fr": "Modifier cette page"
+            }
+        },
+        "piwik": {
+            "URL": "association.contao.org/piwik/",
+            "siteId": 3
+        }
+    }
+}
