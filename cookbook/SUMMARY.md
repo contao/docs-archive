@@ -9,6 +9,12 @@
     * [Models](de/Models.md)
     * [Die Toggle-Funktion in eigenen Erweiterungen nutzen](de/Toggle-Funktion-in-eigenen-Erweiterungen.md)
 * English
+    * [Customizing Contao](en/customizing-contao/README.md)
+        * [Bypass the internal cache](en/customizing-contao/bypass-the-internal-cache.md)
+        * [Custom configurations](en/customizing-contao/custom-configurations.md)
+        * [Adding custom fields](en/customizing-contao/adding-custom-fields.md)
+        * [Customizing TinyMCE](en/customizing-contao/customizing-tinymce.md)
+        * [Overriding class methods](en/customizing-contao/overriding-class-methods.md)
     * [Cron jobs in Contao (Poor-Man-Cron)](en/Cron-jobs-in-Contao.md)
     * [Using content elements](en/Using-Content-Elements.md)
     * Create a custom Contao module
