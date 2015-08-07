@@ -34,5 +34,3 @@
     * [Users and groups](05-system-administration/users-and-groups.md)
     * [Extensions](05-system-administration/extensions.md)
     * [Maintenance](05-system-administration/maintenance.md)
-* [Contao development](09-contao-development/README.md)
-    * [Creating a new issue](09-contao-development/creating-a-new-issue.md)

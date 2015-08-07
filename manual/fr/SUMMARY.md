@@ -34,5 +34,3 @@
     * [Utilisateurs et groupes d'utilisateurs](05-administration-du-systeme/utilisateurs-et-groupes-utilisateurs.md)
     * [Extensions](05-administration-du-systeme/extensions.md)
     * [Maintenance](05-administration-du-systeme/maintenance.md)
-* [Développement de Contao](09-developpement-de-contao/README.md)
-    * [Création d'un nouveau ticket](09-developpement-de-contao/creation-nouveau-ticket.md)

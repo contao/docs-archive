@@ -34,5 +34,3 @@
     * [Benutzer und Gruppen](05-systemadministration/benutzer-und-gruppen.md)
     * [Erweiterungen](05-systemadministration/erweiterungen.md)
     * [Systemwartung](05-systemadministration/systemwartung.md)
-* [Contao-Entwicklungsprozess](09-contao-entwicklungsprozess/README.md)
-    * [Tickets erstellen](09-contao-entwicklungsprozess/tickets-erstellen.md)
