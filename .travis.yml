@@ -14,8 +14,6 @@ install:
   - npm install gitbook-cli -g
   - pip install html5validator
   - gitbook install ./manual
-  - rm -rf manual/node_modules/gitbook-plugin-disqus
-  - git clone -b feature/identifier https://github.com/aschempp/gitbook-plugin-disqus.git manual/node_modules/gitbook-plugin-disqus
   - gitbook install ./cookbook
   - gitbook install ./api
   - gitbook install ./contao4-migration
