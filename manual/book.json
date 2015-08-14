@@ -16,7 +16,7 @@
   },
   "pluginsConfig": {
       "edit-link": {
-          "base": "https://github.com/contao/docs/edit/3.2/manual",
+          "base": "https://github.com/contao/docs/edit/3.5/manual",
           "label": {
               "en": "Edit This Page",
               "de": "Seite bearbeiten",
