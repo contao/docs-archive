@@ -30,16 +30,14 @@ The Live Update includes the following features:
 
 99% of all Live Update issues are caused by wrong file permissions. Contao
 requires write permissions to manage files and folders, therefore if the Live
-Update does not work properly, check your server configuration and make sure to
-set up the Safe Mode Hack **as described in this user guide**!
+Update does not work properly, check your server configuration!
 
 
 #### How to get support
 
 If you are having problems activating your Live Update ID or receiving the
 update archive, please contact the [iNet Robots support][3]. If you are having
-problems configuring the Safe Mode Hack or using Contao, please choose a support
-option on the [support page][4].
+problems using Contao, please choose a support option on the [support page][4].
 
 
 [1]: http://www.inetrobots.com

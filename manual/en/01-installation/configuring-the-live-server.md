@@ -21,9 +21,9 @@ Contao has been tested successfully with all major browsers like Firefox
 
 Download the Contao Check to find out whether your server meets the Contao
 system requirements. The script will check whether you can use the Extension
-Repository and the Live Update and whether you have to use the Safe Mode Hack or
-not. Depending on your system configuration, you can set up a new Contao
-installation with the web installer or validate an existing installation.
+Repository and the Live Update. Depending on your system configuration, you
+can set up a new Contao installation with the web installer or validate an
+existing installation.
 
 ![](images/contao-check.jpg)
 
