@@ -151,7 +151,7 @@ The output of the `image.html5` template will be:
 
 ### Twig
 
-Twig is a template engine includes in the Symfony framework. It allows you to
+Twig is a template engine included in the Symfony framework. It allows you to
 perform what was described in the two previous chapters and much more but with
 a slightly different syntax. You can learn how Twig works by referring to the
 [official website][2].
