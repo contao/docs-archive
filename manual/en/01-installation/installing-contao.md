@@ -10,9 +10,12 @@ If you have SSH access, you can download and extract the archive with the
 following commands:
 
 ```bash
-curl -L http://download.contao.org/4.0.2 | tar -xzp
+curl -L http://download.contao.org | tar -xzp
 ```
 
+> **Information** The URL currently refers to the latest 3.x.x version of Contao.
+Therefore, you must specify the desired version by adding e.g. "/4.0.2" after the
+URL. Example: curl -L http://download.contao.org/4.0.2 | tar -xzp
 
 ### The Contao install tool
 
