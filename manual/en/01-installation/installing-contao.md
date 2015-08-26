@@ -64,17 +64,5 @@ process is completed. The link in the lower right corner will take you to the
 administration area.
 
 
-### Using search engine friendly URLs
-
-If you are running an Apache server and are allowed to use mod_rewrite, you can
-make Contao generate search engine friendly URLs that look like static HTML
-documents. A set of default rewrite rules is stored in the `.htaccess.default`
-file in the Contao directory. Rename this file to `.htaccess` so the Apache
-server can handle it and then log into the back end and navigate to the system
-settings. Select "Rewrite URLs" in the "Front end configuration" section and
-save your changes. Now Contao generates static URLs like `home.html` instead of
-`index.php?id=12`.
-
-
 [1]: https://contao.org/en/download.html
 [2]: http://www.winscp.net/
