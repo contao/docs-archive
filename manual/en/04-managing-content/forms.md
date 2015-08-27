@@ -62,8 +62,7 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 <tr>
   <td>Fieldset</td>
   <td>-</td>
-  <td>A container for form fields with an optional legend
-  (only available for tableless forms).</td>
+  <td>A container for form fields with an optional legend.</td>
 </tr>
 <tr>
   <td>Text field</td>
