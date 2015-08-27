@@ -14,6 +14,56 @@ curl -L http://download.contao.org | tar -xzp
 ```
 
 
+### Installing with Composer
+
+You can also install Contao with Composer using the [contao/standard-edition][6]
+repository.
+
+```bash
+php composer.phar create-project contao/standard-edition \<target\> 4.0.2
+```
+
+You have to replace the `<target>` parameter with a path to a folder where the
+Contao files will be created. If the target folder does not exist, it will be
+created automatically.
+
+First of all, before running this command, you must [install Composer][7]. It
+consists of a single file named `composer.phar`. This file must be in the same
+place where is the target folder.
+
+During installation in your command-line interface, you must assign values to
+a number of parameters:
+
+```bash
+Some parameters are missing. Please provide them.
+database_host (localhost):
+database_port (3306):
+database_user (null):
+database_password (null):
+database_name (null):
+mailer_transport (mail):
+mailer_host (127.0.0.1):
+mailer_user (null):
+mailer_password (null):
+mailer_port (25):
+mailer_encryption (null):
+prepend_locale (false):
+secret (ThisTokenIsNotSoSecretChangeIt):
+```
+
+Default values are listed in parentheses. All these data will be included in the
+configuration file `app/config/parameters.yml`.
+
+The `secret` parameter allows you to create a key that will be used against
+[CSRF][8] attacks. It is very important to take time to create a strong key. As
+described in the Symfony documentation:
+
+> **Information** Its value should be a series of characters, numbers and symbols
+chosen randomly and the recommended length is around 32 characters.
+
+You can find more information about this configuration on the [official website][9].
+
+
 ### The Contao install tool
 
 To open the Contao install tool, simply add `/contao/install.php` to the URL of
@@ -100,3 +150,7 @@ save your changes. Now Contao generates static URLs like `home.html` instead of
 [3]: https://contao.org/en/extension-list/view/official_demo.en.html
 [4]: https://contao.org/en/extension-list/view/music_academy.en.html
 [5]: ../05-system-administration/extensions.md#extension-catalog
+[6]: https://github.com/contao/standard-edition
+[7]: https://getcomposer.org/download/
+[8]: https://en.wikipedia.org/wiki/Cross-site_request_forgery
+[9]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
