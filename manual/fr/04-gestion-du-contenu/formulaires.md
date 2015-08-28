@@ -68,8 +68,7 @@ Contao :
 <tr>
   <td>Fieldset</td>
   <td>-</td>
-  <td>Un conteneur pour les champs avec une légende en option (uniquement
-  disponible pour les formulaires sans tableau).</td>
+  <td>Un conteneur pour les champs avec une légende en option.</td>
 </tr>
 <tr>
   <td>Champ texte</td>
