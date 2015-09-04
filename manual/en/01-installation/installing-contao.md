@@ -20,7 +20,7 @@ You can also install Contao with Composer using the [contao/standard-edition][6]
 repository.
 
 ```bash
-php composer.phar create-project contao/standard-edition <target> 4.0.2
+php composer.phar create-project contao/standard-edition <target>
 ```
 
 You have to replace the `<target>` parameter with a path to a folder where the
@@ -61,7 +61,8 @@ described in the Symfony documentation:
 > **Information** Its value should be a series of characters, numbers and symbols
 chosen randomly and the recommended length is around 32 characters.
 
-You can find more information about this configuration on the [official website][9].
+You can find more information about this configuration on the
+[official Symfony website][9].
 
 
 ### The Contao install tool
