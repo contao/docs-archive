@@ -20,7 +20,7 @@ You can also install Contao with Composer using the [contao/standard-edition][6]
 repository.
 
 ```bash
-php composer.phar create-project contao/standard-edition &lt;target&gt; 4.0.2
+php composer.phar create-project contao/standard-edition <target> 4.0.2
 ```
 
 You have to replace the `<target>` parameter with a path to a folder where the
