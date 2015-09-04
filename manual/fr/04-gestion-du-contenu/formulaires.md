@@ -51,11 +51,6 @@ Contao :
   <th>Description</th>
 </tr>
 <tr>
-  <td>Titre</td>
-  <td>headline</td>
-  <td>Champ personnalisé pour insérer un titre de section.</td>
-</tr>
-<tr>
   <td>Explication</td>
   <td>explanation</td>
   <td>Champ personnalisé pour insérer un texte d'explication.</td>

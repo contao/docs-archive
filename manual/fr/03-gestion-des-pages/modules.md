@@ -46,7 +46,7 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 </tr>
 <tr>
   <td>Pagination d'articles</td>
-  <td>mod_article_nav</td>
+  <td>mod_articlenav</td>
   <td>Génère une pagination pour naviguer dans les articles.</td>
 </tr>
 <tr>
@@ -194,12 +194,12 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 </tr>
 <tr>
   <td>Liste d'articles</td>
-  <td>mod_article_list</td>
+  <td>mod_articlelist</td>
   <td>Génère une liste d'articles contenu dans une zone particulière.</td>
 </tr>
 <tr>
   <td>Image aléatoire</td>
-  <td>mod_random_image</td>
+  <td>mod_randomImage</td>
   <td>Ajoute une image aléatoire dans une page.</td>
 </tr>
 <tr>
@@ -209,7 +209,7 @@ choisissez "Thèmes" -> "modules front office" dans le menu de navigation.
 </tr>
 <tr>
   <td>Lecteur de flux RSS</td>
-  <td>mod_rss_reader</td>
+  <td>mod_rssReader</td>
   <td>Ajoute un flux RSS à la page.</td>
 </tr>
 </table>

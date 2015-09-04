@@ -16,20 +16,29 @@ et/ou par une version particulière d'Internet Explorer, dans le cas où vous av
 besoin de fixer un de ses nombreux bogues. Faites attention à l'ordre des
 définitions de formatage, car celles qui suivent, remplacent les précédentes.
 
-```css
-/* Définir la valeur générale d'abord */
-.mod_search {
-    margin:24px;
+
+### Classes CSS des éléments inclus
+
+Si un élément est inclus dans un autre élément, les classes CSS sont fusionnées
+au lieu d'être surchargées. Par exemple, si l'élément de contenu A a la classe
+CSS `elemA` et inclut un module front office avec la classe CSS `elemB`, les
+deux classes CSS seront appliquées (`class="elemA elemB"`).
+
+Voici comment sélectionner les éléments séparément :
+
+```CSS
+.elemA {
+    /* Élément de contenu seulement */
 }
 
-/* Puis la remplacer pour IE7 */
-*:first-child+html .mod_search {
-    margin:18px;
+.elemB {
+    /* Élément de contenu et module front office */
+}
+
+.elemB:not(.elemA) {
+    /* Module front office seulement */
 }
 ```
-
-Si l'ordre est inversé, la valeur générale l'emporterait sur la marge spécifique
-à Internet Explorer.
 
 
 [1]: ../04-gestion-du-contenu/articles.md#articles

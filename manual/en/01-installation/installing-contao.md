@@ -17,6 +17,7 @@ curl -L http://download.contao.org | tar -xzp
 Therefore, you must specify the desired version by adding e.g. "/4.0.2" after the
 URL. Example: curl -L http://download.contao.org/4.0.2 | tar -xzp
 
+
 ### The Contao install tool
 
 To open the Contao install tool, simply add `/install.php` to the URL of

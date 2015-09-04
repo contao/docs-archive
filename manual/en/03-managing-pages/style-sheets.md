@@ -14,10 +14,11 @@ particular Internet Explorer version, in case you need to fix one of its
 numerous bugs. Pay attention to the order of the format definitions, because
 later commands override earlier ones.
 
+
 ### CSS classes of included elements
 
-If an element is included in another element, the CSS classes are now merged
-instead of overwritten, e.g. if content element A has the CSS class `elemA` and
+If an element is included in another element, the CSS classes are merged
+instead of overwritten. E.g. if content element A has the CSS class `elemA` and
 includes a front end module with the CSS class `elemB`, both CSS classes will
 be applied (`class="elemA elemB"`).
 

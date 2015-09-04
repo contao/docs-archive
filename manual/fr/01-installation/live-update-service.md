@@ -33,18 +33,16 @@ de Contao
 99% de tous les problèmes de mise à jour du Live Update sont causés par des
 permissions de fichiers erronés. Contao requiert des autorisations d'écriture
 pour gérer les fichiers et les dossiers, en conséquence si le Live Update ne
-fonctionne pas correctement, vérifiez la configuration de votre serveur et
-assurez-vous de mettre en place le Safe Mode Hack **tel que décrit dans ce mode
-d'emploi** !
+fonctionne pas correctement, vérifiez la configuration de votre serveur!
 
 
 #### Comment obtenir de l'aide
 
 Si vous rencontrez des problèmes pour activer votre ID Live Update ou pour
 recevoir l'archive de mise à jour, veuillez s'il vous plaît contacter le
-[support de iNet Robots][3]. Si vous rencontrez des problèmes pour configurer
-le "Safe Mode Hack" ou pour utiliser Contao, choisissez s'il vous plaît une
-option de support sur la [page de support][4].
+[support de iNet Robots][3]. Si vous rencontrez des problèmes pour utiliser
+Contao, choisissez s'il vous plaît une option de support sur la
+[page de support][4].
 
 
 [1]: http://www.inetrobots.com
