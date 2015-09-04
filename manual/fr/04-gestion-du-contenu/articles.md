@@ -74,7 +74,7 @@ aperçu des éléments de contenu de base de Contao :
 </tr>
 <tr>
   <td>Accordéon (fin de l'enveloppe)</td>
-  <td>ce_accordionStop</td>
+  <td>-</td>
   <td>Génère la fermeture du conteneur de l'accordéon.</td>
 </tr>
 <tr>
@@ -84,7 +84,7 @@ aperçu des éléments de contenu de base de Contao :
 </tr>
 <tr>
   <td>Slider de contenu (fin de l'enveloppe)</td>
-  <td>ce_sliderStop</td>
+  <td>-</td>
   <td>Génère la fermeture du conteneur du slider.</td>
 </tr>
 <tr>
