@@ -3,7 +3,6 @@
 * [Introduction](README.md)
 * [Installation](01-installation/README.md)
     * [Installing Contao](01-installation/installing-contao.md)
-    * [Using the Safe Mode Hack](01-installation/using-the-safe-mode-hack.md)
     * [Manual update](01-installation/manual-update.md)
     * [Live Update Service](01-installation/live-update-service.md)
     * [Moving an installation](01-installation/moving-an-installation.md)

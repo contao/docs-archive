@@ -25,7 +25,7 @@ lokalen Rechner und kopieren Sie die Dateien anschließend mit einem FTP-Program
 (wir empfehlen [WinSCP][1]). Danach stellen Sie die Dateien aus dem Backup
 wieder her und entfernen eventuelle Überbleibsel vorheriger Contao-Versionen.
 
-**Achtung:** Wenn Sie Third-Party-Erweiterungen installiert haben, müssen Sie
+> **Warning:** Wenn Sie Third-Party-Erweiterungen installiert haben, müssen Sie
 diese ebenfalls sichern und nach dem Update wiederherstellen oder darauf achten,
 sie gar nicht erst zu überschreiben. Andernfalls müssen diese Module neu
 installiert werden, was bei einigen Erweiterungen zu Datenverlust führen kann!
