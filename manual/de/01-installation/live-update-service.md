@@ -30,16 +30,14 @@ Das Live Update umfasst folgende Funktionen:
 
 99% aller Live Update-Probleme sind auf unzureichende Datei-Zugriffsrechte
 zurück zu führen. Contao benötigt Schreibrechte, um Dateien und Ordner zu
-verwalten, daher sollten Sie als erstes Ihre Serverkonfiguration prüfen und
-sicherstellen, dass der Safe Mode Hack **so wie in diesem Handbuch beschrieben** konfiguriert ist!
+verwalten, daher sollten Sie als erstes Ihre Serverkonfiguration prüfen!
 
 
 #### Support erhalten
 
 Wenn Sie Probleme bei der Aktivierung Ihrer Live Update ID haben, wenden Sie
-sich bitte an den [iNet Robots-Support][3]. Bei Problemen mit dem Safe Mode Hack
-oder der Benutzung von Contao, wählen Sie bitte eine passende Support-Option auf
-der [Support-Seite][4].
+sich bitte an den [iNet Robots-Support][3]. Bei Problemen mit der Benutzung von 
+Contao, wählen Sie bitte eine passende Support-Option auf der [Support-Seite][4].
 
 
 [1]: http://www.inetrobots.com

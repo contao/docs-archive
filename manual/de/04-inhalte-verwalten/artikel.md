@@ -60,7 +60,7 @@ Contao-Core enthaltenen Inhaltselemente.
 </tr>
 <tr>
   <td>Akkordeon (Einzelelement)</td>
-  <td>ce_accordion</td>
+  <td>ce_accordionSingle</td>
   <td>Erzeugt ein einzelnes Akkordeon-Element (Mit <a href="http://mootools.net">MooTools</a>).</td>
 </tr>
 <tr>
@@ -101,8 +101,7 @@ Contao-Core enthaltenen Inhaltselemente.
 <tr>
   <td>Galerie</td>
   <td>ce_gallery</td>
-  <td>Erzeugt eine <a href="http://www.digitalia.be/software/slimbox">lightbox</a>
-      Bildergalerie.</td>
+  <td>Erzeugt eine Lightbox Bildergalerie.</td>
 </tr>
 <tr>
   <td>Video/Audio</td>

@@ -17,14 +17,14 @@ later commands override earlier ones.
 
 ### CSS classes of included elements
 
-If an element is included in another element, the CSS classes are merged
+If a module is included in another element, the CSS classes are merged
 instead of overwritten. E.g. if content element A has the CSS class `elemA` and
 includes a front end module with the CSS class `elemB`, both CSS classes will
 be applied (`class="elemA elemB"`).
 
 Here's how to select the elements separately:
 
-```CSS
+```css
 .elemA {
     /* Content element only */
 }

@@ -68,7 +68,7 @@ an overview of the Contao core content elements:
 </tr>
 <tr>
   <td>Accordion (wrapper stop)</td>
-  <td>ce_accordionStop</td>
+  <td>-</td>
   <td>Generates the closing part of the accordion wrapper.</td>
 </tr>
 <tr>
@@ -78,7 +78,7 @@ an overview of the Contao core content elements:
 </tr>
 <tr>
   <td>Content slider (wrapper stop)</td>
-  <td>ce_sliderStop</td>
+  <td>-</td>
   <td>Generates the closing part of the slider wrapper.</td>
 </tr>
 <tr>
