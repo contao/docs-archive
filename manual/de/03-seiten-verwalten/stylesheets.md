@@ -19,9 +19,9 @@ Reihenfolge der Formatdefinitionen, da frühere Anweisungen von späteren
 
 ### CSS-Klassen der Include-Elemente
 
-Wird ein Modul durch ein Inhaltselement eingebunden, werden die CSS-Klassen
+Wird ein Element durch ein Inhaltselement eingebunden, werden die CSS-Klassen
 in beiden Konfigurationen zusammengeführt statt überschrieben. Hat das
-Inhaltselement A die CSS-Klasse `elemA` und fügt ein Frontend-Modul mit der 
+Inhaltselement A die CSS-Klasse `elemA` und fügt ein Frontend-Modul mit der
 CSS-Klasse `elemB` ein, werden beide CSS-Klassen ausgegeben
 (`class="elemA elemB"`).
 

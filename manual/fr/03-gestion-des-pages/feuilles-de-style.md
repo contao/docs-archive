@@ -19,7 +19,7 @@ définitions de formatage, car celles qui suivent, remplacent les précédentes.
 
 ### Classes CSS des éléments inclus
 
-Si un module est inclus dans un autre élément, les classes CSS sont fusionnées
+Si un élément est inclus dans un autre élément, les classes CSS sont fusionnées
 au lieu d'être surchargées. Par exemple, si l'élément de contenu A a la classe
 CSS `elemA` et inclut un module front office avec la classe CSS `elemB`, les
 deux classes CSS seront appliquées (`class="elemA elemB"`).
