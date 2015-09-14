@@ -1,8 +1,8 @@
 # parseArticles
 
 The `parseArticles` hook is triggered when parsing news articles. It passes the
-front end template, the current article and the news module instance.
-It does not expect a return value.
+front end template, the current article and the news module instance as arguments
+and does not expect a return value.
 
 
 ## Parameters
