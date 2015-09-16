@@ -46,6 +46,7 @@ custom functionality to the core.
 - [initializeSystem](initializeSystem.md)
 - [insertTagFlags](insertTagFlags.md)
 - [isAllowedToEditComment](isAllowedToEditComment.md)
+- [isVisibleElement](isVisibleElement.md)
 - [listComments](listComments.md)
 - [loadDataContainer](loadDataContainer.md)
 - [loadFormField](loadFormField.md)

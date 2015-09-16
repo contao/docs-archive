@@ -47,3 +47,4 @@ public function myGetArticle(Database_Result $objRow)
 - [getFrontendModule](getFrontendModule.md) – triggered when a front end module is generated.
 - [getContentElement](getContentElement.md) – triggered when a content element is generated.
 - [getForm](getForm.md) – triggered when a form is generated.
+- [isVisibleElement](isVisibleElement.md) – triggered when checking if an element should be visible in the front end or not.
