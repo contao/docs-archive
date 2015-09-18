@@ -31,8 +31,8 @@ First of all, before running this command, you must [install Composer][7]. It
 consists of a single file named `composer.phar`. This file must be in the same
 place where is the target folder.
 
-During installation in your command-line interface, you must assign values to
-a number of parameters:
+During the installation in your command-line interface, you must assign a value
+to a number of parameters:
 
 ```bash
 Some parameters are missing. Please provide them.
