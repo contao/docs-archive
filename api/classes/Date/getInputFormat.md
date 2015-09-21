@@ -26,6 +26,6 @@ Return an input format string for a particular date (e.g. YYYY-MM-DD).
 An input format for a particular date.
 
 
-### See Also ###
+### See also ###
 
 - [`Date::formatToJs`](formatToJs.md) – Convert a PHP format string into a JavaScript format string

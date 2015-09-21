@@ -32,7 +32,7 @@ An associative array with available back end languages.
 	> Array ( [en] => English [de] => German - Deutsch )
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getLanguages`](getLanguages.md) – Get all languages
 - [`Controller::getCountries`](getCountries.md) – Get all countries

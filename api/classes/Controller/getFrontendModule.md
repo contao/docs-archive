@@ -42,7 +42,7 @@ The front end module as HTML string.
 	> ```<div class="mod_custom">just a test</div>```
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getArticle`](getArticle.md) – Get an article front end module
 - [`Controller::getContentElement`](getContentElement.md) – Get a content element

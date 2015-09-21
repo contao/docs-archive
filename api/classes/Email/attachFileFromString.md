@@ -44,6 +44,6 @@ Attach a file from a string.
 	```
 
 
-### See Also ###
+### See also ###
 
 - [`Email::attachFile`](attachFile.md) – Attach the file

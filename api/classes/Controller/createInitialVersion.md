@@ -25,6 +25,6 @@ Create an initial version of a record.
 	The numberic ID of the current record.
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::createNewVersion`](createNewVersion.md) – Create a new version of the record

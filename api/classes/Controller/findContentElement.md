@@ -38,7 +38,7 @@ The class name of the content element, or an empty string if not found.
 	> ContentGallery
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::findFrontendModule`](findFrontendModule.md) – Find a front end module
 

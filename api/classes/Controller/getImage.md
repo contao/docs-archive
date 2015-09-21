@@ -91,7 +91,7 @@ A relative path to the resized image.
 	![100x100 crop from top right corner]
 	(../../assets/api/Controller/getImage-2.jpg)
 
-### See Also ###
+### See also ###
 
 - [`Controller::resizeImage`](resizeImage.md) – Resize or crop an image
 - [`Controller::generateImage`](generateImage.md) – Generate an image tag

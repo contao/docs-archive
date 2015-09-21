@@ -32,7 +32,7 @@ An associative multidimensional array containing timezones grouped by sections.
 	> Array ( [General] => Array ( [0] => CET [1] => CST6CDT [2] => EST [3] => EST5EDT ... ) ... )
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getBackendLanguages`](getBackendLanguages.md) – Get backend languages
 - [`Controller::getLanguages`](getLanguages.md) – Get all languages

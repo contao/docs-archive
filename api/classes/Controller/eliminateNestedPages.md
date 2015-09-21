@@ -34,7 +34,7 @@ Take an array of paths and eliminate nested paths.
 An array of the not-nested pages.
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::eliminateNestedPath`](eliminateNestedPaths.md) – Eliminate nested paths in array
 

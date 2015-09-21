@@ -26,7 +26,7 @@ Encode an e-mail address.
 The e-mail address encoded by idna.
 
 
-### See Also ###
+### See also ###
 
 - [`System::idnaDecode`](idnaDecode.md) – Decode an internationalized domain name
 - [`System::idnaEncode`](idnaEncode.md) – Encode an internationalized domain name

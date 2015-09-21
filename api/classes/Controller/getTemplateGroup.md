@@ -63,6 +63,6 @@ An array of available templates with specified prefix.
 	```
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getTemplate`](getTemplate.md) – Get a path to the template

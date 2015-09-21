@@ -32,7 +32,7 @@ An associative array of all available countries.
 	> Array ( [af] => Afghanistan [ax] => Aland Islands [al] => Albania [dz] => Algeria ... )
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getBackendLanguages`](getBackendLanguages.md) – Get backend languages
 - [`Controller::getLanguages`](getLanguages.md) – Get all languages

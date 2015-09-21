@@ -19,7 +19,7 @@ Return all available message types.
 The array of available message types.
 
 
-### See Also ###
+### See also ###
 
 - [`System::addMessage`](addMessage.md) – Add a message
 - [`System::addConfirmationMessage`](addConfirmationMessage.md) – Add a confirmation message

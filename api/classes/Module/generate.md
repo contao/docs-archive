@@ -23,6 +23,6 @@ Parse the template
 	```
 
 
-### See Also ###
+### See also ###
 
 - [`Module::compile`](compile.md) – Compile the current element

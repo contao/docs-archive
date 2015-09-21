@@ -40,7 +40,7 @@ An associative array of the available languages. If ```$blnBeOnly``` is set to t
 	> Array ( [om] => (Afan) Oromo [ab] => Abkhazian [aa] => Afar [af] => Afrikaans ... )
 
 
-### See Also ###
+### See also ###
 
 - [`Controller::getBackendLanguages`](getBackendLanguages.md) – Get backend languages
 - [`Controller::getCountries`](getCountries.md) – Get all countries

@@ -14,12 +14,9 @@
       "Contao Documentation": "https://docs.contao.org"
     }
   },
-  "pdf": {
-    "toc": false
-  },
   "pluginsConfig": {
       "edit-link": {
-          "base": "https://github.com/contao/docs/edit/3.2/manual",
+          "base": "https://github.com/contao/docs/edit/3.5/manual",
           "label": {
               "en": "Edit This Page",
               "de": "Seite bearbeiten",
@@ -27,7 +24,8 @@
           }
       },
       "disqus": {
-          "shortName": "contaodocs"
+          "shortName": "contaodocs",
+          "useIdentifier": true
       },
       "piwik": {
           "URL": "association.contao.org/piwik/",

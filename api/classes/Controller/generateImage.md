@@ -44,7 +44,7 @@ The ```<img>``` HTML tag.
 	echo $this->generateImage('tl_files/music_academy/screenshot.jpg', 'Screenshot of Music Academy');
 	```
 
-### See Also ###
+### See also ###
 
 - [`Controller::getImage`](getImage.md) – Get an image
 - [`Controller::resizeImage`](resizeImage.md) – Resize or crop an image
