@@ -28,8 +28,8 @@ Contao files will be created. If the target folder does not exist, it will be
 created automatically.
 
 First of all, before running this command, you must [install Composer][7]. It
-consists of a single file named `composer.phar`. This file must be in the same
-place where is the target folder.
+consists of a single file named `composer.phar`. This file need to be located
+where you run the command.
 
 During the installation in your command-line interface, you must assign a value
 to a number of parameters:
