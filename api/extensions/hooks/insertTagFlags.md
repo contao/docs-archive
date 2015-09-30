@@ -83,4 +83,4 @@ public function myInsertTagFlags($flag, $tag, $cachedValue, $flags, $blnCache, $
 
 ### See Also
 
-- [replaceInsertTags.md](replaceInsertTags) - triggered when an unknown insert tag is found
+- [replaceInsertTags](replaceInsertTags.md) - triggered when an unknown insert tag is found.
