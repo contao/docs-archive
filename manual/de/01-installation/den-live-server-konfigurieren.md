@@ -10,23 +10,23 @@ und PHP 5 aktiviert.
 
 Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support.
 
-| Software            | Version (mind.)        |
-|---------------------|------------------------|
-| PHP                 | 5.4.0                  |
-| MySQL               | 5.0.3                  |
+| Software | Version (min.) |
+|----------|----------------|
+| PHP      | 5.4.0          |
+| MySQL    | 5.0.3          |
 
 
 Außerdem benötigen Sie verschiedene PHP-Erweiterungen, um von allen Funktionen
 profitieren zu können. 
 
-| PHP-Erweiterungen   | für                    |
-|---------------------|------------------------|
-| GDlib               | Bildbearbeitung        |
-| DOM                 | XML-Dateien            |
-| SOAP                | Extension Repository   |
-| Phar                | Live Update            |
-| mbstring (optional) | internationale Zeichen |
-| mcrypt (optional)   | Verschlüsselung        | 
+| PHP-Erweiterungen | für                    | Pflicht |
+|-------------------|------------------------|---------|
+| GDlib             | Bildbearbeitung        | Ja      |
+| DOM               | XML-Dateien            | Ja      |
+| SOAP              | Extension Repository   | Nein    |
+| Phar              | Live Update            | Nein    |
+| mbstring          | internationale Zeichen | Nein    |
+| mcrypt            | Verschlüsselung        | Nein    |
 
 
 Contao wurde erfolgreich in allen modernen Browsern wie 
