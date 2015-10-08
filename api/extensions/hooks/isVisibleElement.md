@@ -14,7 +14,7 @@ visibility state as arguments and expects the new visibility state as return val
 
 1. *Database_Result* `$objElement`
 
-    Database result set from table `tl_content`.
+    The database result from table `tl_article` or `tl_content` or `tl_module`.
 
 2. *boolean* `$blnIsVisible`
 
