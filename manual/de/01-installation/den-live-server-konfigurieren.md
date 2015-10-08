@@ -9,28 +9,28 @@ und PHP 5 aktiviert.
 ### Contao-Systemvoraussetzungen
 
 Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support.
-PHP muss mindestens in der Version 5.4.0 vorliegen und MySQL in der Version 5.0.3.
-Außerdem benötigen Sie die PHP-Erweiterungen "GDlib" (Bildbearbeitung),
-"DOM" (XML-Dateien), "SOAP" (Extension Repository) und "Phar" (Live Update) 
-sowie optional "mbstring" (internationale Zeichen) und "mcrypt" 
-(Verschlüsselung). Contao wurde erfolgreich in allen modernen Browsern wie 
-Firefox (ab Version 2) oder Internet Explorer (ab Version 8) getestet.
-
-Die Voraussetzungen nochmal als Tabelle:
 
 | Software            | Version (mind.)        |
 |---------------------|------------------------|
-| Webserver           | Apache oder IIS        |
 | PHP                 | 5.4.0                  |
 | MySQL               | 5.0.3                  |
-|                     |                        |
+
+
+Außerdem benötigen Sie verschiedene PHP-Erweiterungen, um von allen Funktionen
+profitieren zu können. 
+
 | PHP-Erweiterungen   | für                    |
+|---------------------|------------------------|
 | GDlib               | Bildbearbeitung        |
 | DOM                 | XML-Dateien            |
 | SOAP                | Extension Repository   |
 | Phar                | Live Update            |
 | mbstring (optional) | internationale Zeichen |
 | mcrypt (optional)   | Verschlüsselung        | 
+
+
+Contao wurde erfolgreich in allen modernen Browsern wie 
+Firefox (ab Version 2) oder Internet Explorer (ab Version 8) getestet.
 
 
 ### Der Contao-Check
