@@ -39,7 +39,4 @@ public function mypostAuthenticate(User $objUser)
 
 - [postLogin](postLogin.md) - triggered after a front end user has logged in.
 - [postLogout](postLogout.md) - triggered after a front end user has logged out.
-
-
-### Discussion
-- [Issue#5864](https://github.com/contao/core/issues/5864)
+- [contao/core#5864](https://github.com/contao/core/issues/5864)
