@@ -47,6 +47,7 @@
         * [initializeSystem](extensions/hooks/initializeSystem.md)
         * [insertTagFlags](extensions/hooks/insertTagFlags.md)
         * [isAllowedToEditComment](extensions/hooks/isAllowedToEditComment.md)
+        * [isVisibleElement](extensions/hooks/isVisibleElement.md)
         * [listComments](extensions/hooks/listComments.md)
         * [loadDataContainer](extensions/hooks/loadDataContainer.md)
         * [loadFormField](extensions/hooks/loadFormField.md)
