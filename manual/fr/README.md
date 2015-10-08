@@ -6,4 +6,4 @@ pouvez toujours trouver la dernière version sur [docs.contao.org](https://docs.
 
 {% include "SUMMARY.md" %}
 
-{% include "../../LICENSE.md" %}
+{% include "LICENSE.md" %}
