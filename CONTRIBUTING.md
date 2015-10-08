@@ -9,9 +9,9 @@ can use the [GitHub flavored syntax][1].
 ## General rules
 
 * Only use ATX style headlines (e.g. `# H1` or `### H3`)
+* Use [extended/Github Markdown syntax][tables] to render tables
 * Always add two empty lines above each headline
 * Always add links at the bottom of the document (e.g. `[Google][1]`)
-* Use plain HTML markup to render tables
 * Add line breaks after 80 characters in paragraphs
 
 
@@ -51,3 +51,4 @@ Online Markdown Editor: http://jbt.github.io/markdown-editor
 
 
 [1]: https://help.github.com/articles/github-flavored-markdown
+[tables]: https://help.github.com/articles/github-flavored-markdown/#tables
