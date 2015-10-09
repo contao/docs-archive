@@ -57,6 +57,7 @@
         * [parseBackendTemplate](extensions/hooks/parseBackendTemplate.md)
         * [parseFrontendTemplate](extensions/hooks/parseFrontendTemplate.md)
         * [parseTemplate](extensions/hooks/parseTemplate.md)
+        * [postAuthenticate](extensions/hooks/postAuthenticate.md)
         * [postDownload](extensions/hooks/postDownload.md)
         * [postLogin](extensions/hooks/postLogin.md)
         * [postLogout](extensions/hooks/postLogout.md)

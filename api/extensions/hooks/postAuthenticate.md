@@ -1,6 +1,7 @@
 # postAuthenticate
 
-The `postAuthenticate` hook is triggered after a user was authenticated. It passes the user object as argument and does not expect a return value.
+The `postAuthenticate` hook is triggered after a user was authenticated. It 
+passes the user object as argument and does not expect a return value.
 
 > **Tag** Available from version 3.5.0.
 
