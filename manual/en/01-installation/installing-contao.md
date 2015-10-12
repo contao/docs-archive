@@ -28,8 +28,14 @@ Contao files will be created. If the target folder does not exist, it will be
 created automatically.
 
 First of all, before running this command, you must [install Composer][7]. It
-consists of a single file named `composer.phar`. This file need to be located
-where you run the command.
+can be installed globally with the following two commands on Mac OS X or Linux:
+
+```bash
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+On Windows, you can download and run the [installer][10].
 
 During the installation in your command-line interface, you must assign a value
 to a number of parameters:
@@ -155,3 +161,4 @@ save your changes. Now Contao generates static URLs like `home.html` instead of
 [7]: https://getcomposer.org/download/
 [8]: https://en.wikipedia.org/wiki/Cross-site_request_forgery
 [9]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
+[10]: https://getcomposer.org/doc/00-intro.md#using-the-installer
