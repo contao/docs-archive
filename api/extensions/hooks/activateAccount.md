@@ -11,6 +11,10 @@ It passes the user object as argument and does not expect a return value.
 1. *Database_Result* `$objUser`
 
     A database result set of the activated user account.
+    
+2. *object* `$objRegistration`
+
+    The registration module that was used to activate the account.
 
 
 ## Example

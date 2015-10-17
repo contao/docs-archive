@@ -15,6 +15,10 @@ the record and the data array as arguments and does not expect a return value.
 2. *array* `$arrSet`
 
     Data of the new comment record (not including the ID).
+    
+3. *object* `$objComments`
+
+    The comments module that was used to add the comment.
 
 
 ## Example
