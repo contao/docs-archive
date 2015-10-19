@@ -18,6 +18,64 @@ Um Contao 4 zu installieren, fügen sie die Version zur URL hinzu, z.B. "/4.0.2"
 Beispiel: curl -L http://download.contao.org/4.0.2 | tar -xzp
 
 
+### Installation mit Composer
+
+Mit Composer kann Contao über die [contao/standard-edition][6] installiert
+werden.
+
+```bash
+php composer.phar create-project contao/standard-edition <ziel>
+```
+
+Geben Sie als `<ziel>` den Ordner ein, in welchen die Contao-Dateien 
+installiert werden sollen. Wenn der Ordner nicht vorhanden ist, wird er
+automatisch angelegt.
+
+Bevor Sie diesen Befehl ausführen können, muss [Composer installiert sein][7].
+Mit folgendem Befehl kann Composer global auf einem Mac OS X oder Linux-System
+installiert werden:
+
+```bash
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+Unter Windows erfolgt die Installation mittels dem [Installer][10].
+
+Während der Installation von Contao werden folgende Parameter der neuen
+Installation abgefragt:
+
+```bash
+Some parameters are missing. Please provide them.
+database_host (localhost):
+database_port (3306):
+database_user (null):
+database_password (null):
+database_name (null):
+mailer_transport (mail):
+mailer_host (127.0.0.1):
+mailer_user (null):
+mailer_password (null):
+mailer_port (25):
+mailer_encryption (null):
+prepend_locale (false):
+secret (ThisTokenIsNotSoSecretChangeIt):
+```
+
+Standard-Werte werden in Klammern ausgegeben. Diese Konfiguration wird in der
+Datei `app/config/parameters.yml` gespeichert.
+
+Der `secret`-Parameter wird für Verschlüsselungen und gegen [CSRF][8]-Attacken
+verwendet. Es ist wichtig hier einen sicheren Schlüssel einzugeben.
+Die Symfony-Dokumentation sagt dazu:
+
+> **Information** Der Wert sollte aus zufälligen Buchstaben, Zahlen und 
+Symbolen bestehen. Die empfohlene Länge liegt bei 32 Zeichen.
+
+Weitere Informationen zu dieser Konfiguration ist auf der 
+[offiziellen Symfony-Webseite][9] zu finden.
+
+
 ### Das Contao-Installtool
 
 Um das Contao-Installtool aufzurufen, hängen Sie einfach `install.php`
@@ -72,3 +130,8 @@ Backend-Anmeldung weiter.
 
 [1]: https://contao.org/de/download.html
 [2]: http://www.winscp.net
+[6]: https://github.com/contao/standard-edition
+[7]: https://getcomposer.org/download/
+[8]: https://de.wikipedia.org/wiki/Cross-Site-Request-Forgery
+[9]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
+[10]: https://getcomposer.org/doc/00-intro.md#using-the-installer

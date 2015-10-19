@@ -20,6 +20,65 @@ par exemple, "/4.0.2" après l'URL. Exemple : curl -L
 http://download.contao.org/4.0.2 | tar -xzp
 
 
+### Installation avec Composer
+
+Vous pouvez également installer Contao avec Composer en utilisant le référentiel
+[contao/standard-edition][6].
+
+```bash
+php composer.phar create-project contao/standard-edition <target>
+```
+
+Vous devez remplacer le paramètre `<target>` avec un chemin d'accès vers un
+dossier où les fichiers de Contao seront créés. Si le dossier cible n'existe
+pas, il sera créé automatiquement.
+
+En premier lieu, avant d'exécuter cette commande, vous devez
+[installer Composer][7]. Il peut être installé globalement avec les deux
+commandes suivantes sur Mac OS X ou Linux:
+
+```bash
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+Sous Windows, vous pouvez télécharger et exécuter le
+[programme d'installation][10].
+
+Lors de l'installation dans votre interface en ligne de commande, vous devez
+affecter une valeur à un certain nombre de paramètres :
+
+```bash
+Some parameters are missing. Please provide them.
+database_host (localhost):
+database_port (3306):
+database_user (null):
+database_password (null):
+database_name (null):
+mailer_transport (mail):
+mailer_host (127.0.0.1):
+mailer_user (null):
+mailer_password (null):
+mailer_port (25):
+mailer_encryption (null):
+prepend_locale (false):
+secret (ThisTokenIsNotSoSecretChangeIt):
+```
+
+Les valeurs par défaut sont listées entre parenthèses. Toutes ces données seront
+incluses dans le fichier de configuration `app/config/parameters.yml`.
+
+Le paramètre `secret` vous permet de créer une clé qui sera utilisée contre les
+attaques [CSRF][8]. Il est très important de prendre le temps de créer une clé
+forte. Comme décrit dans la documentation de Symfony :
+
+> **Information** Sa valeur doit être une série de caractères, chiffres et
+symboles choisis au hasard et la longueur recommandée est d'environ 32 caractères.
+
+Vous pouvez trouver plus d'informations sur cette configuration sur le
+[site officiel de Symfony][9].
+
+
 ### L'outil d'installation de Contao
 
 Pour ouvrir l'outil d'installation de Contao, il suffit d'ajouter `/install.php`
@@ -75,3 +134,8 @@ droit vous amènera vers le panneau d'administration.
 
 [1]: https://contao.org/en/download.html
 [2]: http://www.winscp.net/
+[6]: https://github.com/contao/standard-edition
+[7]: https://getcomposer.org/download/
+[8]: https://fr.wikipedia.org/wiki/Cross-Site_Request_Forgery
+[9]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
+[10]: https://getcomposer.org/doc/00-intro.md#using-the-installer
