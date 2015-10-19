@@ -18,7 +18,7 @@ the record and the data array as arguments and does not expect a return value.
     
 3. *object* `$objComments`
 
-    The comments module that was used to add the comment.
+    The instance of the `Comments` class that triggered the hook.
 
 
 ## Example

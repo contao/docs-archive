@@ -39,9 +39,9 @@ cache name and the file object as arguments and expects a path as return value.
     The target location where the image should be stored. This will be `null` in
     most cases, if not you should ignore `$strCacheName`.
 
-8. *object* `$objElement`
+8. *object* `$objImage`
  
-    The Image content element.
+    The instance of the `Image` class that triggered the hook.
 
 
 ## Return Values
@@ -59,7 +59,7 @@ method, return a string to the new image. Otherwise return the boolean `false`.
 $GLOBALS['TL_HOOKS']['getImage'][] = array('MyClass', 'myGetImage');
 
 // MyClass.php
-public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFile, $target, $objElement)
+public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFile, $target, $objImage)
 {
     return MyImage::generateThumbnail($image, $widht, $height, $mode);
 }

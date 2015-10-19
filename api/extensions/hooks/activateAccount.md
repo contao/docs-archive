@@ -12,7 +12,7 @@ It passes the user object as argument and does not expect a return value.
 
     A database result set of the activated user account.
     
-2. *object* `$objRegistration`
+2. *object* `$objModule`
 
     The registration module that was used to activate the account.
 
@@ -28,10 +28,10 @@ $GLOBALS['TL_HOOKS']['activateAccount'][] = array('MyClass', 'myActivateAccount'
 // MyClass.php
 /**
  * @param  Database_Result    $objUser         The database result object
- * @param  ModuleRegistration $objRegistration The registration module
+ * @param  ModuleRegistration $objModule       The registration module
  * @return void                                No return value expected
  */
-public function myActivateAccount(Database_Result $objUser, ModuleRegistration $objRegistration)
+public function myActivateAccount(Database_Result $objUser, ModuleRegistration $objModule)
 {
     // Do something
 }
