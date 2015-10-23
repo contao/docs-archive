@@ -10,7 +10,7 @@ passes the user object as argument and does not expect a return value.
 
 1. *User* `$objUser`
 
-    The user (object) which has been logged out.
+    The user (object) which just has been authenticated.
 
 
 ## Example
