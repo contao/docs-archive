@@ -84,6 +84,10 @@ Callbacks are very similar to [Hooks][hooks], but always bound to a specific DCA
   <td>Allows for individual labels in the listing and is e.g. used in the user
       module to add status icons.</td>
 </tr>
+<tr>
+  <td>header_callback</td>
+  <td>Allows for individual labels in header of "parent view".</td>
+</tr>
 </table>
 
 
