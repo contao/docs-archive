@@ -12,7 +12,10 @@ Befehle verwenden:
 ```bash
 curl -L http://download.contao.org | tar -xzp
 ```
-
+Achten Sie bitte darauf, dass die Rechte des Verzeichnisses rekursiv richtig
+eingestellt sind (z.B. owner www-data:www-data bzw. Zugriff 644). Wenn bei der
+installation ein Dialog auftaucht, wonach die Erstellung eines FTP-Zugriffes
+auf dem Server verlangt wird, liegt es wahrscheinlich an Rechte-Probleme.
 
 ### Das Contao-Installtool
 
@@ -46,44 +49,52 @@ versuchen, vermeintlich nicht benötigte Tabellen anderer Programme
 aktualisieren"-Schaltfläche.
 
 
-#### Ein Template importieren
+#### Ein Frontend-Template importieren
 
-Ein Template ist eine vorkonfigurierte Webseite, die eine beispielhafte
+Ein Frontend-Template ist eine vorkonfigurierte Webseite, die eine beispielhafte
 Seitenstruktur und verschiedene Stylesheets zur Formatierung der Contao
-Core-Module und -Inhaltselemente enthält.
+Core-Module und -Inhaltselemente enthält. Leider müssen Sie diesem Punkt
+zunächst überspringen, weil jetzt nichts ausgewählt werden kann (der Grund: Seit
+Version 3.2.11 ist die Beispiel-Webseite nicht mehr im Downloadpaket enthalten).
 
-Seit Version 3.2.11 ist die Beispiel-Webseite nicht mehr im Downloadpaket enthalten.
-Abhängig von der eingesetzten Version kann die neue [*Contao Official Demo*][3]
-oder die alte [*Music Academy*][4] als Erweiterung installiert werden.
-Aufschluss über Kompatibilität gibt das Erweiterungsverzeichnis.
+Wenn Sie wieder hier sind:
+Um ein Frontend-Template zu importieren, wählen Sie bei "Ein Template
+importieren" den Eintrag aus dem Drop-Down-Menü und klicken Sie auf die
+"Template importieren"-Schaltfläche.
 
-Vorgehen zur Installation der Demo:
-
-1. Eine frische Contao Installation mit Admin-Account erstellen
-2. Als Admin im Backend anmelden
-3. Passende Erweiterung [über das Extension Repository][5] hinzufügen
-4. Als Admin vom Backend abmelden
-5. Installtool erneut aufrufen
-
-Um ein Template zu importieren, wählen Sie den Eintrag aus dem Drop-Down-Menü
-und klicken Sie auf die "Template importieren"-Schaltfläche.
-
-**Beim Import eines Templates werden bestehende Daten überschrieben!**
+**Beim Import eines Frontend-Templates werden bestehende Daten überschrieben!**
+Das gilt auch für einen bereits vorhandenen Administrator-Zugang, den Sie u.U.
+neu einführen können, allerdings nicht hier, sondern im Backend.
 
 
 #### Administrator-Konto erstellen
 
-Wenn Sie kein Template importiert haben, müssen Sie ein Administrator-Konto
-erstellen, damit Sie sich am Contao-Backend anmelden können. Danach ist der
-Installationsprozess abgeschlossen. Der Link unten rechts leitet Sie zur
-Backend-Anmeldung weiter. Wenn Sie die Beispielwebseite importiert haben, können
+Dieser Punkt erscheint nur, wenn noch kein Administrator-Konto eingerichtet ist.
+Damit kann man sich am Contao-Backend anmelden.
+
+Der Installationsprozess ist abgeschlossen. Der Link unten rechts leitet Sie zur
+Backend-Anmeldung weiter. Wenn Sie eine Beispielwebseite importiert haben, müssen
 Sie sich dort als Benutzer "k.jones" mit dem Passwort "kevinjones" anmelden.
+Bitte beachten, dass für diesen Benutzer eine englische Oberfläche eingestellt
+ist.
 
 
 ### Contao Demo installieren
 
-Siehe *Vorgehen zur Installation der Demo* im Abschnitt *Ein Template importieren*
-weiter oben.
+Am Besten tun Sie das als Erstes, wenn Sie Contao noch nicht kennen, weil ihre
+Arbeit sonst verloren geht. Andere Themes, die Sie sonst importieren können,
+haben keine Beispielinhalte.
+Abhängig von der eingesetzten Version kann die neue [*Contao Official Demo*][3]
+oder die alte [*Music Academy*][4] als Erweiterung installiert werden.
+Aufschluss über Kompatibilität gibt das Erweiterungsverzeichnis.
+
+Tipp: Im Erweiterungskatalog den Suchbegriff "demo" eingeben.
+
+Achtung: bei Layout->Themes ist noch nichts da. Die "Theme-Import" Schaltfläche
+ist dazu da, Themes, die Sie vom Internet heruntergeladen haben, von Ihrer
+Festplatte hochzuladen. Diese sind anschließend aufgelistet. Um eine Demo-Theme
+(Frontend-Template) hier sichtbar zu machen, müssen Sie zurück zum Install-Tool.
+Wenn Sie wieder dort sind, können Sie hier oben der übersprungene Punkt angehen.
 
 
 ### Suchmaschinenfreundliche URLs verwenden
