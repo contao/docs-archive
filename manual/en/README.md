@@ -6,4 +6,4 @@ the latest version on [docs.contao.org](https://docs.contao.org/).
 
 {% include "SUMMARY.md" %}
 
-{% include "../../LICENSE.md" %}
+{% include "LICENSE.md" %}
