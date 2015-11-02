@@ -1,12 +1,15 @@
 {
-  "gitbook": "2.x.x",
+  "gitbook": "2.4.x",
   "title": "Manual for Contao 3.2",
   "plugins": [
       "richquotes",
       "edit-link",
       "anchors",
       "disqus",
-      "piwik"
+      "piwik",
+      "collapsible-menu",
+      "image-captions",
+      "versions"
   ],
   "links": {
     "sidebar": {
@@ -33,6 +36,18 @@
       "piwik": {
           "URL": "association.contao.org/piwik/",
           "siteId": 3
+      },
+      "versions": {
+          "gitbookConfigURL": "https://raw.githubusercontent.com/contao/docs/master/manual/book.json",
+          "options": [
+              { "value": "https://docs.contao.org/books/manual/3.5", "text": "Contao 3.5" },
+              { "value": "https://docs.contao.org/books/manual/3.4", "text": "Contao 3.4" },
+              { "value": "https://docs.contao.org/books/manual/3.3", "text": "Contao 3.3" },
+              { "value": "https://docs.contao.org/books/manual/3.2", "text": "Contao 3.2", "selected": true },
+              { "value": "https://docs.contao.org/books/manual/3.1", "text": "Contao 3.1" },
+              { "value": "https://docs.contao.org/books/manual/3.0", "text": "Contao 3.0" },
+              { "value": "https://docs.contao.org/books/manual/2.11", "text": "Contao 2.11" }
+          ]
       }
   }
 }
