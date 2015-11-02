@@ -15,11 +15,7 @@
     "pluginsConfig": {
         "edit-link": {
             "base": "https://github.com/contao/docs/edit/master/api",
-            "label": {
-                "en": "Edit This Page",
-                "de": "Seite bearbeiten",
-                "fr": "Modifier cette page"
-            }
+            "label": "Edit This Page"
         },
         "piwik": {
             "URL": "association.contao.org/piwik/",
