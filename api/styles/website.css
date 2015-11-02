@@ -1,0 +1,44 @@
+blockquote.alert {
+    padding-left: 0 !important;
+    background-color: #f7f7f7;
+    color: inherit !important;
+    border: 1px solid #ddd !important;
+    border-radius: 3px !important;
+}
+
+blockquote.alert-info {
+    background-color: #eff5fa;
+    color: #4b85ba !important;
+    border-color: #4b85ba !important;
+}
+
+blockquote.alert-success {
+    background-color: #f3f8ee !important;
+    color: #77ac45 !important;
+    border-color: #77ac45 !important;
+}
+
+blockquote.alert-warning {
+    background-color: #fff3e0 !important;
+    color: #d68c23 !important;
+    border-color: #d68c23 !important;
+}
+
+blockquote.alert-danger {
+    background-color: #faeeee !important;
+    color: #c33 !important;
+    border-color: #c33 !important;
+}
+
+blockquote.alert > strong {
+    width: 60px;
+    height: auto;
+    margin-right: 0;
+    padding-top: 12px;
+    font-size: 2em;
+}
+
+blockquote.alert > p {
+    margin-left: 60px;
+    margin-bottom: 15px !important;
+}

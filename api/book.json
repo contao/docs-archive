@@ -1,10 +1,12 @@
 {
-    "gitbook": "2.x.x",
+    "gitbook": "2.4.x",
     "plugins": [
         "richquotes",
         "edit-link",
         "anchors",
-        "piwik"
+        "piwik",
+        "collapsible-menu",
+        "image-captions"
     ],
     "links": {
         "sidebar": {
