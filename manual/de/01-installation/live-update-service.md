@@ -33,9 +33,7 @@ zurück zu führen. Contao benötigt Schreibrechte, um Dateien und Ordner zu
 verwalten, daher sollten Sie als erstes Ihre Serverkonfiguration prüfen!
 
 
-#### Support erhalten
-
-Wenn Sie Probleme bei der Aktivierung Ihrer Live Update ID haben, wenden Sie
+> **Info** Wenn Sie Probleme bei der Aktivierung Ihrer Live Update ID haben, wenden Sie
 sich bitte an den [iNet Robots-Support][3]. Bei Problemen mit der Benutzung von 
 Contao, wählen Sie bitte eine passende Support-Option auf der [Support-Seite][4].
 

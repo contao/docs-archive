@@ -117,7 +117,7 @@ Core-Module und -Inhaltselemente enthält.
 Um ein Template zu importieren, wählen Sie den Eintrag aus dem Drop-Down-Menü
 und klicken Sie auf die "Template importieren"-Schaltfläche.
 
-**Beim Import eines Templates werden bestehende Daten überschrieben!**
+> **Danger** Beim Import eines Templates werden bestehende Daten überschrieben!
 
 
 #### Administrator-Konto erstellen

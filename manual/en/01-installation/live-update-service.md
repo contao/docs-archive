@@ -33,9 +33,7 @@ requires write permissions to manage files and folders, therefore if the Live
 Update does not work properly, check your server configuration!
 
 
-#### How to get support
-
-If you are having problems activating your Live Update ID or receiving the
+> **Info** If you are having problems activating your Live Update ID or receiving the
 update archive, please contact the [iNet Robots support][3]. If you are having
 problems using Contao, please choose a support option on the [support page][4].
 

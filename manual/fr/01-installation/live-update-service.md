@@ -36,9 +36,7 @@ pour gérer les fichiers et les dossiers, en conséquence si le Live Update ne
 fonctionne pas correctement, vérifiez la configuration de votre serveur!
 
 
-#### Comment obtenir de l'aide
-
-Si vous rencontrez des problèmes pour activer votre ID Live Update ou pour
+> **Info** Si vous rencontrez des problèmes pour activer votre ID Live Update ou pour
 recevoir l'archive de mise à jour, veuillez s'il vous plaît contacter le
 [support de iNet Robots][3]. Si vous rencontrez des problèmes pour utiliser
 Contao, choisissez s'il vous plaît une option de support sur la
