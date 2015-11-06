@@ -44,12 +44,6 @@ install:
 	@node_modules/.bin/gitbook install ./cookbook
 	@node_modules/.bin/gitbook install ./api
 	@node_modules/.bin/gitbook install ./contao4-migration
-	@rm -rf node_modules/gitbook-plugin-image-captions
-	@git clone -b fix-paragraph https://github.com/aschempp/gitbook-plugin-image-captions.git node_modules/gitbook-plugin-image-captions
-	@cp -rf node_modules/gitbook-plugin-image-captions/index.js manual/node_modules/gitbook-plugin-image-captions/index.js
-	@cp -rf node_modules/gitbook-plugin-image-captions/index.js cookbook/node_modules/gitbook-plugin-image-captions/index.js
-	@cp -rf node_modules/gitbook-plugin-image-captions/index.js api/node_modules/gitbook-plugin-image-captions/index.js
-	@cp -rf node_modules/gitbook-plugin-image-captions/index.js contao4-migration/node_modules/gitbook-plugin-image-captions/index.js
 
 install-python:
 	@echo "--> You must have Python virtualenv"
