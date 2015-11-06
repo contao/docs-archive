@@ -13,7 +13,7 @@ following commands:
 curl -L http://download.contao.org | tar -xzp
 ```
 
-> **Information** The URL currently refers to the latest 3.x.x version of Contao.
+> **Warning** The URL currently refers to the latest 3.x.x version of Contao.
 Therefore, you must specify the desired version by adding e.g. "/4.0.2" after the
 URL. Example: curl -L http://download.contao.org/4.0.2 | tar -xzp
 
@@ -68,7 +68,7 @@ The `secret` parameter allows you to create a key that will be used against
 [CSRF][8] attacks. It is very important to take time to create a strong key. As
 described in the Symfony documentation:
 
-> **Information** Its value should be a series of characters, numbers and symbols
+> **Note** Its value should be a series of characters, numbers and symbols
 chosen randomly and the recommended length is around 32 characters.
 
 You can find more information about this configuration on the

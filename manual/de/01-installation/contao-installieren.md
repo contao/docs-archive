@@ -13,7 +13,7 @@ Befehle verwenden:
 curl -L http://download.contao.org | tar -xzp
 ```
 
-> **Information** Die URL zeigt aktuell auf die neuste Contao 3.x.x Version.
+> **Warning** Die URL zeigt aktuell auf die neuste Contao 3.x.x Version.
 Um Contao 4 zu installieren, fügen sie die Version zur URL hinzu, z.B. "/4.0.2".
 Beispiel: curl -L http://download.contao.org/4.0.2 | tar -xzp
 
@@ -69,7 +69,7 @@ Der `secret`-Parameter wird für Verschlüsselungen und gegen [CSRF][8]-Attacken
 verwendet. Es ist wichtig hier einen sicheren Schlüssel einzugeben.
 Die Symfony-Dokumentation sagt dazu:
 
-> **Information** Der Wert sollte aus zufälligen Buchstaben, Zahlen und 
+> **Note** Der Wert sollte aus zufälligen Buchstaben, Zahlen und 
 Symbolen bestehen. Die empfohlene Länge liegt bei 32 Zeichen.
 
 Weitere Informationen zu dieser Konfiguration ist auf der 
