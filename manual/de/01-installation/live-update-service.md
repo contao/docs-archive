@@ -34,9 +34,7 @@ verwalten, daher sollten Sie als erstes Ihre Serverkonfiguration prüfen und
 sicherstellen, dass der Safe Mode Hack **so wie in diesem Handbuch beschrieben** konfiguriert ist!
 
 
-#### Support erhalten
-
-Wenn Sie Probleme bei der Aktivierung Ihrer Live Update ID haben, wenden Sie
+> **Info** Wenn Sie Probleme bei der Aktivierung Ihrer Live Update ID haben, wenden Sie
 sich bitte an den [iNet Robots-Support][3]. Bei Problemen mit dem Safe Mode Hack
 oder der Benutzung von Contao, wählen Sie bitte eine passende Support-Option auf
 der [Support-Seite][4].
