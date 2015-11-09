@@ -39,5 +39,5 @@ Here's how to select the elements separately:
 ```
 
 
-[1]: ../04-managing-content/articles.md#articles
-[2]: ../03-managing-pages/modules.md#modules
+[1]: ../05-managing-content/articles.md#articles
+[2]: ../04-managing-pages/modules.md#modules

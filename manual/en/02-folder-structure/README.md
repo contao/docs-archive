@@ -105,7 +105,7 @@ chapter [extension][7].
 
 [1]: #symbolic-link
 [2]: #contao-modules
-[3]: ../04-managing-content/templates.md
+[3]: ../05-managing-content/templates.md
 [4]: http://symfony.com/doc/current/glossary.html#term-bundle
 [5]: https://en.wikipedia.org/wiki/Front_Controller_pattern
 [6]: https://en.wikipedia.org/wiki/Symbolic_link
