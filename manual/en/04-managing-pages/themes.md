@@ -42,6 +42,6 @@ can assign the page layout(s) of the new theme in the site structure.
 
 
 [1]: https://contao.org/en/contao-themes-and-templates.html
-[2]: ../03-managing-pages/style-sheets.md#style-sheets
-[3]: ../03-managing-pages/modules.md#modules
-[4]: ../03-managing-pages/page-layouts.md#page-layouts
+[2]: ../04-managing-pages/style-sheets.md#style-sheets
+[3]: ../04-managing-pages/modules.md#modules
+[4]: ../04-managing-pages/page-layouts.md#page-layouts

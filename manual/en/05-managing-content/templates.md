@@ -109,7 +109,7 @@ function.
 <?php $this->insert('template_name'); ?>
 ```
 
-The `insert()` function also accepts the assignment of variables as second 
+The `insert()` function also accepts the assignment of variables as second
 parameter.
 
 ```php
@@ -149,4 +149,4 @@ The output of the `image.html5` template will be:
 ```
 
 
-[1]: ../03-managing-pages/themes.md#theme-components
+[1]: ../04-managing-pages/themes.md#theme-components
