@@ -32,11 +32,10 @@ Return an array with additional countries you want to add.
     $GLOBALS['TL_HOOKS']['getCountries'][] = array('MyClass', 'myGetCountries');
 
     // MyClass.php
-    public function myGetCountries($arrReturn, $arrCountries)
+    public function myGetCountries(&$arrReturn, $arrCountries)
     {
         $arrReturn['oo'] = 'Moon';
 
-        return $arrReturn;
     }
     ```
 
@@ -58,7 +57,6 @@ can still be done by using a reference on the countries array.
         // Remove all non-EU countries
         $arrCountries = array_intersect_key($arrCountries, array_flip($arrEU));
 
-        return $arrReturn;
     }
     ```
 
