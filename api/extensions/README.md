@@ -7,11 +7,13 @@ parts are *hooks*, Contao's own event system to extend core functionality.
 
 > **Danger** This part of the API reference is incomplete. Please consider contributing to the manual.
 
+{% if false %}
 ---
 
-> **todo**
 > * Content elements (`TL_CTE`)
 > * Front end modules (`FE_MOD`)
 > * Back end modules (`BE_MOD`)
 > * Frontend form fields (`TL_FFL`)
 > * Backend form fields (`BE_FFL`)
+
+{% endif %}

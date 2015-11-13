@@ -1,10 +1,11 @@
 {
-    "gitbook": "2.x.x",
+    "gitbook": "2.4.x",
     "plugins": [
         "richquotes",
         "edit-link",
         "anchors",
-        "piwik"
+        "piwik",
+        "image-captions"
     ],
     "links": {
         "sidebar": {
@@ -18,11 +19,7 @@
     "pluginsConfig": {
         "edit-link": {
             "base": "https://github.com/contao/docs/edit/master/cookbook",
-            "label": {
-                "en": "Edit This Page",
-                "de": "Seite bearbeiten",
-                "fr": "Modifier cette page"
-            }
+            "label": "Edit This Page"
         },
         "piwik": {
             "URL": "association.contao.org/piwik/",

@@ -66,7 +66,7 @@ Information on compatibility is available in the extension repository.
 To import a template, select the entry from the drop-down menu
 and click the "Import template" button.
 
-**When importing a template, existing data will be replaced!**
+> **Danger** When importing a template, existing data will be replaced!
 
 
 #### Creating an admin user

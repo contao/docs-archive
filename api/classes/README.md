@@ -5,9 +5,10 @@ A reference guide to the framework classes.
 
 > **Danger** This part of the API reference is incomplete. Please consider contributing to the manual.
 
+
+{% if false %}
 ---
 
-> **todo**
 > * Input
 > * Database
 > * Image / Picture
@@ -15,3 +16,4 @@ A reference guide to the framework classes.
 > * File
 > * Date
 > * Encryption
+{% endif %}

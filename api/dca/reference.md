@@ -943,4 +943,4 @@ model classes to load referenced data sets efficiently and developer friendly.
 </table>
 
 
-[1]: ../02-administration-area/listing-records.md#listing-records
+[1]: https://docs.contao.org/books/manual/current/en/02-administration-area/listing-records.html

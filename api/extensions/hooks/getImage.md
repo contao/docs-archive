@@ -32,7 +32,7 @@ cache name and the file object as arguments and expects a path as return value.
 
 6. *object* `$objFile`
 
-    A [File](../api/File.md) object from the source image.
+    A `File` object from the source image.
 
 7. *string* `$target`
 
@@ -46,8 +46,8 @@ cache name and the file object as arguments and expects a path as return value.
 
 ## Return Values
 
-If you want to override Contao's [Controller::getImage](../api/Controller/getImage.md)
-method, return a string to the new image. Otherwise return the boolean `false`.
+If you want to override Contao's `Image::get` method, return a string to the new image. 
+Otherwise return the boolean `false`.
 
 
 ## Example
@@ -72,8 +72,3 @@ public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFi
 ### References
 
 - [system/modules/core/library/Contao/Image.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Image.php#L477-L490)
-
-
-### See also
-
-- [`Controller::getImage`](../api/Controller/getImage.md) – Resize an image.
