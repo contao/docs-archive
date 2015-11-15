@@ -28,9 +28,11 @@ $GLOBALS['TL_HOOKS']['getCountries'][] = array('MyClass', 'myGetCountries');
 // MyClass.php
 public function myGetCountries(&$arrCountriesList, $arrCountriesConfig)
 {
-    // add the Moon to $arrCountriesList
-    $arrCountriesList['oo'] = 'Moon';
-
+    // list of european countries
+    $arrEurope = array('de', 'at', 'ch', ...);
+   
+    // remove all non-european countries
+    $arrCountriesList = array_intersect_key($arrCountries, array_flip($arrEurope));
 }
 ```
 
