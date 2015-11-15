@@ -32,7 +32,7 @@ public function myGetCountries(&$arrCountriesList, $arrCountriesConfig)
     $arrEurope = array('de', 'at', 'ch', ...);
    
     // remove all non-european countries
-    $arrCountriesList = array_intersect_key($arrCountries, array_flip($arrEurope));
+    $arrCountriesList = array_intersect_key($arrCountriesList, array_flip($arrEurope));
 }
 ```
 
