@@ -7,14 +7,15 @@ The `getCountries` hook allows to modify the system's list of countries.
 
 ## Parameters
 
-1. *array* `$arrCountriesList`
+1. *array* `$translatedCountries`
 
     The array containing the countries as filled by `\System::getCountries()` according to the 
-    system's configuration. This parameter has to be passed by reference.
+    system's configuration. This parameter has to be passed by reference if you want your changes
+     to be come effective.
 
-2. *array* `$arrCountriesConfig`
+2. *array* `$allCountries`
 
-    The list of countries from the system config file.
+    The list of countries from the system config file `countries.php`.
 
 
 ## Example
@@ -26,13 +27,13 @@ The `getCountries` hook allows to modify the system's list of countries.
 $GLOBALS['TL_HOOKS']['getCountries'][] = array('MyClass', 'myGetCountries');
 
 // MyClass.php
-public function myGetCountries(&$arrCountriesList, $arrCountriesConfig)
+public function myGetCountries(&$translatedCountries, $allCountries)
 {
-    // list of european countries
-    $arrEurope = array('de', 'at', 'ch', ...);
+    // codes for the european countries
+    $europeanCountryCodes = array('de', 'at', 'ch' /*, ... */);
    
     // remove all non-european countries
-    $arrCountriesList = array_intersect_key($arrCountriesList, array_flip($arrEurope));
+    $translatedCountries = array_intersect_key($translatedCountries, array_flip($europeanCountryCodes));
 }
 ```
 
@@ -43,6 +44,7 @@ public function myGetCountries(&$arrCountriesList, $arrCountriesConfig)
 ### References
 
 - [system/modules/core/library/Contao/System.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/System.php#L403-L409)
+- [system/config/countries.php](https://github.com/contao/core/blob/3.5.0/system/config/countries.php)
 
 
 ### See also
