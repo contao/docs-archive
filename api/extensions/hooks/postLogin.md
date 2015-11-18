@@ -25,7 +25,7 @@ $GLOBALS['TL_HOOKS']['postLogin'][] = array('MyClass', 'myPostLogin');
 // MyClass.php
 public function myPostLogin(User $user)
 {
-    if (TL_MODE == 'FE') {
+    if ($user instanceof FrontendUser) {
      // Do something with the for front end user $user  
     }
 }

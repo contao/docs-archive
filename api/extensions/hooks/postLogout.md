@@ -24,7 +24,7 @@ $GLOBALS['TL_HOOKS']['postLogout'][] = array('MyClass', 'myPostLogout');
 // MyClass.php
 public function myPostLogout(User $user)
 {
-    if (TL_MODE == 'FE') {
+    if ($user instanceof FrontendUser) {
      // Do something with the for front end user $user   
     }
 }
