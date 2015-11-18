@@ -1,16 +1,16 @@
 # postLogout
 
-The `postLogout` hook is triggered after a user has logged out from the front
-end. It passes the user object as argument and does not expect a return value.
+The `postLogout` hook is triggered after a user has logged out from the back end 
+or front end. It passes the user object as argument and does not expect a return value.
 
 > **Tag** Available from version 2.4.3.
 
 
 ## Parameters
 
-1. *FrontendUser* `$objUser`
+1. *User* `$user`
 
-    The front end user (object) which has been logged out.
+    The back end or front end user (object) which has been logged out.
 
 
 ## Example
@@ -22,9 +22,11 @@ end. It passes the user object as argument and does not expect a return value.
 $GLOBALS['TL_HOOKS']['postLogout'][] = array('MyClass', 'myPostLogout');
 
 // MyClass.php
-public function myPostLogout(FrontendUser $objUser)
+public function myPostLogout(User $user)
 {
-    // Do something
+    if (TL_MODE == 'FE') {
+     // Do something with the for front end user $user   
+    }
 }
 ```
 

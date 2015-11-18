@@ -1,16 +1,17 @@
 # postLogin
 
-The `postLogin` hook is triggered after a user has logged into the front end. It
-passes the user object as argument and does not expect a return value.
+The `postLogin` hook is triggered after a user has logged in. This can 
+be either in the back end or the fornt end. It passes the user object 
+as argument and does not expect a return value.
 
 > **Tag** Available from version 2.4.3.
 
 
 ## Parameters
 
-1. *FrontendUser* `$objUser`
+1. *User* `$user`
 
-    The front end user (object) which has been logged in.
+    The back end or front end user (object) which has been logged in.
 
 
 ## Example
@@ -22,9 +23,11 @@ passes the user object as argument and does not expect a return value.
 $GLOBALS['TL_HOOKS']['postLogin'][] = array('MyClass', 'myPostLogin');
 
 // MyClass.php
-public function myPostLogin(FrontendUser $objUser)
+public function myPostLogin(User $user)
 {
-    // Do something
+    if (TL_MODE == 'FE') {
+     // Do something with the for front end user $user  
+    }
 }
 ```
 
