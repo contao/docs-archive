@@ -33,7 +33,7 @@ created automatically.
 
 > **Info** The command above always installs the latest stable version. If you
 want to install a specific version, you must insert it in the command as for
-example: `php composer.phar create-project contao/standard-edition=4.0.2 <target>`
+example: `php composer.phar create-project contao/standard-edition:4.0.2 <target>`
 
 First of all, before running this command, you must [install Composer][7]. It
 can be installed globally with the following two commands on Mac OS X or Linux:
