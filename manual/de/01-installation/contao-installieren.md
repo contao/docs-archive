@@ -33,7 +33,7 @@ automatisch angelegt.
 
 > **Info** Der oben erwähnte Befehl installiert immer die neuste stabile Version.
 Um eine andere Version zu installieren, kann diese im Befehl wie folgt eingegeben
-werden: php composer.phar create-project contao/standard-edition:4.0.2 <ziel>
+werden: `php composer.phar create-project contao/standard-edition:4.0.2 <ziel>`
 
 Bevor Sie diesen Befehl ausführen können, muss [Composer installiert sein][7].
 Mit folgendem Befehl kann Composer global auf einem Mac OS X oder Linux-System
