@@ -33,6 +33,11 @@ Vous devez remplacer le paramètre `<target>` avec un chemin d'accès vers un
 dossier où les fichiers de Contao seront créés. Si le dossier cible n'existe
 pas, il sera créé automatiquement.
 
+> **Info** La commande ci-dessus installe toujours la dernière version stable.
+Si vous souhaitez installer une version spécifique, vous devez l'insérer dans la
+commande comme par exemple :
+`php composer.phar create-project contao/standard-edition:4.0.2 <target>`
+
 En premier lieu, avant d'exécuter cette commande, vous devez
 [installer Composer][7]. Il peut être installé globalement avec les deux
 commandes suivantes sur Mac OS X ou Linux:

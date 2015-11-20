@@ -27,9 +27,13 @@ werden.
 php composer.phar create-project contao/standard-edition <ziel>
 ```
 
-Geben Sie als `<ziel>` den Ordner ein, in welchen die Contao-Dateien 
+Geben Sie als `<ziel>` den Ordner ein, in welchen die Contao-Dateien
 installiert werden sollen. Wenn der Ordner nicht vorhanden ist, wird er
 automatisch angelegt.
+
+> **Info** Der oben erwähnte Befehl installiert immer die neuste stabile Version.
+Um eine andere Version zu installieren, kann diese im Befehl wie folgt eingegeben
+werden: php composer.phar create-project contao/standard-edition:4.0.2 <ziel>
 
 Bevor Sie diesen Befehl ausführen können, muss [Composer installiert sein][7].
 Mit folgendem Befehl kann Composer global auf einem Mac OS X oder Linux-System
@@ -69,10 +73,10 @@ Der `secret`-Parameter wird für Verschlüsselungen und gegen [CSRF][8]-Attacken
 verwendet. Es ist wichtig hier einen sicheren Schlüssel einzugeben.
 Die Symfony-Dokumentation sagt dazu:
 
-> **Note** Der Wert sollte aus zufälligen Buchstaben, Zahlen und 
+> **Note** Der Wert sollte aus zufälligen Buchstaben, Zahlen und
 Symbolen bestehen. Die empfohlene Länge liegt bei 32 Zeichen.
 
-Weitere Informationen zu dieser Konfiguration ist auf der 
+Weitere Informationen zu dieser Konfiguration ist auf der
 [offiziellen Symfony-Webseite][9] zu finden.
 
 
@@ -103,8 +107,8 @@ Schreibweise `UTF8` anstatt `UTF-8` in MySQL!
 Contao prüft bei der Installation die Tabellen der Datenbank und gibt eine
 Liste empfohlener Änderungen aus, wenn diese nicht aktuell sind. Lesen Sie diese
 Empfehlungen aufmerksam, denn Contao kennt nur seine eigenen Tabellen (die
-beginnen mit `tl_`) und wird versuchen, vermeintlich nicht benötigte Tabellen 
-anderer Programme "aufzuräumen". Bestätigen Sie die Änderungen durch Anklicken 
+beginnen mit `tl_`) und wird versuchen, vermeintlich nicht benötigte Tabellen
+anderer Programme "aufzuräumen". Bestätigen Sie die Änderungen durch Anklicken
 der "Datenbank aktualisieren"-Schaltfläche.
 
 
