@@ -17,10 +17,6 @@ blockquote.alert-info {
     border-color: #4b85ba !important;
 }
 
-blockquote.alert-info p a {
-    text-decoration: underline !important;
-}
-
 blockquote.alert-success {
     background-color: #f3f8ee !important;
     color: #77ac45 !important;
@@ -50,4 +46,8 @@ blockquote.alert > strong {
 blockquote.alert > p {
     margin-left: 60px;
     margin-bottom: 15px !important;
+}
+
+blockquote.alert p a {
+    text-decoration: underline !important;
 }
