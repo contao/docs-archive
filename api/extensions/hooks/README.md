@@ -14,7 +14,7 @@ custom functionality to the core.
 - [addLogEntry](addLogEntry.md)
 - [checkCredentials](checkCredentials.md)
 - [closeAccount](closeAccount.md)
-- colorizeLogEntries
+- [colorizeLogEntries](colorizeLogEntries.md)
 - compareThemeFiles
 - [compileArticle](compileArticle.md)
 - [compileDefinition](compileDefinition.md)
