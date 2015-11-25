@@ -42,3 +42,7 @@ blockquote.alert > p {
     margin-left: 60px;
     margin-bottom: 15px !important;
 }
+
+blockquote.alert p a {
+    text-decoration: underline !important;
+}
