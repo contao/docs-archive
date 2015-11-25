@@ -52,4 +52,4 @@ public function myCloseAccount($intId, $strMode, $objModule)
 ### See also
 
 - [createNewUser](createNewUser.md) - triggered when a new front end user registers on the website.
-- [updatePersonalData](updatePersonalData.md)
+- [updatePersonalData](updatePersonalData.md) - triggered after a member has updated his personal data.

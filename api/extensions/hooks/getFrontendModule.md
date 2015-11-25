@@ -53,4 +53,4 @@ public function myGetFrontendModule($objRow, $strBuffer)
 - [getContentElement](getContentElement.md) – triggered when a content element is generated.
 - [getArticle](getArticle.md) – tiggered when an article is generated.
 - [getForm](getForm.md) – triggered when a form is generated.
-
+- [isVisibleElement](isVisibleElement.md) – triggered when checking if an element should be visible in the front end or not.

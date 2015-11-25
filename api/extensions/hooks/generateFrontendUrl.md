@@ -55,5 +55,5 @@ public function myGenerateFrontendUrl($arrRow, $strParams, $strUrl)
 ### See also
 
 - [getPageIdFromUrl](getPageIdFromUrl.md) - triggered when the URL fragments are evaluated.
-- [getRootPageFromUrl](getRootPageFromUrl.md)
-- [generateBreadcrumb](generateBreadcrumb.md)
+- [getRootPageFromUrl](getRootPageFromUrl.md) - triggered when searching the current root page.
+- [generateBreadcrumb](generateBreadcrumb.md) - triggered when creating the the breadcrumb navigation (from breadcrumb front end module).

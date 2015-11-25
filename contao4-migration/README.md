@@ -15,4 +15,4 @@ You can find the latest version of this document on [docs.contao.org](https://do
 
 {% include "SUMMARY.md" %}
 
-{% include "../LICENSE.md" %}
+{% include "LICENSE.md" %}

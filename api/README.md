@@ -36,6 +36,6 @@ The Contao API (Application Programming Interface) Reference is split into diffe
 
 
 
-{% include "../LICENSE.md" %}
+{% include "LICENSE.md" %}
 
 

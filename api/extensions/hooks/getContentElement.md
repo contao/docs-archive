@@ -53,3 +53,4 @@ public function myGetContentElement(Database_Result $objElement, $strBuffer)
 - [getArticle](getArticle.md) – tiggered when an article is generated.
 - [getFrontendModule](getFrontendModule.md) – triggered when a front end module is generated.
 - [getForm](getForm.md) – triggered when a form is generated.
+- [isVisibleElement](isVisibleElement.md) – triggered when checking if an element should be visible in the front end or not.

@@ -50,4 +50,4 @@ public function mySqlGetFromFile($arrSql)
 
 - [sqlCompileCommands](sqlCompileCommands.md) – triggered when compiling the database update commands.
 - [sqlGetFromDB](sqlGetFromDB.md) – triggered when parsing the current database definition.
-- [sqlGetFromDca](sqlGetFromDca.md) … triggered when database definitions in DCA files are evaluated.
+- [sqlGetFromDca](sqlGetFromDca.md) – triggered when database definitions in DCA files are evaluated.

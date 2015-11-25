@@ -63,5 +63,5 @@ to 8 digits. If the field is left blank or contains any non-digit characters,
 Contao will not save the value and show an error message instead.
 
 
-[1]: https://docs.contao.org/books/manual/latest/06-data-container-arrays/README.md
+[1]: https://docs.contao.org/books/api/dca/index.html
 [2]: https://docs.contao.org/books/manual/latest/01-installation/installing-contao.md#the-contao-install-tool

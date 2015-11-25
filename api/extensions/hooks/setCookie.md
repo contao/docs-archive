@@ -12,12 +12,13 @@ a standard object with all cookie properties and expects the same as return valu
 
     A stdClass instance that contains the properties of the cookie. See PHP's
     [setcookie](http://php.net/setcookie) documentation for detailed information.
-    - $objCookie->strName		*– the cookie name*
-    - $objCookie->varValue		*– the cookie value*
-    - $objCookie->intExpires	*– the expiration time (in seconds, from now)*
-    - $objCookie->strPath		*– the relative path (if Contao is installed in a subfolder)*
-    - $objCookie->strDomain		*– the current domain for the cookie*
-    - $objCookie->blnSecure		*– if the cookie should only be stored for https access*
+    - $objCookie->strName       *– the cookie name*
+    - $objCookie->varValue      *– the cookie value*
+    - $objCookie->intExpires    *– the expiration time (in seconds, from now)*
+    - $objCookie->strPath       *– the relative path (if Contao is installed in a subfolder)*
+    - $objCookie->strDomain     *– the current domain for the cookie*
+    - $objCookie->blnSecure     *– if the cookie should only be stored for https access*
+    - $objCookie->blnHttpOnly   *– if the httponly flag should be set*
 
 
 ## Return Values

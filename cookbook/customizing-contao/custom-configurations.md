@@ -85,5 +85,5 @@ Of course changes to the language array can also be encapsulated in a custom
 module, which is recommended if there are a lot of them.
 
 
-[1]: https://docs.contao.org/books/manual/latest/06-data-container-arrays/README.md
+[1]: https://docs.contao.org/books/api/dca/index.html
 [2]: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes

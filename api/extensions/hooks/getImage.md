@@ -20,26 +20,34 @@ cache name and the file object as arguments and expects a path as return value.
 3. *int* `$height`
 
     The target image height.
+    
+4. *string* `mode`
 
-4. *string* `$strCacheName`
+    The resize mode.
+
+5. *string* `$strCacheName`
 
     The cache file name generated from source file name, width, height and mode
     setting. The cache file includes the path to `system/html/`.
 
-5. *object* `$objFile`
+6. *object* `$objFile`
 
-    A [File](../api/File.md) object from the source image.
+    A `File` object from the source image.
 
-6. *string* `$target`
+7. *string* `$target`
 
     The target location where the image should be stored. This will be `null` in
     most cases, if not you should ignore `$strCacheName`.
 
+8. *object* `$objImage`
+ 
+    The instance of the `Image` class that triggered the hook.
+
 
 ## Return Values
 
-If you want to override Contao's [Controller::getImage](../api/Controller/getImage.md)
-method, return a string to the new image. Otherwise return the boolean `false`.
+If you want to override Contao's `Image::get` method, return a string to the new image. 
+Otherwise return the boolean `false`.
 
 
 ## Example
@@ -51,7 +59,7 @@ method, return a string to the new image. Otherwise return the boolean `false`.
 $GLOBALS['TL_HOOKS']['getImage'][] = array('MyClass', 'myGetImage');
 
 // MyClass.php
-public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFile, $target)
+public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFile, $target, $objImage)
 {
     return MyImage::generateThumbnail($image, $widht, $height, $mode);
 }
@@ -64,8 +72,3 @@ public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFi
 ### References
 
 - [system/modules/core/library/Contao/Image.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Image.php#L477-L490)
-
-
-### See also
-
-- [`Controller::getImage`](../api/Controller/getImage.md) – Resize an image.
