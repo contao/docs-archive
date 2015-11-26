@@ -3,9 +3,10 @@
 The `colorizeLogEntries` hook is triggered when log entries are being
 colorized depending on their category.
 
-Note that you can not colorize log entries of the following categories: 
-`CONFIGURATION`, `REPOSITORY`, `CRON` and `ERROR` as the hook will not 
-be called for these types.
+> **Warning** You can not colorize log entries of the categories `CONFIGURATION`, 
+`REPOSITORY`, `CRON` and `ERROR` as the hook will not be called for these types.  
+
+<!-- blockquote break -->
 
 > **Tag** Available from version 3.3.RC1.
 
@@ -47,7 +48,6 @@ public function myColorizeLogEntries($row, $label)
     // ... and visualize the source next to the date of the log entry
     
     return preg_replace('/(.+?)\]/', "$1 " . $row['source'] . ']', $label);
-
 }
 ```
 
