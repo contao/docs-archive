@@ -71,7 +71,7 @@ custom functionality to the core.
 - [parseFrontendTemplate](parseFrontendTemplate.md)
 - [parseTemplate](parseTemplate.md)
 - parseWidget
-- postAuthenticate
+- [postAuthenticate](postAuthenticate.md)
 - [postDownload](postDownload.md)
 - [postLogin](postLogin.md)
 - [postLogout](postLogout.md)
