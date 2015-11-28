@@ -2,7 +2,11 @@
 
 The `outputFrontendTemplate` hook is triggered when a front end template is
 printed to the screen. It passes the template content and the template name as
-arguments and expects the template content as return value.
+arguments and expects the template content as return value. 
+
+Note that `outputFrontendTemplate` is applied before the replacement of insert 
+tags whereas the corresponding `modifyFrontendTemplate` is applied after insert 
+tags have been replaced.
 
 > **Tag** Available from version 2.6.0.
 
@@ -55,5 +59,6 @@ public function myOutputFrontendTemplate($strBuffer, $strTemplate)
 ### See also
 
 - [parseFrontendTemplate](parseFrontendTemplate.md) - triggered when a front end template is parsed.
+- [modifyFrontendPage](modifyFrontendPage.md) - triggered when a front end page is printed to the screen.
 - [outputBackendTemplate](outputBackendTemplate.md) - triggered when a back end template is printed to the screen.
 - [parseBackendTemplate](parseBackendTemplate.md) - triggered when a back end template is parsed.
