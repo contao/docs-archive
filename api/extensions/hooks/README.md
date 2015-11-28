@@ -14,7 +14,7 @@ custom functionality to the core.
 - [addLogEntry](addLogEntry.md)
 - [checkCredentials](checkCredentials.md)
 - [closeAccount](closeAccount.md)
-- colorizeLogEntries
+- [colorizeLogEntries](colorizeLogEntries.md)
 - compareThemeFiles
 - [compileArticle](compileArticle.md)
 - [compileDefinition](compileDefinition.md)
@@ -71,7 +71,7 @@ custom functionality to the core.
 - [parseFrontendTemplate](parseFrontendTemplate.md)
 - [parseTemplate](parseTemplate.md)
 - parseWidget
-- postAuthenticate
+- [postAuthenticate](postAuthenticate.md)
 - [postDownload](postDownload.md)
 - [postLogin](postLogin.md)
 - [postLogout](postLogout.md)
