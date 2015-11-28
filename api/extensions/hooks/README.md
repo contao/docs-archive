@@ -60,7 +60,7 @@ custom functionality to the core.
 - [loadDataContainer](loadDataContainer.md)
 - [loadFormField](loadFormField.md)
 - [loadLanguageFile](loadLanguageFile.md)
-- modifyFrontendPage
+- [modifyFrontendPage](modifyFrontendPage.md)
 - newsListCountItems
 - newsListFetchItems
 - [outputBackendTemplate](outputBackendTemplate.md)
