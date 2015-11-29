@@ -54,6 +54,7 @@ public function myModifyFrontendPage($strBuffer, $strTemplate)
 ### References
 
 - [system/modules/core/classes/FrontendTemplate.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/classes/FrontendTemplate.php#L105-L112)
+- [system/modules/core/controllers/FrontendIndex.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/controllers/FrontendIndex.php#457-L464)
 
 
 ### See also
