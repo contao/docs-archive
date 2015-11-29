@@ -11,7 +11,7 @@ The `getCountries` hook allows to modify the system's list of countries.
 
     The array containing the countries as filled by `\System::getCountries()` according to the 
     system's configuration. This parameter has to be passed by reference if you want your changes
-     to be come effective.
+     to become effective.
 
 2. *array* `$allCountries`
 
