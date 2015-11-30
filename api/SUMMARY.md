@@ -61,7 +61,7 @@
         * [loadDataContainer](extensions/hooks/loadDataContainer.md)
         * [loadFormField](extensions/hooks/loadFormField.md)
         * [loadLanguageFile](extensions/hooks/loadLanguageFile.md)
-        * modifyFrontendPage
+        * [modifyFrontendPage](extensions/hooks/modifyFrontendPage.md)
         * newsListCountItems
         * newsListFetchItems
         * [outputBackendTemplate](extensions/hooks/outputBackendTemplate.md)
