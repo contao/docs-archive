@@ -7,8 +7,6 @@ The `getLanguages` hook allows to modify the system's list of languages.
 
 ## Parameters
 
-$languages, $langsNative, $blnInstalledOnly
-
 1. *array* `$compiledLanguages`
 
     The array containing the languages as filled by `\System::getLanguages()` according 
