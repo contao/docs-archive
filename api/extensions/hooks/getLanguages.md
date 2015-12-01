@@ -10,7 +10,7 @@ The `getLanguages` hook allows to modify the system's list of languages.
 1. *array* `$compiledLanguages`
 
     The array containing the languages as filled by `\System::getLanguages()` according 
-    to the system's configuration. This parameter has to be passed by reference if you 
+    to the system configuration. This parameter has to be passed by reference if you 
     want your changes to become effective.
 
 2. *array* `$languages`
@@ -23,9 +23,10 @@ The `getLanguages` hook allows to modify the system's list of languages.
     The list of languages with native language names (also read from from the system 
     config file `countries.php`).
     
-4. *boolean* `$blnInstalledOnly`
+4. *boolean* `$installedOnly`
  
-    Indicates whether only installed in the back end should be considered in the result. 
+    Indicates whether only languages installed in the back end should be considered
+    in the result. 
 
 
 ## Example
@@ -37,9 +38,9 @@ The `getLanguages` hook allows to modify the system's list of languages.
 $GLOBALS['TL_HOOKS']['getCountries'][] = array('MyClass', 'myGetLanguages');
 
 // MyClass.php
-public function myGetLanguages(&$compiledLanguages, $languages, $langsNative, $blnInstalledOnly)
+public function myGetLanguages(&$compiledLanguages, $languages, $langsNative, $installedOnly)
 {
-  // make your changes to $compiledLanguages
+    // make your changes to $compiledLanguages
 }
 ```
 
