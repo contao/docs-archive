@@ -4,27 +4,29 @@ The `modifyFrontendPage` hook is triggered when a front end template is
 printed to the screen. It passes the template content and the template name as
 arguments and expects the template content as return value.
 
-Note that `modifyFrontendTemplate` is applied after insert tags have been 
-replaced. If you want to apply your logic before the replacement of
- insert tags use `outputFrontendTemplate` instead.
+> **Hint** This hook is applied after insert tags have been
+> replaced. If you want to apply your logic before the replacement of
+> insert tags, use the [`outputFrontendTemplate`][1] hook instead.
+
+<!-- blockquote break -->
 
 > **Tag** Available from version 3.1.beta1.
 
 
 ## Parameters
 
-1. *string* `$strBuffer`
+1. *string* `$buffer`
 
     Content of the rendered front end template.
 
-2. *string* `$strTemplate`
+2. *string* `$templateName`
 
     The template name (e.g. `fe_page`) without file extension.
 
 
 ## Return Values
 
-Return the original `$strBuffer` or override with your custom modification.
+Return the original `$buffer` or override with your custom modification.
 
 
 ## Example
@@ -36,10 +38,9 @@ Return the original `$strBuffer` or override with your custom modification.
 $GLOBALS['TL_HOOKS']['modifyFrontendPage'][] = array('MyClass', 'myModifyFrontendPage');
 
 // MyClass.php
-public function myModifyFrontendPage($strBuffer, $strTemplate)
+public function myModifyFrontendPage($buffer, $templateName)
 {
-    if ($strTemplate == 'fe_page')
-    {
+    if ('fe_page' === $templateName) {
         // Modify output
     }
 
@@ -60,6 +61,10 @@ public function myModifyFrontendPage($strBuffer, $strTemplate)
 ### See also
 
 - [parseFrontendTemplate](parseFrontendTemplate.md) - triggered when a front end template is parsed.
-- [outputFrontendTemplate](outputFrontendTemplate.md) - triggered when a front end template is printed to the screen.
+- [outputFrontendTemplate][1] - triggered when a front end template is printed to the screen.
 - [outputBackendTemplate](outputBackendTemplate.md) - triggered when a back end template is printed to the screen.
 - [parseBackendTemplate](parseBackendTemplate.md) - triggered when a back end template is parsed.
+
+
+
+[1]: outputFrontendTemplate.md
