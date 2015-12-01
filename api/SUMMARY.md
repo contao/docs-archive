@@ -43,7 +43,7 @@
         * [getForm](extensions/hooks/getForm.md)
         * [getFrontendModule](extensions/hooks/getFrontendModule.md)
         * [getImage](extensions/hooks/getImage.md)
-        * getLanguages
+        * [getLanguages](extensions/hooks/getLanguages.md)
         * [getPageIdFromUrl](extensions/hooks/getPageIdFromUrl.md)
         * [getPageLayout](extensions/hooks/getPageLayout.md)
         * [getPageStatusIcon](extensions/hooks/getPageStatusIcon.md)

@@ -42,7 +42,7 @@ custom functionality to the core.
 - [getForm](getForm.md)
 - [getFrontendModule](getFrontendModule.md)
 - [getImage](getImage.md)
-- getLanguages
+- [getLanguages](getLanguages.md)
 - [getPageIdFromUrl](getPageIdFromUrl.md)
 - [getPageLayout](getPageLayout.md)
 - [getPageStatusIcon](getPageStatusIcon.md)
