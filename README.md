@@ -8,7 +8,8 @@ the corresponding subdirectory.
 
 ## API
 
-Documentation of Contao APIs (Hooks, Callbacks, Core classes) (not yet used).
+Documentation of Contao APIs (Hooks, Callbacks, Core classes) (see 
+the [api documentation on contao.org][3]).
 
 
 ## Cookbook
@@ -26,5 +27,6 @@ Official manual for users and developers (see the [manual on contao.org][2]).
 Space for testing new projects.
 
 
-[1]: https://contao.org/en/cookbook.html
+[1]: https://docs.contao.org/books/cookbook/
 [2]: https://contao.org/en/manual.html
+[3]: https://docs.contao.org/books/api/
