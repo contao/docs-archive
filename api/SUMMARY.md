@@ -43,7 +43,7 @@
         * [getForm](extensions/hooks/getForm.md)
         * [getFrontendModule](extensions/hooks/getFrontendModule.md)
         * [getImage](extensions/hooks/getImage.md)
-        * getLanguages
+        * [getLanguages](extensions/hooks/getLanguages.md)
         * [getPageIdFromUrl](extensions/hooks/getPageIdFromUrl.md)
         * [getPageLayout](extensions/hooks/getPageLayout.md)
         * [getPageStatusIcon](extensions/hooks/getPageStatusIcon.md)
@@ -61,7 +61,7 @@
         * [loadDataContainer](extensions/hooks/loadDataContainer.md)
         * [loadFormField](extensions/hooks/loadFormField.md)
         * [loadLanguageFile](extensions/hooks/loadLanguageFile.md)
-        * modifyFrontendPage
+        * [modifyFrontendPage](extensions/hooks/modifyFrontendPage.md)
         * newsListCountItems
         * newsListFetchItems
         * [outputBackendTemplate](extensions/hooks/outputBackendTemplate.md)

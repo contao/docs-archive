@@ -3,7 +3,8 @@
 
 Contao 3 uses a lot of PHP constants to represent state.
 
-> **Danger** This part of the API reference is incomplete. Please consider contributing to the manual.
+> **Danger** This part of the API reference is incomplete. Please consider
+[contributing to the manual][1].
 
 {% if false %}
 ---
@@ -18,3 +19,6 @@ Contao 3 uses a lot of PHP constants to represent state.
 * Request token (`REQUEST_TOKEN` / `BYPASS_TOKEN_CHECK`)
 
 {% endif %}
+
+
+[1]: https://github.com/contao/docs/blob/master/CONTRIBUTING.md

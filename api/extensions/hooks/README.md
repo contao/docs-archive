@@ -42,7 +42,7 @@ custom functionality to the core.
 - [getForm](getForm.md)
 - [getFrontendModule](getFrontendModule.md)
 - [getImage](getImage.md)
-- getLanguages
+- [getLanguages](getLanguages.md)
 - [getPageIdFromUrl](getPageIdFromUrl.md)
 - [getPageLayout](getPageLayout.md)
 - [getPageStatusIcon](getPageStatusIcon.md)
@@ -60,7 +60,7 @@ custom functionality to the core.
 - [loadDataContainer](loadDataContainer.md)
 - [loadFormField](loadFormField.md)
 - [loadLanguageFile](loadLanguageFile.md)
-- modifyFrontendPage
+- [modifyFrontendPage](modifyFrontendPage.md)
 - newsListCountItems
 - newsListFetchItems
 - [outputBackendTemplate](outputBackendTemplate.md)

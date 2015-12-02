@@ -56,5 +56,6 @@ public function myParseFrontendTemplate($strBuffer, $strTemplate)
 ### See also
 
 - [outputFrontendTemplate](outputFrontendTemplate.md) - triggered when a front end template is printed to the screen.
+- [modifyFrontendPage](modifyFrontendPage.md) - triggered when a front end page is printed to the screen. 
 - [outputBackendTemplate](outputBackendTemplate.md) - triggered when a back end template is printed to the screen.
 - [parseBackendTemplate](parseBackendTemplate.md) - triggered when a back end template is parsed.
