@@ -1,6 +1,6 @@
 # Using the right template variables
 
-When you've found template variables, but don't know how to use them, here are some useful examples.
+Here are some useful examples for using template variables.
 
 ### Template variables for displaying embedded images
 
