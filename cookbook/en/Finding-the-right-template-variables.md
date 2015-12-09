@@ -1,6 +1,6 @@
 # Finding the right template variables
 
-When writing templates, you often need to use template variables - for example for getting image sizes. There are several methods to obtain them. You can find examples of template variables in [Using the right template variables][2]
+When writing templates, you often need to use template variables - for example for getting image sizes. There are several methods to obtain them.
 
 #### $this->showTemplateVars()
 In every Contao Frontend Template you can use ```$this->showTemplateVars();```, this methods prints most of the available template variables. This method is defined in [/system/modules/core/library/Contao/Template.php][0].
@@ -17,6 +17,16 @@ If you are editing your template in a productive envoirement, it is recommended 
 <!-- <?php print_r($this); ?> -->
 ```
 
+## Serialized arrays
+Template varaibles may contain [serialized][2] arrays. You have to deserialize them before using.
+```php
+  $arr = array("key" => "value");
+  $seArray = serialize($arr);
+  echo $seArray;
+  //Prints: a:1:{s:3:"key";s:5:"value";}
+	$realArray = deserialize($seArray);
+```
+
 [0]: https://github.com/contao/core/blob/master/system/modules/core/library/Contao/Template.php#L238
 [1]: https://github.com/contao/core/find/master
-[2]: Using-the-right-template-variables.md
+[2]: http://php.net/manual/en/language.oop5.serialization.php
