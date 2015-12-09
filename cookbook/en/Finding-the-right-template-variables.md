@@ -24,7 +24,7 @@ Template varaibles may contain [serialized][2] arrays. You have to deserialize t
   $seArray = serialize($arr);
   echo $seArray;
   //Prints: a:1:{s:3:"key";s:5:"value";}
-	$realArray = deserialize($seArray);
+  $realArray = deserialize($seArray);
 ```
 
 [0]: https://github.com/contao/core/blob/master/system/modules/core/library/Contao/Template.php#L238
