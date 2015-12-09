@@ -1,21 +1,23 @@
 # activateAccount
 
 The `activateAccount` hook is triggered when a new front end account is activated.
-It does not expect a return value.
 
 > **Tag** Available from version 2.4.3.
 
 
 ## Parameters
 
-1. *MemberModel* `$member`
+1. *MemberModel* `$memberModel`
 
     A model of the activated user account.
     
-2. *object* `$registration`
+2. *object* `$registrationModule`
 
     The registration module that was used to activate the account.
 
+## Return value
+
+A return value is not expected.
 
 ## Example
 
@@ -26,7 +28,7 @@ It does not expect a return value.
 $GLOBALS['TL_HOOKS']['activateAccount'][] = array('MyClass', 'myActivateAccount');
 
 // MyClass.php
-public function myActivateAccount(MemberModel $member, ModuleRegistration $registration)
+public function myActivateAccount(MemberModel $memberModel, ModuleRegistration $registrationModule)
 {
     // Do something
 }
