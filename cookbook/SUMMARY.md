@@ -26,8 +26,7 @@
 
     * [Cron jobs in Contao (Poor-Man-Cron)](en/Cron-jobs-in-Contao.md)
     * [Using content elements](en/Using-Content-Elements.md)
-    * [Finding template variables](en/template-variables/Finding-the-right-template-variables.md)
-      * [Using template variables](en/template-variables/Using-the-right-template-variables.md)
+    * [Finding template variables](en/Finding-the-right-template-variables.md)
     * Create a custom Contao module
         * [Part 1](en/custom-module/part1.md)
         * [Part 2](en/custom-module/part2.md)
