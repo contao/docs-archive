@@ -18,7 +18,7 @@ If you are editing your template in a productive environment wrapping the output
 ```
 
 ## Serialized arrays
-Template varaibles may contain [serialized][2] arrays. You have to deserialize them before using.
+Template variables may contain [serialized][2] arrays. You have to deserialize them before using.
 ```php
   $arr = array("key" => "value");
   $seArray = serialize($arr);
