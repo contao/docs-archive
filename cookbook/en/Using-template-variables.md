@@ -1,7 +1,7 @@
-# Finding the right template variables
+# Using template variables
 
 When writing templates, you often need to use template variables, for example for getting image sizes. There are several methods to obtain them.
-
+## Methods
 #### $this->showTemplateVars()
 In every Contao Frontend Template you can use ```$this->showTemplateVars();```, it prints most of the available template variables. This method is defined in [/system/modules/core/library/Contao/Template.php][0].
 As you can see in the source, the output is wrapped in ```<pre>``` tags.
@@ -10,7 +10,7 @@ As you can see in the source, the output is wrapped in ```<pre>``` tags.
 If you want to get more information you can use ```print_r($this);```. That will print all information about available methods, instances of classes or variables.
 To get more information about used classes that are in the output of the ```print_r``` statement, you can just [look up their source code in the repository][1].
 
-## Using methods in productive environments
+## In a productive environment
 
 If you are editing your template in a productive environment wrapping the output with HTML comment tags is recommended.
 ```php
