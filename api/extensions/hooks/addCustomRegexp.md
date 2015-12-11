@@ -36,7 +36,7 @@ public function myAddCustomRegexp($strRegexp, $varValue, Widget $objWidget)
 {
     if ($strRegexp == 'postal')
     {
-        if (!preg_match('/^0-9{4,6}$/', $varValue))
+        if (!preg_match('/^[0-9]{4,6}$/', $varValue))
         {
             $objWidget->addError('Field ' . $objWidget->label . ' should be a postal code.');
         }
