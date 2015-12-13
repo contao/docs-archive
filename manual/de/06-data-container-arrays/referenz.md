@@ -756,7 +756,8 @@ Ausdrucks geprüft werden.
 <tr>
   <td>allowHtml</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>Legt fest, ob HTML-Eingaben erlaubt sind.</td>
+  <td>Legt fest, ob HTML-Tags nach der Liste "Erlaubte HTML-Tags" 
+      der System > Einstellungen erlaubt sind.</td>
 </tr>
 <tr>
   <td>preserveTags</td>
