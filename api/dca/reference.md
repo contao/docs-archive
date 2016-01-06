@@ -941,6 +941,22 @@ model classes to load referenced data sets efficiently and developer friendly.
       <b>eager</b> Loading referenced records automatically (saves database calls)
   </td>
 </tr>
+<tr>
+  <td>table</td>
+  <td>Relation table<br> (<code>string</code>)</td>
+  <td>
+      A database table for this relation. Optional, by default Contao tries to 
+      extract it from the <code>foreignKey</code> attribute.
+  </td>
+</tr>
+<tr>
+  <td>field</td>
+  <td>Relation table field<br> (<code>string</code>)</td>
+  <td>
+      Override the default relation field (<code>id</code>). Useful for relation
+      with <code>tl_files.uuid</code> for example.
+  </td>
+</tr>
 </table>
 
 
