@@ -737,7 +737,8 @@ Each field can be validated against a regular expression.
 <tr>
   <td>allowHtml</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>If true the current field will accept HTML input.</td>
+  <td>If true the current field will accept HTML input (see "Allowed HTML 
+      tags" in the backend System => Settings).</td>
 </tr>
 <tr>
   <td>preserveTags</td>
