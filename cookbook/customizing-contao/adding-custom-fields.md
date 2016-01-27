@@ -64,4 +64,4 @@ Contao will not save the value and show an error message instead.
 
 
 [1]: https://docs.contao.org/books/api/dca/index.html
-[2]: https://docs.contao.org/books/manual/latest/01-installation/installing-contao.md#the-contao-install-tool
+[2]: https://docs.contao.org/books/manual/current/en/01-installation/installing-contao.html#the-contao-install-tool
