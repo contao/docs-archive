@@ -1,11 +1,19 @@
 language: python
 
+python:
+  - "2.7"
+
 env:
   global:
     - secure: "WvexIfR2nvMn77kHv4PVTiXBC9U8YkpcCbPPHr3/HWWU29t9dxerOgfNIfO0LgPYhV2yb9NJ8sLBW6/8Vs/DS8gSVnsn/IBwQXDwwcgymzkNYampq59do/56FxwFzvSk0DqJbNkmNjLzzJsdTR5mK6weN0fT50h76eUkGuLoZKM="
     - secure: "cua8Ei2rrCZBjv/7sXRcizHS3UBOQ6v1OrzOTlWuwGN7jpQQS+W/gbMnsteBh4SLnXziVzsefrcy+z4iyMnGViyXZ0InfZ82BEe/Tuu2zY8lCPMvGomNv0OUXYzMBTbf/QPNe7GezoatIrL/4Qu8/GHuOYA/I39ZDxU1iDVn9tc="
 
 sudo: required
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install oracle-java8-installer
+  - sudo update-java-alternatives -s java-8-oracle
 
 install:
   - sudo apt-get update
