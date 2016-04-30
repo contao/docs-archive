@@ -74,5 +74,5 @@ release.
 
 
 [1]: https://contao.org/en/extension-list.html
-[2]: ../02-folder-structure/README.md#symbolic-link
+[2]: ../01-installation/installing-contao.md#symbolic-link
 [3]: ../01-installation/installing-contao.md#the-contao-install-tool
