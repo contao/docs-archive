@@ -1,58 +1,78 @@
 ## Extensions
 
 Extensions are an essential part of Contao, because they allow you to add extra
-functionality. There are more than 1,400 extensions available in the Contao
-Extension Repository, which you can browse directly in the back end.
-Communication with the repository server is done via SOAP, so you need to enable
-the PHP SOAP extension to use the service (if not enabled by default).
+functionality. There are more than 1,800 extensions available in the Contao
+[Extension Repository][1].
+
+Contao 4 is built on top of the Symfony framework and takes advantage of its
+functionalities but also of its terminology. In a Symfony project, an extension
+is named a bundle.
+
+If a bundle and a Contao extension have the same purpose, they are nevertheless
+not developed in the same way and the installation procedure is different for
+each of them.
+
+> **Warning** Even if a Contao extension can be installed, this does not mean
+that it is compatible with Contao 4. The extension you want to use must take
+into account the prerequisites of the version 4.
 
 
-### Extension catalog
+### Installing a Contao extension
 
-The "extension catalog" module allows you to browse the extension list and to
-install extensions at the push of a button. Use the filter and sorting options
-to find a particular extension and click the info icon or extension title to
-open the details page and install the module.
+With Contao 4.0, the installation must be performed manually as described below:
 
-![](images/extension-list.jpg)
-
-The details page contains a description of the extension and important
-information regarding system requirements, versions and dependencies from other
-modules. Click the "Install" button to download and install the extension.
-
-![](images/extension-details.jpg)
-
-Contao will automatically download and install the extension and update the
-database if necessary.
-
-![](images/extension-install.jpg)
+Find the extension you want to install in the [extension list][1] and download
+the .zip archive of the latest release. Then unzip the files and copy them to
+the `system/modules` folder. If the extension has public files, you must
+generate a [symbolic link][2] with the command `app/console contao:symlinks` in your
+command-line interface. Then you must register your extension in
+`app/AppKernel.php` so that it can be taken into account by the system (see
+below). Finally, check the database with the [Contao install tool][3].
 
 
-### Extension manager
+#### AppKernel.php
 
-The "extension manager" module allows you to update and uninstall extensions. It
-automatically checks for updates and notifies you if a new version is available.
-Many extensions also include links to an online manual and/or forum thread where
-you can get support.
+1. Add the `use` statement.
 
-![](images/extension-manager.jpg)
+```php
+use Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle;
+```
 
-To uninstall an extension, simply click the uninstall icon and follow the
-instructions. The extension manager will remove all files and folders and update
-the database if necessary. Note that this action cannot be undone and the tables
-cannot be restored!
+2. Instantiate the `ContaoModuleBundle` class. The first parameter is the name
+of your extension.
 
-![](images/extension-uninstall.jpg)
+```php
+new ContaoModuleBundle('myExtensionName', $this->getRootDir()),
+```
+
+**Example**:
+
+```php
+// app/AppKernel.php
+use Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle;
+
+public function registerBundles()
+{
+    $bundles = [
+        new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+        new Contao\CoreBundle\ContaoCoreBundle(),
+        new ContaoModuleBundle('myExtensionName', $this->getRootDir()),
+    ];
+
+    // ...
+
+    return $bundles;
+}
+```
 
 
-### Manual installation
+## Extension catalog
 
-In case the PHP SOAP extension is not available on your server, you can also
-install Contao extensions manually. Find the respective module in the [extension
-list][1] and download the .zip archive of the latest release. Then unzip the
-files and copy them to your local or remote Contao directory. Finally, check the
-database with the [Contao install tool][2].
+Prior to Contao 4, it was possible to install an extension automatically from
+the back end. This feature is under development and will be offered in a future
+release.
 
 
 [1]: https://contao.org/en/extension-list.html
-[2]: ../01-installation/installing-contao.md#the-contao-install-tool
+[2]: ../02-folder-structure/README.md#symbolic-link
+[3]: ../01-installation/installing-contao.md#the-contao-install-tool
