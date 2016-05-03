@@ -24,39 +24,32 @@ With Contao 4.0, the installation must be performed manually as described below:
 Find the extension you want to install in the [extension list][1] and download
 the .zip archive of the latest release. Then unzip the files and copy them to
 the `system/modules` folder. If the extension has public files, you must
-generate a [symbolic link][2] with the command `app/console contao:symlinks` in your
-command-line interface. Then you must register your extension in
+generate a [symbolic link][2] with the command `app/console contao:symlinks` in
+your command-line interface. Then you must register your extension in
 `app/AppKernel.php` so that it can be taken into account by the system (see
 below). Finally, check the database with the [Contao install tool][3].
 
 
 #### AppKernel.php
 
-1. Add the `use` statement.
+Instantiate the `ContaoModuleBundle` class. The first parameter is the name of
+your extension.
 
 ```php
-use Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle;
-```
-
-2. Instantiate the `ContaoModuleBundle` class. The first parameter is the name
-of your extension.
-
-```php
-new ContaoModuleBundle('myExtensionName', $this->getRootDir()),
+new Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle('myExtensionName', $this->getRootDir()),
 ```
 
 **Example**:
 
 ```php
 // app/AppKernel.php
-use Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle;
 
 public function registerBundles()
 {
     $bundles = [
         new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
         new Contao\CoreBundle\ContaoCoreBundle(),
-        new ContaoModuleBundle('myExtensionName', $this->getRootDir()),
+        new Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle('myExtensionName', $this->getRootDir()),
     ];
 
     // ...
