@@ -19,18 +19,47 @@ into account the prerequisites of the version 4.
 
 ### Installing a Contao extension
 
-With Contao 4.0, the installation must be performed manually as described below:
+With Contao 4.0, an extension can be installed with Composer or manually.
 
-Find the extension you want to install in the [extension list][1] and download
-the .zip archive of the latest release. Then unzip the files and copy them to
-the `system/modules` folder. If the extension has public files, you must
-generate a [symbolic link][2] with the command `app/console contao:symlinks` in
+
+#### With Composer
+
+An extension that can be installed via Composer can be found through its main
+repository [Packagist][2]. A name of an extension is divided into two parts.
+The first part is the name of the project owner and the second the extension
+name. For example: `companyName/eCommerce`.
+
+Dependencies (in our case an extension) are described in a file named
+`composer.json` which is located in the root folder of your Contao installation.
+
+This is the first step you need to do. Open the `composer.json` file and add the
+new dependency in the `require` key.
+
+```json
+"require": {
+        "companyName/eCommerce": "~1.0",
+    },
+```
+
+You must also enter the version we want to use. The `~` [operator][3] means we
+want the latest version of `1.*`.
+
+Run the command `php composer.phar update companyName/eCommerce` in your
+command-line interface to start the installation.
+
+
+#### Manually
+
+Find the extension you want to install in the [Extension Repository][1] and
+download the .zip archive of the latest release. Then unzip the files and copy
+them to the `system/modules` folder. If the extension has public files, you must
+generate a [symbolic link][4] with the command `app/console contao:symlinks` in
 your command-line interface. Then you must register your extension in
 `app/AppKernel.php` so that it can be taken into account by the system (see
-below). Finally, check the database with the [Contao install tool][3].
+below). Finally, check the database with the [Contao install tool][5].
 
 
-#### AppKernel.php
+##### AppKernel.php
 
 Instantiate the `ContaoModuleBundle` class. The first parameter is the name of
 your extension.
@@ -67,5 +96,7 @@ release.
 
 
 [1]: https://contao.org/en/extension-list.html
-[2]: ../01-installation/installing-contao.md#symbolic-link
-[3]: ../01-installation/installing-contao.md#the-contao-install-tool
+[2]: https://packagist.org
+[3]: https://getcomposer.org/doc/articles/versions.md#tilde
+[4]: ../01-installation/installing-contao.md#symbolic-link
+[5]: ../01-installation/installing-contao.md#the-contao-install-tool
