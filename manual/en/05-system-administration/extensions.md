@@ -27,7 +27,7 @@ With Contao 4.0, an extension can be installed with Composer or manually.
 An extension that can be installed via Composer can be found through its main
 repository [Packagist][2]. A name of an extension is divided into two parts.
 The first part is the name of the project owner and the second the extension
-name. For example: `companyName/eCommerce`.
+name. For example: `companyName/extensionName`.
 
 Dependencies (in our case an extension) are described in a file named
 `composer.json` which is located in the root folder of your Contao installation.
@@ -37,14 +37,14 @@ new dependency in the `require` key.
 
 ```json
 "require": {
-        "companyName/eCommerce": "~1.0",
+        "companyName/extensionName": "~1.0",
     },
 ```
 
 You must also enter the version we want to use. The `~` [operator][3] means we
 want the latest version of `1.*`.
 
-Run the command `php composer.phar update companyName/eCommerce` in your
+Run the command `php composer.phar update companyName/extensionName` in your
 command-line interface to start the installation.
 
 
