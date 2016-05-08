@@ -41,7 +41,7 @@ new dependency in the `require` key.
     },
 ```
 
-You must also enter the version we want to use. The `~` [operator][3] means we
+You must also enter the version you want to use. The `~` [operator][3] means you
 want the latest version of `1.*`.
 
 Run the command `php composer.phar update companyName/extensionName` in your
