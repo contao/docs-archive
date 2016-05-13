@@ -72,4 +72,18 @@ voir des pages protégées ou accéder à des téléchargements protégés qui n
 pas disponibles pour les invités.
 
 
+#### Prévisualisation du front office
+
+En tant qu'administrateur, vous pouvez vous substituer à un membre en
+particulier et prévisualiser le site internet avec ses droits et ses
+restrictions d'accès. Cette action est disponible dans la vue des membres.
+
+![](images/apercu.jpg)
+
+Le front office apparaît avec un bandeau de prévisualisation et vous pouvez vous
+substituer à un autre membre en tout temps avec le champ "Membre". Il est
+également possible de prévisualiser les éléments qui n'ont pas encore été
+publiés par le membre sélectionné.
+
+
 [1]: ../03-gestion-des-pages/modules.md#contr%C3%B4le-d-acc%C3%A8s
