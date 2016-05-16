@@ -47,6 +47,9 @@ want the latest version of `1.*`.
 Run the command `php composer.phar update companyName/extensionName` in your
 command-line interface to start the installation.
 
+After the installation, you can clear the cache with the following command:
+`php app/console cache:clear -e=prod`.
+
 
 #### Manually
 
@@ -86,6 +89,9 @@ public function registerBundles()
     return $bundles;
 }
 ```
+
+After the installation, you can clear the cache with the following command:
+`php app/console cache:clear -e=prod`.
 
 
 ## Extension catalog
