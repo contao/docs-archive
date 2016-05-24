@@ -26,8 +26,8 @@ With Contao 4.0, an extension can be installed with Composer or manually.
 
 An extension that can be installed via Composer can be found through its main
 repository [Packagist][2]. A name of an extension is divided into two parts.
-The first part is the name of the project owner and the second the extension
-name. For example: `companyName/extensionName`.
+The first part is the name of the vendor (project owner) and the second the
+extension name. For example: `companyName/extensionName`.
 
 Dependencies (in our case an extension) are described in a file named
 `composer.json` which is located in the root folder of your Contao installation.
