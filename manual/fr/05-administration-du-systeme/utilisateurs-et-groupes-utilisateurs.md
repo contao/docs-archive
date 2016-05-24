@@ -74,7 +74,7 @@ pas disponibles pour les invités.
 
 #### Prévisualisation du front office
 
-En tant qu'administrateur, vous pouvez vous substituer à un membre en
+En tant qu'administrateur, vous pouvez vous connecter comme un membre en
 particulier et prévisualiser le site internet avec ses droits et ses
 restrictions d'accès. Cette action est disponible dans la vue des membres.
 

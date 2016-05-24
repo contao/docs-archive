@@ -66,7 +66,7 @@ guests.
 
 #### Front end preview
 
-As an administrator, you can switch to a particular member and preview the
+As an administrator, you can log in as a particular member and preview the
 website with its rights and access restrictions. This action is available in
 the members view.
 
