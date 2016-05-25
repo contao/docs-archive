@@ -16,11 +16,10 @@ speichern Sie die neue Datei als `be_tinyMCE.html5` im Template Hauptverzeichnis
 
 ### Eigene Formatangaben
 
-Um eigene Formate verwenden zu können gibt es zwei Ansätze.
-Der erste Ansatz ist, die Styles Inline hinzuzufügen. Hier ein Beispiel:
+Eigene Formate können in TinyMCE wie folgt hinzugefügt werden:
 
 ```js
-// Eine Vorgegebene Farbe für Textbereiche definieren:
+// Eine vorgegebene Farbe für Textbereiche definieren:
   style_formats_merge: true,
   style_formats: [
     { title: 'Text Rot', inline: 'span', styles: { 'color': '#d11216' }, classes: 'text-red' },
