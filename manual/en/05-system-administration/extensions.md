@@ -53,8 +53,8 @@ generate a [symbolic link][3] with the command `app/console contao:symlinks` in
 your command-line interface.
 
 Then you must register your extension in `app/AppKernel.php` so that it can be
-taken into account by the system (see below). Finally, check the database with
-the [Contao install tool][4].
+taken into account by the system (see "Enable the extension" chapter). Finally,
+check the database with the [Contao install tool][4].
 
 When you have made all the installation procedure, you can clear the cache with
 the following command: `php app/console cache:clear -e=prod`.
@@ -62,7 +62,7 @@ the following command: `php app/console cache:clear -e=prod`.
 
 #### Enable the extension
 
-Then you need to enable your extension by adding it to the list of registered
+You need to enable your extension by adding it to the list of registered
 bundles in the `app/AppKernel.php` file of your Contao folder.
 
 Add the following line as in the example below by changing the first parameter
