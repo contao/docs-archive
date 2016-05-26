@@ -39,6 +39,10 @@ Composer updates the `composer.json` file and determines itself which version
 of the extension is best suited to be installed depending on your version of
 Contao.
 
+Then you must register your extension in `app/AppKernel.php` so that it can be
+taken into account by the system (see "Enable the extension" chapter). Finally,
+check the database with the [Contao install tool][4].
+
 
 #### Manually
 
@@ -46,15 +50,23 @@ Find the extension you want to install in the [Extension Repository][1] and
 download the .zip archive of the latest release. Then unzip the files and copy
 them to the `system/modules` folder. If the extension has public files, you must
 generate a [symbolic link][3] with the command `app/console contao:symlinks` in
-your command-line interface. Then you must register your extension in
-`app/AppKernel.php` so that it can be taken into account by the system (see
-below). Finally, check the database with the [Contao install tool][4].
+your command-line interface.
+
+Then you must register your extension in `app/AppKernel.php` so that it can be
+taken into account by the system (see below). Finally, check the database with
+the [Contao install tool][4].
+
+When you have made all the installation procedure, you can clear the cache with
+the following command: `php app/console cache:clear -e=prod`.
 
 
-##### AppKernel.php
+#### Enable the extension
 
-Instantiate the `ContaoModuleBundle` class. The first parameter is the name of
-your extension.
+Then you need to enable your extension by adding it to the list of registered
+bundles in the `app/AppKernel.php` file of your Contao folder.
+
+Add the following line as in the example below by changing the first parameter
+(myExtensionName) with the name of your extension.
 
 ```php
 new Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle('myExtensionName', $this->getRootDir()),
@@ -63,24 +75,26 @@ new Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle('myExtensionName', $t
 **Example**:
 
 ```php
+<?php
 // app/AppKernel.php
 
-public function registerBundles()
+// ...
+class AppKernel extends Kernel
 {
-    $bundles = [
-        new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-        new Contao\CoreBundle\ContaoCoreBundle(),
-        new Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle('myExtensionName', $this->getRootDir()),
-    ];
+    public function registerBundles()
+    {
+        $bundles = [
+            // ...
+
+            new Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle('myExtensionName', $this->getRootDir()),
+        ];
+
+        // ...
+    }
 
     // ...
-
-    return $bundles;
 }
 ```
-
-After the installation, you can clear the cache with the following command:
-`php app/console cache:clear -e=prod`.
 
 
 ## Extension catalog
