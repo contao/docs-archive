@@ -32,20 +32,11 @@ extension name. For example: `companyName/extensionName`.
 Dependencies (in our case an extension) are described in a file named
 `composer.json` which is located in the root folder of your Contao installation.
 
-This is the first step you need to do. Open the `composer.json` file and add the
-new dependency in the `require` key.
-
-```json
-"require": {
-        "companyName/extensionName": "~1.0",
-    },
-```
-
-You must also enter the version you want to use. The `~` [operator][3] means you
-want the latest version of `1.*`.
-
-Run the command `php composer.phar update companyName/extensionName` in your
+Run the command `php composer.phar require companyName/extensionName` in your
 command-line interface to start the installation.
+
+Composer updates the `composer.json`file and determines itself which version of
+the extension is best suited to be installed depending on your version of Contao.
 
 
 #### Manually
@@ -53,10 +44,10 @@ command-line interface to start the installation.
 Find the extension you want to install in the [Extension Repository][1] and
 download the .zip archive of the latest release. Then unzip the files and copy
 them to the `system/modules` folder. If the extension has public files, you must
-generate a [symbolic link][4] with the command `app/console contao:symlinks` in
+generate a [symbolic link][3] with the command `app/console contao:symlinks` in
 your command-line interface. Then you must register your extension in
 `app/AppKernel.php` so that it can be taken into account by the system (see
-below). Finally, check the database with the [Contao install tool][5].
+below). Finally, check the database with the [Contao install tool][4].
 
 
 ##### AppKernel.php
@@ -100,6 +91,5 @@ release.
 
 [1]: https://contao.org/en/extension-list.html
 [2]: https://packagist.org
-[3]: https://getcomposer.org/doc/articles/versions.md#tilde
-[4]: ../01-installation/installing-contao.md#symbolic-link
-[5]: ../01-installation/installing-contao.md#the-contao-install-tool
+[3]: ../01-installation/installing-contao.md#symbolic-link
+[4]: ../01-installation/installing-contao.md#the-contao-install-tool
