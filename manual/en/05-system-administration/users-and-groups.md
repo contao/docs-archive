@@ -64,4 +64,17 @@ to see protected pages or access protected downloads that are not available to
 guests.
 
 
+#### Front end preview
+
+As an administrator, you can log in as a particular member and preview the
+website with its rights and access restrictions. This action is available in
+the members view.
+
+![](images/frontend-preview.jpg)
+
+The front end appears with a preview toolbar and you can switch to another
+member at any time by using the field "Front end user". It is also possible to
+preview the elements that have not yet been published by the selected member.
+
+
 [1]: ../03-managing-pages/modules.md#access-control
