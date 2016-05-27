@@ -3,8 +3,10 @@
 Laden Sie sich zunächst das [aktuelle Contao-Archiv][1] herunter und entpacken
 Sie es auf Ihrem lokalen Rechner. Verschieben Sie die Dateien in das
 `htdocs`-Verzeichnis Ihrer XAMPP-Installation oder kopieren Sie sie mit einem
-FTP-Programm (z.B. [WinSCP][2]) auf Ihren Server. Der Basisordner heißt
-wahrscheinlich `htdocs`, `httpdocs`, `html` oder `public_html`.
+FTP-Programm (z.B. [WinSCP][2]) auf Ihren Server. Stellen Sie sicher dass auch
+die Datei `.htaccess.default` hochgeladen wird und benennen Sie diese danach
+auf `.htaccess` um. Der Basisordner heißt wahrscheinlich `htdocs`, `httpdocs`,
+`html` oder `public_html`.
 
 Wenn Sie SSH-Zugriff auf den Server haben, können Sie alternativ folgende
 Befehle verwenden:
