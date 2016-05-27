@@ -3,8 +3,10 @@
 First of all, download the [latest Contao archive][1] and extract it on your
 local computer. Move the files into the `htdocs` folder of your local
 installation (e.g. XAMPP) or upload them to your server with an FTP program (we
-recommend using [WinSCP][2]). Depending on your server configuration, the public
-folder is most likely called `htdocs`, `httpdocs`, `html` or `public_html`.
+recommend using [WinSCP][2]). Make sure to upload the hidden `.htaccess.default`
+file and replace its name with `.htaccess`. Depending on your server
+configuration, the public folder is most likely called `htdocs`, `httpdocs`,
+`html` or `public_html`.
 
 If you have SSH access, you can download and extract the archive with the
 following commands:
