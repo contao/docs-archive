@@ -6,7 +6,8 @@ Template `news_full.html5` eine vollständige Nachricht aus, während das Templa
 `news_short.html5` nur einen Teil davon anzeigt.
 
 Templates befinden sich direkt in den dazugehören Modulen. Das `news_full.html5`
-Template befindet sich beispielsweise in `system/modules/news/templates/news`.
+Template befindet sich beispielsweise in
+`vendor/contao/news-bundle/src/Resources/contao/templates/news`.
 
 Falls diese Datei direkt in diesem Ordner bearbeitet wird, **gehen die Änderungen**
 bei einem nächsten Update von Contao **verloren**. Um dies zu vermeiden,
@@ -27,11 +28,11 @@ ein Newsletter-Template.
 
 ### Template-Vererbung
 
-Template-Vererbung erlaubt, ein Template basierend auf einem anderen Template 
-aufzubauen. Dies bedeutet, ein Template (Kind) fügt Inhalt in ein zweites 
+Template-Vererbung erlaubt, ein Template basierend auf einem anderen Template
+aufzubauen. Dies bedeutet, ein Template (Kind) fügt Inhalt in ein zweites
 Template (Eltern) ein.
 
-Damit Inhalte in einem Eltern-Template angepasst werden können, muss sich der 
+Damit Inhalte in einem Eltern-Template angepasst werden können, muss sich der
 Inhalt innerhalb eines `block`-Elements befinden.
 
 Ein Block ist wie folgt aufgebaut:
@@ -44,7 +45,7 @@ Ein Block ist wie folgt aufgebaut:
 <?php $this->endblock(); ?>
 ```
 
-Das folgende Beispiel zeigt ein Template bei welchem der `head`-Tag als eigener 
+Das folgende Beispiel zeigt ein Template bei welchem der `head`-Tag als eigener
 Block definiert wurde.
 
 Template `fe_page.html5`:
@@ -64,7 +65,7 @@ Template `fe_page.html5`:
 </html>
 ```
 
-Im Kindtemplate `fe_custom.html` wird zusätzlich zum bisherigen Inhalt 
+Im Kindtemplate `fe_custom.html` wird zusätzlich zum bisherigen Inhalt
 noch ein CSS style sheet in das übergeordnete Template eingefügt.
 
 Template `fe_custom.html5`:
@@ -107,7 +108,7 @@ einfügt werden.
 <?php $this->insert('template_name'); ?>
 ```
 
-Die `insert()`-Funktion akzeptiert ausserdem auch die Übergabe von zusätzlichen 
+Die `insert()`-Funktion akzeptiert ausserdem auch die Übergabe von zusätzlichen
 Variablen als zweiten Parameter.
 
 ```php
@@ -117,10 +118,10 @@ Variablen als zweiten Parameter.
 <?php $this->insert('template_name', $this->getData()); ?>
 ```
 
-Im folgenden Beispiel fügen wir den Inhalt des Templates `image-copyright.html5` 
+Im folgenden Beispiel fügen wir den Inhalt des Templates `image-copyright.html5`
 in das Template `image.html5` ein.
 
-Das Template `image.html5` enthält lediglich einen `img`-Tag und die 
+Das Template `image.html5` enthält lediglich einen `img`-Tag und die
 `insert()`-Funktion.
 
 Template `image.html5`:
@@ -131,7 +132,7 @@ Template `image.html5`:
 ```
 
 Das `image-copyright.html5` Template enthält einen `small`-Tag welcher nach dem
-`img`-Tag im `image.html5` Template eingefügt werden soll. Die Variabeln `name` 
+`img`-Tag im `image.html5` Template eingefügt werden soll. Die Variabeln `name`
 und `license` werden durch die Parameter der `insert()`-Funktion ersetzt.
 
 Template `image-copyright.html5`:
