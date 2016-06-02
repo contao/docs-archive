@@ -40,6 +40,8 @@ Si vous souhaitez installer une version spécifique, vous devez l'insérer dans 
 commande comme par exemple :
 `php composer.phar create-project contao/standard-edition:4.0.2 <target>`
 
+> **Info** Sous Windows, vous devez exécuter cette commande en tant qu'administrateur.
+
 En premier lieu, avant d'exécuter cette commande, vous devez
 [installer Composer][7]. Il peut être installé globalement avec les deux
 commandes suivantes sur Mac OS X ou Linux:
