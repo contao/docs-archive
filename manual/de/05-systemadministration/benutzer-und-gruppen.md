@@ -66,4 +66,18 @@ Konfiguration können registrierte Mitglieder geschützte Seiten oder Downloads
 aufrufen, die für Gäste nicht erreichbar sind.
 
 
+#### Frontend-Vorschau
+
+Als Administrator können Sie sich als jedes Mitglied anmelden und die Webseite
+mit den entsprechenden Berechtigungen prüfen. Diese Option ist in der
+Mitgliederliste verfügbar.
+
+![](images/frontend-preview.jpg)
+
+Das Frontend erscheint mit der Vorschau-Toolbar, in welcher zwischen den
+Mitgliedern gewechselt werden kann. Ausserdem können durch die entsprechende
+Option alle unveröffentlichten Elemente der angezeigt werden.
+
+
+
 [1]: ../03-seiten-verwalten/module.md#zugriffsschutz
