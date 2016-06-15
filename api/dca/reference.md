@@ -903,6 +903,11 @@ Each field can be validated against a regular expression.
   <td>Delimiter (<code>string</code>)</td>
   <td>The choice of this field will not be stored as serialized string but rather as given delimiter-separated list. Example: <code>'eval' => array('csv'=>',')</td>
 </tr>
+<tr>
+  <td>tl_class</td>
+  <td>CSS class(es) (<code>string</code>)</td>
+  <td>Add the given CSS class(es) to the generated HTML.  See section [Arranging Fields](palettes.md#arranging-fields) for supported values.</td>
+</tr>
 </table>
 
 
