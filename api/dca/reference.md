@@ -737,7 +737,7 @@ Each field can be validated against a regular expression.
 <tr>
   <td>allowHtml</td>
   <td>true/false (<code>boolean</code>)</td>
-  <td>If true the current field will accept HTML input (see "Allowed HTML 
+  <td>If true the current field will accept HTML input (see "Allowed HTML
       tags" in the backend System => Settings).</td>
 </tr>
 <tr>
@@ -901,12 +901,16 @@ Each field can be validated against a regular expression.
 <tr>
   <td>csv</td>
   <td>Delimiter (<code>string</code>)</td>
-  <td>The choice of this field will not be stored as serialized string but rather as given delimiter-separated list. Example: <code>'eval' => array('csv'=>',')</td>
+  <td>The choice of this field will not be stored as serialized string but
+  rather as given delimiter-separated list.
+  Example: <code>'eval' => array('csv'=>',')</code></td>
 </tr>
 <tr>
   <td>tl_class</td>
   <td>CSS class(es) (<code>string</code>)</td>
-  <td>Add the given CSS class(es) to the generated HTML.  See section [Arranging Fields](palettes.md#arranging-fields) for supported values.</td>
+  <td>Add the given CSS class(es) to the generated HTML. See section
+  <a href="palettes.md#arranging-fields">Arranging Fields</a> for supported
+  values.</td>
 </tr>
 </table>
 
@@ -950,7 +954,7 @@ model classes to load referenced data sets efficiently and developer friendly.
   <td>table</td>
   <td>Relation table<br> (<code>string</code>)</td>
   <td>
-      A database table for this relation. Optional, by default Contao tries to 
+      A database table for this relation. Optional, by default Contao tries to
       extract it from the <code>foreignKey</code> attribute.
   </td>
 </tr>
