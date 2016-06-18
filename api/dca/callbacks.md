@@ -48,12 +48,16 @@ Callbacks are very similar to [Hooks][hooks], but always bound to a specific DCA
   <td>Is executed after a record has been duplicated.</td>
 </tr>
 <tr>
-  <td>onversion_callback</td>
-  <td></td>
+  <td>oncreate_version_callback</td>
+  <td>Is executed after the old version of the record has been added to `tl_version`.</td>
+</tr>
+<tr>
+  <td>onrestore_version_callback</td>
+  <td>Is executed after a record has been restored from an old version.</td>
 </tr>
 <tr>
   <td>onrestore_callback</td>
-  <td></td>
+  <td>As `onrestore_version_callback` but deprecated.</td>
 </tr>
 </table>
 
