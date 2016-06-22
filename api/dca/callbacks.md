@@ -49,11 +49,11 @@ Callbacks are very similar to [Hooks][hooks], but always bound to a specific DCA
 </tr>
 <tr>
   <td>oncreate_version_callback</td>
-  <td>Is executed after the old version of the record has been added to tl_version.</td>
+  <td>Is executed after the old version of the record has been added to <code>tl_version</code>.</td>
 </tr>
 <tr>
   <td>onversion_callback</td>
-  <td>As oncreate_version_callback but deprecated and with different signature.</td>
+  <td>As <code>oncreate_version_callback</code> but deprecated and with different signature.</td>
 </tr>
 <tr>
   <td>onrestore_version_callback</td>
@@ -61,7 +61,7 @@ Callbacks are very similar to [Hooks][hooks], but always bound to a specific DCA
 </tr>
 <tr>
   <td>onrestore_callback</td>
-  <td>As onrestore_version_callback but deprecated and with different signature.</td>
+  <td>As <code>onrestore_version_callback</code> but deprecated and with different signature.</td>
 </tr>
 </table>
 
