@@ -24,9 +24,9 @@ script:
   - make deploy
 
 after_success:
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.2" -o $TRAVIS_BRANCH == "3.4" -o $TRAVIS_BRANCH == "3.5" -o $TRAVIS_BRANCH == "4.0" && sshpass -p $SCP_PASSWORD rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/$TRAVIS_BRANCH/
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.2" -o $TRAVIS_BRANCH == "3.4" -o $TRAVIS_BRANCH == "3.5" && sshpass -p $SCP_PASSWORD rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./manual_en.pdf $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/contao-manual-$TRAVIS_BRANCH.pdf
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.2" -o $TRAVIS_BRANCH == "3.4" -o $TRAVIS_BRANCH == "3.5" && sshpass -p $SCP_PASSWORD rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./manual_de.pdf $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/contao-handbuch-$TRAVIS_BRANCH.pdf
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.2" -o $TRAVIS_BRANCH == "3.4" -o $TRAVIS_BRANCH == "3.5" && sshpass -p $SCP_PASSWORD rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./manual_fr.pdf $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/contao-manuel-$TRAVIS_BRANCH.pdf
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.5" && sshpass -p $SCP_PASSWORD rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./manual/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/manual/$TRAVIS_BRANCH/
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.5" && sshpass -p $SCP_PASSWORD rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./manual_en.pdf $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/contao-manual-$TRAVIS_BRANCH.pdf
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.5" && sshpass -p $SCP_PASSWORD rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./manual_de.pdf $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/contao-handbuch-$TRAVIS_BRANCH.pdf
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "3.5" && sshpass -p $SCP_PASSWORD rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./manual_fr.pdf $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/contao-manuel-$TRAVIS_BRANCH.pdf
   - test $TRAVIS_PULL_REQUEST == "false" -a $TRAVIS_BRANCH == "master" && sshpass -p $SCP_PASSWORD rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./cookbook/_book/* $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/cookbook/
   - test $TRAVIS_PULL_REQUEST == "false" -a $TRAVIS_BRANCH == "master" && sshpass -p $SCP_PASSWORD rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./cookbook/cookbook.pdf $SCP_USER@w1.vhost.io:/home/$SCP_USER/public/books/contao-cookbook.pdf
