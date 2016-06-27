@@ -12,7 +12,7 @@ Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support.
 
 | Software | Version (min.) |
 |----------|----------------|
-| PHP      | 5.4.0          |
+| PHP      | 5.5.0          |
 | MySQL    | 5.0.3          |
 
 
