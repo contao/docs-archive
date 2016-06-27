@@ -4,7 +4,6 @@
 * [Installation](01-installation/README.md)
     * [Installer Contao](01-installation/installer-contao.md)
     * [Mise à jour manuelle](01-installation/mise-a-jour-manuelle.md)
-    * [Live Update Service](01-installation/live-update-service.md)
     * [Déplacer une installation](01-installation/deplacer-une-installation.md)
     * [Configuration du serveur en ligne](01-installation/configuration-du-serveur-en-ligne.md)
 * [Panneau d'administration](02-panneau-administration/README.md)
