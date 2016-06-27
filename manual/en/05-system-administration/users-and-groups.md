@@ -77,4 +77,4 @@ member at any time by using the field "Front end user". It is also possible to
 preview the elements that have not yet been published by the selected member.
 
 
-[1]: ../03-managing-pages/modules.md#access-control
+[1]: ../03-managing-pages/page-types.md#access-rights
