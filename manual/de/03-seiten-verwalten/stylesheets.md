@@ -16,20 +16,30 @@ darin enthaltenen Fehler gesondert beheben müssen. Achten Sie dabei auf die
 Reihenfolge der Formatdefinitionen, da frühere Anweisungen von späteren
 überschrieben werden können.
 
+
+### CSS-Klassen der Include-Elemente
+
+Wird ein Element (z.B. Inhaltselement oder Modul) durch ein Inhaltselement
+eingebunden, werden die CSS-Klassen in beiden Konfigurationen zusammengeführt
+statt überschrieben. Hat das Inhaltselement A die CSS-Klasse `elemA` und fügt
+ein Frontend-Modul mit der CSS-Klasse `elemB` ein, werden beide CSS-Klassen
+ausgegeben (`class="elemA elemB"`).
+
+Hier ein Beispiel um die Elemente separat anzusprechen:
+
 ```css
-/* Zuerst den generellen Abstand setzen */
-.mod_search {
-    margin:24px;
+.elemA {
+    /* Nur Inhaltselement */
 }
 
-/* Danach die spezielle IE7-Anweisung */
-*:first-child+html .mod_search {
-    margin:18px;
+.elemB {
+    /* Inhaltselement und Frontend-Modul */
+}
+
+.elemB:not(.elemA) {
+    /* Nur Frontend-Modul */
 }
 ```
-
-Wäre die Reihenfolge umgekehrt, würde der allgemeine Abstand den
-IE-spezifischen Wert überschreiben.
 
 
 [1]: ../04-inhalte-verwalten/artikel.md#artikel

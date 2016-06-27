@@ -63,7 +63,7 @@ aperçu des éléments de contenu de base de Contao :
 </tr>
 <tr>
   <td>Accordéon (élément seul)</td>
-  <td>ce_accordion</td>
+  <td>ce_accordionSingle</td>
   <td>Génère un seul élément accordéon (avec <a href="http://mootools.net">
   MooTools</a>).</td>
 </tr>
@@ -105,8 +105,7 @@ aperçu des éléments de contenu de base de Contao :
 <tr>
   <td>Galerie d'images</td>
   <td>ce_gallery</td>
-  <td>Génère une galerie d'images avec effet
-  <a href="http://www.digitalia.be/software/slimbox">lightbox</a>.</td>
+  <td>Génère une galerie d'images avec effet lightbox.</td>
 </tr>
 <tr>
   <td>Vidéo/audio</td>

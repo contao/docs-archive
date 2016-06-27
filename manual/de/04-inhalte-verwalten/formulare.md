@@ -46,11 +46,6 @@ enthalten:
   <th>Beschreibung</th>
 </tr>
 <tr>
-  <td>Überschrift</td>
-  <td>headline</td>
-  <td>Ein individuelles Feld zum Einfügen einer Bereichsüberschrift.</td>
-</tr>
-<tr>
   <td>Erklärung</td>
   <td>explanation</td>
   <td>Ein individuelles Feld zum Einfügen eines Erklärungstexts.</td>

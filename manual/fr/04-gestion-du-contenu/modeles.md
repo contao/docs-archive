@@ -7,7 +7,8 @@ actualité alors que le modèle `news_short.html5` affiche seulement une partie
 de ce contenu.
 
 Les modèles se trouvent dans leurs propres modules. Par exemple,
-`news_full.html5` se trouve sous `system/modules/news/templates/news`.
+`news_full.html5` se trouve sous
+`vendor/contao/news-bundle/src/Resources/contao/templates/news`.
 
 Si vous modifiez ce fichier directement dans ce dossier, il sera remplacé la
 prochaine fois que vous mettrez à jour Contao et **vous perdrez** toutes vos

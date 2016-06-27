@@ -45,11 +45,6 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
   <th>Description</th>
 </tr>
 <tr>
-  <td>Headline</td>
-  <td>headline</td>
-  <td>A custom field to insert a section headline.</td>
-</tr>
-<tr>
   <td>Explanation</td>
   <td>explanation</td>
   <td>A custom field to insert an explanation text.</td>
@@ -62,8 +57,7 @@ fields or submit buttons. Here is an overview of the Contao core form fields:
 <tr>
   <td>Fieldset</td>
   <td>-</td>
-  <td>A container for form fields with an optional legend
-  (only available for tableless forms).</td>
+  <td>A container for form fields with an optional legend.</td>
 </tr>
 <tr>
   <td>Text field</td>

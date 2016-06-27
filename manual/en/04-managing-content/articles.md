@@ -58,7 +58,7 @@ an overview of the Contao core content elements:
 </tr>
 <tr>
   <td>Accordion (single element)</td>
-  <td>ce_accordion</td>
+  <td>ce_accordionSingle</td>
   <td>Generates a single accordion element (with <a href="http://mootools.net">MooTools</a>).</td>
 </tr>
 <tr>
@@ -99,8 +99,7 @@ an overview of the Contao core content elements:
 <tr>
   <td>Gallery</td>
   <td>ce_gallery</td>
-  <td>Generates a <a href="http://www.digitalia.be/software/slimbox">lightbox</a>
-      image gallery.</td>
+  <td>Generates a lightbox image gallery.</td>
 </tr>
 <tr>
   <td>Video/audio</td>

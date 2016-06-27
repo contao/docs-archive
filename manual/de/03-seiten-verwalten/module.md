@@ -45,7 +45,7 @@ werden.
 </tr>
 <tr>
   <td>Artikelnavigation</td>
-  <td>mod_article_nav</td>
+  <td>mod_articlenav</td>
   <td>Erzeugt ein Seitenumbruch-Menü zur Artikelnavigation.</td>
 </tr>
 <tr>
@@ -190,12 +190,12 @@ werden.
 </tr>
 <tr>
   <td>Artikelliste</td>
-  <td>mod_article_list</td>
+  <td>mod_articlelist</td>
   <td>Erzeugt eine Liste aller Artikel einer Spalte.</td>
 </tr>
 <tr>
   <td>Zufallsbild</td>
-  <td>mod_random_image</td>
+  <td>mod_randomImage</td>
   <td>Fügt der Seite ein zufällig ausgewähltes Bild hinzu.</td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ werden.
 </tr>
 <tr>
   <td>RSS-Reader</td>
-  <td>mod_rss_reader</td>
+  <td>mod_rssReader</td>
   <td>Fügt der Seite einen RSS-Feed hinzu.</td>
 </tr>
 </table>

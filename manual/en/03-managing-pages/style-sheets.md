@@ -5,8 +5,7 @@ includes a "style sheets" module which allows you to manage format definitions
 in the back end. To reference the various Contao elements, you need to know
 their class names. [Content element classes][1] start with "ce\_"
 (e.g. "ce\_text") and [module classes][2] with "mod\_"
-(e.g. "mod\_search"). If you are not sure, simply look into the
-page source.
+(e.g. "mod\_search"). If you are not sure, simply look into the page source.
 
 ![](images/style-sheet.jpg)
 
@@ -15,20 +14,29 @@ particular Internet Explorer version, in case you need to fix one of its
 numerous bugs. Pay attention to the order of the format definitions, because
 later commands override earlier ones.
 
+
+### CSS classes of included elements
+
+If an element (e.g. content element or module) is included in another element,
+the CSS classes are merged instead of overwritten. E.g. if content element A has
+the CSS class `elemA` and includes a front end module with the CSS class
+`elemB`, both CSS classes will be applied (`class="elemA elemB"`).
+
+Here's how to select the elements separately:
+
 ```css
-/* Set the general value first */
-.mod_search {
-    margin:24px;
+.elemA {
+    /* Content element only */
 }
 
-/* Then override it for IE7 */
-*:first-child+html .mod_search {
-    margin:18px;
+.elemB {
+    /* Content element and front end module */
+}
+
+.elemB:not(.elemA) {
+    /* Front end module only */
 }
 ```
-
-If the order was reversed, the general value would override the IE-specific
-margin.
 
 
 [1]: ../04-managing-content/articles.md#articles

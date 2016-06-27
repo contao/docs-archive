@@ -44,7 +44,7 @@ feeds and many more. To create a module, log into the back end and choose
 </tr>
 <tr>
   <td>Article navigation</td>
-  <td>mod_article_nav</td>
+  <td>mod_articlenav</td>
   <td>Generates a pagination menu to navigate articles.</td>
 </tr>
 <tr>
@@ -189,12 +189,12 @@ feeds and many more. To create a module, log into the back end and choose
 </tr>
 <tr>
   <td>Article list</td>
-  <td>mod_article_list</td>
+  <td>mod_articlelist</td>
   <td>Generates a list of articles of a column.</td>
 </tr>
 <tr>
   <td>Random image</td>
-  <td>mod_random_image</td>
+  <td>mod_randomImage</td>
   <td>Adds a random image to a page.</td>
 </tr>
 <tr>
@@ -204,7 +204,7 @@ feeds and many more. To create a module, log into the back end and choose
 </tr>
 <tr>
   <td>RSS reader</td>
-  <td>mod_rss_reader</td>
+  <td>mod_rssReader</td>
   <td>Adds an RSS feed to a page.</td>
 </tr>
 </table>

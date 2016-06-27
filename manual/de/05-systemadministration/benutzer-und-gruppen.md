@@ -80,4 +80,4 @@ Option alle unveröffentlichten Elemente der angezeigt werden.
 
 
 
-[1]: ../03-seiten-verwalten/module.md#zugriffsschutz
+[1]: ../03-seiten-verwalten/seitentypen.md#zugriffsrechte

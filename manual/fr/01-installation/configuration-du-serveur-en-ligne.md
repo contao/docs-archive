@@ -14,7 +14,7 @@ MySQL.
 
 | Software | Version (minimale) |
 |----------|--------------------|
-| PHP      | 5.4.0              |
+| PHP      | 5.5.0              |
 | MySQL    | 5.0.3              |
 
 
@@ -40,10 +40,9 @@ Contao a été testé avec succès avec tous les principaux navigateurs comme Fi
 
 Télécharger "Contao Check" afin de savoir si votre serveur répond aux exigences
 du système de Contao. Le script va vérifier si vous pouvez utiliser le
-référentiel d'extensions ainsi que le "Live Update" et si vous devez utiliser le
-"Safe Mode Hack" ou non. Selon la configuration de votre système, vous pouvez
-mettre en place une nouvelle installation de Contao avec l'installateur web ou
-valider une installation existante.
+référentiel d'extensions ainsi que le "Live Update". Selon la configuration de
+votre système, vous pouvez mettre en place une nouvelle installation de Contao
+avec l'installateur web ou valider une installation existante.
 
 ![](images/contao-check.jpg)
 

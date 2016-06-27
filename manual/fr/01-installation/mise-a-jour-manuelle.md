@@ -27,7 +27,7 @@ votre ordinateur et de téléverser les fichiers avec un client FTP. Puis,
 restaurer les fichiers que vous avez sauvegardés et enlever les éventuels
 fichiers inutilisés des versions antérieures de Contao.
 
-**Attention:** Si vous avez installé des extensions tierces, assurez-vous de
+> **Warning** Si vous avez installé des extensions tierces, assurez-vous de
 les sauvegarder et de les restaurer eux aussi, ou ne les effacer pas du tout.
 Sinon, vous devrez réinstaller les modules et, en fonction de l'extension,
 vous pourriez finir par perdre des données !

@@ -12,7 +12,7 @@ Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support.
 
 | Software | Version (min.) |
 |----------|----------------|
-| PHP      | 5.4.0          |
+| PHP      | 5.5.0          |
 | MySQL    | 5.0.3          |
 
 
@@ -37,10 +37,9 @@ Firefox (ab Version 2) oder Internet Explorer (ab Version 8) getestet.
 
 Laden Sie den Contao-Check herunter und finden Sie heraus, ob Ihr Server die
 Contao-Systemvoraussetzungen erfüllt. Der Contao-Check prüft, ob Sie das
-Extension Repository und das Live Update nutzen können und ob Sie den Safe Mode
-Hack benötigen oder nicht. Je nach Systemkonfiguration können Sie mit Hilfe des
-Web-Installers eine neue Contao-Installation aufsetzen oder eine bestehende
-Installation prüfen.
+Extension Repository und das Live Update nutzen können. Je nach 
+Systemkonfiguration können Sie mit Hilfe des Web-Installers eine neue 
+Contao-Installation aufsetzen oder eine bestehende Installation prüfen.
 
 ![](images/contao-check.jpg)
 

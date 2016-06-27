@@ -6,7 +6,7 @@ template `news_full.html5` displays the full content of a news item whereas the
 template `news_short.html5` displays only a portion of this content.
 
 The templates are located in their own modules. For example, `news_full.html5`
-is located under `system/modules/news/templates/news`.
+is located under `vendor/contao/news-bundle/src/Resources/contao/templates/news`.
 
 If you edit this file directly in this folder, it will be overwritten the next
 time you will update Contao and **you will lose** all your changes. To avoid
@@ -109,7 +109,7 @@ function.
 <?php $this->insert('template_name'); ?>
 ```
 
-The `insert()` function also accepts the assignment of variables as second 
+The `insert()` function also accepts the assignment of variables as second
 parameter.
 
 ```php
