@@ -35,7 +35,7 @@ Die oben verwendeten Methoden sind durch die `\Contao\Model` Klasse
 implementiert. Jedes Model kann zusätzlich in seiner Klasse weitere Constraints
 in Methoden kapseln, z.B. `ArticleModel::findPublishedById()`.
 Nahezu alle *findBy*-Methoden unterstützen als letzten Parameter ein Array mit
-zusätzlichen Parametern, siehe [Methode find()](#methode-findarrdata).
+zusätzlichen Parametern, siehe [Methode find()](#die-protectedmethode-findarroptions).
 
 
 ### Virtuelle Methoden
@@ -147,8 +147,8 @@ PHP immer dann aufgerufen, wenn der Zugriff auf ein nicht existierendes
 Klassen-Attribut erfolgt. Contao gibt dann die Werte des Datensatzes zurück, 
 bzw. setzt diese.
 
-**ACHTUNG:** Es können beliebige Spalten im Model gesetzt werden, gespeichert
-werden nur Attribute, für die eine Spalte in der Datenbank-Tabelle vorhanden ist.
+> **Info** Es können beliebige Spalten im Model gesetzt werden, gespeichert
+> werden nur Attribute, für die eine Spalte in der Datenbank-Tabelle vorhanden ist.
 
 ```php
 // Titel des Artikels ausgeben
@@ -194,9 +194,9 @@ $objArticelModel->setRow(array
   // ... more attributes
 ));
 ```
-**ACHTUNG:** Bei Verwendung von `setRow` werden die Model-Daten direkt
-überschrieben und die Felder nicht als "zu speichern" markiert! Dies
-ist nur sinnvoll, um ein Model aus einem bestehenden Datensatz zu erzeugen.
+> **Warning** Bei Verwendung von `setRow` werden die Model-Daten direkt
+> überschrieben und die Felder nicht als "zu speichern" markiert! Dies
+> ist nur sinnvoll, um ein Model aus einem bestehenden Datensatz zu erzeugen.
 
 
 #### Die Methode `save()`
@@ -261,7 +261,7 @@ $objArticles = \ArticleModel::findBy(
 
 ### Zugriff
 
-**ACHTUNG**: Es gibt keine leere *Collection*! Werden keine Datensätze gefunden,
+> **Warning** Es gibt keine leere *Collection*! Werden keine Datensätze gefunden,
 ist der Rückgabewert von `findBy()` bzw. `findAll()` gleich `null`!
 Es ist **kein** *Collection* Objekt!
 
@@ -288,8 +288,8 @@ while($objArticles->next()) {
 
 ```
 
-**HINWEIS:** Es wird empfohlen, die *foreach*-Variante zu verwenden, da deren
-Position nicht vom internen Zähler der *Collection* abhängig ist.
+> **Hint** Es wird empfohlen, die *foreach*-Variante zu verwenden, da deren
+> Position nicht vom internen Zähler der *Collection* abhängig ist.
 
 
 ## Referenzierte Datensätze
@@ -425,6 +425,4 @@ $GLOBALS['TL_MODELS']['tl_my_table'] = 'Vendor\Models\MyTable';
 
 ## Weiterführende Informationen
 
-* [API-Doku Model Klasse](http://api.contao.org/classes/Contao.Model.html)
-* [API-Doku Collection Klasse](http://api.contao.org/classes/Contao.Model.Collection.html)
 * [Foliensatz Entwickler-Workshop der Konferenz 2012](https://contao.org/files/conference/2012/papers/Entwickler-Workshop.pdf)

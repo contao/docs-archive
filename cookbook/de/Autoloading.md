@@ -1,5 +1,9 @@
 # Autoloading in Contao 3
 
+> **Warning** Diese Informationen beziehen sich auf Contao 3.  
+> Contao 4 verwendet den Composer Class Loader nach [PSR-0][1] 
+> bzw. [PSR-4][2] Standard.
+
 ## Einführung
 
 Der Contao ClassLoader bietet die Möglichkeit, beliebige Klassen in der
@@ -11,6 +15,11 @@ eine Klasse unter einem zusätzlichen Namen registriert werden kann.
 
 Aus den genannten Umständen unterstützt der ClassLoader kein Autoloading
 nach PSR-0.
+
+> **Danger** Die Überschreibung von Core-Klassen ist nur für lokale Anpassungen
+> vorgesehen! Keinesfalls sollten entsprechende Erweiterungen im Extension
+> Repository veröffentlicht werden, da dabei sehr schnell Konflikte entstehen.
+
 
 ### Beispiel
 
@@ -26,14 +35,8 @@ die Methode `loadDataContainer` wird mit einer eigenen Version ersetzt.
 Da die Klasse nach Anwendung von `class_alias` auch den Namen `\Controller`
 erhält, wird sie anstelle der Core-Klasse vom System verwendet.
 
-### Achtung
 
-**Die Überschreibung von Core-Klassen ist nur für lokale Anpassungen
-vorgesehen!** Keinesfalls sollten entsprechende Erweiterungen im Extension
-Repository veröffentlicht werden, da dabei sehr schnell Konflikte entstehen.
-
-
-## Wo befinden sich die Definitionen?
+### Wo befinden sich die Definitionen?
 
 Die Definitionen zum Autoloader befinden sich innerhalb jeder Erweiterung
 im Verzeichnis `config`.
@@ -123,3 +126,7 @@ TemplateLoader::addFiles(array
     'mod_example' => 'system/modules/vendor_example/templates/modules'
 ));
 ```
+
+
+[1]: http://www.php-fig.org/psr/psr-0/
+[2]: http://www.php-fig.org/psr/psr-4/

@@ -1,6 +1,7 @@
 ## Table of contents
 
 * Deutsch
+    * [Autoloading](de/Autoloading.md)
     * [Benutzer-Authentifizierung und Rechteprüfung](de/Benutzer-Authentifizierung-und-Rechtepruefung.md)
     * [Cronjobs in Contao (Poor-Man-Cron)](de/Cronjobs-in-Contao.md)
     * [Eigene Inserttags entwickeln](de/Eigene-Inserttags.md)
@@ -8,6 +9,7 @@
     * [Inhaltselemente verwenden](de/Inhaltselemente-verwenden.md)
     * [Models](de/Models.md)
     * [Die Toggle-Funktion in eigenen Erweiterungen nutzen](de/Toggle-Funktion-in-eigenen-Erweiterungen.md)
+    * [Erweiterung entwickeln](de/Erweiterung-entwickeln.md)
 * English
     * [Customizing Contao](customizing-contao/README.md)
         * [Bypass the internal cache](customizing-contao/bypass-the-internal-cache.md)
