@@ -1,14 +1,14 @@
-## Inserttags
+## Insert-Tags
 
-Inserttags sind Platzhalter, die bei der Ausgabe einer Seite durch bestimmte
+Insert-Tags sind Platzhalter, die bei der Ausgabe einer Seite durch bestimmte
 Inhalte ersetzt werden. So kann beispielsweise das aktuelle Datum angezeigt oder
-ein Benutzer mit seinem Namen angesprochen werden. Inserttags können fast
+ein Benutzer mit seinem Namen angesprochen werden. Insert-Tags können fast
 überall in Contao verwendet werden.
 
 
 ### Link-Elemente
 
-Mit den folgenden Inserttags können Seiten und Artikel anhand ihrer ID oder
+Mit den folgenden Insert-Tags können Seiten und Artikel anhand ihrer ID oder
 ihres Alias verlinkt werden.
 
 {% raw %}
@@ -51,7 +51,7 @@ ihres Alias verlinkt werden.
 </tr>
 <tr>
   <td><code>{{link_name::*}}</code></td>
-  <td>Dieses Tag wird mit dem Namen einer internen Seite ersetzt: 
+  <td>Dieses Tag wird mit dem Namen einer internen Seite ersetzt:
       <code>&lt;a&gt;{{link_name::12}}&lt;/a&gt;</code>.</td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ ihres Alias verlinkt werden.
 
 ### Benutzereigenschaften
 
-Mit den folgenden Inserttags können Eigenschaften des angemeldeten Benutzers
+Mit den folgenden Insert-Tags können Eigenschaften des angemeldeten Benutzers
 ausgebeben werden.
 
 {% raw %}
@@ -230,7 +230,7 @@ ausgebeben werden.
 
 ### Seiteneigenschaften
 
-Mit den folgenden Inserttags können Seiteneigenschaften wie z.B. der Seitenname
+Mit den folgenden Insert-Tags können Seiteneigenschaften wie z.B. der Seitenname
 ausgegeben werden.
 
 {% raw %}
@@ -297,7 +297,7 @@ ausgegeben werden.
 
 ### Umgebungsvariablen
 
-Mit den folgenden Inserttags können Umgebungsvariablen wie z.B. der Seitenname
+Mit den folgenden Insert-Tags können Umgebungsvariablen wie z.B. der Seitenname
 oder der Request-String ausgegeben werden.
 
 {% raw %}
@@ -345,7 +345,7 @@ oder der Request-String ausgegeben werden.
 
 ### Include-Elemente
 
-Mit den folgenden Inserttags können Ressourcen wie z.B. Artikel, Module oder
+Mit den folgenden Insert-Tags können Ressourcen wie z.B. Artikel, Module oder
 Dateien aus dem "templates"-Verzeichnis eingebunden werden.
 
 {% raw %}
@@ -391,11 +391,11 @@ Dateien aus dem "templates"-Verzeichnis eingebunden werden.
 </tr>
 <tr>
   <td><code>{{file::*}}</code></td>
-  <td>Dieses Tag wird mit dem Inhalt einer .php-, .tpl-, .xhtml- oder 
+  <td>Dieses Tag wird mit dem Inhalt einer .php-, .tpl-, .xhtml- oder
       .html5-Datei aus dem "templates"-Verzeichnis ersetzt (ersetzen Sie * mit
-      dem Namen). Bei Bedarf können Sie Argumente übergeben: 
+      dem Namen). Bei Bedarf können Sie Argumente übergeben:
       <code>{{file::file.php?arg1=val}}</code>.
-      Mittels UUID kann außerdem der Pfad einer Datei aus der Datenbank 
+      Mittels UUID kann außerdem der Pfad einer Datei aus der Datenbank
       abgefragt werden:
       <code>{{file::6939a448-9b30-11e4-bcba-079af1e9baea}}</code>.</td>
 </tr>
@@ -405,7 +405,7 @@ Dateien aus dem "templates"-Verzeichnis eingebunden werden.
 
 ### Verschiedenes
 
-Mit den folgenden Inserttags können Sie verschiedene Aufgaben erledigen und
+Mit den folgenden Insert-Tags können Sie verschiedene Aufgaben erledigen und
 z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 
 {% raw %}
@@ -501,7 +501,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{picture::*}}</code></td>
   <td>Dieses Tag wird mit einem <code>&lt;picture&gt;</code>-Element und verschiedenen Bildgrössen ersetzt,
-      abhängig von der verwendeten Bildgrößen-Konfiguration (wobei * eine Datenbank ID, eine UUID oder ein Pfad 
+      abhängig von der verwendeten Bildgrößen-Konfiguration (wobei * eine Datenbank ID, eine UUID oder ein Pfad
       aus dem Dateisystem sein kann):
       <code>{{picture::58ca4a90-2d30-11e4-8c21-0800200c9a66?size=1&amp;template=picture_default}}</code>.<br>
       <strong>width</strong>: Breite des Vorschaubildes,<br>
@@ -518,8 +518,8 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td>Dieses Tag wird mit einer Übersetzung ersetzt. Der erste Parameter ist
       der Name einer Sprachdatei oder einem Akronym (z.B. <code>CNT</code> für
       Länder oder <code>LNG</code> für Sprachen). Beispiele:
-      <code>{{label::CNT:au}}</code> wird zu "Australien" und 
-      <code>{{label::tl_article:title:0}}</code> wird zu "Titel". 
+      <code>{{label::CNT:au}}</code> wird zu "Australien" und
+      <code>{{label::tl_article:title:0}}</code> wird zu "Titel".
       Beachten Sie, dass innerhalb des Pfads zur Bezeichnung nur einfache
       Doppelpunkte verwendet werden.</td>
 </tr>
@@ -547,7 +547,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 {% endraw %}
 
 
-### Inserttag-Flags
+### Insert-Tag-Flags
 
 Mittels Flags können Sie Insert-Tags weiter verarbeiten. Der Wert kann damit
 z.B. einer PHP-Funktion übergeben werden. Beliebig viele Flags können
@@ -701,13 +701,13 @@ Verfügbare Flags:
 <tr>
     <td><code>urlencode</code></td>
     <td>URL-kodiert einen String.</td>
-    <td><a target="_blank" 
+    <td><a target="_blank"
     href="http://php.net/urlencode">PHP-Funktion</a></td>
 </tr>
 <tr>
     <td><code>rawurlencode</code></td>
     <td>URL-Kodierung nach RFC 3986.</td>
-    <td><a target="_blank" 
+    <td><a target="_blank"
     href="http://php.net/rawurlencode">PHP-Funktion</a></td>
 </tr>
 </table>

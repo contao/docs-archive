@@ -25,7 +25,7 @@ CSV-Datei in Contao importieren.
 
 Insofern Sie Newsletter an registrierte Mitglieder verschicken, können Sie
 diese mit Hilfe der sogenannten "Simple Tokens" personalisieren. Simple Tokens
-funktionieren ähnlich wie [Inserttags][2] und können sowohl im HTML- als auch
+funktionieren ähnlich wie [Insert-Tags][2] und können sowohl im HTML- als auch
 im Text-Inhalt eines Newsletters verwendet werden.
 
 ```
@@ -41,7 +41,7 @@ E-Mail:    ##email##
 Ihr Administrator
 ```
 
-Im Gegensatz zu Inserttags können Sie mit Simple Tokens aber nicht nur auf die
+Im Gegensatz zu Insert-Tags können Sie mit Simple Tokens aber nicht nur auf die
 Daten der Mitgliedertabelle `tl_member` zugreifen, sondern auch einfache
 If-Else-Abfragen realisieren und so beispielsweise die Anrede präzisieren.
 
