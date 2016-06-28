@@ -4,10 +4,8 @@ Premièrement, veuillez télécharger la [dernière archive de Contao][1] et
 l'extraire sur votre ordinateur. Déplacez les fichiers dans le répertoire
 `htdocs` de votre installation locale (par exemple XAMPP) ou les téléverser sur
 votre serveur avec un logiciel FTP (nous vous recommandons d'utiliser
-[WinSCP][2]). Assurez-vous de téléverser le fichier caché `.htaccess.default`
-et de remplacer son nom par `.htaccess`. Selon la configuration de votre
-serveur, le dossier public est probablement nommé `htdocs`, `httpdocs`, `html`
-ou `public_html`.
+[WinSCP][2]). Selon la configuration de votre serveur, le dossier public est
+probablement nommé `htdocs`, `httpdocs`, `html` ou `public_html`.
 
 Si vous avez un accès SSH, vous pouvez télécharger et extraire l'archive avec
 les commandes suivantes:
@@ -18,8 +16,8 @@ curl -L http://download.contao.org | tar -xzp
 
 > **Warning** L'URL fait actuellement référence à la dernière version 3.x.x
 de Contao. Par conséquent, vous devez spécifier la version désirée en ajoutant,
-par exemple, "/4.0.2" après l'URL. Exemple : curl -L
-http://download.contao.org/4.0.2 | tar -xzp
+par exemple, "/4.2.0" après l'URL. Exemple : curl -L
+http://download.contao.org/4.2.0 | tar -xzp
 
 
 ### Installation avec Composer
@@ -38,7 +36,7 @@ pas, il sera créé automatiquement.
 > **Info** La commande ci-dessus installe toujours la dernière version stable.
 Si vous souhaitez installer une version spécifique, vous devez l'insérer dans la
 commande comme par exemple :
-`php composer.phar create-project contao/standard-edition:4.0.2 <target>`
+`php composer.phar create-project contao/standard-edition:4.1.3 <target>`
 
 En premier lieu, avant d'exécuter cette commande, vous devez
 [installer Composer][7]. Il peut être installé globalement avec les deux
@@ -50,7 +48,7 @@ sudo mv composer.phar /usr/local/bin/composer
 ```
 
 Sous Windows, vous pouvez télécharger et exécuter le
-[programme d'installation][10].
+[programme d'installation][8].
 
 Lors de l'installation dans votre interface en ligne de commande, vous devez
 affecter une valeur à un certain nombre de paramètres :
@@ -69,21 +67,14 @@ mailer_password (null):
 mailer_port (25):
 mailer_encryption (null):
 prepend_locale (false):
-secret (ThisTokenIsNotSoSecretChangeIt):
 ```
 
 Les valeurs par défaut sont listées entre parenthèses. Toutes ces données seront
 incluses dans le fichier de configuration `app/config/parameters.yml`.
 
-Le paramètre `secret` vous permet de créer une clé qui sera utilisée contre les
-attaques [CSRF][8]. Il est très important de prendre le temps de créer une clé
-forte. Comme décrit dans la documentation de Symfony :
-
-> **Note** Sa valeur doit être une série de caractères, chiffres et
-symboles choisis au hasard et la longueur recommandée est d'environ 32 caractères.
-
-Vous pouvez trouver plus d'informations sur cette configuration sur le
-[site officiel de Symfony][9].
+> **Info** Dans la version 4.2 et supérieure, le paramètre `secret` est
+automatiquement généré durant l'installation. Vous pouvez trouver plus
+d'informations sur cette configuration sur le [site officiel de Symfony][9].
 
 
 ### L'outil d'installation de Contao
@@ -143,6 +134,6 @@ droit vous amènera vers le panneau d'administration.
 [2]: http://www.winscp.net/
 [6]: https://github.com/contao/standard-edition
 [7]: https://getcomposer.org/download/
-[8]: https://fr.wikipedia.org/wiki/Cross-Site_Request_Forgery
+[8]: https://getcomposer.org/doc/00-intro.md#using-the-installer
 [9]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
-[10]: https://getcomposer.org/doc/00-intro.md#using-the-installer
+
