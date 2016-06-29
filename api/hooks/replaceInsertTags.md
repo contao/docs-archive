@@ -8,7 +8,7 @@ The `replaceInsertTags` hook is triggered when an unknown insert tag is found. I
 
 1. *string* `$strTag`
 
-	the unknown inserttag
+  the unknown insert tag
 
 
 ### Return Values ###

@@ -27,7 +27,7 @@
     * [Kommentare](04-inhalte-verwalten/kommentare.md)
     * [Templates](04-inhalte-verwalten/templates.md)
     * [Markdown](04-inhalte-verwalten/markdown.md)
-    * [Inserttags](04-inhalte-verwalten/inserttags.md)
+    * [Insert-Tags](04-inhalte-verwalten/inserttags.md)
 * [Systemadministration](05-systemadministration/README.md)
     * [Benutzer und Gruppen](05-systemadministration/benutzer-und-gruppen.md)
     * [Erweiterungen](05-systemadministration/erweiterungen.md)
