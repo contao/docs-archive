@@ -3,7 +3,7 @@
 
 *Screencast-Serie von [*Tristan Lins*](http://www.infinitysoft.de/)*
 
-Wie wird man ein Contao Entwickler?  
+Wie wird man ein Contao Entwickler?
 Diese Frage soll in dieser Screencastreihe beantwortet werden.
 
 ## Teil I - Basics - der Contao Aufbau
@@ -22,7 +22,7 @@ In dieser Folge geht es um den groben Aufbau von Contao Modulen.
 
 ## Teil III - Framework - Class System
 
-In dieser Folge geht es um das Framework, konkret um die Klasse System.  
+In dieser Folge geht es um das Framework, konkret um die Klasse System.
 http://www.contao-docs.org/docs/Contao/html/class_system.html
 
 [Video bei YouTube](http://www.youtube.com/watch?v=qmLDvyNYnqs)
@@ -30,7 +30,7 @@ http://www.contao-docs.org/docs/Contao/html/class_system.html
 
 ## Teil IV - Framework - Class Input
 
-In dieser Folge geht es um das Framework, konkret um die Klasse Input.  
+In dieser Folge geht es um das Framework, konkret um die Klasse Input.
 http://www.contao-docs.org/docs/Contao/html/class_input.html
 
 [Video bei YouTube](http://www.youtube.com/watch?v=nuAEW7VDBC8)
@@ -38,7 +38,7 @@ http://www.contao-docs.org/docs/Contao/html/class_input.html
 
 ## Teil V - Framework - Class Database
 
-In dieser Folge geht es um das Framework, konkret um die Klasse Database.  
+In dieser Folge geht es um das Framework, konkret um die Klasse Database.
 http://www.contao-docs.org/docs/Contao/html/class_database.html
 
 [Video bei YouTube](http://www.youtube.com/watch?v=93duSGnf1AI)
@@ -46,7 +46,7 @@ http://www.contao-docs.org/docs/Contao/html/class_database.html
 
 ## Teil VI - Framework - Class Environment
 
-In dieser Folge geht es um das Framework, konkret um die Klasse Environment.  
+In dieser Folge geht es um das Framework, konkret um die Klasse Environment.
 http://www.contao-docs.org/docs/Contao/html/class_environment.html
 
 [Video bei YouTube](http://www.youtube.com/watch?v=A4twxFrjD4A)
@@ -54,15 +54,15 @@ http://www.contao-docs.org/docs/Contao/html/class_environment.html
 
 ## Teil VII - Framework - Class Config
 
-In dieser Folge geht es um das Framework, konkret um die Klasse Config.  
+In dieser Folge geht es um das Framework, konkret um die Klasse Config.
 http://www.contao-docs.org/docs/Contao/html/class_config.html
 
 [Video bei YouTube](http://www.youtube.com/watch?v=GxxZHx_426k)
 
 
-## Teil VIII - Framework - Sprachvariable / Inserttags
+## Teil VIII - Framework - Sprachvariable / Insert-Tags
 
-In dieser Folge geht es um die Sprachvariablen bzw. Inserttags von Contao.  
+In dieser Folge geht es um die Sprachvariablen bzw. Insert-Tags von Contao.
 
 [Video bei YouTube](http://www.youtube.com/watch?v=Xb0kIfb3z4Q)
 

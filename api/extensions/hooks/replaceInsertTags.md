@@ -11,7 +11,7 @@ false as return value.
 
 1. *string* `$strTag`
 
-    The unknown inserttag.
+  The unknown insert tag.
 
 
 ## Return Values
