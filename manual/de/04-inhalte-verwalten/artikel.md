@@ -114,6 +114,11 @@ Contao-Core enthaltenen Inhaltselemente.
   <td>Fügt ein YouTube-Video ein.</td>
 </tr>
 <tr>
+  <td>Vimeo</td>
+  <td>ce_vimeo</td>
+  <td>Fügt ein Vimeo-Video ein.</td>
+</tr>
+<tr>
   <td>Download</td>
   <td>ce_download</td>
   <td>Erzeugt einen Link zum Download einer Datei.</td>
