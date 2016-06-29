@@ -112,6 +112,11 @@ an overview of the Contao core content elements:
   <td>Adds a YouTube video.</td>
 </tr>
 <tr>
+  <td>Vimeo</td>
+  <td>ce_vimeo</td>
+  <td>Adds a Vimeo video.</td>
+</tr>
+<tr>
   <td>Download</td>
   <td>ce_download</td>
   <td>Generates a link to download a file.</td>
