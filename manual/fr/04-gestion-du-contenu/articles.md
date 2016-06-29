@@ -118,6 +118,11 @@ aperçu des éléments de contenu de base de Contao :
   <td>Ajoute une vidéo YouTube.</td>
 </tr>
 <tr>
+  <td>Vimeo</td>
+  <td>ce_vimeo</td>
+  <td>Ajoute une vidéo Vimeo.</td>
+</tr>
+<tr>
   <td>Téléchargement</td>
   <td>ce_download</td>
   <td>Génère un lien hypertexte vers un fichier à télécharger.</td>
