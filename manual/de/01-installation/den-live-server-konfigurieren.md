@@ -28,6 +28,9 @@ profitieren zu können.
 | mbstring          | internationale Zeichen | Nein    |
 | mcrypt            | Verschlüsselung        | Nein    |
 
+Je nach installierten Extensions kann es außerdem notwendig sein die PHP 
+Variable `max_input_vars` zu erhöhen (bspw. auf `2000` oder höher). Andernfalls 
+könnten lange Backend Formulare nicht komplett abgeschickt werden.
 
 Contao wurde erfolgreich in allen modernen Browsern wie 
 Firefox (ab Version 2) oder Internet Explorer (ab Version 8) getestet.
