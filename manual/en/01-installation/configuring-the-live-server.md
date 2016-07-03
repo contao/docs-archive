@@ -22,6 +22,7 @@ You also need several PHP extensions to get the full functionality.
 |---------------|-------------------------------|-----------|
 | GDlib         | image resizing                | yes       |
 | DOM           | XML files                     | yes       |
+| intl          | Internationalization          | yes       |
 | SOAP          | Extension Repository          | no        |
 | Phar          | Live Update                   | no        |
 | mbstring      | multi-byte character handling | no        |
