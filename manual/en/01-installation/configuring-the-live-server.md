@@ -27,6 +27,9 @@ You also need several PHP extensions to get the full functionality.
 | mbstring      | multi-byte character handling | no        |
 | mcrypt        | data encryption               | no        |
 
+> **Note** Depending on your installed extensions, it may be necessary to increase the
+PHP variable `max_input_vars` (e.g. `2000` or higher). Otherwise long back end 
+forms cannot be submitted completely.
 
 Contao has been tested successfully with all major browsers like Firefox
 (from version 2) or Internet Explorer (from version 8).
