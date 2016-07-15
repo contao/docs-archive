@@ -27,7 +27,6 @@ toutes les fonctionnalités.
 | GDlib         | redimensionnement d'images          | oui         |
 | DOM           | fichiers XML                        | oui         |
 | intl          | internationalisation                | oui         |
-| SOAP          | référentiel d'extensions            | non         |
 | Phar          | Live Update                         | non         |
 | mbstring      | gestion des caractères multi-octets | non         |
 | mcrypt        | cryptage des données                | non         |
