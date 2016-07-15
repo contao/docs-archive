@@ -39,10 +39,7 @@ Contao a été testé avec succès avec tous les principaux navigateurs comme Fi
 ### Contao Check
 
 Télécharger "Contao Check" afin de savoir si votre serveur répond aux exigences
-du système de Contao. Le script va vérifier si vous pouvez utiliser le
-référentiel d'extensions ainsi que le "Live Update". Selon la configuration de
-votre système, vous pouvez mettre en place une nouvelle installation de Contao
-avec l'installateur web ou valider une installation existante.
+du système de Contao.
 
 ![](images/contao-check.jpg)
 

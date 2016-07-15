@@ -35,10 +35,7 @@ Contao has been tested successfully with all major browsers like Firefox
 ### The Contao check
 
 Download the Contao Check to find out whether your server meets the Contao
-system requirements. The script will check whether you can use the Extension
-Repository and the Live Update. Depending on your system configuration, you
-can set up a new Contao installation with the web installer or validate an
-existing installation.
+system requirements.
 
 ![](images/contao-check.jpg)
 
@@ -46,6 +43,8 @@ Extract the Zip file, upload the `check` folder to your Contao installation
 directory and open it in a web browser.
 
 [Download the Contao Check][1] | [Open the GitHub project][2]
+
+> **Note** You cannot validate a Contao 4 installation with the Contao Check.
 
 
 ### ISP-specific settings
