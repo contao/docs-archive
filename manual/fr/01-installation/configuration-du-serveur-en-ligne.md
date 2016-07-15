@@ -32,7 +32,7 @@ toutes les fonctionnalités.
 | mcrypt        | cryptage des données                | non         |
 
 > **Note** En fonction de vos extensions installées, il peut être nécessaire d'augmenter 
-la valeur de la variable PHP max_input_vars (par ex. 2000 ou supérieur). Sinon, les 
+la valeur de la variable PHP `max_input_vars` (par ex. `2000` ou supérieur). Sinon, les 
 longs formulaires du back office ne peuvent pas être soumis entièrement.
 
 Contao a été testé avec succès avec tous les principaux navigateurs comme Firefox
