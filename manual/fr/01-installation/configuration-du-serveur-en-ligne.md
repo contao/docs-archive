@@ -48,6 +48,8 @@ d'installation de Contao et ouvrez-le dans un navigateur Web.
 
 [Télécharger Contao Check][1] | [Ouvrir le projet sur GitHub][2]
 
+> **Note** Vous ne pouvez pas valider une installation de Contao 4 avec Contao Check.
+
 
 ### Paramètres FAI spécifiques
 
