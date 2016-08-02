@@ -20,7 +20,7 @@ LTS Version von Contao:
 curl -L http://download.contao.org/lts | tar -xzp
 ```
 
-> **Warning** Die URL zeigt aktuell auf die neuste Contao 4.x.x Version.
+> **Warning** Die URL zeigt aktuell auf die neuste Contao Version.
 Um Contao "LTS" zu installieren, fügen sie /lts zur URL hinzu.
 Beispiel: curl -L http://download.contao.org/lts | tar -xzp
 
