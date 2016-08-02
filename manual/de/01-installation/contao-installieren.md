@@ -9,13 +9,20 @@ wahrscheinlich `htdocs`, `httpdocs`, `html` oder `public_html`.
 Wenn Sie SSH-Zugriff auf den Server haben, können Sie alternativ folgende
 Befehle verwenden:
 
+Neuste Version von Contao:
 ```bash
 curl -L http://download.contao.org | tar -xzp
 ```
+resp.
 
-> **Warning** Die URL zeigt aktuell auf die neuste Contao 3.x.x Version.
-Um Contao 4 zu installieren, fügen sie die Version zur URL hinzu, z.B. "/4.2.0".
-Beispiel: curl -L http://download.contao.org/4.2.0 | tar -xzp
+LTS Version von Contao:
+```bash
+curl -L http://download.contao.org/lts | tar -xzp
+```
+
+> **Warning** Die URL zeigt aktuell auf die neuste Contao 4.x.x Version.
+Um Contao "LTS" zu installieren, fügen sie /lts zur URL hinzu.
+Beispiel: curl -L http://download.contao.org/lts | tar -xzp
 
 
 ### Installation mit Composer
