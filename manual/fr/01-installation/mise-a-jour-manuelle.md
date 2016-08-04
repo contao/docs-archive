@@ -13,6 +13,7 @@ accidentel :
 * `system/config/initconfig.php`
 * `system/config/langconfig.php`
 * `system/config/localconfig.php`
+* `system/config/pathconfig.php`
 * `templates/*`
 
 Cela permettra de sauvegarder votre configuration locale, vos modèles
