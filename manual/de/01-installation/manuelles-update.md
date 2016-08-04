@@ -11,6 +11,7 @@ ein Fehler auftritt oder Sie sie versehentlich überschreiben:
 * `system/config/initconfig.php`
 * `system/config/langconfig.php`
 * `system/config/localconfig.php`
+* `system/config/pathconfig.php`
 * `templates/*`
 
 Dieses Backup umfasst Ihre lokale Konfiguration, eventuell angepasste Templates

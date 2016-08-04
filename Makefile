@@ -33,6 +33,6 @@ install-python:
 
 validate: build install-python
 	@python_modules/bin/pip install html5validator
-	@python_modules/bin/html5validator --root manual/_book/ --ignore "gitbook/plugins"
+	@python_modules/bin/python2.7 python_modules/bin/html5validator --root manual/_book/ --ignore "gitbook/plugins" "element must have an" "A document must not include both"
 
 deploy: validate build-pdf
