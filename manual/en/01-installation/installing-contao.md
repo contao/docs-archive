@@ -13,9 +13,10 @@ following commands:
 curl -L http://download.contao.org | tar -xzp
 ```
 
-> **Warning** The URL currently refers to the latest 3.x.x version of Contao.
-Therefore, you must specify the desired version by adding e.g. "/4.2.0" after the
-URL. Example: curl -L http://download.contao.org/4.2.0 | tar -xzp
+> #### warning:: Warning
+> The URL currently refers to the latest 3.x.x version of Contao.
+> Therefore, you must specify the desired version by adding e.g. "/4.2.0" after the
+> URL. Example: curl -L http://download.contao.org/4.2.0 | tar -xzp
 
 
 ### Installing with Composer
@@ -31,9 +32,10 @@ You have to replace the `<target>` parameter with a path to a folder where the
 Contao files will be created. If the target folder does not exist, it will be
 created automatically.
 
-> **Info** The command above always installs the latest stable version. If you
-want to install a specific version, you must insert it in the command as for
-example: `php composer.phar create-project contao/standard-edition:4.1.3 <target>`
+> #### info:: Info
+> The command above always installs the latest stable version. If you
+> want to install a specific version, you must insert it in the command as for
+> example: `php composer.phar create-project contao/standard-edition:4.1.3 <target>`
 
 First of all, before running this command, you must [install Composer][7]. It
 can be installed globally with the following two commands on Mac OS X or Linux:
@@ -67,9 +69,10 @@ prepend_locale (false):
 Default values are listed in parentheses. All these data will be included in the
 configuration file `app/config/parameters.yml`.
 
-> **Info** In the version 4.2 and higher, the `secret` parameter is
-automatically generated during the installation. You can find more information
-about this configuration on the [official Symfony website][9].
+> #### info:: Info
+> In the version 4.2 and higher, the `secret` parameter is
+> automatically generated during the installation. You can find more information
+> about this configuration on the [official Symfony website][9].
 
 
 ### The Contao install tool

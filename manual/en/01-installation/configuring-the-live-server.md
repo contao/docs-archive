@@ -48,7 +48,8 @@ directory and open it in a web browser.
 
 [Download the Contao Check][1] | [Open the GitHub project][2]
 
-> **Note** You cannot validate a Contao 4 installation with the Contao Check.
+> #### note:: Note
+> You cannot validate a Contao 4 installation with the Contao Check.
 
 
 ### ISP-specific settings

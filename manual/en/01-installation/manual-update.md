@@ -25,10 +25,11 @@ Contao download archive on the server or extract it on your local computer and
 upload the files with an FTP client. Then restore the files that you have backed
 up and remove potential leftovers from earlier Contao versions.
 
-> **Warning** If you have installed any third-party extensions, make sure to
-backup and restore them, too, or do not overwrite them at all. Otherwise you
-will have to reinstall the modules and depending on the extension you might
-eventually lose data!
+> #### warning:: Warning
+> If you have installed any third-party extensions, make sure to
+> backup and restore them, too, or do not overwrite them at all. Otherwise you
+> will have to reinstall the modules and depending on the extension you might
+> eventually lose data!
 
 
 ### Synchronizing files

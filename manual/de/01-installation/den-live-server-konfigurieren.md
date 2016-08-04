@@ -49,8 +49,8 @@ Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
 
 [Den Contao-Check herunterladen][1] | [Zum Projekt auf GitHub][2]
 
-> **Note** Eine Contao 4 Installation kann mit dem Contao Check nicht validiert 
-werden.
+> #### note:: Anmerkung
+> Eine Contao 4 Installation kann mit dem Contao Check nicht validiert werden.
 
 
 ### Provider-spezifische Einstellungen
