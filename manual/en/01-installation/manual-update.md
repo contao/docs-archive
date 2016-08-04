@@ -11,6 +11,7 @@ and folders - just in case there is an error or you accidentally override them:
 * `system/config/initconfig.php`
 * `system/config/langconfig.php`
 * `system/config/localconfig.php`
+* `system/config/pathconfig.php`
 * `templates/*`
 
 This will back up your local configuration, your custom templates and your
@@ -29,6 +30,8 @@ backup and restore them, too, or do not overwrite them at all. Otherwise you
 will have to reinstall the modules and depending on the extension you might
 eventually lose data!
 
+If you use the composer-client to manage your extensions, you also have to
+backup the folder '/composer' in the root directory. 
 
 ### Synchronizing files
 
