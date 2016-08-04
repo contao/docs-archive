@@ -23,11 +23,14 @@ profitieren zu können.
 |-------------------|------------------------|---------|
 | GDlib             | Bildbearbeitung        | Ja      |
 | DOM               | XML-Dateien            | Ja      |
-| SOAP              | Extension Repository   | Nein    |
+| intl              | Internationalisierung  | Ja      |
 | Phar              | Live Update            | Nein    |
 | mbstring          | internationale Zeichen | Nein    |
 | mcrypt            | Verschlüsselung        | Nein    |
 
+> **Note** Je nach installierten Extensions kann es außerdem notwendig sein die PHP 
+Variable `max_input_vars` zu erhöhen (bspw. auf `2000` oder höher). Andernfalls 
+können zu lange Backend Formulare nicht komplett abgeschickt werden.
 
 Contao wurde erfolgreich in allen modernen Browsern wie 
 Firefox (ab Version 2) oder Internet Explorer (ab Version 8) getestet.
@@ -36,10 +39,7 @@ Firefox (ab Version 2) oder Internet Explorer (ab Version 8) getestet.
 ### Der Contao-Check
 
 Laden Sie den Contao-Check herunter und finden Sie heraus, ob Ihr Server die
-Contao-Systemvoraussetzungen erfüllt. Der Contao-Check prüft, ob Sie das
-Extension Repository und das Live Update nutzen können. Je nach 
-Systemkonfiguration können Sie mit Hilfe des Web-Installers eine neue 
-Contao-Installation aufsetzen oder eine bestehende Installation prüfen.
+Contao-Systemvoraussetzungen erfüllt.
 
 ![](images/contao-check.jpg)
 
@@ -47,6 +47,9 @@ Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
 `check` in Ihr Contao-Verzeichnis und öffnen Sie ihn in einem Browser.
 
 [Den Contao-Check herunterladen][1] | [Zum Projekt auf GitHub][2]
+
+> **Note** Eine Contao 4 Installation kann mit dem Contao Check nicht validiert 
+werden.
 
 
 ### Provider-spezifische Einstellungen

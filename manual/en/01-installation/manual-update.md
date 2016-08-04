@@ -11,6 +11,7 @@ and folders - just in case there is an error or you accidentally override them:
 * `system/config/initconfig.php`
 * `system/config/langconfig.php`
 * `system/config/localconfig.php`
+* `system/config/pathconfig.php`
 * `templates/*`
 
 This will back up your local configuration, your custom templates and your
