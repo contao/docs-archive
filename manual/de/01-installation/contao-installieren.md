@@ -9,21 +9,17 @@ wahrscheinlich `htdocs`, `httpdocs`, `html` oder `public_html`.
 Wenn Sie SSH-Zugriff auf den Server haben, können Sie alternativ folgende
 Befehle verwenden:
 
+> **[Hinweis](https://contao.ninja/installcontaoorg.html)** Die URL zeigt aktuell auf die neuste Contao Version.
+Um die aktuellste Contao "LTS" Version zu installieren, fügen sie ```/lts``` zur URL hinzu.
+
 Neuste Version von Contao:
 ```bash
 curl -L http://download.contao.org | tar -xzp
 ```
-resp.
-
-LTS Version von Contao:
+respektive LTS Version von Contao:
 ```bash
 curl -L http://download.contao.org/lts | tar -xzp
 ```
-
-> **Warning** Die URL zeigt aktuell auf die neuste Contao Version.
-Um Contao "LTS" zu installieren, fügen sie /lts zur URL hinzu.
-Beispiel: curl -L http://download.contao.org/lts | tar -xzp
-
 
 ### Installation mit Composer
 
