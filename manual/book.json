@@ -2,7 +2,7 @@
     "gitbook": "3.2.x",
     "title": "Manual for Contao 3.5",
     "plugins": [
-        "richquotes",
+        "callouts",
         "edit-link",
         "anchors",
         "disqus",
@@ -18,6 +18,9 @@
       }
     },
     "pluginsConfig": {
+        "callouts": {
+            "showTypeInHeader": false
+        },
         "edit-link": {
             "base": "https://github.com/contao/docs/edit/3.5/manual",
             "label": {

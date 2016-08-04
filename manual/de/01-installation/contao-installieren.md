@@ -70,7 +70,8 @@ Vorgehen zur Installation der Demo:
 Um ein Template zu importieren, wählen Sie den Eintrag aus dem Drop-Down-Menü
 und klicken Sie auf die "Template importieren"-Schaltfläche.
 
-> **Danger** Beim Import eines Templates werden bestehende Daten überschrieben!
+> #### danger:: Achtung!
+> Beim Import eines Templates werden bestehende Daten überschrieben!
 
 
 #### Administrator-Konto erstellen

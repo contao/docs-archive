@@ -34,10 +34,11 @@ Update does not work properly, check your server configuration and make sure to
 set up the Safe Mode Hack **as described in this user guide**!
 
 
-> **Info** If you are having problems activating your Live Update ID or receiving the
-update archive, please contact the [iNet Robots support][3]. If you are having
-problems configuring the Safe Mode Hack or using Contao, please choose a support
-option on the [support page][4].
+> #### info:: Info
+> If you are having problems activating your Live Update ID or receiving the
+> update archive, please contact the [iNet Robots support][3]. If you are having
+> problems configuring the Safe Mode Hack or using Contao, please choose a support
+> option on the [support page][4].
 
 
 [1]: http://www.inetrobots.com
