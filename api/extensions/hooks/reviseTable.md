@@ -6,7 +6,8 @@ name of the parent table and the names of all child tables as arguments and
 does expect a boolean as return value (returning `true` will cause the current
 page to be reloaded).
 
-> **Tag** Available from version 2.6.4.
+> #### tag:: Version Information 
+> Available from Contao version 2.6.4.
 
 
 ## Example

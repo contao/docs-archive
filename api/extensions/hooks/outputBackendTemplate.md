@@ -4,7 +4,8 @@ The `outputBackendTemplate` hook is triggered when a back end template is printe
 to the screen. It passes the template content and the template name as arguments
 and expects the template content as return value.
 
-> **Tag** Available from version 2.6.0.
+> #### tag:: Version Information 
+> Available from Contao version 2.6.0.
 
 
 ## Parameters

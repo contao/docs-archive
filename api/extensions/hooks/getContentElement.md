@@ -4,7 +4,8 @@ The `getContentElement` hook is triggered when a content element is rendered.
 It passes the database object and the buffer string as arguments and expects a
 buffer string as return value.
 
-> **Tag** Available from version 2.9.0.
+> #### tag:: Version Information 
+> Available from Contao version 2.9.0.
 
 
 ## Parameters

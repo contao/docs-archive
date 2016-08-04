@@ -4,7 +4,8 @@ The `getPageStatusIcon` hook is triggered when the appropriate page status icon
 is calculated. It passes the database result object and the file name of the 
 current icon as arguments and expects a file name as return value. 
 
-> **Tag** Available from version 3.5.0.
+> #### tag:: Version Information 
+> Available from Contao version 3.5.0.
 
 
 ## Parameters

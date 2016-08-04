@@ -3,7 +3,9 @@
 
 A reference guide to the framework classes.
 
-> **Danger** This part of the API reference is incomplete. Please consider contributing to the manual.
+> #### fixme:: Incomplete 
+> This part of the API reference is incomplete. Please consider
+> [contributing to the manual][1].
 
 
 {% if false %}
@@ -17,3 +19,6 @@ A reference guide to the framework classes.
 > * Date
 > * Encryption
 {% endif %}
+
+
+[1]: https://github.com/contao/docs/blob/master/CONTRIBUTING.md

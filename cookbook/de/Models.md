@@ -147,7 +147,8 @@ PHP immer dann aufgerufen, wenn der Zugriff auf ein nicht existierendes
 Klassen-Attribut erfolgt. Contao gibt dann die Werte des Datensatzes zurück, 
 bzw. setzt diese.
 
-> **Info** Es können beliebige Spalten im Model gesetzt werden, gespeichert
+> #### info:: Info  
+> Es können beliebige Spalten im Model gesetzt werden, gespeichert
 > werden nur Attribute, für die eine Spalte in der Datenbank-Tabelle vorhanden ist.
 
 ```php
@@ -194,7 +195,8 @@ $objArticelModel->setRow(array
   // ... more attributes
 ));
 ```
-> **Warning** Bei Verwendung von `setRow` werden die Model-Daten direkt
+> #### warning:: Vorsicht 
+> Bei Verwendung von `setRow` werden die Model-Daten direkt
 > überschrieben und die Felder nicht als "zu speichern" markiert! Dies
 > ist nur sinnvoll, um ein Model aus einem bestehenden Datensatz zu erzeugen.
 
@@ -261,7 +263,8 @@ $objArticles = \ArticleModel::findBy(
 
 ### Zugriff
 
-> **Warning** Es gibt keine leere *Collection*! Werden keine Datensätze gefunden,
+> #### warning:: Vorsicht 
+Es gibt keine leere *Collection*! Werden keine Datensätze gefunden,
 ist der Rückgabewert von `findBy()` bzw. `findAll()` gleich `null`!
 Es ist **kein** *Collection* Objekt!
 
@@ -288,7 +291,8 @@ while($objArticles->next()) {
 
 ```
 
-> **Hint** Es wird empfohlen, die *foreach*-Variante zu verwenden, da deren
+> #### hint:: Anmerkung 
+> Es wird empfohlen, die *foreach*-Variante zu verwenden, da deren
 > Position nicht vom internen Zähler der *Collection* abhängig ist.
 
 

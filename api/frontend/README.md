@@ -4,8 +4,9 @@
 Detailed information how to inject custom code to the frontend output,
 without modifying the `fe_page` template.
 
-> **Danger** This part of the API reference is incomplete. Please consider
-[contributing to the manual][1].
+> #### fixme:: Incomplete 
+> This part of the API reference is incomplete. Please consider
+> [contributing to the manual][1].
 
 {% if false %}
 ---

@@ -4,7 +4,8 @@ The `sqlGetFromDB` hook is triggered when parsing the current database
 definition. It passes the generated SQL definitions and expects the same
 as return value.
 
-> **Tag** Available from version 2.11.0-RC2.
+> #### tag:: Version Information 
+> Available from Contao version 2.11.0-RC2.
 
 
 ## Parameters

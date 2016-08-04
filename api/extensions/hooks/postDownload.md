@@ -4,7 +4,8 @@ The `postDownload` hook is triggered after a file has been downloaded with the
 download/downloads content element. It passes the file name as argument and does
 not expect a return value.
 
-> **Tag** Available from version 2.4.6.
+> #### tag:: Version Information 
+> Available from Contao version 2.4.6.
 
 
 ## Parameters

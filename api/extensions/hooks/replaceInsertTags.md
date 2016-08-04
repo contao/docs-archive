@@ -4,7 +4,8 @@ The `replaceInsertTags` hook is triggered when an unknown insert tag is found.
 It passes the insert tag as argument and expects the replacement value or
 false as return value.
 
-> **Tag** Available from version 2.6.0.
+> #### tag:: Version Information 
+> Available from Contao version 2.6.0.
 
 
 ## Parameters

@@ -3,7 +3,8 @@
 The `sqlGetFromFile` hook is triggered when parsing database.sql files. It passes
 the generated SQL definition and expects the same as return value.
 
-> **Tag** Available from version 2.11.0-RC2.
+> #### tag:: Version Information 
+> Available from Contao version 2.11.0-RC2.
 
 
 

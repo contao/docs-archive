@@ -1,11 +1,12 @@
 {
-    "gitbook": "2.6.x",
+    "gitbook": "3.2.x",
     "plugins": [
-        "richquotes",
+        "bootstrap-callout",
         "edit-link",
-        "anchors",
+        "anchorjs",
         "piwik",
-        "image-captions"
+        "image-captions",
+        "canonical-link"
     ],
     "links": {
         "sidebar": {
@@ -17,6 +18,9 @@
         "toc": false
     },
     "pluginsConfig": {
+        "callouts": {
+            "showTypeInHeader": false
+        },
         "edit-link": {
             "base": "https://github.com/contao/docs/edit/master/cookbook",
             "label": "Edit This Page"
@@ -24,6 +28,12 @@
         "piwik": {
             "URL": "association.contao.org/piwik/",
             "siteId": 3
+        },
+        "canonical-link": {
+            "baseURL": "https://docs.contao.org/books/cookbook"
+        },
+        "anchorjs": {
+            "selector": "h1,h2,h3,*:not(.callout) > h4,h5"
         }
     }
 }

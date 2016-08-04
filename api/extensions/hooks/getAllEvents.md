@@ -5,7 +5,8 @@ event modules. It passes the current result set, the IDs of the parent items
 and the start and end time as arguments and expects a result set (array)
 as return value.
 
-> **Tag** Available from version 2.6.4.
+> #### tag:: Version Information 
+> Available from Contao version 2.6.4.
 
 
 ## Parameters

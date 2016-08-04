@@ -4,7 +4,8 @@ The `activateRecipient` hook is triggered when a new newsletter recipient is add
 It passes the e-mail address, the recipient IDs and the channel IDs as argument
 and does not expect a return value.
 
-> **Tag** Available from version 2.8.0-RC1.
+> #### tag:: Version Information 
+> Available from Contao version 2.8.0-RC1.
 
 
 ## Parameters

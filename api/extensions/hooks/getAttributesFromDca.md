@@ -4,7 +4,8 @@ The `getAttributesFromDca` hook is triggered when attributes of a widget are
 extracted from a Data Container array. It passes the attributes and the DCA object
 as arguments and expects the (modified) widget attributes as return value.
 
-> **Tag** Available from version 3.2.0.
+> #### tag:: Version Information 
+> Available from Contao version 3.2.0.
 
 
 ## Parameters

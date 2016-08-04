@@ -4,7 +4,8 @@ The `processFormData` hook is triggered after a form has been submitted. It
 passes the form data array, the Data Container Array and the files array as
 arguments and does not expect a return value.
 
-> **Tag** Available from version 2.4.4.
+> #### tag:: Version Information 
+> Available from Contao version 2.4.4.
 
 
 ## Parameters

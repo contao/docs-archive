@@ -4,7 +4,8 @@ The `createNewUser` hook is triggered when a new front end user registers on the
 website. It passes the ID of the new user and the data array as arguments and does
 not expect a return value.
 
-> **Tag** Available from version 2.2.0.
+> #### tag:: Version Information 
+> Available from Contao version 2.2.0.
 
 
 ## Parameters

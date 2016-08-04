@@ -3,12 +3,14 @@
 The `colorizeLogEntries` hook is triggered when log entries are being
 colorized depending on their category.
 
-> **Warning** You can not colorize log entries of the categories `CONFIGURATION`, 
-`REPOSITORY`, `CRON` and `ERROR` as the hook will not be called for these types.  
+> #### warning:: Warning 
+> You can not colorize log entries of the categories `CONFIGURATION`, 
+> `REPOSITORY`, `CRON` and `ERROR` as the hook will not be called for these types.  
 
 <!-- blockquote break -->
 
-> **Tag** Available from version 3.3.RC1.
+> #### tag:: Version Information 
+> Available from Contao version 3.3.RC1.
 
 
 ## Parameters

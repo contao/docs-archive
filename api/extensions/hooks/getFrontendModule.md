@@ -3,7 +3,8 @@
 The `getFrontendModule` hook allows to manipulate the generation of the front end
 modules.
 
-> **Tag** Available from version 2.11.0-RC1.
+> #### tag:: Version Information 
+> Available from Contao version 2.11.0-RC1.
 
 
 ## Parameters

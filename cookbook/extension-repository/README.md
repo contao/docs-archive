@@ -6,7 +6,8 @@ interface of the Extension Repository through the ["Manage extensions"][2] and
 ["Manage translations"][3] links.
 
 
-> **Warning** The images in this cookbook article are still representing
+> #### warning:: Warning
+> The images in this cookbook article are still representing
 > the old design of contao.org. If you find this chapter useful, 
 > please consider contributing new images.
 

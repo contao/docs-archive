@@ -2,7 +2,8 @@
 
 The `getLanguages` hook allows to modify the system's list of languages.
 
-> **Tag** Available from version 3.3.RC1.
+> #### tag:: Version Information 
+> Available from Contao version 3.3.RC1.
 
 
 ## Parameters

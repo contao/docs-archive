@@ -3,8 +3,9 @@
 
 In-depth list of configuration options for the advanced framework users.
 
-> **Danger** This part of the API reference is incomplete. Please consider
-[contributing to the manual][1].
+> #### fixme:: Incomplete 
+> This part of the API reference is incomplete. Please consider
+> [contributing to the manual][1].
 
 
 {% if false %}

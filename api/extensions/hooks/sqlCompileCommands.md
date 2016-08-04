@@ -3,7 +3,8 @@
 The `sqlCompileCommands` hook is triggered when compiling the database update
 commands. It passes the array of changes and expects the same as return value.
 
-> **Tag** Available from version 2.11.0-RC2.
+> #### tag:: Version Information 
+> Available from Contao version 2.11.0-RC2.
 
 
 ## Parameters

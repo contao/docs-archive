@@ -4,7 +4,8 @@ The `importUser` hook is triggered when a username cannot be found in the
 database. It passes the username, the password and the table name as arguments
 and expects a boolean return value.
 
-> **Tag** Available from version 2.7.0-RC1.
+> #### tag:: Version Information  
+> Available from Contao version 2.7.0-RC1.
 
 
 ## Parameters

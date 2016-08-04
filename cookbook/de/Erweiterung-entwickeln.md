@@ -1,6 +1,7 @@
 # Erweiterung entwicklen
 
-> **Warning** Diese Anleitung bezieht sich auf die Entwicklung von Erweiterungen
+> #### warning:: Vorsicht 
+> Diese Anleitung bezieht sich auf die Entwicklung von Erweiterungen
 > für Contao 3. Contao 4 verwendet Symfony Bundles, eine Einführung zu Bundles
 > ist im [Symfony Handbuch][1] zu finden.
 
@@ -31,10 +32,10 @@ Die Datei `autoload.php` konfiguriert das Finden und Laden der Klassen innerhalb
 von Contao. In [Autoloading](Autoloading.md) ist die Konfiguration näher
 beschrieben.
 
-> **Hint** Nach dem Anlegen dieses Grundgerüsts und auch nach dem Hinzufügen
-neuer Klassen, immer im Backend mit dem _Autoload-Creator_ die Datei
-`autoload.php` aktualisieren, damit alle Klassen der Erweiterung gefunden werden
-können.
+> #### hint:: Anmerkung 
+> Nach dem Anlegen dieses Grundgerüsts und auch nach dem Hinzufügen neuer 
+> Klassen, immer im Backend mit dem _Autoload-Creator_ die Datei `autoload.php` 
+> aktualisieren, damit alle Klassen der Erweiterung gefunden werden können.
 
 
 ## Lernen durch Kopieren
@@ -59,7 +60,8 @@ die Klassen des Cores ersetzen zu können.
 Durch den Verzicht auf Namespaces erspart man sich den Ärger, dass Klassen
 womöglich nicht korrekt oder gar nicht geladen werden können.
 
-> **Danger** Contao 4 verwendet echte Namespaces nach PSR-0/PSR-4.
+> #### danger:: Achtung! 
+> Contao 4 verwendet echte Namespaces nach PSR-0/PSR-4.
 
 
 ## Model
@@ -93,9 +95,10 @@ zurück.
 Mehr Informationen zur Erstellung und Nutzung von Modellklassen finden sich im
 [Models-Tutorial](Models.md)
 
-> **Hint** In der Klassendokumentation der Modellklasse können mit `@property` die
-Eigenschaften (=Spalten) des Modells dokumentiert werden. Moderne IDEs bieten
-dann bei der Codevervollständigung diese Felder mit an.
+> #### hint:: Anmerkung 
+> In der Klassendokumentation der Modellklasse können mit `@property` die
+> Eigenschaften (=Spalten) des Modells dokumentiert werden. Moderne IDEs bieten
+> dann bei der Codevervollständigung diese Felder mit an.
 
 Um effektiver mit dem Model zu arbeiten, sollte man sich in der eigenen
 Model-Klasse weitere statische Methoden definieren. Diese folgen dem Muster:
@@ -107,13 +110,15 @@ Model-Klasse weitere statische Methoden definieren. Diese folgen dem Muster:
 - `countByFoo` - Zum Zählen der Objekte, die für die Property (=Tabellenspalte)
   _Foo_ einen bestimmten Wert haben.
 
-> **Warning** Die _find_-Methoden geben `null` zurück, wenn es keine Objekte
+> #### warning:: Vorsicht 
+> Die _find_-Methoden geben `null` zurück, wenn es keine Objekte
 > gibt, die dem angegebenen Kriterien entsprechen. In Contao 4 soll das geändert
 > werden, so das statt `null` eine leere Collection zurückgegeben wird
 > ([GitHub Issue #6147](https://github.com/contao/core/issues/6147)).
 
   -
-> **Info** Wie man die Toggle-Funktion für die Veröffentlichung von Inhalten im
+> #### info:: Info 
+> Wie man die Toggle-Funktion für die Veröffentlichung von Inhalten im
 > Backend implementiert, wird in
 > [Toggle Funktion in eigenen Erweiterungen](Toggle-Funktion-in-eigenen-Erweiterungen.md)
 > beschrieben.

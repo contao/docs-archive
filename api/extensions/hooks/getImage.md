@@ -4,7 +4,8 @@ The `getImage` hook is triggered when a thumbnail is generated and allows you to
 add a custom routine. It passes the path, the width and height, the mode, the
 cache name and the file object as arguments and expects a path as return value.
 
-> **Tag** Available from version 2.8.0-RC1.
+> #### tag:: Version Information 
+> Available from Contao version 2.8.0-RC1.
 
 
 ## Parameters

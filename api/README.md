@@ -3,7 +3,8 @@
 Contao development has started back in 2005. Over the years, a lot of features
 were added to the framework.
 
-> **Info** Be aware that this reference guide always describes the latest Contao version.
+> #### info:: Info  
+> Be aware that this reference guide always describes the latest Contao version.
 > The differences are described in the respective sections of the reference guide.
 
 The Contao API (Application Programming Interface) Reference is split into different sections.

@@ -4,7 +4,8 @@ The `executePreActions` hook is triggered on Ajax requests that do not require a
 DCA object. It passes the name of the action as argument and does not expect a
 return value.
 
-> **Tag** Available from version 2.6.1.
+> #### tag:: Version Information 
+> Available from Contao version 2.6.1.
 
 
 ## Example

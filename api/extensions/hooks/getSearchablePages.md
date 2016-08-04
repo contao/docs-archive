@@ -4,7 +4,8 @@ The `getSearchablePages` hook is triggered when the the search index is rebuilt.
 It passes the array of pages and the ID of the root page as arguments and
 expects an array of absolute URLs (!) as return value.
 
-> **Tag** Available from version 2.2.0.
+> #### tag:: Version Information 
+> Available from Contao version 2.2.0.
 
 
 ## Parameters

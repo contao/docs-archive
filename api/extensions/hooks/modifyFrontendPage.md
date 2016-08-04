@@ -4,13 +4,15 @@ The `modifyFrontendPage` hook is triggered when a front end template is
 printed to the screen. It passes the template content and the template name as
 arguments and expects the template content as return value.
 
-> **Hint** This hook is applied after insert tags have been
+> #### hint:: Hint 
+> This hook is applied after insert tags have been
 > replaced. If you want to apply your logic before the replacement of
 > insert tags, use the [`outputFrontendTemplate`][1] hook instead.
 
 <!-- blockquote break -->
 
-> **Tag** Available from version 3.1.beta1.
+> #### tag:: Version Information 
+> Available from Contao version 3.1.beta1.
 
 
 ## Parameters

@@ -7,8 +7,9 @@ but we will slowly migrate to use more and more Symfony components.
 In this book, we will cover several chapters on how to prepare your Contao 3 extensions to
 be compatible with Contao 4, or how to migrate them to a Symfony bundle.
 
-> **Info** This book is intended as a to guide for developers familiar with Contao 3.
-If you are new to Contao, you should read the manual or cookbook first (see https://docs.contao.org/).
+> #### info:: Info  
+> This book is intended as a to guide for developers familiar with Contao 3.
+> If you are new to Contao, you should read the manual or cookbook first (see https://docs.contao.org/).
 
 You can find the latest version of this document on [docs.contao.org](https://docs.contao.org/).
 
