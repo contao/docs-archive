@@ -30,8 +30,9 @@ backup and restore them, too, or do not overwrite them at all. Otherwise you
 will have to reinstall the modules and depending on the extension you might
 eventually lose data!
 
-If you use the composer-client to manage your extensions, you also have to
-backup the folder '/composer' in the root directory. 
+If you use the Composer client to manage your extensions, you also have to
+backup the folder `/composer` in the root directory.
+
 
 ### Synchronizing files
 

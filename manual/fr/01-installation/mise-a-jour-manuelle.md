@@ -13,6 +13,7 @@ accidentel :
 * `system/config/initconfig.php`
 * `system/config/langconfig.php`
 * `system/config/localconfig.php`
+* `system/config/pathconfig.php`
 * `templates/*`
 
 Cela permettra de sauvegarder votre configuration locale, vos modèles
@@ -31,6 +32,9 @@ fichiers inutilisés des versions antérieures de Contao.
 les sauvegarder et de les restaurer eux aussi, ou ne les effacer pas du tout.
 Sinon, vous devrez réinstaller les modules et, en fonction de l'extension,
 vous pourriez finir par perdre des données !
+
+Si vous utilisez le client Composer pour gérer vos extensions, vous devez
+également sauvegarder le dossier `/composer` dans le répertoire racine.
 
 
 ### Synchronisation de fichiers

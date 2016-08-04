@@ -31,7 +31,7 @@ diese ebenfalls sichern und nach dem Update wiederherstellen oder darauf achten,
 sie gar nicht erst zu überschreiben. Andernfalls müssen diese Module neu
 installiert werden, was bei einigen Erweiterungen zu Datenverlust führen kann!
 
-Sollte der Composer-Client im Einsatz sein, muss das Verzeichnis '/composer'
+Sollte der Composer-Client im Einsatz sein, muss das Verzeichnis `/composer`
 ebenfalls gesichert werden.
 
 
