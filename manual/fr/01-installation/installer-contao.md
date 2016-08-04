@@ -119,7 +119,8 @@ base de Contao ainsi que les éléments de contenu.
 Pour importer un modèle, sélectionnez l'entrée dans le menu déroulant et cliquez
 sur le bouton "Importer un modèle".
 
-> **Danger** Les données existantes seront remplacées lors de l'importation d'un modèle !
+> #### danger:: 
+> Les données existantes seront remplacées lors de l'importation d'un modèle !
 
 
 #### Création d'un utilisateur administrateur
