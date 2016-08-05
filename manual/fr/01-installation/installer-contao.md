@@ -14,10 +14,11 @@ les commandes suivantes:
 curl -L http://download.contao.org | tar -xzp
 ```
 
-> **Warning** L'URL fait actuellement référence à la dernière version 3.x.x
-de Contao. Par conséquent, vous devez spécifier la version désirée en ajoutant,
-par exemple, "/4.2.0" après l'URL. Exemple : curl -L
-http://download.contao.org/4.2.0 | tar -xzp
+> #### warning::
+> L'URL fait actuellement référence à la dernière version 3.x.x de Contao. 
+> Par conséquent, vous devez spécifier la version désirée en ajoutant,
+> par exemple, "/4.2.0" après l'URL. Exemple : curl -L
+> http://download.contao.org/4.2.0 | tar -xzp
 
 
 ### Installation avec Composer
@@ -33,10 +34,11 @@ Vous devez remplacer le paramètre `<target>` avec un chemin d'accès vers un
 dossier où les fichiers de Contao seront créés. Si le dossier cible n'existe
 pas, il sera créé automatiquement.
 
-> **Info** La commande ci-dessus installe toujours la dernière version stable.
-Si vous souhaitez installer une version spécifique, vous devez l'insérer dans la
-commande comme par exemple :
-`php composer.phar create-project contao/standard-edition:4.1.3 <target>`
+> #### info::
+> La commande ci-dessus installe toujours la dernière version stable.
+> Si vous souhaitez installer une version spécifique, vous devez l'insérer dans la
+> commande comme par exemple :
+> `php composer.phar create-project contao/standard-edition:4.1.3 <target>`
 
 En premier lieu, avant d'exécuter cette commande, vous devez
 [installer Composer][7]. Il peut être installé globalement avec les deux
@@ -72,9 +74,10 @@ prepend_locale (false):
 Les valeurs par défaut sont listées entre parenthèses. Toutes ces données seront
 incluses dans le fichier de configuration `app/config/parameters.yml`.
 
-> **Info** Dans la version 4.2 et supérieure, le paramètre `secret` est
-automatiquement généré durant l'installation. Vous pouvez trouver plus
-d'informations sur cette configuration sur le [site officiel de Symfony][9].
+> #### info::
+> Dans la version 4.2 et supérieure, le paramètre `secret` est
+> automatiquement généré durant l'installation. Vous pouvez trouver plus
+> d'informations sur cette configuration sur le [site officiel de Symfony][9].
 
 
 ### L'outil d'installation de Contao
@@ -119,7 +122,8 @@ base de Contao ainsi que les éléments de contenu.
 Pour importer un modèle, sélectionnez l'entrée dans le menu déroulant et cliquez
 sur le bouton "Importer un modèle".
 
-> **Danger** Les données existantes seront remplacées lors de l'importation d'un modèle !
+> #### danger:: 
+> Les données existantes seront remplacées lors de l'importation d'un modèle !
 
 
 #### Création d'un utilisateur administrateur

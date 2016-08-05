@@ -13,9 +13,10 @@ Befehle verwenden:
 curl -L http://download.contao.org | tar -xzp
 ```
 
-> **Warning** Die URL zeigt aktuell auf die neuste Contao 3.x.x Version.
-Um Contao 4 zu installieren, fügen sie die Version zur URL hinzu, z.B. "/4.2.0".
-Beispiel: curl -L http://download.contao.org/4.2.0 | tar -xzp
+> #### warning:: Vorsicht
+> Die URL zeigt aktuell auf die neuste Contao 3.x.x Version.
+> Um Contao 4 zu installieren, fügen sie die Version zur URL hinzu, z.B. "/4.2.0".
+> Beispiel: curl -L http://download.contao.org/4.2.0 | tar -xzp
 
 
 ### Installation mit Composer
@@ -31,9 +32,10 @@ Geben Sie als `<ziel>` den Ordner ein, in welchen die Contao-Dateien
 installiert werden sollen. Wenn der Ordner nicht vorhanden ist, wird er
 automatisch angelegt.
 
-> **Info** Der oben erwähnte Befehl installiert immer die neuste stabile Version.
-Um eine andere Version zu installieren, kann diese im Befehl wie folgt eingegeben
-werden: `php composer.phar create-project contao/standard-edition:4.1.3 <ziel>`
+> #### info:: Info
+> Der oben erwähnte Befehl installiert immer die neuste stabile Version.
+> Um eine andere Version zu installieren, kann diese im Befehl wie folgt eingegeben
+> werden: `php composer.phar create-project contao/standard-edition:4.1.3 <ziel>`
 
 Bevor Sie diesen Befehl ausführen können, muss [Composer installiert sein][7].
 Mit folgendem Befehl kann Composer global auf einem Mac OS X oder Linux-System
@@ -68,10 +70,11 @@ prepend_locale (false):
 Standard-Werte werden in Klammern ausgegeben. Diese Konfiguration wird in der
 Datei `app/config/parameters.yml` gespeichert.
 
-> **Info** In Version 4.2 und neuer wird der `secret`-Parameter automatisch
-während der Installation generiert. 
-Weitere Informationen zu dieser Konfiguration ist auf der
-[offiziellen Symfony-Webseite][9] zu finden.
+> #### info:: Info 
+> In Version 4.2 und neuer wird der `secret`-Parameter automatisch
+> während der Installation generiert. 
+> Weitere Informationen zu dieser Konfiguration ist auf der
+> [offiziellen Symfony-Webseite][9] zu finden.
 
 ### Das Contao-Installtool
 
@@ -114,7 +117,8 @@ Core-Module und -Inhaltselemente enthält.
 Um ein Template zu importieren, wählen Sie den Eintrag aus dem Drop-Down-Menü
 und klicken Sie auf die "Template importieren"-Schaltfläche.
 
-> **Danger** Beim Import eines Templates werden bestehende Daten überschrieben!
+> #### danger:: Achtung!
+> Beim Import eines Templates werden bestehende Daten überschrieben!
 
 
 #### Administrator-Konto erstellen

@@ -44,6 +44,14 @@ install:
 	@node_modules/.bin/gitbook install ./cookbook
 	@node_modules/.bin/gitbook install ./api
 	@node_modules/.bin/gitbook install ./contao4-migration
+	@rm -rf manual/node_modules/gitbook-plugin-anchorjs
+	@rm -rf cookbook/node_modules/gitbook-plugin-anchorjs
+	@rm -rf api/node_modules/gitbook-plugin-anchorjs
+	@rm -rf contao4-migration/node_modules/gitbook-plugin-anchorjs
+	@git clone -b master https://github.com/aschempp/gitbook-plugin-anchorjs.git manual/node_modules/gitbook-plugin-anchorjs
+	@git clone -b master https://github.com/aschempp/gitbook-plugin-anchorjs.git cookbook/node_modules/gitbook-plugin-anchorjs
+	@git clone -b master https://github.com/aschempp/gitbook-plugin-anchorjs.git api/node_modules/gitbook-plugin-anchorjs
+	@git clone -b master https://github.com/aschempp/gitbook-plugin-anchorjs.git contao4-migration/node_modules/gitbook-plugin-anchorjs
 
 install-python:
 	@echo "--> You must have Python virtualenv"
@@ -51,9 +59,9 @@ install-python:
 
 validate: build install-python
 	@python_modules/bin/pip install html5validator
-	@python_modules/bin/python2.7 python_modules/bin/html5validator --root manual/_book/            --ignore "gitbook/plugins" "element must have an" "A document must not include both"
-	@python_modules/bin/python2.7 python_modules/bin/html5validator --root cookbook/_book/          --ignore "gitbook/plugins" "element must have an" "A document must not include both"
-	@python_modules/bin/python2.7 python_modules/bin/html5validator --root api/_book/               --ignore "gitbook/plugins" "element must have an" "A document must not include both"
-	@python_modules/bin/python2.7 python_modules/bin/html5validator --root contao4-migration/_book/ --ignore "gitbook/plugins" "element must have an" "A document must not include both"
+	@python_modules/bin/python2.7 python_modules/bin/html5validator --root manual/_book/            --ignore "gitbook/plugins" "element must have an" "A document must not include both" "Duplicate ID"
+	@python_modules/bin/python2.7 python_modules/bin/html5validator --root cookbook/_book/          --ignore "gitbook/plugins" "element must have an" "A document must not include both" "Duplicate ID"
+	@python_modules/bin/python2.7 python_modules/bin/html5validator --root api/_book/               --ignore "gitbook/plugins" "element must have an" "A document must not include both" "Duplicate ID"
+	@python_modules/bin/python2.7 python_modules/bin/html5validator --root contao4-migration/_book/ --ignore "gitbook/plugins" "element must have an" "A document must not include both" "Duplicate ID"
 
 deploy: validate build-pdf
