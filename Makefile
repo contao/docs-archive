@@ -26,8 +26,6 @@ install:
 	@echo "--> Installing GitBook and plugins..."
 	@npm install gitbook-cli
 	@node_modules/.bin/gitbook install ./manual
-	@rm -rf manual/node_modules/gitbook-plugin-callouts
-	@git clone -b master https://github.com/aschempp/gitbook-plugin-callouts.git manual/node_modules/gitbook-plugin-callouts
 
 install-python:
 	@echo "--> You must have Python virtualenv"

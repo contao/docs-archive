@@ -2,12 +2,12 @@
     "gitbook": "3.2.x",
     "title": "Manual for Contao 3.5",
     "plugins": [
-        "callouts",
+        "bootstrap-callout",
         "edit-link",
-        "anchors",
+        "anchorjs",
         "disqus",
         "piwik",
-        "collapsible-menu",
+        "toggle-chapters",
         "image-captions",
         "versions",
         "canonical-link"
@@ -19,9 +19,6 @@
       }
     },
     "pluginsConfig": {
-        "callouts": {
-            "showTypeInHeader": false
-        },
         "edit-link": {
             "base": "https://github.com/contao/docs/edit/3.5/manual",
             "label": {
