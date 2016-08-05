@@ -21,6 +21,46 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] =
 'tinyCustom';
 ```
 
+**Tag** The text below concerns the version 4.0.0 and higher.
 
-[1]: http://tinymce.moxiecode.com
-[2]: custom-configurations.md#customizing-the-data-container-configuration
+![](images/tinyMCE4.jpg)
+
+The image shows the default configuration of the editor in the Contao default be_tinyMCE.html5 Template.
+To create a custom configuration, duplicate the template, add your changes and save the template as be_tinyMCE.html5 in the template root dir. It will not work when placed inside subfolders like /template/mytemplates/.
+
+### Custom Formats
+
+This is how you can add custom formats to TinyMCE:
+
+```js
+// Define a color:
+  style_formats_merge: true,
+  style_formats: [
+    { title: 'Text Red', inline: 'span', styles: { 'color': '#d11216' }, classes: 'text-red' },
+  ]
+```
+
+Important is the line `style_formats_merge: true`.
+This allows adding own formates without overwrighting the default formats that already exist.
+
+![](images/tinyMCE4Custom.jpg)
+
+To clean up Custom formats, you can group them inside your own format folder like this:
+
+```js
+  style_formats_merge: true,
+  style_formats: [
+  	{title: 'My Formats', items: [
+  		{ title: 'Text Red', inline: 'span', styles: { 'color': '#d11216'}, classes: 'text-red' },
+  	]}
+  ]
+```
+
+![](images/tinyMCE4CustomFormat.jpg)
+
+Other informations on how to customize your TinyMCE can be found in the official [TinyMCE Documentation][3].
+
+
+[1]: https://www.tinymce.com/
+[2]: https://www.tinymce.com/docs/configure/
+[3]: custom-configurations.md#customizing-the-data-container-configuration
