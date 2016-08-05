@@ -2,14 +2,15 @@
     "gitbook": "3.2.x",
     "title": "Manual for Contao 4.2",
     "plugins": [
-        "callouts",
+        "bootstrap-callout",
         "edit-link",
-        "anchors",
+        "anchorjs",
         "disqus",
         "piwik",
-        "collapsible-menu",
+        "toggle-chapters",
         "image-captions",
-        "versions"
+        "versions",
+        "canonical-link"
     ],
     "links": {
       "sidebar": {
@@ -18,9 +19,6 @@
       }
     },
     "pluginsConfig": {
-        "callouts": {
-            "showTypeInHeader": false
-        },
         "edit-link": {
           "base": "https://github.com/contao/docs/edit/4.2/manual",
             "label": {
@@ -50,6 +48,12 @@
                 { "value": "https://docs.contao.org/books/manual/3.0", "text": "Contao 3.0" },
                 { "value": "https://docs.contao.org/books/manual/2.11", "text": "Contao 2.11" }
             ]
+        },
+        "canonical-link": {
+            "baseURL": "https://docs.contao.org/books/manual/current/en/"
+        },
+        "anchorjs": {
+            "selector": "h1,h2,h3,*:not(.callout) > h4,h5"
         }
     }
 }
