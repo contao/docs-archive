@@ -9,7 +9,8 @@
         "piwik",
         "collapsible-menu",
         "image-captions",
-        "versions"
+        "versions",
+        "canonical-link"
     ],
     "links": {
       "sidebar": {
@@ -49,6 +50,9 @@
                 { "value": "https://docs.contao.org/books/manual/3.0", "text": "Contao 3.0" },
                 { "value": "https://docs.contao.org/books/manual/2.11", "text": "Contao 2.11" }
             ]
+        },
+        "canonical-link": {
+            "baseURL": "https://docs.contao.org/books/manual/current/en/"
         }
     }
 }

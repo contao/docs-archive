@@ -1,3 +1,8 @@
 {
-    "title": "Manuel pour Contao 3.5"
+    "title": "Manuel pour Contao 3.5",
+    "pluginsConfig": {
+        "canonical-link": {
+            "baseURL": "https://docs.contao.org/books/manual/current/fr"
+        }
+    }
 }
