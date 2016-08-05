@@ -50,6 +50,9 @@
         },
         "canonical-link": {
             "baseURL": "https://docs.contao.org/books/manual/current/en/"
+        },
+        "anchorjs": {
+            "selector": "h1,h2,h3,*:not(.callout) > h4,h5"
         }
     }
 }
