@@ -136,4 +136,4 @@ serait pas affiché.
 
 
 [1]: http://fr.wikipedia.org/wiki/Opt_in
-[2]: ../04-gestion-du-contenu/balises-insertion.md#balises-d-insertion
+[2]: ../04-gestion-du-contenu/balises-insertion.md#balises-dinsertion

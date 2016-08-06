@@ -86,4 +86,4 @@ substituer à un autre membre en tout temps avec le champ "Membre". Il est
 publiés par le membre sélectionné.
 
 
-[1]: ../03-gestion-des-pages/types-de-page.md#droits-daccès
+[1]: ../03-gestion-des-pages/types-de-page.md#droits-dacc%C3%A8s
