@@ -35,7 +35,7 @@ Die oben verwendeten Methoden sind durch die `\Contao\Model` Klasse
 implementiert. Jedes Model kann zusätzlich in seiner Klasse weitere Constraints
 in Methoden kapseln, z.B. `ArticleModel::findPublishedById()`.
 Nahezu alle *findBy*-Methoden unterstützen als letzten Parameter ein Array mit
-zusätzlichen Parametern, siehe [Methode find()](#die-protectedmethode-findarroptions).
+zusätzlichen Parametern.
 
 
 ### Virtuelle Methoden
