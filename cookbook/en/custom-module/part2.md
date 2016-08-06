@@ -92,7 +92,6 @@ $GLOBALS['TL_DCA']['tl_cds_category'] = array
     'switchToEdit'                => true
  ),
 //...
-
 ```
 
 
@@ -478,8 +477,7 @@ Title – a normal text input, available for search, with max length of 64 chara
 *Fields without applied classes*
 
 
-![Fields with classes](assets/with_classes.jpg
-)
+![Fields with classes](assets/with_classes.jpg)
 
 *Fields with applied 'w50' class*
 
