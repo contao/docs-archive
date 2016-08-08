@@ -25,7 +25,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] =
 
 ![](images/tinyMCE4.jpg)
 
-The image shows the default configuration of the editor in the Contao default `be_tinyMCE.html5` Template.
+The image shows the default configuration of the editor in the Contao default `be_tinyMCE.html5` template.
 To create a custom configuration, duplicate the template, add your changes and save the template as `be_tinyMCE.html5` in the template root dir. It will not work when placed inside subfolders like `/template/mytemplates/`.
 
 ### Custom Formats
