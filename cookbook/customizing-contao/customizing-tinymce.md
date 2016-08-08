@@ -41,7 +41,7 @@ This is how you can add custom formats to TinyMCE:
 ```
 
 Important is the line `style_formats_merge: true`.
-This allows adding your formates without overwrighting the default formats that already exist.
+This allows adding your formats without overwriting the default formats that already exist.
 
 ![](images/tinyMCE4Custom.jpg)
 
