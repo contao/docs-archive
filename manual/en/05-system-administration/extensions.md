@@ -58,10 +58,6 @@ With Composer, the cache is cleared automatically.
 
 ### Installing a Contao extension
 
-> **Warning** Even if a Contao extension can be installed, this does not mean
-that it is compatible with Contao 4. The extension you want to use must take
-into account the prerequisites of the version 4.
-
 An extension can be installed with Composer or manually. With Composer, the
 installation process is the same as a bundle except for the registration in the
 `app/AppKernel.php` file where the code is slightly different.

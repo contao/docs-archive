@@ -229,9 +229,10 @@ symlinks. These can be regenerated from the back end under maintenance.
 ### Contao modules
 
 Existing extensions developed for Contao 3.5 and lower can be used with Contao
-4. But they must necessarily fulfil the compatibility requirements of Contao 4
-to work properly. The procedure for installing an extension is described in the
-chapter [extension][14].
+4 if they fulfill the compatibility requirements. You can see if an extension is
+compatible by checking its `composer.json` file in the section `require` (e.g.
+`contao/core-bundle":"~3.2 || ~4.1`). The procedure for installing an extension
+is described in the chapter [extension][14].
 
 
 [1]: https://contao.org/en/download.html
