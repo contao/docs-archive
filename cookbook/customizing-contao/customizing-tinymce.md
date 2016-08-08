@@ -21,7 +21,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] =
 'tinyCustom';
 ```
 
-**Tag** The text below concerns the version 4.0.0 and higher.
+> **Tag** The text below concerns the version 4.0.0 and higher.
 
 ![](images/tinyMCE4.jpg)
 
