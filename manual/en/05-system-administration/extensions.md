@@ -9,12 +9,22 @@ functionalities but also of its terminology. In a Symfony project, an extension
 is named a bundle.
 
 
+### Finding extensions or bundles
+
+Contao has its own [repository][1] where you can find the extensions that are
+compatible with Contao 3.x and lower.
+
+The second most commonly used repository is [Packagist][3]. It lists the
+extensions and bundles installable through [Composer][2].
+ 
+1. [List of Contao 4 bundles][6] in Packagist.
+2. [List of Contao 3 extensions][7] in Packagist.
+
+
 ### Installing a bundle with Composer
 
-Bundles that can be installed via [Composer][2] can be found through its main
-repository [Packagist][3]. A name of a bundle is divided into two parts.
-The first part is the name of the vendor (project owner) and the second the
-bundle name. For example: `contao/news-bundle`.
+A name of a bundle is divided into two parts. The first part is the name of the
+vendor (project owner) and the second the bundle name. For example: `contao/news-bundle`.
 
 Run the command `php composer.phar require vendor/bundleName` in your
 command-line interface to start the installation.
@@ -120,3 +130,5 @@ release.
 [3]: https://packagist.org
 [4]: ../01-installation/installing-contao.md#symbolic-link
 [5]: ../01-installation/installing-contao.md#the-contao-install-tool
+[6]: https://packagist.org/search/?q=&type=contao-bundle
+[7]: https://packagist.org/search/?q=&type=contao-module
