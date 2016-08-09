@@ -24,7 +24,6 @@ profitieren zu können.
 | GDlib             | Bildbearbeitung        | Ja      |
 | DOM               | XML-Dateien            | Ja      |
 | SOAP              | Extension Repository   | Nein    |
-| Phar              | Live Update            | Nein    |
 | mbstring          | internationale Zeichen | Nein    |
 | mcrypt            | Verschlüsselung        | Nein    |
 
