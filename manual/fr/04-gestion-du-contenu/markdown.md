@@ -191,7 +191,7 @@ dans le document.
 ### Compléments d'information
 
 Pour une documentation complète concernant Markdown, veuillez s'il vous
-plaît, vous référer au site officiel en suivant ce [lien][1](en Anglais).
+plaît, vous référer au site officiel en suivant ce [lien][1] (en Anglais).
 
 Pour une documentation complète concernant Markdown Extra, veuillez s'il
 vous plaît, vous référer au site officiel en suivant ce [lien][2].

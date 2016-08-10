@@ -152,4 +152,4 @@ Le résultat en sortie du modèle `image.html5` sera :
 ```
 
 
-[1]: ../03-gestion-des-pages/themes.md#composants-d-un-th%C3%A8me
+[1]: ../03-gestion-des-pages/themes.md#composants-dun-th%C3%A8me
