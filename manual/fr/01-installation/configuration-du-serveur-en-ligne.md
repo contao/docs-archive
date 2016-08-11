@@ -31,7 +31,7 @@ toutes les fonctionnalités.
 | mbstring      | gestion des caractères multi-octets | non         |
 | mcrypt        | cryptage des données                | non         |
 
-> #### note:: 
+> #### note:: Remarque
 > En fonction de vos extensions installées, il peut être nécessaire d'augmenter 
 > la valeur de la variable PHP `max_input_vars` (par ex. `2000` ou supérieur). Sinon, les 
 > longs formulaires du back office ne peuvent pas être soumis entièrement.
@@ -52,7 +52,7 @@ d'installation de Contao et ouvrez-le dans un navigateur Web.
 
 [Télécharger Contao Check][1] | [Ouvrir le projet sur GitHub][2]
 
-> #### note::
+> #### note:: Remarque
 > Vous ne pouvez pas valider une installation de Contao 4 avec Contao Check.
 
 
