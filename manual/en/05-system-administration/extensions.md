@@ -1,4 +1,4 @@
-## Extensions
+## Extensions and bundles
 
 Extensions are an essential part of Contao, because they allow you to add extra
 functionality. There are more than 1,800 extensions available in the Contao
