@@ -31,7 +31,7 @@ toutes les fonctionnalités.
 | mbstring      | gestion des caractères multi-octets | non         |
 | mcrypt        | cryptage des données                | non         |
 
-> #### note:: 
+> #### note:: Remarque
 > En fonction de vos extensions installées, il peut être nécessaire d'augmenter 
 > la valeur de la variable PHP `max_input_vars` (par ex. `2000` ou supérieur). Sinon, les 
 > longs formulaires du back office ne peuvent pas être soumis entièrement.
