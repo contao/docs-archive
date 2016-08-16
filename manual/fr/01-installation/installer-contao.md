@@ -14,7 +14,7 @@ les commandes suivantes:
 curl -L http://download.contao.org | tar -xzp
 ```
 
-> #### warning::
+> #### warning:: Attention
 > L'URL fait actuellement référence à la dernière version 3.x.x de Contao. 
 > Par conséquent, vous devez spécifier la version désirée en ajoutant,
 > par exemple, "/4.2.0" après l'URL. Exemple : curl -L
@@ -34,7 +34,7 @@ Vous devez remplacer le paramètre `<target>` avec un chemin d'accès vers un
 dossier où les fichiers de Contao seront créés. Si le dossier cible n'existe
 pas, il sera créé automatiquement.
 
-> #### info::
+> #### info:: Info
 > La commande ci-dessus installe toujours la dernière version stable.
 > Si vous souhaitez installer une version spécifique, vous devez l'insérer dans la
 > commande comme par exemple :
@@ -74,7 +74,7 @@ prepend_locale (false):
 Les valeurs par défaut sont listées entre parenthèses. Toutes ces données seront
 incluses dans le fichier de configuration `app/config/parameters.yml`.
 
-> #### info::
+> #### info:: Info
 > Dans la version 4.2 et supérieure, le paramètre `secret` est
 > automatiquement généré durant l'installation. Vous pouvez trouver plus
 > d'informations sur cette configuration sur le [site officiel de Symfony][9].
