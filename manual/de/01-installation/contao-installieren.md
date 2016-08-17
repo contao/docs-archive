@@ -32,7 +32,7 @@ Geben Sie als `<ziel>` den Ordner ein, in welchen die Contao-Dateien
 installiert werden sollen. Wenn der Ordner nicht vorhanden ist, wird er
 automatisch angelegt.
 
-> #### info:: Info
+> #### info:: Hinweis
 > Der oben erwähnte Befehl installiert immer die neuste stabile Version.
 > Um eine andere Version zu installieren, kann diese im Befehl wie folgt eingegeben
 > werden: `php composer.phar create-project contao/standard-edition:4.1.3 <ziel>`
@@ -70,7 +70,7 @@ prepend_locale (false):
 Standard-Werte werden in Klammern ausgegeben. Diese Konfiguration wird in der
 Datei `app/config/parameters.yml` gespeichert.
 
-> #### info:: Info 
+> #### info:: Hinweis 
 > In Version 4.2 und neuer wird der `secret`-Parameter automatisch
 > während der Installation generiert. 
 > Weitere Informationen zu dieser Konfiguration ist auf der
@@ -117,7 +117,7 @@ Core-Module und -Inhaltselemente enthält.
 Um ein Template zu importieren, wählen Sie den Eintrag aus dem Drop-Down-Menü
 und klicken Sie auf die "Template importieren"-Schaltfläche.
 
-> #### danger:: Achtung!
+> #### danger:: Achtung
 > Beim Import eines Templates werden bestehende Daten überschrieben!
 
 

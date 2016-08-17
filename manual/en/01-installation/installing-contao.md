@@ -32,7 +32,7 @@ You have to replace the `<target>` parameter with a path to a folder where the
 Contao files will be created. If the target folder does not exist, it will be
 created automatically.
 
-> #### info:: Info
+> #### info:: Note
 > The command above always installs the latest stable version. If you
 > want to install a specific version, you must insert it in the command as for
 > example: `php composer.phar create-project contao/standard-edition:4.1.3 <target>`
@@ -69,7 +69,7 @@ prepend_locale (false):
 Default values are listed in parentheses. All these data will be included in the
 configuration file `app/config/parameters.yml`.
 
-> #### info:: Info
+> #### info:: Note
 > In the version 4.2 and higher, the `secret` parameter is
 > automatically generated during the installation. You can find more information
 > about this configuration on the [official Symfony website][9].
@@ -114,7 +114,7 @@ style-sheets to format the Contao core modules and content elements.
 To import a template, select the entry from the drop-down menu and click the "Import
 template" button.
 
-> #### danger:: Danger!
+> #### danger:: Danger
 > When importing a template, existing data will be replaced!
 
 

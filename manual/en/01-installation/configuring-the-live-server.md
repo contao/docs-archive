@@ -23,11 +23,10 @@ You also need several PHP extensions to get the full functionality.
 | GDlib         | image resizing                | yes       |
 | DOM           | XML files                     | yes       |
 | intl          | Internationalization          | yes       |
-| Phar          | Live Update                   | no        |
 | mbstring      | multi-byte character handling | no        |
 | mcrypt        | data encryption               | no        |
 
-> #### note:: Note 
+> #### info:: Note 
 > Depending on your installed extensions, it may be necessary to increase the
 > PHP variable `max_input_vars` (e.g. `2000` or higher). Otherwise long back end 
 > forms cannot be submitted completely.
@@ -48,7 +47,7 @@ directory and open it in a web browser.
 
 [Download the Contao Check][1] | [Open the GitHub project][2]
 
-> #### note:: Note
+> #### info:: Note
 > You cannot validate a Contao 4 installation with the Contao Check.
 
 
