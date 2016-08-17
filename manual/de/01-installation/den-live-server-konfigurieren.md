@@ -27,7 +27,7 @@ profitieren zu können.
 | mbstring          | internationale Zeichen | Nein    |
 | mcrypt            | Verschlüsselung        | Nein    |
 
-> #### note::  Anmerkung
+> #### info:: Hinweis
 > Je nach installierten Extensions kann es außerdem notwendig sein die PHP 
 > Variable `max_input_vars` zu erhöhen (bspw. auf `2000` oder höher). Andernfalls 
 > können zu lange Backend Formulare nicht komplett abgeschickt werden.
@@ -48,7 +48,7 @@ Entpacken Sie die Zip-Datei, übertragen Sie den Ordner
 
 [Den Contao-Check herunterladen][1] | [Zum Projekt auf GitHub][2]
 
-> #### note:: Anmerkung
+> #### info:: Hinweis
 > Eine Contao 4 Installation kann mit dem Contao Check nicht validiert werden.
 
 
