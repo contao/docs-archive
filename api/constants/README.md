@@ -8,7 +8,6 @@ Contao 3 uses a lot of PHP constants to represent state.
 > [contributing to the manual][1].
 
 {% if false %}
----
 
 * Mode (`TL_MODE`)
 * Directories (`TL_ROOT` / `TL_PATH`)

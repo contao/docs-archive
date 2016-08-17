@@ -10,7 +10,6 @@ parts are *hooks*, Contao's own event system to extend core functionality.
 > [contributing to the manual][1].
 
 {% if false %}
----
 
 > * Content elements (`TL_CTE`)
 > * Front end modules (`FE_MOD`)

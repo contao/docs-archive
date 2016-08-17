@@ -9,7 +9,6 @@ without modifying the `fe_page` template.
 > [contributing to the manual][1].
 
 {% if false %}
----
 
 > * `global $objPage`
 > * Javascript (`TL_JAVASCRIPT`)

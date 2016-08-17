@@ -9,7 +9,6 @@ In-depth list of configuration options for the advanced framework users.
 
 
 {% if false %}
----
 
 * Page types (`TL_PTY`)
 * Maintenance jobs (`TL_MAINTENANCE`)

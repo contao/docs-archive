@@ -9,7 +9,6 @@ A reference guide to the framework classes.
 
 
 {% if false %}
----
 
 > * Input
 > * Database
