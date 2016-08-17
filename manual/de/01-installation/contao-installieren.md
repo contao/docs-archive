@@ -70,7 +70,7 @@ Vorgehen zur Installation der Demo:
 Um ein Template zu importieren, wählen Sie den Eintrag aus dem Drop-Down-Menü
 und klicken Sie auf die "Template importieren"-Schaltfläche.
 
-> #### danger:: Achtung!
+> #### danger:: Achtung
 > Beim Import eines Templates werden bestehende Daten überschrieben!
 
 
@@ -106,4 +106,4 @@ speichern Sie Ihre Änderungen. Contao generiert jetzt statische URLs wie z.B.
 [2]: http://www.winscp.net
 [3]: https://contao.org/de/extension-list/view/official_demo.de.html
 [4]: https://contao.org/de/extension-list/view/music_academy.de.html
-[5]: ../05-systemadministration/erweiterungen.html#erweiterungskatalog
+[5]: ../05-systemadministration/erweiterungen.md#erweiterungskatalog

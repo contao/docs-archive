@@ -28,7 +28,7 @@ profitieren zu können.
 | mbstring          | internationale Zeichen | Nein    |
 | mcrypt            | Verschlüsselung        | Nein    |
 
-> #### note::  Anmerkung
+> #### info:: Hinweis
 > Je nach installierten Extensions kann es außerdem notwendig sein die PHP 
 > Variable `max_input_vars` zu erhöhen (bspw. auf `2000` oder höher). Andernfalls 
 > können zu lange Backend Formulare nicht komplett abgeschickt werden.

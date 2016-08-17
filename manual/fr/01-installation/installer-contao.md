@@ -74,7 +74,7 @@ référentiel d'extensions.
 Pour importer un modèle, sélectionnez l'entrée dans le menu déroulant
 et cliquez sur le bouton "Importer un modèle".
 
-> #### danger:: Danger !
+> #### danger:: Danger
 > Les données existantes seront remplacées lors de l'importation d'un modèle !
 
 
