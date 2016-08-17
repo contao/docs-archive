@@ -3,8 +3,8 @@
 The `setCookie` hook is triggered when sending a cookie to the browser. It passes
 a standard object with all cookie properties and expects the same as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.11.3.
+> #### primary:: Available   
+> from Contao 2.11.3.
 
 
 ## Parameters

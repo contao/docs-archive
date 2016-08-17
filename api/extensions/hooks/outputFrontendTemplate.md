@@ -4,15 +4,15 @@ The `outputFrontendTemplate` hook is triggered when a front end template is
 printed to the screen. It passes the template content and the template name as
 arguments and expects the template content as return value. 
 
-> #### hint:: Hint 
+> #### info:: Note 
 > This hook is applied before the replacement of insert tags 
 > whereas the corresponding [`modifyFrontendTemplate`][1] is applied after 
 > insert tags have been replaced.
 
 <!-- blockquote break -->
 
-> #### tag:: Version Information 
-> Available from Contao version 2.6.0.
+> #### primary:: Available   
+> from Contao 2.6.0.
 
 
 ## Parameters

@@ -3,8 +3,8 @@
 The `loadDataContainer` hook is triggered when a DCA file is loaded. It passes
 the file name as argument and does not expect a return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.8.2.
+> #### primary:: Available   
+> from Contao 2.8.2.
 
 
 ## Parameters

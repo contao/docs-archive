@@ -1,6 +1,6 @@
 #Create a custom Contao module – part three
   
-> #### bug:: Watch out
+> warning:: Warning
 > This guide was written for Contao 2.x and a lot of it's information is outdated!  
 > Read with care and only use as a general-purpose guide.
   

@@ -4,8 +4,8 @@ The `removeOldFeeds` hook is triggered when old XML files are being removed from
 the Contao root directory. It does not pass an argument and expects an array of
 file names to preserve as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.5.8.
+> #### primary:: Available   
+> from Contao 2.5.8.
 
 
 ## Return Values

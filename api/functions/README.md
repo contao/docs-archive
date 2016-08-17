@@ -3,7 +3,7 @@
 
 Descriptions of the available functions and static methods.
 
-> #### fixme:: Incomplete 
+> #### warning:: Warning
 > This part of the API reference is incomplete. Please consider
 > [contributing to the manual][1].
 

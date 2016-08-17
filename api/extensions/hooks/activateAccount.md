@@ -2,8 +2,8 @@
 
 The `activateAccount` hook is triggered when a new front end account is activated.
 
-> #### tag:: Version Information  
-> Available from Contao version 2.4.3.
+> #### primary:: Available   
+> from Contao 2.4.3.
 
 
 ## Parameters

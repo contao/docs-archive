@@ -6,8 +6,8 @@ and the form object as arguments and does not expect a return value. This way
 the data can be changed or extended, prior to execution of actions like email
 distribution or data storage.
 
-> #### tag:: Version Information 
-> Available from Contao version 3.0.0.
+> #### primary:: Available   
+> from Contao 3.0.0.
 
 
 ## Parameters

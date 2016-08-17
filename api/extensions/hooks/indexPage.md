@@ -4,8 +4,8 @@ The `indexPage` hook is triggered when a page's content is added to the search i
 It passes the content, the data and the data collected for indexing so far as arguments 
 and does not expect a return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 3.0.0.
+> #### primary:: Available   
+> from Contao 3.0.0.
 
 
 ## Parameters

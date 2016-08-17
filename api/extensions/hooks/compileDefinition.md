@@ -4,8 +4,8 @@ The `compileDefinition` hook is triggered when a format definition of a style
 sheet is written. It passes the configuration array as argument and expects a
 string as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.9.4.
+> #### primary:: Available   
+> from Contao 2.9.4.
 
 
 ## Parameters

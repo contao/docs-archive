@@ -4,8 +4,8 @@ The `listComments` hook is triggered when listing comment from unknown source in
 the back end. It passes the current record as argument and expects a string as
 return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.8.0-RC2.
+> #### primary:: Available   
+> from Contao 2.8.0-RC2.
 
 
 ### Parameters

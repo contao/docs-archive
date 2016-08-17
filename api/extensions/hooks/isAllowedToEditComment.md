@@ -4,8 +4,8 @@ The `isAllowedToEditComment` hook is triggered to determine permission on a
 comment from unknown source in the back end. It passes the comment parent ID and
 source table and expects a boolean as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.8.1.
+> #### primary:: Available   
+> from Contao 2.8.1.
 
 
 ## Parameters

@@ -3,7 +3,7 @@
 
 Contao 3 uses a lot of PHP constants to represent state.
 
-> #### fixme:: Incomplete
+> #### warning:: Warning
 > This part of the API reference is incomplete. Please consider
 > [contributing to the manual][1].
 

@@ -7,8 +7,8 @@ a front end module or a content element. In contrast to the other three hooks
 the complete markup. The hook passes the model of the instance and the current
 visibility state as arguments and expects the new visibility state as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 3.2.RC1.
+> #### primary:: Available   
+> from Contao 3.2.RC1.
 
 
 ## Parameters

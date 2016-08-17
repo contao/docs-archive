@@ -4,8 +4,8 @@ The `addCustomRegexp` hook is triggered when an unknown regular expression is
 found. It passes the name of the regexp, the current value and the widget object
 as arguments and expects a boolean return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.6.2.
+> #### primary:: Available   
+> from Contao 2.6.2.
 
 
 ## Parameters

@@ -4,8 +4,8 @@ The `storeFormData` hook is triggered before a submitted form is stored to the
 database. It passes the result set and the form object and expects the result
 set as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.11.0-RC1.
+> #### primary:: Available   
+> from Contao 2.11.0-rc1.
 
 
 ## Parameters

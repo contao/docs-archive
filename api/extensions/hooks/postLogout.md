@@ -3,8 +3,8 @@
 The `postLogout` hook is triggered after a user has logged out from the back end 
 or front end. It passes the user object as argument and does not expect a return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.4.3.
+> #### primary:: Available   
+> from Contao 2.4.3.
 
 
 ## Parameters

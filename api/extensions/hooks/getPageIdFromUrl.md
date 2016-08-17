@@ -4,8 +4,8 @@ The `getPageIdFromUrl` hook is triggered when the URL fragments are evaluated.
 It passes the array of URL fragments as argument and expects an array of URL
 fragments as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.5.4.
+> #### primary:: Available   
+> from Contao 2.5.4.
 
 
 ## Parameters

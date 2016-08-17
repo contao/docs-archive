@@ -4,8 +4,8 @@ The `setNewPassword` hook is triggered after a new password has been set. It
 passes the user object and the encrypted password as arguments and does not
 expect a return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.2.3.
+> #### primary:: Available   
+> from Contao 2.2.3.
 
 
 ## Parameters

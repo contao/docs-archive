@@ -3,8 +3,8 @@
 The `initializeSystem` hook is triggered right after the system initialization
 process is finished and before the request processing is started.
 
-> #### tag:: Version Information 
-> Available from Contao version 3.1.0.
+> #### primary:: Available   
+> from Contao 3.1.0.
 
 
 ## Example

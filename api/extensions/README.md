@@ -5,7 +5,7 @@ This section describes how to add functionality like *content elements*,
 *frontend modules* or custom *form fields* to the system. Another important
 parts are *hooks*, Contao's own event system to extend core functionality.
 
-> #### fixme:: Incomplete 
+> #### warning:: Warning
 > This part of the API reference is incomplete. Please consider
 > [contributing to the manual][1].
 

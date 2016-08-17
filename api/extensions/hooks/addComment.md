@@ -3,8 +3,8 @@
 The `addComment` hook is triggered when a comment is added. It passes the ID of
 the record and the data array as arguments and does not expect a return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.8.2.
+> #### primary:: Available   
+> from Contao 2.8.2.
 
 
 ## Parameters

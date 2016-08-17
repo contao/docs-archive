@@ -9,8 +9,8 @@ colorized depending on their category.
 
 <!-- blockquote break -->
 
-> #### tag:: Version Information 
-> Available from Contao version 3.3.RC1.
+> #### primary:: Available   
+> from Contao 3.3.RC1.
 
 
 ## Parameters

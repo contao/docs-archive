@@ -4,8 +4,8 @@ The `closeAccount` hook is triggered when a user closes his account. It passes
 the user ID, the operation mode and the module as arguments and does not expect
 a return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.8.0.
+> #### primary:: Available   
+> from Contao 2.8.0.
 
 
 ## Parameters

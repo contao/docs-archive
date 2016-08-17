@@ -2,8 +2,8 @@
 
 The `getCountries` hook allows to modify the system's list of countries.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.11.0-RC1.
+> #### primary:: Available   
+> from Contao 2.11.0-RC1.
 
 
 ## Parameters

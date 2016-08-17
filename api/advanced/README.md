@@ -3,7 +3,7 @@
 
 In-depth list of configuration options for the advanced framework users.
 
-> #### fixme:: Incomplete 
+> #### warning:: Warning
 > This part of the API reference is incomplete. Please consider
 > [contributing to the manual][1].
 

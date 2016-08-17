@@ -4,8 +4,8 @@ The `checkCredentials` hook is triggered when a login attempt fails due to a wro
 password. It passes the username and password as well as the user object as
 arguments and expects a boolean as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.6.0.
+> #### primary:: Available   
+> from Contao 2.6.0.
 
 
 ## Parameters

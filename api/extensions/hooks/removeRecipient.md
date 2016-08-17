@@ -4,8 +4,8 @@ The `removeRecipient` hook is triggered when a newsletter recipient is removed.
 It passes the email address and the channel IDs as argument and does not expect
 a return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.8.0-RC1.
+> #### primary:: Available   
+> from Contao 2.8.0-RC1.
 
 
 ## Parameters

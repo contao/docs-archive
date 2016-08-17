@@ -3,8 +3,8 @@
 The `postAuthenticate` hook is triggered after a user was authenticated. It 
 passes the user object as argument and does not expect a return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 3.5.0.
+> #### primary:: Available   
+> from Contao 3.5.0.
 
 
 ## Parameters

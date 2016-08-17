@@ -9,7 +9,7 @@ callback functions are being executed.
 
 Callbacks are very similar to [Hooks][hooks], but always bound to a specific DCA table.
 
-> #### hint:: Hint 
+> #### info:: Note 
 > Since Contao 3.2.0, you can also use [anonymous functions][closures] for DCA callbacks.
 
 

@@ -24,7 +24,7 @@ public static function log($strText, $strFunction, $strAction)
 
     The name of the function where log is made.
     
-    > #### hint:: Hint
+    > #### info:: Note
     > Consider using the PHP constant `__METHOD__`
     > instead of manually writing the function name.
 

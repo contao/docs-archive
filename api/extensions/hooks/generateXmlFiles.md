@@ -4,8 +4,8 @@ The `generateXmlFiles` hook is triggered when the XML files are (re)generated
 e.g. by clicking "System -> Maintenance -> Recreate the XML files" in the back end.
 It has no parameters and does not expect a return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 3.0.0.
+> #### primary:: Available   
+> from Contao 3.0.0.
 
 
 ## Example

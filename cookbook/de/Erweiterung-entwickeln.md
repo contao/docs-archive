@@ -32,7 +32,7 @@ Die Datei `autoload.php` konfiguriert das Finden und Laden der Klassen innerhalb
 von Contao. In [Autoloading](Autoloading.md) ist die Konfiguration näher
 beschrieben.
 
-> #### hint:: Anmerkung 
+> #### info:: Hinweis 
 > Nach dem Anlegen dieses Grundgerüsts und auch nach dem Hinzufügen neuer 
 > Klassen, immer im Backend mit dem _Autoload-Creator_ die Datei `autoload.php` 
 > aktualisieren, damit alle Klassen der Erweiterung gefunden werden können.
@@ -60,7 +60,7 @@ die Klassen des Cores ersetzen zu können.
 Durch den Verzicht auf Namespaces erspart man sich den Ärger, dass Klassen
 womöglich nicht korrekt oder gar nicht geladen werden können.
 
-> #### danger:: Achtung! 
+> #### danger:: Achtung 
 > Contao 4 verwendet echte Namespaces nach PSR-0/PSR-4.
 
 
@@ -95,7 +95,7 @@ zurück.
 Mehr Informationen zur Erstellung und Nutzung von Modellklassen finden sich im
 [Models-Tutorial](Models.md)
 
-> #### hint:: Anmerkung 
+> #### info:: Hinweis 
 > In der Klassendokumentation der Modellklasse können mit `@property` die
 > Eigenschaften (=Spalten) des Modells dokumentiert werden. Moderne IDEs bieten
 > dann bei der Codevervollständigung diese Felder mit an.
@@ -117,7 +117,7 @@ Model-Klasse weitere statische Methoden definieren. Diese folgen dem Muster:
 > ([GitHub Issue #6147](https://github.com/contao/core/issues/6147)).
 
   -
-> #### info:: Info 
+> #### info:: Hinweis 
 > Wie man die Toggle-Funktion für die Veröffentlichung von Inhalten im
 > Backend implementiert, wird in
 > [Toggle Funktion in eigenen Erweiterungen](Toggle-Funktion-in-eigenen-Erweiterungen.md)

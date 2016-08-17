@@ -147,7 +147,7 @@ PHP immer dann aufgerufen, wenn der Zugriff auf ein nicht existierendes
 Klassen-Attribut erfolgt. Contao gibt dann die Werte des Datensatzes zurück, 
 bzw. setzt diese.
 
-> #### info:: Info  
+> #### info:: Hinweis  
 > Es können beliebige Spalten im Model gesetzt werden, gespeichert
 > werden nur Attribute, für die eine Spalte in der Datenbank-Tabelle vorhanden ist.
 
@@ -291,7 +291,7 @@ while($objArticles->next()) {
 
 ```
 
-> #### hint:: Anmerkung 
+> #### info:: Hinweis 
 > Es wird empfohlen, die *foreach*-Variante zu verwenden, da deren
 > Position nicht vom internen Zähler der *Collection* abhängig ist.
 

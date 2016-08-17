@@ -3,8 +3,8 @@
 The `sqlGetFromDca` hook is triggered when sql definitions in DCA files are evaluated. It passes
 the generated SQL definition and expects the same as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 3.2.0.
+> #### primary:: Available   
+> from Contao 3.2.0.
 
 
 

@@ -4,8 +4,8 @@ The `parseBackendTemplate` hook is triggered when a back end template is parsed.
 It passes the template content and the template name as arguments and expects
 the template content as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.6.0.
+> #### primary:: Available   
+> from Contao 2.6.0.
 
 
 ## Parameters

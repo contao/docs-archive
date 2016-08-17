@@ -4,8 +4,8 @@ The `compileFormFields` hook is triggered when the fields of a form are compiled
 It passes the form fields, the ID of the form and the form object as arguments
 and expects the modified form fields as return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 3.2.0.
+> #### primary:: Available   
+> from Contao 3.2.0.
 
 
 ## Parameters

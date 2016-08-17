@@ -17,7 +17,7 @@ eine Klasse unter einem zusätzlichen Namen registriert werden kann.
 Aus den genannten Umständen unterstützt der ClassLoader kein Autoloading
 nach PSR-0.
 
-> #### danger:: Achtung! 
+> #### danger:: Achtung 
 > Die Überschreibung von Core-Klassen ist nur für lokale Anpassungen
 > vorgesehen! Keinesfalls sollten entsprechende Erweiterungen im Extension
 > Repository veröffentlicht werden, da dabei sehr schnell Konflikte entstehen.

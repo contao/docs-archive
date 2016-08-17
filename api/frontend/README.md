@@ -4,7 +4,7 @@
 Detailed information how to inject custom code to the frontend output,
 without modifying the `fe_page` template.
 
-> #### fixme:: Incomplete 
+> #### warning:: Warning
 > This part of the API reference is incomplete. Please consider
 > [contributing to the manual][1].
 

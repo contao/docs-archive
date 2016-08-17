@@ -4,8 +4,8 @@ The `addLogEntry` hook is triggered when a new log entry is added. It passes the
 message, the function and the action as arguments and does not expect a return
 value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.8.0-RC1.
+> #### primary:: Available   
+> from Contao 2.8.0-RC1.
 
 
 ## Parameters

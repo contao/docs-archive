@@ -4,8 +4,8 @@ The `postUpload` hook is triggered after a user has uploaded one or more file in
 the back end. It passes an array of filenames as argument and does not expect
 a return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.6.4.
+> #### primary:: Available   
+> from Contao 2.6.4.
 
 
 ## Parameters

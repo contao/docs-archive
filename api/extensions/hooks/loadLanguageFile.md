@@ -4,8 +4,8 @@ The `loadLanguageFile` hook is triggered when a language file is loaded. It
 passes the file name and the language as arguments and does not expect a
 return value.
 
-> #### tag:: Version Information 
-> Available from Contao version 2.8.0-RC1.
+> #### primary:: Available   
+> from Contao 2.8.0-RC1.
 
 
 ## Parameters

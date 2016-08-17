@@ -5,8 +5,8 @@ compiled. It passes the template object, the module configuration, and the
 module object as arguments and does not expect a return value. It can be used 
 e.g. to add additional data to the template.
 
-> #### tag:: Version Information 
-> Available from Contao version 3.5.0.
+> #### primary:: Available   
+> from Contao 3.5.0.
 
 
 ## Parameters
