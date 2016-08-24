@@ -17,5 +17,5 @@ only the teasers or full articles of each event or news.
 
 ### XML files
 
-The XML files are generated automatically in the `share` directory of your
-Contao installation. In this example : `share/events.xml`.
+The XML files are generated automatically in the `web/share` directory of your
+Contao installation. In this example : `web/share/events.xml`.
