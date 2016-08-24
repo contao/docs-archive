@@ -31,6 +31,10 @@ expliqués ci-dessous.
   la structure de site.</td>
 </tr>
 <tr>
+  <td>Se déconnecter</td>
+  <td>Ce type de page déconnecte automatiquement l'utilisateur.</td>
+</tr>
+<tr>
   <td>Erreur 403 (accès interdit)</td>
   <td>Si un utilisateur sans permission essaye d'accéder à une page protégée, 
   une page d'erreur 403 sera retournée. Cette page doit être ajoutée <b>au 

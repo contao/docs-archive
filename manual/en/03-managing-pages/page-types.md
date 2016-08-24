@@ -30,6 +30,10 @@ supports 6 different page types which are explained below.
       site structure.</td>
 </tr>
 <tr>
+  <td>Logout</td>
+  <td>This type of page automatically logs out the user.</td>
+</tr>
+<tr>
   <td>403 Access denied</td>
   <td>If a user requests a protected page without permission, a 403 error page
       will be loaded instead. This page must be added <b>on the first level</b>
