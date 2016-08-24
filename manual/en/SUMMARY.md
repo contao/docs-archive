@@ -31,5 +31,5 @@
     * [Insert tags](04-managing-content/insert-tags.md)
 * [System administration](05-system-administration/README.md)
     * [Users and groups](05-system-administration/users-and-groups.md)
-    * [Extensions](05-system-administration/extensions.md)
+    * [Extensions and bundles](05-system-administration/extensions.md)
     * [Maintenance](05-system-administration/maintenance.md)
