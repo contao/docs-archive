@@ -30,6 +30,10 @@ Seitenstruktur markiert. Contao unterstützt folgende 6 Seitentypen:
       Seitenstruktur.</td>
 </tr>
 <tr>
+  <td>Abmelden</td>
+  <td>Diese Seite meldet einen Benutzer automatisch ab (Logout).</td>
+</tr>
+<tr>
   <td>403 Zugriff verweigert</td>
   <td>Beim Aufruf einer geschützten Seite ohne Zugriffsrechte wird stattdessen
       die 403-Fehlerseite geladen. Diese Seite muss <b>direkt unterhalb</b>

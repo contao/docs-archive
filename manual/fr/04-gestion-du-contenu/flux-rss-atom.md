@@ -18,5 +18,5 @@ complets de chaque événement ou actualité.
 
 ### Fichiers XML
 
-Les fichiers XML sont générés automatiquement dans le répertoire `share` 
-de votre installation de Contao. Dans cet exemple : `share/evenements.xml`.
+Les fichiers XML sont générés automatiquement dans le répertoire `web/share` 
+de votre installation de Contao. Dans cet exemple : `web/share/evenements.xml`.
