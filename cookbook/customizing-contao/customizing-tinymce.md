@@ -6,9 +6,21 @@ include all TinyMCE plugins by default, so if you want to use a certain plugin
 that is not part of the Contao distribution, download it from the [TinyMCE
 project website][1] and move it into the `assets/tinymce/plugins` folder.
 
-![](images/rich-text-editor.jpg)
+The tinyMCE configuration primarily written in JavaScript with some 
+Contao-specific parts in PHP. Depending on your Contao version, the file
+might look slightly different.
 
-The image above shows the default Rich Text Editor configuration file
+![](images/tinyMCE4.jpg)
+
+> #### info:: Note
+> This manual describes how to customize TinyMCE 4, which was introduced
+> in Contao 3.3. Previous version use TinyMCE 3, which might look and 
+> work completly different.
+
+
+### Update-safe changes in Contao 3
+
+The default Rich Text Editor configuration file is located at
 `system/config/tinyMCE.php`. To create a custom configuration file, simply copy
 it and rename it e.g. to `tinyCustom.php`. Then apply your changes and save the
 new file. The last step is to adjust the [data container configuration][2] in
@@ -17,16 +29,18 @@ custom file shall be applied.
 
 ```php
 // Use the custom RTE configuration for text elements
-$GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] =
-'tinyCustom';
+$GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyCustom';
 ```
 
-> **Tag** The text below concerns the version 4.0.0 and higher.
 
-![](images/tinyMCE4.jpg)
+### Update-safe changes in Contao 4
 
-The image shows the default configuration of the editor in the Contao default `be_tinyMCE.html5` template.
-To create a custom configuration, duplicate the template, add your changes and save the template as `be_tinyMCE.html5` in the template root dir. It will not work when placed inside subfolders like `/template/mytemplates/`.
+In Contao 4, the tinyMCE configuration file is now located in the
+`be_tinyMCE.html5` template and works exactly like one. To create a 
+custom configuration, duplicate the template, add your changes and save 
+it in the template root dir. It will not work when placed inside 
+subfolders like `/template/mytemplates/`.
+
 
 ### Custom Formats
 
