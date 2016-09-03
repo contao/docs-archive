@@ -4,19 +4,26 @@ First of all, download the [latest Contao archive][1] and extract it on your
 local computer. Move the files into the `htdocs` folder of your local
 installation (e.g. XAMPP) or upload them to your server with an FTP program (we
 recommend using [WinSCP][2]). Depending on your server configuration, the public
-folder is most likely called `htdocs`, `httpdocs`, `html` or `public_html`.
+folder is most likely called `htdocs`, `httpdocs`, `html`, `public_html` or `www`.
 
-If you have SSH access, you can download and extract the archive with the
-following commands:
+If you have SSH access to your server, you can download and extract the 
+archive directly on the command line, e.g. with `curl`. Depending on the
+version you want to install, adjust the URLs as described.
 
+Latest version of Contao (4.x):
 ```bash
 curl -L http://download.contao.org | tar -xzp
 ```
 
-> #### warning:: Warning
-> The URL currently refers to the latest 3.x.x version of Contao.
-> Therefore, you must specify the desired version by adding e.g. "/4.2.0" after the
-> URL. Example: curl -L http://download.contao.org/4.2.0 | tar -xzp
+<abbr title="Long Term Support">LTS</abbr> version of Contao (3.5):
+```bash
+curl -L http://download.contao.org/lts | tar -xzp
+```
+
+A specific version (e.g. 3.5.2):
+```bash
+curl -L http://download.contao.org/3.5.2 | tar -xzp
+```
 
 
 ### Installing with Composer
