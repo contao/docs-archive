@@ -8,12 +8,25 @@ file and replace its name with `.htaccess`. Depending on your server
 configuration, the public folder is most likely called `htdocs`, `httpdocs`,
 `html` or `public_html`.
 
-If you have SSH access, you can download and extract the archive with the
-following commands:
+If you have SSH access to your server, you can download and extract the 
+archive directly on the command line, e.g. with `curl`. Depending on the
+version you want to install, adjust the URLs as described.
 
+Latest version of Contao (4.x):
 ```bash
 curl -L http://download.contao.org | tar -xzp
 ```
+
+<abbr title="Long Term Support">LTS</abbr> version of Contao (3.5):
+```bash
+curl -L http://download.contao.org/lts | tar -xzp
+```
+
+A specific version (e.g. 3.5.2):
+```bash
+curl -L http://download.contao.org/3.5.2 | tar -xzp
+```
+
 
 
 ### The Contao install tool

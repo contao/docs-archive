@@ -6,13 +6,25 @@ Sie es auf Ihrem lokalen Rechner. Verschieben Sie die Dateien in das
 FTP-Programm (z.B. [WinSCP][2]) auf Ihren Server. Stellen Sie sicher dass auch
 die Datei `.htaccess.default` hochgeladen wird und benennen Sie diese danach
 auf `.htaccess` um. Der Basisordner heißt wahrscheinlich `htdocs`, `httpdocs`,
-`html` oder `public_html`.
+`html`, `public_html` oder `www`.
 
-Wenn Sie SSH-Zugriff auf den Server haben, können Sie alternativ folgende
-Befehle verwenden:
+Wenn Sie SSH-Zugriff auf den Server haben, können Sie Contao auch direkt
+über die Kommandozeile herunterladen, beispielsweise mit `curl`. Je nach
+gewünschter Version ist die URL anzupassen.
 
+Neuste Version von Contao (4.x):
 ```bash
 curl -L http://download.contao.org | tar -xzp
+```
+
+<abbr title="Long Term Support">LTS</abbr>-Version von Contao (3.5):
+```bash
+curl -L http://download.contao.org/lts | tar -xzp
+```
+
+Eine bestimmte Version (z.B. 3.5.2):
+```bash
+curl -L http://download.contao.org/3.5.2 | tar -xzp
 ```
 
 
