@@ -72,7 +72,7 @@ Als Administrator können Sie sich als jedes Mitglied anmelden und die Webseite
 mit den entsprechenden Berechtigungen prüfen. Diese Option ist in der
 Mitgliederliste verfügbar.
 
-![](images/frontend-preview.jpg)
+![](images/frontend-vorschau.jpg)
 
 Das Frontend erscheint mit der Vorschau-Toolbar, in welcher zwischen den
 Mitgliedern gewechselt werden kann. Ausserdem können durch die entsprechende
