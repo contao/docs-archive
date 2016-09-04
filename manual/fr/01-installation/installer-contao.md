@@ -5,7 +5,7 @@ l'extraire sur votre ordinateur. Déplacez les fichiers dans le répertoire
 `htdocs` de votre installation locale (par exemple XAMPP) ou les téléverser sur
 votre serveur avec un logiciel FTP (nous vous recommandons d'utiliser
 [WinSCP][2]). Selon la configuration de votre serveur, le dossier public est
-probablement nommé `htdocs`, `httpdocs`, `html` ou `public_html`.
+probablement nommé `htdocs`, `httpdocs`, `html`, `public_html` ou `www`.
 
 Si vous avez un accès SSH, vous pouvez télécharger et extraire l'archive
 directement en ligne de commande, par exemple avec `curl`. Selon la version que
