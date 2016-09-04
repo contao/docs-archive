@@ -2,7 +2,7 @@
 
 To speed up the workflow when working with Contao, there are several back end
 shortcuts which allow you to execute certain commands. You can e.g. trigger the
-"save" button at the end of a form by klicking it with your mouse or by using
+"save" button at the end of a form by clicking it with your mouse or by using
 the keyboard shortcut `[Alt]+[s]`.
 
 
