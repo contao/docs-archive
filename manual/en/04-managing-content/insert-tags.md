@@ -462,7 +462,7 @@ the current date or including lightbox images.
 <tr>
 <td><code>{{post::*}}</code></td>
   <td>This tag will will be replaced by a given post-variable.
-      It could be used to display field from a submitted form.</td>
+      It could be used to display fields from a submitted form.</td>
 </tr>
 <tr>
   <td><code>{{abbr::*}}</code></td>
