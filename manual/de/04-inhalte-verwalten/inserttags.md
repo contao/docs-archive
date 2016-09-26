@@ -452,7 +452,7 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
 <tr>
   <td><code>{{post::*}}</code></td>
   <td>Mit diesem Tag kann eine angegebene Post-Variable ausgelesen und angezeigt werden.
-      Kann z.B. genutzt werden, um auf einzelne Felder eines gesendeten Formulars zuzugreifen.</td>
+      Zum Beispiel um auf einzelne Felder eines gesendeten Formulars zuzugreifen.</td>
 </tr>
 <tr>
   <td><code>{{lang::*}}</code></td>
