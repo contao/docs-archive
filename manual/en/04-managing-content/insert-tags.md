@@ -460,6 +460,11 @@ the current date or including lightbox images.
       <code>xml:lang="fr"</code> attribute if the doctype is XHTML.</td>
 </tr>
 <tr>
+<td><code>{{post::*}}</code></td>
+  <td>This tag will replaced by a given post-variable.
+      It could be used to display field from a submitted form.</td>
+</tr>
+<tr>
   <td><code>{{abbr::*}}</code></td>
   <td>Mark abbreviations in a text: <code>{{abbr::World Wide Web}}WWW{{abbr}}</code>.
       It will be replaced with <code>&lt;abbr title="World Wide Web"&gt;WWW&lt;/abbr&gt;</code>.</td>
