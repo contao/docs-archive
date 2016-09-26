@@ -466,6 +466,11 @@ tâches comme ajouter la date courante ou ajouter des images lightbox.
   ajoute l'attribut <code>xml:lang="en"</code> si le doctype est XHTML.</td>
 </tr>
 <tr>
+<td><code>{{post::*}}</code></td>
+  <td>Cette balise sera remplacée par une variable POST.
+  Elle peut être utilisée pour afficher les champs soumis par un formulaire.</td>
+</tr>
+<tr>
   <td><code>{{abbr::*}}</code></td>
   <td>Marque les abréviations dans un texte : <code>{{abbr::World Wide Web}}WWW
   {{abbr}}</code> sera remplacé par <code>&lt;abbr title="World Wide Web"&gt;
