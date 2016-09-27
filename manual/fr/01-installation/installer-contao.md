@@ -32,23 +32,8 @@ curl -L http://download.contao.org/3.5.2 | tar -xzp
 Vous pouvez également installer Contao avec Composer en utilisant le référentiel
 [contao/standard-edition][6].
 
-```bash
-php composer.phar create-project contao/standard-edition <target>
-```
-
-Vous devez remplacer le paramètre `<target>` avec un chemin d'accès vers un
-dossier où les fichiers de Contao seront créés. Si le dossier cible n'existe
-pas, il sera créé automatiquement.
-
-> #### info:: Remarque
-> La commande ci-dessus installe toujours la dernière version stable.
-> Si vous souhaitez installer une version spécifique, vous devez l'insérer dans la
-> commande comme par exemple :
-> `php composer.phar create-project contao/standard-edition:4.1.3 <target>`
-
-En premier lieu, avant d'exécuter cette commande, vous devez
-[installer Composer][7]. Il peut être installé globalement avec les deux
-commandes suivantes sur Mac OS X ou Linux:
+En premier lieu, vous devez [installer Composer][7]. Il peut être installé
+globalement avec les deux commandes suivantes sur macOS ou Linux:
 
 ```bash
 curl -sS https://getcomposer.org/installer | php
@@ -57,6 +42,23 @@ sudo mv composer.phar /usr/local/bin/composer
 
 Sous Windows, vous pouvez télécharger et exécuter le
 [programme d'installation][8].
+
+Maintenant, vous pouvez exécuter le processus d'installation de Contao avec la
+commande suivante :
+
+```bash
+composer create-project contao/standard-edition <target>
+```
+
+Vous devez remplacer le paramètre `<target>` avec un chemin d'accès vers un
+dossier où les fichiers de Contao seront créés. Si le dossier cible n'existe
+pas, il sera créé automatiquement.
+
+> #### info:: Remarque
+> La commande ci-dessus installe toujours la dernière version stable.
+> Si vous souhaitez installer une version spécifique, vous devez l'insérer dans
+> la commande comme par exemple :
+> `composer create-project contao/standard-edition:4.1.3 <target>`
 
 Lors de l'installation dans votre interface en ligne de commande, vous devez
 affecter une valeur à un certain nombre de paramètres :
@@ -146,4 +148,3 @@ droit vous amènera vers le panneau d'administration.
 [7]: https://getcomposer.org/download/
 [8]: https://getcomposer.org/doc/00-intro.md#using-the-installer
 [9]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
-
