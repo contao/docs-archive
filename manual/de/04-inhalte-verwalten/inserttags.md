@@ -450,6 +450,11 @@ z.B. das aktuelle Datum oder ein Lightbox-Bild einfügen.
   <td>Dieses Tag wird nur durch die verschlüsselte E-Mail-Adresse ersetzt.</td>
 </tr>
 <tr>
+  <td><code>{{post::*}}</code></td>
+  <td>Mit diesem Tag kann eine angegebene Post-Variable ausgelesen und angezeigt werden.
+      Kann z.B. genutzt werden, um auf einzelne Felder eines gesendeten Formulars zuzugreifen.</td>
+</tr>
+<tr>
   <td><code>{{lang::*}}</code></td>
   <td>Mit diesem Tag können fremdsprachige Wörter in einem Text markiert
       werden: <code>{{lang::fr}}Au revoir{{lang}}</code>. Dies wird ersetzt mit
