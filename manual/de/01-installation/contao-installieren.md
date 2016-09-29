@@ -31,19 +31,6 @@ curl -L http://download.contao.org/3.5.2 | tar -xzp
 Mit Composer kann Contao über die [contao/standard-edition][6] installiert
 werden.
 
-```bash
-php composer.phar create-project contao/standard-edition <ziel>
-```
-
-Geben Sie als `<ziel>` den Ordner ein, in welchen die Contao-Dateien
-installiert werden sollen. Wenn der Ordner nicht vorhanden ist, wird er
-automatisch angelegt.
-
-> #### info:: Hinweis
-> Der oben erwähnte Befehl installiert immer die neuste stabile Version.
-> Um eine andere Version zu installieren, kann diese im Befehl wie folgt eingegeben
-> werden: `php composer.phar create-project contao/standard-edition:4.1.3 <ziel>`
-
 Bevor Sie diesen Befehl ausführen können, muss [Composer installiert sein][7].
 Mit folgendem Befehl kann Composer global auf einem Mac OS X oder Linux-System
 installiert werden:
@@ -55,10 +42,25 @@ sudo mv composer.phar /usr/local/bin/composer
 
 Unter Windows erfolgt die Installation mittels dem [Installer][8].
 
+Nun kann die Installation von Contao mit folgendem Befehl gestartet werden:
+
+```bash
+composer create-project contao/standard-edition <ziel>
+```
+
+Geben Sie als `<ziel>` den Ordner ein, in welchen die Contao-Dateien
+installiert werden sollen. Wenn der Ordner nicht vorhanden ist, wird er
+automatisch angelegt.
+
+> #### info:: Hinweis
+> Der oben erwähnte Befehl installiert immer die neuste stabile Version.
+> Um eine andere Version zu installieren, kann diese im Befehl wie folgt eingegeben
+> werden: `php composer.phar create-project contao/standard-edition:4.1.3 <ziel>`
+
 Während der Installation von Contao werden folgende Parameter der neuen
 Installation abgefragt:
 
-```bash
+```
 Some parameters are missing. Please provide them.
 database_host (localhost):
 database_port (3306):
