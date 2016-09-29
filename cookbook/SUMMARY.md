@@ -25,10 +25,10 @@
         * [Adding translations](extension-repository/adding-translations.md)
         * [Adding dependencies](extension-repository/adding-dependencies.md)
         * [Publishing an extension](extension-repository/publishing-an-extension.md)
-
     * [Cron jobs in Contao (Poor-Man-Cron)](en/Cron-jobs-in-Contao.md)
     * [Using content elements](en/Using-Content-Elements.md)
     * [Using template variables](en/Using-template-variables.md)
+    * [User authentication and access rights](en/user-authentication-and-access-rights.md)
     * Create a custom Contao module
         * [Part 1](en/custom-module/part1.md)
         * [Part 2](en/custom-module/part2.md)
