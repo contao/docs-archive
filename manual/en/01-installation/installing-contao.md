@@ -59,7 +59,7 @@ created automatically.
 During the installation in your command-line interface, you must assign a value
 to a number of parameters:
 
-```bash
+```
 Some parameters are missing. Please provide them.
 database_host (localhost):
 database_port (3306):
