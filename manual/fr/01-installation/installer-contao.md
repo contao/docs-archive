@@ -63,7 +63,7 @@ pas, il sera créé automatiquement.
 Lors de l'installation dans votre interface en ligne de commande, vous devez
 affecter une valeur à un certain nombre de paramètres :
 
-```bash
+```
 Some parameters are missing. Please provide them.
 database_host (localhost):
 database_port (3306):

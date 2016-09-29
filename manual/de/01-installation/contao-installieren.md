@@ -60,7 +60,7 @@ automatisch angelegt.
 Während der Installation von Contao werden folgende Parameter der neuen
 Installation abgefragt:
 
-```bash
+```
 Some parameters are missing. Please provide them.
 database_host (localhost):
 database_port (3306):
