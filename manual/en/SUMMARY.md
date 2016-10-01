@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Installation](01-installation/README.md)
     * [Installing Contao](01-installation/installing-contao.md)
-    * [Manual update](01-installation/manual-update.md)
+    * [Updating Contao](01-installation/manual-update.md)
     * [Moving an installation](01-installation/moving-an-installation.md)
     * [Configuring the live server](01-installation/configuring-the-live-server.md)
 * [Administration area](02-administration-area/README.md)
