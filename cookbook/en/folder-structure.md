@@ -27,13 +27,13 @@ commonly used.
     └── share
 ```
 
-## app/
+### app/
 
 This is the application folder which includes especially Symfony cache files,
 Symfony configuration files and log files.
 
 
-## assets/
+### assets/
 
 `assets/` contains components such as jQuery or TinyMCE. Contao CSS and JS
 source files are also located in this folder as well as the combined and
@@ -41,32 +41,32 @@ minified CSS and JS files and resized images. It is available from the `web/`
 folder through a [symbolic link][1].
 
 
-## files/
+### files/
 
 `files/` contains public files such as images, CSS, JavaScript, etc. It is
 available from the `web/` folder through a symbolic link.
 
 
-## system/
+### system/
 
 `system/` contains Contao configuration files, the back end theme(s) and
 [Contao modules][2].
 
 
-## templates/
+### templates/
 
 `templates/` contains customized templates (for more information, see the
 chapter [template][3] in the manual).
 
 
-## vendor/
+### vendor/
 
 This is the location of external libraries as well as the source code of Contao
 and Symfony. This folder also includes Contao's [bundles][4] such as the
 newsletter, the core, the news, etc. and bundles developed by the community.
 
 
-## web/
+### web/
 
 This is the web root folder that contains public files, the
 [front controllers][5] and the access to the Contao install tool.
