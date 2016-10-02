@@ -2,7 +2,6 @@
 
 * Deutsch
     * [Autoloading](de/Autoloading.md)
-    * [Benutzer-Authentifizierung und Rechteprüfung](de/Benutzer-Authentifizierung-und-Rechtepruefung.md)
     * [Cronjobs in Contao (Poor-Man-Cron)](de/Cronjobs-in-Contao.md)
     * [Eigene Insert-Tags entwickeln](de/Eigene-Inserttags.md)
     * [Hooks in Contao](de/Hooks-in-Contao.md)
