@@ -199,8 +199,8 @@ if (FE_USER_LOGGED_IN === true) {
 
 ### Check member groups
 
-Im Frontend erfolgt die Zugriffsprüfung auf Basis der Gruppenzugehörigkeit, die
-sich über die Methode `isMemberOf()` abrufen lässt:
+In the front end the access check is performed through the membership in
+a group, which can be called thanks to the method `isMemberOf()`:
 
 ```php
 if ($objUser->isMemberOf(3)) {
