@@ -73,12 +73,8 @@ An extension can be installed with Composer or manually. With Composer, the
 installation process is the same as a bundle except for the registration in the
 `app/AppKernel.php` file where the code is slightly different.
 
-Add the following line as in the example below by changing the first parameter
-`myExtensionName` with the name of your extension.
-
-```php
-new Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle('myExtensionName', $this->getRootDir()),
-```
+In the example below, the first parameter `myExtensionName` should be replaced
+by the name of your extension:
 
 ```php
 <?php
