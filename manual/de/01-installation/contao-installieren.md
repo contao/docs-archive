@@ -54,7 +54,7 @@ automatisch angelegt.
 > #### info:: Hinweis
 > Der oben erwähnte Befehl installiert immer die neuste stabile Version.
 > Um eine andere Version zu installieren, kann diese im Befehl wie folgt eingegeben
-> werden: `php composer.phar create-project contao/standard-edition:4.1.3 <ziel>`
+> werden: `composer create-project contao/standard-edition:4.1.3 <ziel>`
 
 Während der Installation von Contao werden folgende Parameter der neuen
 Installation abgefragt:
