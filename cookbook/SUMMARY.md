@@ -28,6 +28,7 @@
     * [Using content elements](en/Using-Content-Elements.md)
     * [Using template variables](en/Using-template-variables.md)
     * [User authentication and access rights](en/user-authentication-and-access-rights.md)
+    * [Folder structure](en/folder-structure.md)
     * Create a custom Contao module
         * [Part 1](en/custom-module/part1.md)
         * [Part 2](en/custom-module/part2.md)
