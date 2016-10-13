@@ -6,8 +6,8 @@ rights of a user in an extension.
 > #### info:: Note
 > Contao distinguishes between back end users ("users"), who can log into the
 > administration area, and front end users ("members"), who can log into the
-> website. For more information about this subject, please refer to the manual
-> by following this [link][1].
+> website. For more information about this subject, please refer to the
+[user and groups][1] section of the manual.
 
 
 ## Back end
@@ -29,19 +29,15 @@ public function __construct()
 
 ### Accessing the user object in the back end
 
-The user object can be called in two ways:
+The user object is a singleton object and can be accessed like this:
 
 ```php
 $objUser = BackendUser::getInstance();
 echo $objUser->username;
-
-// Object oriented
-$this->import('BackendUser', 'User');
-echo $this->User->username;
 ```
 
-In principle the access to the back end without authentication is possible with
-the assumption that there will always be an authenticated user.
+Because access to the back end is not possible without authentication, one can
+assume that there is always an authenticated user in the back end.
 
 
 ### Check the admin status
@@ -57,8 +53,8 @@ if ($objUser->isAdmin) {
 
 ### Checking the user groups
 
-A user usually belongs to one or more user groups, whose the membership can be
-checked thanks to the method `isMemberOf()`:
+A user usually belongs to one or more user groups. Checking if a user belongs
+to a group can be accomplished with the method `isMemberOf()`:
 
 ```php
 if ($objUser->isMemberOf(3)) {
@@ -66,8 +62,8 @@ if ($objUser->isMemberOf(3)) {
 }
 ```
 
-An array with the IDs of all user groups, whose a user belongs, can be called
-through the field `groups`:
+An array with the IDs of all user groups of which the user is member of, can be
+retrieved through the field `groups`:
 
 ```php
 print_r($objUser->groups);
@@ -117,7 +113,7 @@ if ($objUser->hasAccess(11, 'pagemounts')) {
 }
 ```
 
-To conclude, it can check the access of each field of each table with the
+At last, it can check the access of each field of each table with the
 method `hasAccess()`:
 
 ```php
@@ -174,15 +170,11 @@ not assume that there is always an authenticated member.
 
 ### Accessing the user object in the front end
 
-The user object can be called in two ways:
+The user object is a singleton object and can be accessed like this:
 
 ```php
 $objUser = FrontendUser::getInstance();
 echo $objUser->username;
-
-// Object oriented
-$this->import('FrontendUser', 'User');
-echo $this->User->username;
 ```
 
 The login status can be called through the constant `FE_USER_LOGGED_IN`:
