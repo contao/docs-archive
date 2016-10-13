@@ -27,7 +27,7 @@ A name of a bundle is divided into two parts. The first part is the name of the
 vendor (project owner) and the second the bundle name. For example:
 `contao/news-bundle`.
 
-Run the command `php composer.phar require vendor/bundleName` in your
+Run the command `composer require vendor/bundleName` in your
 command-line interface to start the installation.
 
 Contao dependencies (in our case a bundle) are described in a file named
@@ -100,6 +100,11 @@ class AppKernel extends Kernel
 
 
 #### Manually
+
+Almost all extensions for Contao 3 are also compatible with Contao 4. If a
+Contao 3 extension is not available on Composer, you can install it manually
+and try if it works with Contao 4. Be aware that you must also take care of
+installing all dependencies as listed in the Extension Repository.
 
 Find the extension you want to install in the [Extension Repository][1] and
 download the .zip archive of the latest release. Then unzip the files and copy
