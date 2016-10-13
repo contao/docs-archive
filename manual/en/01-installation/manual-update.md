@@ -7,6 +7,7 @@ libraries, etc.).
 Before an update, you should always back up the following files and folders
 just in case there is an error or you accidentally override them:
 
+* `app/config/parameters.yml`
 * `files/*`
 * `system/config/dcaconfig.php`
 * `system/config/initconfig.php`
@@ -35,7 +36,7 @@ can sometimes be changed according to the web hosting service you have.
 Then, you can updating Contao with the following command:
 
 ```bash
-php composer.phar update
+composer update
 ```
 
 
