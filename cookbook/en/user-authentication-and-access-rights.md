@@ -133,30 +133,34 @@ gespeichert ist. Zum Beispiel fragt "modules" das Feld `tl_user.modules` bzw.
 The method `isAllowed()` can check which rights the user has on a specific page
 (access rights).
 
+> #### info:: Note
+> The constants below such as `CAN_EDIT_PAGE` or `CAN_DELETE_PAGE` are
+> available from the version 3.3.0-rc1.
+
 ```php
 $objPage = PageModel::findByPk(6);
 
-if ($objUser->isAllowed(1, $objPage->row())) {
+if ($objUser->isAllowed(\BackendUser::CAN_EDIT_PAGE, $objPage->row())) {
     // the user is allowed to edit the page with ID 6
 }
 
-if ($objUser->isAllowed(2, $objPage->row())) {
+if ($objUser->isAllowed(\BackendUser::CAN_EDIT_PAGE_HIERARCHY, $objPage->row())) {
     // the user can change the hierarchy of the page with ID 6
 }
 
-if ($objUser->isAllowed(3, $objPage->row())) {
+if ($objUser->isAllowed(\BackendUser::CAN_DELETE_PAGE, $objPage->row())) {
     // the user can delete the page with ID 6
 }
 
-if ($objUser->isAllowed(4, $objPage->row())) {
+if ($objUser->isAllowed(\BackendUser::CAN_EDIT_ARTICLES, $objPage->row())) {
     // the user is allowed to edit the article of the page with ID 6
 }
 
-if ($objUser->isAllowed(5, $objPage->row())) {
+if ($objUser->isAllowed(\BackendUser::CAN_EDIT_ARTICLE_HIERARCHY, $objPage->row())) {
     // the user can change the hierarchy of the article of the page with ID 6
 }
 
-if ($objUser->isAllowed(6, $objPage->row())) {
+if ($objUser->isAllowed(\BackendUser::CAN_DELETE_ARTICLES, $objPage->row())) {
     // the user can delete the article of the page with ID 6
 }
 ```
