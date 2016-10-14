@@ -90,9 +90,8 @@ the changes.
 
 ### Purge the cache
 
-Finally you should also rebuild the cache. In the back end go to "Maintenance"
-and check [...] in the "Purge data" section. Confirm the action by clicking on
-"Purge data".
+Finally you should also rebuild the cache by running the command
+`php app/console cache:clear -e=prod` in your command-line interface.
 
 
 [1]: http://en.wikipedia.org/wiki/Diff
