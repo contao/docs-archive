@@ -89,6 +89,12 @@ if ($objUser->hasAccess('news', 'modules')) {
 }
 ```
 
+> #### info:: Note
+> The second parameter of the method `hasAccess()` relates to the fields in the
+> `tl_user` and `tl_user_group` table, where the respective permission is stored.
+> With "modules", in the example above, we checks the field `tl_user.modules`
+> and `tl_user_group.modules`.
+
 It can also check whether the access is allowed to a specific news archive:
 
 ```php
@@ -121,11 +127,6 @@ if ($objUser->hasAccess('tl_faq::published', 'alexf')) {
     // the user is allowed to access the field "published" from the table "tl_faq"
 }
 ```
-
-Der zweite Parameter der Methode `hasAccess()` bezieht sich auf das Feld in der
-Tabelle `tl_user` bzw. `tl_user_group`, in dem die jeweilige Berechtigung
-gespeichert ist. Zum Beispiel fragt "modules" das Feld `tl_user.modules` bzw.
-`tl_user_group.modules` ab.
 
 
 #### The method `isAllowed()`
