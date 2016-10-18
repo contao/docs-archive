@@ -2,7 +2,6 @@
 
 * Deutsch
     * [Autoloading](de/Autoloading.md)
-    * [Benutzer-Authentifizierung und Rechteprüfung](de/Benutzer-Authentifizierung-und-Rechtepruefung.md)
     * [Cronjobs in Contao (Poor-Man-Cron)](de/Cronjobs-in-Contao.md)
     * [Eigene Insert-Tags entwickeln](de/Eigene-Inserttags.md)
     * [Hooks in Contao](de/Hooks-in-Contao.md)
@@ -28,6 +27,7 @@
     * [Cron jobs in Contao (Poor-Man-Cron)](en/Cron-jobs-in-Contao.md)
     * [Using content elements](en/Using-Content-Elements.md)
     * [Using template variables](en/Using-template-variables.md)
+    * [User authentication and access rights](en/user-authentication-and-access-rights.md)
     * [Folder structure](en/folder-structure.md)
     * Create a custom Contao module
         * [Part 1](en/custom-module/part1.md)
