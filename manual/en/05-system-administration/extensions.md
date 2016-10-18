@@ -132,5 +132,5 @@ release.
 [3]: https://getcomposer.org/doc/00-intro.md#introduction
 [4]: https://packagist.org/search/?q=&type=contao-bundle
 [5]: https://packagist.org/search/?q=&type=contao-module
-[6]: https://docs.contao.org/books/cookbook/en/folder-structure.html#symbolic-link
+[6]: https://en.wikipedia.org/wiki/Symbolic_link
 [7]: ../01-installation/installing-contao.md#the-contao-install-tool
