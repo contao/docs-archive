@@ -47,7 +47,7 @@ supports 6 different page types which are explained below.
 ### Start page
 
 When the front end is opened with an empty request URL (e.g.
-`http://www.example.org/`), Contao will show  the first published page within
+`http://www.example.org/`), Contao will show the first published page within
 the respective website root. You should set the alias of this page to `index`.
 Only then will the generated URL to that page also be an empty request.
 
