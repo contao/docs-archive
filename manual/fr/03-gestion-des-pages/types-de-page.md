@@ -58,7 +58,7 @@ de cette page. C'est seulement alors que l'URL généré pour cette page sera
 également une requête vide.
 
 À partir de la version `3.5.18`, Contao redirigera automatiquement vers la page
-d'accueil même si l'alias n'est pas défini comme `index`. L'URL comprend alors
+d'accueil si l'alias n'est pas défini comme `index`. L'URL comprend alors
 l'alias et le suffixe défini globalement (par ex.
 `http://www.example.org/home.html`).
 
