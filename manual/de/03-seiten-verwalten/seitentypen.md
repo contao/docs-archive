@@ -48,6 +48,18 @@ Seitenstruktur markiert. Contao unterstützt folgende 6 Seitentypen:
 </table>
 
 
+### Startseite
+
+Wenn das Frontend mit einer leeren Request URL geöffnet wird (z.B. 
+`http://www.example.org/`), zeigt Contao die erste veröffentlichte Seite im
+jeweiligen Startpunkt. Der Alias dieser Seite sollte auf `index` gesetzt werden.
+Nur dann wird die erzeugte URL für diese Seite auch ein leerer Request sein.
+
+Ab Version `3.5.18` wird außerdem automatisch auf die Startseite weitergeleitet,
+falls deren Alias nicht `index` lautet. Die URL inkludiert dann den Alias und das
+global definierte Suffix (z.B. `http://www.example.org/home.html`).
+
+
 ### Multidomain-Betrieb
 
 Contao unterstützt mehrere Webseiten innerhalb der Seitenstruktur und leitet

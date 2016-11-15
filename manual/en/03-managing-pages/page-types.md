@@ -48,6 +48,18 @@ supports 6 different page types which are explained below.
 </table>
 
 
+### Start page
+
+When the front end is opened with an empty request URL (e.g.
+`http://www.example.org/`), Contao will show the first published page within
+the respective website root. You should set the alias of this page to `index`.
+Only then will the generated URL to that page also be an empty request.
+
+As of version `3.5.18`, Contao will also automatically redirect to the start 
+page using its alias and the globally defined suffix (e.g. 
+`http://www.example.org/home.html`), if the alias is not `index`.
+
+
 ### Multi-domain mode
 
 Contao supports multiple websites within the site structure and automatically
