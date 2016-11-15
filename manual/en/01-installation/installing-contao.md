@@ -56,6 +56,12 @@ created automatically.
 > want to install a specific version, you must insert it in the command as for
 > example: `composer create-project contao/standard-edition:4.1.3 <target>`
 
+<!-- Quote break -->
+
+> #### info:: Note
+> On Windows, depending on the setup (e.g. default XAMPP), you might need run
+> this command as an administrator.
+
 During the installation in your command-line interface, you must assign a value
 to a number of parameters:
 

@@ -56,6 +56,12 @@ automatisch angelegt.
 > Um eine andere Version zu installieren, kann diese im Befehl wie folgt eingegeben
 > werden: `composer create-project contao/standard-edition:4.1.3 <ziel>`
 
+<!-- Quote break -->
+
+> #### info:: Hinweis
+> Unter Windows müssen Sie diesen Befehl je nach Konfiguration
+> (z.B. Standard XAMPP) möglicherweise als Administrator ausführen.
+
 Während der Installation von Contao werden folgende Parameter der neuen
 Installation abgefragt:
 
