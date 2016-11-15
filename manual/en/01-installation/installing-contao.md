@@ -35,7 +35,11 @@ created automatically.
 want to install a specific version, you must insert it in the command as for
 example: `php composer.phar create-project contao/standard-edition:4.0.2 <target>`
 
-> **Info** On Windows, you must run this command as an administrator.
+<!-- Quote break -->
+
+> #### info:: Note
+> On Windows, depending on the setup (e.g. default XAMPP), you might need run
+> this command as an administrator.
 
 First of all, before running this command, you must [install Composer][7]. It
 can be installed globally with the following two commands on Mac OS X or Linux:

@@ -35,7 +35,11 @@ automatisch angelegt.
 Um eine andere Version zu installieren, kann diese im Befehl wie folgt eingegeben
 werden: `php composer.phar create-project contao/standard-edition:4.0.2 <ziel>`
 
-> **Info** Unter Windows müssen Sie diesen Befehl als Administrator ausführen.
+<!-- Quote break -->
+
+> #### info:: Hinweis
+> Unter Windows müssen Sie diesen Befehl je nach Konfiguration
+> (z.B. Standard XAMPP) möglicherweise als Administrator ausführen.
 
 Bevor Sie diesen Befehl ausführen können, muss [Composer installiert sein][7].
 Mit folgendem Befehl kann Composer global auf einem Mac OS X oder Linux-System
