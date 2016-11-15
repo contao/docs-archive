@@ -49,6 +49,20 @@ expliqués ci-dessous.
 </table>
 
 
+### Page d'accueil
+
+Lorsque le front office est ouvert avec une requête d'URL vide (par ex.
+`http://www.example.org/`), Contao affichera la première page publiée dans
+la racine du site internet respectif. Vous devez définir `index` comme alias
+de cette page. C'est seulement alors que l'URL généré pour cette page sera
+également une requête vide.
+
+À partir de la version `3.5.18`, Contao redirigera automatiquement vers la page
+d'accueil si l'alias n'est pas défini comme `index`. L'URL comprend alors
+l'alias et le suffixe défini globalement (par ex.
+`http://www.example.org/home.html`).
+
+
 ### Mode multi-domaines
 
 Contao supporte plusieurs sites internet à l'intérieur de la structure de site 

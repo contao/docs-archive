@@ -60,6 +60,12 @@ pas, il sera créé automatiquement.
 > la commande comme par exemple :
 > `composer create-project contao/standard-edition:4.1.3 <target>`
 
+<!-- Quote break -->
+
+> #### info:: Remarque
+> Sous Windows, en fonction de la configuration (par ex. XAMPP par défaut), 
+> vous devrez peut-être exécuter cette commande en tant qu'administrateur.
+
 Lors de l'installation dans votre interface en ligne de commande, vous devez
 affecter une valeur à un certain nombre de paramètres :
 
