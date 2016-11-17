@@ -240,6 +240,11 @@ ausgegeben werden.
   <th>Beschreibung</th>
 </tr>
 <tr>
+  <td><code>{{page::*}}</code></td>
+  <td>Dieses Tag wird mit dem Inhalt eines Feldes von `tl_page` der aktuellen
+      Seite ersetzt (ersetzen Sie * mit dem Feldnamen).</td>
+</tr>
+<tr>
   <td><code>{{page::id}}</code></td>
   <td>Dieses Tag wird mit der ID der aktuellen Seite ersetzt.</td>
 </tr>

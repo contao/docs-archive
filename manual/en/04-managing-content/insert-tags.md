@@ -165,6 +165,11 @@ logged in user.
   <th>Description</th>
 </tr>
 <tr>
+  <td><code>{{user::*}}</code></td>
+  <td>This tag will be replaced with the content of a field in the table `tl_user`
+      in relation to the current user. (replace * with the name of the field).</td>
+</tr>
+<tr>
   <td><code>{{user::firstname}}</code></td>
   <td>This tag will be replaced with the first name of the currently logged in
       user.</td>
@@ -242,6 +247,11 @@ The following insert tags allow you to display any property of the current page.
 <tr>
   <th>Insert tag</th>
   <th>Description</th>
+</tr>
+<tr>
+  <td><code>{{page::*}}</code></td>
+  <td>This tag will be replaced with the content of a field in the table `tl_page`
+      in relation to the current page. (replace * with the name of the field).</td>
 </tr>
 <tr>
   <td><code>{{page::id}}</code></td>
