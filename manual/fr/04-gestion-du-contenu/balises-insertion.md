@@ -167,7 +167,7 @@ propriété du membre actuellement connecté.
 </tr>
 <tr>
   <td><code>{{user::*}}</code></td>
-  <td>Cette balise sera remplacée par le contenu d'un champ de la table `tl_user`
+  <td>Cette balise sera remplacée par le contenu d'un champ de la table `tl_member`
       par rapport à l'utilisateur courant. (remplacez * par le nom du champ).</td>
 </tr>
 <tr>
