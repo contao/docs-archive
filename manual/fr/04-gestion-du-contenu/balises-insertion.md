@@ -154,10 +154,10 @@ autre page ou vers un article en utilisant son ID ou son alias.
 {% endraw %}
 
 
-### Propriétés de l'utilisateur
+### Propriétés du membre
 
 Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle
-propriété du membre actuellement connecté.
+propriété du membre (utilisateur front office) actuellement connecté.
 
 {% raw %}
 <table>
