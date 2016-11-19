@@ -153,10 +153,10 @@ ihres Alias verlinkt werden.
 {% endraw %}
 
 
-### Mitgliedereingenschaften
+### Mitgliedereigenschaften
 
 Mit den folgenden Insert-Tags können Eigenschaften des angemeldeten Mitglieds
-(Frontend-Benutzern) ausgebeben werden.
+(Frontend-Benutzer) ausgebeben werden.
 
 {% raw %}
 <table>
