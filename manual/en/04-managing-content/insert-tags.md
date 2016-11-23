@@ -167,7 +167,7 @@ logged in user.
 <tr>
   <td><code>{{user::*}}</code></td>
   <td>This tag will be replaced with the content of a field in the table `tl_member`
-      in relation to the current user. (replace * with the name of the field).</td>
+      in relation to the current member. (replace * with the name of the field).</td>
 </tr>
 <tr>
   <td><code>{{user::firstname}}</code></td>
