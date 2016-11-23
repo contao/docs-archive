@@ -44,7 +44,7 @@ Okay, let’s create the above file structure in `/system/modules/`
 ![File structure](assets/file_structure1.jpg)
 
 
-##Database & config
+## Database & config
 
 Now it’s time to prepare the database table and config file, which will tell Contao how to handle our module.
 
@@ -129,14 +129,14 @@ Let’s take a look how it affected the back end:
 ![Back end view](assets/backend1.jpg)
 
 
-##Module icon
+## Module icon
 
 Now, the most pleasant part of our module development. Let’s put an icon into the `html/` folder (as we defined in the config), so it will be visible in the back end and please the eye :)
 
 [Click to download icon.](assets/icon.gif)
 
 
-##So far, so good
+## So far, so good
 That’s all for now. We have set up the config and database tables, also we’ve made our module visible in the back end. In the next part of the tutorial I will show you how to create the ‘heart’ of our module – the DCA.
 
 

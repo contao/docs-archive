@@ -1,6 +1,6 @@
-#Create a custom Contao module – part three
+# Create a custom Contao module – part three
   
-> warning:: Warning
+> #### warning:: Warning
 > This guide was written for Contao 2.x and a lot of it's information is outdated!  
 > Read with care and only use as a general-purpose guide.
   
@@ -20,7 +20,7 @@ In this tutorial we will develop only a simple cds listing. It isn’t going to 
 Okay, let’s get to work.
 
 
-##File structure
+## File structure
 
 
 First of all, create the three files:
@@ -32,7 +32,7 @@ There is nothing to describe here, so let’s write some code.
 
 
 
-##ModuleCdCollection.php
+## ModuleCdCollection.php
 
 
 **Note: no working link for "first part" below**
@@ -130,7 +130,7 @@ In the second loop, we do the same thing as before, but with categories. We also
 Finally, we assign all the data to the template.
 
 
-##templates/mod_cdcollection.HTML5 / XHTML
+## templates/mod_cdcollection.HTML5 / XHTML
 
 Now as we got a controller of our module, it is time to create a view. Open the two files in templates (mod_cdcollection.HTML5 & mod_cdcollection.XHTML) and put the following code in both:
 
@@ -182,7 +182,7 @@ Try it out now. It should display something similar to this:
 ![Final image](assets/final.jpg)
 
 
-##Labels
+## Labels
 
 Although our module is working, we should make it more user friendly in the back end. What I mean is changing the e.g. `{title_legend}` to “CD title”.
 
@@ -334,7 +334,7 @@ Instead of explaining what they affect, I will simply show you on the image:
 ![Labels from modules.php](assets/labels_modules.jpg)
 
 
-##Securing files
+## Securing files
 
 As the last point, I want to show you how to simply secure our files that they can’t be accessed directly. This method is used in (almost) all php files in Contao.
 
@@ -347,13 +347,13 @@ Now open up all the php files of our module and replace the `<?php` tag with:
 
 
 
-##Final notes
+## Final notes
 
 Congratulations! You have just developed your own Contao module! I hope none part of this tutorial was difficult for you, as I explained everything as much as I could. Thank you very much for your attention. Till next time.
 
 
 
-##Download files
+## Download files
 
 Download all files included in this tutorial – [cd_collection.zip](assets/cd_collection.zip) (~ 12kB).
 

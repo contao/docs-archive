@@ -1,6 +1,6 @@
-#Create a custom Contao module – part two
+# Create a custom Contao module – part two
   
-> warning:: Warning
+> #### warning:: Warning
 > This guide was written for Contao 2.x and a lot of it's information is outdated!  
 > Read with care and only use as a general-purpose guide.
   
@@ -11,7 +11,7 @@ In this part of CD Collection module tutorial, I will show you how to create the
 Just like the configuration files, DCA files are loaded when the Contao is initialized. It allows you to overwrite existing settings of other modules. As you know from the previous part of the tutorial, modules are loaded in the alphabetical order. Thus, if you want to add a new field to the news module, you don’t need to modify any of the news files. But that’s the subject for another tutorial.
 
 
-##File structure
+## File structure
 
 The DCA file must be located in `/cd_collection/dca/` folder and have the same name as the table definied in the module config:
 
@@ -31,7 +31,7 @@ array_insert($GLOBALS['BE_MOD']['content'], 3, array
 Please create two files called `tl\_cds\_category.php` and `tl\_cds.php` in dca folder.
 
 
-##Inside DCA
+## Inside DCA
 
 The data container array has usually the following structure:
 
@@ -73,7 +73,7 @@ All of the config options are available on the [official manual](https://contao.
 That is all of the basic theory, let’s get to work!
 
 
-##DCA config
+## DCA config
 
 Open `tl\_cds\_category.php` and put the following content:
 
@@ -108,13 +108,13 @@ However, this button is available only when the sorting mode is 4.
 
 
 
-##DCA list
+## DCA list
 
 
 The list array is used to maintain the homepage of our module. Its purpose is to set up the user interface and provide a listing of records. It consists of four arrays that I will describe in a moment. Meanwhile I advise you to open the [manual](https://contao.org/en/manual/2.11/data-container-arrays.html) to make you see better what I am talking about.
 
 
-###DCA Sorting
+### DCA Sorting
 
 Okay, so the first array is called sorting. As its name points out, it is used to define the settings for displaying our records. Put the following code into the file:
 
@@ -142,7 +142,7 @@ Mode set to 1 defines that records are sorted by a fixed field, which is defined
 
 
 
-###Label
+### Label
 
 The label array is also a child of the list array. It is used to define the record’s label format. You might notice that this is similar to php `sprintf()` function. To better visualize the analogy, below code works like 
 
@@ -165,7 +165,7 @@ I hope this code is clear to you. It simply gets the title field from the databa
 
 
 
-###Global operations
+### Global operations
 
 …are the functions that can be applied to multiple records same time. A perfect example is the edit multiple function, which we’ll implement into our module:
 
@@ -190,7 +190,7 @@ I hope this code is clear to you. It simply gets the title field from the databa
 
 
 
-###Operations
+### Operations
 
 This array defines which operations will be available for each record. Put the following code:
 
@@ -262,7 +262,7 @@ The legends (those expandable and collapsable groups/fieldsets) should be always
 ![Palettes](assets/palettes.jpg)
 
 
-##DCA Fields
+## DCA Fields
 
 The above settings can be copy-pasted (with some little changes) into any of our modules, but fields are always unique for each module and have to be created manually. Put the following code:
 
@@ -298,7 +298,7 @@ Eval(uation) array configures a particular field in detail. You can e.g. create 
 We set the title to true and its max length to 64, same as the field in a database. Description is a textarea with a lightweight config of a rte.
 
 
-##tl_cds DCA
+## tl_cds DCA
 
 Okay, now it’s time to create the data container array for `tl\_cds` table. It will have a little different config, as it is a child of `tl\_cds\_category`. Note that Contao is not able to display child records by default, so we are going to use a `child_record_callback`.
 
@@ -357,7 +357,7 @@ headerFields array defines which fields of parent table are going to be listed i
 You can see that “My collection of rock cds.” is not on the same height as “description:”. This happens when we display field that is created by rich text editor. By default, rte embeds the text in `\<p\>` tags. Contao back end’s css applies a 12px bottom margin to all paragraph elements.
 
 
-###Global operations & operations
+### Global operations & operations
 
 Global operations are the same as tl\_cds\_category’s. Operations have just one lil difference – in the edit array, href key takes as value `act=edit`, and not `table=tl\_cds`.
 
@@ -489,7 +489,7 @@ Image – as input type we define file tree, which will render a file structure 
 Comment – this is the same field as description field in `tl_cds_category`.
 
 
-##Listing child records
+## Listing child records
 
 At this point, we are able to add new records to the database. Would be nice if we could list them, so they are possible to edit/view/delete and search.
 
@@ -552,7 +552,7 @@ week sales of more than 78,000 and has so far gone to sell over
 Each key corresponds to the field in a database table. I hope both the code and array are clear for you.
 
 
-##Next step
+## Next step
 [Check out the part three of this tutorial!](part3.md)
 
 
