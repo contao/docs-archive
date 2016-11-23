@@ -23,7 +23,7 @@
             "showTypeInHeader": false
         },
         "edit-link": {
-            "base": "https://github.com/contao/docs/edit/master/contao4-migration",
+            "base": "https://github.com/contao/docs/edit/master/extending-contao4",
             "label": "Edit This Page"
         },
         "piwik": {
@@ -31,7 +31,7 @@
             "siteId": 3
         },
         "canonical-link": {
-            "baseURL": "https://docs.contao.org/books/contao4-migration/"
+            "baseURL": "https://docs.contao.org/books/extending-contao4/"
         },
         "anchorjs": {
             "selector": "h1,h2,h3,*:not(.callout) > h4,h5"
