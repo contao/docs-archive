@@ -166,6 +166,11 @@ propriété du membre (utilisateur front office) actuellement connecté.
   <th>Description</th>
 </tr>
 <tr>
+  <td><code>{{user::*}}</code></td>
+  <td>Cette balise sera remplacée par le contenu d'un champ de la table `tl_member`
+      par rapport au membre courant. (remplacez * par le nom du champ).</td>
+</tr>
+<tr>
   <td><code>{{user::firstname}}</code></td>
   <td>Cette balise sera remplacée par le prénom du membre actuellement
   connecté.</td>
@@ -243,6 +248,11 @@ propriété de la page courante.
 <tr>
   <th>Balise d'insertion</th>
   <th>Description</th>
+</tr>
+<tr>
+  <td><code>{{page::*}}</code></td>
+  <td>Cette balise sera remplacée par le contenu d'un champ de la table `tl_page`
+      par rapport à la page courante. (remplacez * par le nom du champ).</td>
 </tr>
 <tr>
   <td><code>{{page::id}}</code></td>

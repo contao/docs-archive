@@ -165,6 +165,11 @@ Mit den folgenden Insert-Tags können Eigenschaften des angemeldeten Mitglieds
   <th>Beschreibung</th>
 </tr>
 <tr>
+  <td><code>{{user::*}}</code></td>
+  <td>Dieses Tag wird mit dem Inhalt eines Feldes von `tl_member` des
+      angemeldeten Mitglieds ersetzt (ersetzen Sie * mit dem Feldnamen).</td>
+</tr>
+<tr>
   <td><code>{{user::firstname}}</code></td>
   <td>Dieses Tag wird mit dem Vornamen des angemeldeten Mitglieds ersetzt.</td>
 </tr>
@@ -238,6 +243,11 @@ ausgegeben werden.
 <tr>
   <th>Insert-Tag</th>
   <th>Beschreibung</th>
+</tr>
+<tr>
+  <td><code>{{page::*}}</code></td>
+  <td>Dieses Tag wird mit dem Inhalt eines Feldes von `tl_page` der aktuellen
+      Seite ersetzt (ersetzen Sie * mit dem Feldnamen).</td>
 </tr>
 <tr>
   <td><code>{{page::id}}</code></td>
