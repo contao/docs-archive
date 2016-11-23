@@ -153,10 +153,10 @@ ihres Alias verlinkt werden.
 {% endraw %}
 
 
-### Benutzereigenschaften
+### Mitgliedereigenschaften
 
-Mit den folgenden Insert-Tags können Eigenschaften des angemeldeten Benutzers
-ausgebeben werden.
+Mit den folgenden Insert-Tags können Eigenschaften des angemeldeten Mitglieds
+(Frontend-Benutzer) ausgebeben werden.
 
 {% raw %}
 <table>
@@ -165,63 +165,68 @@ ausgebeben werden.
   <th>Beschreibung</th>
 </tr>
 <tr>
+  <td><code>{{user::*}}</code></td>
+  <td>Dieses Tag wird mit dem Inhalt eines Feldes von `tl_member` des
+      angemeldeten Mitglieds ersetzt (ersetzen Sie * mit dem Feldnamen).</td>
+</tr>
+<tr>
   <td><code>{{user::firstname}}</code></td>
-  <td>Dieses Tag wird mit dem Vornamen des angemeldeten Benutzers ersetzt.</td>
+  <td>Dieses Tag wird mit dem Vornamen des angemeldeten Mitglieds ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::lastname}}</code></td>
-  <td>Dieses Tag wird mit dem Nachnamen des angemeldeten Benutzers ersetzt.</td>
+  <td>Dieses Tag wird mit dem Nachnamen des angemeldeten Mitglieds ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::company}}</code></td>
-  <td>Dieses Tag wird mit dem Firmennamen des angemeldeten Benutzers
+  <td>Dieses Tag wird mit dem Firmennamen des angemeldeten Mitglieds
       ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::phone}}</code></td>
-  <td>Dieses Tag wird mit der Telefonnummer des angemeldeten Benutzers
+  <td>Dieses Tag wird mit der Telefonnummer des angemeldeten Mitglieds
       ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::mobile}}</code></td>
-  <td>Dieses Tag wird mit der Handynummer des angemeldeten Benutzers
+  <td>Dieses Tag wird mit der Handynummer des angemeldeten Mitglieds
       ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::fax}}</code></td>
-  <td>Dieses Tag wird mit der Faxnummer des angemeldeten Benutzers ersetzt.</td>
+  <td>Dieses Tag wird mit der Faxnummer des angemeldeten Mitglieds ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::email}}</code></td>
-  <td>Dieses Tag wird mit der E-Mail-Adresse des angemeldeten Benutzers
+  <td>Dieses Tag wird mit der E-Mail-Adresse des angemeldeten Mitglieds
       ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::website}}</code></td>
-  <td>Dieses Tag wird mit der Internetadresse des angemeldeten Benutzers
+  <td>Dieses Tag wird mit der Internetadresse des angemeldeten Mitglieds
       ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::street}}</code></td>
-  <td>Dieses Tag wird mit dem Staßennamen des angemeldeten Benutzers
+  <td>Dieses Tag wird mit dem Staßennamen des angemeldeten Mitglieds
       ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::postal}}</code></td>
-  <td>Dieses Tag wird mit der Postleitzahl des angemeldeten Benutzers
+  <td>Dieses Tag wird mit der Postleitzahl des angemeldeten Mitglieds
       ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::city}}</code></td>
-  <td>Dieses Tag wird mit der Stadt des angemeldeten Benutzers ersetzt.</td>
+  <td>Dieses Tag wird mit der Stadt des angemeldeten Mitglieds ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::country}}</code></td>
-  <td>Dieses Tag wird mit dem Land des angemeldeten Benutzers ersetzt.</td>
+  <td>Dieses Tag wird mit dem Land des angemeldeten Mitglieds ersetzt.</td>
 </tr>
 <tr>
   <td><code>{{user::username}}</code></td>
-  <td>Dieses Tag wird mit dem Benutzernamen des angemeldeten Benutzers
+  <td>Dieses Tag wird mit dem Benutzernamen des angemeldeten Mitglieds
       ersetzt.</td>
 </tr>
 </table>
@@ -238,6 +243,11 @@ ausgegeben werden.
 <tr>
   <th>Insert-Tag</th>
   <th>Beschreibung</th>
+</tr>
+<tr>
+  <td><code>{{page::*}}</code></td>
+  <td>Dieses Tag wird mit dem Inhalt eines Feldes von `tl_page` der aktuellen
+      Seite ersetzt (ersetzen Sie * mit dem Feldnamen).</td>
 </tr>
 <tr>
   <td><code>{{page::id}}</code></td>

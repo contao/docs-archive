@@ -154,16 +154,21 @@ autre page ou vers un article en utilisant son ID ou son alias.
 {% endraw %}
 
 
-### Propriétés de l'utilisateur
+### Propriétés du membre
 
 Les balises d'insertion suivantes vous permettent d'afficher n'importe quelle
-propriété du membre actuellement connecté.
+propriété du membre (utilisateur front office) actuellement connecté.
 
 {% raw %}
 <table>
 <tr>
   <th>Balise d'insertion</th>
   <th>Description</th>
+</tr>
+<tr>
+  <td><code>{{user::*}}</code></td>
+  <td>Cette balise sera remplacée par le contenu d'un champ de la table `tl_member`
+      par rapport au membre courant. (remplacez * par le nom du champ).</td>
 </tr>
 <tr>
   <td><code>{{user::firstname}}</code></td>
@@ -243,6 +248,11 @@ propriété de la page courante.
 <tr>
   <th>Balise d'insertion</th>
   <th>Description</th>
+</tr>
+<tr>
+  <td><code>{{page::*}}</code></td>
+  <td>Cette balise sera remplacée par le contenu d'un champ de la table `tl_page`
+      par rapport à la page courante. (remplacez * par le nom du champ).</td>
 </tr>
 <tr>
   <td><code>{{page::id}}</code></td>

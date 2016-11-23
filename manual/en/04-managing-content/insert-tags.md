@@ -153,10 +153,10 @@ ID or alias.
 {% endraw %}
 
 
-### User properties
+### Member properties
 
 The following insert tags allow you to display any property of the currently
-logged in user.
+logged in member (front end user).
 
 {% raw %}
 <table>
@@ -165,69 +165,74 @@ logged in user.
   <th>Description</th>
 </tr>
 <tr>
+  <td><code>{{user::*}}</code></td>
+  <td>This tag will be replaced with the content of a field in the table `tl_member`
+      in relation to the current member. (replace * with the name of the field).</td>
+</tr>
+<tr>
   <td><code>{{user::firstname}}</code></td>
   <td>This tag will be replaced with the first name of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 <tr>
   <td><code>{{user::lastname}}</code></td>
   <td>This tag will be replaced with the last name of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 <tr>
   <td><code>{{user::company}}</code></td>
   <td>This tag will be replaced with the company name of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 <tr>
   <td><code>{{user::phone}}</code></td>
   <td>This tag will be replaced with the phone number of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 <tr>
   <td><code>{{user::mobile}}</code></td>
   <td>This tag will be replaced with the mobile number of the currently logged
-      in user.</td>
+      in member.</td>
 </tr>
 <tr>
   <td><code>{{user::fax}}</code></td>
   <td>This tag will be replaced with the fax number of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 <tr>
   <td><code>{{user::email}}</code></td>
   <td>This tag will be replaced with the e-mail address of the currently logged
-      in user.</td>
+      in member.</td>
 </tr>
 <tr>
   <td><code>{{user::website}}</code></td>
   <td>This tag will be replaced with the web address of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 <tr>
   <td><code>{{user::street}}</code></td>
   <td>This tag will be replaced with the street name of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 <tr>
   <td><code>{{user::postal}}</code></td>
   <td>This tag will be replaced with the postal code of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 <tr>
   <td><code>{{user::city}}</code></td>
   <td>This tag will be replaced with the city of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 <tr>
   <td><code>{{user::country}}</code></td>
   <td>This tag will be replaced with the country of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 <tr>
   <td><code>{{user::username}}</code></td>
   <td>This tag will be replaced with the username of the currently logged in
-      user.</td>
+      member.</td>
 </tr>
 </table>
 {% endraw %}
@@ -242,6 +247,11 @@ The following insert tags allow you to display any property of the current page.
 <tr>
   <th>Insert tag</th>
   <th>Description</th>
+</tr>
+<tr>
+  <td><code>{{page::*}}</code></td>
+  <td>This tag will be replaced with the content of a field in the table `tl_page`
+      in relation to the current page. (replace * with the name of the field).</td>
 </tr>
 <tr>
   <td><code>{{page::id}}</code></td>
