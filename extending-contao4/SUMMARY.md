@@ -1,8 +1,7 @@
 ## Table of contents
 
 
-* Compatibility
-    * Preparing Contao 3 extensions
+* Prerequisites for Contao 3 extensions
     * Public folders
 
 * Creating a Symfony bundle
@@ -15,10 +14,14 @@
     * Custom responses
     * Adapter classes
     
-* The Contao 4.0 framework
-    * Routing & Controllers
-    * Security
-    
+* [Contao 4 – Managed Edition](managed-edition/README.md)
+    * [About Plugins](managed-edition/plugins.md)
+    * [Autoloading Contao 3 extensions](managed-edition/autoload-contao3.md)
+    * [Autoloading Contao 4 / Symfony bundles](managed-edition/autoload-contao4.md)
+    * [Prepending Container configuration](managed-edition/prepend-config.md)
+    * [Adding routes](managed-edition/routing.md)
+    * [Defining plugin dependencies](managed-edition/plugin-dependencies.md)
+
 * [Background information](background/README.md)
     * [API changes](background/upgrade.md)
     * [Deprecated features](background/deprecated.md)
