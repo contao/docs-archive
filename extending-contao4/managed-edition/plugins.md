@@ -6,7 +6,7 @@ Contao *Managed Edition*.
 
 ## The interfaces
 
-A plugin should be a standalone class, it's features
+A plugin should be a standalone class, its features
 are described by implementing different interfaces.
 
 More interfaces will likely be added in the future when new features are added

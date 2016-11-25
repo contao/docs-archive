@@ -21,7 +21,7 @@ Create a Manager Plugin described in the [respective section](plugins.md).
 ### Load dependencies from `autoload.ini`
 
 Usually, a Contao 3 extension comes with a `config/autoload.ini` file to 
-describe it's dependencies, which is automatically parsed in Contao 3. 
+describe its dependencies, which is automatically parsed in Contao 3.
 In Contao 4, the plugin must load the dependencies from this file by 
 implementing the `BundlePluginInterface` and using the parser to recursively 
 load all dependencies.
