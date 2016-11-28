@@ -32,8 +32,8 @@ You also need several PHP extensions to get the full functionality.
 > PHP variable `max_input_vars` (e.g. `2000` or higher). Otherwise long back end 
 > forms cannot be submitted completely.
 
-Contao has been tested successfully with all major browsers like Firefox
-(from version 2) or Internet Explorer (from version 8).
+Contao has been tested successfully with all major browsers like Firefox or
+Internet Explorer (from version 9).
 
 
 ### The Contao check

@@ -36,8 +36,8 @@ toutes les fonctionnalités.
 > la valeur de la variable PHP `max_input_vars` (par ex. `2000` ou supérieur). Sinon, les 
 > longs formulaires du back office ne peuvent pas être soumis entièrement.
 
-Contao a été testé avec succès avec tous les principaux navigateurs comme Firefox
-(à partir de la version 2) ou Internet Explorer (à partir de la version 8).
+Contao a été testé avec succès avec tous les principaux navigateurs comme
+Firefox ou Internet Explorer (à partir de la version 9).
 
 
 ### Contao Check
