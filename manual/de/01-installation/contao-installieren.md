@@ -28,10 +28,10 @@ curl -L http://download.contao.org/3.5.2 | tar -xzp
 
 ### Installation mit Composer
 
-Mit Composer kann Contao über die [contao/standard-edition][6] installiert
+Mit Composer kann Contao über die [contao/standard-edition][3] installiert
 werden.
 
-Als Erstes muss [Composer verfügbar sein][7], welcher mit folgendem Befehl
+Als Erstes muss [Composer verfügbar sein][4], welcher mit folgendem Befehl
 auf einem macOS- oder Linux-System installiert werden kann:
 
 ```bash
@@ -39,7 +39,7 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
-Unter Windows erfolgt die Installation mittels dem [Installer][8].
+Unter Windows erfolgt die Installation mittels dem [Installer][5].
 
 Nun kann die Installation von Contao mit folgendem Befehl gestartet werden:
 
@@ -88,7 +88,18 @@ Datei `app/config/parameters.yml` gespeichert.
 > In Version 4.2 und neuer wird der `secret`-Parameter automatisch
 > während der Installation generiert. 
 > Weitere Informationen zu dieser Konfiguration ist auf der
-> [offiziellen Symfony-Webseite][9] zu finden.
+> [offiziellen Symfony-Webseite][6] zu finden.
+
+
+### Wurzelverzeichnis der Webseite
+
+Für den Live-Betrieb muss das Wurzelverzeichnis (Document Root) der Installation
+auf den Ordner `web/` gesetzt sein (z.B. über das Admin-Panel des Hosting-Providers).
+
+> #### info:: Hinweis
+> Ausführlichere Informationen zur Ordnerstruktur finden sich im [Cookbook][7]
+> (auf Englisch).
+
 
 ### Das Contao-Installtool
 
@@ -145,7 +156,8 @@ Backend-Anmeldung weiter.
 
 [1]: https://contao.org/de/download.html
 [2]: http://www.winscp.net
-[6]: https://github.com/contao/standard-edition
-[7]: https://getcomposer.org/download/
-[8]: https://getcomposer.org/doc/00-intro.md#using-the-installer
-[9]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
+[3]: https://github.com/contao/standard-edition
+[4]: https://getcomposer.org/download/
+[5]: https://getcomposer.org/doc/00-intro.md#using-the-installer
+[6]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
+[7]: https://docs.contao.org/books/cookbook/en/folder-structure.html

@@ -93,7 +93,7 @@ configuration file `app/config/parameters.yml`.
 ### The document root
 
 In production, make sure to specify the `web/` directory as the document root
-of your website using the admin panel of your web hosting provider.
+of your website (e.g. using the admin panel of your web hosting provider).
 
 > #### info:: Note
 > More detailed information relating to the folder structure can be found in
