@@ -1,5 +1,6 @@
 {
     "gitbook": "3.2.x",
+    "title": "Contao API documentation",
     "plugins": [
         "bootstrap-callout",
         "edit-link",
