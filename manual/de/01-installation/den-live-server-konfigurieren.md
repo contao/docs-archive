@@ -32,8 +32,8 @@ profitieren zu können.
 > Variable `max_input_vars` zu erhöhen (bspw. auf `2000` oder höher). Andernfalls 
 > können zu lange Backend Formulare nicht komplett abgeschickt werden.
 
-Contao wurde erfolgreich in allen modernen Browsern wie 
-Firefox (ab Version 2) oder Internet Explorer (ab Version 8) getestet.
+Contao wurde erfolgreich in allen modernen Browsern wie Firefox oder Internet
+Explorer (ab Version 9) getestet.
 
 
 ### Der Contao-Check
