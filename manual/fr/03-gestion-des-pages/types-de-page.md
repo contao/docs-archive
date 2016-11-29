@@ -81,13 +81,13 @@ d'un nouveau site pour cela :
   <th>Langue de secours</th>
 </tr>
 <tr>
-  <td>Site internet d'entreprise en Allemand</td>
+  <td>Site internet d'entreprise en allemand</td>
   <td>aucun</td>
   <td>de</td>
   <td>non</td>
 </tr>
 <tr>
-  <td>Site internet d'entreprise en Anglais</td>
+  <td>Site internet d'entreprise en anglais</td>
   <td>aucun</td>
   <td>en</td>
   <td>oui</td>
@@ -112,17 +112,17 @@ fonction du nom de domaine et de la langue de son navigateur.
 <tr>
   <td>www.example.com</td>
   <td>Anglais</td>
-  <td>Site internet d'entreprise en Anglais</td>
+  <td>Site internet d'entreprise en anglais</td>
 </tr>
 <tr>
   <td>www.example.com</td>
   <td>Allemand</td>
-  <td>Site internet d'entreprise en Allemand</td>
+  <td>Site internet d'entreprise en allemand</td>
 </tr>
 <tr>
   <td>www.example.com</td>
   <td>Espagnol</td>
-  <td>Site internet d'entreprise en Anglais</td>
+  <td>Site internet d'entreprise en anglais</td>
 </tr>
 <tr>
   <td>www.personal.example.org</td>
@@ -133,7 +133,7 @@ fonction du nom de domaine et de la langue de son navigateur.
 
 Notez que si nous n'utilisions pas l'option "langue de secours", le site internet 
 personnel ne serait disponible que pour les utilisateurs dont la langue du 
-navigateur est l'Allemand ! 
+navigateur est l'allemand ! 
 
 
 ### Droits d'accès

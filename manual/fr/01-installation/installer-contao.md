@@ -30,9 +30,9 @@ curl -L http://download.contao.org/3.5.2 | tar -xzp
 ### Installation avec Composer
 
 Vous pouvez également installer Contao avec Composer en utilisant le référentiel
-[contao/standard-edition][6].
+[contao/standard-edition][3].
 
-En premier lieu, vous devez [installer Composer][7]. Il peut être installé
+En premier lieu, vous devez [installer Composer][4]. Il peut être installé
 globalement avec les deux commandes suivantes sur macOS ou Linux:
 
 ```bash
@@ -41,7 +41,7 @@ sudo mv composer.phar /usr/local/bin/composer
 ```
 
 Sous Windows, vous pouvez télécharger et exécuter le
-[programme d'installation][8].
+[programme d'installation][5].
 
 Maintenant, vous pouvez exécuter le processus d'installation de Contao avec la
 commande suivante :
@@ -91,7 +91,18 @@ incluses dans le fichier de configuration `app/config/parameters.yml`.
 > #### info:: Remarque
 > Dans la version 4.2 et supérieure, le paramètre `secret` est
 > automatiquement généré durant l'installation. Vous pouvez trouver plus
-> d'informations sur cette configuration sur le [site officiel de Symfony][9].
+> d'informations sur cette configuration sur le [site officiel de Symfony][6].
+
+
+### Le répertoire racine
+
+En production, assurez-vous de spécifier le répertoire `web/` comme étant la
+racine (document root) de votre site internet (par ex. à l'aide du panneau
+d'administration de votre fournisseur d'hébergement Web).
+
+> #### info:: Note
+> Vous trouverez de plus amples informations sur la structure des dossiers dans
+> ce [chapitre du cookbook][7] (en anglais).
 
 
 ### L'outil d'installation de Contao
@@ -150,7 +161,8 @@ droit vous amènera vers le panneau d'administration.
 
 [1]: https://contao.org/en/download.html
 [2]: http://www.winscp.net/
-[6]: https://github.com/contao/standard-edition
-[7]: https://getcomposer.org/download/
-[8]: https://getcomposer.org/doc/00-intro.md#using-the-installer
-[9]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
+[3]: https://github.com/contao/standard-edition
+[4]: https://getcomposer.org/download/
+[5]: https://getcomposer.org/doc/00-intro.md#using-the-installer
+[6]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
+[7]: https://docs.contao.org/books/cookbook/en/folder-structure.html
