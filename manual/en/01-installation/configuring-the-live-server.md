@@ -20,7 +20,7 @@ You also need several PHP extensions to get the full functionality.
 
 | PHP extension | for                           | mandatory |
 |---------------|-------------------------------|-----------|
-| GDlib         | image resizing                | yes       |
+| GD, Imagick, or Gmagick| image resizing       | yes       |
 | DOM           | XML files                     | yes       |
 | intl          | Internationalization          | yes       |
 | mbstring      | multi-byte character handling | no        |
