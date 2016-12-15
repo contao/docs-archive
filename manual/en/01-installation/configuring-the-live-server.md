@@ -18,13 +18,13 @@ Contao requires a webserver like Apache or IIS with PHP and MySQL support.
 
 You also need several PHP extensions to get the full functionality.
 
-| PHP extension           | for                           | mandatory |
-|-------------------------|-------------------------------|-----------|
-| GD, Imagick, or Gmagick | image resizing                | yes       |
-| DOM                     | XML files                     | yes       |
-| intl                    | Internationalization          | yes       |
-| mbstring                | multi-byte character handling | no        |
-| mcrypt                  | data encryption               | no        |
+| PHP extension          | for                           | mandatory |
+|------------------------|-------------------------------|-----------|
+| GD, Imagick or Gmagick | image resizing                | yes       |
+| DOM                    | XML files                     | yes       |
+| intl                   | Internationalization          | yes       |
+| mbstring               | multi-byte character handling | no        |
+| mcrypt                 | data encryption               | no        |
 
 > #### info:: Note 
 > Depending on your installed extensions, it may be necessary to increase the

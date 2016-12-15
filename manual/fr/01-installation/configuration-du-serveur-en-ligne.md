@@ -22,13 +22,13 @@ Vous avez également besoin de diverses extensions PHP afin de bénéficier de
 toutes les fonctionnalités.
 
 
-| Extension PHP           | pour                                | obligatoire |
-|-------------------------|-------------------------------------|-------------|
-| GD, Imagick, or Gmagick | redimensionnement d'images          | oui         |
-| DOM                     | fichiers XML                        | oui         |
-| intl                    | internationalisation                | oui         |
-| mbstring                | gestion des caractères multi-octets | non         |
-| mcrypt                  | cryptage des données                | non         |
+| Extension PHP          | pour                                | obligatoire |
+|------------------------|-------------------------------------|-------------|
+| GD, Imagick or Gmagick | redimensionnement d'images          | oui         |
+| DOM                    | fichiers XML                        | oui         |
+| intl                   | internationalisation                | oui         |
+| mbstring               | gestion des caractères multi-octets | non         |
+| mcrypt                 | cryptage des données                | non         |
 
 > #### info:: Remarque
 > En fonction de vos extensions installées, il peut être nécessaire d'augmenter 
