@@ -24,7 +24,7 @@ toutes les fonctionnalités.
 
 | Extension PHP          | pour                                | obligatoire |
 |------------------------|-------------------------------------|-------------|
-| GD, Imagick or Gmagick | redimensionnement d'images          | oui         |
+| GD, Imagick ou Gmagick | redimensionnement d'images          | oui         |
 | DOM                    | fichiers XML                        | oui         |
 | intl                   | internationalisation                | oui         |
 | mbstring               | gestion des caractères multi-octets | non         |
