@@ -19,13 +19,13 @@ Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support.
 Außerdem benötigen Sie verschiedene PHP-Erweiterungen, um von allen Funktionen
 profitieren zu können. 
 
-| PHP-Erweiterungen | für                    | Pflicht |
-|-------------------|------------------------|---------|
-| GDlib             | Bildbearbeitung        | Ja      |
-| DOM               | XML-Dateien            | Ja      |
-| intl              | Internationalisierung  | Ja      |
-| mbstring          | internationale Zeichen | Nein    |
-| mcrypt            | Verschlüsselung        | Nein    |
+| PHP-Erweiterungen        | für                    | Pflicht |
+|--------------------------|------------------------|---------|
+| GD, Imagick oder Gmagick | Bildbearbeitung        | Ja      |
+| DOM                      | XML-Dateien            | Ja      |
+| intl                     | Internationalisierung  | Ja      |
+| mbstring                 | internationale Zeichen | Nein    |
+| mcrypt                   | Verschlüsselung        | Nein    |
 
 > #### info:: Hinweis
 > Je nach installierten Extensions kann es außerdem notwendig sein die PHP 
