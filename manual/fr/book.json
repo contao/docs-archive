@@ -1,8 +1,8 @@
 {
-    "title": "Manuel pour Contao 4.2",
+    "title": "Manuel pour Contao 4.3",
     "pluginsConfig": {
         "canonical-link": {
-            "baseURL": "https://docs.contao.org/books/manual/current/fr"
+            "baseURL": "https://docs.contao.org/books/manual/4.3/fr"
         }
     }
 }

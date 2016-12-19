@@ -1,6 +1,6 @@
 {
     "gitbook": "3.2.x",
-    "title": "Manual for Contao 4.2",
+    "title": "Manual for Contao 4.3",
     "plugins": [
         "bootstrap-callout",
         "edit-link",
@@ -20,7 +20,7 @@
     },
     "pluginsConfig": {
         "edit-link": {
-          "base": "https://github.com/contao/docs/edit/4.2/manual",
+          "base": "https://github.com/contao/docs/edit/4.3/manual",
             "label": {
                 "en": "Edit This Page",
                 "de": "Seite bearbeiten",
@@ -38,7 +38,8 @@
         "versions": {
             "gitbookConfigURL": "https://raw.githubusercontent.com/contao/docs/master/manual/book.json",
             "options": [
-                { "value": "https://docs.contao.org/books/manual/4.2", "text": "Contao 4.2", "selected": true },
+                { "value": "https://docs.contao.org/books/manual/4.3", "text": "Contao 4.3", "selected": true },
+                { "value": "https://docs.contao.org/books/manual/4.2", "text": "Contao 4.2" },
                 { "value": "https://docs.contao.org/books/manual/4.0", "text": "Contao 4.0" },
                 { "value": "https://docs.contao.org/books/manual/3.5", "text": "Contao 3.5" },
                 { "value": "https://docs.contao.org/books/manual/3.4", "text": "Contao 3.4" },
@@ -50,7 +51,7 @@
             ]
         },
         "canonical-link": {
-            "baseURL": "https://docs.contao.org/books/manual/current/en/"
+            "baseURL": "https://docs.contao.org/books/manual/4.3/en/"
         },
         "anchorjs": {
             "selector": "h1,h2,h3,*:not(.callout) > h4,h5"
