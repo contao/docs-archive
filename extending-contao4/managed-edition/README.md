@@ -1,9 +1,9 @@
 # Contao 4 – Managed Edition
 
-Starting with version 4.3, Contao is available as a so-called *Managed Edition*.
-Compared to a regular Symfony application, a *Managed Edition* is limited
-in its customization possibilities to allow automatic management by 
-third-party bundles.
+Starting with version 4.3.2, Contao is available as a so-called 
+*Managed Edition*. Compared to a regular Symfony application, a 
+*Managed Edition* is limited in its customization possibilities to 
+allow automatic management by third-party bundles.
 
 
 ## Differences to Contao Standard Edition
@@ -18,9 +18,25 @@ to know how to write PHP code or what classes to instantiate in what order.
 
 ### Config files
 
-Contao *Managed Edition* does not feature the regular Symfony config files
-in `app/config`. Instead, all configurations are loaded by bundles using the
-Symfony *[Prepend configuration]* interface.
+In a Contao *Managed Edition*, the configuration is loaded by plugins
+and not by application configuration files. This will allow the
+application to work without manually adjusting files.
+
+
+### Console
+
+A Symfony application usually contains a console script in `bin/console`.
+In Contao *Managed Edition* the console is part of the
+`contao/manager-bundle` and installed in `vendor/bin/contao-console`.
+
+
+### Autoloading Contao 3 extensions
+
+Similar to the behavior in Contao 3, the Contao 4 *Managed Edition*
+will automatically load all extensions in `system/modules`. The
+implementation is designed to work as in Contao 3, so the `autoload.ini`
+is taken into account, and an extension can be disabled by placing a
+`.skip` file into the extension folder.
 
 
 ## Customizing the application
@@ -29,6 +45,17 @@ The Contao *Managed Edition* is not a standard Symfony application,
 so you can't simply edit the config files. In addition to loading 
 configuration from packages installed by Composer, you can customize
 an installation in several ways.
+
+
+### Adding a config file
+
+There are two configuration files available in Contao *Managed Edition*:
+
+1. `app/config/parameters.yml` contains parameters like database
+    credentials. The file is created and updated by the install tool.
+
+2. `app/config/config.yml` can be created manually to adjust the
+    Symfony configuration. This config file is loaded after all plugins.
 
 
 ### Adding resources
@@ -60,5 +87,4 @@ will be loaded last, so you can always override any existing setup.
 
 
 
-[Prepend configuration]: http://symfony.com/doc/current/bundles/prepend_extension.html
 [AppBundle]: http://symfony.com/doc/current/best_practices/business-logic.html

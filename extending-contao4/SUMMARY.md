@@ -16,9 +16,8 @@
     
 * [Contao 4 – Managed Edition](managed-edition/README.md)
     * [About Plugins](managed-edition/plugins.md)
-    * [Autoloading Contao 3 extensions](managed-edition/autoload-contao3.md)
-    * [Autoloading Contao 4 / Symfony bundles](managed-edition/autoload-contao4.md)
-    * [Prepending Container configuration](managed-edition/prepend-config.md)
+    * [Autoloading bundles](managed-edition/bundle-autoloading.md)
+    * [Container configuration](managed-edition/container-configuration.md)
     * [Adding routes](managed-edition/routing.md)
     * [Defining plugin dependencies](managed-edition/plugin-dependencies.md)
 
