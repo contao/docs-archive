@@ -4,7 +4,7 @@ Manager Plugins are the main entry point to add custom features to the
 Contao *Managed Edition*. 
 
 > #### info:: Note
-> This describes `contao/manager-plugin` version 0.2.
+> This describes `contao/manager-plugin` version 2.0.
 
 
 ## The interfaces
@@ -96,7 +96,7 @@ in the *composer.json*.
     ```json
     {
        "require-dev": {
-            "contao/manager-plugin": "^0.2"
+            "contao/manager-plugin": "^2.0"
        }
     }
     ```
@@ -108,7 +108,7 @@ in the *composer.json*.
     ```json
     {
        "conflict": {
-            "contao/manager-plugin": "!=0.2"
+            "contao/manager-plugin": "<2.0 || >=3.0"
        }
     }
     ```
