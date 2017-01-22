@@ -30,5 +30,5 @@
     * [Balises d'insertion](04-gestion-du-contenu/balises-insertion.md)
 * [Administration du système](05-administration-du-systeme/README.md)
     * [Utilisateurs et groupes d'utilisateurs](05-administration-du-systeme/utilisateurs-et-groupes-utilisateurs.md)
-    * [Extensions](05-administration-du-systeme/extensions.md)
+    * [Extensions et bundles](05-administration-du-systeme/extensions.md)
     * [Maintenance](05-administration-du-systeme/maintenance.md)

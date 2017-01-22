@@ -1,58 +1,133 @@
-## Extensions
+## Extensions and bundles
 
 Extensions are an essential part of Contao, because they allow you to add extra
-functionality. There are more than 1,400 extensions available in the Contao
-Extension Repository, which you can browse directly in the back end.
-Communication with the repository server is done via SOAP, so you need to enable
-the PHP SOAP extension to use the service (if not enabled by default).
+functionality. Contao 4 is based on the Symfony framework and takes advantage of
+its functionalities and its terminiology. In Contao 4 you can use classic
+extensions from previous Contao versions as well as so called bundles.
 
 
-### Extension catalog
+### Finding extensions or bundles
 
-The "extension catalog" module allows you to browse the extension list and to
-install extensions at the push of a button. Use the filter and sorting options
-to find a particular extension and click the info icon or extension title to
-open the details page and install the module.
+Contao has its own [repository][1] where you can find the extensions that are
+compatible with Contao 3.x and lower.
 
-![](images/extension-list.jpg)
+The second most commonly used repository is [Packagist][2]. It lists the
+extensions and bundles installable through [Composer][3].
 
-The details page contains a description of the extension and important
-information regarding system requirements, versions and dependencies from other
-modules. Click the "Install" button to download and install the extension.
-
-![](images/extension-details.jpg)
-
-Contao will automatically download and install the extension and update the
-database if necessary.
-
-![](images/extension-install.jpg)
+1. [List of Contao 4 bundles][4] in Packagist.
+2. [List of Contao 3 extensions][5] in Packagist.
 
 
-### Extension manager
+### Installing a bundle with Composer
 
-The "extension manager" module allows you to update and uninstall extensions. It
-automatically checks for updates and notifies you if a new version is available.
-Many extensions also include links to an online manual and/or forum thread where
-you can get support.
+A name of a bundle is divided into two parts. The first part is the name of the
+vendor (project owner) and the second the bundle name. For example:
+`contao/news-bundle`.
 
-![](images/extension-manager.jpg)
+Run the command `composer require vendor/bundleName` in your
+command-line interface to start the installation.
 
-To uninstall an extension, simply click the uninstall icon and follow the
-instructions. The extension manager will remove all files and folders and update
-the database if necessary. Note that this action cannot be undone and the tables
-cannot be restored!
+Contao dependencies (in our case a bundle) are described in a file named
+`composer.json` which is located in the root folder of your Contao installation.
+During the installation process, Composer updates the `composer.json` file and
+determines itself which version of the bundle is best suited to be installed
+depending on your version of Contao.
 
-![](images/extension-uninstall.jpg)
+Then you must register your bundle in `app/AppKernel.php` so that it can be
+taken into account by the system. Add the bundle to the list of registered
+bundles:
+
+```php
+<?php
+// app/AppKernel.php
+
+// ...
+class AppKernel extends Kernel
+{
+    public function registerBundles()
+    {
+        $bundles = [
+            // ...
+
+            new <vendor>\<bundle-name>\<bundle-long-name>(),
+        ];
+
+        // ...
+    }
+
+    // ...
+}
+```
+
+Finally, check the database with the [Contao install tool][7].
+
+With Composer, the cache is cleared automatically.
 
 
-### Manual installation
+### Installing a Contao extension
 
-In case the PHP SOAP extension is not available on your server, you can also
-install Contao extensions manually. Find the respective module in the [extension
-list][1] and download the .zip archive of the latest release. Then unzip the
-files and copy them to your local or remote Contao directory. Finally, check the
-database with the [Contao install tool][2].
+An extension can be installed with Composer or manually. With Composer, the
+installation process is the same as a bundle except for the registration in the
+`app/AppKernel.php` file where the code is slightly different.
+
+In the example below, the first parameter `myExtensionName` should be replaced
+by the name of your extension:
+
+```php
+<?php
+// app/AppKernel.php
+
+// ...
+class AppKernel extends Kernel
+{
+    public function registerBundles()
+    {
+        $bundles = [
+            // ...
+
+            new Contao\CoreBundle\HttpKernel\Bundle\ContaoModuleBundle('myExtensionName', $this->getRootDir()),
+        ];
+
+        // ...
+    }
+
+    // ...
+}
+```
+
+
+#### Manually
+
+Almost all extensions for Contao 3 are also compatible with Contao 4. If a
+Contao 3 extension is not available on Composer, you can install it manually
+and try if it works with Contao 4. Be aware that you must also take care of
+installing all dependencies as listed in the Extension Repository.
+
+Find the extension you want to install in the [Extension Repository][1] and
+download the .zip archive of the latest release. Then unzip the files and copy
+them to the `system/modules` folder. If the extension has public files, you must
+generate a [symbolic link][6] with the command `php app/console contao:symlinks`
+in your command-line interface.
+
+Then you must register your extension in `app/AppKernel.php` so that it can be
+taken into account by the system (see the previous chapter). Finally, check the
+database with the [Contao install tool][7].
+
+When you have made all the installation procedure, you can clear the cache with
+the following command: `php app/console cache:clear -e=prod`.
+
+
+## Extension catalog
+
+Prior to Contao 4, it was possible to install an extension automatically from
+the back end. This feature is under development and will be offered in a future
+release.
 
 
 [1]: https://contao.org/en/extension-list.html
-[2]: ../01-installation/installing-contao.md#the-contao-install-tool
+[2]: https://packagist.org
+[3]: https://getcomposer.org/doc/00-intro.md#introduction
+[4]: https://packagist.org/search/?q=&type=contao-bundle
+[5]: https://packagist.org/search/?q=&type=contao-module
+[6]: https://en.wikipedia.org/wiki/Symbolic_link
+[7]: ../01-installation/installing-contao.md#the-contao-install-tool
