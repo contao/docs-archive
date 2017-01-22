@@ -3,7 +3,7 @@
 * [Einleitung](README.md)
 * [Installation](01-installation/README.md)
     * [Contao installieren](01-installation/contao-installieren.md)
-    * [Manuelles Update](01-installation/manuelles-update.md)
+    * [Contao aktualisieren](01-installation/manuelles-update.md)
     * [Eine Installation umziehen](01-installation/eine-installation-umziehen.md)
     * [Den Live-Server konfigurieren](01-installation/den-live-server-konfigurieren.md)
 * [Administrationsbereich](02-administrationsbereich/README.md)
