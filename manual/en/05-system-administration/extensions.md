@@ -1,12 +1,9 @@
 ## Extensions and bundles
 
 Extensions are an essential part of Contao, because they allow you to add extra
-functionality. There are more than 1,800 extensions available in the Contao
-[Extension Repository][1].
-
-Contao 4 is built on top of the Symfony framework and takes advantage of its
-functionalities but also of its terminology. In a Symfony project, an extension
-is named a bundle.
+functionality. Contao 4 is based on the Symfony framework and takes advantage of
+its functionalities and its terminiology. In Contao 4 you can use classic
+extensions from previous Contao versions as well as so called bundles.
 
 
 ### Finding extensions or bundles
@@ -16,7 +13,7 @@ compatible with Contao 3.x and lower.
 
 The second most commonly used repository is [Packagist][2]. It lists the
 extensions and bundles installable through [Composer][3].
- 
+
 1. [List of Contao 4 bundles][4] in Packagist.
 2. [List of Contao 3 extensions][5] in Packagist.
 
