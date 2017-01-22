@@ -1,8 +1,8 @@
 ## Mettre à jour Contao
 
 Contao 4 peut être mis à jour via Composer. Cela inclut le cœur du système
-(contao/core-bundle) et toutes ses dépendances (Symfony, bundles, bibliothèques
-externes, etc.).
+(contao/core-bundle et tous les autres bundles de Contao) et toutes ses
+dépendances (Symfony, bundles, bibliothèques externes, etc.).
 
 Avant une mise à jour, vous devriez toujours sauvegarder les fichiers et
 dossiers ci-dessous juste au cas où il y aurait une erreur ou lors d'un
@@ -27,13 +27,10 @@ votre serveur. Vous pouvez trouver les commandes permettant d'installer Composer
 sur votre serveur sur [le site officiel de Composer][2].
 
 Les valeurs des directives [memory_limit][3] et [max_execution_time][4] doivent
-être suffisantes pour terminer la mise à jour avec succès. Ces valeurs peuvent
-parfois être modifiées selon votre hébergeur web.
-
-> #### info:: Note
-> Avant de mettre à jour Contao, vous pouvez supprimer entièrement le dossier
-> `vendor/` pour éviter de conserver des dépendances inutilisées ou pour éviter
-> des problèmes potentiels.
+être suffisantes pour terminer la mise à jour avec succès. Habituellement, ces
+valeurs n'ont aucune limite dans un environnement PHP en ligne de commande, mais
+cela peut varier entre les hébergeurs web. Veuillez contacter votre hébergeur si
+tel est le cas.
 
 Vous pouvez ensuite mettre à jour Contao à l'aide de la commande suivante:
 
@@ -47,7 +44,7 @@ composer update
 Pour mettre à jour manuellement une installation de Contao, vous pouvez soit
 téléverser l'archive complète de Contao sur le serveur (remplacement des
 fichiers) ou vous pouvez téléverser uniquement les fichiers qui ont été
-modifiés depuis la dernière mise à jour (synchronisation des fichiers). 
+modifiés depuis la dernière mise à jour (synchronisation des fichiers).
 
 N'oubliez pas de sauvegarder les dossiers et fichiers mentionnés ci-dessus avant
 d'effectuer votre mise à jour.

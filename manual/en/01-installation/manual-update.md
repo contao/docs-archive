@@ -1,8 +1,8 @@
 ## Updating Contao
 
 Contao 4 can be updated through Composer. This includes the core system
-(contao/core-bundle) and all its dependencies (Symfony, bundles, external
-libraries, etc.).
+(contao/core-bundle and all other Contao bundles) and all its dependencies
+(Symfony, bundles, external libraries, etc.).
 
 Before an update, you should always back up the following files and folders
 just in case there is an error or you accidentally override them:
@@ -26,12 +26,9 @@ You can find the commands for installing Composer on your server on
 [the official Composer website][2].
 
 The values for the directives [memory_limit][3] and [max_execution_time][4]
-should be sufficient in order to complete successfully the update. These values
-can sometimes be changed according to the web hosting service you have.
-
-> #### info:: Note
-> Before updating Contao, you can remove entirely the `vendor/` folder to avoid
-> keeping unused dependencies or to avoid having potential problems.
+should be sufficient in order to complete successfully the update. Usually these
+values have no limitation in a regular PHP command line environment, but this
+may vary between hosting services. Contact your hosting service in such a case.
 
 Then, you can updating Contao with the following command:
 
