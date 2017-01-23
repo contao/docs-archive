@@ -81,8 +81,8 @@ Each application can have one global class `ContaoManagerPlugin` which
 will be automatically loaded if it exists. We recommend this to be
 located in your `app` folder, but that does not really matter as long
 as the Composer class loader can find it. That means you have to add
-it to the `autoload` section. If you follow the conventions, it should
-look something like this:
+it to the `autoload` section of your `composer.json`. If you follow 
+the conventions, it should look something like this:
 
 ```json
     "autoload": {
