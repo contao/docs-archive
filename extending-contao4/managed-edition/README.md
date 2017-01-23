@@ -42,7 +42,7 @@ is taken into account, and an extension can be disabled by placing a
 ## Customizing the application
 
 The Contao *Managed Edition* is not a standard Symfony application,
-so you can't simply edit the config files. In addition to loading 
+so you cannot simply edit the config files. In addition to loading 
 configuration from packages installed by Composer, you can customize
 an installation in several ways.
 
@@ -69,9 +69,10 @@ to `app/Resources/contao` and they will be loaded at runtime.
 ### Adding an AppBundle
 
 As [recommended by Symfony][AppBundle], the AppBundle should be your main 
-bundle if you need to customize the application. Fortunately, the
-AppBundle is automatically loaded in Contao *Managed Edition* if the
-class can be found.
+bundle if you need to customize the application. So all application specific
+source code should be placed in `src/AppBundle`. For your convenience, the
+`AppBundle` class is automatically loaded in Contao *Managed Edition* if the
+it can be found.
 
 
 ### Adding a Manager Plugin
@@ -79,11 +80,27 @@ class can be found.
 Each application can have one global class `ContaoManagerPlugin` which
 will be automatically loaded if it exists. We recommend this to be
 located in your `app` folder, but that does not really matter as long
-as the Composer class loader can find it.
+as the Composer class loader can find it. That means you have to add
+it to the `autoload` section. If you follow the conventions, it should
+look something like this:
 
-Using a custom plugin you can adjust all features of the application
+```json
+    "autoload": {
+        "classmap": [
+            "app/ContaoManagerPlugin.php"
+        ],
+        "psr-0": {
+            "": "src"
+        }
+    },
+```
+
+By using a custom plugin you can adjust all features of the application
 in the same way any Composer package can do. The `ContaoManagerPlugin`
-will be loaded last, so you can always override any existing setup.
+will be loaded last, so you can always override any existing setup for
+your application.
+See the other chapters to learn more about how you can use the plugin
+to instruct the *Managed Edition* on what it is supposed to do.
 
 
 
