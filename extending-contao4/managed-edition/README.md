@@ -93,8 +93,8 @@ the conventions, it should look something like this:
         "classmap": [
             "app/ContaoManagerPlugin.php"
         ],
-        "psr-0": {
-            "": "src"
+        "psr-4": {
+            "AppBundle\\": "src"
         }
     },
 ```
