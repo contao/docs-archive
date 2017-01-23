@@ -29,6 +29,10 @@ A Symfony application usually contains a console script in `bin/console`.
 In Contao *Managed Edition* the console is part of the
 `contao/manager-bundle` and installed in `vendor/bin/contao-console`.
 
+> #### info:: Hint
+> If you are an experienced Symfony developer and missing the default
+> location of the console at `bin/console`, just add a symlink for
+> your convenience: `ln -s ./../vendor/bin/console ./bin/console`.
 
 ### Autoloading Contao 3 extensions
 
