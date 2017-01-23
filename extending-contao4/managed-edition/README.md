@@ -94,7 +94,7 @@ the conventions, it should look something like this:
             "app/ContaoManagerPlugin.php"
         ],
         "psr-4": {
-            "AppBundle\\": "src"
+            "AppBundle\\": "src/AppBundle/"
         }
     },
 ```
