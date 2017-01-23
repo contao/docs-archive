@@ -71,7 +71,7 @@ to `app/Resources/contao` and they will be loaded at runtime.
 As [recommended by Symfony][AppBundle], the AppBundle should be your main 
 bundle if you need to customize the application. So all application specific
 source code should be placed in `src/AppBundle`. For your convenience, the
-`AppBundle` class is automatically loaded in Contao *Managed Edition* if the
+`AppBundle` class is automatically loaded in Contao *Managed Edition* if
 it can be found.
 
 
