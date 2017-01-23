@@ -1,5 +1,9 @@
 # Contao 4 – Managed Edition
 
+> #### warning:: Warning
+> This chapter is documenting an upcoming feature of Contao which
+> is not released yet.
+
 Starting with version 4.3.4, Contao is available as a so-called
 *Managed Edition*. Compared to a regular Symfony application, a 
 *Managed Edition* is limited in its customization possibilities to 
