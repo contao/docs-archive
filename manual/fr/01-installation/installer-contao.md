@@ -107,7 +107,7 @@ d'administration de votre fournisseur d'hébergement Web).
 
 ### L'outil d'installation de Contao
 
-Pour ouvrir l'outil d'installation de Contao, il suffit d'ajouter `/install.php`
+Pour ouvrir l'outil d'installation de Contao, il suffit d'ajouter `/contao/install`
 à l'URL de votre installation de Contao. Notez que l'outil d'installation est
 protégé contre les attaques par force brute et sera bloqué si un mauvais mot de
 passe a été inséré trois fois de suite. Pour enlever le verrou, ouvrez le

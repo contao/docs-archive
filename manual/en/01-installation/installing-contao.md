@@ -102,7 +102,7 @@ of your website (e.g. using the admin panel of your web hosting provider).
 
 ### The Contao install tool
 
-To open the Contao install tool, simply add `/install.php` to the URL of
+To open the Contao install tool, simply add `/contao/install` to the URL of
 your Contao installation. Note that the install tool is protected against brute
 force attacks and will be locked if a wrong password has been entered three
 times in a row. To remove the lock, open file `system/config/localconfig.php` in
