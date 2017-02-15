@@ -85,7 +85,7 @@ in the *composer.json*.
 
     ```json
     {
-       "extras": {
+       "extra": {
             "contao-manager-plugin": "Vendor\\SomeBundle\\ContaoManager\\Plugin"
        }
     }
