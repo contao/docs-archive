@@ -46,6 +46,10 @@ Nun kann die Installation von Contao mit folgendem Befehl gestartet werden:
 ```bash
 composer create-project contao/standard-edition <ziel>
 ```
+Die [Manager Edition][8] kann mit folgendem Befehl gestartet werden:
+```bash
+composer create-project contao/standard-edition <ziel>
+```
 
 Geben Sie als `<ziel>` den Ordner ein, in welchen die Contao-Dateien
 installiert werden sollen. Wenn der Ordner nicht vorhanden ist, wird er
@@ -161,3 +165,4 @@ Backend-Anmeldung weiter.
 [5]: https://getcomposer.org/doc/00-intro.md#using-the-installer
 [6]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
 [7]: https://docs.contao.org/books/cookbook/en/folder-structure.html
+[8]: https://contao.org/de/news/release-der-contao-managed-edition.html
