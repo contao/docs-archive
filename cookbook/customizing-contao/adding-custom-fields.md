@@ -30,7 +30,7 @@ $GLOBALS['TL_DCA']['tl_member']['palettes']['default'] = str_replace
 // Add the field meta data
 $GLOBALS['TL_DCA']['tl_member']['fields']['customer_number'] = array
 (
-    'label'     => &amp;$GLOBALS['TL_LANG']['tl_member']['customer_number'],
+    'label'     => &$GLOBALS['TL_LANG']['tl_member']['customer_number'],
     'exclude'   => true,
     'inputType' => 'text',
     'eval'      => array('mandatory'=>true, 'rgxp'=>'digit', 'maxlength'=>8),
