@@ -16,6 +16,9 @@ The `activateAccount` hook is triggered when a new front end account is activate
 
     The registration module that was used to activate the account.
 
+## Return value
+
+A return value is not expected.
 
 ## Example
 
