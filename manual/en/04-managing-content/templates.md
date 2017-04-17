@@ -149,4 +149,16 @@ The output of the `image.html5` template will be:
 ```
 
 
+### Twig
+
+Twig is a template engine included in the Symfony framework. It allows you to
+perform what was described in the two previous chapters and much more but with
+a slightly different syntax. You can learn how Twig works by referring to the
+[official website][2].
+
+> **Information** The name of a Twig template file is followed by a format (e.g.
+`.html`) and the extension `.twig`. Example: `layout.html.twig`.
+
+
 [1]: ../03-managing-pages/themes.md#theme-components
+[2]: http://twig.sensiolabs.org/
