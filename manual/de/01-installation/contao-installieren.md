@@ -46,9 +46,9 @@ Nun kann die Installation von Contao mit folgendem Befehl gestartet werden:
 ```bash
 composer create-project contao/standard-edition <ziel>
 ```
-Die [Manager Edition][8] kann mit folgendem Befehl gestartet werden:
+Die [Managed Edition][8] kann mit folgendem Befehl gestartet werden:
 ```bash
-composer create-project contao/standard-edition <ziel>
+composer create-project --no-dev contao/managed-edition <ziel>
 ```
 
 Geben Sie als `<ziel>` den Ordner ein, in welchen die Contao-Dateien
