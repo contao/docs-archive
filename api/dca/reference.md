@@ -912,6 +912,11 @@ Each field can be validated against a regular expression.
   <a href="palettes.md#arranging-fields">Arranging Fields</a> for supported
   values.</td>
 </tr>
+<tr>
+  <td>tl_class</td>
+  <td>CSS class(es) (<code>string</code>)</td>
+  <td>Add the given CSS class(es) to the generated HTML.  See section [Arranging Fields](palettes.md#arranging-fields) for supported values.</td>
+</tr>
 </table>
 
 
