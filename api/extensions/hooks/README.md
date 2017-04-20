@@ -61,8 +61,8 @@ custom functionality to the core.
 - [loadFormField](loadFormField.md)
 - [loadLanguageFile](loadLanguageFile.md)
 - [modifyFrontendPage](modifyFrontendPage.md)
-- newsListCountItems
-- newsListFetchItems
+- [newsListCountItems](newsListCountItems.md)
+- [newsListFetchItems](newsListFetchItems.md)
 - [outputBackendTemplate](outputBackendTemplate.md)
 - [outputFrontendTemplate](outputFrontendTemplate.md)
 - [parseArticles](parseArticles.md)
