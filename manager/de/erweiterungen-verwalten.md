@@ -5,7 +5,7 @@ Mit einem Klick auf den die Schaltfläche **Update Packages** werden alle instal
 D.h. dabei wird auch Contao 4 auf die aktuellste Version aktualisiert.
 
 ##  Pakete suchen
-Klicken Sie dazu auf *Search packages* und tippen anschließend Ihren gewünschten Suchbegriff in das Suchfeld.
+Klicken Sie dazu auf **Search packages** und tippen anschließend Ihren gewünschten Suchbegriff in das Suchfeld.
 Mit den Optionen **Contao 4 bundels** und **Contao 3 extensions** kann festgelegt werden, nach welchen Paketen gesucht wird.
 
 Je nachdem, ob der Entwickler seine Erweiterung schon als natives *Contao 4 bundle* erstellt hat, müssen Sie ggf. auf **Contao 3 extensions** umschalten.
