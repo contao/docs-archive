@@ -1,6 +1,6 @@
 # Contao Manager
 
-Der Contao Manager (CM) stellt eine graphische Oberfläche zur Verwaltung einer Contao-Installation bereit.
+Der Contao Manager (CM) stellt eine graphische Oberfläche zur einfachen Verwaltung einer Contao-Installation bereit.
 
 Mit dem CM können unter anderem folgende Aufgaben durchgeführt werden:
 * Contao installieren
@@ -9,6 +9,6 @@ Mit dem CM können unter anderem folgende Aufgaben durchgeführt werden:
 * Erweiterungen installieren
 * Erweiterungen deinstallieren
 
-Für die Zukunft sind weitere Funktionen geplant, wie z.B. Anpassen von Systemeinstellungen, Caching leeren oder durchführen von Wartungsaufgaben.
+Für die Zukunft sind weitere Funktionen geplant, wie z.B. Systemeinstellungen festlegen, Caching leeren oder allgemein Wartungsaufgaben.
 
-Der Contao Manager ist ein optionales Tool und ist nicht zwingend für den Betrieb von nötig.
+Der Contao Manager ist ein optionales Tool und nicht zwingend für den Betrieb von Contao nötig. Es erleichter aber gerade für Einsteiger die Installation und Verwaltun von Erweiterungen.
