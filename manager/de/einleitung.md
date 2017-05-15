@@ -9,6 +9,6 @@ Mit dem CM können unter anderem folgende Aufgaben durchgeführt werden:
 * Erweiterungen installieren
 * Erweiterungen deinstallieren
 
-Für die Zukunft sind weitere Funktionen geplant, wie z.B. Systemeinstellungen festlegen, Caching leeren oder allgemein Wartungsaufgaben.
+Für die Zukunft sind weitere Funktionen geplant, wie z.B. Systemeinstellungen festlegen, Caching leeren und allgemeine Wartungsaufgaben.
 
 Der Contao Manager ist ein optionales Tool und nicht zwingend für den Betrieb von Contao nötig. Es erleichter aber gerade für Einsteiger die Installation und Verwaltun von Erweiterungen.
