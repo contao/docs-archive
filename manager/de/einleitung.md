@@ -11,4 +11,6 @@ Mit dem CM können unter anderem folgende Aufgaben durchgeführt werden:
 
 Für die Zukunft sind weitere Funktionen geplant, wie z.B. Systemeinstellungen festlegen, Caching leeren und allgemeine Wartungsaufgaben.
 
-Der Contao Manager ist ein optionales Tool und nicht zwingend für den Betrieb von Contao nötig. Es erleichter aber gerade für Einsteiger die Installation und Verwaltun von Erweiterungen.
+Der Contao Manager ist ein optionales Tool und nicht zwingend für den Betrieb von Contao nötig. Das Tool erleichter aber für Einsteiger die Installation und Verwaltung von Erweiterungen.
+
+Wer möchte kann Contao 4 weiterhin direkt über die Kommandozeile mit dem Composer verwalten.
