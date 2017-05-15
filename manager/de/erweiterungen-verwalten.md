@@ -28,7 +28,7 @@ Aus diesem Grund müssen Sie nach jeder Installation auf den Button **Install To
 
 
 ## Pakete deinstallieren
-Wenn Sie eine Extension nicht mehr benötigen, klicken Sie in der Übersicht auf die Schaltfläche *Remove* und anschießend auf **Apply changes**.
+Wenn Sie eine Extension nicht mehr benötigen, klicken Sie in der Übersicht auf die Schaltfläche **Remove** und anschießend auf **Apply changes**.
 Es wird wieder ein Task im Hintergrund ausgeführt. Anschließend müssen Sie wieder das Install Tool aufrufen und die Datenbank aktualisieren.
 
 Bitte beachten Sie, dass die Contao-Core-bundles ebenfalls in der Liste stehen und theoretisch deinstalliert werden könnten.
