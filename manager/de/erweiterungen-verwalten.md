@@ -1,8 +1,10 @@
 # Pakete / Erweiterungen mit dem Contao Manager verwalten
 
+
 ## Pakete aktualisieren
 Mit einem Klick auf den die Schaltfläche **Update Packages** werden alle installieren Pakete auf den aktuellen Stand gebracht.
 D.h. dabei wird auch Contao 4 auf die aktuellste Version aktualisiert.
+
 
 ##  Pakete suchen
 Klicken Sie dazu auf **Search packages** und tippen anschließend Ihren gewünschten Suchbegriff in das Suchfeld.
@@ -10,6 +12,7 @@ Mit den Optionen **Contao 4 bundels** und **Contao 3 extensions** kann festgeleg
 
 Je nachdem, ob der Entwickler seine Erweiterung schon als natives *Contao 4 bundle* erstellt hat, müssen Sie ggf. auf **Contao 3 extensions** umschalten.
 Der Contao Manager kann nur Pakete finden, die über packagist.org gelistet sind.
+
 
 ## Pakete installieren
 Sie sollten nun eine Liste an Erweiteurngen angezeigt bekommen. Wählen Sie das gewünschte Paket aus und klicken auf **Check & Install**.
@@ -20,6 +23,7 @@ In Normalfall ist dies allerdings nicht nötig und Sie klicken auf **Apply chang
 Nun startet der Contao Manager einen Task und führt die Installation im Hintergrund durch.
 
 __Hinweis: Im Moment lassen sich mehrere Pakete nur dann gleichzeitig installieren, wenn sich diese auf der selben Ergebnisseite befinden.__ 
+
 
 ### Install Tool aufrufen
 Der Contao Manager kann in der aktuellen Version nicht auf die Datenbank zugreifen.
