@@ -231,6 +231,11 @@ order and you can add custom labels.
       itself.</td>
 </tr>
 <tr>
+  <td>pasteRoot</td>
+  <td>true/false (<code>boolean</code>)</td>
+  <td>Override disabling paste buttons to root, if root is set. (default: false)</td>
+</tr>
+<tr>
   <td>filter</td>
   <td>Query filter (<code>array</code>)</td>
   <td>Allows you to add custom filters as arrays, e.g. <code>array('status=?',
