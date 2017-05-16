@@ -1,4 +1,4 @@
-## Inhaltsverzeichnis
+# Inhaltsverzeichnis
 
 * [Einleitung](README.md)
 * [Contao Manager installieren](installation.md)
