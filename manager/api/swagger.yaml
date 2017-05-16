@@ -1,0 +1,492 @@
+swagger: '2.0'
+info:
+  title: Contao Manager API
+  version: "1.0.0-alpha4"
+basePath: /api
+consumes:
+  - application/json
+produces:
+  - application/json
+  - application/problem+json
+
+paths:
+
+  ##############
+  #   Status   #
+  ##############
+
+  /status:
+    get:
+      summary: Get Application Status
+      tags: [Status]
+      security: []
+      responses:
+        200:
+          description: Status information if the application does not require authentication (no users defined) or a user is logged in.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Status'
+        401:
+          description: If the user is not authenticated.
+
+
+  ###############
+  #   Session   #
+  ###############
+
+  /session:
+    post:
+      summary: Create a new session (login)
+      description: If no users are defined, this will create an initial user with the given credentials.
+      tags: [Session]
+      security: []
+      parameters:
+        - name: data
+          in: body
+          schema:
+            type: object
+            properties:
+              username:
+                type: string
+                required: true
+              password:
+                type: string
+                required: true
+
+      responses:
+        200:
+          description: On successful login
+          schema:
+            $ref: '#/definitions/User'
+        401:
+          description: If the authentication was not successful.
+
+    delete:
+      summary: Delete the current session (logout)
+      tags: [Session]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+      responses:
+        200:
+          description: On successful logout.
+        401:
+          description: If there is no active session.
+
+
+
+  #############
+  #   Users   #
+  #############
+
+  /users:
+    get:
+      summary: User List
+      tags: [Users]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+      responses:
+        200:
+          description: An array of users.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/User'
+    post:
+      summary: Create User
+      tags: [Users]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: data
+          in: body
+          schema:
+            $ref: '#/definitions/User'
+      responses:
+        200:
+          description: Data of the newly created user.
+          schema:
+            $ref: '#/definitions/User'
+  /users/{username}:
+    get:
+      summary: Get User
+      tags: [Users]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: username
+          in: path
+          required: true
+          type: string
+      responses:
+        200:
+          description: The user data
+          schema:
+            $ref: '#/definitions/User'
+        404:
+          description: User was not found.
+
+    put:
+      summary: Update User
+      tags: [Users]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: username
+          in: path
+          required: true
+          type: string
+      responses:
+        204:
+          description: User updated
+          schema:
+            $ref: '#/definitions/User'
+
+    delete:
+      summary: Delete User
+      tags: [Users]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: username
+          in: path
+          required: true
+          type: string
+      responses:
+        204:
+          description: User deleted
+          schema:
+            $ref: '#/definitions/User'
+
+
+
+  #####################
+  #   Configuration   #
+  #####################
+
+  /config/manager:
+    get:
+      summary: Get manager config.
+      tags: [Configuration]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+      responses:
+        200:
+          description: The manager configuration.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ManagerConfig'
+    put:
+      summary: Replace manager config.
+      tags: [Configuration]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: data
+          in: body
+          schema:
+            $ref: '#/definitions/ManagerConfig'
+      responses:
+        200:
+          description: The manager configuration.
+          schema:
+            $ref: '#/definitions/ManagerConfig'
+    patch:
+      summary: Append manager config.
+      tags: [Configuration]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: data
+          in: body
+          schema:
+            $ref: '#/definitions/ManagerConfig'
+      responses:
+        200:
+          description: The manager configuration.
+          schema:
+            $ref: '#/definitions/ManagerConfig'
+
+  /config/auth:
+    get:
+      summary: Get Composer auth config.
+      tags: [Configuration]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+      responses:
+        200:
+          description: The Composer auth configuration.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/AuthConfig'
+    put:
+      summary: Replace Composer auth config.
+      tags: [Configuration]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: data
+          in: body
+          schema:
+            $ref: '#/definitions/AuthConfig'
+      responses:
+        200:
+          description: The Composer auth configuration.
+          schema:
+            $ref: '#/definitions/AuthConfig'
+    patch:
+      summary: Append Composer auth config.
+      tags: [Configuration]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: data
+          in: body
+          schema:
+            $ref: '#/definitions/AuthConfig'
+      responses:
+        200:
+          description: The Composer auth configuration.
+          schema:
+            $ref: '#/definitions/AuthConfig'
+
+  /config/auth/github-oauth:
+    put:
+      summary: Set GitHub OAuth token.
+      tags: [Configuration]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: data
+          in: body
+          schema:
+            type: object
+            properties:
+              token:
+                type: string
+
+      responses:
+        200:
+          description: The Composer auth configuration.
+          schema:
+            type: object
+            properties:
+              github.com:
+                type: string
+                description: OAuth token for github.com.
+
+  /config/composer:
+    get:
+      summary: Get Composer config.
+      tags: [Configuration]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+      responses:
+        200:
+          description: The Composer configuration.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ComposerConfig'
+    put:
+      summary: Replace Composer config.
+      tags: [Configuration]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: data
+          in: body
+          schema:
+            $ref: '#/definitions/ComposerConfig'
+      responses:
+        200:
+          description: The Composer configuration.
+          schema:
+            $ref: '#/definitions/ComposerConfig'
+    patch:
+      summary: Append Composer config.
+      tags: [Configuration]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: data
+          in: body
+          schema:
+            $ref: '#/definitions/ComposerConfig'
+      responses:
+        200:
+          description: The Composer configuration.
+          schema:
+            $ref: '#/definitions/ComposerConfig'
+
+
+  #############
+  #   Tasks   #
+  #############
+
+  /task:
+    get:
+      summary: Gets task data.
+      tags: [Tasks]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+      responses:
+        200:
+          description: The current task data.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Task'
+        204:
+          description: If no task is active.
+    put:
+      summary: Sets task data.
+      tags: [Tasks]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: data
+          in: body
+          schema:
+            type: object
+      responses:
+        200:
+          description: The current task data.
+          schema:
+            $ref: '#/definitions/Task'
+        400:
+          description: If a task is already running or the payload is invalid
+
+    delete:
+      summary: Deletes task data.
+      tags: [Tasks]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+      responses:
+        200:
+          description: The deleted task data.
+          schema:
+            $ref: '#/definitions/Task'
+        400:
+          description: If the task cannot be deleted because it's running.
+
+  /task/status:
+    put:
+      summary: Starts or stops the active task.
+      tags: [Tasks]
+      parameters:
+        - $ref: '#/parameters/XsrfToken'
+        - name: data
+          in: body
+          schema:
+            $ref: '#/definitions/TaskStatus'
+
+      responses:
+        200:
+          description: If the status was successfully updated.
+        400:
+          description: If the task status is unknown.
+
+
+parameters:
+  XsrfToken:
+    name: XSRF-TOKEN
+    in: header
+    required: true
+    type: string
+    description: Token to prevent from XSRF attacks. Correct value can be read from cookie with name "contao_manager_xsrf" which is set on the first API access.
+
+
+definitions:
+  Status:
+    type: object
+    properties:
+      status:
+        type: string
+        enum:
+          - install
+          - auth
+          - ok
+      username:
+        type: string
+        description: Username of the current logged in user.
+      config:
+        type: object
+        description: Manager configuration
+      version:
+        type: string
+        description: Version of currently installed Contao.
+
+  User:
+    type: object
+    required: ["username"]
+    properties:
+      username:
+        type: string
+        description: Username of the user object.
+      password:
+        type: string
+        format: password
+        description: Only for setting a value, not available when retrieving user.
+
+  ManagerConfig:
+    type: object
+    properties:
+      secret:
+        type: string
+        description: Application secret to hash user passwords etc.
+      php_cli:
+        type: string
+        description: Path to the PHP executable.
+
+  AuthConfig:
+    type: object
+    properties:
+      github-oauth:
+        type: object
+
+  ComposerConfig:
+    type: object
+
+  Task:
+    type: object
+    properties:
+      id:
+        type: string
+      status:
+        type: string
+      type:
+        type: string
+      created_at:
+        type: string
+        format: date-time
+      output:
+        type: string
+
+  TaskStatus:
+    type: object
+    required: ["status"]
+    properties:
+      status:
+        type: string
+        enum:
+          - RUNNING
+          - STOPPED
+
+  ApiProblem:
+    type: object
+    properties:
+      title:
+        type: string
+      type:
+        type: string
+      status:
+        type: integer
+      detail:
+        type: string
+
+responses:
+  ApiProblem:
+    description: Unknown problem in the API
+    schema:
+      $ref: '#/definitions/ApiProblem'
+
+securityDefinitions:
+  AuthToken:
+    type: apiKey
+    description: Authentication cookie called "contao_manager_auth". The cookie is HTTP-only and set by the server after successful login.
+    name: Cookie
+    in: header
+
+security:
+  - AuthToken: []
