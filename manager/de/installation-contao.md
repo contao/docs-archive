@@ -3,8 +3,8 @@ Nach erfolgreicher Grundkonfiguration kann nun Contao installiert werden.
 Dazu wählen Sie die gewünschte Version aus und klicken auf den "Install-Button". 
 
 Die Installation kann nun mehrere Minuten in Anspruch nehmen.
-Details zur Installation können Sie sich durch Klick auf "Show Console Output"
-angezeigt werden.
+Details zur Installation können durch Klick auf "Show Console Output" angezeigt
+werden.
 
 
 ## Contao Install Tool aufrufen

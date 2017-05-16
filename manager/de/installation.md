@@ -1,21 +1,17 @@
 # Contao Manager installieren
 
-
 ## Anforderung Hosting / Systemvoraussetzungen
 Die Voraussetzungen entsprechen denen von Contao 4. Ein Kompatibilitätstest kann mit dem Contao Check durchgeführt werden.
 
-**Weitere Daten einfügen?!**
-
 
 ## Konfiguration Hosting
-Die Domain darf nicht auf das Root-Verzeichnis zeigen, sondern auf das
-Verzeichnis `web`.
+Die Domain darf nicht auf das Root-Verzeichnis zeigen, sondern muss auf das
+Unterverzeichnis `web` konfiguriert sein.
 
 **Beispiel:**
 meinedomain.de zeigt auf das Verzeichnis www/meinedomain/web
 
-Eine Konfigurtaion mit Unterverzeichnissen ist nicht möglich. Pro Installation
-wird eine (Sub)Domain benötigt.
+*Hinweis*: Pro Contao Installation wird eine eigene (Sub)Domain benötigt.
 
 
 ## Download
@@ -37,9 +33,9 @@ Sie sollten nun den Willkommen-Screen des Contao Managers sehen.
 
 ## Grundkonfiguration
 Bevor Sie nun Contao installieren, muss der Manager selbst konfiguriert werden.
-Legen Sie dazu einen neuen Benutzer an, indem Sie Benutzernamen und ein Passwort
-vergeben.
-Das Passwort ist unabhängig von der späteren Contao Installation. Bitte nötiren
+Legen Sie dazu einen neuen Benutzer an, indem Sie einen Benutzernamen und ein
+Passwort vergeben.
+Das Passwort ist unabhängig von der späteren Contao Installation. Bitte notieren
 Sie sich die Zugangsdaten.
 
 Der Contao Manager benötigt keine eigene Datenbank.
@@ -48,11 +44,13 @@ gespeichert.
 
 
 ## PHP binary - Experten Einstellungen
-Der Contao Manager versucht automatisch die PHP-Version zu erkennen.
+Der Contao Manager versucht automatisch den PHP-Pfad zu erkennen.
 Leider ist das nicht immer möglich, deswegen sollten Sie die Einstellung noch
 einmal prüfen.
-Klicken Sie wenn nötig dazu einmal auf das Zahnradsymbol neben dem
-Install-Button.
+
+Falls eine Version erkannt wurde, müssten Sie zuerst einmal auf das
+"Zahnradsymbol" neben dem "Install-Button" klicken, damit die Einstellung
+sichtbar wird.
 
 Ein Liste mit bekannten Hosting-Konfigurationen finden Sie hier:
 **Liste Hosting PHP binaris? **
