@@ -73,4 +73,4 @@ validate: build install-python
 	@python_modules/bin/python2.7 python_modules/bin/html5validator --root extending-contao4/_book/ --ignore "gitbook/plugins" "element must have an" "A document must not include both" "Duplicate ID"
 	@python_modules/bin/python2.7 python_modules/bin/html5validator --root manager/_book/           --ignore "gitbook/plugins" "element must have an" "A document must not include both" "Duplicate ID"
 
-deploy: validate build-pdf
+deploy: build build-pdf
