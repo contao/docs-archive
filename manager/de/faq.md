@@ -11,3 +11,12 @@ Löschen Sie im Verzeichnis `contao-manager` die Datei `users.json`.
 
 Rufen Sie nun den Contao Manager (`contao-manager.phar.php`) erneut auf und
 legen einen neuen Admin-User an.
+
+
+## Kann der Contao Manager zu einer bestehenden Installation hinzugefügt werden?
+Ja, wenn Sie eine Contao 4 Installation in der Managed Edition verwenden, dann
+kann der CM nachinstalliert werden. Dazu einfach die `contao-manager.phar.php`
+in das Verzeichnis `web` laden.
+
+Der Manager erkennt bei der Grundinstallation, dass bereits Contao installiert
+ist.
