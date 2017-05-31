@@ -231,7 +231,7 @@ order and you can add custom labels.
       itself.</td>
 </tr>
 <tr>
-  <td>pasteRoot</td>
+  <td>rootPaste</td>
   <td>true/false (<code>boolean</code>)</td>
   <td>Override disabling paste buttons to root, if root is set. (default: false)</td>
 </tr>
