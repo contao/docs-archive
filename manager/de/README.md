@@ -16,15 +16,16 @@ Mit dem CM können unter anderem folgende Aufgaben durchgeführt werden:
 * Erweiterungen suchen
 * Erweiterungen installieren
 * Erweiterungen deinstallieren
+* Contao Cache leeren
 
 Für die Zukunft sind weitere Funktionen geplant, wie z.B. Systemeinstellungen
-festlegen, Caching leeren oder den Contao Check ausführen.
+festlegen oder den Contao Check ausführen.
 
 Der Contao Manager ist optional und nicht zwingend für den Betrieb von Contao
-nötig. Das Tool erleichtert aber für Einsteiger die Installation und Verwaltung
-von Erweiterungen, da keine Composer-Kenntnisse nötig sind.
+nötig. Das Tool erleichtert jedoch besonders Einsteigern die Installation und
+Verwaltung von Erweiterungen, da keine Composer-Kenntnisse nötig sind.
 
-Wer möchte, kann die Installation von Contao 4 und Extensions auch in Zukunft
-direkt über die Kommandozeile per Composer verwalten.
+Es ist weiterhin möglich die Installation von Contao 4 und Extensions direkt
+über die Kommandozeile per Composer zu verwalten.
 
 {% include "LICENSE.md" %}
