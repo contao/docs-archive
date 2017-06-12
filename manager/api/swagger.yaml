@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   title: Contao Manager API
-  version: "1.0.0-alpha4"
+  version: "1.0.0-alpha10"
 basePath: /api
 consumes:
   - application/json
@@ -20,6 +20,15 @@ paths:
       summary: Get Application Status
       tags: [Status]
       security: []
+      parameters:
+        - name: XSRF-TOKEN
+          in: header
+          type: string
+          description: Only required if the user is already logged in.
+        - name: contao_manager_auth
+          in: cookie
+          type: string
+          description: Necessary if a user has been created.
       responses:
         200:
           description: Status information if the application does not require authentication (no users defined) or a user is logged in.
@@ -53,10 +62,15 @@ paths:
               password:
                 type: string
                 required: true
-
       responses:
         200:
           description: On successful login
+          headers:
+            contao_manager_auth:
+              description: Authentication as HTTP-only cookie.
+              type: cookie
+            contao_manager_xsrf:
+              type: cookie
           schema:
             $ref: '#/definitions/User'
         401:
@@ -66,13 +80,13 @@ paths:
       summary: Delete the current session (logout)
       tags: [Session]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
       responses:
         200:
           description: On successful logout.
         401:
           description: If there is no active session.
-
 
 
   #############
@@ -84,6 +98,7 @@ paths:
       summary: User List
       tags: [Users]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
       responses:
         200:
@@ -96,6 +111,7 @@ paths:
       summary: Create User
       tags: [Users]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: data
           in: body
@@ -106,11 +122,13 @@ paths:
           description: Data of the newly created user.
           schema:
             $ref: '#/definitions/User'
+
   /users/{username}:
     get:
       summary: Get User
       tags: [Users]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: username
           in: path
@@ -128,6 +146,7 @@ paths:
       summary: Update User
       tags: [Users]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: username
           in: path
@@ -143,6 +162,7 @@ paths:
       summary: Delete User
       tags: [Users]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: username
           in: path
@@ -155,7 +175,6 @@ paths:
             $ref: '#/definitions/User'
 
 
-
   #####################
   #   Configuration   #
   #####################
@@ -165,6 +184,7 @@ paths:
       summary: Get manager config.
       tags: [Configuration]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
       responses:
         200:
@@ -177,6 +197,7 @@ paths:
       summary: Replace manager config.
       tags: [Configuration]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: data
           in: body
@@ -191,6 +212,7 @@ paths:
       summary: Append manager config.
       tags: [Configuration]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: data
           in: body
@@ -207,6 +229,7 @@ paths:
       summary: Get Composer auth config.
       tags: [Configuration]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
       responses:
         200:
@@ -219,6 +242,7 @@ paths:
       summary: Replace Composer auth config.
       tags: [Configuration]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: data
           in: body
@@ -233,6 +257,7 @@ paths:
       summary: Append Composer auth config.
       tags: [Configuration]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: data
           in: body
@@ -249,6 +274,7 @@ paths:
       summary: Set GitHub OAuth token.
       tags: [Configuration]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: data
           in: body
@@ -273,6 +299,7 @@ paths:
       summary: Get Composer config.
       tags: [Configuration]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
       responses:
         200:
@@ -285,6 +312,7 @@ paths:
       summary: Replace Composer config.
       tags: [Configuration]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: data
           in: body
@@ -299,6 +327,7 @@ paths:
       summary: Append Composer config.
       tags: [Configuration]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: data
           in: body
@@ -320,6 +349,7 @@ paths:
       summary: Gets task data.
       tags: [Tasks]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
       responses:
         200:
@@ -334,6 +364,7 @@ paths:
       summary: Sets task data.
       tags: [Tasks]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: data
           in: body
@@ -351,6 +382,7 @@ paths:
       summary: Deletes task data.
       tags: [Tasks]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
       responses:
         200:
@@ -365,17 +397,37 @@ paths:
       summary: Starts or stops the active task.
       tags: [Tasks]
       parameters:
+        - $ref: '#/parameters/AuthCookie'
         - $ref: '#/parameters/XsrfToken'
         - name: data
           in: body
           schema:
             $ref: '#/definitions/TaskStatus'
-
       responses:
         200:
           description: If the status was successfully updated.
         400:
           description: If the task status is unknown.
+
+
+  ################
+  #   Packages   #
+  ################
+
+  /packages:
+    get:
+      summary: Gets list of installed packages
+      tags: [Packages]
+      parameters:
+        - $ref: '#/parameters/AuthCookie'
+        - $ref: '#/parameters/XsrfToken'
+      responses:
+        200:
+          description: Collection of installed packages. Object key equals package name.
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/Package'
 
 
 parameters:
@@ -385,6 +437,12 @@ parameters:
     required: true
     type: string
     description: Token to prevent from XSRF attacks. Correct value can be read from cookie with name "contao_manager_xsrf" which is set on the first API access.
+  AuthCookie:
+    name: contao_manager_auth
+    in: cookie
+    required: true
+    type: string
+    description: Authentication cookie to access the Manager API.
 
 
 definitions:
@@ -462,6 +520,50 @@ definitions:
         enum:
           - RUNNING
           - STOPPED
+
+  Package:
+    type: object
+    properties:
+      name:
+        type: string
+      version:
+        type: string
+        description: Currently installed version
+      constraint:
+        type: string
+        description: Version constraint in composer.json
+      type:
+        type: string
+        enum:
+          - contao-bundle
+          - contao-module
+      time:
+        type: string
+      description:
+        type: string
+      license:
+        type: array
+        items:
+          type: string
+      authors:
+        type: array
+        items:
+          type: object
+          properties:
+            name:
+              type: string
+            email:
+              type: string
+            homepage:
+              type: string
+      extra:
+        type: object
+        properties:
+          contao-manager-plugin:
+            type: string
+            description: Class name if this package has a Manager Plugin.
+      abandoned:
+        type: boolean
 
   ApiProblem:
     type: object
