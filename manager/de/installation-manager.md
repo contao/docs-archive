@@ -10,7 +10,7 @@ Die folgenden Hostinganbieter wurden bereits auf einen fehlerfreien Betrieb mit
 dem Contao Manager und Contao 4 getestet.
 
 Auf diese Daten besteht kein Anspruch auf Richtigkeit und Vollständigkeit.
-Das Contao-Teaam bitte Sie um Ihre Mithilfe, diese Tabelle zu vervollständigen
+Das Contao-Team bittet Sie um Ihre Mithilfe, diese Tabelle zu vervollständigen
 und die Daten aktuell zu halten.
 
 {% include "kompatible-hoster.md" %}
@@ -38,7 +38,7 @@ Diese wird per FTP-Upload auf den Webserver in das Verzeichnis `web` übertragen
 
 
 ## Contao Manager aufrufen
-Anschließend rufen Sie mit Ihrem Browser die Domain
+Anschließend rufen Sie mit Ihrem Browser die URL
 `http://www.meinedomain.de/contao-manager.phar.php` auf.
 Sie sollten nun den Willkommen-Screen des Contao Managers sehen.
 

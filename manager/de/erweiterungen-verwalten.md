@@ -8,7 +8,7 @@ Zugangsdaten ein.
 
 ## Pakete aktualisieren
 Mit einem Klick auf die Schaltfläche "Pakete aktualisieren" werden alle
-installieren Pakete auf den aktuellen Stand gebracht.
+installierten Pakete auf den aktuellen Stand gebracht.
 D.h. dabei wird auch Contao 4 auf die neuste Version aktualisiert.
 
 
@@ -30,7 +30,7 @@ sind.
 
 
 ## Pakete installieren
-Sie sollten nun eine Liste an Erweiteurngen angezeigt bekommen. Wählen Sie das
+Sie sollten nun eine Liste an Erweiterungen angezeigt bekommen. Wählen Sie das
 gewünschte Paket aus und klicken auf "Prüfen & Installieren".
 
 Es erscheint nun die Möglichkeit eine bestimmte Version festzulegen.
@@ -46,7 +46,7 @@ gewählten Erweiterung im Hintergrund durch.
 installieren, wenn sich diese auf der selben Ergebnisseite befinden.* 
 
 
-### Install Tool aufrufen
+### Installtool aufrufen
 Der Contao Manager hat in der aktuellen Version keinen Zugriff auf die
 Datenbank.
 
