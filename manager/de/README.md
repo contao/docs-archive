@@ -1,16 +1,18 @@
 # Contao Manager
 
-Das ist das offizielle Handbuch für den Contao Manager.
-Sie finden die aktuellste Version unter
-[docs.contao.org](https://docs.contao.org/).
+Dies ist das offizielle Handbuch für den Contao Manager. Die neuste
+Version ist unter [docs.contao.org](https://docs.contao.org/)
+erhältlich.
 
 
 ## Aufgabe des Managers
-Der Contao Manager (CM) ist ein Tool, welches eine graphische Oberfläche zur
-einfachen Verwaltung einer Contao-Installation bietet. Im Prinzip werden vom CM
-die nötigen Befehle für den Composer im Hintergrund ausgeführt. 
 
-Mit dem CM können unter anderem folgende Aufgaben durchgeführt werden:
+Der Contao Manager ist ein Tool, welches eine grafische Oberfläche zur
+einfachen Verwaltung einer Contao-Installation bietet. Im Prinzip werden
+vom Manager die nötigen Befehle für den Composer im Hintergrund
+ausgeführt.
+
+Mit dem Manager können unter anderem folgende Aufgaben durchgeführt werden:
 * Contao installieren
 * Contao aktualisieren
 * Erweiterungen suchen

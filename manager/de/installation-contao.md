@@ -1,4 +1,5 @@
 # Contao per Contao Manager installieren
+
 Nach erfolgreicher Grundkonfiguration kann nun Contao installiert werden.
 Dazu wählen Sie die gewünschte Version aus und klicken auf die Schaltfläche
 "Contao installieren". 
@@ -13,6 +14,7 @@ Details zum Installationsprozess können durch Klick auf
 
 
 ## Contao Installtool aufrufen
+
 Sobald der Contao Manager alle Pakete installiert hat, klicken Sie auf die
 Schaltfläche "Installtool".
 

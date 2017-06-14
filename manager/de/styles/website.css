@@ -1,0 +1,21 @@
+#disqus_thread {
+    margin-top: 50px;
+    padding: 5px 15px;
+}
+
+.callout {
+    text-align: justify;
+}
+
+.callout h4 {
+    display: inline;
+    font-size: inherit;
+}
+
+.callout h4:after {
+    content: ": ";
+}
+
+.callout div, .callout p {
+    display: inline;
+}

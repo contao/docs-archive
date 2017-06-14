@@ -4,7 +4,8 @@ Hier finden Sie eine Übersicht über häufige Fragen zum Contao Manager.
 
 
 ## Wie kann man den Contao Manager aktualisieren?
-Grundsätzlich ist ein manuelles Update nicht nötig. Der CM führt täglich
+
+Grundsätzlich ist ein manuelles Update nicht nötig. Der Manager führt täglich
 automatisch im Hintergrund eine Prüfung durch. Sollte eine neue Version
 verfügbar sein, aktualisiert sich der Manager selbst.
 
@@ -13,6 +14,7 @@ herunterladen und diese manuell per FTP hochladen und ersetzen.
 
 
 ## Contao Manager Zugangsdaten vergessen
+
 Um Ihr Passwort zurückzusetzen, müssen Sie sich per FTP mit Ihrem Server
 verbinden.
 
@@ -23,6 +25,7 @@ legen einen neuen Admin-User an.
 
 
 ## Kann der Contao Manager zu einer bestehenden Installation hinzugefügt werden?
+
 Ja, wenn Sie eine Contao 4 Installation in der Managed Edition verwenden, dann
 kann der CM nachinstalliert werden. Dazu einfach die `contao-manager.phar.php`
 in das Verzeichnis `web` laden.
