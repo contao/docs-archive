@@ -22,8 +22,7 @@
           "base": "https://github.com/contao/docs/edit/master/manager",
             "label": {
                 "en": "Edit This Page",
-                "de": "Seite bearbeiten",
-                "fr": "Modifier cette page"
+                "de": "Seite bearbeiten"
             }
         },
         "disqus": {
