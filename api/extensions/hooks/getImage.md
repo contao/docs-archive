@@ -62,7 +62,7 @@ $GLOBALS['TL_HOOKS']['getImage'][] = array('MyClass', 'myGetImage');
 // MyClass.php
 public function myGetImage($image, $width, $height, $mode, $strCacheName, $objFile, $target, $objImage)
 {
-    return MyImage::generateThumbnail($image, $widht, $height, $mode);
+    return MyImage::generateThumbnail($image, $width, $height, $mode);
 }
 ```
 
