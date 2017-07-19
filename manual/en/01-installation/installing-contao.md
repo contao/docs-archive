@@ -28,7 +28,7 @@ curl -L http://download.contao.org/3.5.2 | tar -xzp
 
 ### Installing with Composer
 
-You can also install Contao with Composer using the [contao/standard-edition][3]
+You can also install Contao with Composer using the [contao/managed-edition][3]
 repository.
 
 First of all, you must [install Composer][4]. It can be installed globally with
@@ -44,7 +44,7 @@ On Windows, you can download and run the [installer][5].
 Now, you can run the installation process of Contao with the following command:
 
 ```bash
-composer create-project contao/standard-edition <target>
+composer create-project contao/managed-edition <target>
 ```
 
 You have to replace the `<target>` parameter with a path to a folder where the
@@ -54,7 +54,7 @@ created automatically.
 > #### info:: Note
 > The command above always installs the latest stable version. If you
 > want to install a specific version, you must insert it in the command as for
-> example: `composer create-project contao/standard-edition:4.1.3 <target>`
+> example: `composer create-project contao/managed-edition:4.3.10 <target>`
 
 <!-- Quote break -->
 
@@ -153,7 +153,7 @@ administration area.
 
 [1]: https://contao.org/en/download.html
 [2]: http://www.winscp.net/
-[3]: https://github.com/contao/standard-edition
+[3]: https://github.com/contao/managed-edition
 [4]: https://getcomposer.org/download/
 [5]: https://getcomposer.org/doc/00-intro.md#using-the-installer
 [6]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
