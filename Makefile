@@ -8,7 +8,6 @@ help:
 	@echo "Other commands:"
 	@echo "	make build			Builds HTML version of all books"
 	@echo "	make build-pdf			Builds PDFs for the user manual"
-	@echo "	make validate			Builds books and validates for invalid HTML output"
 	@echo "	make install			Installs latest GitBook and dependencies"
 	@echo ""
 
@@ -33,8 +32,4 @@ install-python:
 	@echo "--> You must have Python virtualenv"
 	@virtualenv python_modules
 
-validate: build install-python
-	@python_modules/bin/pip install html5validator
-	@python_modules/bin/python2.7 python_modules/bin/html5validator --root manual/_book/ --ignore "gitbook/plugins" "element must have an" "A document must not include both" "Duplicate ID"
-
-deploy: validate build-pdf
+deploy: build build-pdf
