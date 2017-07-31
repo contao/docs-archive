@@ -1,3 +1,5 @@
+> TODO: rewrite
+
 # Publish your bundle
 
 Got your bundle working? Now it's time to publish it. This short guide focuses on bundles that should be available

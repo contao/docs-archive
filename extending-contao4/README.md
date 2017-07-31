@@ -1,19 +1,51 @@
-# Building extensions for Contao 4
+# Extending Contao 4
+**What's this all about?**  
 
-Building extensions for Contao 4 is (currently) still very similar to Contao 3.
-The fundamentals like DCA, language files and templates are still in place and best practice,
-but we will slowly migrate to use more and more Symfony components.
+This book is intended as a reference for developers. 
 
-In this book, we will cover several chapters on how to prepare your Contao 3 extensions to
-be compatible with Contao 4, or how to migrate them to a Symfony bundle.
+- We will cover several chapters on how to write or **migrate your Contao 3
+  extensions** to be compatible with Contao 4.
+  
+- Contao 4 is the first Contao version built on the Symfony framework. We
+  therefore also cover the new way of extending Contao by **writing
+  Symfony bundles** in the first place.
+  
+- You can customize Contao a lot without even needing to develop an extension. 
+  We briefly cover how to do this as well and focus on the specialties involved
+  with **customizing the *Contao Managed Edition*** (in comparison to an off
+  the shelf Symfony application).
 
-> #### info:: Info  
-> This book is intended as a to guide for developers familiar with Contao 3.
-> If you are new to Contao, you should read the manual or cookbook first (see https://docs.contao.org/).
 
-You can find the latest version of this document on [docs.contao.org](https://docs.contao.org/).
+**A word on building extensions for Contao 4**
+   
+Today, Contao is in a transition state - therefore two approaches exist on
+building extensions for Contao 4:
+* writing a Contao module (*the old way like in Contao 3*)
+* writing a Symfony bundle *(the new way)*
+
+The first approach is basically the same than writing an extension for
+Contao 3. Thanks to the existence of a compatibility layer Contao 3 extensions
+can be run in Contao 4 with minimal migration effort. If your code still needs
+to support Contao 3 alongside Contao 4, this is the only option to go.  
+ 
+The second approach is the **recommended way** for new projects. This way your
+extension is ready for future Contao versions where we will slowly migrate to
+use more and more Symfony components. Note that the compatibility layer is
+already deprecated and will be dropped with Contao 5 as well. And - most 
+important - you don't want to miss all of the cool new features that come with
+Contao 4 and the Symfony ecosystem, don't you? (It's really worth it!)
+
+
+> #### info:: How to?
+> For a more step-by-step approach for writing a bundle, have a look in our
+> [Cookbook][Cookbook]. This is also a good idea if your new to Contao or Symfony.
+
+You can find the latest version of this document on
+[docs.contao.org](https://docs.contao.org/).
 
 
 {% include "SUMMARY.md" %}
 
 {% include "LICENSE.md" %}
+
+[Cookbook]: ../cookbook/README.md

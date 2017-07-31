@@ -4,7 +4,7 @@ developers. The topics are in no way intended to be exhaustive. However, please 
 help this become a valuable resource over time.
 
 
-## Table of contents
+## Various topics
 
 * Installation & Setup
     * [Cron job vs. periodic command scheduler](setup/cron-job.md)
@@ -12,16 +12,46 @@ help this become a valuable resource over time.
 
 
 * Customization
-    * Writing an AppBundle for the managed edition
     * Overwriting resources
     * [Handling legacy routes](customization/legacy-routes.md)    
+    * [Modifying dca entries](customization/data-container.md)
     
         
-* Developing a new bundle
-    * [Overview and basic structure](bundle-dev/overview.md)
-    * [Setting up a local dev environment](bundle-dev/local-dev-environment.md)
-    * [Writing a plugin for the managed edition](bundle-dev/manager-plugin.md)
-    * [Using configuration](bundle-dev/configuration.md)
+
+## Bundle development tutorial
+
+Contao 4 builds on Symfony. So if you are somewhat familiar with the Symfony 
+ecosystem, you should have a look at the developer documentation on extending
+Contao 4. And if you want to get more familiar with Symfony (which on a long
+term you should do), check out their great and extensive documentation. 
+
+→ [Extending Contao 4][ExtendingContao4]  
+→ [Symfony Bundle Development][SymfonyBundleDev]
+
+
+**What to expect**  
+
+Hopefully lot's of practical code examples and guides that not only focus on
+Contao but may also include things that are also valid for Symfony itself. 
+This is an attempt for a more guided approach than the developer reference. 
+
+### Let's go
+
+1) [Overview and structure](bundle-dev/overview.md)
+2) [Set up your local dev environment](bundle-dev/local-dev-environment.md)
+3) Use new features
+    * About semantic configuration
     * [About services and dependency injection](bundle-dev/services-di.md)
-    * Using Twig for templates
-    * [Publishing a reusable bundle](bundle-dev/publish.md)
+    * Use Twig for templates
+4) Add a Manager Plugin
+5) [Publish your reusable bundle](bundle-dev/publish.md)
+
+
+### Other references
+
+* TODO
+
+
+
+[ExtendingContao4]: ../../extending-contao4/README.md
+[SymfonyBundleDev]: https://symfony.com/doc/current/bundles.html

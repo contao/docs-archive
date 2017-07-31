@@ -1,9 +1,42 @@
 # Contao 4 – Managed Edition
 
+
 Starting with version 4.3.4, Contao is available as a so-called
 *Managed Edition*. Compared to a regular Symfony application, a 
 *Managed Edition* is limited in its customization possibilities to 
 allow automatic management by third-party bundles.
+
+
+## Background
+
+A regular Symfony application consists of a collection of bundles (typically
+installed via composer), some configuration and application specific code.
+Typically there is a class called ``AppKernel.php`` where the bundles which
+should get loaded can be registered.
+
+So installing/removing a new bundle typically means
+ 1. updating the composer requirements - installing/removing the component
+ 2. adjusting the configuration (e.g. routes, parameters)
+ 3. adding/removing a line of code to ``AppKernel.php`` (registering the bundle)
+  
+These are rather technical tasks that involve editing code files and using the
+command line which would normally prevent non-technical users from updating the
+software or adding/removing extensions. 
+
+Contao 4 therefore comes prepacked in two versions: The *Standard* and the
+*Managed Edition*. While the *Standard Edition* behaves just like a regular
+Symfony application, the *Managed Edition* (together with the 
+[Contao Manager][ContaoManager]) tries to automate all of the needed
+adjustments. The version comes with the trade-off that some customizations
+might be harder to achieve than with a default Symfony application.
+
+**Things work slightly different in the managed edition…**
+
+This however means that a bundle that works in the managed edition will have
+to ship a basic configuration and tell the system somehow how it should be
+loaded. (Furthermore as no ``AppKernel.php`` exists in the managed edition
+there are custom mechanisms e.g. to load an ``AppBundle`` or setup custom
+routes - have a look into the Contao 4 Cookbook to find out more about this.)    
 
 
 ## Differences to Contao Standard Edition
@@ -43,69 +76,15 @@ is taken into account, and an extension can be disabled by placing a
 `.skip` file into the extension folder.
 
 
-## Customizing the application
 
-The Contao *Managed Edition* is not a standard Symfony application,
+## Customizing the application
+The *Contao Managed Edition* is not a standard Symfony application,
 so you cannot simply edit the config files. In addition to loading 
 configuration from packages installed by Composer, you can customize
 an installation in several ways.
 
-
-### Adding a config file
-
-There are two configuration files available in Contao *Managed Edition*:
-
-1. `app/config/parameters.yml` contains parameters like database
-    credentials. The file is created and updated by the install tool.
-
-2. `app/config/config.yml` can be created manually to adjust the
-    Symfony configuration. This config file is loaded after all plugins.
-
-
-### Adding resources
-
-The `app/Resources` directory behaves exactly like in a Symfony standard
-application, meaning you can override Twig templates etc. If you want
-to override Contao resources like DCA files, you can simply add them
-to `app/Resources/contao` and they will be loaded at runtime.
-
-
-### Adding an AppBundle
-
-As [recommended by Symfony][AppBundle], the AppBundle should be your main 
-bundle if you need to customize the application. So all application specific
-source code should be placed in `src/AppBundle`. For your convenience, the
-`AppBundle` class is automatically loaded in Contao *Managed Edition* if
-it can be found.
-
-
-### Adding a Manager Plugin
-
-Each application can have one global class `ContaoManagerPlugin` which
-will be automatically loaded if it exists. We recommend this to be
-located in your `app` folder, but that does not really matter as long
-as the Composer class loader can find it. That means you have to add
-it to the `autoload` section of your `composer.json`. If you follow 
-the conventions, it should look something like this:
-
-```json
-    "autoload": {
-        "classmap": [
-            "app/ContaoManagerPlugin.php"
-        ],
-        "psr-4": {
-            "AppBundle\\": "src/AppBundle/"
-        }
-    },
-```
-
-By using a custom plugin you can adjust all features of the application
-in the same way any Composer package can do. The `ContaoManagerPlugin`
-will be loaded last, so you can always override any existing setup for
-your application.
-See the other chapters to learn more about how you can use the plugin
-to instruct the *Managed Edition* on what it is supposed to do.
+→ [Customizing the Managed Edition](customizing.md)  
 
 
 
-[AppBundle]: http://symfony.com/doc/current/best_practices/business-logic.html
+[ContaoManager]: https://github.com/contao/contao-manager

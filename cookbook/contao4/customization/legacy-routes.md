@@ -1,3 +1,5 @@
+> TODO: rewrite
+
 # Handling legacy routes
 
 It might be helpful to define some permanent redirects for old urls that are still cached by search engines. There is a

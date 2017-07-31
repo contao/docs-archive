@@ -1,3 +1,5 @@
+> TODO: rewrite
+
 # Cron job vs. periodic command scheduler
 
 Contao by default has a *periodic command scheduler* activated (see: ``System`` / ``Settings`` / ``Front end
