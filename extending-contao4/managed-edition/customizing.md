@@ -18,6 +18,16 @@ There are two configuration files available in Contao Managed Edition:
 2. `app/config/config.yml` can be created manually to adjust the
     Symfony configuration. This config file is loaded after all plugins.
 
+> #### info:: Info
+> You can as well create a ``config_prod.yml`` or ``config_dev.yml``. If those 
+> are present they will get loaded **instead** of the ``config.yml`` in the
+> respective environments (``prod`` / ``dev``). You most likely want to add an
+> import for the common config then:
+> ```yml
+> imports:
+> - { resource: config.yml }
+> ```
+
 
 ## Adding resources
 
