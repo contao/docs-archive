@@ -1,43 +1,42 @@
-> TODO: rewrite
-
 # Modifying dca entries
-* extension vs overwriting resources
-* todo
 
-
-
-## Altering the palette
+## Altering palettes
  
-... abc ... 
+Does this look familiar to you? Using regular expressions or ``str_replace`` to
+alter a palette of an existing data container?
 
 ```php
-// Example A
+// the hard/unclear way
 
 $GLOBALS['TL_DCA']['tl_page']['palettes']['regular'] = preg_replace(
     '~(\{meta_legend\}[^;]*;)~',
-    '$1{mvo_facebook_og_legend},mvo_facebook_og_images;',
+    '$1{my_bundle_abc_legend},my_bundle_abc_field;',
     $GLOBALS['TL_DCA']['tl_page']['palettes']['regular']
 );
 ```
 
 
-**A more structured way** to manipulate the palette string is by using the ``PaletteManipulator``. This allows for a
-descriptive way to add legends and fields. 
+**A more structured way** to manipulate the palette string is by using the
+``PaletteManipulator``. This allows for a descriptive way to add legends and
+fields.
 
 
 ```php
-// Example B
+// the neat way
 
 \Contao\CoreBundle\DataContainer\PaletteManipulator::create()
-    ->addLegend('assets_legend', 'webfonts_legend', \Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_BEFORE)
-    ->addField('assets_collection', 'assets_legend', \Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_APPEND)
-    ->applyToPalette('default', 'tl_page');
+    ->addLegend('my_bundle_abc_legend', 'meta_legend', \Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_BEFORE)
+    ->addField('my_bundle_abc_field', 'my_bundle_abc_legend', \Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_APPEND)
+    ->applyToPalette('regular', 'tl_page');
 ```
 
->Note that you can currently only add new items not remove existing ones.
+> #### info:: Info
+> Note that you can currently only add new items not remove existing ones.
 
->Have a look into the [PaletteManipulator.php][1] to find out more options or look how the technique is used in contao's
-default bundles: for example [adding items to the ``default`` palette of``tl_layout`` in the NewsBundle][2].
+Have a look into the [PaletteManipulator][1] to find out more options or see
+how the technique is used in Contao's default bundles: for example 
+[adding items to the ``default`` palette of``tl_layout``][2] by the
+``NewsBundle``.
 
 
 

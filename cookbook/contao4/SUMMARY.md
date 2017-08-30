@@ -13,7 +13,7 @@ help this become a valuable resource over time.
 
 * Customization
     * Overwriting resources
-    * [Handling legacy routes](customization/legacy-routes.md)    
+    * [Handling custom routes](customization/custom-routes.md)    
     * [Modifying dca entries](customization/data-container.md)
     
         
@@ -41,7 +41,7 @@ This is an attempt for a more guided approach than the developer reference.
 2) [Set up your local dev environment](bundle-dev/local-dev-environment.md)
 3) Use new features
     * About semantic configuration
-    * [About services and dependency injection](bundle-dev/services-di.md)
+    * [About Services and Dependency Injection](bundle-dev/services-di.md)
     * Use Twig for templates
 4) Add a Manager Plugin
 5) [Publish your reusable bundle](bundle-dev/publish.md)
