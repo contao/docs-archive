@@ -4,7 +4,11 @@ For some features like [loading routes](routing.md), the order of plugins is
 important for correct functionality. A plugin can define a list of 
 **Composer packages** whose plugins should be loaded beforehand.
 
-> TODO: Improve text; it should not get confused with ``BundlePluginInterface``.
+> #### warning:: Warning
+> Do not confuse the ``DependentPluginInterface`` with the
+> ``BundlePluginInterface``. If your goal is to configure the loading order of
+> bundles, you should rather have a look into the
+> [latter one](bundle-autoloading.md).    
 
 
 ## How it's done
