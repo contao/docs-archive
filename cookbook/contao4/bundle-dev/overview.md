@@ -1,5 +1,3 @@
-> TODO: rewrite
-
 # Overview and basic structure
 
 Writing a reusable Contao 4 bundle is not hard. If you have experience in
