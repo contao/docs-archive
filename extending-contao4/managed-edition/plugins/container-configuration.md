@@ -27,7 +27,11 @@ class ContaoManagerPlugin implements ConfigPluginInterface
 }
 ```
 
-> TODO: What's the ``$managerConfig`` array for?
+> #### info:: Info
+> Currently the method will always be called with an empty array as the
+> second argument (``$managerConfig``). It's planned that the *Contao Manager*
+> will also provide an user interface to customize the configuration (a bit
+> like *system settings* in Contao 3) which then will be set in this array.
 
 
 ## Best practice

@@ -77,8 +77,9 @@ some shortcuts good to know:
   exceptions occur, it also has caching deactivated for most parts by default. If you just added a new backend module
   that does not appear or you are clearing the cache every time you are tweaking a dca field, try this one instead.
 
-* Run ``composer dump-autoload`` to regenerate the autoload files. If you are using a PSR-4 class root in your bundle
-  (and you are not using autoloader optimizations) you'll only have to run this if your class root changes. If you use
-  class maps in your bundle, however, for these you must call it whenever you add a new one.    
-
- 
+* Run ``composer dump-autoload`` to regenerate the autoload files. If you are
+  using a PSR-4 class root in your bundle and you are not using autoloader
+  optimizations (which is recommended during development for exactly these
+  reasons) you'll only have to run this if your class root changes. If you use
+  class maps in your bundle, however, for these you must call it whenever you
+  add a new one.

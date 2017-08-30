@@ -27,14 +27,18 @@ Contao 4 therefore comes prepacked in two versions: The *Standard* and the
 *Managed Edition*. While the *Standard Edition* behaves just like a regular
 Symfony application, the *Managed Edition* (together with the 
 [Contao Manager][ContaoManager]) tries to automate all of the needed
-adjustments. The version comes with the trade-off that some customizations
-might be harder to achieve than with a default Symfony application.
+adjustments.
+ 
+**Things work slightly different in the *Managed Edition*…**
+ 
+The *Managed Edition* comes with the trade-off that some customizations
+might be harder to achieve than with a default Symfony application and it means
+that it shifts the rather complex tasks (like registering configuration,
+loading order or routes etc.) to the developers rather than the users. This is
+why writing a manager plugin *might* seem complicated at first sight. But hey,
+someone's got to do the work. ;-)
 
-**Things work slightly different in the managed edition…**
-
-This however means that a bundle that works in the managed edition will have
-to ship a basic configuration and tell the system somehow how it should be
-loaded. (Furthermore as no ``AppKernel.php`` exists in the managed edition
+(Furthermore as no ``AppKernel.php`` exists in the managed edition
 there are custom mechanisms e.g. to load an ``AppBundle`` or setup custom
 routes - have a look into the Contao 4 Cookbook to find out more about this.)    
 

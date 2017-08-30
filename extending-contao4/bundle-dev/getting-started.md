@@ -51,11 +51,12 @@ Here are some things to help you get oriented:
    that enable the bundle to run inside a *Contao Managed Edition*.
  
 
-> #### warning:: Warning
+> #### warning:: One thing considering best practice …
 > Note that the Contao Core itself is in the process of migrating to Symfony.
-> So most of the code found under ``core-bundle/src/Resources/contao/``
-> is legacy and should not be considered in terms of bundle best practice.    
-
+> Everything you know from Contao 3 now lives under
+> ``core-bundle/src/Resources/contao/``. Stuff that is deprecated and already
+> has an alternative triggers ``E_USER_DEPRECATED`` notices just like Symfony
+> so you can even see deprecated usages in the web developer toolbar.
 
 ## Cookbook 
 Also you might want to take a look at the quick start section in the

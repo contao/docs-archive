@@ -2,8 +2,8 @@
 
 # Overview and basic structure
 
-Writing a reusable Contao 4 bundle is not hard. If you have experience developing
-Contao 3 extensions you'll quickly find your way.
+Writing a reusable Contao 4 bundle is not hard. If you have experience in
+developing Contao 3 extensions you'll quickly find your way.
 
 Before we start, check out these overview sections from the Contao 4 developer
 reference:  
