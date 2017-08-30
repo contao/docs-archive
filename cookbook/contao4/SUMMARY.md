@@ -1,6 +1,7 @@
 # Contao 4 Cookbook
-This part of the cookbook contains several technical articles about the Contao 4 ecosystem for administrators and 
-developers. The topics are in no way intended to be exhaustive. However, please feel free to add your own article to
+This part of the cookbook contains several technical articles about the
+Contao 4 ecosystem for administrators and developers. The topics are in no way
+intended to be exhaustive. However, please feel free to add your own article to
 help this become a valuable resource over time.
 
 
@@ -8,7 +9,8 @@ help this become a valuable resource over time.
 
 * Installation & Setup
     * [Cron job vs. periodic command scheduler](setup/cron-job.md)
-    * Symlinks under windows
+    * Symlinks under Windows
+    * Deployment / Asset Management / Backup
 
 
 * Customization
