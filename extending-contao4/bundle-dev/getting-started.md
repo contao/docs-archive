@@ -22,7 +22,7 @@ As a Contao 3 developer, start here:
     structure, a bundle class and a Composer definition. 
  
  2) Get familiar with [Composer][ComposerIntro] as this is the default way in
-    Symfony to install bundles and manager their dependencies.
+    Symfony to install bundles and manage their dependencies.
     
  
 ## Quick start for Contao 3 developers
@@ -47,7 +47,7 @@ Here are some things to help you get oriented:
    a module's ``config.php``, language files, …) now live under
    ``src/Resources/contao``.
    
- - ``src/ManagerPlugin`` contains the [bits](../managed-edition/plugins.md)
+ - ``src/ContaoManager`` contains the [bits](../managed-edition/plugins.md)
    that enable the bundle to run inside a *Contao Managed Edition*.
  
 
