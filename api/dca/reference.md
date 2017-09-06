@@ -1,6 +1,6 @@
 ## Reference
 
-A Data Container Array is devided into six sections. The first section stores
+A Data Container Array is divided into six sections. The first section stores
 the general table configuration like relations to other tables. The second and
 third section determine how records are listed and which operations a user is
 allowed to execute. The fourth section defines different groups of form fields
