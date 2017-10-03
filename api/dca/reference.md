@@ -534,14 +534,14 @@ filter criteria.
 </tr>
 <tr>
   <td>sql</td>
-  <td>Database field definition (<code>string</code>)</td>
-  <td>Describes data type and its database configuration, e.g.
-      <code>varchar(255) NOT NULL default ''</code></td>
+  <td>Database field definition (<code>string | array</code>)</td>
+  <td>Describes data type and its database configuration.
+      (see paragraph <a href="#sql-column-definition">SQL Column Definition</a>).</td>
 </tr>
 <tr>
   <td>relation</td>
   <td>Configuration of relations (<code>array</code>)</td>
-  <td>Describes relation to parent table (see paragraph "relations").
+  <td>Describes relation to parent table (see paragraph <a href="#relations">Relations</a>).
   </td>
 </tr>
 <tr>
@@ -974,4 +974,26 @@ model classes to load referenced data sets efficiently and developer friendly.
 </table>
 
 
+### SQL Column Definition
+
+Since Contao 3.0, the database definition is added as a string to each DCA
+field, e.g. `varchar(255) NOT NULL default ''`. Starting from Contao 4.3,
+one can use [Doctrine Schema Representation][2] to take full advantage of
+the Doctrine Database Abstraction Layer.
+
+**Examples:**
+ - `['type' => 'string', 'length' => 32, 'default' => '']`<br>
+    equals<br>
+    `varchar(32) NOT NULL default ''`
+
+ - `['type' => 'string', 'length' => 1, 'fixed' => true, 'default' => '']`<br>
+    equals<br>
+    `char(1) NOT NULL default ''`
+
+ - `['type' => 'integer', 'notnull' => false, 'unsigned' => true]`<br>
+    equals<br>
+    `INT unsigned NULL`
+
+
 [1]: https://docs.contao.org/books/manual/current/en/02-administration-area/listing-records.html
+[2]: http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/schema-representation.html#column
