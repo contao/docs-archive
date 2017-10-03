@@ -15,141 +15,30 @@ container is used to store the data or how it relates to other tables. Also you
 can enable versioning or define what happens to child records when data is being
 edited or deleted.
 
-<table>
-<tr>
-  <th>Key</th>
-  <th>Value</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td>label</td>
-  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>The label is used with page or file trees and typically includes reference
-      to the language array.</td>
-</tr>
-<tr>
-  <td>ptable</td>
-  <td>Parent table (<code>string</code>)</td>
-  <td>Name of the related parent table (table.pid = ptable.id).</td>
-</tr>
-<tr>
-  <td>ctable</td>
-  <td>Child tables (<code>array</code>)</td>
-  <td>Name of the related child tables (table.id = ctable.pid).</td>
-</tr>
-<tr>
-  <td>dataContainer</td>
-  <td>Data Container (<code>string</code>)</td>
-  <td>Table (database table), File (local configuration file) or Folder (file
-      manager).</td>
-</tr>
-<tr>
-  <td>closed</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true, you cannot add further records to the table.</td>
-</tr>
-<tr>
-  <td>notEditable</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true, the table cannot be edited.</td>
-</tr>
-<tr>
-  <td>notDeletable</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true, records in the table cannot be deleted.</td>
-</tr>
-<tr>
-  <td>notSortable</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true, records in the table cannot be sorted.</td>
-</tr>
-<tr>
-  <td>notCopyable</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true, records in the table cannot be duplicated.</td>
-</tr>
-<tr>
-  <td>notCreatable</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true, records in the table cannot be created but can be duplicated.</td>
-</tr>
-<tr>
-  <td>switchToEdit</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>Activates the "save and edit" button when a new record is added (sorting
-      mode 4 only).</td>
-</tr>
-<tr>
-  <td>enableVersioning</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true, Contao saves the old version of a record when a new version is
-      created.</td>
-</tr>
-<tr>
-  <td>doNotCopyRecords</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true, Contao will not duplicate records of the current table when a
-      record of its parent table is duplicated.</td>
-</tr>
-<tr>
-  <td>doNotDeleteRecords</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true, Contao will not delete records of the current table when a record
-      of its parent table is deleted.</td>
-</tr>
-<tr>
-  <td>onload_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Calls a custom function when a DataContainer is initialized and passes the
-      DataContainer object as argument.</td>
-</tr>
-<tr>
-  <td>onsubmit_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Calls a custom function after a record has been updated and passes the
-      DataContainer object as argument.</td>
-</tr>
-<tr>
-  <td>ondelete_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Calls a custom function when a record is deleted and passes the
-      DataContainer object as argument.</td>
-</tr>
-<tr>
-  <td>oncut_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Calls a custom function when a record is moved and passes the
-      DataContainer object as argument. Added in version 2.8.2.</td>
-</tr>
-<tr>
-  <td>oncopy_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Calls a custom function when a record is duplicated and passes the insert
-      ID and the DataContainer object as argument. Added in version 2.8.2.</td>
-</tr>
-<tr>
-  <td>onversion_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Calls a custom function when a new version of a record is created and
-      passes the table, the insert ID and the DataContainer object as argument.</td>
-</tr>
-<tr>
-  <td>onrestore_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Calls a custom function when a version of a record is restored and passes
-      the insert ID, the table, the data array and the version as argument.</td>
-</tr>
-<tr>
-  <td>sql</td>
-  <td>Table configuration (<code>array</code>)</td>
-  <td>Describes table configuration, e.g.
-  <code>'keys' => array
-      (
-        'id' => 'primary',
-        'pid' => 'index'
-      )</code></td>
-</tr>
-</table>
+| Key                | Value                             | Description                                                                                                                                     |
+|--------------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| label              | `&$GLOBALS['TL_LANG']` (`string`) | The label is used with page or file trees and typically includes reference to the language array.                                               |
+| ptable             | Parent table (`string`)           | Name of the related parent table (table.pid = ptable.id).                                                                                       |
+| ctable             | Child tables (`array`)            | Name of the related child tables (table.id = ctable.pid).                                                                                       |
+| dataContainer      | Data Container (`string`)         | Table (database table), File (local configuration file) or Folder (file manager).                                                               |
+| closed             | true/false (`boolean`)            | If true, you cannot add further records to the table.                                                                                           |
+| notEditable        | true/false (`boolean`)            | If true, the table cannot be edited.                                                                                                            |
+| notDeletable       | true/false (`boolean`)            | If true, records in the table cannot be deleted.                                                                                                |
+| notSortable        | true/false (`boolean`)            | If true, records in the table cannot be sorted.                                                                                                 |
+| notCopyable        | true/false (`boolean`)            | If true, records in the table cannot be duplicated.                                                                                             |
+| notCreatable       | true/false (`boolean`)            | If true, records in the table cannot be created but can be duplicated.                                                                          |
+| switchToEdit       | true/false (`boolean`)            | Activates the "save and edit" button when a new record is added (sorting mode 4 only).                                                          |
+| enableVersioning   | true/false (`boolean`)            | If true, Contao saves the old version of a record when a new version is created.                                                                |
+| doNotCopyRecords   | true/false (`boolean`)            | If true, Contao will not duplicate records of the current table when a record of its parent table is duplicated.                                |
+| doNotDeleteRecords | true/false (`boolean`)            | If true, Contao will not delete records of the current table when a record of its parent table is deleted.                                      |
+| onload_callback    | Callback function (`array`)       | Calls a custom function when a DataContainer is initialized and passes the DataContainer object as argument.                                    |
+| onsubmit_callback  | Callback function (`array`)       | Calls a custom function after a record has been updated and passes the DataContainer object as argument.                                        |
+| ondelete_callback  | Callback function (`array`)       | Calls a custom function when a record is deleted and passes the DataContainer object as argument.                                               |
+| oncut_callback     | Callback function (`array`)       | Calls a custom function when a record is moved and passes the DataContainer object as argument. Added in version 2.8.2.                         |
+| oncopy_callback    | Callback function (`array`)       | Calls a custom function when a record is duplicated and passes the insert ID and the DataContainer object as argument. Added in version 2.8.2.  |
+| onversion_callback | Callback function (`array`)       | Calls a custom function when a new version of a record is created and passes the table, the insert ID and the DataContainer object as argument. |
+| onrestore_callback | Callback function (`array`)       | Calls a custom function when a version of a record is restored and passes the insert ID, the table, the data array and the version as argument. |
+| sql                | Table configuration (`array`)     | Describes table configuration, e.g. `'keys' => array ( 'id' => 'primary', 'pid' => 'index' )`                                                   |
 
 
 ### Listing records
@@ -162,152 +51,33 @@ order and you can add custom labels.
 
 #### Sorting
 
-<table>
-<tr>
-  <th>Key</th>
-  <th>Value</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td>mode</td>
-  <td>Sorting mode (<code>integer</code>)</td>
-  <td><b>0</b> Records are not sorted<br>
-      <b>1</b> Records are sorted by a fixed field<br>
-      <b>2</b> Records are sorted by a switchable field<br>
-      <b>3</b> Records are sorted by the parent table<br>
-      <b>4</b> Displays the child records of a parent record (see style sheets
-      module)<br>
-      <b>5</b> Records are displayed as tree (see site structure)<br>
-      <b>6</b> Displays the child records within a tree structure (see articles
-      module)</td>
-</tr>
-<tr>
-  <td>flag</td>
-  <td>Sorting flag (<code>integer</code>)</td>
-  <td><b>1</b> Sort by initial letter ascending<br>
-      <b>2</b> Sort by initial letter descending<br>
-      <b>3</b> Sort by initial two letters ascending<br>
-      <b>4</b> Sort by initial two letters descending<br>
-      <b>5</b> Sort by day ascending<br>
-      <b>6</b> Sort by day descending<br>
-      <b>7</b> Sort by month ascending<br>
-      <b>8</b> Sort by month descending<br>
-      <b>9</b> Sort by year ascending<br>
-      <b>10</b> Sort by year descending<br>
-      <b>11</b> Sort ascending<br>
-      <b>12</b> Sort descending</td>
-</tr>
-<tr>
-  <td>panelLayout</td>
-  <td>Panel layout (<code>string</code>)</td>
-  <td><b>search</b> show the search records menu<br>
-      <b>sort</b> show the sort records menu<br>
-      <b>filter</b> show the filter records menu<br>
-      <b>limit</b> show the limit records menu.<br>
-      <br>Separate options with comma (= space) and semicolon (= new line)
-      like <code>sort,filter;search,limit</code>.</td>
-</tr>
-<tr>
-  <td>fields</td>
-  <td>Default sorting values (<code>array</code>)</td>
-  <td>One or more fields that are used to sort the table.</td>
-</tr>
-<tr>
-  <td>headerFields</td>
-  <td>Header fields (<code>array</code>)</td>
-  <td>One or more fields that will be shown in the header element (sorting mode
-      4 only).</td>
-</tr>
-<tr>
-  <td>icon</td>
-  <td>Tree icon (<code>string</code>)</td>
-  <td>Path to an icon that will be shown on top of the tree (sorting mode 5 and
-      6 only).</td>
-</tr>
-<tr>
-  <td>root</td>
-  <td>Root nodes (<code>array</code>)</td>
-  <td>IDs of the root records (pagemounts). This value usually takes care of
-      itself.</td>
-</tr>
-<tr>
-  <td>rootPaste</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>Override disabling paste buttons to root, if root is set. (default: false)</td>
-</tr>
-<tr>
-  <td>filter</td>
-  <td>Query filter (<code>array</code>)</td>
-  <td>Allows you to add custom filters as arrays, e.g. <code>array('status=?',
-      'active')</code>.</td>
-</tr>
-<tr>
-  <td>disableGrouping</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>Allows you to disable the group headers in list view and parent view.</td>
-</tr>
-<tr>
-  <td>paste_button_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>This function will be called instead of displaying the default paste
-      buttons. Please specify as <code>array('Class', 'Method')</code>.</td>
-</tr>
-<tr>
-  <td>child_record_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>This function will be called to render the child elements (sorting mode 4
-      only). Please specify as <code>array('Class', 'Method')</code>.</td>
-</tr>
-<tr>
-  <td>child_record_class</td>
-  <td>CSS class (<code>string</code>)</td>
-  <td>Allows you to add a CSS class to the parent view elements.</td>
-</tr>
-</table>
+| Key                   | Value                            | Description                                                                                                                                                                                                                                                                                                                                                                                            |
+|-----------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| mode                  | Sorting mode (`integer`)         | **0** Records are not sorted **1** Records are sorted by a fixed field **2** Records are sorted by a switchable field **3** Records are sorted by the parent table **4** Displays the child records of a parent record (see style sheets module) **5** Records are displayed as tree (see site structure) **6** Displays the child records within a tree structure (see articles module)               |
+| flag                  | Sorting flag (`integer`)         | **1** Sort by initial letter ascending **2** Sort by initial letter descending **3** Sort by initial two letters ascending **4** Sort by initial two letters descending **5** Sort by day ascending **6** Sort by day descending **7** Sort by month ascending **8** Sort by month descending **9** Sort by year ascending **10** Sort by year descending **11** Sort ascending **12** Sort descending |
+| panelLayout           | Panel layout (`string`)          | **search** show the search records menu **sort** show the sort records menu **filter** show the filter records menu **limit** show the limit records menu. Separate options with comma (= space) and semicolon (= new line) like `sort,filter;search,limit`.                                                                                                                                           |
+| fields                | Default sorting values (`array`) | One or more fields that are used to sort the table.                                                                                                                                                                                                                                                                                                                                                    |
+| headerFields          | Header fields (`array`)          | One or more fields that will be shown in the header element (sorting mode 4 only).                                                                                                                                                                                                                                                                                                                     |
+| icon                  | Tree icon (`string`)             | Path to an icon that will be shown on top of the tree (sorting mode 5 and 6 only).                                                                                                                                                                                                                                                                                                                     |
+| root                  | Root nodes (`array`)             | IDs of the root records (pagemounts). This value usually takes care of itself.                                                                                                                                                                                                                                                                                                                         |
+| rootPaste             | true/false (`boolean`)           | Override disabling paste buttons to root, if root is set. (default: false)                                                                                                                                                                                                                                                                                                                             |
+| filter                | Query filter (`array`)           | Allows you to add custom filters as arrays, e.g. `array('status=?', 'active')`.                                                                                                                                                                                                                                                                                                                        |
+| disableGrouping       | true/false (`boolean`)           | Allows you to disable the group headers in list view and parent view.                                                                                                                                                                                                                                                                                                                                  |
+| paste_button_callback | Callback function (`array`)      | This function will be called instead of displaying the default paste buttons. Please specify as `array('Class', 'Method')`.                                                                                                                                                                                                                                                                            |
+| child_record_callback | Callback function (`array`)      | This function will be called to render the child elements (sorting mode 4 only). Please specify as `array('Class', 'Method')`.                                                                                                                                                                                                                                                                         |
+| child_record_class    | CSS class (`string`)             | Allows you to add a CSS class to the parent view elements.                                                                                                                                                                                                                                                                                                                                             |
 
 
 #### Labels
 
-<table>
-<tr>
-  <th>Key</th>
-  <th>Value</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td>fields</td>
-  <td>Fields (<code>array</code>)</td>
-  <td>One or more fields that will be shown in the list (e.g.
-      <code>array('title', 'user_id:tl_user.name')</code>).</td>
-</tr>
-<tr>
-  <td>showColumns</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true Contao will generate a table header with column names (e.g. back end member list)</td>
-</tr>
-<tr>
-  <td>format</td>
-  <td>Format string (<code>string</code>)</td>
-  <td>HTML string used to format the fields that will be shown (e.g.
-      <code><strong>%s</strong></code>).</td>
-</tr>
-<tr>
-  <td>maxCharacters</td>
-  <td>Number of characters (<code>integer</code>)</td>
-  <td>Maximum number of characters of the label.</td>
-</tr>
-<tr>
-  <td>group_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Call a custom function instead of using the default group header
-      function.</td>
-</tr>
-<tr>
-  <td>label_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Call a custom function instead of using the default label function.</td>
-</tr>
-</table>
+| Key            | Value                            | Description                                                                                        |
+|----------------|----------------------------------|----------------------------------------------------------------------------------------------------|
+| fields         | Fields (`array`)                 | One or more fields that will be shown in the list (e.g. `array('title', 'user_id:tl_user.name')`). |
+| showColumns    | true/false (`boolean`)           | If true Contao will generate a table header with column names (e.g. back end member list)          |
+| format         | Format string (`string`)         | HTML string used to format the fields that will be shown (e.g. **%s** ).                           |
+| maxCharacters  | Number of characters (`integer`) | Maximum number of characters of the label.                                                         |
+| group_callback | Callback function (`array`)      | Call a custom function instead of using the default group header function.                         |
+| label_callback | Callback function (`array`)      | Call a custom function instead of using the default label function.                                |
 
 
 ### Operations
@@ -319,78 +89,24 @@ that relate to a particular record only (e.g. editing or deleting a record).
 
 #### Global operations
 
-<table>
-<tr>
-  <th>Key</th>
-  <th>Value</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td>label</td>
-  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Button label. Typically a reference to the global language array.</td>
-</tr>
-<tr>
-  <td>href</td>
-  <td>URL fragment (<code>string</code>)</td>
-  <td>URL fragment that is added to the URI string when the button is clicked
-      (e.g. <code>act=editAll</code>).</td>
-</tr>
-<tr>
-  <td>class</td>
-  <td>CSS class (<code>string</code>)</td>
-  <td>CSS class attribute of the button.</td>
-</tr>
-<tr>
-  <td>attributes</td>
-  <td>Additional attributes (<code>string</code>)</td>
-  <td>Additional attributes like event handler or style definitions.</td>
-</tr>
-<tr>
-  <td>button_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Call a custom function instead of using the default button function.
-      Please specify as <code>array('Class', 'Method')</code>.</td>
-</tr>
-</table>
+| Key             | Value                             | Description                                                                                                        |
+|-----------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| label           | `&$GLOBALS['TL_LANG']` (`string`) | Button label. Typically a reference to the global language array.                                                  |
+| href            | URL fragment (`string`)           | URL fragment that is added to the URI string when the button is clicked (e.g. `act=editAll`).                      |
+| class           | CSS class (`string`)              | CSS class attribute of the button.                                                                                 |
+| attributes      | Additional attributes (`string`)  | Additional attributes like event handler or style definitions.                                                     |
+| button_callback | Callback function (`array`)       | Call a custom function instead of using the default button function. Please specify as `array('Class', 'Method')`. |
 
 
 #### Regular operations
 
-<table>
-<tr>
-  <th>Key</th>
-  <th>Value</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td>label</td>
-  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Button label. Typically a reference to the global language array.</td>
-</tr>
-<tr>
-  <td>href</td>
-  <td>URL fragment (<code>string</code>)</td>
-  <td>URL fragment that is added to the URI string when the button is clicked
-      (e.g. <code>act=edit</code>).</td>
-</tr>
-<tr>
-  <td>icon</td>
-  <td>Icon (<code>string</code>)</td>
-  <td>Path and filename of the icon.</td>
-</tr>
-<tr>
-  <td>attributes</td>
-  <td>Additional attributes (<code>string</code>)</td>
-  <td>Additional attributes like event handler or style definitions.</td>
-</tr>
-<tr>
-  <td>button_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Call a custom function instead of using the default button function.
-      Please specify as <code>array('Class', 'Method')</code>.</td>
-</tr>
-</table>
+| Key             | Value                             | Description                                                                                                        |
+|-----------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| label           | `&$GLOBALS['TL_LANG']` (`string`) | Button label. Typically a reference to the global language array.                                                  |
+| href            | URL fragment (`string`)           | URL fragment that is added to the URI string when the button is clicked (e.g. `act=edit`).                         |
+| icon            | Icon (`string`)                   | Path and filename of the icon.                                                                                     |
+| attributes      | Additional attributes (`string`)  | Additional attributes like event handler or style definitions.                                                     |
+| button_callback | Callback function (`array`)       | Call a custom function instead of using the default button function. Please specify as `array('Class', 'Method')`. |
 
 
 ### Fields
@@ -400,168 +116,29 @@ the Contao core engine decides which type of form field to load, whether a user
 is allowed to access a certain field and whether a field can be used as sort or
 filter criteria.
 
-<table>
-<tr>
-  <th>Key</th>
-  <th>Value</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td>label</td>
-  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Field label. Typically a reference to the global language array.</td>
-</tr>
-<tr>
-  <td>default</td>
-  <td>Default value (<code>mixed</code>)</td>
-  <td>Default value that is set when a new record is created.</td>
-</tr>
-<tr>
-  <td>exclude</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field will be excluded for non-admins. It can be enabled in
-      the user group module (allowed excluded fields).</td>
-</tr>
-<tr>
-  <td>search</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field will be included in the search menu (see "sorting
-      records" -> "panelLayout").</td>
-</tr>
-<tr>
-  <td>sorting</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field will be included in the sorting menu (see "sorting
-      records" -> "panelLayout").</td>
-</tr>
-<tr>
-  <td>filter</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field will be included in the filter menu (see "sorting
-      records" -> "panelLayout").</td>
-</tr>
-<tr>
-  <td>flag</td>
-  <td>Sorting mode (<code>integer</code>)</td>
-  <td><b>1</b> Sort by initial letter ascending<br>
-      <b>2</b> Sort by initial letter descending<br>
-      <b>3</b> Sort by initial X letters ascending (see length)<br>
-      <b>4</b> Sort by initial X letters descending (see length)<br>
-      <b>5</b> Sort by day ascending<br>
-      <b>6</b> Sort by day descending<br>
-      <b>7</b> Sort by month ascending<br>
-      <b>8</b> Sort by month descending<br>
-      <b>9</b> Sort by year ascending<br>
-      <b>10</b> Sort by year descending<br>
-      <b>11</b> Sort ascending<br>
-      <b>12</b> Sort descending</td>
-</tr>
-<tr>
-  <td>length</td>
-  <td>Sorting length (<code>integer</code>)</td>
-  <td>Allows to specify the number of characters that are used to build sorting
-      groups (flag 3 and 4).</td>
-</tr>
-<tr>
-  <td>inputType</td>
-  <td>Field type (<code>string</code>)</td>
-  <td><b>text</b> Text field<br>
-      <b>password</b> Password field<br>
-      <b>textarea</b> Textarea<br>
-      <b>select</b> Drop-down menu<br>
-      <b>checkbox</b> Checkbox<br>
-      <b>radio</b> Radio button<br>
-      <b>radioTable</b> Table with images and radio buttons<br>
-      <b>imageSize</b> Two text fields with drop-down menu<br>
-      <b>inputUnit</b> Text field with small unit drop-down menu<br>
-      <b>trbl</b> Four text fields with a small unit drop-down menu<br>
-      <b>chmod</b> CHMOD table<br>
-      <b>pageTree</b> Page tree<br>
-      <b>fileTree</b> File tree<br>
-      <b>tableWizard</b> Table wizard<br>
-      <b>timePeriod</b> Text field with drop-down menu<br>
-      <b>listWizard</b> List wizard<br>
-      <b>optionWizard</b> Option wizard<br>
-      <b>moduleWizard</b> Module wizard<br>
-      <b>checkboxWizard</b> Checkbox Wizard</td>
-</tr>
-<tr>
-  <td>options</td>
-  <td>Options (<code>array</code>)</td>
-  <td>Options of a drop-down menu or radio button menu.</td>
-</tr>
-<tr>
-  <td>options_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Callback function that returns an array of options. Please specify as
-      <code>array('Class', 'Method')</code>.</td>
-</tr>
-<tr>
-  <td>foreignKey</td>
-  <td>table.field (<code>string</code>)</td>
-  <td>Get options from a database table. Returns ID as key and the field you
-      specify as value.</td>
-</tr>
-<tr>
-  <td>reference</td>
-  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Array that holds the options labels. Typically a reference to the global
-      language array.</td>
-</tr>
-<tr>
-  <td>explanation</td>
-  <td><code>&amp;$GLOBALS['TL_LANG']</code> (<code>string</code>)</td>
-  <td>Array that holds the explanation. Typically a reference to the global
-      language array.</td>
-</tr>
-<tr>
-  <td>input_field_callback</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Executes a custom function instead of using the default input field
-      routine and passes the the DataContainer object and the label as
-      arguments.</td>
-</tr>
-<tr>
-  <td>eval</td>
-  <td>Field configuration (<code>array</code>)</td>
-  <td>Various configuration options. See next paragraph.</td>
-</tr>
-<tr>
-  <td>wizard</td>
-  <td>Callback function (<code>array</code>)</td>
-  <td>Call a custom function and add its return value to the input field. Please
-      specify as <code>array('Class', 'Method')</code>.</td>
-</tr>
-<tr>
-  <td>sql</td>
-  <td>Database field definition (<code>string | array</code>)</td>
-  <td>Describes data type and its database configuration.
-      (see paragraph <a href="#sql-column-definition">SQL Column Definition</a>).</td>
-</tr>
-<tr>
-  <td>relation</td>
-  <td>Configuration of relations (<code>array</code>)</td>
-  <td>Describes relation to parent table (see paragraph <a href="#relations">Relations</a>).
-  </td>
-</tr>
-<tr>
-  <td>load_callback</td>
-  <td>Callback functions (<code>array</code>)</td>
-  <td>These functions will be called when the field is loaded. Please specify
-      each callback function as <code>array('Class', 'Method')</code>. Passes
-      the field's value and the data container as arguments. Expects the field
-      value as return value.</td>
-</tr>
-<tr>
-  <td>save_callback</td>
-  <td>Callback functions (<code>array</code>)</td>
-  <td>These functions will be called when the field is saved. Please specify
-      each callback function as <code>array('Class', 'Method')</code>. Passes
-      the field's value and the data container as arguments. Expects the field
-      value as return value. Throw an exception to display an error
-      message.</td>
-</tr>
-</table>
+| Key                  | Value                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|:---------------------|:------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| label                | `&$GLOBALS['TL_LANG']` (`string`)               | Field label. Typically a reference to the global language array.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| default              | Default value (`mixed`)                         | Default value that is set when a new record is created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| exclude              | true/false (`boolean`)                          | If true the field will be excluded for non-admins. It can be enabled in the user group module (allowed excluded fields).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| search               | true/false (`boolean`)                          | If true the field will be included in the search menu (see "sorting records" -> "panelLayout").                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| sorting              | true/false (`boolean`)                          | If true the field will be included in the sorting menu (see "sorting records" -> "panelLayout").                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| filter               | true/false (`boolean`)                          | If true the field will be included in the filter menu (see "sorting records" -> "panelLayout").                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| flag                 | Sorting mode (`integer`)                        | **1** Sort by initial letter ascending **2** Sort by initial letter descending **3** Sort by initial X letters ascending (see length) **4** Sort by initial X letters descending (see length) **5** Sort by day ascending **6** Sort by day descending **7** Sort by month ascending **8** Sort by month descending **9** Sort by year ascending **10** Sort by year descending **11** Sort ascending **12** Sort descending                                                                                                                                                                                                                    |
+| length               | Sorting length (`integer`)                      | Allows to specify the number of characters that are used to build sorting groups (flag 3 and 4).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| inputType            | Field type (`string`)                           | **text** Text field **password** Password field **textarea** Textarea **select** Drop-down menu **checkbox** Checkbox **radio** Radio button **radioTable** Table with images and radio buttons **imageSize** Two text fields with drop-down menu **inputUnit** Text field with small unit drop-down menu **trbl** Four text fields with a small unit drop-down menu **chmod** CHMOD table **pageTree** Page tree **fileTree** File tree **tableWizard** Table wizard **timePeriod** Text field with drop-down menu **listWizard** List wizard **optionWizard** Option wizard **moduleWizard** Module wizard **checkboxWizard** Checkbox Wizard |
+| options              | Options (`array`)                               | Options of a drop-down menu or radio button menu.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| options_callback     | Callback function (`array`)                     | Callback function that returns an array of options. Please specify as `array('Class', 'Method')`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| foreignKey           | table.field (`string`)                          | Get options from a database table. Returns ID as key and the field you specify as value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| reference            | `&$GLOBALS['TL_LANG']` (`string`)               | Array that holds the options labels. Typically a reference to the global language array.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| explanation          | `&$GLOBALS['TL_LANG']` (`string`)               | Array that holds the explanation. Typically a reference to the global language array.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| input_field_callback | Callback function (`array`)                     | Executes a custom function instead of using the default input field routine and passes the the DataContainer object and the label as arguments.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| eval                 | Field configuration (`array`)                   | Various configuration options. See next paragraph.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| wizard               | Callback function (`array`)                     | Call a custom function and add its return value to the input field. Please specify as `array('Class', 'Method')`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| sql                  | Database field definition (`string` or `array`) | Describes data type and its database configuration. (see paragraph [SQL Column Definition](#sql-column-definition)).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| relation             | Configuration of relations (`array`)            | Describes relation to parent table (see paragraph [Relations](#relations)).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| load_callback        | Callback functions (`array`)                    | These functions will be called when the field is loaded. Please specify each callback function as `array('Class', 'Method')`. Passes the field's value and the data container as arguments. Expects the field value as return value.                                                                                                                                                                                                                                                                                                                                                                                                            |
+| save_callback        | Callback functions (`array`)                    | These functions will be called when the field is saved. Please specify each callback function as `array('Class', 'Method')`. Passes the field's value and the data container as arguments. Expects the field value as return value. Throw an exception to display an error message.                                                                                                                                                                                                                                                                                                                                                             |
 
 
 ### Evaluation
@@ -571,353 +148,84 @@ create mandatory fields, add a date picker or define the rows and columns of a
 textarea. You can also modify the field appearance or enable data encryption.
 Each field can be validated against a regular expression.
 
-<table>
-<tr>
-  <th>Key</th>
-  <th>Value</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td>helpwizard</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the helpwizard icon will appear next to the field label.</td>
-</tr>
-<tr>
-  <td>mandatory</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field cannot be empty.</td>
-</tr>
-<tr>
-  <td>maxlength</td>
-  <td>Maximum length (<code>integer</code>)</td>
-  <td>Maximum number of characters that is allowed in the current field.</td>
-</tr>
-<tr>
-  <td>minlength</td>
-  <td>Minimum length (<code>integer</code>)</td>
-  <td>Minimum number of characters that have to be entered.</td>
-</tr>
-<tr>
-  <td>maxval</td>
-  <td>Maximum value (<code>integer</code>)</td>
-  <td>Maximum number value to be checked (upper bound).</td>
-</tr>
-<tr>
-  <td>minval</td>
-  <td>Minimum value (<code>integer</code>)</td>
-  <td>Minimum number value to be checked (lower bound).</td>
-</tr>
-<tr>
-  <td>fallback</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field can only be assigned once per table.</td>
-</tr>
-<tr>
-  <td>rgxp</td>
-  <td>Regular expression (<code>string</code>)</td>
-  <td>
-    <table>
-        <tr>
-          <td><b>alias</b></td>
-          <td>expects a valid alias</td>
-        </tr>
-        <tr>
-          <td><b>alnum</b></td>
-          <td>allows alphanumeric characters only (including full stop [.]
-          minus [-], underscore [_] and space [ ])</td>
-        </tr>
-        <tr>
-          <td><b>alpha</b></td>
-          <td>allows alphabetic characters only (including full stop [.]
-          minus [-] and space [ ])</td>
-        </tr>
-        <tr>
-          <td><b>date</b></td>
-          <td>expects a valid date</td>
-        </tr>
-        <tr>
-          <td><b>datim</b></td>
-          <td>expects a valid date and time</td>
-        </tr>
-        <tr>
-          <td><b>digit</b></td>
-          <td>allows numeric characters only (including full stop [.] and
-          minus [-])</td>
-        </tr>
-        <tr>
-          <td><b>email</b></td>
-          <td>expects a valid e-mail address</td>
-        </tr>
-        <tr>
-          <td><b>emails</b></td>
-          <td>expects a valid list of valid e-mail addresses</td>
-        </tr>
-        <tr>
-          <td><b>extnd</b></td>
-          <td>disallows <code>#&lt;&gt;()\=</code></td>
-        </tr>
-        <tr>
-          <td><b>folderalias</b></td>
-          <td>expects a valid folder URL alias</td>
-        </tr>
-        <tr>
-          <td><b>friendly</b></td>
-          <td>expects a valid "friendly name format" e-mail address</td>
-        </tr>
-        <tr>
-          <td><b>language</b></td>
-          <td>expects a valid language code</td>
-        </tr>
-        <tr>
-          <td><b>locale</b></td>
-          <td>expects a valid locale (e.g. "de-CH")</td>
-        </tr>
-        <tr>
-          <td><b>natural</b></td>
-          <td>allows non-negative natural numbers (including 0)</td>
-        </tr>
-        <tr>
-          <td><b>phone</b></td>
-          <td>expects a valid phone number (numeric characters, space [ ],
-          plus [+], minus [-], parentheses [()] and slash [/])</td>
-        </tr>
-        <tr>
-          <td><b>prcnt</b></td>
-          <td>allows numbers between 0 and 100</td>
-        </tr>
-        <tr>
-          <td><b>url</b></td>
-          <td>expects a valid URL</td>
-        </tr>
-        <tr>
-          <td><b>time</b></td>
-          <td>expects a valid time</td>
-        </tr>
-    </table>
-  </td>
-</tr>
-<tr>
-  <td>cols</td>
-  <td>Columns (<code>integer</code>)</td>
-  <td>Number of columns (textarea fields only).</td>
-</tr>
-<tr>
-  <td>rows</td>
-  <td>Rows (<code>integer</code>)</td>
-  <td>Number of rows (textarea fields only).</td>
-</tr>
-<tr>
-  <td>multiple</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>Make the input field multiple. Applies to text fields, select menus, radio
-      buttons and checkboxes. Required for the checkbox wizard.</td>
-</tr>
-<tr>
-  <td>size</td>
-  <td>Size (<code>integer</code>)</td>
-  <td>Size of a multiple select menu or number of input fields.</td>
-</tr>
-<tr>
-  <td>style</td>
-  <td>Style attributes (<code>string</code>)</td>
-  <td>Style attributes (e.g. <code>border:2px</code>).</td>
-</tr>
-<tr>
-  <td>rte</td>
-  <td>Rich text editor file (<code>string</code>)</td>
-  <td><b>tinyMCE</b> use file <code>config/tinyMCE.php</code>.<br>
-      <b>tinyFlash</b> use file <code>config/tinyFlash.php</code>.<br>
-      You can add your own configuration files too.</td>
-</tr>
-<tr>
-  <td>submitOnChange</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the form will be submitted when the field value changes.</td>
-</tr>
-<tr>
-  <td>nospace</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true whitespace characters will not be allowed.</td>
-</tr>
-<tr>
-  <td>allowHtml</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the current field will accept HTML input (see "Allowed HTML
-      tags" in the backend System => Settings).</td>
-</tr>
-<tr>
-  <td>preserveTags</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true no HTML tags will be removed at all.</td>
-</tr>
-<tr>
-  <td>decodeEntities</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true HTML entities will be decoded. Note that HTML entities are always
-      decoded if allowHtml is true.</td>
-</tr>
-<tr>
-  <td>doNotSaveEmpty</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field will not be saved if it is empty.</td>
-</tr>
-<tr>
-  <td>alwaysSave</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field will always be saved, even if its value has not changed.
-      This can be useful in conjunction with a load_callback.</td>
-</tr>
-<tr>
-  <td>spaceToUnderscore</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true any whitespace character will be replaced by an underscore.</td>
-</tr>
-<tr>
-  <td>unique</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field value cannot be saved if it exists already.</td>
-</tr>
-<tr>
-  <td>encrypt</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field value will be stored encrypted.</td>
-</tr>
-<tr>
-  <td>trailingSlash</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true a trailing slash will be added to the field value. If false, an
-      existing trailing slash will be removed from the field value.</td>
-</tr>
-<tr>
-  <td>files</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true files and folders will be shown. If false, only folders will be
-      shown. Applies to file trees only.</td>
-</tr>
-<tr>
-  <td>filesOnly</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>Removes the radio buttons or checkboxes next to folders. Applies to file
-      trees only.</td>
-</tr>
-<tr>
-  <td>extensions</td>
-  <td>File extensions (<code>string</code>)</td>
-  <td>Limits the file tree to certain file types (comma separated list). Applies
-      to file trees only.</td>
-</tr>
-<tr>
-  <td>path</td>
-  <td>Path (<code>string</code>)</td>
-  <td>Custom root directory for file trees. Applies to file trees only.</td>
-</tr>
-<tr>
-  <td>fieldType</td>
-  <td>Input field type (<code>string</code>)</td>
-  <td><b>checkbox</b> allow multiple selections<br>
-      <b>radio</b> allow a single selection only<br>
-      Applies to file and page trees only.</td>
-</tr>
-<tr>
-  <td>includeBlankOption</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true a blank option will be added to the options array. Applies to
-      drop-down menus only.</td>
-</tr>
-<tr>
-  <td>blankOptionLabel</td>
-  <td>Label (<code>string</code>)</td>
-  <td>Label for the blank option (defaults to <code>-</code>).</td>
-</tr>
-<tr>
-  <td>chosen</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>Native selects enhanced with
-      <a href="http://harvesthq.github.io/chosen/" target="_blank">Chosen</a>.</td>
-</tr>
-<tr>
-  <td>findInSet</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>Sort by the actual option values instead of their labels.</td>
-</tr>
-<tr>
-  <td>datepicker</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the current field has a date picker.</td>
-</tr>
-<tr>
-  <td>colorpicker</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the current field has a color picker.</td>
-</tr>
-<tr>
-  <td>feEditable</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the current field can be edited in the front end. Applies to table
-      <code>tl_member</code> only.</td>
-</tr>
-<tr>
-  <td>feGroup</td>
-  <td>Group name (<code>string</code>)</td>
-  <td><b>personal</b> personal data<br>
-      <b>address</b> address details<br>
-      <b>contact</b> contact details<br>
-      <b>login</b> login details (table <code>tl_member</code> only)<br>
-      You can also define your own groups.</td>
-</tr>
-<tr>
-  <td>feViewable</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the current field is viewable in the member listing module.</td>
-</tr>
-<tr>
-  <td>doNotCopy</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the current field will not be duplicated if the record is
-      duplicated.</td>
-</tr>
-<tr>
-  <td>hideInput</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the field value will be hidden (it is still visible in the page
-      source though!).</td>
-</tr>
-<tr>
-  <td>doNotShow</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>If true the current field will not be shown in "edit all" or "show
-      details" mode.</td>
-</tr>
-<tr>
-  <td>isBoolean</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>Indicates that a particular field is boolean.</td>
-</tr>
-<tr>
-  <td>disabled</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>Disables the field (not supported by all field types).</td>
-</tr>
-<tr>
-  <td>readonly</td>
-  <td>true/false (<code>boolean</code>)</td>
-  <td>Makes the field read only (not supported by all field types).</td>
-</tr>
-<tr>
-  <td>csv</td>
-  <td>Delimiter (<code>string</code>)</td>
-  <td>The choice of this field will not be stored as serialized string but
-  rather as given delimiter-separated list.
-  Example: <code>'eval' => array('csv'=>',')</code></td>
-</tr>
-<tr>
-  <td>tl_class</td>
-  <td>CSS class(es) (<code>string</code>)</td>
-  <td>Add the given CSS class(es) to the generated HTML. See section
-  <a href="palettes.md#arranging-fields">Arranging Fields</a> for supported
-  values.</td>
-</tr>
-</table>
+| Key                | Value                            | Description                                                                                                                                                              |
+|:-------------------|:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| helpwizard         | true/false (`boolean`)           | If true the helpwizard icon will appear next to the field label.                                                                                                         |
+| mandatory          | true/false (`boolean`)           | If true the field cannot be empty.                                                                                                                                       |
+| maxlength          | Maximum length (`integer`)       | Maximum number of characters that is allowed in the current field.                                                                                                       |
+| minlength          | Minimum length (`integer`)       | Minimum number of characters that have to be entered.                                                                                                                    |
+| maxval             | Maximum value (`integer`)        | Maximum number value to be checked (upper bound).                                                                                                                        |
+| minval             | Minimum value (`integer`)        | Minimum number value to be checked (lower bound).                                                                                                                        |
+| fallback           | true/false (`boolean`)           | If true the field can only be assigned once per table.                                                                                                                   |
+| rgxp               | Regular expression (`string`)    | Limits the user input to certain rules (see paragraph [Regular Expressions](#regular-expressions)).                                                                      |
+| cols               | Columns (`integer`)              | Number of columns (textarea fields only).                                                                                                                                |
+| rows               | Rows (`integer`)                 | Number of rows (textarea fields only).                                                                                                                                   |
+| multiple           | true/false (`boolean`)           | Make the input field multiple. Applies to text fields, select menus, radio buttons and checkboxes. Required for the checkbox wizard.                                     |
+| size               | Size (`integer`)                 | Size of a multiple select menu or number of input fields.                                                                                                                |
+| style              | Style attributes (`string`)      | Style attributes (e.g. `border:2px`).                                                                                                                                    |
+| rte                | Rich text editor file (`string`) | **tinyMCE** use file `config/tinyMCE.php`. **tinyFlash** use file `config/tinyFlash.php`. You can add your own configuration files too.                                  |
+| submitOnChange     | true/false (`boolean`)           | If true the form will be submitted when the field value changes.                                                                                                         |
+| nospace            | true/false (`boolean`)           | If true whitespace characters will not be allowed.                                                                                                                       |
+| allowHtml          | true/false (`boolean`)           | If true the current field will accept HTML input (see "Allowed HTML tags" in the backend System => Settings).                                                            |
+| preserveTags       | true/false (`boolean`)           | If true no HTML tags will be removed at all.                                                                                                                             |
+| decodeEntities     | true/false (`boolean`)           | If true HTML entities will be decoded. Note that HTML entities are always decoded if allowHtml is true.                                                                  |
+| doNotSaveEmpty     | true/false (`boolean`)           | If true the field will not be saved if it is empty.                                                                                                                      |
+| alwaysSave         | true/false (`boolean`)           | If true the field will always be saved, even if its value has not changed. This can be useful in conjunction with a load_callback.                                       |
+| spaceToUnderscore  | true/false (`boolean`)           | If true any whitespace character will be replaced by an underscore.                                                                                                      |
+| unique             | true/false (`boolean`)           | If true the field value cannot be saved if it exists already.                                                                                                            |
+| encrypt            | true/false (`boolean`)           | If true the field value will be stored encrypted.                                                                                                                        |
+| trailingSlash      | true/false (`boolean`)           | If true a trailing slash will be added to the field value. If false, an existing trailing slash will be removed from the field value.                                    |
+| files              | true/false (`boolean`)           | If true files and folders will be shown. If false, only folders will be shown. Applies to file trees only.                                                               |
+| filesOnly          | true/false (`boolean`)           | Removes the radio buttons or checkboxes next to folders. Applies to file trees only.                                                                                     |
+| extensions         | File extensions (`string`)       | Limits the file tree to certain file types (comma separated list). Applies to file trees only.                                                                           |
+| path               | Path (`string`)                  | Custom root directory for file trees. Applies to file trees only.                                                                                                        |
+| fieldType          | Input field type (`string`)      | **checkbox** allow multiple selections **radio** allow a single selection only Applies to file and page trees only.                                                      |
+| includeBlankOption | true/false (`boolean`)           | If true a blank option will be added to the options array. Applies to drop-down menus only.                                                                              |
+| blankOptionLabel   | Label (`string`)                 | Label for the blank option (defaults to `-`).                                                                                                                            |
+| chosen             | true/false (`boolean`)           | Native selects enhanced with [Chosen](http://harvesthq.github.io/chosen/).                                                                                               |
+| findInSet          | true/false (`boolean`)           | Sort by the actual option values instead of their labels.                                                                                                                |
+| datepicker         | true/false (`boolean`)           | If true the current field has a date picker.                                                                                                                             |
+| colorpicker        | true/false (`boolean`)           | If true the current field has a color picker.                                                                                                                            |
+| feEditable         | true/false (`boolean`)           | If true the current field can be edited in the front end. Applies to table `tl_member` only.                                                                             |
+| feGroup            | Group name (`string`)            | **personal** personal data **address** address details **contact** contact details **login** login details (table `tl_member` only) You can also define your own groups. |
+| feViewable         | true/false (`boolean`)           | If true the current field is viewable in the member listing module.                                                                                                      |
+| doNotCopy          | true/false (`boolean`)           | If true the current field will not be duplicated if the record is duplicated.                                                                                            |
+| hideInput          | true/false (`boolean`)           | If true the field value will be hidden (it is still visible in the page source though!).                                                                                 |
+| doNotShow          | true/false (`boolean`)           | If true the current field will not be shown in "edit all" or "show details" mode.                                                                                        |
+| isBoolean          | true/false (`boolean`)           | Indicates that a particular field is boolean.                                                                                                                            |
+| disabled           | true/false (`boolean`)           | Disables the field (not supported by all field types).                                                                                                                   |
+| readonly           | true/false (`boolean`)           | Makes the field read only (not supported by all field types).                                                                                                            |
+| csv                | Delimiter (`string`)             | The choice of this field will not be stored as serialized string but rather as given delimiter-separated list. Example: `'eval' => array('csv'=>',')`                    |
+| tl_class           | CSS class(es) (`string`)         | Add the given CSS class(es) to the generated HTML. See section [Arranging Fields](palettes.md#arranging-fields) for supported values.                                    |
+
+
+### Regular Expressions
+
+Regular expressions requires the input of a field to match a pre-defined format.
+A lot of useful formats are shipped with Contao, but additional formats
+can be [registered using a hook][3].
+
+
+| Key         | Description                                                                                                       |
+|:------------|:------------------------------------------------------------------------------------------------------------------|
+| alias       | expects a valid alias                                                                                             |
+| alnum       | allows alphanumeric characters only (including full stop [.] minus [-], underscore [_] and space [ ])             |
+| alpha       | allows alphabetic characters only (including full stop [.] minus [-] and space [ ])                               |
+| date        | expects a valid date                                                                                              |
+| datim       | expects a valid date and time                                                                                     |
+| digit       | allows numeric characters only (including full stop [.] and minus [-])                                            |
+| email       | expects a valid e-mail address                                                                                    |
+| emails      | expects a valid list of valid e-mail addresses                                                                    |
+| extnd       | disallows `#<>()\\=`                                                                                              |
+| folderalias | expects a valid folder URL alias                                                                                  |
+| friendly    | expects a valid "friendly name format" e-mail address                                                             |
+| language    | expects a valid language code                                                                                     |
+| locale      | expects a valid locale (e.g. "de-CH")                                                                             |
+| natural     | allows non-negative natural numbers (including 0)                                                                 |
+| phone       | expects a valid phone number (numeric characters, space [ ], plus [+], minus [-], parentheses [()] and slash [/]) |
+| prcnt       | allows numbers between 0 and 100                                                                                  |
+| url         | expects a valid URL                                                                                               |
+| time        | expects a valid time                                                                                              |
 
 
 ### Relations
@@ -927,51 +235,12 @@ Define the referenced table in the `foreignKey` key. Relations provide
 model classes to load referenced data sets efficiently and developer friendly.
 (see `Model::getRelated()`).
 
-<table>
-<tr>
-  <th>Key</th>
-  <th>Value</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td>type</td>
-  <td>Type of relation<br> (<code>string</code>)
-  <td>
-    <b>hasOne</b> Value references a child data set<br>
-    <b>hasMany</b> Value references some child data sets
-       (serialized)<br>
-    <b>belongsTo</b> Value references a parent data set
-       (e.g. <code>pid</code>)<br>
-    <b>belongsToMany</b> Value references some parent data sets
-       (serialized)<br>
-  </td>
-</tr>
-<tr>
-  <td>load</td>
-  <td>Load behaviour<br> (<code>string</code>)</td>
-  <td>
-      <b>lazy</b> Loading referenced records only when necessary
-         (default, saves RAM)<br>
-      <b>eager</b> Loading referenced records automatically (saves database calls)
-  </td>
-</tr>
-<tr>
-  <td>table</td>
-  <td>Relation table<br> (<code>string</code>)</td>
-  <td>
-      A database table for this relation. Optional, by default Contao tries to
-      extract it from the <code>foreignKey</code> attribute.
-  </td>
-</tr>
-<tr>
-  <td>field</td>
-  <td>Relation table field<br> (<code>string</code>)</td>
-  <td>
-      Override the default relation field (<code>id</code>). Useful for relation
-      with <code>tl_files.uuid</code> for example.
-  </td>
-</tr>
-</table>
+| Key   | Value                           | Description                                                                                                                                                                                                                                     |
+|-------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| type  | Type of relation (`string`)     | **hasOne** Value references a child data set **hasMany** Value references some child data sets (serialized) **belongsTo** Value references a parent data set (e.g. `pid`) **belongsToMany** Value references some parent data sets (serialized) |
+| load  | Load behaviour (`string`)       | **lazy** Loading referenced records only when necessary (default, saves RAM) **eager** Loading referenced records automatically (saves database calls)                                                                                          |
+| table | Relation table (`string`)       | A database table for this relation. Optional, by default Contao tries to extract it from the `foreignKey` attribute.                                                                                                                            |
+| field | Relation table field (`string`) | Override the default relation field (`id`). Useful for relation with `tl_files.uuid` for example.                                                                                                                                               |
 
 
 ### SQL Column Definition
@@ -997,3 +266,4 @@ the Doctrine Database Abstraction Layer.
 
 [1]: https://docs.contao.org/books/manual/current/en/02-administration-area/listing-records.html
 [2]: http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/schema-representation.html#column
+[3]: ../extensions/hooks/addCustomRegexp.md

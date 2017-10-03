@@ -51,4 +51,4 @@ Online Markdown Editor: http://jbt.github.io/markdown-editor
 
 
 [1]: https://help.github.com/articles/github-flavored-markdown
-[tables]: https://help.github.com/articles/github-flavored-markdown/#tables
+[tables]: https://help.github.com/articles/organizing-information-with-tables/
