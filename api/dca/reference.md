@@ -251,17 +251,13 @@ one can use [Doctrine Schema Representation][2] to take full advantage of
 the Doctrine Database Abstraction Layer.
 
 **Examples:**
- - `['type' => 'string', 'length' => 32, 'default' => '']`<br>
-    equals<br>
-    `varchar(32) NOT NULL default ''`
 
- - `['type' => 'string', 'length' => 1, 'fixed' => true, 'default' => '']`<br>
-    equals<br>
-    `char(1) NOT NULL default ''`
+| Doctrine Schema Representation                                          | SQL Equivalent                    |
+|:------------------------------------------------------------------------|:----------------------------------|
+| `['type' => 'string', 'length' => 32, 'default' => '']`                 | `varchar(32) NOT NULL default ''` |
+| `['type' => 'string', 'length' => 1, 'fixed' => true, 'default' => '']` | `char(1) NOT NULL default ''`     |
+| `['type' => 'integer', 'notnull' => false, 'unsigned' => true]`         | `INT unsigned NULL`               |
 
- - `['type' => 'integer', 'notnull' => false, 'unsigned' => true]`<br>
-    equals<br>
-    `INT unsigned NULL`
 
 
 [1]: https://docs.contao.org/books/manual/current/en/02-administration-area/listing-records.html
