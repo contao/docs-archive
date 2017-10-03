@@ -208,24 +208,26 @@ can be [registered using a hook][3].
 
 | Key         | Description                                                                                                       |
 |:------------|:------------------------------------------------------------------------------------------------------------------|
-| alias       | expects a valid alias                                                                                             |
-| alnum       | allows alphanumeric characters only (including full stop [.] minus [-], underscore [_] and space [ ])             |
-| alpha       | allows alphabetic characters only (including full stop [.] minus [-] and space [ ])                               |
-| date        | expects a valid date                                                                                              |
-| datim       | expects a valid date and time                                                                                     |
 | digit       | allows numeric characters only (including full stop [.] and minus [-])                                            |
+| natural     | allows non-negative natural numbers (including 0)                                                                 |
+| alpha       | allows alphabetic characters only (including full stop [.] minus [-] and space [ ])                               |
+| alnum       | allows alphanumeric characters only (including full stop [.] minus [-], underscore [_] and space [ ])             |
+| extnd       | disallows `#<>()\\=`                                                                                              |
+| date        | expects a valid date                                                                                              |
+| time        | expects a valid time                                                                                              |
+| datim       | expects a valid date and time                                                                                     |
+| friendly    | expects a valid "friendly name format" e-mail address                                                             |
 | email       | expects a valid e-mail address                                                                                    |
 | emails      | expects a valid list of valid e-mail addresses                                                                    |
-| extnd       | disallows `#<>()\\=`                                                                                              |
+| url         | expects a valid URL                                                                                               |
+| alias       | expects a valid alias                                                                                             |
 | folderalias | expects a valid folder URL alias                                                                                  |
-| friendly    | expects a valid "friendly name format" e-mail address                                                             |
-| language    | expects a valid language code                                                                                     |
-| locale      | expects a valid locale (e.g. "de-CH")                                                                             |
-| natural     | allows non-negative natural numbers (including 0)                                                                 |
 | phone       | expects a valid phone number (numeric characters, space [ ], plus [+], minus [-], parentheses [()] and slash [/]) |
 | prcnt       | allows numbers between 0 and 100                                                                                  |
-| url         | expects a valid URL                                                                                               |
-| time        | expects a valid time                                                                                              |
+| locale      | expects a valid locale (e.g. "de-CH")                                                                             |
+| language    | expects a valid language code                                                                                     |
+| google+     | expects a Google+ ID or vanity name                                                                               |
+| fieldname   | expects a valid field name (added in version 3.5.16 / 4.2.3)                                                      |
 
 
 ### Relations
