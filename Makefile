@@ -54,11 +54,11 @@ install:
 	@rm -rf api/node_modules/gitbook-plugin-anchorjs
 	@rm -rf extending-contao4/node_modules/gitbook-plugin-anchorjs
 	@rm -rf manager/node_modules/gitbook-plugin-anchorjs
-	@git clone -b master https://github.com/aschempp/gitbook-plugin-anchorjs.git manual/node_modules/gitbook-plugin-anchorjs
-	@git clone -b master https://github.com/aschempp/gitbook-plugin-anchorjs.git cookbook/node_modules/gitbook-plugin-anchorjs
-	@git clone -b master https://github.com/aschempp/gitbook-plugin-anchorjs.git api/node_modules/gitbook-plugin-anchorjs
-	@git clone -b master https://github.com/aschempp/gitbook-plugin-anchorjs.git extending-contao4/node_modules/gitbook-plugin-anchorjs
-	@git clone -b master https://github.com/aschempp/gitbook-plugin-anchorjs.git manager/node_modules/gitbook-plugin-anchorjs
+	@cd manual/; npm install "https://github.com/aschempp/gitbook-plugin-anchorjs.git"
+	@cd cookbook/; npm install "https://github.com/aschempp/gitbook-plugin-anchorjs.git"
+	@cd api/; npm install "https://github.com/aschempp/gitbook-plugin-anchorjs.git"
+	@cd extending-contao4/; npm install "https://github.com/aschempp/gitbook-plugin-anchorjs.git"
+	@cd manager/; npm install "https://github.com/aschempp/gitbook-plugin-anchorjs.git"
 
 install-python:
 	@echo "--> You must have Python virtualenv"

@@ -1,4 +1,4 @@
-# Manuel pour Contao 4.3
+# Manuel pour Contao 4.4
 
 Ceci est le manuel officiel pour les utilisateurs et les développeurs. Vous
 pouvez toujours trouver la dernière version sur
