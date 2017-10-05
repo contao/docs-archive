@@ -1,144 +1,352 @@
-swagger: '2.0'
+openapi: 3.0.0
 info:
   title: Contao Manager API
-  version: "1.0.0-alpha10"
-basePath: /api
-consumes:
-  - application/json
-produces:
-  - application/json
-  - application/problem+json
+  version: "1.0.0-beta12"
 
 paths:
-
-  ##############
-  #   Status   #
-  ##############
-
-  /status:
-    get:
-      summary: Get Application Status
-      tags: [Status]
-      security: []
-      parameters:
-        - name: XSRF-TOKEN
-          in: header
-          type: string
-          description: Only required if the user is already logged in.
-        - name: contao_manager_auth
-          in: cookie
-          type: string
-          description: Necessary if a user has been created.
-      responses:
-        200:
-          description: Status information if the application does not require authentication (no users defined) or a user is logged in.
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/Status'
-        401:
-          description: If the user is not authenticated.
-
 
   ###############
   #   Session   #
   ###############
 
-  /session:
+  /api/session:
     post:
       summary: Create a new session (login)
       description: If no users are defined, this will create an initial user with the given credentials.
       tags: [Session]
       security: []
-      parameters:
-        - name: data
-          in: body
-          schema:
-            type: object
-            properties:
-              username:
-                type: string
-                required: true
-              password:
-                type: string
-                required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRequest'
       responses:
         200:
-          description: On successful login
+          description: Successful login
           headers:
-            contao_manager_auth:
-              description: Authentication as HTTP-only cookie.
-              type: cookie
-            contao_manager_xsrf:
-              type: cookie
-          schema:
-            $ref: '#/definitions/User'
+            Cookie:
+              description: On successful login the server will set the authentication cookies.
+              schema:
+                type: object
+                properties:
+                  contao_manager_auth:
+                    description: Authentication token as HTTP-only cookie.
+                    type: string
+                  contao_manager_xsrf:
+                    description: XSRF cookie value
+                    type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
         401:
           description: If the authentication was not successful.
+
+    get:
+      summary: Get current session status
+      description: Returns information about the current session (based on authentication cookie)
+      tags: [Session]
+      responses:
+        200:
+          description: If the user is authenticated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        204:
+          description: If there are no records in the user database
+        401:
+          description: If the user is not authenticated
 
     delete:
       summary: Delete the current session (logout)
       tags: [Session]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
       responses:
-        200:
+        204:
           description: On successful logout.
         401:
           description: If there is no active session.
 
 
   #############
+  #   Files   #
+  #############
+
+  /api/files/{file}:
+    parameters:
+      - name: file
+        in: path
+        description: The filename to handle.
+        required: true
+        schema:
+          type: string
+          enum:
+            - composer.json
+            - composer.lock
+    get:
+      summary: Gets the content of a file.
+      tags: [Files]
+      responses:
+        200:
+          description: Content of the files.
+          content:
+            text/plain:
+              schema:
+                type: string
+        403:
+          description: If the file parameter is invalid.
+    put:
+      summary: Writes content of a file
+      tags: [Files]
+      responses:
+        200:
+          description: Content of the file
+          content:
+            text/plain:
+              schema:
+                type: string
+        403:
+          description: If the file parameter is invalid.
+
+
+  ##############
+  #   System   #
+  ##############
+
+  /api/server/self-update:
+    get:
+      summary: Gets update status of the Contao Manager
+      tags: [Server Configuration]
+      responses:
+        200:
+          description: The update status.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  current_version:
+                    type: string
+                    description: Current version of the Contao Manager.
+                  latest_version:
+                    type: string
+                    description: Latest available version of the Contao Manager.
+
+        501:
+          description: If version is a development build that cannot be updated.
+
+  /api/server/config:
+    get:
+      summary: Gets server configuration
+      tags: [Server Configuration]
+      responses:
+        200:
+          description: The configured server configuration if available, otherwise the detected values.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  server:
+                    type: string
+                    description: Name of the server configuration.
+                  php_cli:
+                    type: string
+                    description: Path to the PHP command line if the server configuration is "custom".
+                  detected:
+                    type: boolean
+                  configs:
+                    type: array
+                    description: List of known server configurations.
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        website:
+                          type: string
+                        php:
+                          type: object
+                          description: Object key is the binary path, values is array of command line arguments
+                          example:
+                            { path/to/php-binary: ['-d', 'memory_limit=-1'] }
+    put:
+      summary: Sets server configuration
+      tags: [Server Configuration]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                server:
+                  type: string
+                  description: Name of the server configuration.
+                php_cli:
+                  type: string
+                  description: Path to the PHP command line if the server configuration is "custom".
+
+      responses:
+        200:
+          description: If the config was successfully saved. Contains same model as GET.
+        400:
+          description: On field validation errors
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/ValidationProblem'
+
+  /api/server/php-web:
+    get:
+      summary: Gets PHP web server configuration
+      tags: [Server Configuration]
+      responses:
+        200:
+          description: Version of the current PHP web server. The problem key returns the first found server issue or empty if none.
+          content:
+            application/json:
+              schema:
+                properties:
+                  version:
+                    type: string
+                    description: PHP version
+                  version_id:
+                    type: integer
+                    description: PHP version ID
+                  platform:
+                    type: string
+                    enum:
+                      - unix
+                      - windows
+                  problem:
+                    $ref: '#/components/schemas/ApiProblem'
+
+  /api/server/php-cli:
+    get:
+      summary: Gets PHP command line configuration
+      tags: [Server Configuration]
+      responses:
+        200:
+          description: Version of the current PHP command line binary. The problem key returns the first found server issue or empty if none.
+          content:
+            application/json:
+              schema:
+                properties:
+                  version:
+                    type: string
+                  version_id:
+                    type: integer
+                    description: PHP version ID
+                  problem:
+                    $ref: '#/components/schemas/ApiProblem'
+        503:
+          description: If the server config is not ready or the command line binary cannot be found.
+
+  /api/server/composer:
+    get:
+      summary: Gets Composer configuration
+      tags: [Server Configuration]
+      responses:
+        200:
+          description: Returns information about the composer configuration.
+          content:
+            application/json:
+              schema:
+                properties:
+                  json:
+                    type: object
+                    properties:
+                      found:
+                        type: boolean
+                      valid:
+                        type: boolean
+                      error:
+                        type: object
+                        properties:
+                          message:
+                            type: string
+                          details:
+                            type: string
+                  lock:
+                    type: object
+                    properties:
+                      found:
+                        type: boolean
+                      fresh:
+                        type: boolean
+        503:
+          description: If the server config is not ready or the command line binary cannot be found.
+
+  /api/server/contao:
+    get:
+      summary: Contao configuration
+      tags: [Server Configuration]
+      responses:
+        200:
+          description: Gets information about the current Contao installation.
+          content:
+            application/json:
+              schema:
+                properties:
+                  version:
+                    type: string
+                  api:
+                    type: integer
+        500:
+          description: If any of the commands did not run successfully.
+          $ref: '#/components/schemas/ApiProblem'
+        503:
+          description: If the server config is not ready or the command line binary cannot be found.
+
+
+
+  #############
   #   Users   #
   #############
 
-  /users:
+  /api/users:
     get:
       summary: User List
       tags: [Users]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
       responses:
         200:
           description: An array of users.
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/User'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/UserResponse'
     post:
       summary: Create User
       tags: [Users]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
-        - name: data
-          in: body
-          schema:
-            $ref: '#/definitions/User'
+      requestBody:
+        content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserRequest'
       responses:
         200:
           description: Data of the newly created user.
-          schema:
-            $ref: '#/definitions/User'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
 
-  /users/{username}:
+  /api/users/{username}:
     get:
       summary: Get User
       tags: [Users]
       parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
         - name: username
           in: path
           required: true
-          type: string
+          schema:
+            type: string
       responses:
         200:
           description: The user data
-          schema:
-            $ref: '#/definitions/User'
+          $ref: '#/components/schemas/UserResponse'
         404:
           description: User was not found.
 
@@ -146,263 +354,249 @@ paths:
       summary: Update User
       tags: [Users]
       parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
         - name: username
           in: path
           required: true
-          type: string
+          schema:
+            type: string
       responses:
         204:
           description: User updated
-          schema:
-            $ref: '#/definitions/User'
+          $ref: '#/components/schemas/UserResponse'
 
     delete:
       summary: Delete User
       tags: [Users]
       parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
         - name: username
           in: path
           required: true
-          type: string
+          schema:
+            type: string
       responses:
         204:
           description: User deleted
-          schema:
-            $ref: '#/definitions/User'
+          $ref: '#/components/schemas/UserResponse'
 
 
   #####################
   #   Configuration   #
   #####################
 
-  /config/manager:
+  /api/config/manager:
     get:
       summary: Get manager config.
       tags: [Configuration]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
       responses:
         200:
           description: The manager configuration.
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/ManagerConfig'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ManagerConfig'
     put:
       summary: Replace manager config.
       tags: [Configuration]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
-        - name: data
-          in: body
-          schema:
-            $ref: '#/definitions/ManagerConfig'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ManagerConfig'
       responses:
         200:
           description: The manager configuration.
-          schema:
-            $ref: '#/definitions/ManagerConfig'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ManagerConfig'
     patch:
       summary: Append manager config.
       tags: [Configuration]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
-        - name: data
-          in: body
-          schema:
-            $ref: '#/definitions/ManagerConfig'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ManagerConfig'
       responses:
         200:
           description: The manager configuration.
-          schema:
-            $ref: '#/definitions/ManagerConfig'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ManagerConfig'
 
-  /config/auth:
+  /api/config/auth:
     get:
       summary: Get Composer auth config.
       tags: [Configuration]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
       responses:
         200:
           description: The Composer auth configuration.
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/AuthConfig'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AuthConfig'
     put:
       summary: Replace Composer auth config.
       tags: [Configuration]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
-        - name: data
-          in: body
-          schema:
-            $ref: '#/definitions/AuthConfig'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthConfig'
       responses:
         200:
           description: The Composer auth configuration.
-          schema:
-            $ref: '#/definitions/AuthConfig'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthConfig'
     patch:
       summary: Append Composer auth config.
       tags: [Configuration]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
-        - name: data
-          in: body
-          schema:
-            $ref: '#/definitions/AuthConfig'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthConfig'
       responses:
         200:
           description: The Composer auth configuration.
-          schema:
-            $ref: '#/definitions/AuthConfig'
+          $ref: '#/components/schemas/AuthConfig'
 
-  /config/auth/github-oauth:
+  /api/config/auth/github-oauth:
     put:
       summary: Set GitHub OAuth token.
       tags: [Configuration]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
-        - name: data
-          in: body
-          schema:
-            type: object
-            properties:
-              token:
-                type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
 
       responses:
         200:
           description: The Composer auth configuration.
-          schema:
-            type: object
-            properties:
-              github.com:
-                type: string
-                description: OAuth token for github.com.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  github.com:
+                    type: string
+                    description: OAuth token for github.com.
 
-  /config/composer:
+  /api/config/composer:
     get:
       summary: Get Composer config.
       tags: [Configuration]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
       responses:
         200:
           description: The Composer configuration.
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/ComposerConfig'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComposerConfig'
     put:
       summary: Replace Composer config.
       tags: [Configuration]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
-        - name: data
-          in: body
-          schema:
-            $ref: '#/definitions/ComposerConfig'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComposerConfig'
       responses:
         200:
           description: The Composer configuration.
-          schema:
-            $ref: '#/definitions/ComposerConfig'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComposerConfig'
     patch:
       summary: Append Composer config.
       tags: [Configuration]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
-        - name: data
-          in: body
-          schema:
-            $ref: '#/definitions/ComposerConfig'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComposerConfig'
       responses:
         200:
           description: The Composer configuration.
-          schema:
-            $ref: '#/definitions/ComposerConfig'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComposerConfig'
 
 
   #############
   #   Tasks   #
   #############
 
-  /task:
+  /api/task:
     get:
       summary: Gets task data.
       tags: [Tasks]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
       responses:
         200:
           description: The current task data.
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/Task'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
         204:
           description: If no task is active.
     put:
       summary: Sets task data.
       tags: [Tasks]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
-        - name: data
-          in: body
-          schema:
-            type: object
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
       responses:
         200:
           description: The current task data.
-          schema:
-            $ref: '#/definitions/Task'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
         400:
           description: If a task is already running or the payload is invalid
 
     delete:
       summary: Deletes task data.
       tags: [Tasks]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
       responses:
         200:
           description: The deleted task data.
-          schema:
-            $ref: '#/definitions/Task'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
         400:
           description: If the task cannot be deleted because it's running.
 
-  /task/status:
+  /api/task/status:
     put:
       summary: Starts or stops the active task.
       tags: [Tasks]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
-        - name: data
-          in: body
-          schema:
-            $ref: '#/definitions/TaskStatus'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskStatus'
       responses:
         200:
           description: If the status was successfully updated.
@@ -414,181 +608,178 @@ paths:
   #   Packages   #
   ################
 
-  /packages:
+  /api/packages:
     get:
       summary: Gets list of installed packages
       tags: [Packages]
-      parameters:
-        - $ref: '#/parameters/AuthCookie'
-        - $ref: '#/parameters/XsrfToken'
       responses:
         200:
           description: Collection of installed packages. Object key equals package name.
-          schema:
-            type: object
-            items:
-              $ref: '#/definitions/Package'
+          $ref: '#/components/schemas/Package'
 
 
-parameters:
-  XsrfToken:
-    name: XSRF-TOKEN
-    in: header
-    required: true
-    type: string
-    description: Token to prevent from XSRF attacks. Correct value can be read from cookie with name "contao_manager_xsrf" which is set on the first API access.
-  AuthCookie:
-    name: contao_manager_auth
-    in: cookie
-    required: true
-    type: string
-    description: Authentication cookie to access the Manager API.
-
-
-definitions:
-  Status:
-    type: object
-    properties:
-      status:
-        type: string
-        enum:
-          - install
-          - auth
-          - ok
-      username:
-        type: string
-        description: Username of the current logged in user.
-      config:
-        type: object
-        description: Manager configuration
-      version:
-        type: string
-        description: Version of currently installed Contao.
-
-  User:
-    type: object
-    required: ["username"]
-    properties:
-      username:
-        type: string
-        description: Username of the user object.
-      password:
-        type: string
-        format: password
-        description: Only for setting a value, not available when retrieving user.
-
-  ManagerConfig:
-    type: object
-    properties:
-      secret:
-        type: string
-        description: Application secret to hash user passwords etc.
-      php_cli:
-        type: string
-        description: Path to the PHP executable.
-
-  AuthConfig:
-    type: object
-    properties:
-      github-oauth:
-        type: object
-
-  ComposerConfig:
-    type: object
-
-  Task:
-    type: object
-    properties:
-      id:
-        type: string
-      status:
-        type: string
-      type:
-        type: string
-      created_at:
-        type: string
-        format: date-time
-      output:
-        type: string
-
-  TaskStatus:
-    type: object
-    required: ["status"]
-    properties:
-      status:
-        type: string
-        enum:
-          - RUNNING
-          - STOPPED
-
-  Package:
-    type: object
-    properties:
-      name:
-        type: string
-      version:
-        type: string
-        description: Currently installed version
-      constraint:
-        type: string
-        description: Version constraint in composer.json
-      type:
-        type: string
-        enum:
-          - contao-bundle
-          - contao-module
-      time:
-        type: string
-      description:
-        type: string
-      license:
-        type: array
-        items:
+components:
+  schemas:
+    UserRequest:
+      type: object
+      required: ["username"]
+      properties:
+        username:
           type: string
-      authors:
-        type: array
-        items:
+          description: Username of the user.
+        password:
+          type: string
+          format: password
+          description: Password of the user.
+
+    UserResponse:
+      type: object
+      properties:
+        username:
+          type: string
+          description: Username of the user object.
+
+    ManagerConfig:
+      type: object
+      properties:
+        server:
+          type: string
+        php_cli:
+          type: string
+          description: Path to the PHP executable.
+
+    AuthConfig:
+      type: object
+      properties:
+        github-oauth:
+          type: object
+
+    ComposerConfig:
+      type: object
+
+    Task:
+      type: object
+      properties:
+        id:
+          type: string
+        status:
+          type: string
+        type:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        output:
+          type: string
+
+    TaskStatus:
+      type: object
+      required: ["status"]
+      properties:
+        status:
+          type: string
+          enum:
+            - RUNNING
+            - STOPPED
+
+    Package:
+      type: object
+      properties:
+        name:
+          type: string
+        version:
+          type: string
+          description: Currently installed version
+        constraint:
+          type: string
+          description: Version constraint in composer.json
+        type:
+          type: string
+          enum:
+            - contao-bundle
+            - contao-module
+        time:
+          type: string
+        description:
+          type: string
+        license:
+          type: array
+          items:
+            type: string
+        authors:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              email:
+                type: string
+              homepage:
+                type: string
+        extra:
           type: object
           properties:
-            name:
+            contao-manager-plugin:
               type: string
-            email:
-              type: string
-            homepage:
-              type: string
-      extra:
-        type: object
-        properties:
-          contao-manager-plugin:
-            type: string
-            description: Class name if this package has a Manager Plugin.
-      abandoned:
-        type: boolean
+              description: Class name if this package has a Manager Plugin.
+        abandoned:
+          type: boolean
 
-  ApiProblem:
-    type: object
-    properties:
-      title:
-        type: string
-      type:
-        type: string
-      status:
-        type: integer
-      detail:
-        type: string
+    ApiProblem:
+      type: object
+      properties:
+        title:
+          type: string
+        type:
+          type: string
+        status:
+          type: integer
+        detail:
+          type: string
 
-responses:
-  ApiProblem:
-    description: Unknown problem in the API
-    schema:
-      $ref: '#/definitions/ApiProblem'
+    ValidationProblem:
+      type: object
+      properties:
+        title:
+          type: string
+        type:
+          type: string
+        status:
+          type: integer
+        validation:
+          type: array
+          items:
+            type: object
+            properties:
+              source:
+                type: string
+              message:
+                type: string
 
-securityDefinitions:
-  AuthToken:
-    type: apiKey
-    description: Authentication cookie called "contao_manager_auth". The cookie is HTTP-only and set by the server after successful login.
-    name: Cookie
-    in: header
+  responses:
+    ApiProblem:
+      description: Unknown problem in the API
+      $ref: '#/components/schemas/ApiProblem'
+
+  securitySchemes:
+    AuthToken:
+      type: apiKey
+      description: Authentication cookie called "contao_manager_auth". The cookie is set by the server as HTTP-only after successful login.
+      name: contao_manager_auth
+      in: cookie
+    XsrfTokenOutput:
+      type: apiKey
+      description: The XSRF token value is set on the first API access.
+      name: contao_manager_xsrf
+      in: cookie
+    XsrfTokenInput:
+      type: apiKey
+      description: Token to prevent from XSRF attacks. Correct value can be read from cookie with name "contao_manager_xsrf" which is set on the first API access.
+      name: XSRF-TOKEN
+      in: header
 
 security:
   - AuthToken: []
+    XsrfTokenOutput: []
+    XsrfTokenInput: []
