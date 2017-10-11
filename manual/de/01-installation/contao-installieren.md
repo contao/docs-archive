@@ -91,13 +91,23 @@ Datei `app/config/parameters.yml` gespeichert.
 > [offiziellen Symfony-Webseite][6] zu finden.
 
 
+### Installation mit dem Contao Manager (Beta)
+
+Mit dem Contao Manager können Sie Contao 4 in Ihrem Browser installieren und verwalten. Laden Sie sich die .phar-Datei herunter und übertragen Sie sie in den Ordner /web Ihrer Webseite. Benennen Sie die Datei danach in contao-manager.phar.php um und rufen Sie sie in Ihrem Browser auf.
+
+Die Installationsdatei können Sie auf der [Projektseite][7] herunterladen.
+
+> #### info:: Hinweis
+> Der Contao-Manager ist eine Beta-Version
+
+
 ### Wurzelverzeichnis der Webseite
 
 Für den Live-Betrieb muss das Wurzelverzeichnis (Document Root) der Installation
 auf den Ordner `web/` gesetzt sein (z.B. über das Admin-Panel des Hosting-Providers).
 
 > #### info:: Hinweis
-> Ausführlichere Informationen zur Ordnerstruktur finden sich im [Cookbook][7]
+> Ausführlichere Informationen zur Ordnerstruktur finden sich im [Cookbook][8]
 > (auf Englisch).
 
 
@@ -160,4 +170,5 @@ Backend-Anmeldung weiter.
 [4]: https://getcomposer.org/download/
 [5]: https://getcomposer.org/doc/00-intro.md#using-the-installer
 [6]: http://symfony.com/doc/current/reference/configuration/framework.html#secret
-[7]: https://docs.contao.org/books/cookbook/en/folder-structure.html
+[7]: https://download.contao.org/contao-manager.phar
+[8]: https://docs.contao.org/books/cookbook/en/folder-structure.html
