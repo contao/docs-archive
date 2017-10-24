@@ -1,10 +1,10 @@
 # Adjusting the configuration of other bundles
 
 One fundamental issue with a "managed edition" is that bundles want to adjust
-configuration and sometimes a simple merge of this configuration is not possible,
+configuration and sometimes a simple merge of this configuration is not possible
 because the order of certain keys matters. A typical example would be the
 `security.firewalls` configuration. You might want to configure another firewall
-than the one Contao ships by default. As you know, the order matters, because the
+than the one Contao ships by default. As you know, the order matters because the
 first firewall that matches a specific pattern or request is the one that Symfony
 is going to use. That's why you cannot simply have a `config.yml` with your own
 `security.firewalls` configuration – the Symfony Config component will tell you:
