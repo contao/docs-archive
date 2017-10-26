@@ -16,6 +16,8 @@ Seit Contao 3 werden außerdem auch die dazugehörigen Felder sowie deren
 Konfiguration für die Datenbank unter `sql` direkt mit angegeben.
 
 ```php
+<?php
+
 // Anpassung der Palette
 $GLOBALS['TL_DCA']['tl_member']['palettes']['default'] = str_replace
 (
@@ -48,6 +50,8 @@ Erstellen Sie die Datei `languages/de/tl_member.php` in Ihrem Modulordner und
 legen Sie die deutschen Bezeichnungen an:
 
 ```php
+<?php
+
 $GLOBALS['TL_LANG']['tl_member']['customer_number'] = array
 (
     'Kundennummer',
