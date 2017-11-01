@@ -57,13 +57,14 @@ before the current plugin.
 
 * [Defining plugin dependencies](plugin-dependencies.md)
 
+
 ### ExtensionPluginInterface
 
 The `Contao\ManagerBundle\ContaoManager\Config\ExtensionPluginInterface` allows
-you to override extension configuration of other bundles. It is a very powerful
-but also very complex plugin.
+you to override configuration of other bundles. It is a very powerful but also
+very complex plugin.
 
-* [Customizing extensions](extensions.md)
+* [Overriding bundles](overriding-bundles.md)
 
 
 ## Working with the plugin

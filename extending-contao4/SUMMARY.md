@@ -20,6 +20,7 @@
     * [Container configuration](managed-edition/container-configuration.md)
     * [Adding routes](managed-edition/routing.md)
     * [Defining plugin dependencies](managed-edition/plugin-dependencies.md)
+    * [Overriding bundles](managed-edition/overriding-bundles.md)
 
 * [Background information](background/README.md)
     * [API changes](background/upgrade.md)
