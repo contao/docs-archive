@@ -31,9 +31,11 @@ function array_insert(&$arrCurrent, $intIndex, $arrNew)
 
     The content to insert into the array.
 
-    If this is an array, it will be [recursively merged][array_merge_recursive] into `$arrCurrent`.
+    If this is an array, it will be [recursively merged][array_merge_recursive]
+    into `$arrCurrent`.
 
-    If it's not an array, it will be inserted into `$arrCurrent` at the given position with the appropriate numeric index.
+    If it's not an array, it will be inserted into `$arrCurrent` at the given
+    position with the appropriate numeric index.
     
 
 ## Examples
