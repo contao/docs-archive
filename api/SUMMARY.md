@@ -111,6 +111,6 @@
      * [System::loadLanguageFile()](functions/System.loadLanguageFile.md)
      * [System::log()](functions/System.log.md)
      * deserialize()
-     * array_insert()
+     * [array_insert()](functions/array_insert.md)
      
  * [Classes and Singletons](classes/README.md)
