@@ -10,7 +10,8 @@ und PHP 5 aktiviert.
 
 #### Systemvoraussetzungen Kernsystem (manuelle Installation)
 
-Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support sowie verschiedene PHP-Erweiterungen.
+Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support
+sowie verschiedene PHP-Erweiterungen.
 
 |Contao-Version       | 3.5 LTS                 | 4.4 LTS                      | 4.5         |
 |---------------------|-------------------------|------------------------------|-------------|
@@ -31,7 +32,10 @@ Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support 
 > können zu lange Backend Formulare nicht komplett abgeschickt werden.
 
 > #### info:: Hinweis
-> Um von allen Funktionen profitieren zu können, sind zusätzlich die PHP-Erweiterungen `mbstring` (internationale Zeichen) und `mcrypt` (Verschlüsselung) nötig, für das Extension Repository und das Live Update von Contyo 3.5 LTS `SOAP` und `Phar`. 
+> Um von allen Funktionen profitieren zu können, sind zusätzlich die
+> PHP-Erweiterungen `mbstring` (internationale Zeichen) und `mcrypt`
+> (Verschlüsselung) nötig, für das Extension Repository und das Live Update
+> von Contao 3.5 LTS `SOAP` und `Phar`. 
 
 Contao wurde erfolgreich in allen modernen Browsern wie Firefox oder Internet
 Explorer (ab Version 9) getestet.
@@ -40,7 +44,7 @@ Explorer (ab Version 9) getestet.
 
 Zusätzlich zu den Systemvoraussetzungen des Kernsystems:
 
-- großer Arbeitsspeicher (RAM) für Konsolenbefehle, ggf. mehrere GB
+- ausreichend Arbeitsspeicher (RAM) für Konsolenbefehle, ggf. mehrere GB
 - lange Skriptlaufzeit für Konsolenbefehle
 - PHP Phar-Erweiterung
 - PHP cURL-Erweiterung
@@ -49,9 +53,6 @@ Zusätzlich zu den Systemvoraussetzungen des Kernsystems:
 - PHP-Funktion "shell_exec"
 - PHP-Funktionen "proc_open" und "proc_close"
 - Für Kommandozeilenzugriff: SSH-Zugang
-
-
-
 
 
 
