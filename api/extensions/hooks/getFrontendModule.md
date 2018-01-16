@@ -7,15 +7,23 @@ modules.
 > from Contao 2.11.0-RC1.
 
 
+> #### primary:: Updated   
+> in Contao 3.0
+
+
 ## Parameters
 
-1. *Database_Result* `$objRow`
+1. *ModuleModel* `$objRow`
 
     Database result of the front end module.
 
 2. *string* `$strBuffer`
 
     The generated front end module buffer.
+    
+3. *Module* `$objModule`
+
+    The class of the front end module. (Inherit from `Module`)
 
 
 
@@ -33,7 +41,7 @@ Return `$strBuffer` or your custom modification.
 $GLOBALS['TL_HOOKS']['getFrontendModule'][] = array('MyClass', 'myGetFrontendModule');
 
 // MyClass.php
-public function myGetFrontendModule($objRow, $strBuffer)
+public function myGetFrontendModule($objRow, $strBuffer, $objModule)
 {
     // Wrap all modules in an additional wrapper div
     return '<div class="module">' . $strBuffer . '</div>';
@@ -46,8 +54,9 @@ public function myGetFrontendModule($objRow, $strBuffer)
 
 ### References
 
-- [system/modules/core/library/Contao/Controller.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Controller.php#L316-L322)
+- Contao 3.5: [system/modules/core/library/Contao/Controller.php](https://github.com/contao/core/blob/3.5.0/system/modules/core/library/Contao/Controller.php#L316-L322)
 
+- Contao 4.4: [src/Resources/contao/library/Contao/Controller.php](https://github.com/contao/core-bundle/blob/b79c03bcd9a1d9eea1150ff88a55e67e7f1e52c1/src/Resources/contao/library/Contao/Controller.php#L329)
 
 ### See also
 
