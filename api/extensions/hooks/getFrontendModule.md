@@ -7,15 +7,11 @@ modules.
 > from Contao 2.11.0-RC1.
 
 
-> #### primary:: Updated   
-> in Contao 3.0
-
-
 ## Parameters
 
 1. *ModuleModel* `$objRow`
 
-    Database result of the front end module.
+    Database result of the front end module
 
 2. *string* `$strBuffer`
 
@@ -26,10 +22,16 @@ modules.
     The class of the front end module. (Inherit from `Module`)
 
 
-
 ## Return Values
 
 Return `$strBuffer` or your custom modification.
+
+
+## Changelog
+
+Version | Description
+--------|------------
+3.0     | Changed `$objRow` type from *Database_Result* to *ModuleModel*. Added `$objModule` parameter.
 
 
 ## Example
