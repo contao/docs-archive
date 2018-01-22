@@ -15,27 +15,21 @@ sowie verschiedene PHP-Erweiterungen.
 
 |Contao-Version       | 3.5 LTS                 | 4.4 LTS                      | 4.5         |
 |---------------------|-------------------------|------------------------------|-------------|
-| PHP ab Version:     | 5.4.0                   | 5.6.0                        | 7.1            
-| MySQL ab Version:   | 5.0.3                   | 5.0.3                        | 5.5.7
+| PHP ab Version:     | 5.4.0                   | 5.6.0                        | 7.1       |     
+| MySQL ab Version:   | 5.0.3                   | 5.0.3                        | 5.5.7    |
 | PHP-Erweiterungen:  | GDlib (Bildbearbeitung) | GD, Imagick oder Gmagick     | GD, Imagick oder Gmagick|
 |                     | DOM (XML-Dateien)       | DOM (XML-Dateien)            | DOM (XML-Dateien)|
 |                     |\-                       | intl (Internationalisierung) | intl (Internationalisierung)|
-||\-|.mod_rewrite oder .mod_alias (Umleitung per .htaccess)|.mod_rewrite oder .mod_alias (Umleitung per .htaccess)|
-| Rechte PHP-Prozess: |\-                       |Symlinks anlegen und folgen   | Symlinks anlegen und folgen|
-|                     |\-                       |Dateien anlegen und ändern    | Dateien anlegen und ändern|
-| MySQL-Optionen:     |\-                       |\-                            | innodb_large_prefix|
-| DocumentRoot        |\-                       | Auf Ordner "web" setzen       | Auf Ordner "web" setzen|
+|                     |                         | Umleitung auf app.php        | Umleitung auf app.php|
+| Rechte PHP-Prozess: |\-                       | Symlinks anlegen und folgen  | Symlinks anlegen und folgen|
+|                     |\-                       | Dateien anlegen und ändern   | Dateien anlegen und ändern|
+| MySQL-Optionen:     |\-                       | \-                           | innodb_large_prefix|
+| DocumentRoot        |\-                       | Auf Ordner "web" setzen      | Auf Ordner "web" setzen|
 
 > #### info:: Hinweis
 > Je nach installierten Extensions kann es außerdem notwendig sein die PHP 
 > Variable `max_input_vars` zu erhöhen (bspw. auf `2000` oder höher). Andernfalls 
 > können zu lange Backend Formulare nicht komplett abgeschickt werden.
-
-> #### info:: Hinweis
-> Um von allen Funktionen profitieren zu können, sind zusätzlich die
-> PHP-Erweiterungen `mbstring` (internationale Zeichen) und `mcrypt`
-> (Verschlüsselung) nötig, für das Extension Repository und das Live Update
-> von Contao 3.5 LTS `SOAP` und `Phar`. 
 
 Contao wurde erfolgreich in allen modernen Browsern wie Firefox oder Internet
 Explorer (ab Version 9) getestet.
@@ -50,7 +44,6 @@ Zusätzlich zu den Systemvoraussetzungen des Kernsystems:
 - PHP cURL-Erweiterung
 - PHP OpenSSL-Erweiterung
 - PHP-Flag "allow_url_fopen" aktiv
-- PHP-Funktion "shell_exec"
 - PHP-Funktionen "proc_open" und "proc_close"
 - Für Kommandozeilenzugriff: SSH-Zugang
 
