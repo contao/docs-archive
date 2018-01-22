@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Contao Manager API
-  version: "1.0.0-beta12"
+  version: "1.0.0-beta15"
 
 paths:
 
@@ -242,6 +242,36 @@ paths:
         503:
           description: If the server config is not ready or the command line binary cannot be found.
 
+  /api/server/phpinfo:
+    get:
+      summary: Gets PHP Information
+      tags: [Server Configuration]
+      responses:
+        200:
+          description: Gets result of the phpinfo() function.
+
+  /api/server/opcode:
+    get:
+      summary: Gets PHP opcode cache Information
+      tags: [Server Configuration]
+      responses:
+        200:
+          description: Status of the opcode cache.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Opcache'
+    delete:
+      summary: Resets the opcode cache
+      tags: [Server Configuration]
+      responses:
+        200:
+          description: Status of the opcode cache.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Opcache'
+
   /api/server/composer:
     get:
       summary: Gets Composer configuration
@@ -274,6 +304,11 @@ paths:
                         type: boolean
                       fresh:
                         type: boolean
+                  vendor:
+                    type: object
+                    properties:
+                      found:
+                        type: boolean
         503:
           description: If the server config is not ready or the command line binary cannot be found.
 
@@ -289,8 +324,10 @@ paths:
               schema:
                 properties:
                   version:
+                    description: The Contao version number.
                     type: string
                   api:
+                    description: The Contao API version number.
                     type: integer
         500:
           description: If any of the commands did not run successfully.
@@ -360,7 +397,7 @@ paths:
           schema:
             type: string
       responses:
-        204:
+        200:
           description: User updated
           $ref: '#/components/schemas/UserResponse'
 
@@ -374,9 +411,91 @@ paths:
           schema:
             type: string
       responses:
-        204:
+        200:
           description: User deleted
           $ref: '#/components/schemas/UserResponse'
+
+  /api/users/{username}/tokens:
+    get:
+      summary: Token List
+      tags: [Users]
+      parameters:
+        - name: username
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: An array of tokens.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TokenResponse'
+    post:
+      summary: Create Token
+      tags: [Users]
+      parameters:
+        - name: username
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenRequest'
+      responses:
+        200:
+          description: Data of the newly created token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenResponse'
+
+  /api/users/{username}/tokens/{token}:
+    get:
+      summary: Get Token
+      tags: [Users]
+      parameters:
+        - name: username
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: token
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: The token data
+          $ref: '#/components/schemas/TokenResponse'
+        404:
+          description: Token was not found.
+
+    delete:
+      summary: Delete Token
+      tags: [Users]
+      parameters:
+        - name: username
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: token
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Token deleted
+          $ref: '#/components/schemas/TokenResponse'
 
 
   #####################
@@ -538,6 +657,47 @@ paths:
                 $ref: '#/components/schemas/ComposerConfig'
 
 
+  ##################
+  #   Contao API   #
+  ##################
+
+  /api/contao/access-key:
+    get:
+      summary: Gets the hashed access key.
+      tags: [Contao API]
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetContaoAccessKey'
+    put:
+      summary: Sets the hashed access key.
+      tags: [Contao API]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SetContaoAccessKey'
+      responses:
+        200:
+          description: The access key was set.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetContaoAccessKey'
+    delete:
+      summary: Removes the access key.
+      tags: [Contao API]
+      responses:
+        200:
+          description: The access key was removed.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetContaoAccessKey'
+
+
   #############
   #   Tasks   #
   #############
@@ -575,6 +735,24 @@ paths:
         400:
           description: If a task is already running or the payload is invalid
 
+    patch:
+      summary: Starts or stops the active task.
+        tags: [Tasks]
+        requestBody:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskStatus'
+        responses:
+          200:
+            description: If the status was successfully updated.
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Task'
+          400:
+            description: If the task status is unknown.
+
     delete:
       summary: Deletes task data.
       tags: [Tasks]
@@ -587,21 +765,6 @@ paths:
                 $ref: '#/components/schemas/Task'
         400:
           description: If the task cannot be deleted because it's running.
-
-  /api/task/status:
-    put:
-      summary: Starts or stops the active task.
-      tags: [Tasks]
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/TaskStatus'
-      responses:
-        200:
-          description: If the status was successfully updated.
-        400:
-          description: If the task status is unknown.
 
 
   ################
@@ -639,6 +802,25 @@ components:
           type: string
           description: Username of the user object.
 
+    TokenRequest:
+      type: object
+      properties:
+        client_id:
+          type: string
+          description: OAuth client ID of the token.
+
+    TokenResponse:
+      type: object
+      properties:
+        client_id:
+          type: string
+          description: OAuth client ID of the token.
+        username:
+          type: string
+          description: Username of the token.
+        token:
+          type: string
+
     ManagerConfig:
       type: object
       properties:
@@ -656,6 +838,38 @@ components:
 
     ComposerConfig:
       type: object
+
+    Opcache:
+      type: object
+      properties:
+        opcache_enabled:
+          type: boolean
+        cache_full:
+          type: boolean
+        restart_pending:
+          type: boolean
+        restart_in_progress:
+          type: boolean
+        memory_usage:
+          type: object
+        interned_strings_usage:
+          type: object
+        opcache_statistics:
+          type: object
+
+    GetContaoAccessKey:
+      type: object
+      properties:
+        access-key:
+          type: string
+
+    SetContaoAccessKey:
+      type: object
+      properties:
+        user:
+          type: string
+        password:
+          type: string
 
     Task:
       type: object
