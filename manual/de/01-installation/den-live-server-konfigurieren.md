@@ -23,7 +23,6 @@ sowie verschiedene PHP-Erweiterungen.
 |                     |                         | Umleitung auf app.php        | Umleitung auf app.php|
 | Rechte PHP-Prozess: |\-                       | Symlinks anlegen und folgen  | Symlinks anlegen und folgen|
 |                     |\-                       | Dateien anlegen und ändern   | Dateien anlegen und ändern|
-| MySQL-Optionen:     |\-                       | \-                           | innodb_large_prefix|
 | DocumentRoot        |\-                       | Auf Ordner "web" setzen      | Auf Ordner "web" setzen|
 
 > #### info:: Hinweis
