@@ -197,6 +197,7 @@ Each field can be validated against a regular expression.
 | readonly           | true/false (`boolean`)           | Makes the field read only (not supported by all field types).                                                                                                            |
 | csv                | Delimiter (`string`)             | The choice of this field will not be stored as serialized string but rather as given delimiter-separated list. Example: `'eval' => array('csv'=>',')`                    |
 | tl_class           | CSS class(es) (`string`)         | Add the given CSS class(es) to the generated HTML. See section [Arranging Fields](palettes.md#arranging-fields) for supported values.                                    |
+| dcaPicker          | true/false (`boolean`)           | If true the dca-picker will be shown.  Enables pick up different data sets from the system.                                                                             |
 
 
 ### Regular Expressions
