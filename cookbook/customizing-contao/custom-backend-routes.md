@@ -9,7 +9,7 @@ XML or YAML interchangeably.
 ### Create your Controller and Template
 
 The first step is to create your own Controller. A more detailed explanation
-on how Symfony Controller work can be found in the [Symfony documentation](https://symfony.com/doc/current/controller.html).
+on how Symfony Controller work can be found in the [Symfony documentation][1].
 The Controller class is placed inside the `Controller` directory in your `AppBundle`
 and is configured through annotations.
 
@@ -180,3 +180,5 @@ services:
 We purposely assign it a low priority, so that we can be sure to be loaded after
 the Contao Core EventListeners. Otherwise the `content` node we assign ourself to
 will not be available yet.
+
+[1]: https://symfony.com/doc/current/controller.html
