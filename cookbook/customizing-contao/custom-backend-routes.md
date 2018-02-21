@@ -70,7 +70,7 @@ app:
     type:     annotation
 ```
 
-Our route `backendRouteAction` will render the template `AppBuundle::my_backend_route.html.twig`
+Our route `backendRouteAction` will render the template `AppBundle::my_backend_route.html.twig`
 which must be placed into `src/AppBundle/Resources/views`.
 
 ```twig
@@ -92,7 +92,7 @@ which must be placed into `src/AppBundle/Resources/views`.
 ```
 
 As we extend from `@ContaoCore/Backend/be_page.html.twig` it is worth noting 
-that there are three different block you can currently use:
+that there are three different blocks you can currently use:
 
 * `headline`: This block renders the headline of the document.
 * `error`: In case of an error, place your message here, it will be placed prominently
