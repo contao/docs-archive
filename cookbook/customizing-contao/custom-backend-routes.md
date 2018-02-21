@@ -181,4 +181,7 @@ We purposely assign it a low priority, so that we can be sure to be loaded after
 the Contao Core EventListeners. Otherwise the `content` node we assign ourself to
 will not be available yet.
 
+And that's it. You controller should now be callable from the main backend menu in
+the sidebar.
+
 [1]: https://symfony.com/doc/current/controller.html
