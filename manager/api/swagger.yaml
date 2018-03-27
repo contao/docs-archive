@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Contao Manager API
-  version: "1.0.0-beta15"
+  version: "1.0.0-beta16"
 
 paths:
 
@@ -737,21 +737,21 @@ paths:
 
     patch:
       summary: Starts or stops the active task.
-        tags: [Tasks]
-        requestBody:
+      tags: [Tasks]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskStatus'
+      responses:
+        200:
+          description: If the status was successfully updated.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/TaskStatus'
-        responses:
-          200:
-            description: If the status was successfully updated.
-            content:
-              application/json:
-                schema:
-                  $ref: '#/components/schemas/Task'
-          400:
-            description: If the task status is unknown.
+                $ref: '#/components/schemas/Task'
+        400:
+          description: If the task status is unknown.
 
     delete:
       summary: Deletes task data.
@@ -977,23 +977,27 @@ components:
       $ref: '#/components/schemas/ApiProblem'
 
   securitySchemes:
-    AuthToken:
+    AuthCookie:
       type: apiKey
       description: Authentication cookie called "contao_manager_auth". The cookie is set by the server as HTTP-only after successful login.
       name: contao_manager_auth
       in: cookie
-    XsrfTokenOutput:
+    AuthToken:
       type: apiKey
-      description: The XSRF token value is set on the first API access.
+      description: HTTP Bearer authentication with a user token.
+      name: Authentication
+      in: header
+    XsrfCookie:
+      type: apiKey
+      description: The XSRF token value is set on the first API access. Required when using cookie authentication.
       name: contao_manager_xsrf
       in: cookie
-    XsrfTokenInput:
+    XsrfHeader:
       type: apiKey
-      description: Token to prevent from XSRF attacks. Correct value can be read from cookie with name "contao_manager_xsrf" which is set on the first API access.
+      description: Token to prevent from XSRF attacks. Correct value can be read from cookie with name "contao_manager_xsrf" which is set on the first API access. Required when using cookie authentication.
       name: XSRF-TOKEN
       in: header
 
 security:
-  - AuthToken: []
-    XsrfTokenOutput: []
-    XsrfTokenInput: []
+  - { AuthCookie: [], XsrfCookie: [], XsrfHeader: [] }
+  - { AuthToken: [] }
