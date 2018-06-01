@@ -31,10 +31,10 @@ the unchanged second parameter.
 <?php
 
 // config.php
-$GLOBALS['TL_HOOKS']['myGetPageStatusIcon'][] = array('MyClass', 'myGetPageStatusIcon');
+$GLOBALS['TL_HOOKS']['getPageStatusIcon'][] = array('MyClass', 'myGetPageStatusIcon');
 
 // MyClass.php
-public function myGetPageStatusIcon(Database_Result $objPage, $image)
+public function myGetPageStatusIcon($objPage, $image)
 {
     if ($objPage->type == 'my_page')
     {
