@@ -11,7 +11,7 @@ Template befindet sich beispielsweise in
 
 Falls diese Datei direkt in diesem Ordner bearbeitet wird, **gehen die Änderungen**
 bei einem nächsten Update von Contao **verloren**. Um dies zu vermeiden,
-Templates können im Backend bearbeitet werden. Dabei wird die Datei kopiert um
+können Templates im Backend bearbeitet werden. Dabei wird die Datei kopiert um
 Änderungen während einem Update nicht zu verlieren.
 
 ![](images/templates.jpg)
