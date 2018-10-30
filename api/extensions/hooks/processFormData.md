@@ -22,6 +22,14 @@ arguments and does not expect a return value.
 
     Contains information about uploaded files (from "upload" widgets).
 
+4. *array* `$arrLabels`
+    
+    The field labels of the form.
+
+5. *form* $objForm
+
+    The form instance.
+ 
 
 ## Example
 
@@ -32,7 +40,7 @@ arguments and does not expect a return value.
 $GLOBALS['TL_HOOKS']['processFormData'][] = array('MyClass', 'myProcessFormData');
 
 // MyClass.php
-public function myProcessFormData($arrPost, $arrForm, $arrFiles)
+public function myProcessFormData($arrPost, $arrForm, $arrFiles, $arrLabels, $objForm)
 {
     // Do something
 }
@@ -48,6 +56,7 @@ public function myProcessFormData($arrPost, $arrForm, $arrFiles)
 
 ### See also
 
+- [prepareFormData](prepareFormData.md) - triggered after a form has been submitted, but before it is processed
 - [storeFormData](storeFormData.md) - triggered before a submitted form is stored to the database.
 - [loadFormField](loadFormField.md) - triggered when a form field is loaded.
 - [validateFormField](validateFormField.md) - triggered when a form field is submitted.
