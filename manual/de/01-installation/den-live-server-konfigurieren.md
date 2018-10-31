@@ -8,24 +8,22 @@ und PHP 5 aktiviert.
 
 ### Contao-Systemvoraussetzungen
 
-Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support.
+#### Systemvoraussetzungen Kernsystem (manuelle Installation)
 
-| Software | Version (min.) |
-|----------|----------------|
-| PHP      | 5.6.0          |
-| MySQL    | 5.0.3          |
+Contao benötigt einen Webserver wie Apache oder IIS mit PHP- und MySQL-Support
+sowie verschiedene PHP-Erweiterungen.
 
-
-Außerdem benötigen Sie verschiedene PHP-Erweiterungen, um von allen Funktionen
-profitieren zu können. 
-
-| PHP-Erweiterungen        | für                    | Pflicht |
-|--------------------------|------------------------|---------|
-| GD, Imagick oder Gmagick | Bildbearbeitung        | Ja      |
-| DOM                      | XML-Dateien            | Ja      |
-| intl                     | Internationalisierung  | Ja      |
-| mbstring                 | internationale Zeichen | Nein    |
-| mcrypt                   | Verschlüsselung        | Nein    |
+|Contao-Version       | 3.5 LTS                 | 4.4 LTS                      | 4.5         |
+|---------------------|-------------------------|------------------------------|-------------|
+| PHP ab Version:     | 5.4.0                   | 5.6.0                        | 7.1       |     
+| MySQL ab Version:   | 5.0.3                   | 5.0.3                        | 5.5.7    |
+| PHP-Erweiterungen:  | GDlib (Bildbearbeitung) | GD, Imagick oder Gmagick     | GD, Imagick oder Gmagick|
+|                     | DOM (XML-Dateien)       | DOM (XML-Dateien)            | DOM (XML-Dateien)|
+|                     |\-                       | intl (Internationalisierung) | intl (Internationalisierung)|
+|                     |                         | Umleitung auf app.php        | Umleitung auf app.php|
+| Rechte PHP-Prozess: |\-                       | Symlinks anlegen und folgen  | Symlinks anlegen und folgen|
+|                     |\-                       | Dateien anlegen und ändern   | Dateien anlegen und ändern|
+| DocumentRoot        |\-                       | Auf Ordner "web" setzen      | Auf Ordner "web" setzen|
 
 > #### info:: Hinweis
 > Je nach installierten Extensions kann es außerdem notwendig sein die PHP 
@@ -34,6 +32,20 @@ profitieren zu können.
 
 Contao wurde erfolgreich in allen modernen Browsern wie Firefox oder Internet
 Explorer (ab Version 9) getestet.
+
+#### Systemvoraussetzungen Composer-Paketverwaltung: Kommandozeile und Contao-Manager
+
+Zusätzlich zu den Systemvoraussetzungen des Kernsystems:
+
+- ausreichend Arbeitsspeicher (RAM) für Konsolenbefehle, ggf. mehrere GB
+- lange Skriptlaufzeit für Konsolenbefehle
+- PHP Phar-Erweiterung
+- PHP cURL-Erweiterung
+- PHP OpenSSL-Erweiterung
+- PHP-Flag "allow_url_fopen" aktiv
+- PHP-Funktionen "proc_open" und "proc_close"
+- Für Kommandozeilenzugriff: SSH-Zugang
+
 
 
 ### Der Contao-Check
