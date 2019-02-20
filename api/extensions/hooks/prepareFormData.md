@@ -25,7 +25,7 @@ distribution or data storage.
     The form instance.
 
 
-## Example
+## Example Contao 3
 
 ```php
 <?php
@@ -35,6 +35,26 @@ $GLOBALS['TL_HOOKS']['prepareFormData'][] = array('MyClass', 'myPrepareFormData'
 
 // MyClass.php
 public function myPrepareFormData(&$arrSubmitted, $arrLabels, $objForm)
+{
+    // this calculates a deadline from a given timestamp
+    // and stores it as deadline in $arrSubmitted
+    $arrSubmitted['deadline'] = strtotime('+1 hour', $arrSubmitted['tstamp']);
+}
+```
+
+> #### primary:: Changed
+> from Contao 4.0.0.
+
+## Example Contao 4
+
+```php
+<?php
+
+// config.php
+$GLOBALS['TL_HOOKS']['prepareFormData'][] = array('MyClass', 'myPrepareFormData');
+
+// MyClass.php
+public function myPrepareFormData(&$arrSubmitted, $arrLabels, $arrFields, $objForm)
 {
     // this calculates a deadline from a given timestamp
     // and stores it as deadline in $arrSubmitted
