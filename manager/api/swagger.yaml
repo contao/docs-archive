@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Contao Manager API
-  version: "1.0.0-beta16"
+  version: "1.1.0"
 
 paths:
 
@@ -31,9 +31,6 @@ paths:
                 properties:
                   contao_manager_auth:
                     description: Authentication token as HTTP-only cookie.
-                    type: string
-                  contao_manager_xsrf:
-                    description: XSRF cookie value
                     type: string
           content:
             application/json:
@@ -771,15 +768,63 @@ paths:
   #   Packages   #
   ################
 
-  /api/packages:
+  /api/packages/root:
     get:
-      summary: Gets list of installed packages
+      summary: Gets details of the root Composer package.
       tags: [Packages]
       responses:
         200:
-          description: Collection of installed packages. Object key equals package name.
-          $ref: '#/components/schemas/Package'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Package'
 
+  /api/packages/local/:
+    get:
+      summary: Gets list of installed Composer packages.
+      tags: [Packages]
+      responses:
+        200:
+          description: Collection of installed packages. Object key equals package name, the root package is added with key "root".
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  $ref: '#/components/schemas/Package'
+
+  /api/packages/local/{name}:
+    get:
+      summary: Gets details of an installed Composer package.
+      tags: [Packages]
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Package'
+
+  /api/constraint:
+    post:
+      summary: Validates a Composer version constraint
+      tags: [Packages]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                constraint:
+                  type: string
+                  description: The version constraint to validate.
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConstraintValidation'
+        400:
+          description: If no constraint is given.
 
 components:
   schemas:
@@ -898,28 +943,30 @@ components:
 
     Package:
       type: object
+      description: "A package definition according to the Composer schema: https://getcomposer.org/doc/04-schema.md"
       properties:
         name:
           type: string
         version:
           type: string
           description: Currently installed version
-        constraint:
-          type: string
-          description: Version constraint in composer.json
         type:
           type: string
+          description: A Composer package type
           enum:
             - contao-bundle
             - contao-module
+            - library
         time:
           type: string
         description:
           type: string
         license:
-          type: array
-          items:
-            type: string
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: string
         authors:
           type: array
           items:
@@ -931,14 +978,33 @@ components:
                 type: string
               homepage:
                 type: string
+        require:
+          type: object
+          description: List of dependent packages.
+          additionalProperties:
+            type: string
+            description: A Composer constraint.
         extra:
           type: object
           properties:
             contao-manager-plugin:
-              type: string
-              description: Class name if this package has a Manager Plugin.
+              oneOf:
+                - type: string
+                  description: Class name if this package has a Manager Plugin.
+                - type: array
+                  description: Array of class names if this package has multiple Manager Plugins.
+                  items:
+                    type: string
         abandoned:
           type: boolean
+
+    ConstraintValidation:
+      type: object
+      properties:
+        valid:
+          type: boolean
+        error:
+          type: string
 
     ApiProblem:
       type: object
@@ -984,20 +1050,10 @@ components:
       in: cookie
     AuthToken:
       type: apiKey
-      description: HTTP Bearer authentication with a user token.
-      name: Authentication
-      in: header
-    XsrfCookie:
-      type: apiKey
-      description: The XSRF token value is set on the first API access. Required when using cookie authentication.
-      name: contao_manager_xsrf
-      in: cookie
-    XsrfHeader:
-      type: apiKey
-      description: Token to prevent from XSRF attacks. Correct value can be read from cookie with name "contao_manager_xsrf" which is set on the first API access. Required when using cookie authentication.
-      name: XSRF-TOKEN
+      description: Authentication with a user token.
+      name: Contao-Manager-Auth
       in: header
 
 security:
-  - { AuthCookie: [], XsrfCookie: [], XsrfHeader: [] }
+  - { AuthCookie: [] }
   - { AuthToken: [] }
