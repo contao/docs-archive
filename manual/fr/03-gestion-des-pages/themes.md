@@ -1,6 +1,6 @@
 ## Thèmes
 
-Une design de site internet se compose généralement de feuilles de style, de
+Le design d'un site internet se compose généralement de feuilles de style, de
 modules front office, de présentations de page, de fichiers et de modèles que
 vous pouvez gérer dans le back office de Contao. Le gestionnaire de thème ne
 change pas cette approche du tout, il ajoute juste une option pour exporter et
