@@ -16,6 +16,7 @@
         * [Adding custom fields](customizing-contao/adding-custom-fields.md)
         * [Customizing TinyMCE](customizing-contao/customizing-tinymce.md)
         * [Overriding class methods](customizing-contao/overriding-class-methods.md)
+        * [Custom backend routes](customizing-contao/custom-backend-routes.md)
     * [Extension Repository](extension-repository/README.md)
         * [Adding an extension](extension-repository/adding-an-extension.md)
         * [Adding a release](extension-repository/adding-a-release.md)
