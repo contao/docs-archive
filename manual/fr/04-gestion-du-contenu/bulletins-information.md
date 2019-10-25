@@ -4,7 +4,7 @@ L'extension bulletins d'information vous permet de gérer et d'envoyer des
 bulletins d'information et optionnellement de les afficher sur le site
 internet. Contrairement aux articles qui sont associés à une page particulière,
 les bulletins d'information sont organisés en listes de diffusion, ce qui vous
-permet de facilement les regrouper ou de les catégoriser.
+permet facilement de les regrouper ou de les catégoriser.
 
 
 ### Destinataires
